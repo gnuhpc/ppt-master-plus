@@ -437,6 +437,12 @@
   ],
   "generation_mode": [
     {
+      "id": "gated",
+      "label": "gated",
+      "label_zh": "逐页精修模式",
+      "label_en": "gated"
+    },
+    {
       "id": "continuous",
       "label": "continuous",
       "label_zh": "连续模式",

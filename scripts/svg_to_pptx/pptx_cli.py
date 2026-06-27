@@ -181,6 +181,11 @@ Recorded narration:
                              'canonical output; live preview already provides the SVG visual reference. '
                              'Note: the svg_output/ source snapshot is always written to backup/<ts>/ '
                              'regardless of this flag.')
+    parser.add_argument('--base-pptx', type=str, default=None,
+                        help='Use an existing PPTX package as the export base. '
+                             'Requires 1:1 slide correspondence; output slide N '
+                             'preserves source slide N layout/master mapping, '
+                             'including master/layout backgrounds and media.')
 
     def non_negative_float(value: str) -> float:
         try:
@@ -518,6 +523,15 @@ Recorded narration:
     else:
         cache_dir = project_path / '.cache' / 'svg_png'
 
+    base_pptx: Path | None = None
+    if args.base_pptx:
+        base_pptx = Path(args.base_pptx)
+        if not base_pptx.is_absolute():
+            base_pptx = project_path / base_pptx
+        if not base_pptx.exists():
+            print(f"Error: --base-pptx does not exist: {base_pptx}", file=sys.stderr)
+            return 1
+
     # svg_files is per-product (native vs legacy may now read different
     # directories); everything else is shared.
     # Optional per-project document properties. Absent file → factual fields
@@ -559,6 +573,7 @@ Recorded narration:
         cache_dir=cache_dir,
         workers=args.workers,
         merge_paragraphs=args.merge_paragraphs,
+        base_pptx=base_pptx,
     )
 
     success = True

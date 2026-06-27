@@ -1,17 +1,17 @@
 ---
-description: Start the browser SVG editor when it is not running, and apply submitted annotations after Step 7 export
+description: Start the browser SVG editor when it is not running, and apply submitted annotations before or after PPTX export
 ---
 
 # Live Preview Workflow
 
-> **Purpose**: (1) start/reopen the browser SVG editor when no preview service is currently running, and (2) apply user-submitted annotations after Step 7 export completes.
+> **Purpose**: (1) start/reopen the browser SVG editor when no preview service is currently running, and (2) apply user-submitted annotations at the current generation checkpoint or after Step 7 export.
 >
 > **Not in scope**: Executor's mandatory auto-startup — that lives in [`SKILL.md`](../SKILL.md) Step 6. Do not re-launch a preview that is already running.
 
 ## When to Run
 
 - **Start (Step 1)** — preview service is not currently running and the user wants to look at the deck or click an element. Typical cases: post-export re-entry in a fresh chat, or the user clicked **Exit preview** earlier and now wants it back.
-- **Apply annotations (Step 2)** — Step 7 has produced at least one PPTX, and the user signals that submitted annotations should now be applied. Triggers include:
+- **Apply annotations (Step 2)** — at least one targeted SVG exists in `svg_output/`, and the user signals that submitted annotations should now be applied. This is valid during generation and after export. Triggers include:
   - quoting the browser prompt (`Changes saved to svg_output...` / `修改已保存到 svg_output...`)
   - saying `apply my annotations` / `apply my edits` / `应用注解` / `开始应用` / 等价表达
 
@@ -20,7 +20,7 @@ description: Start the browser SVG editor when it is not running, and apply subm
 - The preview service is already running → just give the user the URL; do not restart.
 - The user gave a precise chat edit ("change page 3 title to X") → edit the SVG directly.
 - The user wants a full regeneration → use the main workflow.
-- Step 7 has never run for this project → annotations cannot be applied yet; finish the main pipeline first.
+- An annotation targets a slide that does not yet exist in `svg_output/` → report that page as pending and apply it after the page is generated.
 
 ---
 
@@ -47,7 +47,7 @@ Do not wait for confirmation before launching — the user already asked for pre
 
 ## Step 2: Apply submitted annotations
 
-🚧 **GATE**: `<project_path>/exports/` contains at least one `*.pptx` (Step 7 has completed). If not, do not apply annotations — tell the user to finish the main pipeline first.
+🚧 **GATE**: every annotation being applied targets an SVG that already exists in `<project_path>/svg_output/`. A prior PPTX export is not required.
 
 Triggered by the user signals listed in "When to Run".
 
@@ -58,16 +58,24 @@ Triggered by the user signals listed in "When to Run".
    The output already lists each pending change as `file → element_id → annotation text → content preview`. Use it directly as the to-do list; no need to re-parse SVG attributes yourself.
 2. If the output says no annotations: tell the user, stop.
 3. For each listed annotation:
+   - Re-read `<project_path>/spec_lock.md` before editing that page.
    - Edit the targeted element in `<project_path>/svg_output/<file>` per the annotation text.
    - **Must remove the resolved annotation markers**: delete `data-edit-target` and `data-edit-annotation` from that element after applying the requested change. Never leave already-fixed annotations in `svg_output`.
    - Append one `annotation_applied` JSONL record to `<project_path>/live_preview/annotations.jsonl` with `ts`, `file`, `element_id`, and the original annotation text.
-4. Re-export:
+4. Validate the repaired SVGs:
    ```bash
-   python3 ${SKILL_DIR}/scripts/finalize_svg.py <project_path>
-   python3 ${SKILL_DIR}/scripts/svg_to_pptx.py <project_path>
+   python3 ${SKILL_DIR}/scripts/svg_quality_checker.py <project_path>
    ```
-5. Tell the user (in their language): annotations applied, new PPTX exported, preview is still running. If the browser still shows the old slide, refresh or reselect the page.
-6. Loop: more annotations submitted → repeat from step 1. User signals done or "stop preview" → end.
+   Fix every error before continuing. If the annotation materially changes slide content, update its speaker notes. Run the full notes checker only when all deck notes exist; otherwise defer that deck-wide check to the normal notes gate.
+5. Choose the output action by project state:
+   - **Before the first export**: do not create a partial PPTX. Return to Live Preview; in `Gated` mode wait for approval of the repaired slide, and in `Continuous` mode resume generation.
+   - **After an export exists**: re-export the updated deck:
+     ```bash
+     python3 ${SKILL_DIR}/scripts/finalize_svg.py <project_path>
+     python3 ${SKILL_DIR}/scripts/svg_to_pptx.py <project_path>
+     ```
+6. Tell the user (in their language): annotations applied, markers removed, validation passed, and whether a new PPTX was exported. If the browser still shows the old slide, refresh or reselect the page.
+7. Loop: more annotations submitted → repeat from step 1. User signals done or "stop preview" → end.
 
 ---
 
@@ -81,7 +89,7 @@ Triggered by the user signals listed in "When to Run".
 - **Overlap picker**: right-click anywhere on the canvas to list every selectable element under the pointer (top→bottom), so stacked shapes can be reached without blind cycling. Left-click is unchanged (selects the topmost). Hovering a row highlights that element; clicking it selects it; `Esc` or an outside click closes the list. With exactly one element under the pointer, right-click selects it directly.
 - **Undo**: `Ctrl+Z` or the **Undo** button drops the last staged direct edit on the current slide (per-slide LIFO, this session). Consecutive edits to the *same element and same field set* (e.g. nudging one color or coordinate several times) coalesce into a single undo step, keeping the original pre-edit value; switching element or field starts a new step. Applied old→new history is appended to `<project>/live_preview/edits.jsonl`; annotation save/update/remove history is appended to `<project>/live_preview/annotations.jsonl`; un-applied staged edits are in-memory only.
 - **Unsaved-work guard**: staged direct edits and annotation changes (added or removed) live in server memory until **Apply changes**; closing the tab triggers the browser's native "leave site?" prompt while any are unapplied, since an idle timeout or process kill would drop them.
-- **Re-export is chat-driven**: applying changes updates `svg_output/` only. Refreshing the PPTX (finalize + svg_to_pptx) stays a chat step — the editor never runs the export pipeline.
+- **Re-export is chat-driven**: applying changes updates `svg_output/` only. Before the first export, annotation repair returns to preview without creating a partial deck. After an export exists, applying annotations re-runs finalize + export; direct edits are re-exported when the user asks.
 - **Stop conditions**: the service stops when the user clicks **Exit preview** in the browser, asks in chat to stop it, the idle timeout fires, or the process is killed externally.
 - **Port**: default `5050`, auto-advancing to the next free port when another project already holds it (report the actual URL from the launch log); force a specific port with `--port <other>`.
 - **Idle timeout**: plain mode `900s`, `--live` mode `7200s`; override with `--timeout <seconds>` (`0` disables).

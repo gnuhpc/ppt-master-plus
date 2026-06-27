@@ -43,7 +43,14 @@ Re-lays-out an existing `.pptx`: the text is preserved **verbatim**, the source 
 
 ## 3. Create the Project Workspace
 
-Match the canvas to the source so 1:1 pages and paste-back align. Determine the source aspect first — before the project exists, run `beautify_identity.py <source.pptx>` to **stdout** and read `canvas.aspect` (the formal standard intake bundle is written in Step 4, after `init`) — then `init` with the matching format:
+Match the canvas to the source so 1:1 pages and paste-back align. Determine the source canvas first — before the project exists, run `beautify_identity.py <source.pptx>` to **stdout** and read **all** `canvas` fields:
+
+| Field | Use |
+|---|---|
+| `canvas.width_px` / `canvas.height_px` | the authoritative SVG authoring canvas for beautify. These values come from the PPTX package's actual `p:sldSz` converted to 96dpi pixels. Use them for every generated SVG root `width` / `height` / `viewBox` and for `spec_lock.md` `canvas.viewBox`. Do **not** silently normalize a 16:9 source to `1280×720` when the source is, for example, `2560×1440`; doing so makes preserved-master exports appear in a corner. |
+| `canvas.aspect` | only chooses the nearest project format bucket (`ppt169` / `ppt43` / other) for folder naming and defaults; it is not the authoring size when `width_px` / `height_px` differ from the bucket default. |
+
+Then `init` with the matching format bucket:
 
 | Source aspect | Format |
 |---|---|
@@ -55,6 +62,26 @@ Match the canvas to the source so 1:1 pages and paste-back align. Determine the 
 python3 ${SKILL_DIR}/scripts/project_manager.py init <project_name> --format <format>
 python3 ${SKILL_DIR}/scripts/project_manager.py import-sources <project_path> <source.pptx> --move
 ```
+
+After import, keep the source canvas values visible in the project plan. When you later write `design_spec.md` and `spec_lock.md`, set:
+
+```markdown
+## canvas
+- viewBox: 0 0 <source_canvas.width_px> <source_canvas.height_px>
+- format: <format bucket, e.g. PPT 16:9>
+- preserve_master: true/false
+- base_pptx: sources/<source.pptx>
+```
+
+Every SVG page in beautify MUST use exactly that source-size viewBox:
+
+```xml
+<svg xmlns="http://www.w3.org/2000/svg"
+     width="<source_canvas.width_px>" height="<source_canvas.height_px>"
+     viewBox="0 0 <source_canvas.width_px> <source_canvas.height_px>">
+```
+
+This is an early authoring contract, not an export-time scaling fix.
 
 ---
 
@@ -80,6 +107,7 @@ python3 ${SKILL_DIR}/scripts/pptx_intake.py <project_path>/sources/<source.pptx>
 | `observed.sizes_pt` (pt, frequency-ranked) | a usage **sample** of run-level explicit point sizes — the **size the deck actually renders at** when it overrides the placeholder default; the source for the Step 5 `body_size` recommendation |
 | `layout_sizes_pt` (pt, frequency-ranked) | **reference fact only**, NOT an auto-seed — the level-1 sizes that the in-use slide layouts' body placeholders declare. Usually empty (decks rely on runs / master) and ambiguous when present; use it as a hint when judging the body size, never as the authoritative seed |
 | `canvas.aspect` | drives the Step 3 format choice |
+| `canvas.width_px` / `height_px` | drives the Step 5 confirmed canvas and the Step 6 SVG `viewBox`; these are authoritative for beautify |
 
 > Note: `theme` is what the deck declares; `observed` is a frequency sample of run-level overrides (not a complete style resolution — it misses `schemeClr` and master/layout inheritance, and counts chart/gradient fills). A hand-edited deck can diverge from `theme` — Step 5 recommends which to inherit and the user confirms.
 
@@ -140,11 +168,12 @@ If `images/image_manifest.json` does not exist because the source deck has no ex
 
 This step has two halves:
 - **Visual re-confirm via the confirm UI** — the **full** Step 4 confirm page (below), seeded from the source so every targeted-confirmation field (canvas, mode, visual style, palette, icons, typography incl. body baseline, image strategy, generation mode) is **pre-filled with the inherited / source-derived default and left editable**. Beautify *recommends* keeping the source's identity, but never removes the user's place to override any field — you may choose not to change a value, but you must not deny the place to change it. This is also where the deck's text size is confirmed: `<stem>.identity.json` now carries size hints — `observed.sizes_pt` (the point sizes the deck actually renders at) and `theme.sizes` (the declared placeholder defaults) — so the `body_size` recommendation **follows the source's own font size** rather than a blind canvas default; the user still confirms or overrides it here.
-- **Structural scope** — the inventory-driven list decisions below (ignored, reuse, needs-confirmation, verification level) stay in **chat**; they have no confirm-UI widget.
+- **Structural scope** — the inventory-driven list decisions below (ignored, reuse, needs-confirmation, verification level) stay in **chat**. `preserve_master` is the one structural choice that is also surfaced in the confirm UI because it changes export semantics.
 
 | Plan item | Recommend from | Default lean |
 |---|---|---|
 | Identity source | `<stem>.identity.json` `theme` vs `observed` | present **both as color / typography candidates in the confirm UI** so the user picks the one that looks right (theme first when the deck is theme-driven; observed first when slides override heavily) — recommend a default ordering and say why |
+| Preserve source master | source PPTX OOXML | default **true**. If kept, output slide N MUST preserve source slide N's slideLayout/master mapping and therefore keep master/layout backgrounds, background images, footers, logos, fixed decorations, theme, and related media/rels intact. If false, export may use a clean newly generated deck |
 | Preserve scope | inventory `text_blocks` / `images` / `charts` / `tables` | all text verbatim; data values frozen; pictures reused |
 | Ignored | inventory `ignored` | name them so the user sees what drops (hidden / master-only text / image crop / rotation) |
 | Needs confirmation | inventory `needs_confirmation` | flag complex charts + overcrowded pages explicitly; ask how to handle |
@@ -171,9 +200,11 @@ Write `<project_path>/confirm_ui/recommendations.json` and launch the same confi
     "mode": "briefing",
     "visual_style": "<closest visual-style id to the source look>",
     "icons": "<sensible default icon library>",
-    "image_usage": "provided"
+    "image_usage": "provided",
+    "preserve_master": true
   },
   "page_count": <source-slide-count>,
+  "source_canvas": { "width_px": <source_canvas.width_px>, "height_px": <source_canvas.height_px>, "aspect": <source_canvas.aspect> },
   "audience": "<carry over from the deck's apparent audience, or leave blank>",
   "color": { "selected": 0, "candidates": [
     { "name_zh": "复刻源 PPT（推荐）", "name_en": "Source replica (recommended)", "palette": { "background": "#...", "secondary_bg": "#...", "primary": "#...", "accent": "#...", "secondary_accent": "#...", "body_text": "#..." } },
@@ -189,6 +220,8 @@ Write `<project_path>/confirm_ui/recommendations.json` and launch the same confi
 ```
 
 - **Recommend keep, allow override**: pre-fill canvas / mode / visual style / icons / image strategy with the source-faithful default (canvas = Step 3 format, mode = `briefing`, image_usage = `provided` since pictures are reused). Enumerable fields already list every catalog option with the source-faithful one badged, so the user can switch. Beautify's only true non-choices are the frozen text and the strict 1:1 page count (changing those means routing to the main pipeline instead — see CLAUDE.md). The §c material-divergence field is therefore not surfaced here — beautify never reshapes content (text is verbatim).
+- **Canvas size is source-exact even when the UI canvas id is only a bucket**: the confirm UI's `canvas` field may still say `ppt169` / `ppt43`, but beautify must carry `source_canvas.width_px` / `height_px` into `design_spec.md`, `spec_lock.md`, and every generated SVG root. Do not let a confirmed `ppt169` id collapse a `2560×1440` source deck back to `1280×720`.
+- **Preserve-master default**: set `recommend.preserve_master: true`. If the user confirms it, every generated output slide keeps the source slide with the same ordinal's layout/master relationship: source slide 1's layout → output slide 1, source slide 2's layout → output slide 2, and so on. This is real OOXML preservation, not a visual imitation; master/layout background images and fixed chrome stay in the PPTX master/layout parts and are not redrawn into SVG. If the user turns it off, the export may use a completely new generated background.
 - **Our recommendation is the pre-selected default = the source replica**: for color and typography, author **several candidates** like the from-scratch flow. The pre-selected default (`selected: 0`, the first card) is what beautify recommends — the candidate that **best replicates the source deck's style** (the truest reading of `theme` / `observed`). Replicate-by-default.
 - **Judge the other alternatives exactly as the from-scratch flow does — fonts as much as colors**: don't invent a beautify-specific rule. Author each non-replica candidate with the **same content-driven judgment the Strategist uses when generating from scratch** (color §e, typography §g), applied to the material this project provides — the source document's content and subject, the company's own theme colors, and any brand signal. Pick the palette **and** the font pairing by what fits *this* deck's content; fonts are chosen by content fit, not just defaulted to a safe face. Reach **≥3 candidates total** (PPT-safe stacks; the same creative-choice rule used elsewhere) so a user who departs from the replica still lands on a considered, content-fitting direction — depart-by-choice.
 - **`body_size` is the load-bearing field, and the replica follows the source's own size**: seed the replica candidate's `body_size` from the source's actual body size — take the dominant `observed.sizes_pt` value (the most frequent run-level size, the **body proxy**) and **convert it to px (`× 4/3`)** before seeding, since the system is px-only and the source measures in pt: a source 20pt body becomes `26.67`px, so the replica renders at the source's true size (seeding the bare `20` as px would shrink it ~25% — the pt-as-px trap). Whichever source value you land on below (observed mode, or `theme.sizes.body`) gets the same `× 4/3` conversion. The confirm page (and chat fallback) then writes that px to `result.json` (`body_size`) **directly — no further conversion, no `body_size_pt` provenance** (pt never enters the contract). The "most frequent = body" read is a proxy, not a guarantee — `observed.sizes_pt` counts every explicit run size (titles, captions, footnotes, chart/label text included, no placeholder-type resolution), so a deck dense with small labels can let a caption size outrank true body; cross-check the proxy against the page's actual body blocks and the sanity range below before trusting it, and prefer the size the body paragraphs visibly render at over the raw mode when the two disagree. Fall back to `theme.sizes.body` (the declared placeholder size) when `observed.sizes_pt` is empty, and to a PPT delivery-purpose baseline (`text` 20 / `balanced` 24 / `presentation` 32 px — one fixed value per purpose) only when neither is present. Note `theme.sizes.body` is the master `bodyStyle` **level-1 declared default** — a coarse value that commonly **over-reads** the real body density (decks often render body at a deeper outline level or override it smaller), so when you land on this fallback treat it as an upper-ish guess and run it through the sanity check below, never as a precise body size. `theme.sizes.body_levels` and `layout_sizes_pt` are **reference context, not extra fallback tiers**: consult them to judge a saner body value when the deck is theme-driven (`observed` empty) — e.g. a deeper `body_levels` entry or a `layout_sizes_pt` hint may read truer than level-1 — but do not auto-seed from them; the seed chain stays `observed → theme.sizes.body → delivery-purpose baseline`, and a theme-driven deck whose body size genuinely can't be pinned cleanly is exactly the case the sanity check is for. The canvas hint stays a **sanity range**, not the seed: if the source's own size lands far outside it (a dense source doc reads tiny on a projection canvas), surface that to the user rather than silently snapping — the replica recommendation is the source's size, the user confirms or overrides. Non-replica alternatives may use the delivery-purpose baseline. This is what prevents the deck from exporting at an unintentionally small size while still honoring the source.
@@ -199,7 +232,13 @@ python3 ${SKILL_DIR}/scripts/confirm_ui/server.py <project_path> --daemon --wait
 
 Read the confirmed canvas + palette + typography (incl. `body_size`) and any other overrides from `<project_path>/confirm_ui/result.json`. Chat is the canonical fallback when the page cannot open (remote / headless) — present the same fields in chat and honor the reply identically. Always run `--shutdown` on exit (page-confirm or chat-fallback) so port 5050 is free for Step 6 live preview.
 
-On confirmation, enter SKILL.md Step 4 as Strategist with the plan pre-resolved. The two beautify invariants always hold: the content-faithful clause ([`strategist.md`](../references/strategist.md) §d Layer 1) and page count = source slide count (strict 1:1). Everything else comes from the **confirmed** `result.json` — `mode` (recommended `briefing`), canvas, `visual_style`, color (e) + typography (g) incl. `body_size` (the reviewed values; skip both recommendation flows) — honoring whatever the user kept or overrode. §VII = chart/table data → `templates/charts/`, §VIII = source pictures for re-layout.
+On confirmation, enter SKILL.md Step 4 as Strategist with the plan pre-resolved. The two beautify invariants always hold: the content-faithful clause ([`strategist.md`](../references/strategist.md) §d Layer 1) and page count = source slide count (strict 1:1). Everything else comes from the **confirmed** `result.json` — `mode` (recommended `briefing`), canvas, `visual_style`, color (e) + typography (g) incl. `body_size` (the reviewed values; skip both recommendation flows), and `preserve_master` — honoring whatever the user kept or overrode. §VII = chart/table data → `templates/charts/`, §VIII = source pictures for re-layout.
+
+For beautify, the confirmed canvas means **source-exact size plus chosen aspect bucket**. Always write the source-exact viewBox from `source_canvas`, not the catalog default for the bucket.
+
+If `preserve_master` is true, write that into `spec_lock.md` and instruct Executor that source master/layout backgrounds, background pictures, logos, footers, and fixed chrome are already supplied by PowerPoint. Generated SVG pages must contain only slide-local redesigned content layered over that preserved master/layout; do not duplicate the master background or fixed master decorations in SVG.
+
+**Hard rule — no generated page background when preserving master**: for beautify projects with `preserve_master=true`, every generated SVG must omit page-covering background elements. Do **not** create a `<g id="background">`, a full-canvas `<rect>` background, a full-canvas `<image>` background, decorative background grids, overlays, watermarks, or page chrome intended to replace the master. The first visible SVG elements should be slide-local content such as redesigned text groups, charts, tables, pictures, callouts, icons, and local panels. If a local panel needs contrast, draw only the panel's own bounded shape; never cover the whole slide. This avoids double backgrounds and lets the original PPTX master remain the visual base.
 
 **Hard rule — §IX is verbatim and 1:1**: each source slide becomes exactly one page, in source order, its text transcribed word-for-word from `sources/<stem>.md`. Do not merge, split, drop, or rewrite. Write `design_spec.md` + `spec_lock.md` per `strategist.md` §6, then hand off to the Executor.
 
@@ -209,9 +248,14 @@ On confirmation, enter SKILL.md Step 4 as Strategist with the plan pre-resolved.
 
 Run the standard pipeline (SKILL.md Steps 6–7). The Executor re-lays-out each page — hierarchy, spacing, alignment, page rhythm — using **only** the inherited palette + fonts from `spec_lock.md`, regenerates charts / tables as native SVG from the extracted data, and re-lays-out the source pictures.
 
+Before generating each page, re-read `spec_lock.md` and verify the SVG root matches its source-size viewBox. For beautify, a standard bucket viewBox (`1280×720` / `1024×768`) is wrong if the source canvas in `spec_lock.md` differs. Fix the SVG before preview/export; never rely on a later PPTX scaling patch.
+
+When `spec_lock.md` says `preserve_master: true`, also verify that the SVG does not include a full-slide background or master-like chrome. A page-covering `rect`, `image`, grid, overlay, watermark, logo, footer, or header is a workflow error unless it is explicitly slide-local content confirmed for that page. The live preview may look sparse without a generated background, but the exported PPTX will show the preserved source master behind it.
+
 ```bash
 python3 ${SKILL_DIR}/scripts/finalize_svg.py <project_path>
-python3 ${SKILL_DIR}/scripts/svg_to_pptx.py <project_path>
+python3 ${SKILL_DIR}/scripts/svg_to_pptx.py <project_path> --base-pptx <project_path>/sources/<source.pptx>  # if confirmed preserve_master=true
+python3 ${SKILL_DIR}/scripts/svg_to_pptx.py <project_path>  # if confirmed preserve_master=false
 ```
 
 ---
@@ -228,6 +272,7 @@ python3 ${SKILL_DIR}/scripts/source_to_md/ppt_to_md.py <project_path>/exports/<o
 | Data fidelity | chart categories / series / table cells match the source exactly |
 | Page count | output slide count equals the source slide count |
 | Regenerated visuals | charts / tables are native SVG re-themed to the inherited palette |
+| Master preservation | when `preserve_master=true`, output slide N uses source slide N's original slideLayout/master mapping; source master/layout backgrounds and background-image media remain in OOXML master/layout parts |
 | Identity | generated text / shapes use only `<stem>.identity.json` colors + fonts |
 | Paste-back | copying a beautified element into the original deck looks native |
 
@@ -249,6 +294,7 @@ python3 ${SKILL_DIR}/scripts/source_to_md/ppt_to_md.py <project_path>/exports/<o
 |---|---|
 | Re-layout with verbatim text | Supported |
 | Inherit source palette / fonts as truth | Supported |
+| Preserve source master/layout per slide, including master background images | Supported when confirmed |
 | Strict 1:1 page mapping | Supported |
 | Regenerate charts / tables as native SVG from extracted data | Supported |
 | Re-lay-out source pictures | Supported |

@@ -28,6 +28,7 @@ from .pptx_dimensions import (
     CANVAS_FORMATS,
     get_slide_dimensions, get_pixel_dimensions,
     get_viewbox_dimensions, detect_format_from_svg,
+    get_pptx_slide_dimensions_emu,
 )
 from .pptx_media import (
     PNG_RENDERER,
@@ -122,6 +123,32 @@ def _add_default_content_type(content_types: str, extension: str, content_type: 
     if override_pos >= 0:
         return content_types[:override_pos] + entry + '\n' + content_types[override_pos:]
     return content_types.replace('</Types>', entry + '\n</Types>')
+
+
+def _add_override_content_type(content_types: str, part_name: str, content_type: str) -> str:
+    """Add an Override by PartName, independent of formatting/order."""
+    if re.search(r'<Override\b[^>]*\bPartName="' + re.escape(part_name) + r'"[^>]*/>', content_types):
+        return content_types
+    entry = f'  <Override PartName="{part_name}" ContentType="{content_type}"/>'
+    return content_types.replace('</Types>', entry + '\n</Types>')
+
+
+def _dedupe_content_type_overrides(content_types: str) -> str:
+    """Drop duplicate Override entries with the same PartName, keeping the first."""
+    seen: set[str] = set()
+
+    def repl(match: re.Match[str]) -> str:
+        element = match.group(0)
+        part_match = re.search(r'\bPartName="([^"]+)"', element)
+        if not part_match:
+            return element
+        part_name = part_match.group(1)
+        if part_name in seen:
+            return ''
+        seen.add(part_name)
+        return element
+
+    return re.sub(r'\s*<Override\b[^>]*/>\s*', repl, content_types)
 
 
 _IMAGE_CONTENT_TYPES = {
@@ -237,6 +264,71 @@ def _relax_output_permissions(output_path: Path) -> list[str]:
 _NOTES_MASTER_REL_TYPE = (
     'http://schemas.openxmlformats.org/officeDocument/2006/relationships/notesMaster'
 )
+_NOTES_SLIDE_REL_TYPE = (
+    'http://schemas.openxmlformats.org/officeDocument/2006/relationships/notesSlide'
+)
+
+
+def _remove_relationships_by_type(rels_path: Path, rel_type: str) -> None:
+    """Remove every relationship entry with the given Type from a .rels file."""
+    if not rels_path.exists():
+        return
+    content = rels_path.read_text(encoding='utf-8')
+    pattern = re.compile(
+        r'\s*<Relationship\b(?=[^>]*\bType="' + re.escape(rel_type) + r'")[^>]*/>\s*'
+    )
+    new_content = pattern.sub('\n', content)
+    if new_content != content:
+        rels_path.write_text(new_content, encoding='utf-8')
+
+
+def _strip_existing_notes(extract_dir: Path) -> None:
+    """Remove notes inherited from a base PPTX before writing generated notes.
+
+    Beautify exports replace each slide's local XML. If the base deck already
+    carried notes, keeping those note parts while also generating new ones can
+    produce duplicate ``[Content_Types].xml`` overrides and stale relationships,
+    which PowerPoint reports as a repairable presentation. Start from a clean
+    notes state, then let the current export add exactly one notes set.
+    """
+    ppt_dir = extract_dir / 'ppt'
+
+    shutil.rmtree(ppt_dir / 'notesSlides', ignore_errors=True)
+    shutil.rmtree(ppt_dir / 'notesMasters', ignore_errors=True)
+
+    for rels_path in (ppt_dir / 'slides' / '_rels').glob('slide*.xml.rels'):
+        _remove_relationships_by_type(rels_path, _NOTES_SLIDE_REL_TYPE)
+
+    _remove_relationships_by_type(
+        ppt_dir / '_rels' / 'presentation.xml.rels',
+        _NOTES_MASTER_REL_TYPE,
+    )
+
+    presentation_path = ppt_dir / 'presentation.xml'
+    if presentation_path.exists():
+        presentation_xml = presentation_path.read_text(encoding='utf-8')
+        presentation_xml = re.sub(
+            r'\s*<p:notesMasterIdLst\b[^>]*>.*?</p:notesMasterIdLst>\s*',
+            '',
+            presentation_xml,
+            flags=re.S,
+        )
+        presentation_path.write_text(presentation_xml, encoding='utf-8')
+
+    content_types_path = extract_dir / '[Content_Types].xml'
+    if content_types_path.exists():
+        content_types = content_types_path.read_text(encoding='utf-8')
+        content_types = re.sub(
+            r'\s*<Override\b[^>]*\bPartName="/ppt/notesSlides/notesSlide\d+\.xml"[^>]*/>\s*',
+            '\n',
+            content_types,
+        )
+        content_types = re.sub(
+            r'\s*<Override\b[^>]*\bPartName="/ppt/notesMasters/notesMaster\d+\.xml"[^>]*/>\s*',
+            '\n',
+            content_types,
+        )
+        content_types_path.write_text(content_types, encoding='utf-8')
 
 
 def _ensure_notes_master(extract_dir: Path) -> None:
@@ -470,9 +562,99 @@ def _prerender_legacy_pngs(
     return results
 
 
-_REL_TARGET_RE = re.compile(r'<Relationship\b[^/]*?/>', re.DOTALL)
+_REL_TARGET_RE = re.compile(r'<Relationship\b[^>]*?/>', re.DOTALL)
 _TARGET_ATTR_RE = re.compile(r'Target="([^"]+)"')
 _TARGET_MODE_EXT_RE = re.compile(r'TargetMode="External"')
+_REL_TYPE_ATTR_RE = re.compile(r'Type="([^"]+)"')
+_SLIDE_LAYOUT_REL_TYPE = (
+    'http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout'
+)
+
+
+def _slide_numbers(extract_dir: Path) -> list[int]:
+    """Return numeric slide part ids present in the extracted package."""
+    slides_dir = extract_dir / 'ppt' / 'slides'
+    numbers: list[int] = []
+    if not slides_dir.exists():
+        return numbers
+    for path in slides_dir.glob('slide*.xml'):
+        match = re.fullmatch(r'slide(\d+)\.xml', path.name)
+        if match:
+            numbers.append(int(match.group(1)))
+    return sorted(numbers)
+
+
+def _slide_layout_target(extract_dir: Path, slide_num: int) -> str:
+    """Return the source slide's layout relationship target.
+
+    The base-pptx beautify path must preserve the per-page layout/master mapping:
+    output slide N keeps source slide N's slideLayout relationship, so master,
+    layout backgrounds, background pictures, footers, logos, and fixed chrome
+    remain PowerPoint-native master/layout content rather than being redrawn.
+    """
+    rels_path = extract_dir / 'ppt' / 'slides' / '_rels' / f'slide{slide_num}.xml.rels'
+    if not rels_path.exists():
+        raise RuntimeError(f'base PPTX slide {slide_num} is missing its relationships file')
+    content = rels_path.read_text(encoding='utf-8')
+    for match in _REL_TARGET_RE.finditer(content):
+        element = match.group(0)
+        type_match = _REL_TYPE_ATTR_RE.search(element)
+        if not type_match or type_match.group(1) != _SLIDE_LAYOUT_REL_TYPE:
+            continue
+        target_match = _TARGET_ATTR_RE.search(element)
+        if not target_match:
+            continue
+        return target_match.group(1)
+    raise RuntimeError(f'base PPTX slide {slide_num} has no slideLayout relationship')
+
+
+def _extract_base_package(
+    base_pptx: Path | None,
+    extract_dir: Path,
+    slide_count: int,
+    width_emu: int,
+    height_emu: int,
+) -> None:
+    """Create the working PPTX package, optionally from a source deck.
+
+    Without ``base_pptx`` this keeps the historical blank python-pptx base. With
+    ``base_pptx`` it extracts the source package intact and later only slide-local
+    XML/rels are replaced; masters/layouts/themes/media stay in place.
+    """
+    if base_pptx is None:
+        prs = Presentation()
+        prs.slide_width = width_emu
+        prs.slide_height = height_emu
+
+        blank_layout = prs.slide_layouts[6]
+        for _ in range(slide_count):
+            prs.slides.add_slide(blank_layout)
+
+        base_pptx_path = extract_dir.parent / 'base.pptx'
+        prs.save(str(base_pptx_path))
+        with zipfile.ZipFile(base_pptx_path, 'r') as zf:
+            zf.extractall(extract_dir)
+        return
+
+    if not base_pptx.exists():
+        raise FileNotFoundError(f'base PPTX does not exist: {base_pptx}')
+    if base_pptx.suffix.lower() != '.pptx':
+        raise ValueError(f'base PPTX must be a .pptx file: {base_pptx}')
+    with zipfile.ZipFile(base_pptx, 'r') as zf:
+        zf.extractall(extract_dir)
+
+    base_slide_numbers = _slide_numbers(extract_dir)
+    if len(base_slide_numbers) != slide_count:
+        raise RuntimeError(
+            '--base-pptx requires 1:1 slide correspondence: '
+            f'base has {len(base_slide_numbers)} slide(s), SVG input has {slide_count}'
+        )
+    expected = list(range(1, slide_count + 1))
+    if base_slide_numbers != expected:
+        raise RuntimeError(
+            '--base-pptx currently requires contiguous slide parts '
+            f'slide1..slide{slide_count}; found {base_slide_numbers}'
+        )
 
 
 def _verify_internal_rels_targets(extract_dir: Path) -> list[str]:
@@ -626,6 +808,7 @@ def create_pptx_with_native_svg(
     merge_paragraphs: bool = True,
     conversion_trace_path: Path | None = None,
     doc_metadata: dict[str, Any] | None = None,
+    base_pptx: Path | None = None,
 ) -> bool:
     """Create a PPTX file with native SVG.
 
@@ -654,6 +837,8 @@ def create_pptx_with_native_svg(
         use_narration_timings: Whether to set slide auto-advance from audio duration.
         narration_padding: Extra seconds added after each narration before advancing.
         conversion_trace_path: Optional JSON path for native conversion diagnostics.
+        base_pptx: Optional source PPTX package. When provided, output slide N
+            preserves source slide N's slideLayout/master mapping.
 
     Returns:
         Whether all slides were successfully created.
@@ -695,8 +880,23 @@ def create_pptx_with_native_svg(
     width_emu, height_emu = get_slide_dimensions(canvas_format or 'ppt169', custom_pixels)
     pixel_width, pixel_height = get_pixel_dimensions(canvas_format or 'ppt169', custom_pixels)
 
+    # Beautify exports that preserve a source master must target the source
+    # package's *actual* slide size. Some 16:9 decks use a 2x EMU canvas
+    # (e.g. 24,384,000 × 13,716,000) while our canonical ppt169 SVG coordinate
+    # system is 1280×720. If we keep the source package but use canonical EMUs,
+    # generated content lands in the top-left quarter. Keep SVG pixels/viewBox as
+    # the authoring coordinate system, but map those pixels onto the base PPTX
+    # p:sldSz when --base-pptx is used.
+    base_size_emu: tuple[int, int] | None = None
+    if base_pptx:
+        base_size_emu = get_pptx_slide_dimensions_emu(base_pptx)
+        if base_size_emu:
+            width_emu, height_emu = base_size_emu
+
     if verbose:
         print(f"  Slide dimensions: {pixel_width} x {pixel_height} px")
+        if base_size_emu:
+            print(f"  Output slide size from base PPTX: {width_emu} x {height_emu} EMU")
         print(f"  SVG file count: {len(svg_files)}")
         if use_native_shapes:
             print(f"  Mode: Native DrawingML shapes (directly editable)")
@@ -705,6 +905,9 @@ def create_pptx_with_native_svg(
             print(f"  PNG renderer: {renderer_name} {renderer_status}")
         else:
             print(f"  Compatibility mode: Disabled (pure SVG)")
+        if base_pptx:
+            print(f"  Base PPTX: {base_pptx}")
+            print("  Master/layout preservation: enabled (source slide N layout -> output slide N)")
         if transition:
             trans_name = TRANSITIONS.get(transition, {}).get('name', transition) if TRANSITIONS else transition
             print(f"  Transition effect: {trans_name}")
@@ -721,22 +924,10 @@ def create_pptx_with_native_svg(
     temp_dir = _create_writable_work_dir(output_path)
 
     try:
-        # Create base PPTX with python-pptx
-        prs = Presentation()
-        prs.slide_width = width_emu
-        prs.slide_height = height_emu
-
-        blank_layout = prs.slide_layouts[6]
-        for _ in svg_files:
-            prs.slides.add_slide(blank_layout)
-
-        base_pptx = temp_dir / 'base.pptx'
-        prs.save(str(base_pptx))
-
-        # Extract PPTX
         extract_dir = temp_dir / 'pptx_content'
-        with zipfile.ZipFile(base_pptx, 'r') as zf:
-            zf.extractall(extract_dir)
+        _extract_base_package(base_pptx, extract_dir, len(svg_files), width_emu, height_emu)
+        if base_pptx:
+            _strip_existing_notes(extract_dir)
 
         media_dir = extract_dir / 'ppt' / 'media'
         media_dir.mkdir(exist_ok=True)
@@ -770,6 +961,7 @@ def create_pptx_with_native_svg(
 
         for i, svg_path in enumerate(svg_files, 1):
             slide_num = i
+            slide_layout_target = _slide_layout_target(extract_dir, slide_num)
 
             try:
                 # ---- Native shapes mode ----
@@ -780,6 +972,8 @@ def create_pptx_with_native_svg(
                             svg_path, slide_num=slide_num, verbose=verbose,
                             merge_paragraphs=merge_paragraphs,
                             trace_out=conversion_trace,
+                            width_emu=width_emu,
+                            height_emu=height_emu,
                         )
                     )
                     slide_transition, slide_transition_duration, slide_auto_advance = (
@@ -887,7 +1081,7 @@ def create_pptx_with_native_svg(
 
                     rels_xml = f'''<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <Relationships xmlns="http://schemas.openxmlformats.org/package/2006/relationships">
-  <Relationship Id="rId1" Type="http://schemas.openxmlformats.org/officeDocument/2006/relationships/slideLayout" Target="../slideLayouts/slideLayout1.xml"/>{extra_rels}
+  <Relationship Id="rId1" Type="{_SLIDE_LAYOUT_REL_TYPE}" Target="{slide_layout_target}"/>{extra_rels}
 </Relationships>'''
                     with open(rels_path, 'w', encoding='utf-8') as f:
                         f.write(rels_xml)
@@ -957,6 +1151,7 @@ def create_pptx_with_native_svg(
                         png_rid=png_rid, png_filename=png_filename,
                         svg_rid=svg_rid, svg_filename=svg_filename,
                         use_compat_mode=(use_compat_mode and slide_has_png),
+                        slide_layout_target=slide_layout_target,
                     )
                     with open(rels_path, 'w', encoding='utf-8') as f:
                         f.write(rels_xml)
@@ -1101,31 +1296,23 @@ def create_pptx_with_native_svg(
 
         # Add notes master / slides content types
         if enable_notes and notes_slides_created:
-            notes_theme_override = (
-                '  <Override PartName="/ppt/theme/theme2.xml" '
-                'ContentType="application/vnd.openxmlformats-officedocument.theme+xml"/>'
+            content_types = _add_override_content_type(
+                content_types,
+                '/ppt/theme/theme2.xml',
+                'application/vnd.openxmlformats-officedocument.theme+xml',
             )
-            if notes_theme_override not in content_types:
-                content_types = content_types.replace(
-                    '</Types>',
-                    notes_theme_override + '\n</Types>',
-                )
-            notes_master_override = (
-                '  <Override PartName="/ppt/notesMasters/notesMaster1.xml" '
-                'ContentType="application/vnd.openxmlformats-officedocument.presentationml.notesMaster+xml"/>'
+            content_types = _add_override_content_type(
+                content_types,
+                '/ppt/notesMasters/notesMaster1.xml',
+                'application/vnd.openxmlformats-officedocument.presentationml.notesMaster+xml',
             )
-            if notes_master_override not in content_types:
-                content_types = content_types.replace(
-                    '</Types>',
-                    notes_master_override + '\n</Types>',
-                )
             for i in sorted(notes_slides_created):
-                override = (
-                    f'  <Override PartName="/ppt/notesSlides/notesSlide{i}.xml" '
-                    f'ContentType="application/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml"/>'
+                content_types = _add_override_content_type(
+                    content_types,
+                    f'/ppt/notesSlides/notesSlide{i}.xml',
+                    'application/vnd.openxmlformats-officedocument.presentationml.notesSlide+xml',
                 )
-                if override not in content_types:
-                    content_types = content_types.replace('</Types>', override + '\n</Types>')
+            content_types = _dedupe_content_type_overrides(content_types)
             with open(content_types_path, 'w', encoding='utf-8') as f:
                 f.write(content_types)
 

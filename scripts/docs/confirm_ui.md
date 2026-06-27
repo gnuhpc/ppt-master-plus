@@ -70,6 +70,7 @@ The AI launches Tier 1 (`--daemon --wait`), reads the tier-1 result, **re-derive
     "visual_style": "swiss-minimal",
     "icons": "tabler-outline",
     "image_usage": "web",
+    "preserve_master": true,
     "formula_policy": "mixed",
     "generation_mode": "continuous",
     "delivery_purpose": "balanced"
@@ -125,6 +126,7 @@ The AI launches Tier 1 (`--daemon --wait`), reads the tier-1 result, **re-derive
 > Each `candidates` array above shows **one** entry for brevity — the creative fields (`color`, `typography`, `image_strategy`) must each carry **≥3** in a real file (see the rule above); `selected` indexes the recommended default.
 
 - `recommend.*` names the recommended `id` for each enumerable field (must match a `catalogs.json` id, or be a free string for a recommended custom value). The page badges and pre-selects it. **Guarantee**: if a `recommend.*` is omitted, the page falls back to the first catalog option so every enumerable field always shows one badged recommendation — but the AI should still set them for a meaningful default. Legacy aliases are accepted for old files (`line` → `tabler-outline`, `filled` → `tabler-filled`, `monochrome` → `chunk-filled`, `search` → `web`, `default` → `auto`, `builtin` → `host-native`), but new files should write canonical ids. For `recommend.image_usage`, do not write bare `"custom"`; if several image sources are mixed, write the concrete prose plan directly, such as `"封面用 AI 生成，产品页用用户素材，行业页用网络来源"` / `"AI cover + user product assets + web industry images"`.
+- `recommend.preserve_master` is a beautify-only boolean. When present, the page shows a source-master choice and writes `preserve_master: true|false` to the final result. Default it to `true` for existing-PPTX beautification so output slide N preserves source slide N's slideLayout/master mapping, including master/layout backgrounds, background images, logos, footers, fixed decorations, theme, media, and relationships. Omit it for normal from-scratch generation.
 - When `recommend.image_usage` is `ai` or a custom plan that includes AI, also set `recommend.image_ai_path` to one of `auto` / `api` / `host-native` / `manual`; the page presents these as explicit choices.
 - For a custom image plan, the page treats "may include AI" as true only when the recommendation includes `recommend.image_ai_path` or `image_strategy.candidates`; a custom plan without those signals is handled as non-AI and omits AI controls / fields.
 - **Color candidates carry the user-facing core `palette`**: `background`, `secondary_bg`, `primary`, `accent`, `secondary_accent`, and `body_text`. The page renders labelled swatches and offers per-role override inputs for precise single-role edits, plus a **Custom color card with a free-text box** (parallel to the custom typography box) — the user can describe the palette in words or paste HEX values instead of filling each role; this writes `color: { "name": "custom", "custom": "<text>" }` to `result.json` for the AI to interpret. Legacy `text` is accepted as an alias for `body_text`, but new files should write `body_text`. Strategist derives secondary text, borders, state colors, and visual-style neutral tiers later when writing `design_spec.md` / `spec_lock.md`; those are not user-facing confirmation choices.
@@ -155,6 +157,7 @@ The AI launches Tier 1 (`--daemon --wait`), reads the tier-1 result, **re-derive
   "delivery_purpose": "balanced",
   "formula_policy": "mixed",
   "image_usage": "web",
+  "preserve_master": true,
   "image_strategy": { "name": "方案 A", "rendering": "vector-illustration", "palette": "cool-corporate", "visual": "...", "color": "...", "mood": "..." },
   "generation_mode": "continuous",
   "refine_spec": false,
@@ -167,6 +170,7 @@ The AI launches Tier 1 (`--daemon --wait`), reads the tier-1 result, **re-derive
 The shape above is the **final** (Tier 2) result, carrying all Tier 1 + Tier 2 fields. The intermediate **Tier 1** write carries only the anchor fields plus `"stage": "tier1"`, `"status": "tier1-confirmed"`; the AI reads it to re-derive Tier 2 and never treats it as the final confirmation. A legacy single-pass write has no `stage` (or `stage: "final"`) and `status: "confirmed"`.
 
 - Any option field may instead hold a **free-text custom string** (the user picked **Custom**); `color` / `typography` custom entries set `name: "custom"`. Image usage custom values must be concrete prose plans, not the literal string `"custom"`. The AI interprets custom text against the canonical references.
+- `preserve_master`, when present, is authoritative for the beautify export route. `true` means call `svg_to_pptx.py --base-pptx <source.pptx>` and preserve each source slide's own layout/master relationship one-to-one. `false` means use the standard clean export base.
 - `image_ai_path` and `image_strategy` are omitted from `result.json` unless `image_usage` is `ai` or a custom image plan that may include generated images. Both are honored downstream as confirmed choices — and the page is only a convenience surface over the **canonical chat channel**: the same choices made in chat are honored identically when no `result.json` exists. `image_ai_path` drives the Step 5 generation path (`image-generator.md` §7 — `host-native` forces the host tool even when `IMAGE_BACKEND` is set); the chosen `image_strategy` candidate is locked verbatim by Strategist h.5 (no re-pick).
 - After the user clicks the **final Confirm** (Tier 2, or single-pass), the page saves `result.json` and shuts the server down (auto-close). A Tier-1 **Next** instead keeps the page open (it polls for the re-derived Tier 2). In the default flow, the first `--daemon --wait` returns on the tier-1 result and the second `--wait-only` returns on the final result; the AI reads each immediately — no extra chat confirmation is required. Chat confirmation remains the fallback when the page cannot be used. Either way, Step 4 ends with a `--shutdown` cleanup so a never-confirmed page cannot keep holding port 5050 ahead of the Step 6 live preview.
 

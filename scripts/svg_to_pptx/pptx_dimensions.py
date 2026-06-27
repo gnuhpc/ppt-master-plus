@@ -4,6 +4,7 @@ from __future__ import annotations
 
 import re
 import sys
+import zipfile
 from pathlib import Path
 from xml.etree import ElementTree as ET
 
@@ -65,6 +66,33 @@ def get_slide_dimensions(
             width_px, height_px = 1280, 720
 
     return int(width_px * EMU_PER_PIXEL), int(height_px * EMU_PER_PIXEL)
+
+
+def get_pptx_slide_dimensions_emu(pptx_path: Path) -> tuple[int, int] | None:
+    """Read the exact PowerPoint slide size from a PPTX package.
+
+    PPTX files can be 16:9 but not the repository's canonical 1280×720 @96dpi
+    EMU size. Beautify exports that preserve a source master must honor the
+    source package's actual ``p:sldSz`` or generated content may occupy only a
+    corner of the slide.
+    """
+    try:
+        with zipfile.ZipFile(pptx_path, 'r') as zf:
+            root = ET.fromstring(zf.read('ppt/presentation.xml'))
+    except (OSError, KeyError, ET.ParseError, zipfile.BadZipFile):
+        return None
+
+    size = root.find('p:sldSz', NAMESPACES)
+    if size is None:
+        return None
+    try:
+        cx = int(size.attrib.get('cx', '0'))
+        cy = int(size.attrib.get('cy', '0'))
+    except ValueError:
+        return None
+    if cx <= 0 or cy <= 0:
+        return None
+    return cx, cy
 
 
 def get_pixel_dimensions(

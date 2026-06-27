@@ -61,8 +61,10 @@ Generate or refine one slide at a time. For each slide:
 1. Re-read `spec_lock.md` and generate the SVG.
 2. Write or update its delivery-ready speaker notes.
 3. Run the relevant SVG checks and show the slide in Live Preview.
-4. Apply browser annotations or chat feedback and preview it again.
+4. When the user requests it, apply browser annotations immediately even though Step 7 has not run: remove resolved markers, run the SVG quality checker, and preview the slide again. Apply chat feedback through the same check-and-preview loop.
 5. Wait for explicit approval before moving to the next slide.
+
+**Preview surface rule**: per-slide style confirmation uses Live Preview directly. Do not render a PNG/screenshot of the slide and ask a model to visually re-check it as part of the approval loop. The optional `visual-review` workflow is not a substitute for the user's per-slide approval and must not be auto-run during this gate.
 
 Do not interpret approval of one slide as approval of later slides.
 

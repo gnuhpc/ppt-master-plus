@@ -9,8 +9,9 @@ from typing import Any
 from xml.etree import ElementTree as ET
 
 from .drawingml_context import ConvertContext, ShapeResult
+from .pptx_dimensions import get_viewbox_dimensions
 from .drawingml_utils import (
-    SVG_NS, EMU_PER_PX,
+    SVG_NS, EMU_PER_PX, set_emu_per_px,
     _extract_inheritable_styles, parse_transform_matrix, resolve_url_id,
 )
 from .drawingml_styles import build_effect_xml
@@ -422,6 +423,8 @@ def convert_svg_to_slide_shapes(
     verbose: bool = False,
     merge_paragraphs: bool = True,
     trace_out: list[dict[str, Any]] | None = None,
+    width_emu: int | None = None,
+    height_emu: int | None = None,
 ) -> tuple[str, dict[str, bytes], list[dict[str, str]], list]:
     """Convert an SVG file to a complete DrawingML slide XML.
 
@@ -434,6 +437,11 @@ def convert_svg_to_slide_shapes(
             editable text frame with multiple <a:p>. Disable it to preserve
             the SVG's exact line layout (one textbox per line).
         trace_out: Optional list populated with one per-slide trace dictionary.
+        width_emu / height_emu: Optional target slide dimensions. When supplied,
+            the SVG viewBox is mapped onto this EMU size instead of assuming
+            96dpi (9525 EMU/px). This is required for beautify exports that
+            preserve a source PPTX whose p:sldSz differs from the canonical
+            canvas bucket.
 
     Returns:
         (slide_xml, media_files, rel_entries, anim_targets) where:
@@ -444,6 +452,42 @@ def convert_svg_to_slide_shapes(
           semantic groups, in z-order; consumed by the builder's optional
           per-element entrance timing emitter.
     """
+    previous_emu_per_px: float | None = None
+    if width_emu and height_emu:
+        viewbox_dims = get_viewbox_dimensions(svg_path)
+        if viewbox_dims:
+            vb_w, vb_h = viewbox_dims
+            if vb_w > 0 and vb_h > 0:
+                sx = width_emu / vb_w
+                sy = height_emu / vb_h
+                if abs(sx - sy) / max(sx, sy) > 0.01:
+                    raise SvgNativeConversionError(
+                        f'{svg_path.name}: SVG viewBox aspect does not match target slide size '
+                        f'(x={sx:.3f} EMU/px, y={sy:.3f} EMU/px). '
+                        'Beautify must author SVGs with the source PPTX canvas size.'
+                    )
+                previous_emu_per_px = set_emu_per_px(sx)
+
+    try:
+        return _convert_svg_to_slide_shapes_inner(
+            svg_path,
+            slide_num=slide_num,
+            verbose=verbose,
+            merge_paragraphs=merge_paragraphs,
+            trace_out=trace_out,
+        )
+    finally:
+        if previous_emu_per_px is not None:
+            set_emu_per_px(previous_emu_per_px)
+
+
+def _convert_svg_to_slide_shapes_inner(
+    svg_path: Path,
+    slide_num: int = 1,
+    verbose: bool = False,
+    merge_paragraphs: bool = True,
+    trace_out: list[dict[str, Any]] | None = None,
+) -> tuple[str, dict[str, bytes], list[dict[str, str]], list]:
     tree = ET.parse(str(svg_path))
     root = tree.getroot()
     trace_events: list[dict[str, Any]] | None = [] if trace_out is not None else None

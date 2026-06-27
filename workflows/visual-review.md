@@ -30,6 +30,7 @@ For decks containing data charts, run [`verify-charts`](./verify-charts.md) firs
 - The project has no `svg_output/<page>.svg` files yet — finish Executor first
 - `svg_quality_checker.py` has not been run or has failed — fix static violations first
 - User has already applied annotations via `live-preview` workflow and is in a fixed-edit loop — describe changes directly, do not re-trigger rubric
+- Gated / 逐页确定精修 is waiting for per-slide style approval — use Live Preview directly; do not render PNGs for a model-based re-check
 - The user has not asked for it — do not auto-invoke based on inferred model capability or deck size
 
 ---

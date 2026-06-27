@@ -427,6 +427,8 @@ Auto-split `notes/total.md` into per-page files in `notes/`.
 
 **Post-processing & Export** (same canonical pipeline as [shared-standards.md §5](shared-standards.md)):
 
+**Beautify + `preserve_master=true` background rule**: source master/layout backgrounds and fixed chrome already come from the base PPTX. Generated SVG pages must not add a page-covering background: no `<g id="background">`, full-canvas `<rect>`, full-canvas `<image>`, page-wide overlay, background grid, watermark, duplicated logo/footer/header, or other master-like chrome. Author only slide-local redesigned content and bounded local panels. A live preview may look sparse because it does not show the preserved PowerPoint master; the exported PPTX is the source of truth for the background.
+
 ```bash
 # 1. Split speaker notes
 python3 scripts/total_md_split.py <project_path>
@@ -436,6 +438,8 @@ python3 scripts/finalize_svg.py <project_path>
 
 # 3. Export PPTX
 python3 scripts/svg_to_pptx.py <project_path>
+# Beautify with confirmed preserve_master=true:
+# python3 scripts/svg_to_pptx.py <project_path> --base-pptx <project_path>/sources/<source.pptx>
 # Output (default-flow mode):
 #   exports/<project_name>_<timestamp>.pptx           ← native pptx (canonical output)
 #   backup/<timestamp>/svg_output/                    ← Executor SVG source backup (always written)

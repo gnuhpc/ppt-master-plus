@@ -145,6 +145,21 @@ def px_to_emu(px: float) -> int:
     return round(px * EMU_PER_PX)
 
 
+def set_emu_per_px(value: float) -> float:
+    """Set the process-local SVG-pixel → EMU scale, returning the previous value.
+
+    Most native shape converters call ``px_to_emu`` through this module. Beautify
+    exports that preserve a source PPTX master may need a non-canonical mapping:
+    the SVG viewBox is the authoring coordinate system, while ``--base-pptx``
+    supplies the actual slide ``p:sldSz`` in EMU. The converter sets this value
+    per slide and restores it afterwards.
+    """
+    global EMU_PER_PX
+    previous = EMU_PER_PX
+    EMU_PER_PX = value
+    return previous
+
+
 def _f(val: str | None, default: float = 0.0) -> float:
     """Parse a float attribute value, returning default if missing."""
     if val is None:

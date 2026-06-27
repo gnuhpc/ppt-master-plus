@@ -24,6 +24,13 @@
             lang_toggle_title: "Switch language",
             sec_canvas: "Canvas format",
             sec_pages: "Page count",
+            sec_preserve_master: "Source master",
+            preserve_master_yes: "Preserve source master/layouts",
+            preserve_master_yes_desc: "Keep each output slide on the same source slide layout/master, including master backgrounds and background images.",
+            preserve_master_no: "Create a new deck",
+            preserve_master_no_desc: "Do not preserve the source master; use a newly generated visual system.",
+            preserve_master_note_on: "Output slide N keeps source slide N's layout/master mapping.",
+            preserve_master_note_off: "The source master is not used; only the beautify 1:1 content contract remains.",
             sec_audience: "Target audience",
             sec_style: "Style objective",
             sec_color: "Color scheme",
@@ -81,7 +88,8 @@
             sample_latin: "Digital Transformation",
             style_preview_label: "Overall impression (color + typography)",
             style_preview_body: "· rough feel only, not the actual slide layout",
-            mode_continuous_desc: "Generate the whole deck in one pass.",
+            mode_continuous_desc: "Generate the whole deck in one pass without interruptions.",
+            mode_gated_desc: "Stop at every slide for preview and manual approval before continuing.",
             mode_split_desc: "Stop after the spec; resume SVG generation in a fresh window.",
             refine_off_desc: "Spec is written in one go; the pipeline auto-proceeds.",
             refine_on_desc: "Stop after the spec for review/revision before any generation.",
@@ -104,6 +112,13 @@
             lang_toggle_title: "切换语言",
             sec_canvas: "画布格式",
             sec_pages: "页数",
+            sec_preserve_master: "源 PPT 母版",
+            preserve_master_yes: "保留源 PPT 母版/版式",
+            preserve_master_yes_desc: "输出第 N 页继续使用源第 N 页的同一版式/母版，完整保留母版背景和背景图片。",
+            preserve_master_no: "完全新建",
+            preserve_master_no_desc: "不保留源母版，使用重新生成的视觉系统。",
+            preserve_master_note_on: "输出第 N 页会一一对应保留源第 N 页的版式/母版映射。",
+            preserve_master_note_off: "不使用源母版，仅保留 beautify 的内容 1:1 约束。",
             sec_audience: "目标受众",
             sec_style: "风格目标",
             sec_color: "色彩方案",
@@ -161,7 +176,8 @@
             sample_latin: "Digital Transformation",
             style_preview_label: "整体形象（配色 + 字体）",
             style_preview_body: "· 仅大致形象，非实际版式",
-            mode_continuous_desc: "一次性连续生成整份演示文稿。",
+            mode_continuous_desc: "一次性连续生成整份演示文稿，不中途打断。",
+            mode_gated_desc: "生成每一页都停下，在 Live Preview 预览并等待你确认后再继续下一页。",
             mode_split_desc: "写完设计规范后停止，另开窗口继续生成页面。",
             refine_off_desc: "设计规范一次写完，流程自动继续。",
             refine_on_desc: "写完设计规范后停下供你审阅或修改，再开始生成。",
@@ -540,6 +556,50 @@
         var sec = section(2, "sec_pages");
         textField(sec, function () { return STATE.page_count; },
             function (v) { STATE.page_count = v; }, "placeholder_pages", true);
+        host.appendChild(sec);
+    }
+
+    function hasPreserveMasterField() {
+        return !!(REC && (
+            (REC.recommend && Object.prototype.hasOwnProperty.call(REC.recommend, "preserve_master")) ||
+            Object.prototype.hasOwnProperty.call(REC, "preserve_master")
+        ));
+    }
+
+    function recommendedPreserveMaster() {
+        if (REC && REC.recommend && Object.prototype.hasOwnProperty.call(REC.recommend, "preserve_master")) {
+            return REC.recommend.preserve_master !== false;
+        }
+        if (REC && Object.prototype.hasOwnProperty.call(REC, "preserve_master")) {
+            var raw = REC.preserve_master;
+            if (raw && typeof raw === "object" && Object.prototype.hasOwnProperty.call(raw, "value")) raw = raw.value;
+            return raw !== false && raw !== "false" && raw !== "off";
+        }
+        return true;
+    }
+
+    function renderPreserveMaster(host) {
+        if (!hasPreserveMasterField()) return;
+        var sec = section(2, "sec_preserve_master");
+        var opts = [
+            {
+                id: "on",
+                label: t("preserve_master_yes"),
+                desc: t("preserve_master_yes_desc")
+            },
+            {
+                id: "off",
+                label: t("preserve_master_no"),
+                desc: t("preserve_master_no_desc")
+            }
+        ];
+        function refresh() {
+            setSectionNote(sec, STATE.preserve_master ? t("preserve_master_note_on") : t("preserve_master_note_off"));
+        }
+        enumField(sec, opts, recommendedPreserveMaster() ? "on" : "off",
+            function () { return STATE.preserve_master ? "on" : "off"; },
+            function (v) { STATE.preserve_master = (v === "on"); refresh(); });
+        refresh();
         host.appendChild(sec);
     }
 
@@ -1209,7 +1269,10 @@
     function renderMode(host) {
         var sec = section("M", "sec_mode");
         function refresh() {
-            setSectionNote(sec, STATE.generation_mode === "split" ? t("mode_split_desc") : t("mode_continuous_desc"));
+            var desc = t("mode_continuous_desc");
+            if (STATE.generation_mode === "split") desc = t("mode_split_desc");
+            else if (STATE.generation_mode === "gated") desc = t("mode_gated_desc");
+            setSectionNote(sec, desc);
         }
         enumField(sec, CAT.generation_mode, recOrFirst("generation_mode", CAT.generation_mode),
             function () { return STATE.generation_mode; }, function (v) { STATE.generation_mode = v; refresh(); });
@@ -1259,6 +1322,7 @@
                 renderStyle(host);
             }
             renderPages(host);
+            renderPreserveMaster(host);
             // Group the preview with the three sections it reflects so its sticky
             // scope ends when typography scrolls past — it does not linger over the
             // image / mode / refine sections below.
@@ -1336,6 +1400,11 @@
 
         STATE.generation_mode = pick("generation_mode", CAT.generation_mode);
         STATE.refine_spec = !!((REC.refine_spec && REC.refine_spec.value) || (REC.recommend && REC.recommend.refine_spec));
+        if (hasPreserveMasterField()) {
+            STATE.preserve_master = recommendedPreserveMaster();
+        } else {
+            delete STATE.preserve_master;
+        }
         // Guarantee a body baseline even when a candidate omitted body_size, on
         // any canvas (PPT → px default by purpose, non-PPT → px from canvas height),
         // so role sizes never derive from an empty anchor.
