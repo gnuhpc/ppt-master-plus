@@ -1,0 +1,269 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><radialGradient id="ggrad1" cx="0.5" cy="0.5" r="0.5"><stop offset="0.54" stop-color="#D0DBF0" stop-opacity="0" /><stop offset="0" stop-color="#305598" stop-opacity="0" /><stop offset="1" stop-color="#305598" stop-opacity="0.33" /></radialGradient><radialGradient id="ggrad2" cx="0.5" cy="0.5" r="0.5"><stop offset="0.54" stop-color="#D0DBF0" stop-opacity="0" /><stop offset="0" stop-color="#305598" stop-opacity="0" /><stop offset="1" stop-color="#305598" stop-opacity="0.33" /></radialGradient><radialGradient id="ggrad3" cx="0.5" cy="0.5" r="0.5"><stop offset="0.54" stop-color="#D0DBF0" stop-opacity="0" /><stop offset="0" stop-color="#305598" stop-opacity="0" /><stop offset="1" stop-color="#305598" stop-opacity="0.33" /></radialGradient><radialGradient id="ggrad4" cx="0.5" cy="0.5" r="0.5"><stop offset="0.54" stop-color="#D0DBF0" stop-opacity="0" /><stop offset="0" stop-color="#305598" stop-opacity="0" /><stop offset="1" stop-color="#305598" stop-opacity="0.33" /></radialGradient><radialGradient id="ggrad5" cx="0.5" cy="0.5" r="0.5"><stop offset="0.54" stop-color="#D0DBF0" stop-opacity="0" /><stop offset="0" stop-color="#305598" stop-opacity="0" /><stop offset="1" stop-color="#305598" stop-opacity="0.33" /></radialGradient><radialGradient id="ggrad6" cx="0.5" cy="0.5" r="0.5"><stop offset="0.54" stop-color="#D0DBF0" stop-opacity="0" /><stop offset="0" stop-color="#305598" stop-opacity="0" /><stop offset="1" stop-color="#305598" stop-opacity="0.33" /></radialGradient><radialGradient id="ggrad7" cx="0.5" cy="0.5" r="0.5"><stop offset="0.54" stop-color="#EBEFF9" stop-opacity="0" /><stop offset="0" stop-color="#99B0E3" stop-opacity="0" /><stop offset="1" stop-color="#99B0E3" stop-opacity="0.35" /></radialGradient><radialGradient id="ggrad8" cx="0.5" cy="0.5" r="0.5"><stop offset="0.54" stop-color="#EBEFF9" stop-opacity="0" /><stop offset="0" stop-color="#99B0E3" stop-opacity="0" /><stop offset="1" stop-color="#99B0E3" stop-opacity="0.35" /></radialGradient><radialGradient id="ggrad9" cx="0.5" cy="0.5" r="0.5"><stop offset="0.54" stop-color="#EBEFF9" stop-opacity="0" /><stop offset="0" stop-color="#99B0E3" stop-opacity="0" /><stop offset="1" stop-color="#99B0E3" stop-opacity="0.35" /></radialGradient><marker id="marrow1" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10" fill="#305598" /></marker><marker id="marrow2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10" fill="#305598" /></marker></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="layout-shape-15" data-name="直接连接符 14">
+<line x1="0" y1="64.68" x2="1279.68" y2="64.68" stroke-width="4" stroke="#000000" fill="#305598" />
+</g>
+<g id="shape-77" data-name="矩形 76">
+<rect x="20.17" y="80.33" width="1239.67" height="623.67" fill="#F2F2F2" fill-opacity="0.5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-2" data-name="矩形 1">
+<rect x="327.47" y="496.29" width="921.03" height="134.04" fill="#D0DBF0" fill-opacity="0.13" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-3" data-name="矩形 2">
+<rect x="327.47" y="344.94" width="921.03" height="134.04" fill="#D0DBF0" fill-opacity="0.13" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-4" data-name="矩形 3">
+<rect x="327.47" y="193.37" width="921.03" height="134.04" fill="#D0DBF0" fill-opacity="0.13" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-5" data-name="Freeform 5" transform="translate(208.27 525.46) scale(1 -1) translate(-208.27 -525.46)">
+<path d="M 31.5 627.18 C 370.44 522.63 370.44 522.63 370.44 522.63 C 378.13 520.19 385.05 516.14 385.05 503.98 C 385.05 423.75 385.05 423.75 385.05 423.75 C 47.64 538.84 47.64 538.84 47.64 538.84 C 35.34 542.89 31.5 545.32 31.5 553.42 L 31.5 627.18 Z" fill="#2F5698" stroke="none" />
+</g>
+<g id="shape-6" data-name="Freeform 7" transform="translate(208.27 597.45) scale(1 -1) translate(-208.27 -597.45)">
+<path d="M 363.53 539.47 C 31.5 539.47 31.5 539.47 31.5 539.47 C 31.5 635.96 31.5 635.96 31.5 635.96 C 362.76 635.96 362.76 635.96 362.76 635.96 C 371.21 635.96 385.05 635.96 385.05 655.44 C 385.05 565.45 385.05 565.45 385.05 565.45 C 385.05 551.53 375.06 539.47 363.53 539.47 Z" fill="#4474C5" stroke="none" />
+</g>
+<g id="shape-7" data-name="Freeform 8" transform="translate(208.27 371.54) scale(1 -1) translate(-208.27 -371.54)">
+<path d="M 31.5 483.78 C 370.44 367.52 370.44 367.52 370.44 367.52 C 378.13 364.83 385.05 360.36 385.05 346.95 C 385.05 259.31 385.05 259.31 385.05 259.31 C 47.64 386.3 47.64 386.3 47.64 386.3 C 35.34 390.77 31.5 393.45 31.5 401.5 L 31.5 483.78 Z" fill="#3259AE" stroke="none" />
+</g>
+<g id="shape-8" data-name="Freeform 11" transform="translate(208.27 447.46) scale(1 -1) translate(-208.27 -447.46)">
+<path d="M 363.53 389.47 C 31.5 389.47 31.5 389.47 31.5 389.47 C 31.5 485.96 31.5 485.96 31.5 485.96 C 362.76 485.96 362.76 485.96 362.76 485.96 C 371.21 485.96 385.05 485.96 385.05 505.45 C 385.05 415.45 385.05 415.45 385.05 415.45 C 385.05 400.6 375.06 389.47 363.53 389.47 Z" fill="#5B80D0" stroke="none" />
+</g>
+<g id="shape-9" data-name="Freeform 12" transform="translate(209.88 283.48) scale(1 -1) translate(-209.88 -283.48)">
+<path d="M 388.27 285.79 C 322.91 210.7 322.91 210.7 322.91 210.7 C 322.91 234.8 322.91 234.8 322.91 234.8 C 149.14 234.8 149.14 234.8 149.14 234.8 C 103.01 234.8 103.01 234.8 103.01 234.8 C 56.1 234.8 56.1 234.8 56.1 234.8 C 49.95 234.8 49.95 234.8 49.95 234.8 C 38.42 234.8 31.5 229.24 31.5 220.9 C 31.5 220.9 31.5 220.9 31.5 220.9 C 31.5 222.75 31.5 222.75 31.5 222.75 C 31.5 234.8 31.5 234.8 31.5 234.8 C 31.5 282.09 31.5 282.09 31.5 282.09 C 31.5 300.63 31.5 300.63 31.5 300.63 C 31.5 306.19 31.5 306.19 31.5 306.19 C 31.5 320.1 40.73 332.15 53.03 332.15 C 103.01 332.15 103.01 332.15 103.01 332.15 C 149.14 332.15 149.14 332.15 149.14 332.15 C 322.91 332.15 322.91 332.15 322.91 332.15 C 322.91 356.25 322.91 356.25 322.91 356.25 L 388.27 285.79 Z" fill="#305598" stroke="none" />
+</g>
+<g id="shape-10" data-name="文本框 9">
+<rect x="85.07" y="585.52" width="257.83" height="42.15" fill="none" />
+<text x="94.67" y="610.72" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">{{PAGE_TITLE}}</tspan></text>
+</g>
+<g id="shape-11" data-name="文本框 10">
+<rect x="85.07" y="436.3" width="257.83" height="42.15" fill="none" />
+<text x="94.67" y="461.5" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">{{SECTION_TITLE}}</tspan></text>
+</g>
+<g id="shape-12" data-name="文本框 11">
+<rect x="85.07" y="258.03" width="257.83" height="42.15" fill="none" />
+<text x="94.67" y="283.23" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">{{CONTENT_1}}</tspan></text>
+</g>
+<g id="shape-13" data-name="矩形: 对角圆角 12">
+<path d="M 425.67 647.87 L 655.3 647.87 L 655.3 685.2 Q 655.3 692.67 647.83 692.67 L 418.21 692.67 L 418.21 655.33 Q 418.21 647.87 425.67 647.87 Z" fill="#305598" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-14" data-name="矩形 13">
+<rect x="31.5" y="94.65" width="1217" height="86.67" fill="#305598" stroke="none" />
+</g>
+<g id="shape-15" data-name="文本框 14">
+<rect x="54.4" y="108.32" width="1171.2" height="61.7" fill="none" />
+<text x="64" y="128.99" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">{{CONTENT_2}}</tspan></text>
+</g>
+<g id="shape-16" data-name="文本框 15">
+<rect x="430.62" y="650.32" width="212.27" height="38.55" fill="none" />
+<text x="536.75" y="673.26" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">问题一</tspan></text>
+</g>
+<g id="shape-17" data-name="文本框 16">
+<rect x="409.82" y="530.21" width="264.83" height="93.2" fill="none" />
+<text x="419.42" y="547.48" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="14.67" fill="#595959"><tspan fill="#595959" font-size="14.67">{{CONTENT_3}}</tspan></text>
+</g>
+<g id="shape-18" data-name="文本框 17">
+<rect x="409.82" y="505.17" width="226.73" height="32.31" fill="none" />
+<text x="419.42" y="525.83" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="18.67" fill="#404040" font-weight="bold"><tspan fill="#404040" font-size="18.67" font-weight="bold">计划能力、组织能力欠缺</tspan></text>
+</g>
+<g id="shape-19" data-name="椭圆 18">
+<ellipse cx="450.02" cy="472.13" rx="39.15" ry="13.47" fill="url(#ggrad1)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-20" data-name="椭圆 19">
+<ellipse cx="450.02" cy="433.96" rx="35.32" ry="35.32" fill="#305598" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-21" data-name="椭圆 20">
+<ellipse cx="542.76" cy="472.13" rx="39.15" ry="13.47" fill="url(#ggrad2)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-22" data-name="椭圆 21">
+<ellipse cx="542.76" cy="433.96" rx="35.32" ry="35.32" fill="#305598" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-23" data-name="椭圆 22">
+<ellipse cx="635.5" cy="472.13" rx="39.15" ry="13.47" fill="url(#ggrad3)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-24" data-name="椭圆 23">
+<ellipse cx="635.5" cy="433.96" rx="35.32" ry="35.32" fill="#305598" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-25" data-name="矩形: 对角圆角 24">
+<path d="M 712.6 647.87 L 942.22 647.87 L 942.22 685.2 Q 942.22 692.67 934.75 692.67 L 705.13 692.67 L 705.13 655.33 Q 705.13 647.87 712.6 647.87 Z" fill="#4474C5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-26" data-name="文本框 25">
+<rect x="717.54" y="650.32" width="212.27" height="38.55" fill="none" />
+<text x="823.68" y="673.26" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">问题二</tspan></text>
+</g>
+<g id="shape-27" data-name="文本框 26">
+<rect x="696.74" y="530.21" width="264.83" height="93.2" fill="none" />
+<text x="706.34" y="547.48" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="14.67" fill="#595959"><tspan fill="#595959" font-size="14.67">2011</tspan><tspan fill="#595959" font-size="14.67">年入职后，发现公司有</tspan><tspan fill="#595959" font-size="14.67">5</tspan><tspan fill="#595959" font-size="14.67">起劳动仲</tspan><tspan x="706.34" dy="17.6" fill="#595959" font-size="14.67">裁案件，员工常因缺乏合理诉求渠道</tspan><tspan x="706.34" dy="17.6" fill="#595959" font-size="14.67">而停工以接触高层。我每次都被动应</tspan><tspan x="706.34" dy="17.6" fill="#595959" font-size="14.67">对，压力大，工作无亮点</tspan></text>
+</g>
+<g id="shape-28" data-name="文本框 27">
+<rect x="696.74" y="505.17" width="151.33" height="32.31" fill="none" />
+<text x="706.34" y="525.83" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="18.67" fill="#404040" font-weight="bold"><tspan fill="#404040" font-size="18.67" font-weight="bold">法律知识不熟悉</tspan></text>
+</g>
+<g id="shape-29" data-name="椭圆 28">
+<ellipse cx="736.95" cy="472.13" rx="39.15" ry="13.47" fill="url(#ggrad4)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-30" data-name="椭圆 29">
+<ellipse cx="736.95" cy="433.96" rx="35.32" ry="35.32" fill="#4474C5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-31" data-name="椭圆 30">
+<ellipse cx="829.68" cy="472.13" rx="39.15" ry="13.47" fill="url(#ggrad5)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-32" data-name="椭圆 31">
+<ellipse cx="829.68" cy="433.96" rx="35.32" ry="35.32" fill="#4474C5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-33" data-name="椭圆 32">
+<ellipse cx="922.42" cy="472.13" rx="39.15" ry="13.47" fill="url(#ggrad6)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-34" data-name="椭圆 33">
+<ellipse cx="922.42" cy="433.96" rx="35.32" ry="35.32" fill="#4474C5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-35" data-name="矩形: 对角圆角 34">
+<path d="M 999.52 647.87 L 1229.15 647.87 L 1229.15 685.2 Q 1229.15 692.67 1221.68 692.67 L 992.06 692.67 L 992.06 655.33 Q 992.06 647.87 999.52 647.87 Z" fill="#99B0E3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-36" data-name="文本框 35">
+<rect x="1004.47" y="650.32" width="212.27" height="38.55" fill="none" />
+<text x="1110.6" y="673.26" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">问题三</tspan></text>
+</g>
+<g id="shape-37" data-name="文本框 36">
+<rect x="983.67" y="530.21" width="264.83" height="93.2" fill="none" />
+<text x="993.27" y="547.48" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="14.67" fill="#595959"><tspan fill="#595959" font-size="14.67">在</tspan><tspan fill="#595959" font-size="14.67">SA8000</tspan><tspan fill="#595959" font-size="14.67">客户审核中，发现公司逃生</tspan><tspan x="993.27" dy="17.6" fill="#595959" font-size="14.67">卷闸门不合格。公司文件仅要求卷闸</tspan><tspan x="993.27" dy="17.6" fill="#595959" font-size="14.67">门打开并有插销，但客户还要求卷闸</tspan><tspan x="993.27" dy="17.6" fill="#595959" font-size="14.67">门上开小门，以便火灾时逃生</tspan></text>
+</g>
+<g id="shape-38" data-name="文本框 37">
+<rect x="983.67" y="505.17" width="207.88" height="32.31" fill="none" />
+<text x="993.27" y="525.83" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="18.67" fill="#404040" font-weight="bold"><tspan fill="#404040" font-size="18.67" font-weight="bold">公司项目体系流程老套</tspan></text>
+</g>
+<g id="shape-39" data-name="椭圆 38">
+<ellipse cx="1023.87" cy="472.13" rx="39.15" ry="13.47" fill="url(#ggrad7)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-40" data-name="椭圆 39">
+<ellipse cx="1023.87" cy="433.96" rx="35.32" ry="35.32" fill="#99B0E3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-41" data-name="椭圆 40">
+<ellipse cx="1116.61" cy="472.13" rx="39.15" ry="13.47" fill="url(#ggrad8)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-42" data-name="椭圆 41">
+<ellipse cx="1116.61" cy="433.96" rx="35.32" ry="35.32" fill="#99B0E3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-43" data-name="椭圆 42">
+<ellipse cx="1209.35" cy="472.13" rx="39.15" ry="13.47" fill="url(#ggrad9)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-44" data-name="椭圆 43">
+<ellipse cx="1209.35" cy="433.96" rx="35.32" ry="35.32" fill="#99B0E3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-45" data-name="直接箭头连接符 44" transform="translate(685.32 443.02) scale(1 -1) translate(-685.32 -443.02)">
+<line x1="685.32" y1="193.37" x2="685.32" y2="692.67" stroke-dasharray="4 4 1 4" marker-end="url(#marrow1)" fill="#305598" stroke="#305598" stroke-width="1" />
+</g>
+<g id="shape-46" data-name="直接箭头连接符 45" transform="translate(973.32 443.02) scale(1 -1) translate(-973.32 -443.02)">
+<line x1="973.32" y1="193.37" x2="973.32" y2="692.67" stroke-dasharray="4 4 1 4" marker-end="url(#marrow2)" fill="#305598" stroke="#305598" stroke-width="1" />
+</g>
+<g id="shape-47" data-name="文本框 46">
+<rect x="409.82" y="231.97" width="264.83" height="93.2" fill="none" />
+<text x="419.42" y="249.23" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="14.67" fill="#595959"><tspan fill="#595959" font-size="14.67">在以后的工作中，我将要求自已继续</tspan><tspan x="419.42" dy="17.6" fill="#595959" font-size="14.67">参加各种与工作相关的培训班，让自</tspan><tspan x="419.42" dy="17.6" fill="#595959" font-size="14.67">已的知识更加丰富，能更好地为工作</tspan><tspan x="419.42" dy="17.6" fill="#595959" font-size="14.67">服务，以提升工作能力为目的</tspan></text>
+</g>
+<g id="shape-48" data-name="文本框 47">
+<rect x="696.74" y="231.97" width="264.83" height="93.2" fill="none" />
+<text x="706.34" y="249.23" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="14.67" fill="#595959"><tspan fill="#595959" font-size="14.67">在今后的一年内通过网络及公司的法</tspan><tspan x="706.34" dy="17.6" fill="#595959" font-size="14.67">律顾问等途径，全而掌握所有与人力</tspan><tspan x="706.34" dy="17.6" fill="#595959" font-size="14.67">资源、行政管理相关的法律知识及政</tspan><tspan x="706.34" dy="17.6" fill="#595959" font-size="14.67">策以便更好的展开工作</tspan></text>
+</g>
+<g id="shape-49" data-name="文本框 48">
+<rect x="983.67" y="231.97" width="264.83" height="93.2" fill="none" />
+<text x="993.27" y="249.23" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="14.67" fill="#595959"><tspan fill="#595959" font-size="14.67">结合公司实际情况，编写整理成册完</tspan><tspan x="993.27" dy="17.6" fill="#595959" font-size="14.67">善的规章制度，包括考勤管理规定、</tspan><tspan x="993.27" dy="17.6" fill="#595959" font-size="14.67">厂纪厂规管理规定、工资规定、宿舍</tspan><tspan x="993.27" dy="17.6" fill="#595959" font-size="14.67">规定、奖惩规定等制度并告知员工</tspan></text>
+</g>
+<g id="shape-50" data-name="文本框 49">
+<rect x="430.62" y="342.43" width="212.27" height="31.34" fill="none" />
+<text x="536.75" y="360.83" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="16" fill="#305598"><tspan fill="#305598" font-size="16">Why</tspan></text>
+</g>
+<g id="shape-51" data-name="文本框 50">
+<rect x="723.03" y="342.43" width="212.27" height="31.34" fill="none" />
+<text x="829.16" y="360.83" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="16" fill="#305598"><tspan fill="#305598" font-size="16">Why</tspan></text>
+</g>
+<g id="shape-52" data-name="文本框 51">
+<rect x="1015.43" y="342.43" width="212.27" height="31.34" fill="none" />
+<text x="1121.57" y="360.83" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="16" fill="#99B0E3"><tspan fill="#99B0E3" font-size="16">Why</tspan></text>
+</g>
+<g id="shape-53" data-name="文本框 52">
+<rect x="421.32" y="407.33" width="56.11" height="50.55" fill="none" />
+<text x="449.38" y="424.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">经验</tspan></text>
+<text x="449.38" y="442.2" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">不足</tspan></text>
+</g>
+<g id="shape-54" data-name="文本框 53">
+<rect x="514.14" y="407.33" width="56.11" height="50.55" fill="none" />
+<text x="542.19" y="424.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">概念不全</tspan></text>
+</g>
+<g id="shape-55" data-name="文本框 54">
+<rect x="606.95" y="407.33" width="56.11" height="50.55" fill="none" />
+<text x="635" y="424.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">缺乏协作</tspan></text>
+</g>
+<g id="shape-56" data-name="文本框 55">
+<rect x="708.89" y="407.33" width="56.11" height="50.55" fill="none" />
+<text x="736.95" y="424.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">亮点不够</tspan></text>
+</g>
+<g id="shape-57" data-name="文本框 56">
+<rect x="800.97" y="407.33" width="56.11" height="50.55" fill="none" />
+<text x="829.03" y="424.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">沟通不畅</tspan></text>
+</g>
+<g id="shape-58" data-name="文本框 57">
+<rect x="893.05" y="407.33" width="56.11" height="50.55" fill="none" />
+<text x="921.11" y="424.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">专业不精</tspan></text>
+</g>
+<g id="shape-59" data-name="文本框 58">
+<rect x="996.56" y="407.33" width="56.11" height="50.55" fill="none" />
+<text x="1024.62" y="424.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">体系混乱</tspan></text>
+</g>
+<g id="shape-60" data-name="文本框 59">
+<rect x="1087.61" y="407.33" width="56.11" height="50.55" fill="none" />
+<text x="1115.66" y="424.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">制度不全</tspan></text>
+</g>
+<g id="shape-61" data-name="文本框 60">
+<rect x="1181.05" y="407.33" width="56.11" height="50.55" fill="none" />
+<text x="1209.11" y="424.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">人员散漫</tspan></text>
+</g>
+<g id="shape-62" data-name="矩形: 圆角 61">
+<rect x="419.47" y="204.43" width="243.59" height="26.18" rx="13.09" ry="13.09" fill="#305598" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-63" data-name="椭圆 62">
+<ellipse cx="433.3" cy="217.55" rx="11.84" ry="11.84" fill="#FFFFFF" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-64" data-name="图形 63">
+<image href="assets/image36.png" x="425.17" y="209.8" width="17.17" height="17.17" preserveAspectRatio="none" />
+</g>
+<g id="shape-65" data-name="文本框 64">
+<rect x="440.87" y="202.76" width="148.64" height="29.08" fill="none" />
+<text x="450.47" y="221.16" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">理论运用到工作中</tspan></text>
+</g>
+<g id="shape-66" data-name="矩形: 圆角 65">
+<rect x="706.38" y="204.43" width="243.59" height="26.18" rx="13.09" ry="13.09" fill="#4474C5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-67" data-name="椭圆 66">
+<ellipse cx="720.21" cy="217.55" rx="11.84" ry="11.84" fill="#FFFFFF" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-68" data-name="图形 67">
+<image href="assets/image36.png" x="712.08" y="209.8" width="17.17" height="17.17" preserveAspectRatio="none" />
+</g>
+<g id="shape-69" data-name="文本框 68">
+<rect x="727.78" y="202.76" width="148.64" height="29.08" fill="none" />
+<text x="737.38" y="221.16" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">强化相关法律知识</tspan></text>
+</g>
+<g id="shape-70" data-name="矩形: 圆角 69">
+<rect x="993.28" y="204.43" width="243.59" height="26.18" rx="13.09" ry="13.09" fill="#99B0E3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-71" data-name="椭圆 70">
+<ellipse cx="1007.12" cy="217.55" rx="11.84" ry="11.84" fill="#FFFFFF" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-72" data-name="图形 71">
+<image href="assets/image37.png" x="998.99" y="209.8" width="17.17" height="17.17" preserveAspectRatio="none" />
+</g>
+<g id="shape-73" data-name="文本框 72">
+<rect x="1014.69" y="202.76" width="148.64" height="29.08" fill="none" />
+<text x="1024.29" y="221.16" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">健全公司规章制度</tspan></text>
+</g>
+<g id="shape-74" data-name="左大括号 73" transform="rotate(90 542.94 384.86)">
+<rect x="533.4" y="291.25" width="19.07" height="187.21" fill="#305598" stroke="#305598" stroke-width="1" />
+</g>
+<g id="shape-75" data-name="左大括号 74" transform="rotate(90 828.82 384.86)">
+<rect x="819.28" y="291.25" width="19.07" height="187.21" fill="#305598" stroke="#305598" stroke-width="1" />
+</g>
+<g id="shape-76" data-name="左大括号 75" transform="rotate(90 1114.7 384.86)">
+<rect x="1105.16" y="291.25" width="19.07" height="187.21" fill="#305598" stroke="#305598" stroke-width="1" />
+</g>
+<g id="shape-80" data-name="矩形 79">
+<rect x="21.26" y="6.7" width="570.21" height="54.93" fill="none" />
+<text x="30.86" y="43.23" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="37.33" fill="#000000"><tspan fill="#000000" font-size="37.33">对比关系页</tspan><tspan fill="#000000" font-size="37.33">/ </tspan><tspan fill="#4474C5" font-size="37.33">存在问题与改进办法</tspan></text>
+</g></svg>

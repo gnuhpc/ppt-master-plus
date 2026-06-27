@@ -1,0 +1,4 @@
+interface:
+  display_name: "PPT Master Plus"
+  short_description: "可审阅或连续生成的高质量原生可编辑 PPTX 工作流"
+  default_prompt: "Use $ppt-master-plus to turn this material into an editable PPTX and let me choose 逐页确定精修 or 全自动一次性生成."

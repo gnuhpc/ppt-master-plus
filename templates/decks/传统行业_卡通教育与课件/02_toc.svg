@@ -1,0 +1,65 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><image href="assets/image2.jpeg" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+<g id="shape-3" data-name="图片 2">
+<image href="assets/image3.png" x="346.07" y="128.33" width="527.4" height="120.4" preserveAspectRatio="none" />
+</g>
+<g id="shape-395" data-name="文本框 394">
+<rect x="528.14" y="130.34" width="221.6" height="96.8" fill="none" />
+<text x="537.74" y="196.34" text-anchor="start" xml:space="preserve" font-family="&quot;方正卡通简体&quot;, sans-serif" font-size="72" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="72">{{TOC_ITEM_1_TITLE}}</tspan></text>
+</g>
+<g id="shape-5" data-name="组合 4">
+<g id="shape-372" data-name="文本框 6">
+<rect x="277.6" y="311.4" width="205.87" height="54.82" fill="none" stroke="none" />
+<text x="287.2" y="347.93" text-anchor="start" xml:space="preserve" font-family="&quot;方正卡通简体&quot;, sans-serif" font-size="37.33" fill="#595959"><tspan fill="#595959" font-size="37.33">{{TOC_ITEM_2_TITLE}}</tspan></text>
+</g>
+<g id="shape-20" data-name="文本框 19">
+<rect x="284.87" y="350.75" width="355.4" height="43.48" fill="none" />
+<text x="294.47" y="371.41" text-anchor="start" xml:space="preserve" font-family="&quot;Calibri Light&quot;, &quot;方正华隶简体&quot;, sans-serif" font-size="18.67" fill="#595959"><tspan fill="#595959" font-size="18.67">{{TOC_ITEM_1_DESC}}</tspan></text>
+</g>
+<g id="shape-4" data-name="文本框 3">
+<rect x="180.47" y="328.87" width="86.53" height="48.35" fill="none" />
+<text x="223.73" y="360.87" text-anchor="middle" xml:space="preserve" font-family="&quot;阿里巴巴普惠体 M&quot;, sans-serif" font-size="32" fill="#595959"><tspan fill="#595959" font-size="32">01</tspan></text>
+</g>
+</g>
+<g id="shape-6" data-name="组合 5">
+<g id="shape-7" data-name="文本框 6">
+<rect x="277.6" y="448.47" width="205.87" height="54.8" fill="none" stroke="none" />
+<text x="287.2" y="485" text-anchor="start" xml:space="preserve" font-family="&quot;方正卡通简体&quot;, sans-serif" font-size="37.33" fill="#595959"><tspan fill="#595959" font-size="37.33">{{TOC_ITEM_3_TITLE}}</tspan></text>
+</g>
+<g id="shape-12" data-name="文本框 11">
+<rect x="284.87" y="487.8" width="355.4" height="43.47" fill="none" />
+<text x="294.47" y="508.47" text-anchor="start" xml:space="preserve" font-family="&quot;Calibri Light&quot;, &quot;方正华隶简体&quot;, sans-serif" font-size="18.67" fill="#595959"><tspan fill="#595959" font-size="18.67">{{TOC_ITEM_2_DESC}}</tspan></text>
+</g>
+<g id="shape-14" data-name="文本框 13">
+<rect x="180.47" y="465.93" width="86.53" height="48.33" fill="none" />
+<text x="223.73" y="497.93" text-anchor="middle" xml:space="preserve" font-family="&quot;阿里巴巴普惠体 M&quot;, sans-serif" font-size="32" fill="#595959"><tspan fill="#595959" font-size="32">02</tspan></text>
+</g>
+</g>
+<g id="shape-15" data-name="组合 14">
+<g id="shape-16" data-name="文本框 15">
+<rect x="774.73" y="311.4" width="205.87" height="54.8" fill="none" stroke="none" />
+<text x="784.33" y="347.93" text-anchor="start" xml:space="preserve" font-family="&quot;方正卡通简体&quot;, sans-serif" font-size="37.33" fill="#595959"><tspan fill="#595959" font-size="37.33">{{TOC_ITEM_4_TITLE}}</tspan></text>
+</g>
+<g id="shape-17" data-name="文本框 16">
+<rect x="782" y="350.73" width="355.4" height="43.47" fill="none" />
+<text x="791.6" y="371.4" text-anchor="start" xml:space="preserve" font-family="&quot;Calibri Light&quot;, &quot;方正华隶简体&quot;, sans-serif" font-size="18.67" fill="#595959"><tspan fill="#595959" font-size="18.67">{{TOC_ITEM_3_DESC}}</tspan></text>
+</g>
+<g id="shape-18" data-name="文本框 17">
+<rect x="677.6" y="328.87" width="86.53" height="48.33" fill="none" />
+<text x="720.87" y="360.87" text-anchor="middle" xml:space="preserve" font-family="&quot;阿里巴巴普惠体 M&quot;, sans-serif" font-size="32" fill="#595959"><tspan fill="#595959" font-size="32">03</tspan></text>
+</g>
+</g>
+<g id="shape-19" data-name="组合 18">
+<g id="shape-22" data-name="文本框 21">
+<rect x="774.73" y="448.47" width="205.87" height="54.8" fill="none" stroke="none" />
+<text x="784.33" y="485" text-anchor="start" xml:space="preserve" font-family="&quot;方正卡通简体&quot;, sans-serif" font-size="37.33" fill="#595959"><tspan fill="#595959" font-size="37.33">请添加标题</tspan></text>
+</g>
+<g id="shape-23" data-name="文本框 22">
+<rect x="782" y="487.8" width="355.4" height="43.47" fill="none" />
+<text x="791.6" y="508.47" text-anchor="start" xml:space="preserve" font-family="&quot;Calibri Light&quot;, &quot;方正华隶简体&quot;, sans-serif" font-size="18.67" fill="#595959"><tspan fill="#595959" font-size="18.67">{{TOC_ITEM_4_DESC}}</tspan></text>
+</g>
+<g id="shape-24" data-name="文本框 23">
+<rect x="677.6" y="465.93" width="86.53" height="48.33" fill="none" />
+<text x="720.87" y="497.93" text-anchor="middle" xml:space="preserve" font-family="&quot;阿里巴巴普惠体 M&quot;, sans-serif" font-size="32" fill="#595959"><tspan fill="#595959" font-size="32">04</tspan></text>
+</g>
+</g></svg>

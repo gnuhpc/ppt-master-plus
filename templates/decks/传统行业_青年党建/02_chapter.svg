@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><image href="assets/image1.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none"/>
+<g id="shape-13" data-name="图片 12">
+<svg x="-4.04" y="-0.06" width="1284.04" height="720.06" viewBox="0.0708 0 0.9292 1" preserveAspectRatio="none"><image href="assets/image2.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="shape-8" data-name="矩形 7">
+<rect x="-4.04" y="-1.3" width="1284.04" height="721.3" fill="#921F1F" fill-opacity="0.71" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-22" data-name="组合 21">
+<g id="shape-24" data-name="文本框 23">
+<rect x="423.03" y="248.69" width="433.94" height="67.86" fill="none"/>
+<text x="640" y="294.29" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, &quot;汉仪全唐诗简&quot;, sans-serif" font-size="48" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="48">{{CHAPTER_TITLE}}</tspan></text>
+</g>
+<g id="shape-28" data-name="文本框 27">
+<rect x="565.68" y="199.52" width="148.64" height="48.47" fill="none"/>
+<text x="575.28" y="231.52" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, &quot;汉仪全唐诗简&quot;, sans-serif" font-size="32" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="32">{{CHAPTER_NUM}}</tspan></text>
+</g>
+<g id="shape-40" data-name="文本框 39">
+<rect x="385.77" y="328.31" width="508.46" height="111.48" fill="none"/>
+<text x="640" y="348.98" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪全唐诗简&quot;, sans-serif" font-size="18.67" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="18.67">{{CHAPTER_DESC}}</tspan></text>
+</g>
+</g>
+<g id="shape-41" data-name="直接连接符 40" transform="translate(638.33 322.01) scale(1 -1) translate(-638.33 -322.01)">
+<line x1="467.33" y1="321.83" x2="809.33" y2="322.19" stroke="#FFE3C1" fill="#5B9BD5" stroke-width="1"/>
+</g></svg>

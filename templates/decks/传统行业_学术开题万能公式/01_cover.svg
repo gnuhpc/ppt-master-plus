@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FDFAF4" />
+<g id="layout-shape-7" data-name="矩形 6">
+<rect x="524.47" y="380.87" width="436.73" height="17.8" fill="#1F4F97" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-3" data-name="文本占位符 2" data-ph-type="body">
+<rect x="377.2" y="251.67" width="151.87" height="94.07" fill="none" />
+<text x="386.8" y="324.47" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="80" fill="#1F4F97" font-weight="bold"><tspan fill="#1F4F97" font-size="80">{{TITLE}}</tspan></text>
+</g>
+<g id="shape-4" data-name="文本占位符 3" data-ph-type="body">
+<rect x="516.07" y="260.8" width="424.27" height="64.8" fill="none" />
+<text x="525.67" y="286" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#1F4F97"><tspan fill="#1F4F97" font-size="24">{{SUBTITLE}}</tspan></text>
+</g>
+<g id="shape-5" data-name="文本框 4">
+<rect x="514.87" y="339.87" width="524.93" height="38.67" fill="none" />
+<text x="524.47" y="365.07" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#1F4F97"><tspan fill="#1F4F97" font-size="24">{{TAGLINE}}</tspan></text>
+</g></svg>

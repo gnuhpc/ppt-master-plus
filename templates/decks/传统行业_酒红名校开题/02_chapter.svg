@@ -1,0 +1,154 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#A8625A" /><stop offset="0.99" stop-color="#845853" /></linearGradient><linearGradient id="ggrad2" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#A8625A" /><stop offset="0.99" stop-color="#845853" /></linearGradient><linearGradient id="ggrad3" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#A8625A" /><stop offset="0.99" stop-color="#845853" /></linearGradient><linearGradient id="ggrad4" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#A8625A" /><stop offset="0.99" stop-color="#845853" /></linearGradient><linearGradient id="ggrad5" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#A8625A" /><stop offset="0.99" stop-color="#845853" /></linearGradient><linearGradient id="txtgrad6" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#A8625A" /><stop offset="1" stop-color="#845853" /></linearGradient><linearGradient id="txtgrad7" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0.22" stop-color="#A8625A" stop-opacity="0" /><stop offset="0.99" stop-color="#845853" stop-opacity="0.82" /></linearGradient><linearGradient id="txtgrad8" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#A8625A" /><stop offset="1" stop-color="#845853" /></linearGradient><linearGradient id="txtgrad9" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0.22" stop-color="#A8625A" stop-opacity="0" /><stop offset="0.99" stop-color="#845853" stop-opacity="0.82" /></linearGradient><linearGradient id="txtgrad10" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#A8625A" /><stop offset="1" stop-color="#845853" /></linearGradient><linearGradient id="txtgrad11" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0.22" stop-color="#A8625A" stop-opacity="0" /><stop offset="0.99" stop-color="#845853" stop-opacity="0.82" /></linearGradient><linearGradient id="txtgrad12" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#A8625A" /><stop offset="1" stop-color="#845853" /></linearGradient><linearGradient id="txtgrad13" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0.22" stop-color="#A8625A" stop-opacity="0" /><stop offset="0.99" stop-color="#845853" stop-opacity="0.82" /></linearGradient><linearGradient id="txtgrad14" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#A8625A" /><stop offset="1" stop-color="#845853" /></linearGradient><linearGradient id="txtgrad15" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0.22" stop-color="#A8625A" stop-opacity="0" /><stop offset="0.99" stop-color="#845853" stop-opacity="0.82" /></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#924437" />
+<g id="master-shape-8" data-name="圆角矩形 7">
+<rect x="29.07" y="26.07" width="1221.8" height="667" rx="26.53" ry="26.53" fill="#FFFFFF" stroke="none" stroke-width="1" />
+</g>
+<g id="layout-shape-7" data-name="椭圆 6">
+<ellipse cx="1170.67" cy="84.67" rx="6" ry="6" fill="#924437" stroke="none" stroke-width="1" />
+</g>
+<g id="layout-shape-8" data-name="椭圆 7">
+<ellipse cx="1190.67" cy="84.67" rx="6" ry="6" fill="#924437" stroke="none" stroke-width="1" />
+</g>
+<g id="layout-shape-9" data-name="椭圆 8">
+<ellipse cx="1210.67" cy="84.67" rx="6" ry="6" fill="#924437" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-2" data-name="标题 1" data-ph-type="title">
+<rect x="63.87" y="48.87" width="1151.62" height="74.08" fill="none" />
+<text x="73.47" y="74.07" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#000000"><tspan fill="#000000" font-size="24">{{CHAPTER_DESC}}</tspan></text>
+</g>
+<g id="shape-46" data-name="组合 45">
+<g id="shape-3" data-name="îṣ1íḋe">
+<path d="M 484.35 366.13 C 495.14 366.13 504.27 368.22 512.57 371.57 C 524.61 376.17 534.57 384.53 543.28 393.73 C 552 403.35 560.3 414.23 568.6 424.69 C 572.75 421.34 572.75 421.34 572.75 421.34 C 561.13 407.54 550.75 392.9 537.47 381.19 C 530.42 375.33 522.95 370.31 514.23 366.55 C 505.52 363.2 495.97 361.11 484.35 361.11 C 484.35 366.13 484.35 366.13 484.35 366.13 Z" fill="#A8625A" stroke="none" />
+</g>
+<g id="shape-4" data-name="ïṣḷiḍé">
+<path d="M 420.26 399.24 C 428.59 390.02 436.91 381.64 447.31 375.78 C 457.3 369.91 469.37 366.14 484.35 366.14 C 484.35 361.11 484.35 361.11 484.35 361.11 C 468.54 361.11 455.64 365.3 444.82 371.58 C 433.58 377.87 424.84 386.67 416.52 395.89 C 420.26 399.24 420.26 399.24 420.26 399.24 Z" fill="#A8625A" stroke="none" />
+</g>
+<g id="shape-5" data-name="ïṥḻíḍé">
+<ellipse cx="484.96" cy="441.13" rx="60.07" ry="60.44" fill="url(#ggrad1)" stroke-width="4" stroke="none" />
+</g>
+<g id="shape-6" data-name="íślîḑè">
+<path d="M 568.66 424.73 C 577.37 434.75 586.5 444.36 597.7 451.46 C 608.9 458.56 622.59 463.16 639.6 463.16 C 649.98 463.16 659.52 461.49 667.82 458.15 C 679.85 453.55 689.8 446.03 698.52 437.68 C 707.23 428.9 715.11 418.88 722.58 409.27 C 718.84 405.93 718.84 405.93 718.84 405.93 C 708.47 418.88 698.52 432.25 686.48 441.85 C 680.26 446.87 673.62 450.63 665.74 453.55 C 658.27 456.47 649.56 458.15 639.6 458.15 C 623.42 458.15 610.98 453.97 600.61 447.28 C 589.82 440.6 581.11 431.41 572.81 421.38 C 568.66 424.73 568.66 424.73 568.66 424.73 Z" fill="#A8625A" stroke="none" />
+</g>
+<g id="shape-7" data-name="isļiḓe">
+<path d="M 722.77 409.22 C 731.91 397.92 741.46 387.05 752.67 379.1 C 763.89 371.15 777.18 366.13 795.03 366.13 C 805.41 366.13 814.13 367.8 822.02 371.15 C 834.07 375.75 843.62 382.86 851.92 392.07 C 860.65 400.85 868.54 410.89 876.43 420.93 C 880.58 418.01 880.58 418.01 880.58 418.01 C 869.78 404.62 859.4 390.81 846.11 379.52 C 839.88 374.08 832.41 369.48 824.1 366.13 C 815.38 363.2 805.83 361.11 795.03 361.11 C 776.34 361.11 761.81 366.55 749.77 374.91 C 737.72 383.28 728.17 394.58 719.04 405.87 C 722.77 409.22 722.77 409.22 722.77 409.22 Z" fill="#A8625A" stroke="none" />
+</g>
+<g id="shape-8" data-name="îSḻiďe">
+<ellipse cx="798.92" cy="440.99" rx="60.07" ry="60.3" fill="url(#ggrad2)" stroke-width="4" stroke="none" />
+</g>
+<g id="shape-9" data-name="ïṥļiḓe">
+<path d="M 175.23 365.17 C 194.34 365.17 208.05 371.03 219.69 379.81 C 228.83 386.5 236.31 394.87 243.79 403.65 C 254.59 417.03 264.98 431.67 278.27 442.97 C 284.92 448.4 292.4 453.42 301.13 456.77 C 309.44 460.11 319.41 462.2 330.21 462.2 C 342.26 462.2 352.65 460.11 361.79 455.93 C 375.09 450.49 385.48 440.87 395.03 430.42 C 404.59 419.96 412.9 408.67 421.63 398.21 C 417.89 394.87 417.89 394.87 417.89 394.87 C 405.84 409.09 395.03 424.98 381.74 436.69 C 375.09 442.97 368.02 447.98 359.71 451.33 C 351.4 455.09 341.85 457.19 330.21 457.19 C 311.51 457.19 297.8 451.33 285.75 442.55 C 277.03 435.85 269.55 427.49 262.07 418.71 C 251.26 405.32 240.88 390.69 227.58 379.39 C 220.93 373.96 213.45 368.94 204.73 365.59 C 196.42 362.25 186.44 360.15 175.23 360.15 C 175.23 365.17 175.23 365.17 175.23 365.17 Z" fill="#A8625A" stroke="none" />
+</g>
+<g id="shape-10" data-name="ïṣļiḑê">
+<path d="M 875.74 420.92 C 884.88 431.79 894.02 442.25 905.65 450.19 C 917.29 458.14 931.41 463.16 949.27 463.16 C 969.21 463.16 984.58 456.89 997.05 447.68 C 1006.19 440.57 1014.08 431.79 1021.56 422.59 C 1032.77 409.21 1043.16 394.99 1055.62 384.11 C 1061.85 378.68 1068.92 374.49 1076.81 371.15 C 1084.7 367.8 1093.84 366.13 1104.64 366.13 C 1104.64 361.11 1104.64 361.11 1104.64 361.11 C 1084.7 361.11 1069.33 367.38 1056.87 376.58 C 1047.73 383.69 1039.84 392.48 1032.36 401.68 C 1021.14 415.06 1011.17 429.28 998.29 440.16 C 992.06 445.59 985 449.78 977.11 453.12 C 969.21 456.47 960.07 458.14 949.27 458.14 C 932.66 458.14 919.36 453.54 908.56 446.01 C 897.35 438.48 888.62 428.45 879.9 417.99 C 875.74 420.92 875.74 420.92 875.74 420.92 Z" fill="#A8625A" stroke="none" />
+</g>
+<g id="shape-11" data-name="iŝlîďe">
+<ellipse cx="950.35" cy="380.96" rx="59.83" ry="60.3" fill="url(#ggrad3)" stroke-width="4" stroke="none" />
+</g>
+<g id="shape-12" data-name="ís1îḋe">
+<path d="M 972.7 394.54 L 962.61 384.46 C 962.15 384 961.53 383.75 960.88 383.75 C 960.61 383.75 960.34 383.8 960.09 383.88 L 957.67 381.46 C 957.31 381.1 956.82 380.9 956.32 380.9 C 955.8 380.9 955.32 381.1 954.95 381.46 L 954.32 382.1 L 953.18 380.96 L 958.17 375.96 C 959.33 376.45 960.59 376.69 961.91 376.69 L 961.91 376.69 C 964.41 376.69 966.77 375.74 968.54 373.97 C 970.92 371.59 971.85 368.12 970.96 364.87 C 970.85 364.47 970.47 364.18 970.06 364.18 C 969.89 364.18 969.62 364.24 969.38 364.49 C 969.34 364.52 965.98 367.85 964.87 368.96 C 964.76 369.08 964.55 369.1 964.43 369.1 C 964.35 369.1 964.3 369.09 964.3 369.09 L 964.3 369.09 L 964.23 369.08 C 962.85 368.96 961.2 368.7 960.78 368.51 C 960.57 368.08 960.33 366.4 960.21 365 L 960.21 364.98 L 960.18 364.94 C 960.17 364.87 960.14 364.56 960.42 364.28 C 961.57 363.13 964.75 359.93 964.77 359.9 C 965.04 359.63 965.15 359.29 965.06 358.97 C 964.96 358.58 964.63 358.37 964.36 358.3 C 963.57 358.08 962.73 357.97 961.91 357.97 C 959.39 357.97 957.04 358.95 955.26 360.72 C 952.46 363.52 951.8 367.66 953.29 371.09 L 948.3 376.08 L 939.76 367.55 C 939.76 367.54 939.76 367.54 939.76 367.53 C 939.83 367.2 939.87 366.87 939.85 366.52 C 939.81 365.53 939.38 364.58 938.63 363.83 L 935.59 360.79 C 935.53 360.73 935.17 360.4 934.64 360.4 C 934.39 360.4 934.03 360.47 933.68 360.83 L 930.35 364.15 C 929.95 364.54 929.82 365.04 929.96 365.52 C 930.06 365.83 930.25 366.04 930.31 366.1 L 933.34 369.12 C 934.13 369.92 935.13 370.35 936.18 370.35 L 936.18 370.35 C 936.48 370.35 936.76 370.31 937.04 370.24 C 937.05 370.25 937.05 370.25 937.06 370.26 L 945.59 378.78 L 941.54 382.84 C 941.36 383.02 941.19 383.22 941.06 383.43 C 939.87 382.91 938.58 382.63 937.24 382.63 C 934.73 382.63 932.37 383.6 930.6 385.38 C 928.22 387.75 927.3 391.25 928.18 394.49 C 928.29 394.9 928.67 395.19 929.08 395.19 L 929.08 395.19 C 929.25 395.19 929.52 395.14 929.77 394.89 C 929.8 394.85 933.16 391.52 934.27 390.41 C 934.39 390.3 934.61 390.28 934.72 390.28 C 934.81 390.28 934.86 390.29 934.86 390.29 L 934.86 390.29 L 934.93 390.3 C 936.31 390.42 937.97 390.67 938.39 390.86 C 938.59 391.28 938.85 392.98 938.98 394.38 L 938.99 394.45 C 938.99 394.45 939.03 394.8 938.73 395.1 C 937.58 396.25 934.4 399.45 934.38 399.48 C 934.11 399.75 934 400.08 934.08 400.41 C 934.18 400.79 934.51 401 934.78 401.08 C 935.58 401.29 936.41 401.41 937.24 401.41 C 939.75 401.41 942.1 400.43 943.88 398.66 C 945.65 396.88 946.63 394.52 946.63 392.01 C 946.63 390.68 946.35 389.39 945.83 388.2 C 946.04 388.06 946.24 387.9 946.42 387.72 L 950.48 383.67 L 951.61 384.8 L 950.97 385.45 C 950.61 385.81 950.41 386.29 950.41 386.8 C 950.41 387.31 950.61 387.79 950.97 388.16 L 953.39 390.57 C 953.31 390.82 953.26 391.09 953.26 391.37 C 953.26 392.02 953.52 392.63 953.97 393.09 L 964.06 403.17 C 964.52 403.63 965.13 403.88 965.78 403.88 C 966.43 403.88 967.04 403.63 967.5 403.17 L 972.7 397.97 C 973.16 397.52 973.4 396.91 973.4 396.26 C 973.4 395.61 973.16 395 972.7 394.54 Z" fill="#FFFFFF" stroke="none" />
+</g>
+<g id="shape-13" data-name="îṣḻîḍè">
+<ellipse cx="328.49" cy="372.71" rx="59.83" ry="60.44" fill="url(#ggrad4)" stroke-width="4" stroke="none" />
+</g>
+<g id="shape-14" data-name="ïšļîḑê">
+<path d="M 338.02 374.1 C 336.55 374.1 335.07 374.64 333.95 375.73 C 331.71 377.9 331.71 381.38 333.95 383.55 C 336.19 385.73 339.88 385.73 342.01 383.55 C 344.24 381.38 344.24 377.9 342.01 375.73 C 340.94 374.64 339.49 374.1 338.02 374.1 Z M 337.99 371.13 C 340.25 371.13 342.51 371.98 344.24 373.66 C 346.93 376.16 347.49 380.07 346.04 383.23 L 351.07 388.12 L 346.71 392.36 L 341.67 387.47 C 338.43 388.88 334.51 388.33 331.83 385.73 C 328.36 382.36 328.36 376.92 331.83 373.66 C 333.5 371.98 335.74 371.13 337.99 371.13 Z M 316.5 351.71 L 316.5 361.18 L 307.33 361.18 Z M 319.41 350.19 L 343.46 350.19 L 343.46 371.16 C 341.89 370.19 339.99 369.64 337.98 369.64 C 335.74 369.64 333.61 370.3 331.82 371.6 L 312.36 371.6 L 312.36 374.64 L 329.03 374.64 C 328.47 375.62 328.02 376.81 327.8 378.01 L 312.36 378.01 L 312.36 381.05 L 327.8 381.05 C 327.91 382.25 328.36 383.44 328.92 384.42 L 312.36 384.42 L 312.36 387.46 L 331.49 387.46 C 333.28 388.98 335.63 389.74 337.98 389.74 C 339.09 389.74 340.21 389.53 341.33 389.2 L 343.46 391.37 L 343.46 395.28 L 305.99 395.28 L 305.99 363.88 L 319.41 363.88 Z" fill="#FFFFFF" stroke="none" />
+</g>
+<g id="shape-15" data-name="i$ļiḑê">
+<ellipse cx="639.42" cy="380.96" rx="60.07" ry="60.3" fill="url(#ggrad5)" stroke-width="4" stroke="none" />
+</g>
+<g id="shape-16" data-name="ïSľîde">
+<path d="M 653.61 387.72 L 660.94 387.72 C 662.5 387.72 663.8 389.02 663.8 390.61 L 663.8 397.94 C 663.8 399.51 662.5 400.81 660.94 400.81 L 653.61 400.81 C 652.02 400.81 650.71 399.51 650.71 397.94 L 650.71 390.61 C 650.71 389.02 652.02 387.72 653.61 387.72 Z M 634.14 384.53 L 641.45 384.53 C 643.04 384.53 644.34 385.83 644.34 387.42 L 644.34 394.75 C 644.34 396.32 643.04 397.62 641.45 397.62 L 634.14 397.62 C 632.55 397.62 631.25 396.32 631.25 394.75 L 631.25 387.42 C 631.25 385.83 632.55 384.53 634.14 384.53 Z M 617.87 384.53 L 625.2 384.53 C 626.76 384.53 628.06 385.83 628.06 387.42 L 628.06 394.75 C 628.06 396.32 626.76 397.62 625.2 397.62 L 617.87 397.62 C 616.27 397.62 614.97 396.32 614.97 394.75 L 614.97 387.42 C 614.97 385.83 616.27 384.53 617.87 384.53 Z M 650.4 368.25 L 657.73 368.25 C 659.32 368.25 660.62 369.55 660.62 371.14 L 660.62 378.45 C 660.62 380.04 659.32 381.34 657.73 381.34 L 650.4 381.34 C 648.83 381.34 647.53 380.04 647.53 378.45 L 647.53 371.14 C 647.53 369.55 648.83 368.25 650.4 368.25 Z M 634.14 368.25 L 641.45 368.25 C 643.04 368.25 644.34 369.55 644.34 371.14 L 644.34 378.45 C 644.34 380.04 643.04 381.34 641.45 381.34 L 634.14 381.34 C 632.55 381.34 631.25 380.04 631.25 378.45 L 631.25 371.14 C 631.25 369.55 632.55 368.25 634.14 368.25 Z M 617.87 368.25 L 625.2 368.25 C 626.76 368.25 628.06 369.55 628.06 371.14 L 628.06 378.45 C 628.06 380.04 626.76 381.34 625.2 381.34 L 617.87 381.34 C 616.27 381.34 614.97 380.04 614.97 378.45 L 614.97 371.14 C 614.97 369.55 616.27 368.25 617.87 368.25 Z M 650.4 351.97 L 657.73 351.97 C 659.32 351.97 660.62 353.27 660.62 354.86 L 660.62 362.17 C 660.62 363.76 659.32 365.06 657.73 365.06 L 650.4 365.06 C 648.83 365.06 647.53 363.76 647.53 362.17 L 647.53 354.86 C 647.53 353.27 648.83 351.97 650.4 351.97 Z M 634.14 351.97 L 641.45 351.97 C 643.04 351.97 644.34 353.27 644.34 354.86 L 644.34 362.17 C 644.34 363.76 643.04 365.06 641.45 365.06 L 634.14 365.06 C 632.55 365.06 631.25 363.76 631.25 362.17 L 631.25 354.86 C 631.25 353.27 632.55 351.97 634.14 351.97 Z M 617.87 351.97 L 625.2 351.97 C 626.76 351.97 628.06 353.27 628.06 354.86 L 628.06 362.17 C 628.06 363.76 626.76 365.06 625.2 365.06 L 617.87 365.06 C 616.27 365.06 614.97 363.76 614.97 362.17 L 614.97 354.86 C 614.97 353.27 616.27 351.97 617.87 351.97 Z" fill="#FFFFFF" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-17" data-name="ïṧ1ïḑê">
+<path d="M 502.57 448.97 L 498.06 453.46 L 496.17 451.57 L 494.2 453.52 L 496.09 455.42 L 498.05 457.39 L 500.02 455.43 L 504.53 450.94 Z M 499.37 442.94 C 505.03 442.94 509.62 447.52 509.62 453.18 C 509.62 458.85 505.03 463.43 499.37 463.43 C 493.71 463.43 489.13 458.85 489.13 453.18 C 489.13 447.52 493.71 442.94 499.37 442.94 Z M 481.04 418.92 C 483.23 418.74 484.88 419.29 486.07 419.99 C 487.84 420.98 488.52 422.27 488.52 422.27 C 488.52 422.27 492.58 422.55 491.2 430.81 C 491.16 431.06 491.1 431.32 491.02 431.57 C 491.8 431.57 492.59 432.16 491.74 435.16 C 491.08 437.5 490.47 438.15 490.01 438.19 C 489.84 439.24 489.42 440.41 488.79 441.52 L 488.79 445.1 C 487.07 447.35 486.05 450.15 486.05 453.18 C 486.05 457.28 487.91 460.95 490.84 463.39 L 462.49 463.39 C 461.29 463.39 460.31 462.41 460.31 461.21 L 460.31 457.36 C 460.31 456.08 460.89 454.86 461.89 454.04 C 467.33 449.57 473.2 446.61 474.39 446.03 C 474.52 445.97 474.61 445.83 474.61 445.67 L 474.61 441.52 C 473.96 440.41 473.55 439.24 473.38 438.19 C 472.92 438.15 472.31 437.49 471.65 435.16 C 470.81 432.22 471.57 431.59 472.33 431.57 C 472.25 431.32 472.19 431.06 472.15 430.8 C 471.85 429.32 471.78 427.93 472.12 426.61 C 472.53 424.83 473.5 423.41 474.58 422.31 C 475.25 421.58 476.02 420.95 476.84 420.43 C 477.51 419.97 478.25 419.57 479.04 419.3 C 479.67 419.1 480.34 418.95 481.04 418.92 Z" fill="#FFFFFF" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-18" data-name="islíḓe">
+<path d="M 807.35 439.23 L 815.01 439.23 L 815.01 446.85 L 807.35 446.85 Z M 782.84 435.42 L 790.5 435.42 L 790.5 446.85 L 782.84 446.85 Z M 795.09 426.53 L 802.76 426.53 L 802.76 446.85 L 795.09 446.85 Z M 777.47 421.82 L 777.47 451.6 L 820.38 451.6 L 820.38 421.82 Z M 775.94 418.75 L 821.91 418.75 C 822.75 418.75 823.44 419.44 823.44 420.28 L 823.44 453.13 C 823.44 453.97 822.75 454.66 821.91 454.66 L 800.46 454.66 L 800.46 460.16 L 810.8 460.16 L 810.8 463.23 L 787.04 463.23 L 787.04 460.16 L 797.39 460.16 L 797.39 454.66 L 775.94 454.66 C 775.1 454.66 774.4 453.97 774.4 453.13 L 774.4 420.28 C 774.4 419.44 775.1 418.75 775.94 418.75 Z" fill="#FFFFFF" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-19" data-name="îṣḷîḑe">
+<rect x="28.73" y="360.02" width="147.24" height="5.12" fill="#A8625A" stroke="none" />
+</g>
+<g id="shape-20" data-name="iś1ïḋe">
+<rect x="1103.82" y="361.31" width="147.24" height="5.12" fill="#A8625A" stroke="none" />
+</g>
+<g id="shape-21" data-name="组合 20">
+<g id="shape-22" data-name="组合 21">
+<g id="shape-24" data-name="文本框 23">
+<rect x="196.07" y="180.88" width="264.92" height="33.87" fill="none" />
+<text x="328.53" y="201.28" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="24" fill="url(#txtgrad6)" font-weight="bold"><tspan fill="url(#txtgrad6)" font-size="24" font-weight="bold">助力素养提升</tspan></text>
+</g>
+<g id="shape-25" data-name="文本框 24">
+<rect x="217.08" y="145" width="222.9" height="38.74" fill="none" />
+<text x="328.53" y="172.2" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="32" fill="url(#txtgrad7)" font-style="italic"><tspan fill="url(#txtgrad7)" font-size="32">{{CHAPTER_NUM}}</tspan></text>
+</g>
+</g>
+<g id="shape-23" data-name="矩形 22">
+<rect x="213.4" y="217.6" width="230.26" height="97.67" fill="none" />
+<text x="213.4" y="231.2" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#808080"><tspan fill="#808080" font-size="16">将劳动教育理念融入学科教学，</tspan><tspan x="213.4" dy="19.2" fill="#808080" font-size="16">能让学生在知识学习中同步培养</tspan><tspan x="213.4" dy="19.2" fill="#808080" font-size="16">劳动意识与实践能力，全面提升</tspan><tspan x="213.4" dy="19.2" fill="#808080" font-size="16">劳动素养。</tspan></text>
+</g>
+</g>
+<g id="shape-26" data-name="组合 25">
+<g id="shape-27" data-name="组合 26">
+<g id="shape-29" data-name="文本框 28">
+<rect x="824.8" y="180.19" width="264.92" height="33.87" fill="none" />
+<text x="957.26" y="200.59" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="24" fill="url(#txtgrad8)" font-weight="bold"><tspan fill="url(#txtgrad8)" font-size="24" font-weight="bold">填补研究空白</tspan></text>
+</g>
+<g id="shape-30" data-name="文本框 29">
+<rect x="845.82" y="144.87" width="222.9" height="38.73" fill="none" />
+<text x="957.26" y="172.07" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="32" fill="url(#txtgrad9)" font-style="italic"><tspan fill="url(#txtgrad9)" font-size="32">{{CHAPTER_TITLE}}</tspan></text>
+</g>
+</g>
+<g id="shape-28" data-name="矩形 27">
+<rect x="842.13" y="216.92" width="230.26" height="97.67" fill="none" />
+<text x="842.13" y="230.52" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#808080"><tspan fill="#808080" font-size="16">当前研究多侧重劳动教育独立实</tspan><tspan x="842.13" dy="19.2" fill="#808080" font-size="16">施，针对</tspan><tspan fill="#808080" font-size="16"> “</tspan><tspan fill="#808080" font-size="16">与学科教学融合</tspan><tspan fill="#808080" font-size="16">” </tspan><tspan fill="#808080" font-size="16">的</tspan><tspan x="842.13" dy="19.2" fill="#808080" font-size="16">实践路径研究较少，本研究可完</tspan><tspan x="842.13" dy="19.2" fill="#808080" font-size="16">善相关研究体系。</tspan></text>
+</g>
+</g>
+<g id="shape-31" data-name="组合 30">
+<g id="shape-32" data-name="组合 31">
+<g id="shape-34" data-name="文本框 33">
+<rect x="506.96" y="176.72" width="264.92" height="33.86" fill="none" />
+<text x="639.42" y="197.12" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="24" fill="url(#txtgrad10)" font-weight="bold"><tspan fill="url(#txtgrad10)" font-size="24" font-weight="bold">推动政策落地</tspan></text>
+</g>
+<g id="shape-35" data-name="文本框 34">
+<rect x="527.97" y="144.87" width="222.9" height="38.73" fill="none" />
+<text x="639.42" y="172.07" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="32" fill="url(#txtgrad11)" font-style="italic"><tspan fill="url(#txtgrad11)" font-size="32" font-style="italic">PART 03</tspan></text>
+</g>
+</g>
+<g id="shape-33" data-name="矩形 32">
+<rect x="524.29" y="213.59" width="230.26" height="97.66" fill="none" />
+<text x="524.29" y="227.19" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#808080"><tspan fill="#808080" font-size="16">让国家劳动教育相关政策从</tspan><tspan fill="#808080" font-size="16"> “</tspan><tspan fill="#808080" font-size="16">宏</tspan><tspan x="524.29" dy="19.2" fill="#808080" font-size="16">观要求</tspan><tspan fill="#808080" font-size="16">” </tspan><tspan fill="#808080" font-size="16">转化为</tspan><tspan fill="#808080" font-size="16"> “</tspan><tspan fill="#808080" font-size="16">学科教学具体</tspan><tspan x="524.29" dy="19.2" fill="#808080" font-size="16">行动</tspan><tspan fill="#808080" font-size="16">”</tspan><tspan fill="#808080" font-size="16">，助力政策在中小学日常</tspan><tspan x="524.29" dy="19.2" fill="#808080" font-size="16">教学中落地见效。</tspan></text>
+</g>
+</g>
+<g id="shape-36" data-name="组合 35">
+<g id="shape-37" data-name="组合 36">
+<g id="shape-39" data-name="文本框 38">
+<rect x="666.46" y="543.89" width="264.92" height="33.86" fill="none" />
+<text x="798.92" y="564.29" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="24" fill="url(#txtgrad12)" font-weight="bold"><tspan fill="url(#txtgrad12)" font-size="24" font-weight="bold">拓展价值边界</tspan></text>
+</g>
+<g id="shape-40" data-name="文本框 39">
+<rect x="687.47" y="507.91" width="222.9" height="38.73" fill="none" />
+<text x="798.92" y="535.11" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="32" fill="url(#txtgrad13)" font-style="italic"><tspan fill="url(#txtgrad13)" font-size="32" font-style="italic">PART 04</tspan></text>
+</g>
+</g>
+<g id="shape-38" data-name="矩形 37">
+<rect x="683.79" y="580.59" width="230.26" height="74.46" fill="none" />
+<text x="683.79" y="594.19" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#808080"><tspan fill="#808080" font-size="16">打破学科教学</tspan><tspan fill="#808080" font-size="16"> “</tspan><tspan fill="#808080" font-size="16">重知识传授</tspan><tspan fill="#808080" font-size="16">” </tspan><tspan fill="#808080" font-size="16">的</tspan><tspan x="683.79" dy="19.2" fill="#808080" font-size="16">单一定位，通过劳动教育融合，</tspan><tspan x="683.79" dy="19.2" fill="#808080" font-size="16">丰富学科的育人维度与价值内涵</tspan><tspan x="683.79" dy="19.2" fill="#808080" font-size="16">。</tspan></text>
+</g>
+</g>
+<g id="shape-41" data-name="组合 40">
+<g id="shape-42" data-name="组合 41">
+<g id="shape-44" data-name="文本框 43">
+<rect x="353.11" y="543.89" width="264.92" height="33.86" fill="none" />
+<text x="485.58" y="564.29" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="24" fill="url(#txtgrad14)" font-weight="bold"><tspan fill="url(#txtgrad14)" font-size="24" font-weight="bold">破解教学困境</tspan></text>
+</g>
+<g id="shape-45" data-name="文本框 44">
+<rect x="374.13" y="507.91" width="222.9" height="38.73" fill="none" />
+<text x="485.58" y="535.11" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="32" fill="url(#txtgrad15)" font-style="italic"><tspan fill="url(#txtgrad15)" font-size="32" font-style="italic">PART 02</tspan></text>
+</g>
+</g>
+<g id="shape-43" data-name="矩形 42">
+<rect x="370.44" y="580.58" width="230.26" height="97.66" fill="none" />
+<text x="370.44" y="594.18" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#808080"><tspan fill="#808080" font-size="16">为中小学教师提供具体的劳动教</tspan><tspan x="370.44" dy="19.2" fill="#808080" font-size="16">育与学科融合路径，解决其</tspan><tspan fill="#808080" font-size="16"> “</tspan><tspan fill="#808080" font-size="16">想</tspan><tspan x="370.44" dy="19.2" fill="#808080" font-size="16">融合却不知如何落地</tspan><tspan fill="#808080" font-size="16">” </tspan><tspan fill="#808080" font-size="16">的教学难</tspan><tspan x="370.44" dy="19.2" fill="#808080" font-size="16">题。</tspan></text>
+</g>
+</g>
+</g></svg>

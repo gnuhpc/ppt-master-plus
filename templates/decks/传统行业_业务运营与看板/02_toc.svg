@@ -1,0 +1,92 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-2" data-name="熊大的PPT宝库1">
+<rect x="36.62" y="22.78" width="277.89" height="61.39" fill="none" />
+<text x="46.22" y="47.98" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#000000"><tspan fill="#000000" font-size="24">{{TOC_ITEM_1_TITLE}}</tspan></text>
+</g>
+<g id="shape-4" data-name="熊大的PPT宝库3">
+<rect x="45.67" y="90.57" width="1190.55" height="4.91" fill="#00329D" stroke-width="0.667" stroke="#F2F2F2" />
+</g>
+<g id="shape-6" data-name="熊大的PPT宝库4">
+<path d="M 527.27 428.79 L 50.1 428.79 L 50.1 661.71 L 527.27 661.71 L 527.27 428.79 Z" stroke="#B8CFFF" fill="#FFFFFF" stroke-width="1" />
+</g>
+<g id="shape-7" data-name="熊大的PPT宝库5">
+<path d="M 1232.21 427.72 L 759.97 427.72 L 759.97 660.65 L 1232.21 660.65 L 1232.21 427.72 Z" stroke="#B8CFFF" fill="#FFFFFF" stroke-width="1" />
+</g>
+<g id="shape-8" data-name="熊大的PPT宝库6">
+<path d="M 741.25 427.72 L 545.7 427.72 L 545.7 537.72 L 741.25 537.72 L 741.25 427.72 Z" fill="#00329D" />
+</g>
+<g id="shape-9" data-name="熊大的PPT宝库7">
+<path d="M 741.25 550.76 L 545.7 550.76 L 545.7 660.76 L 741.25 660.76 L 741.25 550.76 Z" fill="#729FFF" />
+</g>
+<g id="shape-11" data-name="熊大的PPT宝库8">
+<rect x="569.17" y="438.8" width="148.64" height="48.47" fill="none" />
+<text x="578.77" y="470.8" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">{{TOC_ITEM_2_TITLE}}</tspan></text>
+</g>
+<g id="shape-16" data-name="熊大的PPT宝库9">
+<rect x="574.21" y="484.23" width="131.81" height="48.47" fill="none" />
+<text x="583.81" y="516.23" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">{{TOC_ITEM_3_TITLE}}</tspan></text>
+</g>
+<g id="shape-17" data-name="熊大的PPT宝库10">
+<rect x="569.17" y="560.06" width="148.64" height="48.47" fill="none" />
+<text x="578.77" y="592.06" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">{{TOC_ITEM_4_TITLE}}</tspan></text>
+</g>
+<g id="shape-18" data-name="熊大的PPT宝库11">
+<rect x="588.77" y="605.49" width="109.42" height="48.47" fill="none" />
+<text x="643.48" y="637.49" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">45800</tspan></text>
+</g>
+<g id="shape-19" data-name="熊大的PPT宝库12">
+<rect x="49.06" y="428.79" width="472.29" height="232.06" fill="none" stroke="#999999" stroke-dasharray="4 4" /><text x="285.2" y="544.82" text-anchor="middle" font-size="14" fill="#999999">[chart]</text>
+</g>
+<g id="shape-20" data-name="熊大的PPT宝库13">
+<rect x="758.65" y="428.79" width="472.29" height="232.06" fill="none" stroke="#999999" stroke-dasharray="4 4" /><text x="994.8" y="544.82" text-anchor="middle" font-size="14" fill="#999999">[chart]</text>
+</g>
+<g id="shape-10" data-name="熊大的PPT宝库14">
+<path d="M 1232.19 102.04 L 455.71 102.04 L 455.71 414.17 L 1232.19 414.17 L 1232.19 102.04 Z" fill="#F2F2F2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-22" data-name="熊大的PPT宝库15">
+<path d="M 436.9 102.04 L 48.66 102.04 L 48.66 414.17 L 436.9 414.17 L 436.9 102.04 Z" stroke="#B8CFFF" fill="#FFFFFF" stroke-width="1" />
+</g>
+<g id="shape-23" data-name="熊大的PPT宝库16" transform="translate(715.45 185.57) scale(-1 1) translate(-715.45 -185.57)">
+<rect x="519.79" y="157.68" width="391.33" height="55.79" stroke="none" fill="none" />
+<text x="529.39" y="173.81" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">{{TOC_ITEM_1_DESC}}</tspan></text>
+</g>
+<g id="shape-24" data-name="熊大的PPT宝库17" transform="translate(672.2 134.68) scale(-1 1) translate(-672.2 -134.68)">
+<rect x="519.79" y="110.11" width="304.82" height="49.14" stroke="none" fill="none" />
+<text x="529.39" y="135.31" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="24" fill="#00329D"><tspan fill="#00329D" font-size="24">渠道业绩超额达成目标</tspan></text>
+</g>
+<g id="shape-25" data-name="熊大的PPT宝库18" transform="translate(715.45 300.2) scale(-1 1) translate(-715.45 -300.2)">
+<rect x="519.79" y="272.2" width="391.33" height="56.01" stroke="none" fill="none" />
+<text x="529.39" y="288.33" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">{{TOC_ITEM_2_DESC}}</tspan></text>
+</g>
+<g id="shape-26" data-name="熊大的PPT宝库19" transform="translate(715.45 249.35) scale(-1 1) translate(-715.45 -249.35)">
+<rect x="519.79" y="224.63" width="391.33" height="49.44" stroke="none" fill="none" />
+<text x="529.39" y="249.83" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="24" fill="#00329D"><tspan fill="#00329D" font-size="24">渠道与直销销售分析</tspan></text>
+</g>
+<g id="shape-27" data-name="熊大的PPT宝库20" transform="translate(715.45 366.31) scale(-1 1) translate(-715.45 -366.31)">
+<rect x="519.79" y="338.41" width="391.33" height="55.79" stroke="none" fill="none" />
+<text x="529.39" y="354.55" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">{{TOC_ITEM_3_DESC}}</tspan></text>
+</g>
+<g id="shape-28" data-name="熊大的PPT宝库21">
+<ellipse cx="497.01" cy="137.38" rx="4.29" ry="4.28" fill="#00329D" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-32" data-name="熊大的PPT宝库22">
+<ellipse cx="497.01" cy="254.49" rx="4.29" ry="4.28" fill="#00329D" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-36" data-name="熊大的PPT宝库23">
+<line x1="492.72" y1="223.96" x2="917.29" y2="223.96" stroke-width="1.333" stroke="#00329D" stroke-dasharray="3 3" fill="#00329D" />
+</g>
+<g id="shape-37" data-name="熊大的PPT宝库24">
+<rect x="938.19" y="102.04" width="289.82" height="312.39" fill="none" stroke="#999999" stroke-dasharray="4 4" /><text x="1083.1" y="258.24" text-anchor="middle" font-size="14" fill="#999999">[chart]</text>
+</g>
+<g id="shape-38" data-name="熊大的PPT宝库25">
+<rect x="1002.06" y="194.86" width="160.43" height="80.78" fill="none" />
+<text x="1082.27" y="249.52" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="58.67" fill="#00329D"><tspan fill="#00329D" font-size="58.67">30%</tspan></text>
+</g>
+<g id="shape-39" data-name="熊大的PPT宝库26">
+<rect x="999.5" y="270.17" width="170.18" height="32.31" fill="none" />
+<text x="1009.1" y="290.84" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="18.67" fill="#00329D"><tspan fill="#00329D" font-size="18.67">同比销售额提升约</tspan></text>
+</g>
+<g id="shape-40" data-name="熊大的PPT宝库27">
+<rect x="48.66" y="103.11" width="390.84" height="311.33" fill="none" stroke="#999999" stroke-dasharray="4 4" /><text x="244.08" y="258.77" text-anchor="middle" font-size="14" fill="#999999">[chart]</text>
+</g></svg>

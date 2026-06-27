@@ -1,0 +1,203 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#924437" />
+<g id="master-shape-8" data-name="圆角矩形 7">
+<rect x="29.07" y="26.07" width="1221.8" height="667" rx="26.53" ry="26.53" fill="#FFFFFF" stroke="none" stroke-width="1" />
+</g>
+<g id="layout-shape-7" data-name="椭圆 6">
+<ellipse cx="1170.67" cy="84.67" rx="6" ry="6" fill="#924437" stroke="none" stroke-width="1" />
+</g>
+<g id="layout-shape-8" data-name="椭圆 7">
+<ellipse cx="1190.67" cy="84.67" rx="6" ry="6" fill="#924437" stroke="none" stroke-width="1" />
+</g>
+<g id="layout-shape-9" data-name="椭圆 8">
+<ellipse cx="1210.67" cy="84.67" rx="6" ry="6" fill="#924437" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-4" data-name="标题 3" data-ph-type="title">
+<rect x="63.87" y="48.87" width="1151.62" height="74.08" fill="none" />
+<text x="73.47" y="74.07" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#000000"><tspan fill="#000000" font-size="24">{{PAGE_TITLE}}</tspan></text>
+</g>
+<g id="shape-2" data-name="组合 1">
+<g id="shape-3" data-name="组合 2">
+<g id="shape-32" data-name="任意多边形: 形状 36">
+<path d="M 472.99 381.66 L 434.05 381.66 L 398.84 381.66 L 398.84 381.66 L 367.84 381.66 L 345.52 381.66 L 271.13 381.66 C 273.86 389.1 275.35 397.28 275.35 405.71 C 275.35 414.64 278.07 422.82 282.54 429.77 L 345.77 429.77 L 356.68 429.77 L 356.68 429.77 L 387.68 429.77 L 387.68 429.77 L 484.39 429.77 C 481.67 422.33 480.18 414.14 480.18 405.71 C 480.18 396.79 477.7 388.6 472.99 381.66 Z" fill="#D9D9D9" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-33" data-name="任意多边形: 形状 37">
+<path d="M 705.84 381.66 L 631.69 381.66 L 631.69 381.66 L 600.7 381.66 L 570.94 381.66 L 503.98 381.66 C 506.71 389.1 508.2 397.28 508.2 405.71 C 508.2 414.64 510.93 422.82 515.39 429.77 L 571.19 429.77 L 589.54 429.77 L 589.54 429.77 L 620.53 429.77 L 620.53 429.77 L 717.25 429.77 C 714.52 422.33 713.03 414.14 713.03 405.71 C 713.03 396.79 710.3 388.6 705.84 381.66 Z" fill="#D9D9D9" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-35" data-name="任意多边形: 形状 38">
+<path d="M 938.69 381.66 L 864.55 381.66 L 864.55 381.66 L 833.55 381.66 L 796.35 381.66 L 736.84 381.66 C 739.56 389.1 741.05 397.28 741.05 405.71 C 741.05 414.64 743.78 422.82 748.24 429.77 L 796.35 429.77 L 822.14 429.77 L 822.14 429.77 L 853.14 429.77 L 853.14 429.77 L 949.85 429.77 C 947.12 422.33 945.63 414.14 945.63 405.71 C 945.88 396.79 943.15 388.6 938.69 381.66 Z" fill="#D9D9D9" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-36" data-name="任意多边形: 形状 39">
+<path d="M 240.38 381.66 L 208.89 381.66 L 166.24 381.66 L 135.24 381.66 L 120.36 381.66 L 86.14 381.66 L 109.2 405.71 L 86.14 429.77 L 120.36 429.77 L 208.89 429.77 L 251.79 429.77 C 249.06 422.33 247.57 414.14 247.57 405.71 C 247.57 396.79 244.85 388.6 240.38 381.66 Z" fill="#D9D9D9" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-42" data-name="任意多边形: 形状 40">
+<path d="M 552.34 449.85 C 562.01 449.85 570.69 446.88 577.88 441.67 C 578.87 440.93 579.62 440.18 580.61 439.44 C 580.86 439.19 581.11 438.94 581.35 438.69 C 582.1 437.95 582.84 437.45 583.34 436.71 C 583.58 436.46 584.08 435.97 584.33 435.72 C 584.82 434.97 585.57 434.48 586.06 433.74 C 586.31 433.49 586.56 432.99 586.81 432.74 C 587.55 431.75 588.3 430.76 589.04 429.77 L 570.69 429.77 L 514.89 429.77 C 523.33 441.92 536.96 449.85 552.34 449.85 Z" fill="none" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-43" data-name="任意多边形: 形状 41">
+<path d="M 319.73 449.85 C 329.41 449.85 338.09 446.88 345.28 441.67 C 346.27 440.93 347.01 440.18 348 439.44 C 348.25 439.19 348.5 438.94 348.75 438.69 C 349.49 437.95 350.24 437.45 350.73 436.71 C 350.98 436.46 351.48 435.97 351.72 435.72 C 352.22 434.97 352.96 434.48 353.46 433.74 C 353.71 433.49 353.96 432.99 354.2 432.74 C 354.95 431.75 355.69 430.76 356.44 429.77 L 345.52 429.77 L 282.54 429.77 C 290.47 441.92 304.11 449.85 319.73 449.85 Z" fill="none" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-44" data-name="任意多边形: 形状 42">
+<path d="M 785.19 449.85 C 794.61 449.85 803.29 446.88 810.49 441.92 L 810.49 441.92 C 811.73 441.17 812.72 440.18 813.71 439.44 C 813.71 439.44 813.71 439.44 813.71 439.44 C 814.7 438.45 815.69 437.7 816.69 436.71 C 816.69 436.71 816.69 436.71 816.69 436.71 C 818.67 434.73 820.4 432.49 821.89 430.02 L 796.1 430.02 L 748.24 430.02 C 755.93 441.92 769.57 449.85 785.19 449.85 Z" fill="none" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-45" data-name="任意多边形: 形状 43">
+<path d="M 864.55 381.66 C 864.55 381.66 864.55 381.41 864.79 381.41 C 865.04 381.16 865.29 380.92 865.54 380.42 C 865.78 379.92 866.03 379.43 866.53 379.18 C 866.53 379.18 866.53 378.93 866.78 378.93 C 869.26 375.71 872.23 372.73 875.46 370.25 C 882.9 364.8 892.07 361.57 901.74 361.57 C 917.36 361.57 931 369.51 938.69 381.66 C 943.15 388.6 945.88 396.79 945.88 405.71 L 973.9 405.71 C 973.9 397.28 972.42 389.1 969.69 381.66 C 959.77 353.64 932.99 333.55 901.74 333.55 C 874.71 333.55 851.4 348.43 839 370.25 C 839 370.5 838.76 370.75 838.51 371 C 838.26 371.49 837.76 372.24 837.52 372.73 C 837.02 373.72 836.52 374.72 836.03 375.46 C 835.78 375.96 835.53 376.7 835.28 377.2 C 834.79 378.19 834.29 379.43 834.04 380.42 C 833.8 380.67 833.8 381.16 833.55 381.41 L 864.55 381.41 Z" fill="#A8625A" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-46" data-name="任意多边形: 形状 44">
+<path d="M 631.69 381.66 L 631.69 381.66 C 631.69 381.66 631.69 381.41 631.94 381.41 C 632.19 381.16 632.44 380.92 632.44 380.42 C 632.68 379.92 633.18 379.43 633.43 379.18 C 633.43 379.18 633.43 379.18 633.68 378.93 C 636.16 375.71 639.13 372.73 642.6 370.25 L 642.6 370.25 C 650.04 364.8 659.22 361.57 668.89 361.57 C 684.51 361.57 698.15 369.51 705.84 381.66 C 710.3 388.6 713.03 396.79 713.03 405.71 L 741.05 405.71 C 741.05 397.28 739.56 389.1 736.84 381.66 C 726.92 353.64 700.13 333.55 668.89 333.55 C 641.86 333.55 618.55 348.43 606.15 370.25 L 606.15 370.25 C 606.15 370.5 605.9 370.75 605.9 371 C 605.65 371.49 605.16 372.24 604.91 372.73 C 604.41 373.72 603.92 374.72 603.42 375.46 C 603.18 375.96 602.93 376.7 602.68 377.2 C 602.18 378.19 601.69 379.43 601.44 380.42 C 601.19 380.67 601.19 381.16 600.94 381.41 L 631.69 381.41 Z" fill="#6C3632" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-47" data-name="任意多边形: 形状 45">
+<path d="M 398.84 381.66 C 398.84 381.66 398.84 381.41 399.09 381.41 C 399.34 381.16 399.58 380.92 399.83 380.42 C 400.08 379.92 400.58 379.43 400.82 379.18 C 400.82 379.18 400.82 378.93 401.07 378.93 C 403.55 375.71 406.53 372.73 409.75 370.25 C 417.19 364.8 426.37 361.57 436.04 361.57 C 451.66 361.57 465.3 369.51 472.99 381.66 C 477.45 388.6 480.18 396.79 480.18 405.71 L 508.2 405.71 C 508.2 397.28 506.71 389.1 503.98 381.66 C 494.06 353.64 467.28 333.55 436.04 333.55 C 409.01 333.55 385.7 348.43 373.3 370.25 C 373.3 370.5 373.05 370.75 372.8 371 C 372.55 371.49 372.06 372.24 371.81 372.73 C 371.31 373.72 370.82 374.72 370.32 375.46 C 370.07 375.96 369.83 376.7 369.58 377.2 C 369.08 378.19 368.59 379.43 368.34 380.42 C 368.09 380.67 368.09 381.16 367.84 381.41 L 398.84 381.41 Z" fill="#924437" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-48" data-name="任意多边形: 形状 46">
+<path d="M 203.18 361.33 C 218.81 361.33 232.45 369.26 240.13 381.41 C 244.6 388.35 247.33 396.54 247.33 405.47 L 275.35 405.47 C 275.35 397.03 273.86 388.85 271.13 381.41 C 261.21 353.39 234.43 333.3 203.18 333.3 C 176.65 333.3 153.34 347.69 140.94 369.26 L 177.89 369.26 C 185.08 364.3 193.76 361.33 203.18 361.33 Z" fill="#A8625A" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-49" data-name="任意多边形: 形状 47">
+<path d="M 619.29 432.74 L 619.29 432.74 C 619.29 432.74 619.29 432.74 619.29 432.74 C 619.29 432.74 619.29 432.74 619.29 432.74 Z" fill="#E6342B" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-50" data-name="任意多边形: 形状 48">
+<path d="M 578.13 441.67 C 570.94 446.88 562.01 449.85 552.59 449.85 C 536.96 449.85 523.33 441.92 515.64 429.77 C 511.17 422.82 508.45 414.64 508.45 405.71 L 480.43 405.71 C 480.43 414.14 481.91 422.33 484.64 429.77 C 494.56 457.79 521.34 477.88 552.59 477.88 C 579.12 477.88 602.43 463.49 614.83 441.92 L 577.63 441.92 C 577.88 441.92 577.88 441.67 578.13 441.67 Z" fill="#973C2C" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-51" data-name="任意多边形: 形状 49">
+<path d="M 386.44 432.74 L 386.44 432.74 C 386.44 432.74 386.44 432.74 386.44 432.74 C 386.44 432.74 386.44 432.74 386.44 432.74 Z" fill="#00BBB4" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-52" data-name="任意多边形: 形状 50">
+<path d="M 345.28 441.67 C 338.09 446.88 329.16 449.85 319.74 449.85 C 304.11 449.85 290.47 441.92 282.79 429.77 C 278.32 422.82 275.59 414.64 275.59 405.71 L 247.57 405.71 C 247.57 414.14 249.06 422.33 251.79 429.77 C 261.71 457.79 288.49 477.88 319.74 477.88 C 346.27 477.88 369.58 463.49 381.98 441.92 L 344.78 441.92 C 345.03 441.92 345.03 441.67 345.28 441.67 Z" fill="#845853" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-53" data-name="任意多边形: 形状 51">
+<path d="M 785.19 449.85 C 769.57 449.85 755.93 441.92 748.24 429.77 C 743.78 422.82 741.05 414.64 741.05 405.71 L 713.03 405.71 C 713.03 414.14 714.52 422.33 717.25 429.77 C 727.16 457.79 753.95 477.88 785.19 477.88 C 811.73 477.88 835.04 463.49 847.43 441.92 L 810.49 441.92 C 803.29 446.88 794.61 449.85 785.19 449.85 Z" fill="#481914" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-54" data-name="任意多边形: 形状 52">
+<path d="M 851.9 433.49 L 851.9 433.49 C 851.65 433.73 851.65 433.98 851.4 434.48 C 851.4 433.98 851.65 433.73 851.9 433.49 Z" fill="#1AACFF" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-55" data-name="任意多边形: 形状 53">
+<path d="M 1074.34 405.71 C 1067.89 405.71 1062.43 409.93 1060.94 416.13 C 1059.7 421.09 1057.72 425.55 1054.99 429.77 C 1047.06 441.92 1033.42 449.85 1017.8 449.85 C 1002.17 449.85 988.53 441.92 980.85 429.77 C 976.38 422.82 973.66 414.64 973.66 405.71 L 945.63 405.71 C 945.63 414.14 947.12 422.33 949.85 429.77 C 959.77 457.79 986.55 477.88 1017.8 477.88 C 1049.04 477.88 1075.82 457.79 1085.74 429.77 C 1086.49 427.54 1087.23 425.3 1087.73 423.07 C 1090.21 414.14 1083.51 405.71 1074.34 405.71 Z" fill="#845853" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-56" data-name="任意多边形: 形状 54">
+<path d="M 174.67 371.99 C 174.67 371.99 174.67 371.99 174.67 371.99 C 175.66 371 176.9 370.25 178.14 369.26 L 140.94 369.26 L 140.94 369.26 C 140.94 369.51 140.69 369.51 140.69 369.76 C 139.7 371.49 138.71 373.23 137.97 375.21 C 137.97 375.21 137.97 375.21 137.97 375.21 C 137.47 376.2 136.97 377.2 136.73 378.19 C 136.73 378.19 136.73 378.19 136.73 378.19 C 136.23 379.18 135.98 380.17 135.49 381.16 L 166.48 381.16 C 168.47 377.94 171.44 374.72 174.67 371.99 Z" fill="#A8625A" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-57" data-name="任意多边形: 形状 55">
+<path d="M 822.14 429.77 L 822.14 429.77 C 820.65 432.25 818.92 434.23 816.93 436.46 C 816.93 436.46 816.93 436.46 816.93 436.46 C 815.94 437.45 814.95 438.45 813.96 439.19 C 813.96 439.19 813.96 439.19 813.96 439.19 C 812.97 440.18 811.73 440.93 810.73 441.67 L 810.73 441.67 L 847.43 441.67 L 847.43 441.67 C 847.93 440.68 848.67 439.69 849.17 438.45 C 849.42 437.95 849.67 437.45 849.91 436.96 C 850.41 435.97 850.91 434.97 851.15 433.98 C 851.4 433.73 851.4 433.49 851.65 432.99 C 852.15 431.75 852.64 430.51 853.14 429.27 L 853.14 429.27 L 822.14 429.27 Z" fill="#481914" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-58" data-name="任意多边形: 形状 56">
+<path d="M 589.54 429.77 L 589.54 429.77 C 588.79 430.76 588.05 431.75 587.3 432.74 C 587.06 432.99 586.81 433.49 586.56 433.74 C 586.06 434.48 585.32 434.97 584.82 435.72 C 584.58 435.97 584.08 436.46 583.83 436.71 C 583.09 437.45 582.34 437.95 581.85 438.69 C 581.6 438.94 581.35 439.19 581.1 439.44 C 580.11 440.18 579.37 440.93 578.38 441.67 C 578.38 441.67 578.13 441.92 578.13 441.92 L 615.33 441.92 L 615.33 441.92 C 616.07 440.68 616.81 439.19 617.56 437.95 C 617.81 437.7 617.81 437.45 618.05 436.96 C 618.8 435.47 619.29 433.98 620.04 432.5 C 620.04 432.5 620.04 432.5 620.04 432.5 C 620.53 431.5 620.78 430.51 621.03 429.52 L 621.03 429.52 L 589.54 429.52 Z" fill="#973C2C" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-59" data-name="任意多边形: 形状 57">
+<path d="M 356.68 429.77 L 356.68 429.77 C 355.94 430.76 355.2 431.75 354.45 432.74 C 354.2 432.99 353.96 433.49 353.71 433.74 C 353.21 434.48 352.47 434.97 351.97 435.72 C 351.72 435.97 351.23 436.46 350.98 436.71 C 350.24 437.45 349.49 437.95 349 438.69 C 348.75 438.94 348.5 439.19 348.25 439.44 C 347.26 440.18 346.52 440.93 345.52 441.67 C 345.52 441.67 345.28 441.92 345.28 441.92 L 382.47 441.92 L 382.47 441.92 C 383.22 440.68 383.96 439.19 384.71 437.95 C 384.95 437.7 384.95 437.45 385.2 436.96 C 385.95 435.47 386.44 433.98 387.19 432.5 C 387.19 432.5 387.19 432.5 387.19 432.5 C 387.68 431.5 387.93 430.51 388.18 429.52 L 388.18 429.52 L 356.68 429.52 Z" fill="#845853" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-60" data-name="任意多边形: 形状 58">
+<path d="M 1170.55 381.66 L 969.69 381.66 C 972.42 389.1 973.9 397.28 973.9 405.71 C 973.9 414.64 976.63 422.82 981.1 429.77 L 1055.24 429.77 C 1057.97 425.55 1059.95 421.09 1061.19 416.13 C 1062.68 409.93 1068.38 405.71 1074.58 405.71 C 1083.76 405.71 1090.45 414.14 1088.22 423.07 C 1087.73 425.3 1086.98 427.54 1086.24 429.77 L 1170.8 429.77 L 1193.86 405.71 L 1170.55 381.66 Z" fill="#D9D9D9" stroke-width="2.127" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-61" data-name="组合 60">
+<g id="shape-62" data-name="文本框 23">
+<rect x="86.53" y="524.06" width="224.47" height="35.4" fill="none" />
+<text x="96.13" y="546.99" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;阿里巴巴普惠体 R&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="21.33" font-weight="bold">商品遮挡识别精度低</tspan></text>
+</g>
+<g id="shape-63" data-name="文本框 24">
+<rect x="86.06" y="557.79" width="247.27" height="102.47" fill="none" />
+<text x="95.66" y="576.19" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#262626"><tspan fill="#262626" font-size="16">{{CONTENT_1}}</tspan></text>
+</g>
+<g id="shape-64" data-name="文本框 23">
+<rect x="132" y="457.53" width="172.07" height="64.4" fill="none" />
+<text x="141.6" y="503.13" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;阿里巴巴普惠体 R&quot;, sans-serif" font-size="48" fill="#A8625A" font-weight="bold"><tspan fill="#A8625A" font-size="48" font-weight="bold">01</tspan></text>
+</g>
+</g>
+<g id="shape-65" data-name="组合 64">
+<g id="shape-66" data-name="文本框 23">
+<rect x="358.78" y="524.06" width="224.93" height="35.4" fill="none" />
+<text x="368.38" y="546.99" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;阿里巴巴普惠体 R&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="21.33" font-weight="bold">多</tspan><tspan fill="#262626" font-size="21.33" font-weight="bold">SKU</tspan><tspan fill="#262626" font-size="21.33" font-weight="bold">泛化能力弱</tspan></text>
+</g>
+<g id="shape-67" data-name="文本框 24">
+<rect x="355.76" y="557.79" width="243.8" height="79.27" fill="none" />
+<text x="365.36" y="576.19" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#262626"><tspan fill="#262626" font-size="16">{{CONTENT_2}}</tspan></text>
+</g>
+<g id="shape-68" data-name="文本框 23">
+<rect x="376.02" y="457.53" width="172.07" height="56.27" fill="none" />
+<text x="385.62" y="503.13" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;阿里巴巴普惠体 R&quot;, sans-serif" font-size="48" fill="#924437" font-weight="bold"><tspan fill="#924437" font-size="48" font-weight="bold">03</tspan></text>
+</g>
+</g>
+<g id="shape-69" data-name="组合 68">
+<g id="shape-70" data-name="文本框 23">
+<rect x="620.04" y="524.06" width="213.47" height="35.4" fill="none" />
+<text x="629.64" y="546.99" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;阿里巴巴普惠体 R&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="21.33" font-weight="bold">低算力终端适配难</tspan></text>
+</g>
+<g id="shape-71" data-name="文本框 24">
+<rect x="620.04" y="557.79" width="227.4" height="79.27" fill="none" />
+<text x="629.64" y="576.19" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#262626"><tspan fill="#262626" font-size="16">{{CONTENT_3}}</tspan></text>
+</g>
+<g id="shape-72" data-name="文本框 23">
+<rect x="620.04" y="457.53" width="172.07" height="56.27" fill="none" />
+<text x="629.64" y="503.13" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;阿里巴巴普惠体 R&quot;, sans-serif" font-size="48" fill="#6C3632" font-weight="bold"><tspan fill="#6C3632" font-size="48" font-weight="bold">05</tspan></text>
+</g>
+</g>
+<g id="shape-73" data-name="组合 72">
+<g id="shape-74" data-name="文本框 23">
+<rect x="864.05" y="524.06" width="224.2" height="35.4" fill="none" />
+<text x="873.65" y="546.99" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;阿里巴巴普惠体 R&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="21.33" font-weight="bold">局部特征干扰严重</tspan></text>
+</g>
+<g id="shape-75" data-name="文本框 24">
+<rect x="864.05" y="557.79" width="239.93" height="102.47" fill="none" />
+<text x="873.65" y="576.19" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#262626"><tspan fill="#262626" font-size="16">商品标签等局部干扰元素，导</tspan><tspan x="873.65" dy="19.2" fill="#262626" font-size="16">致算法误将同类不同规格商品</tspan><tspan x="873.65" dy="19.2" fill="#262626" font-size="16">（如</tspan><tspan fill="#262626" font-size="16"> 500ml</tspan><tspan fill="#262626" font-size="16">与</tspan><tspan fill="#262626" font-size="16">1L</tspan><tspan fill="#262626" font-size="16">饮料）混淆，</tspan><tspan x="873.65" dy="19.2" fill="#262626" font-size="16">误识率超</tspan><tspan fill="#262626" font-size="16">12%</tspan><tspan fill="#262626" font-size="16">。</tspan></text>
+</g>
+<g id="shape-76" data-name="文本框 23">
+<rect x="864.05" y="457.53" width="172.07" height="56.27" fill="none" />
+<text x="873.65" y="503.13" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;阿里巴巴普惠体 R&quot;, sans-serif" font-size="48" fill="#A8625A" font-weight="bold"><tspan fill="#A8625A" font-size="48" font-weight="bold">07</tspan></text>
+</g>
+</g>
+<g id="shape-77" data-name="组合 76">
+<g id="shape-78" data-name="文本框 23">
+<rect x="249.61" y="241.12" width="192.07" height="35.4" fill="none" />
+<text x="259.21" y="264.05" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;阿里巴巴普惠体 R&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="21.33" font-weight="bold">光照变化鲁棒性差</tspan></text>
+</g>
+<g id="shape-79" data-name="文本框 23">
+<rect x="262.95" y="276.83" width="172.09" height="70.95" fill="none" />
+<text x="272.55" y="322.43" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;阿里巴巴普惠体 R&quot;, sans-serif" font-size="48" fill="#845853" font-weight="bold"><tspan fill="#845853" font-size="48" font-weight="bold">02</tspan></text>
+</g>
+<g id="shape-80" data-name="文本框 24">
+<rect x="248.95" y="153.25" width="232.8" height="87.87" fill="none" />
+<text x="258.55" y="171.65" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#262626"><tspan fill="#262626" font-size="16">超市货架区域光照波动时，算</tspan><tspan x="258.55" dy="19.2" fill="#262626" font-size="16">法识别误差上升</tspan><tspan fill="#262626" font-size="16"> 15%-20%</tspan><tspan fill="#262626" font-size="16">，易</tspan><tspan x="258.55" dy="19.2" fill="#262626" font-size="16">出现商品误判。</tspan></text>
+</g>
+</g>
+<g id="shape-81" data-name="组合 80">
+<g id="shape-82" data-name="文本框 23">
+<rect x="498.64" y="242.45" width="201.33" height="35.4" fill="none" />
+<text x="508.24" y="265.39" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;阿里巴巴普惠体 R&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="21.33" font-weight="bold">实时识别速度不足</tspan></text>
+</g>
+<g id="shape-83" data-name="文本框 23">
+<rect x="498.64" y="276.83" width="172.09" height="70.95" fill="none" />
+<text x="508.24" y="322.43" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;阿里巴巴普惠体 R&quot;, sans-serif" font-size="48" fill="#973C2C" font-weight="bold"><tspan fill="#973C2C" font-size="48" font-weight="bold">04</tspan></text>
+</g>
+<g id="shape-84" data-name="文本框 24">
+<rect x="497.31" y="126.64" width="227.67" height="114.4" fill="none" />
+<text x="506.91" y="145.04" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#262626"><tspan fill="#262626" font-size="16">自助结算场景需每秒识别</tspan><tspan fill="#262626" font-size="16">10+</tspan><tspan x="506.91" dy="19.2" fill="#262626" font-size="16">件商品，现有算法单帧推理耗</tspan><tspan x="506.91" dy="19.2" fill="#262626" font-size="16">时超</tspan><tspan fill="#262626" font-size="16"> 100ms</tspan><tspan fill="#262626" font-size="16">，导致结算排队拥</tspan><tspan x="506.91" dy="19.2" fill="#262626" font-size="16">堵。</tspan></text>
+</g>
+</g>
+<g id="shape-85" data-name="组合 84">
+<g id="shape-86" data-name="文本框 23">
+<rect x="734.33" y="241.14" width="172.09" height="35.4" fill="none" />
+<text x="743.93" y="264.07" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;阿里巴巴普惠体 R&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="21.33" font-weight="bold">旧品包装适配差</tspan></text>
+</g>
+<g id="shape-87" data-name="文本框 23">
+<rect x="734.33" y="276.83" width="172.09" height="70.95" fill="none" />
+<text x="743.93" y="322.43" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;阿里巴巴普惠体 R&quot;, sans-serif" font-size="48" fill="#481914" font-weight="bold"><tspan fill="#481914" font-size="48" font-weight="bold">06</tspan></text>
+</g>
+<g id="shape-88" data-name="文本框 24">
+<rect x="734.33" y="126.41" width="215.6" height="79.27" fill="none" />
+<text x="743.93" y="144.81" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#262626"><tspan fill="#262626" font-size="16">部分商品包装磨损、标签褪</tspan><tspan x="743.93" dy="19.2" fill="#262626" font-size="16">色，算法依赖清晰包装特征</tspan><tspan x="743.93" dy="19.2" fill="#262626" font-size="16">，对旧品识别率较新品低</tspan><tspan fill="#262626" font-size="16"> </tspan><tspan x="743.93" dy="19.2" fill="#262626" font-size="16">25%</tspan><tspan fill="#262626" font-size="16">。</tspan></text>
+</g>
+</g>
+<g id="shape-89" data-name="组合 88">
+<g id="shape-90" data-name="文本框 23">
+<rect x="960.69" y="241.14" width="172.09" height="35.4" fill="none" />
+<text x="970.29" y="264.07" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;阿里巴巴普惠体 R&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="21.33" font-weight="bold">多视角识别失衡</tspan></text>
+</g>
+<g id="shape-91" data-name="文本框 23">
+<rect x="970.02" y="276.83" width="172.09" height="70.95" fill="none" />
+<text x="979.62" y="322.43" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;阿里巴巴普惠体 R&quot;, sans-serif" font-size="48" fill="#845853" font-weight="bold"><tspan fill="#845853" font-size="48" font-weight="bold">08</tspan></text>
+</g>
+<g id="shape-92" data-name="文本框 24">
+<rect x="959.42" y="127.38" width="234.47" height="79.27" fill="none" />
+<text x="969.02" y="145.78" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#262626"><tspan fill="#262626" font-size="16">多视角拍摄场景下，算法对非</tspan><tspan x="969.02" dy="19.2" fill="#262626" font-size="16">正视角商品的识别率下降</tspan><tspan fill="#262626" font-size="16">30%</tspan><tspan x="969.02" dy="19.2" fill="#262626" font-size="16">，难以覆盖全场景盘点需求。</tspan></text>
+</g>
+</g>
+</g></svg>

@@ -1,0 +1,137 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="0" stdDeviation="13.33" flood-color="#1C4273" flood-opacity="0.15" /></filter><linearGradient id="ggrad1" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0.01" stop-color="#CDDAE9" /><stop offset="1" stop-color="#FFFFFF" /></linearGradient><linearGradient id="ggrad2" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0.03" stop-color="#1C4273" /><stop offset="0.9" stop-color="#FFFFFF" stop-opacity="0" /></linearGradient><linearGradient id="ggrad3" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0.01" stop-color="#CDDAE9" /><stop offset="1" stop-color="#FFFFFF" /></linearGradient><linearGradient id="ggrad4" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0.01" stop-color="#748EAE" /><stop offset="0.87" stop-color="#FFFFFF" /></linearGradient><linearGradient id="ggrad5" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0.01" stop-color="#CDDAE9" /><stop offset="1" stop-color="#FFFFFF" /></linearGradient><linearGradient id="ggrad6" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0.01" stop-color="#748EAE" /><stop offset="0.87" stop-color="#FFFFFF" /></linearGradient><linearGradient id="ggrad7" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0.01" stop-color="#CDDAE9" /><stop offset="1" stop-color="#FFFFFF" /></linearGradient><linearGradient id="ggrad8" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0.01" stop-color="#748EAE" /><stop offset="0.87" stop-color="#FFFFFF" /></linearGradient><linearGradient id="ggrad9" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0.01" stop-color="#CDDAE9" /><stop offset="1" stop-color="#FFFFFF" /></linearGradient><linearGradient id="ggrad10" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0.01" stop-color="#748EAE" /><stop offset="0.87" stop-color="#FFFFFF" /></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="layout-shape-4" data-name="矩形: 圆角 3">
+<rect x="0" y="79.7" width="50.72" height="4.98" rx="0" ry="0" fill="#1C4273" stroke="#1C4273" stroke-width="1" filter="url(#fx1)" />
+</g>
+<g id="shape-261" data-name="矩形 260">
+<rect x="89.69" y="259.85" width="1170.14" height="6.14" fill="#9D3728" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-255" data-name="矩形 254">
+<rect x="89.69" y="111.94" width="1170.14" height="142.92" fill="url(#ggrad1)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-2" data-name="标题 1" data-ph-type="title">
+<rect x="0" y="19.09" width="984.49" height="57.67" fill="none" />
+<text x="9.6" y="44.29" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#000000"><tspan fill="#000000" font-size="24">{{CHAPTER_DESC}}</tspan></text>
+</g>
+<g id="shape-258" data-name="文本框 57">
+<rect x="731.67" y="138.2" width="422.6" height="87.13" fill="none" />
+<text x="1144.67" y="197.4" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="64" fill="#1C4273"><tspan fill="#1C4273" font-size="64">{{CHAPTER_TITLE}}</tspan></text>
+</g>
+<g id="shape-260" data-name="图形 52">
+<path d="M 1220.54 136.55 L 1166.09 136.55 L 1166.09 136.55 L 1163.41 137.18 L 1161.33 138.11 L 1160.14 140.6 L 1159.55 143.4 L 1159.55 243.36 L 1159.55 243.36 L 1160.14 246.17 L 1161.33 248.35 L 1163.41 249.59 L 1166.09 249.9 L 1233.04 249.9 L 1233.04 249.9 L 1235.72 249.59 L 1237.8 248.35 L 1239.59 246.17 L 1239.59 243.36 L 1239.59 158.04 L 1220.54 136.55 Z M 1222.33 146.83 L 1230.96 156.17 L 1222.33 156.17 L 1222.33 146.83 Z M 1234.23 243.36 L 1234.23 243.36 L 1234.23 243.67 L 1233.04 244.3 L 1166.09 244.3 L 1166.09 244.3 L 1165.5 243.67 L 1165.2 243.36 L 1165.2 143.4 L 1165.2 143.4 L 1165.5 142.78 L 1166.09 142.16 L 1216.97 142.16 L 1216.97 158.97 L 1216.97 158.97 L 1216.97 160.22 L 1217.27 161.47 L 1218.46 162.09 L 1219.65 162.09 L 1234.23 162.09 L 1234.23 243.36 Z M 1174.72 167.69 L 1222.33 167.69 L 1222.33 167.69 L 1223.22 167.69 L 1223.82 168 L 1224.41 168.63 L 1224.41 169.87 L 1224.41 169.87 L 1224.41 170.5 L 1223.82 171.43 L 1223.22 171.43 L 1222.33 172.05 L 1174.72 172.05 L 1174.72 172.05 L 1174.13 171.43 L 1173.83 171.43 L 1173.23 170.5 L 1172.64 169.87 L 1172.64 169.87 L 1173.23 168.63 L 1173.83 168 L 1174.13 167.69 L 1174.72 167.69 L 1174.72 167.69 Z M 1224.41 184.51 L 1224.41 184.51 L 1224.41 185.13 L 1223.82 186.38 L 1223.22 186.69 L 1222.33 186.69 L 1174.72 186.69 L 1174.72 186.69 L 1174.13 186.69 L 1173.83 186.38 L 1173.23 185.13 L 1172.64 184.51 L 1172.64 184.51 L 1173.23 183.26 L 1173.83 182.95 L 1174.13 182.33 L 1174.72 182.33 L 1222.33 182.33 L 1222.33 182.33 L 1223.22 182.33 L 1223.82 182.95 L 1224.41 183.26 L 1224.41 184.51 L 1224.41 184.51 Z M 1224.41 198.52 L 1224.41 198.52 L 1224.41 199.77 L 1223.82 200.39 L 1223.22 201.01 L 1222.33 201.01 L 1174.72 201.01 L 1174.72 201.01 L 1174.13 201.01 L 1173.83 200.39 L 1173.23 199.77 L 1172.64 198.52 L 1172.64 198.52 L 1173.23 198.21 L 1173.83 196.97 L 1174.13 196.97 L 1174.72 196.34 L 1222.33 196.34 L 1222.33 196.34 L 1223.22 196.97 L 1223.82 196.97 L 1224.41 198.21 L 1224.41 198.52 L 1224.41 198.52 Z M 1224.41 213.47 L 1224.41 213.47 L 1224.41 213.78 L 1223.82 215.03 L 1223.22 215.03 L 1222.33 215.65 L 1174.72 215.65 L 1174.72 215.65 L 1174.13 215.03 L 1173.83 215.03 L 1173.23 213.78 L 1172.64 213.47 L 1172.64 213.47 L 1173.23 212.22 L 1173.83 211.6 L 1174.13 210.98 L 1174.72 210.98 L 1222.33 210.98 L 1222.33 210.98 L 1223.22 210.98 L 1223.82 211.6 L 1224.41 212.22 L 1224.41 213.47 L 1224.41 213.47 Z" fill="url(#ggrad2)" stroke-width="1" stroke="none" stroke-linejoin="round" />
+</g>
+<g id="shape-4" data-name="组合 3">
+<g id="shape-6" data-name="组合 5">
+<g id="shape-28" data-name="平行四边形 27">
+<polygon points="433.2,318.04 302.21,318.04 -291.12,331 -160.13,331" stroke="none" fill="#1C4273" stroke-width="1" />
+</g>
+<g id="shape-29" data-name="矩形 28">
+<rect x="-160.13" y="331" width="438.83" height="180.09" fill="url(#ggrad3)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-30" data-name="任意多边形: 形状 29">
+<path d="M 312.74 317.84 L 312.74 611.17 L 148.47 611.17 L 147.83 429.72 L 312.74 317.84 Z" fill="url(#ggrad4)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-31" data-name="平行四边形 30">
+<polygon points="360.23,318.04 312.96,318.04 98.84,431.09 146.11,431.09" stroke="none" fill="#1C4273" stroke-width="1" />
+</g>
+</g>
+<g id="shape-8" data-name="组合 7">
+<g id="shape-23" data-name="平行四边形 22">
+<polygon points="739.27,419.38 608.28,419.38 14.95,432.33 145.95,432.33" stroke="none" fill="#1C4273" stroke-width="1" />
+</g>
+<g id="shape-24" data-name="矩形 23">
+<rect x="145.95" y="432.33" width="438.83" height="180.09" fill="url(#ggrad5)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-26" data-name="任意多边形: 形状 25">
+<path d="M 618.81 419.17 L 618.81 712.51 L 454.55 712.51 L 453.91 531.05 L 618.81 419.17 Z" fill="url(#ggrad6)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-27" data-name="平行四边形 26">
+<polygon points="666.3,419.38 619.03,419.38 404.91,532.42 452.18,532.42" stroke="none" fill="#1C4273" stroke-width="1" />
+</g>
+</g>
+<g id="shape-9" data-name="组合 8">
+<g id="shape-16" data-name="平行四边形 15">
+<polygon points="1046.1,520.71 915.11,520.71 321.78,533.66 452.78,533.66" stroke="none" fill="#1C4273" stroke-width="1" />
+</g>
+<g id="shape-19" data-name="矩形 18">
+<rect x="452.78" y="533.66" width="438.83" height="180.09" fill="url(#ggrad7)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-20" data-name="任意多边形: 形状 19">
+<path d="M 925.64 520.51 L 925.64 720.04 L 761.38 720.04 L 761.71 632.64 L 925.64 520.51 Z" fill="url(#ggrad8)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-22" data-name="平行四边形 21">
+<polygon points="973.13,520.71 925.86,520.71 711.74,633.75 759.01,633.75" stroke="none" fill="#1C4273" stroke-width="1" />
+</g>
+</g>
+<g id="shape-13" data-name="矩形 12">
+<rect x="760.74" y="633.97" width="438.8" height="86" fill="url(#ggrad9)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-10" data-name="任意多边形: 形状 9">
+<path d="M 1177.36 644.84 L 1177.36 644.84 L 1217.49 612.53 L 1258.66 626.34 L 1177.36 644.84 Z" stroke="none" fill="#1C4273" stroke-width="1" />
+</g>
+<g id="shape-11" data-name="平行四边形 10">
+<polygon points="1354.06,621 1223.07,621 629.74,633.96 760.74,633.96" stroke="none" fill="#1C4273" stroke-width="1" />
+</g>
+<g id="shape-12" data-name="任意多边形: 形状 11">
+<path d="M 1258.01 626.4 L 1177.61 644.75 L 1177.61 720.11 L 1258.01 720.11 L 1258.01 626.4 Z" fill="url(#ggrad10)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-15" data-name="任意多边形: 形状 14">
+<path d="M -150.4 323.17 L 294.4 323.17 L 160 426.64 L 600.53 425.57 L 470.4 526.91 L 908.8 526.91 L 778.67 625.04 L 1249.07 625.04" fill="none" stroke-width="0.333" stroke-linecap="round" stroke="#FFFFFF" stroke-dasharray="8 4" />
+</g>
+</g>
+<g id="shape-33" data-name="椭圆 32">
+<ellipse cx="146.89" cy="284.18" rx="14.98" ry="14.98" fill="#FFFFFF" stroke-width="6" stroke="#1C4273" />
+</g>
+<g id="shape-34" data-name="矩形 33">
+<rect x="25.74" y="124.59" width="242.31" height="160.42" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" />
+</g>
+<g id="shape-35" data-name="矩形: 圆角 34">
+<rect x="25.93" y="107.71" width="242.12" height="36.32" rx="3.23" ry="3.23" fill="#1C4273" stroke="none" stroke-width="1" />
+<text x="146.99" y="133.34" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">核心系统性能优化</tspan></text>
+</g>
+<g id="shape-36" data-name="文本框 35">
+<rect x="32.01" y="156.99" width="229.76" height="102.47" fill="none" />
+<text x="41.61" y="175.39" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">深入分析慢查询日志、优化数</tspan><tspan x="41.61" dy="19.2" fill="#000000" font-size="16">据库索引策略、重构关键算法</tspan><tspan x="41.61" dy="19.2" fill="#000000" font-size="16">逻辑、引入更高效的数据结构</tspan><tspan x="41.61" dy="19.2" fill="#000000" font-size="16">、实施服务端缓存策略升级。</tspan></text>
+</g>
+<g id="shape-38" data-name="椭圆 37">
+<ellipse cx="450.91" cy="383.37" rx="14.98" ry="14.98" fill="#FFFFFF" stroke-width="6" stroke="#748EAE" />
+</g>
+<g id="shape-39" data-name="矩形 38">
+<rect x="329.75" y="223.78" width="242.31" height="160.42" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" />
+</g>
+<g id="shape-40" data-name="矩形: 圆角 39">
+<rect x="329.94" y="206.9" width="242.12" height="36.32" rx="3.23" ry="3.23" fill="#748EAE" stroke="none" stroke-width="1" />
+<text x="451" y="232.53" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">新系统设计与落地</tspan></text>
+</g>
+<g id="shape-41" data-name="文本框 40">
+<rect x="336.03" y="256.17" width="229.76" height="102.47" fill="none" />
+<text x="345.63" y="274.57" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">担任技术负责人，主导</tspan><tspan fill="#000000" font-size="16">/</tspan><tspan fill="#000000" font-size="16">深度</tspan><tspan x="345.63" dy="19.2" fill="#000000" font-size="16">参与了技术方案设计、核心模</tspan><tspan x="345.63" dy="19.2" fill="#000000" font-size="16">块编码实现、关键难点攻关、</tspan><tspan x="345.63" dy="19.2" fill="#000000" font-size="16">推动跨团队协作与联调。</tspan></text>
+</g>
+<g id="shape-43" data-name="椭圆 42">
+<ellipse cx="754.92" cy="482.56" rx="14.98" ry="14.98" fill="#FFFFFF" stroke-width="6" stroke="#CB8378" />
+</g>
+<g id="shape-44" data-name="矩形 43">
+<rect x="633.77" y="322.97" width="242.31" height="160.42" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" />
+</g>
+<g id="shape-45" data-name="矩形: 圆角 44">
+<rect x="633.96" y="306.09" width="242.12" height="36.32" rx="3.23" ry="3.23" fill="#CB8378" stroke="none" stroke-width="1" />
+<text x="755.02" y="331.71" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">复杂问题的快速定位</tspan></text>
+</g>
+<g id="shape-46" data-name="文本框 45">
+<rect x="640.04" y="355.36" width="229.76" height="102.47" fill="none" />
+<text x="649.64" y="373.76" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">作为核心排查人员，迅速介入</tspan><tspan x="649.64" dy="19.2" fill="#000000" font-size="16">，通过深入分析监控指标，</tspan><tspan fill="#000000" font-size="16">]</tspan><tspan x="649.64" dy="19.2" fill="#000000" font-size="16">精准定位问题根因，推动实施</tspan><tspan x="649.64" dy="19.2" fill="#000000" font-size="16">了根治方案。</tspan></text>
+</g>
+<g id="shape-48" data-name="椭圆 47">
+<ellipse cx="1058.94" cy="581.74" rx="14.98" ry="14.98" fill="#FFFFFF" stroke-width="6" stroke="#F6ACA0" />
+</g>
+<g id="shape-49" data-name="矩形 48">
+<rect x="937.78" y="422.15" width="242.31" height="160.42" fill="#FFFFFF" stroke="#FFFFFF" stroke-width="1" />
+</g>
+<g id="shape-50" data-name="矩形: 圆角 49">
+<rect x="937.97" y="405.28" width="242.12" height="36.32" rx="3.23" ry="3.23" fill="#F6ACA0" stroke="none" stroke-width="1" />
+<text x="1059.03" y="430.9" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">提升系统先进性</tspan></text>
+</g>
+<g id="shape-51" data-name="文本框 50">
+<rect x="944.06" y="454.55" width="229.76" height="102.47" fill="none" />
+<text x="953.66" y="472.95" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">主导推动了从</tspan><tspan fill="#000000" font-size="16">Spring Boot </tspan><tspan x="953.66" dy="19.2" fill="#000000" font-size="16">1.x </tspan><tspan fill="#000000" font-size="16">升级到 </tspan><tspan fill="#000000" font-size="16">3.x</tspan><tspan fill="#000000" font-size="16">的技术升级</tspan><tspan fill="#000000" font-size="16">/</tspan><tspan x="953.66" dy="19.2" fill="#000000" font-size="16">迁移项目。推动上下游服务改</tspan><tspan x="953.66" dy="19.2" fill="#000000" font-size="16">造、进行充分的测试验证。</tspan></text>
+</g></svg>

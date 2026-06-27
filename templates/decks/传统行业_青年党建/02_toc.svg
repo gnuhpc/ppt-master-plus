@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><image href="assets/image1.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none"/>
+<g id="shape-13" data-name="图片 12">
+<svg x="-4.04" y="-0.06" width="1284.04" height="720.06" viewBox="0.0708 0 0.9292 1" preserveAspectRatio="none"><image href="assets/image2.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="shape-40" data-name="矩形 39">
+<rect x="-2.02" y="-0.65" width="1284.04" height="721.3" fill="#921F1F" fill-opacity="0.71" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-5" data-name="组合 4">
+<g id="shape-16" data-name="文本框 15">
+<rect x="525.5" y="114.96" width="229" height="116.33" fill="none"/>
+<text x="640" y="194.56" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, &quot;汉仪全唐诗简&quot;, sans-serif" font-size="88" fill="#FFE3C1" font-weight="bold"><tspan fill="#FFE3C1" font-size="88" font-weight="bold">{{TITLE}}</tspan></text>
+</g>
+<g id="shape-4" data-name="组合 3">
+<g id="shape-19" data-name="组合 18">
+<g id="shape-37" data-name="文本框 36">
+<rect x="267.73" y="279.65" width="284.43" height="52.45" fill="none"/>
+<text x="277.33" y="307.12" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, sans-serif" font-size="26.67" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="26.67">{{TOC_ITEM_1_TITLE}}</tspan></text>
+</g>
+<g id="shape-38" data-name="文本框 37">
+<rect x="186.62" y="272.64" width="92.09" height="67.86" fill="none"/>
+<text x="232.67" y="318.24" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, &quot;汉仪全唐诗简&quot;, sans-serif" font-size="48" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="48">01.</tspan></text>
+</g>
+<g id="shape-39" data-name="文本框 38">
+<rect x="267.11" y="327.86" width="295.5" height="57.58" fill="none"/>
+<text x="276.71" y="344.56" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, &quot;汉仪全唐诗简&quot;, sans-serif" font-size="14" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="14">{{TOC_ITEM_1_DESC}}</tspan></text>
+</g>
+</g>
+<g id="shape-23" data-name="组合 22">
+<g id="shape-34" data-name="文本框 33">
+<rect x="798.5" y="279.65" width="284.43" height="52.45" fill="none"/>
+<text x="808.1" y="307.12" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, sans-serif" font-size="26.67" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="26.67">{{TOC_ITEM_2_TITLE}}</tspan></text>
+</g>
+<g id="shape-35" data-name="文本框 34">
+<rect x="717.39" y="272.64" width="92.09" height="67.86" fill="none"/>
+<text x="763.44" y="318.24" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, &quot;汉仪全唐诗简&quot;, sans-serif" font-size="48" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="48">02.</tspan></text>
+</g>
+<g id="shape-36" data-name="文本框 35">
+<rect x="797.88" y="327.86" width="295.5" height="57.58" fill="none"/>
+<text x="807.48" y="344.56" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, &quot;汉仪全唐诗简&quot;, sans-serif" font-size="14" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="14">{{TOC_ITEM_2_DESC}}</tspan></text>
+</g>
+</g>
+<g id="shape-25" data-name="组合 24">
+<g id="shape-31" data-name="文本框 30">
+<rect x="267.73" y="430.22" width="284.43" height="52.45" fill="none"/>
+<text x="277.33" y="457.69" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, sans-serif" font-size="26.67" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="26.67">{{TOC_ITEM_3_TITLE}}</tspan></text>
+</g>
+<g id="shape-32" data-name="文本框 31">
+<rect x="186.62" y="423.2" width="92.09" height="67.86" fill="none"/>
+<text x="232.67" y="468.8" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, &quot;汉仪全唐诗简&quot;, sans-serif" font-size="48" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="48">03.</tspan></text>
+</g>
+<g id="shape-33" data-name="文本框 32">
+<rect x="267.11" y="478.43" width="295.5" height="57.58" fill="none"/>
+<text x="276.71" y="495.13" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, &quot;汉仪全唐诗简&quot;, sans-serif" font-size="14" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="14">{{TOC_ITEM_3_DESC}}</tspan></text>
+</g>
+</g>
+<g id="shape-26" data-name="组合 25">
+<g id="shape-27" data-name="文本框 26">
+<rect x="798.5" y="430.22" width="284.43" height="52.45" fill="none"/>
+<text x="808.1" y="457.69" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, sans-serif" font-size="26.67" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="26.67">{{TOC_ITEM_4_TITLE}}</tspan></text>
+</g>
+<g id="shape-29" data-name="文本框 28">
+<rect x="717.39" y="423.2" width="92.09" height="67.86" fill="none"/>
+<text x="763.44" y="468.8" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, &quot;汉仪全唐诗简&quot;, sans-serif" font-size="48" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="48">04.</tspan></text>
+</g>
+<g id="shape-30" data-name="文本框 29">
+<rect x="797.88" y="478.43" width="295.5" height="57.58" fill="none"/>
+<text x="807.48" y="495.13" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, &quot;汉仪全唐诗简&quot;, sans-serif" font-size="14" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="14">{{TOC_ITEM_4_DESC}}</tspan></text>
+</g>
+</g>
+</g>
+</g></svg>

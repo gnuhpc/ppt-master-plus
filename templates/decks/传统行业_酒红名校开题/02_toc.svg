@@ -1,0 +1,130 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="13.33" dy="0" stdDeviation="13.33" flood-color="#845853" flood-opacity="0.2" /></filter><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="11.85" dy="11.85" stdDeviation="21.12" flood-color="#A8625A" flood-opacity="0.15" /></filter><filter id="fx3" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="13.33" dy="0" stdDeviation="13.33" flood-color="#481914" flood-opacity="0.2" /></filter><filter id="fx4" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="13.33" dy="0" stdDeviation="13.33" flood-color="#845853" flood-opacity="0.2" /></filter><filter id="fx5" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="11.85" dy="11.85" stdDeviation="21.12" flood-color="#A8625A" flood-opacity="0.15" /></filter><filter id="fx6" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="13.33" dy="0" stdDeviation="13.33" flood-color="#481914" flood-opacity="0.2" /></filter><filter id="fx7" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="13.33" dy="0" stdDeviation="13.33" flood-color="#845853" flood-opacity="0.2" /></filter><filter id="fx8" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="11.85" dy="11.85" stdDeviation="21.12" flood-color="#A8625A" flood-opacity="0.15" /></filter><filter id="fx9" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="13.33" dy="0" stdDeviation="13.33" flood-color="#481914" flood-opacity="0.2" /></filter><filter id="fx10" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="13.33" dy="0" stdDeviation="13.33" flood-color="#845853" flood-opacity="0.2" /></filter><filter id="fx11" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="11.85" dy="11.85" stdDeviation="21.12" flood-color="#A8625A" flood-opacity="0.15" /></filter><filter id="fx12" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="13.33" dy="0" stdDeviation="13.33" flood-color="#481914" flood-opacity="0.2" /></filter><filter id="fx13" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="13.33" dy="0" stdDeviation="13.33" flood-color="#845853" flood-opacity="0.2" /></filter><filter id="fx14" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="11.85" dy="11.85" stdDeviation="21.12" flood-color="#A8625A" flood-opacity="0.15" /></filter><filter id="fx15" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="13.33" dy="0" stdDeviation="13.33" flood-color="#481914" flood-opacity="0.2" /></filter><marker id="marrow1" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#A8625A" /></marker><marker id="marrow2" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#A8625A" /></marker><marker id="marrow3" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#A8625A" /></marker><marker id="marrow4" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#A8625A" /></marker></defs><rect x="0" y="0" width="1280" height="720" fill="#924437" />
+<g id="master-shape-8" data-name="圆角矩形 7">
+<rect x="29.07" y="26.07" width="1221.8" height="667" rx="26.53" ry="26.53" fill="#FFFFFF" stroke="none" stroke-width="1" />
+</g>
+<g id="layout-shape-7" data-name="椭圆 6">
+<ellipse cx="1170.67" cy="84.67" rx="6" ry="6" fill="#924437" stroke="none" stroke-width="1" />
+</g>
+<g id="layout-shape-8" data-name="椭圆 7">
+<ellipse cx="1190.67" cy="84.67" rx="6" ry="6" fill="#924437" stroke="none" stroke-width="1" />
+</g>
+<g id="layout-shape-9" data-name="椭圆 8">
+<ellipse cx="1210.67" cy="84.67" rx="6" ry="6" fill="#924437" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-4" data-name="标题 3" data-ph-type="title">
+<rect x="63.87" y="48.87" width="1151.62" height="74.08" fill="none" />
+<text x="73.47" y="74.07" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#000000"><tspan fill="#000000" font-size="24">{{TOC_ITEM_1_TITLE}}</tspan></text>
+</g>
+<g id="shape-32" data-name="稻壳设计师康帅作品6">
+<rect x="71.19" y="252.89" width="174.77" height="79.29" rx="3.9" ry="3.9" fill="#978B88" stroke-width="4" stroke-linecap="round" stroke="none" stroke-linejoin="round" filter="url(#fx1)" />
+</g>
+<g id="shape-33" data-name="稻壳设计师康帅作品7">
+<rect x="80.22" y="205.09" width="194.59" height="356.51" rx="17.74" ry="17.74" fill="#FFFFFF" stroke-width="0.246" stroke="#D9D9D9" filter="url(#fx2)" />
+</g>
+<g id="shape-35" data-name="稻壳设计师康帅作品8">
+<path d="M 71.19 265.57 C 83.38 265.57 93.27 277.64 93.27 292.53 C 93.27 307.42 83.38 319.5 71.19 319.5 L 71.19 319.5 L 71.19 265.57 Z" fill="#845853" stroke-width="4" stroke-linecap="round" stroke="none" stroke-linejoin="round" filter="url(#fx3)" />
+</g>
+<g id="shape-36" data-name="稻壳设计师康帅作品9">
+<rect x="105.41" y="262.71" width="141.7" height="49.07" fill="none" />
+<text x="176.25" y="293.91" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#A8625A" font-weight="bold"><tspan fill="#A8625A" font-size="26.67">{{TOC_ITEM_2_TITLE}}</tspan></text>
+</g>
+<g id="shape-42" data-name="稻壳设计师康帅作品10" transform="translate(176.25 424.81) scale(-1 1) translate(-176.25 -424.81)">
+<rect x="109.81" y="337.57" width="132.89" height="174.47" fill="none" />
+<text x="109.81" y="351.17" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;汉仪正圆-45W&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">{{TOC_ITEM_3_TITLE}}</tspan></text>
+</g>
+<g id="shape-43" data-name="稻壳设计师康帅作品11">
+<line x1="156.25" y1="320.92" x2="196.25" y2="320.92" stroke-width="2" stroke="#A8625A" fill="#A8625A" />
+</g>
+<g id="shape-44" data-name="稻壳设计师康帅作品12">
+<rect x="304.69" y="252.89" width="174.77" height="79.29" rx="3.9" ry="3.9" fill="#978B88" stroke-width="4" stroke-linecap="round" stroke="none" stroke-linejoin="round" filter="url(#fx4)" />
+</g>
+<g id="shape-45" data-name="稻壳设计师康帅作品13">
+<rect x="313.72" y="205.09" width="194.59" height="356.51" rx="17.74" ry="17.74" fill="#FFFFFF" stroke-width="0.246" stroke="#D9D9D9" filter="url(#fx5)" />
+</g>
+<g id="shape-46" data-name="稻壳设计师康帅作品14">
+<path d="M 305.19 265.57 C 317.38 265.57 327.27 277.64 327.27 292.53 C 327.27 307.42 317.38 319.5 305.19 319.5 L 305.19 319.5 L 305.19 265.57 Z" fill="#845853" stroke-width="4" stroke-linecap="round" stroke="none" stroke-linejoin="round" filter="url(#fx6)" />
+</g>
+<g id="shape-47" data-name="稻壳设计师康帅作品15">
+<rect x="321.6" y="261.67" width="185.8" height="49.07" fill="none" />
+<text x="414.5" y="292.87" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#A8625A" font-weight="bold"><tspan fill="#A8625A" font-size="26.67">{{TOC_ITEM_4_TITLE}}</tspan></text>
+</g>
+<g id="shape-48" data-name="稻壳设计师康帅作品16" transform="translate(413.17 424.83) scale(-1 1) translate(-413.17 -424.83)">
+<rect x="343.33" y="337.6" width="139.67" height="174.47" fill="none" />
+<text x="343.33" y="351.2" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;汉仪正圆-45W&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">{{TOC_ITEM_1_DESC}}</tspan></text>
+</g>
+<g id="shape-49" data-name="稻壳设计师康帅作品17">
+<line x1="389.75" y1="320.92" x2="429.75" y2="320.92" stroke-width="2" stroke="#A8625A" fill="#A8625A" />
+</g>
+<g id="shape-50" data-name="稻壳设计师康帅作品18">
+<rect x="538.19" y="252.89" width="174.77" height="79.29" rx="3.9" ry="3.9" fill="#978B88" stroke-width="4" stroke-linecap="round" stroke="none" stroke-linejoin="round" filter="url(#fx7)" />
+</g>
+<g id="shape-51" data-name="稻壳设计师康帅作品19">
+<rect x="547.22" y="205.09" width="194.59" height="356.51" rx="17.74" ry="17.74" fill="#FFFFFF" stroke-width="0.246" stroke="#D9D9D9" filter="url(#fx8)" />
+</g>
+<g id="shape-52" data-name="稻壳设计师康帅作品20">
+<path d="M 538.69 265.57 C 550.88 265.57 560.77 277.64 560.77 292.53 C 560.77 307.42 550.88 319.5 538.69 319.5 L 538.69 319.5 L 538.69 265.57 Z" fill="#845853" stroke-width="4" stroke-linecap="round" stroke="none" stroke-linejoin="round" filter="url(#fx9)" />
+</g>
+<g id="shape-53" data-name="稻壳设计师康帅作品21">
+<rect x="572.4" y="261.7" width="141.7" height="49.07" fill="none" />
+<text x="643.25" y="292.9" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#A8625A" font-weight="bold"><tspan fill="#A8625A" font-size="26.67" font-weight="bold">缺乏</tspan><tspan fill="#A8625A" font-size="26.67" font-weight="bold">指导</tspan></text>
+</g>
+<g id="shape-54" data-name="稻壳设计师康帅作品22" transform="translate(643.25 424.81) scale(-1 1) translate(-643.25 -424.81)">
+<rect x="576.81" y="337.57" width="132.89" height="174.47" fill="none" />
+<text x="576.81" y="351.17" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">{{TOC_ITEM_2_DESC}}</tspan></text>
+</g>
+<g id="shape-55" data-name="稻壳设计师康帅作品23">
+<line x1="623.25" y1="320.92" x2="663.25" y2="320.92" stroke-width="2" stroke="#A8625A" fill="#A8625A" />
+</g>
+<g id="shape-56" data-name="稻壳设计师康帅作品24">
+<rect x="771.69" y="252.89" width="174.77" height="79.29" rx="3.9" ry="3.9" fill="#978B88" stroke-width="4" stroke-linecap="round" stroke="none" stroke-linejoin="round" filter="url(#fx10)" />
+</g>
+<g id="shape-57" data-name="稻壳设计师康帅作品25">
+<rect x="780.72" y="205.09" width="194.59" height="356.51" rx="17.74" ry="17.74" fill="#FFFFFF" stroke-width="0.246" stroke="#D9D9D9" filter="url(#fx11)" />
+</g>
+<g id="shape-58" data-name="稻壳设计师康帅作品26">
+<path d="M 771.69 265.57 C 783.88 265.57 793.76 277.64 793.76 292.53 C 793.76 307.42 783.88 319.5 771.69 319.5 L 771.69 319.5 L 771.69 265.57 Z" fill="#845853" stroke-width="4" stroke-linecap="round" stroke="none" stroke-linejoin="round" filter="url(#fx12)" />
+</g>
+<g id="shape-59" data-name="稻壳设计师康帅作品27">
+<rect x="805.9" y="263.72" width="141.7" height="49.07" fill="none" />
+<text x="876.75" y="294.92" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#A8625A" font-weight="bold"><tspan fill="#A8625A" font-size="26.67" font-weight="bold">提升</tspan><tspan fill="#A8625A" font-size="26.67" font-weight="bold">迫切</tspan></text>
+</g>
+<g id="shape-60" data-name="稻壳设计师康帅作品28" transform="translate(876.75 410.27) scale(-1 1) translate(-876.75 -410.27)">
+<rect x="810.31" y="337.57" width="132.89" height="145.4" fill="none" />
+<text x="810.31" y="351.17" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;汉仪正圆-45W&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">{{TOC_ITEM_3_DESC}}</tspan></text>
+</g>
+<g id="shape-61" data-name="稻壳设计师康帅作品29">
+<line x1="856.75" y1="320.92" x2="896.75" y2="320.92" stroke-width="2" stroke="#A8625A" fill="#A8625A" />
+</g>
+<g id="shape-62" data-name="稻壳设计师康帅作品30">
+<rect x="1005.19" y="252.89" width="174.77" height="79.29" rx="3.9" ry="3.9" fill="#978B88" stroke-width="4" stroke-linecap="round" stroke="none" stroke-linejoin="round" filter="url(#fx13)" />
+</g>
+<g id="shape-63" data-name="稻壳设计师康帅作品31">
+<rect x="1014.22" y="205.09" width="194.59" height="356.51" rx="17.74" ry="17.74" fill="#FFFFFF" stroke-width="0.246" stroke="#D9D9D9" filter="url(#fx14)" />
+</g>
+<g id="shape-64" data-name="稻壳设计师康帅作品32">
+<path d="M 1005.19 265.57 C 1017.38 265.57 1027.26 277.64 1027.26 292.53 C 1027.26 307.42 1017.38 319.5 1005.19 319.5 L 1005.19 319.5 L 1005.19 265.57 Z" fill="#845853" stroke-width="4" stroke-linecap="round" stroke="none" stroke-linejoin="round" filter="url(#fx15)" />
+</g>
+<g id="shape-65" data-name="稻壳设计师康帅作品33">
+<rect x="1019.4" y="262.73" width="195" height="49.07" fill="none" />
+<text x="1116.9" y="293.93" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#A8625A" font-weight="bold"><tspan fill="#A8625A" font-size="26.67" font-weight="bold">聚焦单一</tspan><tspan fill="#A8625A" font-size="26.67" font-weight="bold">环节</tspan></text>
+</g>
+<g id="shape-66" data-name="稻壳设计师康帅作品34" transform="translate(1110.25 424.81) scale(-1 1) translate(-1110.25 -424.81)">
+<rect x="1043.81" y="337.57" width="132.89" height="174.47" fill="none" />
+<text x="1043.81" y="351.17" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;汉仪正圆-45W&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">{{TOC_ITEM_4_DESC}}</tspan></text>
+</g>
+<g id="shape-67" data-name="稻壳设计师康帅作品35">
+<line x1="1090.25" y1="320.92" x2="1130.25" y2="320.92" stroke-width="2" stroke="#A8625A" fill="#A8625A" />
+</g>
+<g id="shape-68" data-name="稻壳设计师康帅作品36">
+<path d="M 346.89 556.7 C 336.57 584.37 312.26 602.93 284.75 604.16 C 257.7 605.37 232.42 589.59 219.8 563.63 L 281.86 528.22 L 346.89 556.7 Z M 346.89 556.7 C 336.57 584.37 312.26 602.93 284.75 604.16 C 257.7 605.37 232.42 589.59 219.8 563.63" stroke-width="2" stroke="#A8625A" marker-start="url(#marrow1)" fill="#A8625A" />
+</g>
+<g id="shape-69" data-name="稻壳设计师康帅作品37">
+<path d="M 824.81 556.7 C 814.49 584.37 790.18 602.93 762.67 604.16 C 735.62 605.37 710.34 589.59 697.73 563.63 L 759.78 528.22 L 824.81 556.7 Z M 824.81 556.7 C 814.49 584.37 790.18 602.93 762.67 604.16 C 735.62 605.37 710.34 589.59 697.73 563.63" stroke-width="2" stroke="#A8625A" marker-start="url(#marrow2)" fill="#A8625A" />
+</g>
+<g id="shape-70" data-name="稻壳设计师康帅作品38" transform="translate(522.31 205.09) scale(1 -1) translate(-522.31 -205.09)">
+<path d="M 585.85 195.58 C 575.53 223.24 551.22 241.8 523.71 243.03 C 496.66 244.24 471.38 228.46 458.76 202.5 L 520.82 167.09 L 585.85 195.58 Z M 585.85 195.58 C 575.53 223.24 551.22 241.8 523.71 243.03 C 496.66 244.24 471.38 228.46 458.76 202.5" stroke-width="2" stroke="#A8625A" marker-start="url(#marrow3)" fill="#A8625A" />
+</g>
+<g id="shape-71" data-name="稻壳设计师康帅作品39" transform="translate(1000.23 205.09) scale(1 -1) translate(-1000.23 -205.09)">
+<path d="M 1063.77 195.58 C 1053.45 223.24 1029.14 241.8 1001.63 243.03 C 974.58 244.24 949.3 228.46 936.69 202.5 L 998.74 167.09 L 1063.77 195.58 Z M 1063.77 195.58 C 1053.45 223.24 1029.14 241.8 1001.63 243.03 C 974.58 244.24 949.3 228.46 936.69 202.5" stroke-width="2" stroke="#A8625A" marker-start="url(#marrow4)" fill="#A8625A" />
+</g></svg>

@@ -1,0 +1,282 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><marker id="marrow1" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#BF3C2E" /></marker><marker id="marrow2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#BF3C2E" /></marker><linearGradient id="ggrad1" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0" stop-color="#D02300" /><stop offset="1" stop-color="#D02300" stop-opacity="0" /></linearGradient><linearGradient id="ggrad2" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0" stop-color="#D02300" /><stop offset="1" stop-color="#D02300" stop-opacity="0" /></linearGradient><marker id="marrow3" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse" markerUnits="strokeWidth"><circle cx="5" cy="5" r="4" fill="#BF3C2E" /></marker><marker id="marrow4" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse" markerUnits="strokeWidth"><circle cx="5" cy="5" r="4" fill="#D02300" /></marker><marker id="marrow5" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse" markerUnits="strokeWidth"><circle cx="5" cy="5" r="4" fill="#BF3C2E" /></marker><marker id="marrow6" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse" markerUnits="strokeWidth"><circle cx="5" cy="5" r="4" fill="#D02300" /></marker><marker id="marrow7" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse" markerUnits="strokeWidth"><circle cx="5" cy="5" r="4" fill="#FD905F" /></marker><marker id="marrow8" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse" markerUnits="strokeWidth"><circle cx="5" cy="5" r="4" fill="#BF3C2E" /></marker></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-37" data-name="组合 36">
+<g id="shape-32" data-name="组合 31">
+<g id="shape-66" data-name="矩形: 圆角 65">
+<rect x="1013.01" y="129.43" width="96" height="517.81" rx="0" ry="0" fill="#FFCDC3" fill-opacity="0.5" stroke-width="0.667" stroke="#D02300" />
+</g>
+<g id="shape-117" data-name="箭头: 五边形 116" transform="translate(1048.86 154.87) scale(-1 1) translate(-1048.86 -154.87)">
+<polygon points="988.7,129.43 1084.82,129.43 1109.01,154.87 1084.82,180.31 988.7,180.31" stroke="none" fill="#D02300" stroke-width="1" />
+</g>
+<g id="shape-118" data-name="箭头: 五边形 117" transform="translate(1048.86 621.8) scale(-1 1) translate(-1048.86 -621.8)">
+<polygon points="988.7,596.36 1085.15,596.36 1109.01,621.8 1085.15,647.24 988.7,647.24" stroke="none" fill="#D02300" stroke-width="1" />
+</g>
+<g id="shape-119" data-name="文本框 118" transform="translate(1055.72 621.8) scale(-1 1) translate(-1055.72 -621.8)">
+<rect x="1019.1" y="600.79" width="73.24" height="42.01" fill="none" />
+<text x="1055.72" y="628.26" text-anchor="middle" xml:space="preserve" font-family="&quot;Gill Sans MT&quot;, +mn-cs, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">知识</tspan></text>
+</g>
+<g id="shape-120" data-name="文本框 119" transform="translate(1055.72 154.87) scale(-1 1) translate(-1055.72 -154.87)">
+<rect x="1019.1" y="133.87" width="73.24" height="42.01" fill="none" />
+<text x="1055.72" y="161.33" text-anchor="middle" xml:space="preserve" font-family="&quot;Gill Sans MT&quot;, +mn-cs, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">能力</tspan></text>
+</g>
+<g id="shape-122" data-name="文本框 121" transform="translate(1061.01 224.53) scale(-1 1) translate(-1061.01 -224.53)">
+<rect x="1015.04" y="191.99" width="91.95" height="65.07" fill="none" />
+<text x="1061.01" y="214.93" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#000000"><tspan fill="#000000" font-size="21.33">{{PAGE_TITLE}}</tspan></text>
+</g>
+<g id="shape-123" data-name="文本框 122" transform="translate(1061.01 552.14) scale(-1 1) translate(-1061.01 -552.14)">
+<rect x="1015.04" y="519.61" width="91.95" height="65.07" fill="none" />
+<text x="1061.01" y="542.54" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#000000"><tspan fill="#000000" font-size="21.33">社会实践结合</tspan></text>
+</g>
+</g>
+<g id="shape-31" data-name="组合 30">
+<g id="shape-4" data-name="矩形: 圆角 3">
+<rect x="170.33" y="129.43" width="96" height="517.81" rx="0" ry="0" fill="#FFCDC3" fill-opacity="0.5" stroke-width="0.667" stroke="#D02300" />
+</g>
+<g id="shape-107" data-name="箭头: 五边形 106">
+<polygon points="170.33,129.43 266.45,129.43 290.64,154.87 266.45,180.31 170.33,180.31" stroke="none" fill="#D02300" stroke-width="1" />
+</g>
+<g id="shape-108" data-name="箭头: 五边形 107">
+<polygon points="170.33,596.36 266.78,596.36 290.64,621.8 266.78,647.24 170.33,647.24" stroke="none" fill="#D02300" stroke-width="1" />
+</g>
+<g id="shape-109" data-name="文本框 108">
+<rect x="187.01" y="600.79" width="73.24" height="42.01" fill="none" />
+<text x="223.63" y="628.26" text-anchor="middle" xml:space="preserve" font-family="&quot;Gill Sans MT&quot;, +mn-cs, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">情感</tspan></text>
+</g>
+<g id="shape-110" data-name="文本框 109">
+<rect x="187.01" y="133.87" width="73.24" height="42.01" fill="none" />
+<text x="223.63" y="161.33" text-anchor="middle" xml:space="preserve" font-family="&quot;Gill Sans MT&quot;, +mn-cs, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">五爱</tspan></text>
+</g>
+<g id="shape-112" data-name="文本框 111" transform="translate(218.33 224.53) scale(-1 1) translate(-218.33 -224.53)">
+<rect x="172.36" y="191.99" width="91.95" height="65.07" fill="none" />
+<text x="218.33" y="214.93" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#000000"><tspan fill="#000000" font-size="21.33">爱国主义教育</tspan></text>
+</g>
+<g id="shape-113" data-name="文本框 112" transform="translate(218.33 552.14) scale(-1 1) translate(-218.33 -552.14)">
+<rect x="172.36" y="519.61" width="91.95" height="65.07" fill="none" />
+<text x="218.33" y="542.54" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#000000"><tspan fill="#000000" font-size="21.33">剖析理论创新</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-17" data-name="文本框 77">
+<rect x="46.5" y="16.36" width="332.61" height="54.93" fill="none" />
+<text x="56.1" y="52.9" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="37.33" fill="#D02300"><tspan fill="#D02300" font-size="37.33">教学整体设计</tspan></text>
+</g>
+<g id="shape-18" data-name="文本框 78">
+<rect x="286.32" y="19.59" width="240.53" height="48.47" fill="none" />
+<text x="295.92" y="51.59" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="32" fill="#808080"><tspan fill="#808080" font-size="32">/  </tspan><tspan fill="#808080" font-size="32">教学策略设计</tspan></text>
+</g>
+<g id="shape-19" data-name="直接连接符 18">
+<line x1="29.71" y1="76.5" x2="1250.29" y2="76.5" stroke-width="3" stroke="#D02300" fill="#D02300" />
+</g>
+<g id="shape-67" data-name="圆角矩形 6">
+<rect x="287.3" y="636.2" width="705.4" height="45.13" rx="0" ry="0" fill="#D02300" stroke-width="1" stroke="none" />
+<text x="640" y="664.77" text-anchor="middle" xml:space="preserve" font-family="&quot;Gill Sans MT&quot;, +mn-cs, sans-serif" font-size="24" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="24">{{CONTENT_1}}</tspan></text>
+</g>
+<g id="shape-22" data-name="组合 21">
+<g id="shape-39" data-name="椭圆 38">
+<ellipse cx="360.27" cy="355.6" rx="151.17" ry="151.17" fill="#FFFFFF" stroke-width="1" stroke="#BF3C2E" stroke-dasharray="4 4" />
+</g>
+<g id="shape-41" data-name="文本框 40">
+<rect x="286.63" y="258.97" width="147.2" height="48.33" fill="#BF3C2E" fill-opacity="0.1" />
+<text x="360.23" y="290.97" text-anchor="middle" xml:space="preserve" font-family="&quot;Gill Sans MT&quot;, +mn-cs, sans-serif" font-size="32" fill="#BF3C2E"><tspan fill="#BF3C2E" font-size="32">理论逻辑</tspan></text>
+</g>
+<g id="shape-90" data-name="文本框 89" transform="translate(360.27 360.99) scale(-1 1) translate(-360.27 -360.99)">
+<rect x="212.22" y="314.24" width="296.09" height="93.5" fill="none" />
+<text x="360.27" y="337.18" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#000000"><tspan fill="#000000" font-size="21.33">{{CONTENT_2}}</tspan></text>
+</g>
+<g id="shape-91" data-name="直接箭头连接符 90" transform="translate(360.27 416.44) scale(-1 1) translate(-360.27 -416.44)">
+<line x1="360.27" y1="400.64" x2="360.28" y2="432.25" stroke="#BF3C2E" marker-end="url(#marrow1)" fill="#D02300" stroke-width="1" />
+</g>
+<g id="shape-92" data-name="文本框 91" transform="translate(360.27 453.26) scale(-1 1) translate(-360.27 -453.26)">
+<rect x="278.64" y="432.25" width="163.25" height="42.01" fill="#C00000" fill-opacity="0.1" />
+<text x="360.27" y="459.72" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#C00000"><tspan fill="#C00000" font-size="26.67">重要论述</tspan></text>
+</g>
+</g>
+<g id="shape-24" data-name="组合 23">
+<g id="shape-40" data-name="椭圆 39">
+<ellipse cx="919.73" cy="355.6" rx="151.17" ry="151.17" fill="#FFFFFF" stroke-width="1" stroke="#FD905F" stroke-dasharray="4 4" />
+</g>
+<g id="shape-46" data-name="文本框 45">
+<rect x="846.13" y="258.97" width="147.2" height="48.33" fill="#FD905F" fill-opacity="0.1" />
+<text x="855.73" y="284.17" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#FD905F"><tspan fill="#FD905F" font-size="24">教学策略</tspan></text>
+</g>
+<g id="shape-104" data-name="文本框 103" transform="translate(919.73 360.99) scale(-1 1) translate(-919.73 -360.99)">
+<rect x="771.69" y="314.24" width="296.09" height="93.5" fill="none" />
+<text x="919.73" y="337.18" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#000000"><tspan fill="#000000" font-size="21.33">{{CONTENT_3}}</tspan></text>
+</g>
+<g id="shape-105" data-name="直接箭头连接符 104" transform="translate(919.73 416.44) scale(-1 1) translate(-919.73 -416.44)">
+<line x1="919.73" y1="400.64" x2="919.74" y2="432.25" stroke="#BF3C2E" marker-end="url(#marrow2)" fill="#D02300" stroke-width="1" />
+</g>
+<g id="shape-106" data-name="文本框 105" transform="translate(919.73 453.26) scale(-1 1) translate(-919.73 -453.26)">
+<rect x="838.11" y="432.25" width="163.25" height="42.01" fill="#C00000" fill-opacity="0.1" />
+<text x="919.73" y="459.72" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#C00000"><tspan fill="#C00000" font-size="26.67">内容整合</tspan></text>
+</g>
+</g>
+<g id="shape-35" data-name="组合 34">
+<g id="shape-2" data-name="组合 1">
+<g id="shape-3" data-name="梯形 2" transform="rotate(90 87.95 388.33)">
+<polygon points="-182.52,351.62 358.42,351.62 380.95,425.05 -205.05,425.05" fill="#D02300" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-25" data-name="文本框 24">
+<rect x="51.33" y="211.3" width="73.24" height="42.01" fill="none" />
+<text x="60.93" y="238.77" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">爱党</tspan></text>
+</g>
+<g id="shape-26" data-name="文本框 25">
+<rect x="51.33" y="315.32" width="73.24" height="42.01" fill="none" />
+<text x="60.93" y="342.79" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">爱国</tspan></text>
+</g>
+<g id="shape-27" data-name="文本框 26">
+<rect x="51.33" y="419.34" width="73.24" height="42.01" fill="none" />
+<text x="60.93" y="446.81" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">传承</tspan></text>
+</g>
+<g id="shape-28" data-name="文本框 27">
+<rect x="51.33" y="523.36" width="73.24" height="42.01" fill="none" />
+<text x="60.93" y="550.82" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">价值</tspan></text>
+</g>
+<g id="shape-30" data-name="直接连接符 29">
+<line x1="57.37" y1="388.33" x2="118.53" y2="388.33" stroke-width="1.333" stroke="#FFFFFF" fill="#D02300" />
+</g>
+<g id="shape-33" data-name="直接连接符 32">
+<line x1="57.37" y1="284.32" x2="118.53" y2="284.32" stroke-width="1.333" stroke="#FFFFFF" fill="#D02300" />
+</g>
+<g id="shape-34" data-name="直接连接符 33">
+<line x1="57.37" y1="492.35" x2="118.53" y2="492.35" stroke-width="1.333" stroke="#FFFFFF" fill="#D02300" />
+</g>
+<g id="shape-36" data-name="箭头: 右 35">
+<polygon points="126,379.57 148.12,379.57 148.12,370.81 170.24,388.33 148.12,405.86 148.12,397.1 126,397.1" fill="url(#ggrad1)" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-20" data-name="组合 19">
+<g id="shape-57" data-name="梯形 56" transform="rotate(270 1191.14 388.33) translate(1191.14 388.33) scale(-1 1) translate(-1191.14 -388.33)">
+<polygon points="920.66,351.62 1461.61,351.62 1484.14,425.05 898.14,425.05" fill="#D02300" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-59" data-name="文本框 58" transform="translate(1191.14 232.31) scale(-1 1) translate(-1191.14 -232.31)">
+<rect x="1154.52" y="211.3" width="73.24" height="42.01" fill="none" />
+<text x="1164.12" y="238.77" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">教材</tspan></text>
+</g>
+<g id="shape-60" data-name="文本框 59" transform="translate(1191.14 336.32) scale(-1 1) translate(-1191.14 -336.32)">
+<rect x="1154.52" y="315.32" width="73.24" height="42.01" fill="none" />
+<text x="1164.12" y="342.79" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">案例</tspan></text>
+</g>
+<g id="shape-61" data-name="文本框 60" transform="translate(1191.14 440.34) scale(-1 1) translate(-1191.14 -440.34)">
+<rect x="1154.52" y="419.34" width="73.24" height="42.01" fill="none" />
+<text x="1164.12" y="446.81" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">资源</tspan></text>
+</g>
+<g id="shape-62" data-name="文本框 61" transform="translate(1191.14 544.36) scale(-1 1) translate(-1191.14 -544.36)">
+<rect x="1154.52" y="523.36" width="73.24" height="42.01" fill="none" />
+<text x="1164.12" y="550.82" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">素材</tspan></text>
+</g>
+<g id="shape-63" data-name="直接连接符 62" transform="translate(1191.14 388.33) scale(-1 1) translate(-1191.14 -388.33)">
+<line x1="1160.56" y1="388.33" x2="1221.72" y2="388.33" stroke-width="1.333" stroke="#FFFFFF" fill="#D02300" />
+</g>
+<g id="shape-64" data-name="直接连接符 63" transform="translate(1191.14 284.32) scale(-1 1) translate(-1191.14 -284.32)">
+<line x1="1160.56" y1="284.32" x2="1221.72" y2="284.32" stroke-width="1.333" stroke="#FFFFFF" fill="#D02300" />
+</g>
+<g id="shape-65" data-name="直接连接符 64" transform="translate(1191.14 492.35) scale(-1 1) translate(-1191.14 -492.35)">
+<line x1="1160.56" y1="492.35" x2="1221.72" y2="492.35" stroke-width="1.333" stroke="#FFFFFF" fill="#D02300" />
+</g>
+<g id="shape-124" data-name="箭头: 右 123" transform="translate(1131.72 388.33) scale(-1 1) translate(-1131.72 -388.33)">
+<polygon points="1109.6,379.57 1131.72,379.57 1131.72,370.81 1153.83,388.33 1131.72,405.86 1131.72,397.1 1109.6,397.1" fill="url(#ggrad2)" stroke="none" stroke-width="1" />
+</g>
+</g>
+</g>
+<g id="shape-23" data-name="组合 22">
+<g id="shape-43" data-name="椭圆 42">
+<ellipse cx="640.02" cy="355.6" rx="151.17" ry="151.17" fill="#FFFFFF" stroke-width="1" stroke="#D02300" stroke-dasharray="4 4" />
+</g>
+<g id="shape-44" data-name="文本框 43">
+<rect x="565.58" y="258.97" width="148.64" height="48.47" fill="#D02300" fill-opacity="0.1" />
+<text x="575.18" y="284.17" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#D02300"><tspan fill="#D02300" font-size="24">实践路径</tspan></text>
+</g>
+<g id="shape-179" data-name="组合 178">
+<g id="shape-180" data-name="矩形: 圆角 179">
+<rect x="511.22" y="321.66" width="257.6" height="46" rx="23" ry="23" fill="#FFFFFF" stroke-width="0.667" stroke="#D02300" />
+</g>
+<g id="shape-181" data-name="文本框 180">
+<rect x="549.14" y="325.27" width="181.78" height="38.78" fill="none" />
+<text x="640.02" y="350.47" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#000000"><tspan fill="#000000" font-size="24">强化理论武装</tspan></text>
+</g>
+</g>
+<g id="shape-165" data-name="矩形: 圆角 164">
+<rect x="689.09" y="377.69" width="80.14" height="44.54" rx="3.92" ry="3.92" fill="#D02300" stroke-width="2" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-166" data-name="文本框 165">
+<rect x="697.66" y="382.18" width="62.47" height="35.54" fill="none" />
+<text x="728.9" y="405.12" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">社会</tspan></text>
+</g>
+<g id="shape-170" data-name="矩形: 圆角 169">
+<rect x="510.81" y="377.69" width="80.14" height="44.54" rx="3.92" ry="3.92" fill="#D02300" stroke-width="2" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-171" data-name="文本框 170">
+<rect x="519.65" y="382.18" width="62.47" height="35.54" fill="none" />
+<text x="550.88" y="405.12" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">家庭</tspan></text>
+</g>
+<g id="shape-175" data-name="矩形: 圆角 174">
+<rect x="599.95" y="377.69" width="80.14" height="44.54" rx="3.92" ry="3.92" fill="#D02300" stroke-width="2" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-176" data-name="文本框 175">
+<rect x="609.84" y="382.18" width="62.47" height="35.54" fill="none" />
+<text x="641.07" y="405.12" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">学校</tspan></text>
+</g>
+<g id="shape-184" data-name="文本框 183" transform="translate(640.02 453.26) scale(-1 1) translate(-640.02 -453.26)">
+<rect x="558.4" y="432.25" width="163.25" height="42.01" fill="#C00000" fill-opacity="0.1" />
+<text x="640.02" y="459.72" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#C00000"><tspan fill="#C00000" font-size="26.67">教育合力</tspan></text>
+</g>
+</g>
+<g id="shape-21" data-name="组合 20">
+<g id="shape-69" data-name="直接连接符 68">
+<line x1="360.27" y1="133.17" x2="360.27" y2="201.03" stroke-width="1" stroke="#BF3C2E" marker-start="url(#marrow3)" fill="#D02300" />
+</g>
+<g id="shape-147" data-name="直接连接符 146">
+<line x1="639.87" y1="133.17" x2="639.87" y2="201.03" stroke-width="1" stroke="#D02300" marker-start="url(#marrow4)" fill="#D02300" />
+</g>
+<g id="shape-148" data-name="直接连接符 147">
+<line x1="919.73" y1="133.17" x2="919.73" y2="201.03" stroke-width="1" stroke="#BF3C2E" marker-start="url(#marrow5)" fill="#D02300" />
+</g>
+<g id="shape-52" data-name="椭圆 51">
+<ellipse cx="360.27" cy="206.38" rx="56.1" ry="36.15" fill="#BF3C2E" stroke="#FFFFFF" stroke-width="1" />
+<text x="360.27" y="214.38" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">01</tspan></text>
+</g>
+<g id="shape-53" data-name="椭圆 52">
+<ellipse cx="639.87" cy="206.38" rx="56.1" ry="36.15" fill="#D02300" stroke="#FFFFFF" stroke-width="1" />
+<text x="639.87" y="214.38" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">02</tspan></text>
+</g>
+<g id="shape-54" data-name="椭圆 53">
+<ellipse cx="919.73" cy="206.38" rx="56.1" ry="36.15" fill="#FD905F" stroke="#FFFFFF" stroke-width="1" />
+<text x="919.73" y="214.38" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">03</tspan></text>
+</g>
+<g id="shape-146" data-name="圆角矩形 2">
+<rect x="305.11" y="97.63" width="669.79" height="43.39" rx="21.7" ry="21.7" fill="#BF3C2E" stroke="#FFFFFF" stroke-width="1" />
+<text x="640" y="125.99" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="26.67" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="26.67" font-weight="bold">阐释马克思主义作为社会价值观由社会存在决定观点</tspan></text>
+</g>
+</g>
+<g id="shape-29" data-name="组合 28">
+<g id="shape-76" data-name="箭头: 五边形 75" transform="rotate(270 779.89 533.49)">
+<polygon points="738.74,393.69 783.11,393.69 821.03,533.49 783.11,673.29 738.74,673.29" fill="#C00000" fill-opacity="0.1" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-75" data-name="箭头: 五边形 74" transform="rotate(270 500.07 533.49)">
+<polygon points="458.93,393.69 503.29,393.69 541.21,533.49 503.29,673.29 458.93,673.29" fill="#C00000" fill-opacity="0.1" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-38" data-name="圆角矩形 6">
+<rect x="287.3" y="574.63" width="705.4" height="45.13" rx="0" ry="0" fill="#FD905F" stroke-width="1" stroke="none" />
+<text x="640" y="603.2" text-anchor="middle" xml:space="preserve" font-family="&quot;Gill Sans MT&quot;, +mn-cs, sans-serif" font-size="24" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="24" font-weight="bold">维护国家统一和民族团结，关注并投入“一带一路”建设</tspan></text>
+</g>
+<g id="shape-97" data-name="文本框 96" transform="translate(500.07 541.49) scale(-1 1) translate(-500.07 -541.49)">
+<rect x="372.24" y="512.42" width="255.65" height="58.14" fill="none" />
+<text x="500.07" y="533.09" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="18.67" fill="#FC5409"><tspan fill="#FC5409" font-size="18.67">利用网络课堂为学</tspan></text>
+<text x="500.07" y="553.62" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="18.67" fill="#FC5409"><tspan fill="#FC5409" font-size="18.67">生打造更加多元化学习环境</tspan></text>
+</g>
+<g id="shape-99" data-name="文本框 98" transform="translate(779.89 541.49) scale(-1 1) translate(-779.89 -541.49)">
+<rect x="652.06" y="512.42" width="255.65" height="58.14" fill="none" />
+<text x="779.89" y="533.09" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="18.67" fill="#FC5409"><tspan fill="#FC5409" font-size="18.67">加强专业课程“课</tspan></text>
+<text x="779.89" y="553.62" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="18.67" fill="#FC5409"><tspan fill="#FC5409" font-size="18.67">程思政”建设打破学科壁垒</tspan></text>
+</g>
+<g id="shape-73" data-name="直接连接符 72">
+<line x1="639.87" y1="506.77" x2="639.87" y2="574.63" stroke-width="1" stroke="#D02300" marker-start="url(#marrow6)" fill="#D02300" />
+</g>
+<g id="shape-74" data-name="直接连接符 73">
+<line x1="919.73" y1="506.77" x2="919.73" y2="574.63" stroke-width="1" stroke="#FD905F" marker-start="url(#marrow7)" fill="#D02300" />
+</g>
+<g id="shape-149" data-name="直接连接符 148">
+<line x1="360.27" y1="506.77" x2="360.27" y2="574.63" stroke-width="1" stroke="#BF3C2E" marker-start="url(#marrow8)" fill="#D02300" />
+</g>
+</g></svg>

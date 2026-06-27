@@ -1,0 +1,175 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="bggrad1" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F0F4FC" /><stop offset="1" stop-color="#112D5C" /></linearGradient><linearGradient id="ggrad2" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#173C7A" /><stop offset="0.6224" stop-color="#173C7A" stop-opacity="0.11" /><stop offset="0.39" stop-color="#173C7A" stop-opacity="0.15" /><stop offset="1" stop-color="#173C7A" stop-opacity="0" /></linearGradient><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="6.6" dy="6.6" stdDeviation="16.67" flood-color="#173C7A" flood-opacity="0.18" /></filter><radialGradient id="ggrad3" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFE089" /><stop offset="0.5" stop-color="#E5D698" /><stop offset="1" stop-color="#A78D5B" /></radialGradient><radialGradient id="ggrad4" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F5E7CA" /><stop offset="1" stop-color="#D4BA54" /></radialGradient><radialGradient id="ggrad5" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F5E7CA" /><stop offset="1" stop-color="#D4BA54" /></radialGradient><radialGradient id="ggrad6" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F5E7CA" /><stop offset="1" stop-color="#D4BA54" /></radialGradient><radialGradient id="ggrad7" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F5E7CA" /><stop offset="1" stop-color="#D4BA54" /></radialGradient><radialGradient id="ggrad8" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F5E7CA" /><stop offset="1" stop-color="#D4BA54" /></radialGradient><radialGradient id="ggrad9" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#F5E7CA" /><stop offset="1" stop-color="#D4BA54" /></radialGradient><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="6.6" dy="6.6" stdDeviation="16.67" flood-color="#173C7A" flood-opacity="0.18" /></filter><radialGradient id="ggrad10" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FFE089" /><stop offset="0.5" stop-color="#E5D698" /><stop offset="1" stop-color="#A78D5B" /></radialGradient><radialGradient id="ggrad11" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#EDE8DE" /><stop offset="1" stop-color="#D4BA54" /></radialGradient><radialGradient id="ggrad12" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#EDE8DE" /><stop offset="1" stop-color="#D4BA54" /></radialGradient><radialGradient id="ggrad13" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#EDE8DE" /><stop offset="1" stop-color="#D4BA54" /></radialGradient><radialGradient id="ggrad14" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#EDE8DE" /><stop offset="1" stop-color="#D4BA54" /></radialGradient><radialGradient id="ggrad15" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#EDE8DE" /><stop offset="1" stop-color="#D4BA54" /></radialGradient><radialGradient id="ggrad16" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#EDE8DE" /><stop offset="1" stop-color="#D4BA54" /></radialGradient><marker id="marrow1" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#173C7A" /></marker></defs><rect x="0" y="0" width="1280" height="720" fill="url(#bggrad1)" />
+<g id="layout-shape-6" data-name="矩形 5">
+<rect x="28.13" y="28.73" width="1224.6" height="670.8" fill="#FFFFFF" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-2" data-name="文本占位符 1" data-ph-type="body">
+<rect x="74.73" y="61.33" width="843.67" height="57.47" fill="none" />
+<text x="84.33" y="92.2" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="30.67" fill="#000000"><tspan fill="#000000" font-size="30.67">{{CLOSING_MESSAGE}}</tspan></text>
+</g>
+<g id="shape-23" data-name="Freeform 16" transform="rotate(270 636.98 381.33)">
+<path d="M 951.8 783.52 L 322.16 783.52 L 336.24 768.48 C 413.32 680.05 483.4 544.28 523.92 390.73 C 564.44 237.18 566.77 98.57 537.54 5.69 L 527.64 -20.85 L 746.31 -20.85 L 736.41 5.69 C 707.19 98.57 709.51 237.18 750.03 390.73 C 790.55 544.28 860.64 680.05 937.72 768.48 Z" fill="url(#ggrad2)" stroke-width="1.2" stroke="#D4BA54" stroke-opacity="0" />
+</g>
+<g id="shape-24" data-name="TextBox 56">
+<rect x="494.23" y="351.52" width="295.54" height="48.33" fill="none" />
+<text x="642" y="383.52" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="32" fill="#7C4E2C"><tspan fill="#7C4E2C" font-size="32">{{THANK_YOU}}</tspan></text>
+</g>
+<g id="shape-25" data-name="组合 24">
+<g id="shape-26" data-name="组合 25">
+<g id="shape-28" data-name="组合 27">
+<g id="shape-35" data-name="Freeform 1">
+<path d="M 499.32 385.73 L 408.58 542.9 L 227.08 542.9 L 136.34 385.73 L 227.08 228.55 L 408.58 228.55 L 499.32 385.73 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" filter="url(#fx1)" />
+</g>
+<g id="shape-36" data-name="Freeform 2">
+<path d="M 82.44 386.82 C 82.44 358.69 105.25 335.88 133.38 335.88 C 161.51 335.88 184.32 358.69 184.32 386.82 C 184.32 414.95 161.51 437.76 133.38 437.76 C 105.25 437.76 82.44 414.95 82.44 386.82 Z" fill="#173C7A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-37" data-name="Freeform 3">
+<path d="M 239.89 385.73 C 239.89 342.68 274.79 307.79 317.83 307.79 C 360.88 307.79 395.77 342.68 395.77 385.73 C 395.77 428.77 360.88 463.67 317.83 463.67 C 274.79 463.67 239.89 428.77 239.89 385.73 Z" fill="url(#ggrad3)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-38" data-name="Freeform 4">
+<path d="M 174.57 233.09 C 174.57 204.95 197.38 182.15 225.51 182.15 C 253.64 182.15 276.45 204.95 276.45 233.09 C 276.45 261.22 253.64 284.02 225.51 284.02 C 197.38 284.02 174.57 261.22 174.57 233.09 Z" fill="#173C7A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-39" data-name="Freeform 5">
+<path d="M 360.14 233.09 C 360.14 204.95 382.95 182.15 411.08 182.15 C 439.21 182.15 462.02 204.95 462.02 233.09 C 462.02 261.22 439.21 284.02 411.08 284.02 C 382.95 284.02 360.14 261.22 360.14 233.09 Z" fill="#173C7A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-40" data-name="Freeform 6">
+<path d="M 435.98 386.82 C 435.98 358.69 458.79 335.88 486.92 335.88 C 515.05 335.88 537.86 358.69 537.86 386.82 C 537.86 414.95 515.05 437.76 486.92 437.76 C 458.79 437.76 435.98 414.95 435.98 386.82 Z" fill="#173C7A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-41" data-name="Freeform 7">
+<path d="M 174.57 540.55 C 174.57 512.42 197.38 489.61 225.51 489.61 C 253.64 489.61 276.45 512.42 276.45 540.55 C 276.45 568.68 253.64 591.49 225.51 591.49 C 197.38 591.49 174.57 568.68 174.57 540.55 Z" fill="#173C7A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-42" data-name="Freeform 8">
+<path d="M 360.14 540.55 C 360.14 512.42 382.95 489.61 411.08 489.61 C 439.21 489.61 462.02 512.42 462.02 540.55 C 462.02 568.68 439.21 591.49 411.08 591.49 C 382.95 591.49 360.14 568.68 360.14 540.55 Z" fill="#173C7A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-43" data-name="Isosceles Triangle 9" transform="rotate(90 211.77 388.83)">
+<polygon points="211.77,377.88 232.02,399.78 191.52,399.78" fill="url(#ggrad4)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-44" data-name="Isosceles Triangle 10" transform="rotate(145.01 266.37 300.84)">
+<polygon points="266.37,289.89 286.62,311.8 246.12,311.8" fill="url(#ggrad5)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-45" data-name="Isosceles Triangle 11" transform="rotate(212.63 374.57 300.84)">
+<polygon points="374.57,289.89 394.82,311.8 354.32,311.8" fill="url(#ggrad6)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-46" data-name="Isosceles Triangle 12" transform="rotate(270 420.42 387.65)">
+<polygon points="420.42,376.7 440.67,398.6 400.17,398.6" fill="url(#ggrad7)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-47" data-name="Isosceles Triangle 13" transform="rotate(32.72 262.85 476.64)">
+<polygon points="262.85,465.69 283.1,487.59 242.6,487.59" fill="url(#ggrad8)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-48" data-name="Isosceles Triangle 14" transform="rotate(334.51 383.13 472.15)">
+<polygon points="383.13,461.2 403.38,483.11 362.88,483.11" fill="url(#ggrad9)" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-29" data-name="TextBox 50">
+<rect x="149.09" y="218.73" width="151.14" height="32.8" fill="none" />
+<text x="224.66" y="239.85" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="19.2" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="19.2">采数据</tspan></text>
+</g>
+<g id="shape-30" data-name="TextBox 51">
+<rect x="335.77" y="217.49" width="151.14" height="32.8" fill="none" />
+<text x="411.35" y="238.61" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="19.2" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="19.2">清噪声</tspan></text>
+</g>
+<g id="shape-31" data-name="TextBox 52">
+<rect x="446.24" y="373.93" width="85.81" height="32.8" fill="none" />
+<text x="489.15" y="395.05" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="19.2" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="19.2">建模型</tspan></text>
+</g>
+<g id="shape-32" data-name="TextBox 53">
+<rect x="83.31" y="374.09" width="98.8" height="32.8" fill="none" />
+<text x="132.71" y="395.21" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="19.2" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="19.2">选特征</tspan></text>
+</g>
+<g id="shape-33" data-name="TextBox 54">
+<rect x="151.01" y="525.78" width="151.14" height="32.8" fill="none" />
+<text x="226.59" y="546.9" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="19.2" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="19.2">轻优化</tspan></text>
+</g>
+<g id="shape-34" data-name="TextBox 55">
+<rect x="333.89" y="524.9" width="151.14" height="32.8" fill="none" />
+<text x="409.47" y="546.02" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="19.2" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="19.2">测性能</tspan></text>
+</g>
+</g>
+<g id="shape-27" data-name="TextBox 58">
+<rect x="249.11" y="353.81" width="140.68" height="79.33" fill="none" />
+<text x="319.46" y="383.09" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="28.8" fill="#173C7A"><tspan fill="#173C7A" font-size="28.8">核心流程</tspan><tspan fill="#173C7A" font-size="28.8">层次</tspan></text>
+</g>
+</g>
+<g id="shape-49" data-name="TextBox 81">
+<rect x="713.95" y="370.28" width="151.14" height="32.96" fill="none" />
+<text x="789.52" y="391.4" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="19.2" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="19.2">绿色机房</tspan></text>
+</g>
+<g id="shape-50" data-name="组合 49">
+<g id="shape-51" data-name="组合 50">
+<g id="shape-53" data-name="组合 52">
+<g id="shape-60" data-name="Freeform 1">
+<path d="M 1141.3 385.73 L 1050.55 542.9 L 869.06 542.9 L 778.31 385.73 L 869.06 228.55 L 1050.55 228.55 L 1141.3 385.73 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" filter="url(#fx2)" />
+</g>
+<g id="shape-61" data-name="Freeform 2">
+<path d="M 724.42 386.82 C 724.42 358.69 747.22 335.88 775.36 335.88 C 803.49 335.88 826.29 358.69 826.29 386.82 C 826.29 414.95 803.49 437.76 775.36 437.76 C 747.22 437.76 724.42 414.95 724.42 386.82 Z" fill="#173C7A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-62" data-name="Freeform 3">
+<path d="M 881.87 385.73 C 881.87 342.68 916.76 307.79 959.81 307.79 C 1002.85 307.79 1037.74 342.68 1037.74 385.73 C 1037.74 428.77 1002.85 463.67 959.81 463.67 C 916.76 463.67 881.87 428.77 881.87 385.73 Z" fill="url(#ggrad10)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-63" data-name="Freeform 4">
+<path d="M 816.55 233.09 C 816.55 204.95 839.35 182.15 867.48 182.15 C 895.62 182.15 918.42 204.95 918.42 233.09 C 918.42 261.22 895.62 284.02 867.48 284.02 C 839.35 284.02 816.55 261.22 816.55 233.09 Z" fill="#173C7A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-64" data-name="Freeform 5">
+<path d="M 1002.12 233.09 C 1002.12 204.95 1024.92 182.15 1053.05 182.15 C 1081.19 182.15 1103.99 204.95 1103.99 233.09 C 1103.99 261.22 1081.19 284.02 1053.05 284.02 C 1024.92 284.02 1002.12 261.22 1002.12 233.09 Z" fill="#173C7A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-65" data-name="Freeform 6">
+<path d="M 1077.96 386.82 C 1077.96 358.69 1100.76 335.88 1128.89 335.88 C 1157.03 335.88 1179.83 358.69 1179.83 386.82 C 1179.83 414.95 1157.03 437.76 1128.89 437.76 C 1100.76 437.76 1077.96 414.95 1077.96 386.82 Z" fill="#173C7A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-66" data-name="Freeform 7">
+<path d="M 816.55 540.55 C 816.55 512.42 839.35 489.61 867.48 489.61 C 895.62 489.61 918.42 512.42 918.42 540.55 C 918.42 568.68 895.62 591.49 867.48 591.49 C 839.35 591.49 816.55 568.68 816.55 540.55 Z" fill="#173C7A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-67" data-name="Freeform 8">
+<path d="M 1002.12 540.55 C 1002.12 512.42 1024.92 489.61 1053.05 489.61 C 1081.19 489.61 1103.99 512.42 1103.99 540.55 C 1103.99 568.68 1081.19 591.49 1053.05 591.49 C 1024.92 591.49 1002.12 568.68 1002.12 540.55 Z" fill="#173C7A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-68" data-name="Isosceles Triangle 9" transform="rotate(90 853.75 388.83)">
+<polygon points="853.75,377.88 874,399.78 833.5,399.78" fill="url(#ggrad11)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-69" data-name="Isosceles Triangle 10" transform="rotate(145.01 908.35 300.84)">
+<polygon points="908.35,289.89 928.6,311.8 888.1,311.8" fill="url(#ggrad12)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-70" data-name="Isosceles Triangle 11" transform="rotate(212.63 1016.55 300.84)">
+<polygon points="1016.55,289.89 1036.79,311.8 996.3,311.8" fill="url(#ggrad13)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-71" data-name="Isosceles Triangle 12" transform="rotate(270 1062.39 387.65)">
+<polygon points="1062.39,376.7 1082.64,398.6 1042.14,398.6" fill="url(#ggrad14)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-72" data-name="Isosceles Triangle 13" transform="rotate(32.72 904.82 476.64)">
+<polygon points="904.82,465.69 925.07,487.59 884.57,487.59" fill="url(#ggrad15)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-73" data-name="Isosceles Triangle 14" transform="rotate(334.51 1025.11 472.15)">
+<polygon points="1025.11,461.2 1045.36,483.11 1004.86,483.11" fill="url(#ggrad16)" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-54" data-name="TextBox 50">
+<rect x="791.06" y="218.73" width="151.14" height="32.8" fill="none" />
+<text x="866.63" y="239.85" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="19.2" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="19.2">多源采</tspan></text>
+</g>
+<g id="shape-55" data-name="TextBox 51">
+<rect x="977.75" y="217.49" width="151.14" height="32.8" fill="none" />
+<text x="1053.32" y="238.61" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="19.2" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="19.2">自适应</tspan></text>
+</g>
+<g id="shape-56" data-name="TextBox 52">
+<rect x="1088.22" y="373.93" width="85.81" height="32.8" fill="none" />
+<text x="1131.13" y="395.05" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="19.2" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="19.2">边缘嵌</tspan></text>
+</g>
+<g id="shape-57" data-name="TextBox 53">
+<rect x="725.29" y="374.09" width="98.8" height="32.8" fill="none" />
+<text x="774.69" y="395.21" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="19.2" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="19.2">关键提</tspan></text>
+</g>
+<g id="shape-58" data-name="TextBox 54">
+<rect x="792.99" y="525.78" width="151.14" height="32.8" fill="none" />
+<text x="868.56" y="546.9" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="19.2" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="19.2">剪参量</tspan></text>
+</g>
+<g id="shape-59" data-name="TextBox 55">
+<rect x="975.87" y="524.9" width="151.14" height="32.8" fill="none" />
+<text x="1051.44" y="546.02" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="19.2" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="19.2">实场验</tspan></text>
+</g>
+</g>
+<g id="shape-52" data-name="TextBox 58">
+<rect x="891.09" y="353.81" width="140.68" height="79.33" fill="none" />
+<text x="961.43" y="383.09" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="28.8" fill="#173C7A"><tspan fill="#173C7A" font-size="28.8">深化落地</tspan><tspan fill="#173C7A" font-size="28.8">层次</tspan></text>
+</g>
+</g>
+<g id="shape-74" data-name="直接箭头连接符 73">
+<line x1="571.86" y1="409.08" x2="719.33" y2="409.08" marker-end="url(#marrow1)" fill="#173C7A" stroke="#173C7A" stroke-width="1" />
+</g></svg>

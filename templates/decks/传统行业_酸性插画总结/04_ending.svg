@@ -1,0 +1,150 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#F2F2F2" />
+<g id="shape-4" data-name="矩形 3">
+<rect x="51.17" y="64.7" width="1193.74" height="625.49" fill="#BFBFBF" stroke="#091724" stroke-width="1" />
+</g>
+<g id="shape-5" data-name="图片 4" transform="rotate(270 627.99 350.01)">
+<svg x="309.89" y="-239.32" width="636.21" height="1178.67" viewBox="0.01953 0.01045 0.91814 0.95916" preserveAspectRatio="none"><image href="assets/image1.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-24" data-name="任意多边形: 形状 23">
+<path d="M 62.2 597.33 L 62.2 643.48 L 106.19 643.48" fill="none" stroke-width="2" stroke="#000000" />
+</g>
+<g id="shape-56" data-name="组合 55">
+<g id="shape-37" data-name="矩形 36">
+<rect x="1190.45" y="31.15" width="34.02" height="638.74" fill="#FFFFFF" stroke-width="1.333" stroke="#262626" />
+</g>
+<g id="shape-38" data-name="矩形 37">
+<rect x="1190.45" y="114.63" width="34.02" height="294.11" fill="#808080" stroke-width="1.333" stroke="#262626" />
+</g>
+<g id="shape-39" data-name="组合 38">
+<g id="shape-40" data-name="矩形 39">
+<rect x="1190.45" y="31.15" width="34.02" height="45.76" fill="#808080" stroke-width="1.333" stroke="#262626" />
+</g>
+<g id="shape-41" data-name="等腰三角形 40">
+<polygon points="1207.46,43.07 1218.9,64.99 1196.02,64.99" fill="#000000" stroke-width="1.333" stroke="#262626" />
+</g>
+</g>
+<g id="shape-42" data-name="组合 41" transform="translate(1207.46 647.07) scale(1 -1) translate(-1207.46 -647.07)">
+<g id="shape-43" data-name="矩形 42">
+<rect x="1190.45" y="624.19" width="34.02" height="45.76" fill="#808080" stroke-width="1.333" stroke="#262626" />
+</g>
+<g id="shape-44" data-name="等腰三角形 43">
+<polygon points="1207.46,636.11 1218.9,658.03 1196.02,658.03" fill="#000000" stroke-width="1.333" stroke="#262626" />
+</g>
+</g>
+<g id="shape-45" data-name="组合 44">
+<g id="shape-46" data-name="直接连接符 45">
+<line x1="1197.27" y1="129.36" x2="1217.65" y2="129.36" stroke-width="2.667" stroke-linecap="round" stroke="#000000" stroke-linejoin="round" fill="#5B9BD5" />
+</g>
+<g id="shape-47" data-name="直接连接符 46">
+<line x1="1197.27" y1="136.34" x2="1217.65" y2="136.34" stroke-width="2.667" stroke-linecap="round" stroke="#000000" stroke-linejoin="round" fill="#5B9BD5" />
+</g>
+<g id="shape-48" data-name="直接连接符 47">
+<line x1="1197.27" y1="143.32" x2="1217.65" y2="143.32" stroke-width="2.667" stroke-linecap="round" stroke="#000000" stroke-linejoin="round" fill="#5B9BD5" />
+</g>
+</g>
+</g>
+<g id="shape-20" data-name="文本框 19">
+<rect x="148.86" y="235.66" width="451.21" height="116.2" fill="none" />
+<text x="158.46" y="315.26" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="88" fill="#0D0D0D" font-weight="bold"><tspan fill="#0D0D0D" font-size="88">{{THANK_YOU}}</tspan></text>
+</g>
+<g id="shape-58" data-name="文本框 57">
+<rect x="148.86" y="351.05" width="633.64" height="106.63" fill="none" />
+<text x="158.46" y="423.85" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="80" fill="#D9D9D9" font-weight="bold"><tspan fill="#D9D9D9" font-size="80">{{CLOSING_MESSAGE}}</tspan></text>
+</g>
+<g id="shape-77" data-name="任意多边形: 形状 76" transform="translate(1133.81 620.41) scale(-1 1) translate(-1133.81 -620.41)">
+<path d="M 1111.81 597.33 L 1111.81 643.48 L 1155.8 643.48" fill="none" stroke-width="2" stroke="#000000" />
+</g>
+<g id="shape-22" data-name="组合 21">
+<g id="shape-30" data-name="文本框 29">
+<rect x="91.27" y="79.8" width="146" height="32.2" fill="none" />
+<text x="100.87" y="100.47" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="18.67" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="18.67" font-weight="bold">YOUR LOGO</tspan></text>
+</g>
+<g id="shape-35" data-name="直接箭头连接符 34">
+<line x1="340.73" y1="93.47" x2="853.87" y2="93.47" stroke-width="2" stroke="#32384D" fill="#5B9BD5" />
+</g>
+<g id="shape-2" data-name="组合 1">
+<g id="shape-3" data-name="图形 14">
+<image href="assets/image3.png" x="230.8" y="82.67" width="24.08" height="24.07" preserveAspectRatio="none" />
+</g>
+<g id="shape-19" data-name="图形 15">
+<image href="assets/image3.png" x="262.53" y="82.67" width="24.08" height="24.07" preserveAspectRatio="none" />
+</g>
+<g id="shape-21" data-name="图形 16">
+<image href="assets/image3.png" x="294.26" y="82.67" width="24.08" height="24.07" preserveAspectRatio="none" />
+</g>
+</g>
+<g id="shape-23" data-name="组合 22">
+<g id="shape-25" data-name="组合 24">
+<g id="shape-26" data-name="椭圆 25">
+<ellipse cx="1007.17" cy="93.9" rx="104.43" ry="27.97" fill="#F2F2F2" stroke-width="1.333" stroke="#0D0D0D" />
+</g>
+<g id="shape-27" data-name="组合 26">
+<g id="shape-28" data-name="椭圆 27">
+<ellipse cx="918.33" cy="93.9" rx="3.09" ry="3.09" fill="#0D0D0D" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-29" data-name="椭圆 28">
+<ellipse cx="1094.61" cy="93.9" rx="3.09" ry="3.09" fill="#0D0D0D" stroke="none" stroke-width="1" />
+</g>
+</g>
+</g>
+<g id="shape-31" data-name="文本框 30">
+<rect x="924.77" y="77.03" width="164.79" height="33.75" fill="none" />
+<text x="1007.17" y="97.69" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="18.67" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="18.67">{{DATE}}</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-32" data-name="组合 31">
+<g id="shape-52" data-name="组合 51" transform="rotate(90 1085.2 619.07)">
+<g id="shape-53" data-name="任意多边形: 形状 52">
+<path d="M 1071.6 551.8 L 1085.2 551.8 L 1085.2 565.25 L 1071.6 565.25 Z" fill="#0D0D0D" stroke-width="1.333" stroke-linecap="butt" stroke="#000000" stroke-linejoin="miter" />
+</g>
+<g id="shape-33" data-name="任意多边形: 形状 55">
+<path d="M 1085.2 565.25 L 1098.8 565.25 L 1098.8 578.71 L 1085.2 578.71 Z" fill="#0D0D0D" stroke-width="1.333" stroke-linecap="butt" stroke="#000000" stroke-linejoin="miter" />
+</g>
+<g id="shape-57" data-name="任意多边形: 形状 56">
+<path d="M 1071.6 578.71 L 1085.2 578.71 L 1085.2 592.16 L 1071.6 592.16 Z" fill="#0D0D0D" stroke-width="1.333" stroke-linecap="butt" stroke="#000000" stroke-linejoin="miter" />
+</g>
+<g id="shape-60" data-name="任意多边形: 形状 59">
+<path d="M 1085.2 592.16 L 1098.8 592.16 L 1098.8 605.61 L 1085.2 605.61 Z" fill="#0D0D0D" stroke-width="1.333" stroke-linecap="butt" stroke="#000000" stroke-linejoin="miter" />
+</g>
+<g id="shape-61" data-name="任意多边形: 形状 60">
+<path d="M 1071.6 605.61 L 1085.2 605.61 L 1085.2 619.07 L 1071.6 619.07 Z" fill="#0D0D0D" stroke-width="1.333" stroke-linecap="butt" stroke="#000000" stroke-linejoin="miter" />
+</g>
+<g id="shape-64" data-name="任意多边形: 形状 63">
+<path d="M 1085.2 619.07 L 1098.8 619.07 L 1098.8 632.52 L 1085.2 632.52 Z" fill="#0D0D0D" stroke-width="1.333" stroke-linecap="butt" stroke="#000000" stroke-linejoin="miter" />
+</g>
+<g id="shape-65" data-name="任意多边形: 形状 64">
+<path d="M 1071.6 632.52 L 1085.2 632.52 L 1085.2 645.97 L 1071.6 645.97 Z" fill="#0D0D0D" stroke-width="1.333" stroke-linecap="butt" stroke="#000000" stroke-linejoin="miter" />
+</g>
+<g id="shape-68" data-name="任意多边形: 形状 67">
+<path d="M 1085.2 645.97 L 1098.8 645.97 L 1098.8 659.43 L 1085.2 659.43 Z" fill="#0D0D0D" stroke-width="1.333" stroke-linecap="butt" stroke="#000000" stroke-linejoin="miter" />
+</g>
+<g id="shape-69" data-name="任意多边形: 形状 68">
+<path d="M 1071.6 659.43 L 1085.2 659.43 L 1085.2 672.88 L 1071.6 672.88 Z" fill="#0D0D0D" stroke-width="1.333" stroke-linecap="butt" stroke="#000000" stroke-linejoin="miter" />
+</g>
+<g id="shape-76" data-name="任意多边形: 形状 75">
+<path d="M 1085.2 672.88 L 1098.8 672.88 L 1098.8 686.33 L 1085.2 686.33 Z" fill="#0D0D0D" stroke-width="1.333" stroke-linecap="butt" stroke="#000000" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-34" data-name="图片 33" transform="translate(825.47 509.33) scale(-1 1) translate(-825.47 -509.33)">
+<svg x="683.47" y="421" width="284" height="176.67" viewBox="0.2018 0.72343 0.19903 0.24553" preserveAspectRatio="none"><image href="assets/image5.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-36" data-name="图形 8">
+<image href="assets/image6.png" x="693.87" y="172.53" width="199" height="214.47" preserveAspectRatio="none" />
+</g>
+<g id="shape-49" data-name="图片 48" transform="translate(936.33 372.43) scale(-1 1) translate(-936.33 -372.43)">
+<svg x="735.67" y="171" width="401.33" height="402.87" viewBox="0.27917 0 0.28125 0.5599" preserveAspectRatio="none"><image href="assets/image5.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+</g>
+<g id="shape-55" data-name="组合 54">
+<g id="shape-50" data-name="直接连接符 49">
+<line x1="0.46" y1="0.8" x2="0.88" y2="0.8" stroke-width="2" stroke="#000000" fill="#5B9BD5" />
+</g>
+<g id="shape-51" data-name="直接连接符 50">
+<line x1="0.28" y1="0.8" x2="0.38" y2="0.8" stroke-width="2" stroke="#000000" fill="#5B9BD5" />
+</g>
+<g id="shape-54" data-name="直接连接符 53">
+<line x1="0.4" y1="0.8" x2="0.44" y2="0.8" stroke-width="2" stroke="#000000" fill="#5B9BD5" />
+</g>
+</g></svg>

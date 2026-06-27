@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><g id="slide-wrapper" transform="scale(1.3333333333333333)"><defs><linearGradient id="txtgrad1" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#FEEBA5"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad2" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#FEEBA5"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad3" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6E0CB"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad4" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6E0CB"/><stop offset="1" stop-color="#E29B60"/></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#CD170A"/>
+<g id="layout-shape-3" data-name="图片 2">
+<svg x="0" y="0" width="1280" height="720" viewBox="0.17593 0 0.64814 1" preserveAspectRatio="none"><image href="assets/image1.jpeg" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="layout-shape-7" data-name="图片 6">
+<svg x="0" y="208.91" width="1280" height="331.09" viewBox="0 0 0.7841 0.86537" preserveAspectRatio="none"><image href="assets/image4.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="shape-12" data-name="文本框 11">
+<rect x="330.83" y="116.3" width="283.87" height="74.32" fill="none" stroke="none"/>
+<text x="472.77" y="166.43" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪大宋简&quot;, sans-serif" font-size="53.33" fill="url(#txtgrad1)" letter-spacing="-4"><tspan fill="url(#txtgrad1)" font-size="53.33" letter-spacing="-4">{{CHAPTER_NUM}}</tspan></text>
+</g>
+<g id="shape-13" data-name="文本框 12">
+<rect x="192.77" y="193.07" width="560" height="80.67" fill="none" stroke="none"/>
+<text x="202.37" y="247.73" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪大宋简&quot;, sans-serif" font-size="58.67" fill="url(#txtgrad2)" letter-spacing="-4"><tspan fill="url(#txtgrad2)" font-size="58.67" letter-spacing="-4">{{CHAPTER_TITLE}}</tspan></text>
+</g>
+<g id="shape-14" data-name="组合 13">
+<g id="shape-15" data-name="星形: 五角 14">
+<polygon points="344.43,140.79 347.27,149.54 356.48,149.54 349.03,154.96 351.88,163.71 344.43,158.3 336.98,163.71 339.82,154.96 332.37,149.54 341.58,149.54" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+<g id="shape-16" data-name="星形: 五角 15">
+<polygon points="319.07,145.39 320.88,150.96 326.75,150.97 322,154.41 323.81,159.99 319.07,156.55 314.32,159.99 316.13,154.41 311.39,150.97 317.25,150.96" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+<g id="shape-17" data-name="星形: 五角 16">
+<polygon points="299.68,148.26 300.85,151.85 304.63,151.85 301.57,154.07 302.74,157.67 299.68,155.45 296.63,157.67 297.79,154.07 294.74,151.85 298.52,151.85" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+</g>
+<g id="shape-18" data-name="组合 17" transform="translate(622.84 153.46) scale(-1 1) translate(-622.84 -153.46)">
+<g id="shape-19" data-name="星形: 五角 18">
+<polygon points="641.47,140.79 644.32,149.54 653.53,149.54 646.08,154.96 648.92,163.71 641.47,158.3 634.02,163.71 636.87,154.96 629.42,149.54 638.63,149.54" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+<g id="shape-20" data-name="星形: 五角 19">
+<polygon points="616.11,145.39 617.93,150.96 623.79,150.97 619.05,154.41 620.86,159.99 616.11,156.55 611.37,159.99 613.18,154.41 608.43,150.97 614.3,150.96" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+<g id="shape-21" data-name="星形: 五角 20">
+<polygon points="596.73,148.26 597.9,151.85 601.67,151.85 598.62,154.07 599.79,157.67 596.73,155.45 593.67,157.67 594.84,154.07 591.78,151.85 595.56,151.85" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+</g>
+<g id="shape-22" data-name="文本框 21">
+<rect x="206.87" y="285.4" width="531.8" height="85.93" fill="none"/>
+<text x="472.77" y="302.1" text-anchor="middle" xml:space="preserve" font-family="&quot;Century Gothic&quot;, sans-serif" font-size="14" fill="#F6E0CB"><tspan fill="#F6E0CB" font-size="14">{{CHAPTER_DESC}}</tspan><tspan x="472.77" dy="21" fill="#F6E0CB" font-size="14"></tspan><tspan x="472.77" dy="21" fill="#F6E0CB" font-size="14"></tspan></text>
+</g>
+<g id="shape-2" data-name="文本框 1">
+<rect x="24" y="31.93" width="98.73" height="29.87" fill="none" stroke="#F6E0CB" stroke-linejoin="miter"/>
+<text x="33.6" y="57.13" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="url(#txtgrad3)"><tspan fill="url(#txtgrad3)" font-size="24">{{DATE}}</tspan></text>
+</g>
+<g id="shape-3" data-name="文本框 2">
+<rect x="13.8" y="65.55" width="247.67" height="35" fill="none"/>
+<text x="23.4" y="90.75" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="url(#txtgrad4)"><tspan fill="url(#txtgrad4)" font-size="24">{{SUBTITLE}}</tspan></text>
+</g></g></svg>

@@ -1,0 +1,120 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0.38" stop-color="#D2DDF1" stop-opacity="0" /><stop offset="1" stop-color="#A6BBE4" /></linearGradient><linearGradient id="ggrad2" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0.38" stop-color="#D2DDF1" stop-opacity="0" /><stop offset="1" stop-color="#A6BBE4" /></linearGradient><marker id="marrow1" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#799AD6" /></marker><marker id="marrow2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#799AD6" /></marker></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-7" data-name="椭圆 6">
+<ellipse cx="641.13" cy="359.75" rx="241.61" ry="241.61" fill="#A6BBE4" fill-opacity="0.3" stroke="#A6BBE4" stroke-width="1" />
+</g>
+<g id="shape-30" data-name="任意多边形: 形状 29" transform="translate(400.51 359.75) scale(-1 1) translate(-400.51 -359.75)">
+<path d="M 466.62 315.35 L 497.86 359.75 L 497.84 359.75 L 466.6 404.15 C 466.6 404.15 395.57 382.87 303.15 379.13 L 303.15 359.75 L 303.15 340.38 C 395.57 336.64 466.62 315.35 466.62 315.35 Z" fill="url(#ggrad1)" stroke-width="1.218" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-44" data-name="任意多边形: 形状 43">
+<path d="M 994.17 0 L 1276.02 0 L 1280 6.01 L 1280 720 L 1093.41 720 L 1103.85 704.84 C 1156.17 621.02 1186.41 521.99 1186.41 415.9 C 1186.41 260.3 1121.37 119.89 1016.99 20.37 Z M 3.98 0 L 285.83 0 L 263.01 20.37 C 158.63 119.89 93.59 260.3 93.59 415.9 C 93.59 521.99 123.83 621.02 176.15 704.84 L 186.59 720 L 0 720 L 0 6.01 Z" fill="#D2DDF1" fill-opacity="0.2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-16" data-name="矩形 15">
+<rect x="12.31" y="6.7" width="541.1" height="54.93" fill="none" />
+<text x="21.91" y="43.23" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="37.33" fill="#262626"><tspan fill="#262626" font-size="37.33">{{PAGE_TITLE}}</tspan></text>
+</g>
+<g id="shape-72" data-name="六边形 71">
+<polygon points="1263.67,673.32 951.83,702.08 328.17,702.08 16.33,673.32 328.17,644.55 951.83,644.55" fill="#6E94D4" stroke-width="0.636" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-81" data-name="矩形 80">
+<rect x="927.56" y="194.92" width="343.77" height="89.3" fill="none" />
+<text x="1261.73" y="215.58" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="18.67" fill="#262626"><tspan fill="#262626" font-size="18.67">{{CONTENT_1}}</tspan></text>
+</g>
+<g id="shape-98" data-name="矩形: 圆顶角 97" transform="rotate(270 1120.98 155.51) translate(1120.98 155.51) scale(-1 1) translate(-1120.98 -155.51)">
+<path d="M 1120.98 25.77 L 1120.98 25.77 A 27.47 27.47 0 0 1 1148.45 53.24 L 1148.45 285.24 L 1148.45 285.24 L 1093.51 285.24 L 1093.51 285.24 L 1093.51 53.24 A 27.47 27.47 0 0 1 1120.98 25.77 Z" data-pptx-prst="round2SameRect" data-pptx-adj1="50000" data-pptx-adj2="0" fill="#FFFFFF" stroke="#335CA7" stroke-width="1" />
+</g>
+<g id="shape-80" data-name="矩形 79">
+<rect x="1013.76" y="134.5" width="180.95" height="42.01" fill="none" />
+<text x="1185.11" y="161.97" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="26.67" fill="#335CA7"><tspan fill="#335CA7" font-size="26.67">转化优化不足</tspan></text>
+</g>
+<g id="shape-97" data-name="矩形: 圆顶角 96" transform="rotate(90 169.7 155.51)">
+<path d="M 169.7 25.77 L 169.7 25.77 A 27.47 27.47 0 0 1 197.17 53.24 L 197.17 285.24 L 197.17 285.24 L 142.24 285.24 L 142.24 285.24 L 142.24 53.24 A 27.47 27.47 0 0 1 169.7 25.77 Z" data-pptx-prst="round2SameRect" data-pptx-adj1="50000" data-pptx-adj2="0" fill="#FFFFFF" stroke="#335CA7" stroke-width="1" />
+</g>
+<g id="shape-59" data-name="矩形 58">
+<rect x="91.47" y="134.5" width="180.95" height="42.01" fill="none" />
+<text x="101.07" y="161.97" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="26.67" fill="#335CA7"><tspan fill="#335CA7" font-size="26.67">流量渠道单一</tspan></text>
+</g>
+<g id="shape-74" data-name="矩形 73">
+<rect x="12.34" y="499.06" width="349.14" height="89.3" fill="none" />
+<text x="21.94" y="519.73" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="18.67" fill="#262626"><tspan fill="#262626" font-size="18.67">{{CONTENT_2}}</tspan></text>
+</g>
+<g id="shape-100" data-name="矩形: 圆顶角 99" transform="rotate(90 170.92 460.75)">
+<path d="M 170.92 331.02 L 170.92 331.02 A 27.47 27.47 0 0 1 198.39 358.48 L 198.39 590.48 L 198.39 590.48 L 143.46 590.48 L 143.46 590.48 L 143.46 358.48 A 27.47 27.47 0 0 1 170.92 331.02 Z" data-pptx-prst="round2SameRect" data-pptx-adj1="50000" data-pptx-adj2="0" fill="#FFFFFF" stroke="#335CA7" stroke-width="1" />
+</g>
+<g id="shape-73" data-name="矩形 72">
+<rect x="92.35" y="439.75" width="180.95" height="42.01" fill="none" />
+<text x="101.95" y="467.21" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="26.67" fill="#335CA7"><tspan fill="#335CA7" font-size="26.67">活动落地欠佳</tspan></text>
+</g>
+<g id="shape-87" data-name="矩形 86">
+<rect x="936" y="499.06" width="337.18" height="89.3" fill="none" />
+<text x="1263.59" y="519.73" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="18.67" fill="#262626"><tspan fill="#262626" font-size="18.67">{{CONTENT_3}}</tspan></text>
+</g>
+<g id="shape-99" data-name="矩形: 圆顶角 98" transform="rotate(270 1116.54 460.75) translate(1116.54 460.75) scale(-1 1) translate(-1116.54 -460.75)">
+<path d="M 1116.54 331.02 L 1116.54 331.02 A 27.47 27.47 0 0 1 1144 358.48 L 1144 590.48 L 1144 590.48 L 1089.07 590.48 L 1089.07 590.48 L 1089.07 358.48 A 27.47 27.47 0 0 1 1116.54 331.02 Z" data-pptx-prst="round2SameRect" data-pptx-adj1="50000" data-pptx-adj2="0" fill="#FFFFFF" stroke="#335CA7" stroke-width="1" />
+</g>
+<g id="shape-92" data-name="矩形 91">
+<rect x="1010.82" y="439.75" width="180.95" height="42.01" fill="none" />
+<text x="1182.17" y="467.21" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="26.67" fill="#335CA7"><tspan fill="#335CA7" font-size="26.67">部门协同低效</tspan></text>
+</g>
+<g id="shape-101" data-name="矩形 100">
+<rect x="186.01" y="652.31" width="907.98" height="42.01" fill="none" />
+<text x="640" y="679.78" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">流量、转化、库存等多环节存短板以及跨部门协同不足，影响整体目标达成</tspan></text>
+</g>
+<g id="shape-111" data-name="任意多边形: 形状 110">
+<path d="M 952.18 315.35 L 983.42 359.75 L 983.4 359.75 L 952.16 404.15 C 952.16 404.15 881.14 382.87 788.72 379.13 L 788.72 359.75 L 788.72 340.38 C 881.14 336.64 952.18 315.35 952.18 315.35 Z" fill="url(#ggrad2)" stroke-width="1.218" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-19" data-name="椭圆 18">
+<ellipse cx="1230.63" cy="460.77" rx="33.63" ry="33.63" fill="#335CA7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-17" data-name="椭圆 16">
+<ellipse cx="55.13" cy="460.77" rx="33.63" ry="33.63" fill="#335CA7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-18" data-name="椭圆 17">
+<ellipse cx="1230.63" cy="155.5" rx="33.63" ry="33.63" fill="#335CA7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-14" data-name="椭圆 13">
+<ellipse cx="55.13" cy="155.5" rx="33.63" ry="33.63" fill="#335CA7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-58" data-name="Oval 9+">
+<ellipse cx="641.13" cy="360.9" rx="184.11" ry="184.11" fill="#335CA7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-3" data-name="文本框 31">
+<rect x="523.16" y="336.98" width="235.95" height="235.95" fill="none" />
+<text x="641.13" y="364.45" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="26.67" fill="#335CA7"><tspan fill="#335CA7" font-size="26.67">执行协同</tspan></text>
+</g>
+<g id="shape-5" data-name="文本框 30">
+<rect x="523.16" y="142.25" width="235.95" height="235.95" fill="none" />
+<text x="641.13" y="169.72" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="26.67" fill="#335CA7"><tspan fill="#335CA7" font-size="26.67">流量转化</tspan></text>
+</g>
+<g id="shape-8" data-name="弧形 7" transform="rotate(11.64 653.7 360.9)">
+<path d="M 855.87 331.48 A 204.3 204.3 0 0 1 857.81 352.2" fill="none" stroke="#799AD6" stroke-dasharray="4 4" marker-end="url(#marrow1)" stroke-width="1" />
+</g>
+<g id="shape-9" data-name="弧形 8" transform="rotate(6.74 633.8 360.9) translate(633.8 360.9) scale(-1 -1) translate(-633.8 -360.9)">
+<path d="M 456.67 462.7 A 204.3 204.3 0 0 1 783.34 221.7" fill="none" stroke="#799AD6" stroke-dasharray="4 4" marker-end="url(#marrow2)" stroke-width="1" />
+</g>
+<g id="shape-60" data-name="矩形 59">
+<rect x="15.72" y="194.92" width="345.76" height="89.3" fill="none" />
+<text x="25.32" y="215.58" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="18.67" fill="#262626"><tspan fill="#262626" font-size="18.67">仅依赖平台直通车推广，占比 </tspan><tspan fill="#262626" font-size="18.67">90%</tspan><tspan fill="#262626" font-size="18.67">未尝</tspan><tspan x="25.32" dy="22.4" fill="#262626" font-size="18.67">试某音、某手直播带货，自然流量占比</tspan><tspan x="25.32" dy="22.4" fill="#262626" font-size="18.67">不足 </tspan><tspan fill="#262626" font-size="18.67">8%</tspan><tspan fill="#262626" font-size="18.67">，获客同比上升 </tspan><tspan fill="#262626" font-size="18.67">15%</tspan></text>
+</g>
+<g id="shape-102" data-name="矩形 101">
+<rect x="534.5" y="387.76" width="213.26" height="67.86" fill="none" />
+<text x="641.13" y="433.36" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="48" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="48">运营短板</tspan></text>
+</g>
+<g id="shape-12" data-name="直接连接符 11">
+<line x1="0" y1="62.48" x2="1279.68" y2="62.48" stroke-width="2.333" stroke="#000000" fill="#335CA7" />
+</g>
+<g id="shape-11" data-name="图片 10">
+<image href="assets/image58.png" x="580.27" y="261.67" width="116.53" height="116.53" preserveAspectRatio="none" />
+</g>
+<g id="shape-21" data-name="图片 20">
+<image href="assets/image59.png" x="1211.57" y="441.7" width="38.13" height="38.13" preserveAspectRatio="none" />
+</g>
+<g id="shape-23" data-name="图片 22">
+<image href="assets/image60.png" x="36.07" y="441.7" width="38.13" height="38.13" preserveAspectRatio="none" />
+</g>
+<g id="shape-24" data-name="图片 23">
+<image href="assets/image61.png" x="1211.57" y="136.43" width="38.13" height="38.13" preserveAspectRatio="none" />
+</g>
+<g id="shape-25" data-name="图片 24">
+<image href="assets/image62.png" x="36.07" y="136.43" width="38.13" height="38.13" preserveAspectRatio="none" />
+</g></svg>

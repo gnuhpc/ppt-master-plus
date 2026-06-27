@@ -1,0 +1,190 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><marker id="marrow1" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4480FB" /></marker><marker id="marrow2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4480FB" /></marker><marker id="marrow3" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4480FB" /></marker><marker id="marrow4" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4480FB" /></marker><marker id="marrow5" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4480FB" /></marker><marker id="marrow6" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4480FB" /></marker><marker id="marrow7" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4480FB" /></marker><marker id="marrow8" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#4480FB" /></marker></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="master-shape-12" data-name="直线连接符 11">
+<line x1="55.17" y1="691.85" x2="1250.83" y2="691.85" stroke-width="1" stroke="#00329D" fill="#00329D" />
+</g>
+<g id="shape-9" data-name="lemon1">
+<g id="shape-2" data-name="Group 52">
+<g id="shape-3" data-name="lemon1-1">
+<path d="M 671.46 418.97 C 637.64 418.97 606.93 426.62 584.19 439.04 L 633.02 475.79 C 642.1 469.54 655.93 465.54 671.46 465.54 C 698.81 465.54 720.97 477.94 720.97 493.23 C 720.97 508.53 698.81 520.93 671.46 520.93 C 671.35 520.93 671.24 520.93 671.13 520.93 L 671.13 564.92 C 671.24 564.92 671.35 564.93 671.46 564.93 C 741.49 564.93 798.26 532.26 798.26 491.95 C 798.26 451.64 741.49 418.97 671.46 418.97 Z" fill="#729FFF" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-4" data-name="lemon1-2">
+<path d="M 622.07 493.15 C 622.07 486.54 626.23 480.47 633.14 475.71 L 584.32 438.95 C 559.99 452.25 544.79 471.03 544.79 491.86 C 544.79 532.11 601.38 564.73 671.25 564.84 L 671.25 520.84 C 644.06 520.74 622.07 508.39 622.07 493.15 Z" fill="#002576" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-5" data-name="lemon1-3">
+<path d="M 630.56 475.35 C 624.18 480.21 620.35 486.24 620.35 492.79 C 620.35 500.41 625.5 507.33 633.85 512.5 C 633.04 511.44 632.56 510.33 632.56 509.18 C 632.56 506.11 635.67 503.29 640.84 501.06 L 632.27 476.64 C 632.27 476.64 630.56 475.35 630.56 475.35 Z" fill="#4B4B4B" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-6" data-name="lemon1-4">
+<path d="M 670.5 463.98 C 654.08 463.98 639.54 468.52 630.34 475.52 L 632.05 476.81 L 640.62 501.23 C 647.61 498.21 658.38 496.27 670.5 496.27 C 691.56 496.27 708.65 502.12 708.65 509.34 C 708.65 510.49 708.17 511.6 707.35 512.67 C 715.71 507.49 720.86 500.58 720.86 492.96 C 720.86 476.95 698.31 463.98 670.5 463.98 Z" fill="#707070" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-7" data-name="lemon1-5">
+<path d="M 545.07 496.67 L 545.07 529.31 C 549.55 566.89 603.43 596.63 669.62 597.2 L 671.19 564.57 C 604.28 564.47 549.59 534.54 545.07 496.67 Z" fill="#00194E" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-8" data-name="lemon1-6">
+<path d="M 671.28 564.58 C 671.18 564.58 671.06 564.57 670.96 564.57 L 669.38 597.19 C 670.01 597.2 670.65 597.22 671.28 597.22 C 738.35 597.22 793.22 567.25 797.74 529.31 L 797.74 496.67 C 793.22 534.6 738.35 564.58 671.28 564.58 Z" fill="#2B6FFF" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-61" data-name="Group 45">
+<g id="shape-62" data-name="lemon1-7">
+<path d="M 596.8 320.28 C 562.97 320.28 532.26 327.93 509.53 340.35 L 558.35 377.11 C 567.43 370.85 581.27 366.85 596.8 366.85 C 624.14 366.85 646.31 379.25 646.31 394.55 C 646.31 409.84 624.14 422.24 596.8 422.24 C 596.69 422.24 596.58 422.24 596.46 422.24 L 596.46 466.23 C 596.58 466.23 596.69 466.24 596.8 466.24 C 666.82 466.24 723.59 433.57 723.59 393.26 C 723.59 352.96 666.82 320.28 596.8 320.28 Z" fill="#8FB3FD" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-63" data-name="lemon1-8">
+<path d="M 547.41 394.46 C 547.41 387.85 551.56 381.78 558.47 377.02 L 509.65 340.26 C 485.32 353.56 470.12 372.34 470.12 393.18 C 470.12 433.42 526.71 466.04 596.59 466.15 L 596.59 422.15 C 569.4 422.05 547.41 409.7 547.41 394.46 Z" fill="#4480FB" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-64" data-name="lemon1-9">
+<path d="M 556.91 375.78 C 550.53 380.64 546.71 386.66 546.71 393.22 C 546.71 400.84 551.85 407.75 560.21 412.92 C 559.39 411.86 558.91 410.75 558.91 409.6 C 558.91 406.53 562.02 403.72 567.19 401.49 L 558.62 377.07 C 558.62 377.07 556.91 375.78 556.91 375.78 Z" fill="#03359C" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-65" data-name="lemon1-10">
+<path d="M 596.85 364.4 C 580.43 364.4 565.89 368.95 556.7 375.95 L 558.4 377.23 L 566.97 401.65 C 573.96 398.64 584.73 396.7 596.85 396.7 C 617.92 396.7 635 402.55 635 409.77 C 635 410.92 634.52 412.03 633.71 413.09 C 642.06 407.92 647.21 401.01 647.21 393.39 C 647.21 377.38 624.66 364.4 596.85 364.4 Z" fill="#0550EA" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-66" data-name="lemon1-11">
+<path d="M 470.4 397.98 L 470.4 430.62 C 474.88 468.2 528.76 497.94 594.95 498.51 L 596.53 465.89 C 529.62 465.78 474.92 435.85 470.4 397.98 Z" fill="#0550EA" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-67" data-name="lemon1-12">
+<path d="M 596.62 465.89 C 596.51 465.89 596.4 465.88 596.29 465.88 L 594.71 498.5 C 595.34 498.51 595.98 498.53 596.62 498.53 C 663.68 498.53 718.55 468.56 723.07 430.62 L 723.07 397.98 C 718.55 435.91 663.68 465.89 596.62 465.89 Z" fill="#4480FB" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-68" data-name="Group 52">
+<g id="shape-69" data-name="lemon1-13">
+<path d="M 690.54 227.67 C 656.71 227.67 626 235.31 603.27 247.73 L 652.09 284.49 C 661.17 278.23 675.01 274.23 690.54 274.23 C 717.88 274.23 740.05 286.63 740.05 301.93 C 740.05 317.23 717.88 329.62 690.54 329.62 C 690.43 329.62 690.32 329.62 690.2 329.62 L 690.2 373.61 C 690.32 373.61 690.43 373.62 690.54 373.62 C 760.56 373.62 817.33 340.95 817.33 300.64 C 817.33 260.34 760.56 227.67 690.54 227.67 Z" fill="#C0C0C0" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-70" data-name="lemon1-14">
+<path d="M 641.15 301.84 C 641.15 295.23 645.3 289.16 652.21 284.4 L 603.39 247.64 C 579.06 260.94 563.87 279.72 563.87 300.56 C 563.87 340.8 620.45 373.42 690.33 373.53 L 690.33 329.53 C 663.14 329.43 641.15 317.08 641.15 301.84 Z" fill="#969696" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-71" data-name="lemon1-15">
+<path d="M 650.65 283.16 C 644.28 288.02 640.45 294.04 640.45 300.6 C 640.45 308.22 645.59 315.13 653.95 320.31 C 653.13 319.24 652.66 318.13 652.66 316.98 C 652.66 313.91 655.76 311.1 660.93 308.87 L 652.36 284.45 C 652.36 284.45 650.65 283.16 650.65 283.16 Z" fill="#4B4B4B" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-72" data-name="lemon1-16">
+<path d="M 690.59 271.78 C 674.17 271.78 659.63 276.33 650.44 283.33 L 652.15 284.61 L 660.71 309.04 C 667.7 306.02 678.47 304.08 690.59 304.08 C 711.66 304.08 728.74 309.93 728.74 317.15 C 728.74 318.3 728.26 319.41 727.45 320.47 C 735.8 315.3 740.95 308.39 740.95 300.77 C 740.95 284.76 718.4 271.78 690.59 271.78 Z" fill="#707070" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-73" data-name="lemon1-17">
+<path d="M 564.14 305.36 L 564.14 338 C 568.62 375.58 622.5 405.32 688.69 405.89 L 690.27 373.27 C 623.36 373.16 568.66 343.23 564.14 305.36 Z" fill="#707070" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-74" data-name="lemon1-18">
+<path d="M 690.36 373.27 C 690.25 373.27 690.14 373.27 690.03 373.27 L 688.45 405.89 C 689.09 405.89 689.72 405.91 690.36 405.91 C 757.42 405.91 812.29 375.94 816.82 338 L 816.82 305.36 C 812.29 343.29 757.42 373.27 690.36 373.27 Z" fill="#969696" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-75" data-name="Group 59">
+<g id="shape-76" data-name="lemon1-19">
+<path d="M 602.78 154.35 C 568.96 154.35 538.24 162 515.51 174.42 L 564.34 211.17 C 573.42 204.92 587.25 200.92 602.78 200.92 C 630.12 200.92 652.29 213.32 652.29 228.61 C 652.29 243.91 630.12 256.31 602.78 256.31 C 602.67 256.31 602.56 256.3 602.44 256.3 L 602.44 300.3 C 602.56 300.3 602.67 300.31 602.78 300.31 C 672.81 300.31 729.57 267.64 729.57 227.33 C 729.57 187.02 672.81 154.35 602.78 154.35 Z" fill="#DAE6FE" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-77" data-name="lemon1-20">
+<path d="M 553.39 228.53 C 553.39 221.92 557.55 215.85 564.46 211.09 L 515.63 174.33 C 491.3 187.62 476.11 206.41 476.11 227.24 C 476.11 267.49 532.7 300.11 602.57 300.22 L 602.57 256.22 C 575.38 256.12 553.39 243.77 553.39 228.53 Z" fill="#B4CCFD" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-78" data-name="lemon1-21">
+<path d="M 562.9 209.85 C 556.52 214.7 552.69 220.73 552.69 227.29 C 552.69 234.91 557.84 241.82 566.19 246.99 C 565.38 245.93 564.9 244.82 564.9 243.67 C 564.9 240.6 568.01 237.79 573.17 235.56 L 564.61 211.13 C 564.61 211.13 562.9 209.85 562.9 209.85 Z" fill="#404040" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-79" data-name="lemon1-22">
+<path d="M 602.83 198.47 C 586.41 198.47 571.87 203.02 562.68 210.01 L 564.39 211.3 L 572.95 235.72 C 579.94 232.71 590.72 230.77 602.83 230.77 C 623.9 230.77 640.99 236.62 640.99 243.84 C 640.99 244.99 640.51 246.1 639.69 247.16 C 648.05 241.99 653.19 235.08 653.19 227.46 C 653.19 211.45 630.64 198.47 602.83 198.47 Z" fill="#606060" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-80" data-name="lemon1-23">
+<path d="M 476.39 232.04 L 476.39 264.69 C 480.87 302.27 534.74 332.01 600.93 332.57 L 602.51 299.95 C 535.6 299.85 480.91 269.92 476.39 232.04 Z" fill="#8FB3FD" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+<g id="shape-81" data-name="lemon1-24">
+<path d="M 602.6 299.96 C 602.49 299.96 602.38 299.95 602.27 299.95 L 600.69 332.57 C 601.33 332.58 601.97 332.6 602.6 332.6 C 669.67 332.6 724.54 302.62 729.06 264.69 L 729.06 232.04 C 724.54 269.98 669.67 299.96 602.6 299.96 Z" fill="#B4CCFD" stroke-width="1.333" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-85" data-name="lemon1-25">
+<rect x="450.41" y="488.58" width="64.66" height="32.99" fill="none" />
+<text x="482.74" y="509.24" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="18.67" fill="#FEFEFE" font-weight="bold"><tspan fill="#FEFEFE" font-size="18.67" font-weight="bold">5%</tspan></text>
+</g>
+</g>
+<g id="shape-38" data-name="lemon2">
+<rect x="41.59" y="418.29" width="418.14" height="217.5" fill="none" stroke="#999999" stroke-dasharray="4 4" /><text x="250.66" y="527.04" text-anchor="middle" font-size="14" fill="#999999">[chart]</text>
+</g>
+<g id="shape-39" data-name="lemon3">
+<rect x="864.5" y="147.92" width="408.82" height="203.82" fill="none" stroke="#999999" stroke-dasharray="4 4" /><text x="1068.91" y="249.83" text-anchor="middle" font-size="14" fill="#999999">[chart]</text>
+</g>
+<g id="shape-40" data-name="lemon4" transform="translate(784.37 222.62) scale(1 -1) translate(-784.37 -222.62)">
+<line x1="695.69" y1="222.62" x2="873.06" y2="222.62" stroke-width="1.333" stroke="#4480FB" stroke-linejoin="miter" marker-end="url(#marrow1)" fill="none" />
+</g>
+<g id="shape-41" data-name="lemon5" transform="translate(778.65 441.77) scale(1 -1) translate(-778.65 -441.77)">
+<line x1="689.97" y1="441.77" x2="867.33" y2="441.77" stroke-width="1.333" stroke="#4480FB" stroke-linejoin="miter" marker-end="url(#marrow2)" fill="none" />
+</g>
+<g id="shape-42" data-name="lemon6" transform="translate(498.73 333.44) scale(-1 -1) translate(-498.73 -333.44)">
+<line x1="433.84" y1="333.23" x2="563.63" y2="333.66" stroke-width="1.333" stroke="#4480FB" stroke-linejoin="miter" marker-end="url(#marrow3)" fill="none" />
+</g>
+<g id="shape-43" data-name="lemon7" transform="translate(506.55 537.32) scale(-1 1) translate(-506.55 -537.32)">
+<line x1="450.41" y1="537.32" x2="562.68" y2="537.32" stroke-width="1.333" stroke="#4480FB" stroke-linejoin="miter" marker-end="url(#marrow4)" fill="none" />
+</g>
+<g id="shape-44" data-name="lemon8">
+<rect x="903.23" y="428.18" width="348.96" height="192.4" rx="12.87" ry="12.87" fill="none" stroke-width="2.667" stroke="#4480FB" stroke-dasharray="3 3" />
+</g>
+<g id="shape-45" data-name="lemon9">
+<rect x="948.7" y="450.92" width="157.17" height="32.31" fill="none" />
+<text x="958.3" y="471.59" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">{{CLOSING_MESSAGE}}</tspan></text>
+</g>
+<g id="shape-46" data-name="lemon10">
+<rect x="942.44" y="487.32" width="228.33" height="84.96" fill="none" />
+<text x="952.04" y="501.18" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="10.67" fill="#FFFFFF" letter-spacing="1.33"><tspan fill="#FFFFFF" font-size="10.67" letter-spacing="1.33">品牌简单地讲是指消费者对产品及产品系列</tspan><tspan x="952.04" dy="16" fill="#FFFFFF" font-size="10.67" letter-spacing="1.33">的认知程度。品牌是人们对一个企业及其产</tspan><tspan x="952.04" dy="16" fill="#FFFFFF" font-size="10.67" letter-spacing="1.33">品、售后服务、文化价值的一种评价和认知</tspan><tspan x="952.04" dy="16" fill="#FFFFFF" font-size="10.67" letter-spacing="1.33">，是一种信任。</tspan></text>
+</g>
+<g id="shape-47" data-name="lemon11">
+<g id="shape-48" data-name="lemon11-1">
+<ellipse cx="904.78" cy="437.6" rx="25.61" ry="25.61" fill="#4480FB" stroke-width="4" stroke="#FFFFFF" />
+</g>
+<g id="shape-49" data-name="lemon11-2">
+<path d="M 919.48 433.74 C 905.36 447.51 905.36 447.51 905.36 447.51 C 902.84 450.06 902.84 450.06 902.84 450.06 C 902.34 450.57 902.34 450.57 901.84 450.57 C 901.33 450.57 900.83 450.57 900.32 450.06 C 897.8 447.51 897.8 447.51 897.8 447.51 C 890.74 440.88 890.74 440.88 890.74 440.88 C 890.24 440.37 890.24 439.86 890.24 439.35 C 890.24 438.84 890.24 438.33 890.74 437.82 C 893.26 435.27 893.26 435.27 893.26 435.27 C 893.77 434.76 894.27 434.76 894.78 434.76 C 895.28 434.76 895.79 434.76 895.79 435.27 C 901.84 440.88 901.84 440.88 901.84 440.88 C 913.94 428.12 913.94 428.12 913.94 428.12 C 914.44 428.12 914.94 427.61 915.45 427.61 C 915.95 427.61 916.46 428.12 916.96 428.12 C 919.48 431.19 919.48 431.19 919.48 431.19 C 919.48 431.19 919.99 431.7 919.99 432.21 C 919.99 432.72 919.48 433.23 919.48 433.74 Z" fill="#FFFFFF" stroke-width="1" stroke="none" stroke-linejoin="round" />
+</g>
+</g>
+<g id="shape-50" data-name="lemon12">
+<rect x="918.41" y="452.45" width="316.28" height="74.56" fill="none" />
+<text x="928.01" y="473.12" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="18.67" fill="#202020"><tspan fill="#202020" font-size="18.67">{{DATE}}</tspan></text>
+</g>
+<g id="shape-51" data-name="lemon13">
+<rect x="62.92" y="175.52" width="350.45" height="188.91" rx="6.8" ry="6.8" fill="none" stroke-width="2.667" stroke="#4480FB" stroke-dasharray="3 3" />
+</g>
+<g id="shape-52" data-name="lemon14">
+<rect x="108.39" y="198.26" width="157.17" height="32.31" fill="none" />
+<text x="117.99" y="218.93" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">01.</tspan><tspan fill="#FFFFFF" font-size="18.67">品牌现况</tspan></text>
+</g>
+<g id="shape-53" data-name="lemon15">
+<rect x="106.24" y="234.65" width="228.33" height="84.96" fill="none" />
+<text x="115.84" y="248.52" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="10.67" fill="#FFFFFF" letter-spacing="1.33"><tspan fill="#FFFFFF" font-size="10.67" letter-spacing="1.33">品牌简单地讲是指消费者对产品及产品系列</tspan><tspan x="115.84" dy="16" fill="#FFFFFF" font-size="10.67" letter-spacing="1.33">的认知程度。品牌是人们对一个企业及其产</tspan><tspan x="115.84" dy="16" fill="#FFFFFF" font-size="10.67" letter-spacing="1.33">品、售后服务、文化价值的一种评价和认知</tspan><tspan x="115.84" dy="16" fill="#FFFFFF" font-size="10.67" letter-spacing="1.33">，是一种信任。</tspan></text>
+</g>
+<g id="shape-54" data-name="lemon16">
+<g id="shape-55" data-name="lemon16-1">
+<ellipse cx="64.46" cy="184.94" rx="25.61" ry="25.61" fill="#4480FB" stroke-width="4" stroke="#FFFFFF" />
+</g>
+<g id="shape-56" data-name="lemon16-2">
+<path d="M 79.17 181.07 C 65.05 194.84 65.05 194.84 65.05 194.84 C 62.53 197.4 62.53 197.4 62.53 197.4 C 62.03 197.91 62.03 197.91 61.52 197.91 C 61.02 197.91 60.52 197.91 60.01 197.4 C 57.49 194.84 57.49 194.84 57.49 194.84 C 50.43 188.21 50.43 188.21 50.43 188.21 C 49.93 187.7 49.93 187.19 49.93 186.68 C 49.93 186.17 49.93 185.66 50.43 185.15 C 52.95 182.6 52.95 182.6 52.95 182.6 C 53.46 182.09 53.96 182.09 54.47 182.09 C 54.97 182.09 55.47 182.09 55.47 182.6 C 61.52 188.21 61.52 188.21 61.52 188.21 C 73.62 175.46 73.62 175.46 73.62 175.46 C 74.13 175.46 74.63 174.95 75.14 174.95 C 75.64 174.95 76.15 175.46 76.65 175.46 C 79.17 178.52 79.17 178.52 79.17 178.52 C 79.17 178.52 79.67 179.03 79.67 179.54 C 79.67 180.05 79.17 180.56 79.17 181.07 Z" fill="#FFFFFF" stroke-width="1" stroke="none" stroke-linejoin="round" />
+</g>
+</g>
+<g id="shape-57" data-name="lemon17">
+<rect x="82.22" y="199.79" width="316.28" height="74.56" fill="none" />
+<text x="91.82" y="220.45" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="18.67" fill="#202020"><tspan fill="#202020" font-size="18.67">{{DATE}}</tspan></text>
+</g>
+<g id="shape-60" data-name="lemon18">
+<rect x="88.94" y="302.55" width="133.03" height="35.3" rx="2.91" ry="2.91" fill="none" stroke-width="2" stroke="#4480FB" marker-start="url(#marrow5)" />
+</g>
+<g id="shape-82" data-name="lemon19">
+<rect x="99.89" y="297.5" width="138.51" height="40.36" fill="none" />
+<text x="109.49" y="318.16" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="18.67" fill="#4480FB"><tspan fill="#4480FB" font-size="18.67">销量目标</tspan><tspan fill="#4480FB" font-size="18.67">01</tspan></text>
+</g>
+<g id="shape-84" data-name="lemon20">
+<rect x="254.3" y="302.82" width="133.03" height="35.3" rx="2.91" ry="2.91" fill="none" stroke-width="2" stroke="#4480FB" marker-start="url(#marrow6)" />
+</g>
+<g id="shape-86" data-name="lemon21">
+<rect x="265.26" y="297.77" width="138.51" height="40.36" fill="none" />
+<text x="274.86" y="318.43" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="18.67" fill="#4480FB"><tspan fill="#4480FB" font-size="18.67">销量目标</tspan><tspan fill="#4480FB" font-size="18.67">02</tspan></text>
+</g>
+<g id="shape-87" data-name="lemon22">
+<rect x="933.24" y="555.15" width="133.03" height="35.3" rx="2.91" ry="2.91" fill="none" stroke-width="2" stroke="#4480FB" marker-start="url(#marrow7)" />
+</g>
+<g id="shape-88" data-name="lemon23">
+<rect x="944.2" y="550.1" width="138.51" height="40.36" fill="none" />
+<text x="953.8" y="570.76" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="18.67" fill="#4480FB"><tspan fill="#4480FB" font-size="18.67">销量目标</tspan><tspan fill="#4480FB" font-size="18.67">01</tspan></text>
+</g>
+<g id="shape-89" data-name="lemon24">
+<rect x="1098.61" y="555.42" width="133.03" height="35.3" rx="2.91" ry="2.91" fill="none" stroke-width="2" stroke="#4480FB" marker-start="url(#marrow8)" />
+</g>
+<g id="shape-90" data-name="lemon25">
+<rect x="1109.56" y="550.37" width="138.51" height="40.36" fill="none" />
+<text x="1119.16" y="571.03" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="18.67" fill="#4480FB"><tspan fill="#4480FB" font-size="18.67">销量目标</tspan><tspan fill="#4480FB" font-size="18.67">02</tspan></text>
+</g>
+<g id="shape-10" data-name="矩形: 圆角 7" transform="translate(645.89 75.56) scale(1 -1) translate(-645.89 -75.56)">
+<rect x="48.06" y="73.16" width="1195.66" height="4.8" rx="0.8" ry="0.8" fill="#00329D" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-11" data-name="Venn diagram">
+<rect x="45.98" y="21.48" width="698.35" height="44.16" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="48.64" y="51.35" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="32" fill="#00329D" font-weight="bold"><tspan fill="#00329D" font-size="32">{{THANK_YOU}}</tspan></text>
+</g></svg>

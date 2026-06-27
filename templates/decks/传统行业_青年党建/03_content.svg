@@ -1,0 +1,44 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#FFE3C1"/><stop offset="1" stop-color="#FFE3C1" stop-opacity="0"/></linearGradient><linearGradient id="ggrad2" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#FFE3C1"/><stop offset="1" stop-color="#FFE3C1" stop-opacity="0"/></linearGradient><linearGradient id="ggrad3" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#FFE3C1"/><stop offset="1" stop-color="#FFE3C1" stop-opacity="0"/></linearGradient></defs><image href="assets/image1.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none"/>
+<g id="shape-3" data-name="文本框 2">
+<rect x="423.03" y="36.69" width="433.94" height="61.39" fill="none"/>
+<text x="640" y="77.76" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, &quot;汉仪全唐诗简&quot;, sans-serif" font-size="42.67" fill="#FFE3C1" font-weight="bold"><tspan fill="#FFE3C1" font-size="42.67" font-weight="bold">{{PAGE_TITLE}}</tspan></text>
+</g>
+<g id="shape-20" data-name="组合 19">
+<g id="shape-10" data-name="文本框 9">
+<rect x="65.78" y="192.67" width="273.22" height="48.47" fill="none"/>
+<text x="75.38" y="224.67" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, &quot;汉仪全唐诗简&quot;, sans-serif" font-size="32" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="32">{{SECTION_TITLE}}</tspan></text>
+</g>
+<g id="shape-14" data-name="组合 13">
+<g id="shape-11" data-name="椭圆 10">
+<ellipse cx="99.75" cy="179.59" rx="13.08" ry="13.08" fill="url(#ggrad1)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-12" data-name="椭圆 11">
+<ellipse cx="132.83" cy="179.59" rx="13.08" ry="13.08" fill="url(#ggrad2)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-13" data-name="椭圆 12">
+<ellipse cx="165.91" cy="179.59" rx="13.08" ry="13.08" fill="url(#ggrad3)" stroke="none" stroke-width="1"/>
+</g>
+</g>
+<g id="shape-19" data-name="图片 18">
+<image href="assets/image3.png" x="54.99" y="218.83" width="1170.02" height="423.72" preserveAspectRatio="none"/>
+</g>
+</g>
+<g id="shape-21" data-name="Picture 2">
+<svg x="892.98" y="257.7" width="306.03" height="345.97" viewBox="0.43839 0.02549 0.56161 0.97451" preserveAspectRatio="none"><image href="assets/image4.jpeg" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="shape-22" data-name="文本框 21">
+<rect x="145.91" y="313.41" width="732.44" height="111.48" fill="none"/>
+<text x="155.51" y="334.08" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪全唐诗简&quot;, sans-serif" font-size="18.67" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="18.67">{{CONTENT_1}}</tspan></text>
+</g>
+<g id="shape-23" data-name="文本框 22">
+<rect x="145.91" y="458.07" width="732.44" height="111.48" fill="none"/>
+<text x="155.51" y="478.74" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪全唐诗简&quot;, sans-serif" font-size="18.67" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="18.67">{{CONTENT_2}}</tspan></text>
+</g>
+<g id="shape-24" data-name="文本框 23">
+<rect x="72.6" y="331.99" width="94.31" height="74.32" fill="none"/>
+<text x="119.75" y="382.12" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, &quot;汉仪全唐诗简&quot;, sans-serif" font-size="53.33" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="53.33">01</tspan></text>
+</g>
+<g id="shape-25" data-name="文本框 24">
+<rect x="72.6" y="476.65" width="94.31" height="74.32" fill="none"/>
+<text x="119.75" y="526.78" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, &quot;汉仪全唐诗简&quot;, sans-serif" font-size="53.33" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="53.33">02</tspan></text>
+</g></svg>

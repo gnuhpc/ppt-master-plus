@@ -1,0 +1,112 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="15.33" flood-color="#00319B" flood-opacity="0.15" /></filter><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="15.33" flood-color="#00319B" flood-opacity="0.15" /></filter><filter id="fx3" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="15.33" flood-color="#00319B" flood-opacity="0.15" /></filter><filter id="fx4" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="15.33" flood-color="#00319B" flood-opacity="0.15" /></filter><filter id="fx5" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="15.33" flood-color="#00319B" flood-opacity="0.15" /></filter><linearGradient id="ggrad1" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#00319B" stop-opacity="0.15" /><stop offset="0.99" stop-color="#00329D" stop-opacity="0" /></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-2" data-name="熊大的PPT宝库1">
+<rect x="36.62" y="22.78" width="277.89" height="61.39" fill="none" />
+<text x="46.22" y="63.85" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="42.67" fill="#00329D"><tspan fill="#00329D" font-size="42.67">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-4" data-name="熊大的PPT宝库3">
+<rect x="45.67" y="90.57" width="1190.55" height="4.91" fill="#00329D" stroke-width="0.667" stroke="#F2F2F2" />
+</g>
+<g id="shape-5" data-name="熊大的PPT宝库4">
+<g id="shape-12" data-name="熊大的PPT宝库4-1">
+<rect x="521.74" y="265.72" width="343.85" height="189.13" rx="15.54" ry="15.54" fill="#FFFFFF" stroke="none" stroke-width="1" filter="url(#fx1)" />
+</g>
+<g id="shape-13" data-name="熊大的PPT宝库4-2">
+<rect x="521.74" y="473.72" width="343.85" height="189.13" rx="15.54" ry="15.54" fill="#FFFFFF" stroke="none" stroke-width="1" filter="url(#fx2)" />
+</g>
+<g id="shape-14" data-name="熊大的PPT宝库4-3">
+<rect x="888.45" y="265.72" width="343.85" height="189.13" rx="15.54" ry="15.54" fill="#FFFFFF" stroke="none" stroke-width="1" filter="url(#fx3)" />
+</g>
+<g id="shape-15" data-name="熊大的PPT宝库4-4">
+<rect x="888.45" y="474.48" width="343.85" height="189.13" rx="15.54" ry="15.54" fill="#FFFFFF" stroke="none" stroke-width="1" filter="url(#fx4)" />
+</g>
+<g id="shape-21" data-name="熊大的PPT宝库4-5">
+<rect x="534.65" y="272.33" width="318.03" height="150.5" fill="none" stroke="#999999" stroke-dasharray="4 4" /><text x="693.66" y="347.58" text-anchor="middle" font-size="14" fill="#999999"><tspan fill="#999999" font-size="14">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-29" data-name="熊大的PPT宝库4-6">
+<rect x="647.53" y="422.53" width="85.76" height="29.08" fill="none" />
+<text x="690.41" y="440.93" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="16" fill="#00329D"><tspan fill="#00329D" font-size="16">渠道</tspan><tspan fill="#00329D" font-size="16">A</tspan></text>
+</g>
+<g id="shape-30" data-name="熊大的PPT宝库4-7">
+<rect x="901.36" y="272.33" width="318.03" height="150.5" fill="none" stroke="#999999" stroke-dasharray="4 4" /><text x="1060.38" y="347.58" text-anchor="middle" font-size="14" fill="#999999"><tspan fill="#999999" font-size="14">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-31" data-name="熊大的PPT宝库4-8">
+<rect x="1017.5" y="422.53" width="85.76" height="29.08" fill="none" />
+<text x="1060.38" y="440.93" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="16" fill="#00329D"><tspan fill="#00329D" font-size="16">渠道</tspan><tspan fill="#00329D" font-size="16">B</tspan></text>
+</g>
+<g id="shape-33" data-name="熊大的PPT宝库4-9">
+<rect x="534.65" y="482.73" width="318.03" height="150.5" fill="none" stroke="#999999" stroke-dasharray="4 4" /><text x="693.66" y="557.98" text-anchor="middle" font-size="14" fill="#999999"><tspan fill="#999999" font-size="14">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-34" data-name="熊大的PPT宝库4-10">
+<rect x="647.53" y="632.93" width="85.76" height="29.08" fill="none" />
+<text x="690.41" y="651.33" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="16" fill="#00329D"><tspan fill="#00329D" font-size="16">渠道</tspan><tspan fill="#00329D" font-size="16">C</tspan></text>
+</g>
+<g id="shape-35" data-name="熊大的PPT宝库4-11">
+<rect x="901.36" y="482.73" width="318.03" height="150.5" fill="none" stroke="#999999" stroke-dasharray="4 4" /><text x="1060.38" y="557.98" text-anchor="middle" font-size="14" fill="#999999"><tspan fill="#999999" font-size="14">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-55" data-name="熊大的PPT宝库4-12">
+<rect x="1017.5" y="632.93" width="85.76" height="29.08" fill="none" />
+<text x="1060.38" y="651.33" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="16" fill="#00329D"><tspan fill="#00329D" font-size="16">渠道</tspan><tspan fill="#00329D" font-size="16">D</tspan></text>
+</g>
+</g>
+<g id="shape-62" data-name="熊大的PPT宝库5">
+<rect x="46.5" y="266.91" width="451.47" height="395.1" rx="14.06" ry="14.06" fill="#FFFFFF" stroke="none" stroke-width="1" filter="url(#fx5)" />
+</g>
+<g id="shape-76" data-name="熊大的PPT宝库6">
+<rect x="365.74" y="303.6" width="109.36" height="22.62" fill="none" />
+<text x="475.1" y="321.73" text-anchor="end" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="21.33" fill="#00329D"><tspan fill="#00329D" font-size="21.33">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-85" data-name="熊大的PPT宝库7">
+<rect x="70.27" y="305.32" width="147.26" height="22.62" fill="none" />
+<text x="70.27" y="323.45" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="21.33" fill="#00329D"><tspan fill="#00329D" font-size="21.33">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-89" data-name="熊大的PPT宝库8">
+<ellipse cx="275.02" cy="514.87" rx="191.15" ry="73.85" fill="url(#ggrad1)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-90" data-name="熊大的PPT宝库9">
+<rect x="96.9" y="392.52" width="338.67" height="207.11" fill="none" stroke="#999999" stroke-dasharray="4 4" /><text x="266.23" y="496.08" text-anchor="middle" font-size="14" fill="#999999"><tspan fill="#999999" font-size="14">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-105" data-name="熊大的PPT宝库10">
+<path d="M 332.29 103.73 L 47.7 103.73 L 47.7 246.72 L 332.29 246.72 L 332.29 103.73 Z" fill="#00329D" />
+</g>
+<g id="shape-110" data-name="熊大的PPT宝库11">
+<path d="M 631.62 103.73 L 347.02 103.73 L 347.02 246.72 L 631.62 246.72 L 631.62 103.73 Z" fill="#00329D" />
+</g>
+<g id="shape-117" data-name="熊大的PPT宝库12">
+<path d="M 930.94 103.73 L 646.35 103.73 L 646.35 246.72 L 930.94 246.72 L 930.94 103.73 Z" fill="#00329D" />
+</g>
+<g id="shape-118" data-name="熊大的PPT宝库13">
+<path d="M 1233.61 103.73 L 949.02 103.73 L 949.02 245.4 L 1233.61 245.4 L 1233.61 103.73 Z" fill="#729FFF" />
+</g>
+<g id="shape-119" data-name="熊大的PPT宝库14">
+<rect x="71.93" y="188.81" width="146.59" height="41.32" fill="none" />
+<text x="81.53" y="214.69" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="24.8" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24.8">渠道</tspan><tspan fill="#FFFFFF" font-size="24.8">A</tspan></text>
+</g>
+<g id="shape-121" data-name="熊大的PPT宝库15">
+<rect x="71.93" y="114.32" width="140.22" height="74.32" fill="none" />
+<text x="81.53" y="164.45" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="53.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="53.33">{{TITLE}}</tspan></text>
+</g>
+<g id="shape-122" data-name="熊大的PPT宝库16">
+<rect x="370.37" y="188.81" width="146.59" height="41.32" fill="none" />
+<text x="379.97" y="214.69" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="24.8" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24.8">渠道</tspan><tspan fill="#FFFFFF" font-size="24.8">B</tspan></text>
+</g>
+<g id="shape-124" data-name="熊大的PPT宝库17">
+<rect x="370.37" y="114.32" width="140.9" height="74.32" fill="none" />
+<text x="379.97" y="164.45" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="53.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="53.33">{{SUBTITLE}}</tspan></text>
+</g>
+<g id="shape-125" data-name="熊大的PPT宝库18">
+<rect x="669.59" y="188.81" width="146.59" height="41.32" fill="none" />
+<text x="679.19" y="214.69" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="24.8" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24.8">渠道</tspan><tspan fill="#FFFFFF" font-size="24.8">C</tspan></text>
+</g>
+<g id="shape-127" data-name="熊大的PPT宝库19">
+<rect x="669.59" y="114.32" width="171.19" height="74.32" fill="none" />
+<text x="679.19" y="164.45" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="53.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="53.33">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-128" data-name="熊大的PPT宝库20">
+<rect x="972.16" y="188.81" width="146.59" height="41.32" fill="none" />
+<text x="981.76" y="214.69" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="24.8" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24.8">渠道</tspan><tspan fill="#FFFFFF" font-size="24.8">D</tspan></text>
+</g>
+<g id="shape-130" data-name="熊大的PPT宝库21">
+<rect x="972.16" y="114.32" width="173.21" height="74.32" fill="none" />
+<text x="981.76" y="164.45" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="53.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="53.33">{{TAGLINE}}</tspan></text>
+</g></svg>

@@ -1,0 +1,281 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="0" stdDeviation="3.33" flood-color="#D02300" flood-opacity="0.2" /></filter><linearGradient id="ggrad1" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#FFC000" stop-opacity="0" /><stop offset="1" stop-color="#FFC000" /></linearGradient><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="6.67" stdDeviation="10" flood-color="#D02300" flood-opacity="0.13" /></filter><linearGradient id="ggrad2" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#D02300" /><stop offset="0.86" stop-color="#9C1A00" /></linearGradient><filter id="fx3" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="6.6" dy="6.6" stdDeviation="16.67" flood-color="#D02300" flood-opacity="0.4" /></filter><filter id="fx4" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="6.67" stdDeviation="10" flood-color="#D02300" flood-opacity="0.13" /></filter><linearGradient id="ggrad3" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#D02300" /><stop offset="0.86" stop-color="#9C1A00" /></linearGradient><filter id="fx5" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="6.6" dy="6.6" stdDeviation="16.67" flood-color="#D02300" flood-opacity="0.4" /></filter><filter id="fx6" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="6.67" stdDeviation="10" flood-color="#D02300" flood-opacity="0.13" /></filter><filter id="fx7" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="6.67" stdDeviation="10" flood-color="#D02300" flood-opacity="0.13" /></filter><filter id="fx8" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="13.33" stdDeviation="20" flood-color="#D02300" flood-opacity="0.2" /></filter><linearGradient id="ggrad4" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#D02300" /><stop offset="1" stop-color="#9C1A00" /></linearGradient><linearGradient id="ggrad5" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#D02300" /><stop offset="1" stop-color="#9C1A00" /></linearGradient><linearGradient id="ggrad6" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#D02300" /><stop offset="1" stop-color="#9C1A00" /></linearGradient><marker id="marrow1" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D02300" /></marker><marker id="marrow2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D02300" /></marker><filter id="fx9" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="13.33" stdDeviation="20" flood-color="#D02300" flood-opacity="0.2" /></filter><linearGradient id="ggrad7" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0.07" stop-color="#000000" stop-opacity="0.4" /><stop offset="0.5" stop-color="#000000" stop-opacity="0.1" /><stop offset="1" stop-color="#FFFFFF" stop-opacity="0" /></linearGradient><linearGradient id="ggrad8" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0.07" stop-color="#000000" stop-opacity="0.4" /><stop offset="0.5" stop-color="#000000" stop-opacity="0.1" /><stop offset="1" stop-color="#FFFFFF" stop-opacity="0" /></linearGradient><linearGradient id="ggrad9" x1="0" y1="0" x2="1" y2="1"><stop offset="0.51" stop-color="#E17467" /><stop offset="0" stop-color="#E17467" /><stop offset="1" stop-color="#CD3A29" /></linearGradient><filter id="fx10" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="4" dy="0" stdDeviation="2.67" flood-color="#B0A17E" flood-opacity="0.51" /></filter><filter id="fx11" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="1.95" dy="1.95" stdDeviation="1.84" flood-color="#000000" flood-opacity="0.2" /></filter><linearGradient id="ggrad10" x1="0" y1="0" x2="1" y2="1"><stop offset="0.51" stop-color="#D02300" /><stop offset="0" stop-color="#D02300" /><stop offset="1" stop-color="#9C1A00" /></linearGradient><filter id="fx12" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="4" dy="0" stdDeviation="2.67" flood-color="#D02300" flood-opacity="0.51" /></filter><filter id="fx13" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="1.95" dy="1.95" stdDeviation="1.84" flood-color="#000000" flood-opacity="0.2" /></filter><linearGradient id="ggrad11" x1="0" y1="0" x2="1" y2="1"><stop offset="0.51" stop-color="#FFC000" /><stop offset="0" stop-color="#FFC000" /><stop offset="1" stop-color="#D9A300" /></linearGradient><filter id="fx14" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="4" dy="0" stdDeviation="2.67" flood-color="#FFC000" flood-opacity="0.51" /></filter><filter id="fx15" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="1.95" dy="1.95" stdDeviation="1.84" flood-color="#000000" flood-opacity="0.2" /></filter><filter id="fx16" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="4" dy="0" stdDeviation="2.67" flood-color="#D02300" flood-opacity="0.3" /></filter><filter id="fx17" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="4" dy="0" stdDeviation="2.67" flood-color="#D02300" flood-opacity="0.3" /></filter><linearGradient id="ggrad12" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="1" stop-color="#FFC000" stop-opacity="0" /><stop offset="0.1" stop-color="#FFC000" /></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-47" data-name="六边形 46">
+<polygon points="1243.7,101.44 941.85,126.94 338.15,126.94 36.3,101.44 338.15,75.94 941.85,75.94" fill="#D02300" stroke="#FFFFFF" stroke-width="1" filter="url(#fx1)" />
+<text x="640" y="109.44" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">{{SUBTITLE}}</tspan></text>
+</g>
+<g id="shape-30" data-name="组合 29">
+<g id="shape-18" data-name="任意多边形: 形状 17" transform="rotate(180 162.04 383.75)">
+<path d="M 161.44 362.59 C 165.33 367.78 168.7 371.74 180.1 376.31 L 171.42 376.31 L 172.69 381.97 C 174.94 389.85 178.72 397.85 184.68 404.91 L 139.39 404.91 C 145.35 397.54 149.42 389.46 151.6 381.74 L 152.7 376.31 L 142.78 376.31 C 153.67 371.94 159.11 366.54 161.44 362.59 Z" fill="url(#ggrad1)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-3" data-name="组合 2">
+<g id="shape-2" data-name="矩形: 圆角 1">
+<rect x="32" y="141.53" width="260.07" height="218.11" rx="4.36" ry="4.36" fill="#FFFFFF" stroke-width="1" stroke="#D02300" stroke-linejoin="miter" filter="url(#fx2)" />
+</g>
+<g id="shape-4" data-name="矩形: 圆角 3">
+<rect x="52.72" y="200.32" width="218.64" height="45.23" rx="0.9" ry="0.9" fill="#F8F4FA" stroke="none" stroke-width="1" />
+<text x="162.04" y="230.4" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#D02300"><tspan fill="#D02300" font-size="21.33">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-5" data-name="矩形: 圆角 4">
+<rect x="52.72" y="252.51" width="218.64" height="45.23" rx="0.9" ry="0.9" fill="#F8F4FA" stroke="none" stroke-width="1" />
+<text x="162.04" y="282.59" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#D02300"><tspan fill="#D02300" font-size="21.33">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-6" data-name="矩形: 圆角 5">
+<rect x="52.72" y="304.7" width="218.64" height="45.23" rx="0.9" ry="0.9" fill="#F8F4FA" stroke="none" stroke-width="1" />
+<text x="162.04" y="334.78" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#D02300"><tspan fill="#D02300" font-size="21.33">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-22" data-name="任意多边形: 形状 21">
+<path d="M 54.67 141.53 L 269.4 141.53 C 255.84 141.53 244.85 152.52 244.85 166.08 L 244.85 170.23 L 244.78 170.23 L 244.78 178.88 C 244.78 184.74 240.04 189.49 234.18 189.49 L 89.9 189.49 C 84.04 189.49 79.3 184.74 79.3 178.88 L 79.3 170.23 L 79.22 170.23 L 79.22 166.08 C 79.22 152.52 68.23 141.53 54.67 141.53 Z" fill="url(#ggrad2)" stroke="none" stroke-width="1" filter="url(#fx3)" />
+</g>
+<g id="shape-23" data-name="文本框 22">
+<rect x="99.5" y="146.33" width="125.08" height="42.01" fill="none" />
+<text x="162.04" y="173.79" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">基础模块</tspan></text>
+</g>
+</g>
+<g id="shape-58" data-name="组合 57">
+<g id="shape-10" data-name="矩形: 圆角 9">
+<rect x="32" y="405.59" width="260.07" height="270.41" rx="5.2" ry="5.2" fill="#FFFFFF" stroke-width="1" stroke="#D02300" stroke-linejoin="miter" filter="url(#fx4)" />
+</g>
+<g id="shape-12" data-name="矩形: 圆角 11">
+<rect x="52.72" y="464.38" width="218.64" height="45.23" rx="0.9" ry="0.9" fill="#F8F4FA" stroke="none" stroke-width="1" />
+<text x="162.04" y="492.33" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#D02300"><tspan fill="#D02300" font-size="21.33">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-13" data-name="矩形: 圆角 12">
+<rect x="52.72" y="516.57" width="218.64" height="45.23" rx="0.9" ry="0.9" fill="#F8F4FA" stroke="none" stroke-width="1" />
+<text x="162.04" y="544.52" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#D02300"><tspan fill="#D02300" font-size="21.33">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-14" data-name="矩形: 圆角 13">
+<rect x="52.72" y="568.76" width="218.64" height="45.23" rx="0.9" ry="0.9" fill="#F8F4FA" stroke="none" stroke-width="1" />
+<text x="162.04" y="596.71" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#D02300"><tspan fill="#D02300" font-size="21.33">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-15" data-name="矩形: 圆角 14">
+<rect x="52.72" y="620.95" width="218.64" height="45.23" rx="0.9" ry="0.9" fill="#F8F4FA" stroke="none" stroke-width="1" />
+<text x="162.04" y="648.9" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#D02300"><tspan fill="#D02300" font-size="21.33">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-25" data-name="任意多边形: 形状 24">
+<path d="M 54.67 405.59 L 269.4 405.59 C 255.84 405.59 244.85 416.58 244.85 430.14 L 244.85 434.29 L 244.78 434.29 L 244.78 442.94 C 244.78 448.8 240.04 453.55 234.18 453.55 L 89.9 453.55 C 84.04 453.55 79.3 448.8 79.3 442.94 L 79.3 434.29 L 79.22 434.29 L 79.22 430.14 C 79.22 416.58 68.23 405.59 54.67 405.59 Z" fill="url(#ggrad3)" stroke="none" stroke-width="1" filter="url(#fx5)" />
+</g>
+<g id="shape-26" data-name="文本框 25">
+<rect x="99.5" y="410.39" width="125.08" height="42.01" fill="none" />
+<text x="162.04" y="437.85" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">课程模块</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-34" data-name="组合 33">
+<g id="shape-60" data-name="组合 59">
+<g id="shape-191" data-name="小李PPT16">
+<rect x="965.74" y="141.53" width="282.26" height="257.71" rx="4.18" ry="4.18" fill="#FFFFFF" stroke-width="1" stroke="#D02300" stroke-linejoin="miter" filter="url(#fx6)" />
+</g>
+<g id="shape-192" data-name="小李PPT23">
+<rect x="958.8" y="186.31" width="285.48" height="207.67" fill="none" stroke="#999999" stroke-dasharray="4 4" /><text x="1101.54" y="290.15" text-anchor="middle" font-size="14" fill="#999999"><tspan fill="#999999" font-size="14">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-193" data-name="小李PPT24">
+<rect x="1020.77" y="154.48" width="172.2" height="39.15" fill="none" />
+<text x="1106.87" y="180.54" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#D02300"><tspan fill="#D02300" font-size="26.67">{{TAGLINE}}</tspan></text>
+</g>
+</g>
+<g id="shape-59" data-name="组合 58">
+<g id="shape-202" data-name="矩形: 圆角 201">
+<rect x="965.74" y="418.29" width="282.26" height="257.71" rx="7.23" ry="7.23" fill="#FFFFFF" stroke-width="1" stroke="#D02300" stroke-linejoin="miter" filter="url(#fx7)" />
+</g>
+<g id="shape-204" data-name="TextBox 59">
+<rect x="998.14" y="431.25" width="217.47" height="42.01" fill="none" />
+<text x="1106.87" y="458.71" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#D02300"><tspan fill="#D02300" font-size="26.67">{{DATE}}</tspan></text>
+</g>
+<g id="shape-205" data-name="小李PPT45">
+<rect x="971.28" y="471.2" width="271.17" height="199.54" fill="none" stroke="#999999" stroke-dasharray="4 4" /><text x="1106.87" y="570.97" text-anchor="middle" font-size="14" fill="#999999"><tspan fill="#999999" font-size="14">{{TAGLINE}}</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-28" data-name="组合 27">
+<g id="shape-119" data-name="矩形: 圆角 118">
+<rect x="307.11" y="141.53" width="646.83" height="100.52" rx="0.75" ry="0.75" fill="#FFFFFF" stroke-width="2" stroke="#FF684A" stroke-dasharray="4 4" filter="url(#fx8)" />
+</g>
+<g id="shape-135" data-name="组合 134">
+<g id="shape-121" data-name="矩形: 圆角 120">
+<rect x="315.77" y="156.92" width="123.22" height="67.06" rx="6.71" ry="6.71" fill="url(#ggrad4)" stroke-width="1" stroke="none" />
+<text x="377.38" y="182.12" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#FFDC6D" font-weight="bold"><tspan fill="#FFDC6D" font-size="24" font-weight="bold">课前</tspan></text>
+<text x="377.38" y="210.92" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="24" font-weight="bold">任务尝试</tspan></text>
+</g>
+<g id="shape-122" data-name="矩形: 圆角 121">
+<rect x="568.92" y="156.92" width="123.22" height="67.06" rx="6.71" ry="6.71" fill="url(#ggrad5)" stroke-width="1" stroke="none" />
+<text x="630.53" y="182.12" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#FFDC6D" font-weight="bold"><tspan fill="#FFDC6D" font-size="24" font-weight="bold">课中</tspan></text>
+<text x="630.53" y="210.92" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="24" font-weight="bold">任务完成</tspan></text>
+</g>
+<g id="shape-123" data-name="矩形: 圆角 122">
+<rect x="822.07" y="156.92" width="123.22" height="67.06" rx="6.71" ry="6.71" fill="url(#ggrad6)" stroke-width="1" stroke="none" />
+<text x="883.68" y="182.12" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#FFDC6D" font-weight="bold"><tspan fill="#FFDC6D" font-size="24" font-weight="bold">课后</tspan></text>
+<text x="883.68" y="210.92" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="24" font-weight="bold">任务拓展</tspan></text>
+</g>
+<g id="shape-133" data-name="组合 132">
+<g id="shape-125" data-name="直接箭头连接符 124">
+<line x1="442.38" y1="190.45" x2="565.52" y2="190.45" stroke-width="5" stroke="#D02300" stroke-opacity="0.61" stroke-dasharray="8 4" marker-end="url(#marrow1)" fill="#D02300" />
+</g>
+<g id="shape-126" data-name="矩形: 圆角 125">
+<rect x="458.62" y="154.48" width="90.66" height="25.31" rx="12.65" ry="12.65" fill="#FFFFFF" stroke-width="0.667" stroke="#D02300" />
+<text x="503.95" y="170.62" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="13.33" fill="#595959" font-weight="bold"><tspan fill="#595959" font-size="13.33" font-weight="bold">发现问题</tspan></text>
+</g>
+<g id="shape-127" data-name="矩形: 圆角 126">
+<rect x="458.62" y="201.1" width="90.66" height="25.31" rx="12.65" ry="12.65" fill="#FFFFFF" stroke-width="0.667" stroke="#D02300" />
+<text x="503.95" y="217.24" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="13.33" fill="#595959" font-weight="bold"><tspan fill="#595959" font-size="13.33" font-weight="bold">调整策略</tspan></text>
+</g>
+</g>
+<g id="shape-134" data-name="组合 133">
+<g id="shape-129" data-name="直接箭头连接符 128">
+<line x1="695.53" y1="190.45" x2="818.67" y2="190.45" stroke-width="5" stroke="#D02300" stroke-opacity="0.61" stroke-dasharray="8 4" marker-end="url(#marrow2)" fill="#D02300" />
+</g>
+<g id="shape-130" data-name="矩形: 圆角 129">
+<rect x="711.77" y="154.48" width="90.66" height="25.31" rx="12.65" ry="12.65" fill="#F4D6D3" fill-opacity="0" stroke-width="0.667" stroke="#D02300" />
+<text x="757.1" y="170.62" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="13.33" fill="#595959" font-weight="bold"><tspan fill="#595959" font-size="13.33" font-weight="bold">反馈评价</tspan></text>
+</g>
+<g id="shape-131" data-name="矩形: 圆角 130">
+<rect x="711.77" y="201.1" width="90.66" height="25.31" rx="12.65" ry="12.65" fill="#F4D6D3" fill-opacity="0" stroke-width="0.667" stroke="#D02300" />
+<text x="757.1" y="217.24" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="13.33" fill="#595959" font-weight="bold"><tspan fill="#595959" font-size="13.33" font-weight="bold">拓展提升</tspan></text>
+</g>
+</g>
+</g>
+</g>
+<g id="shape-141" data-name="组合 140">
+<g id="shape-138" data-name="箭头: V 形 137" transform="rotate(90 368.58 263.38)">
+<polygon points="356.02,248.8 368.58,248.8 381.14,263.38 368.58,277.96 356.02,277.96 368.58,263.38" fill="#FFC000" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-139" data-name="箭头: V 形 138" transform="rotate(90 630.53 263.38)">
+<polygon points="617.97,248.8 630.53,248.8 643.08,263.38 630.53,277.96 617.97,277.96 630.53,263.38" fill="#FFC000" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-140" data-name="箭头: V 形 139" transform="rotate(90 892.47 263.38)">
+<polygon points="879.91,248.8 892.47,248.8 905.03,263.38 892.47,277.96 879.91,277.96 892.47,263.38" fill="#FFC000" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-33" data-name="组合 32">
+<g id="shape-137" data-name="矩形: 圆角 136">
+<rect x="307.11" y="282.51" width="646.83" height="393.49" rx="2.96" ry="2.96" fill="#FFFFFF" stroke-width="2" stroke="#FF684A" stroke-dasharray="4 4" filter="url(#fx9)" />
+</g>
+<g id="shape-31" data-name="组合 30">
+<g id="shape-110" data-name="组合 109">
+<g id="shape-103" data-name="箭头: V 形 102">
+<polygon points="314.97,294.73 405.29,294.73 426.3,315.74 405.29,336.74 314.97,336.74 335.97,315.74" stroke="none" fill="#D02300" stroke-width="1" />
+<text x="370.63" y="322.2" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">导</tspan></text>
+</g>
+<g id="shape-104" data-name="箭头: V 形 103">
+<polygon points="833.15,294.73 923.48,294.73 944.49,315.74 923.48,336.74 833.15,336.74 854.16,315.74" stroke="none" fill="#D02300" stroke-width="1" />
+<text x="888.82" y="322.2" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">拓</tspan></text>
+</g>
+<g id="shape-106" data-name="箭头: V 形 105">
+<polygon points="729.52,294.73 819.84,294.73 840.85,315.74 819.84,336.74 729.52,336.74 750.52,315.74" stroke="none" fill="#D02300" stroke-width="1" />
+<text x="785.18" y="322.2" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">测</tspan></text>
+</g>
+<g id="shape-107" data-name="箭头: V 形 106">
+<polygon points="625.88,294.73 716.21,294.73 737.21,315.74 716.21,336.74 625.88,336.74 646.88,315.74" stroke="none" fill="#D02300" stroke-width="1" />
+<text x="681.54" y="322.2" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">辨</tspan></text>
+</g>
+<g id="shape-108" data-name="箭头: V 形 107">
+<polygon points="522.24,294.73 612.57,294.73 633.57,315.74 612.57,336.74 522.24,336.74 543.24,315.74" stroke="none" fill="#D02300" stroke-width="1" />
+<text x="577.91" y="322.2" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">析</tspan></text>
+</g>
+<g id="shape-109" data-name="箭头: V 形 108">
+<polygon points="418.6,294.73 508.93,294.73 529.94,315.74 508.93,336.74 418.6,336.74 439.61,315.74" stroke="none" fill="#D02300" stroke-width="1" />
+<text x="474.27" y="322.2" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">探</tspan></text>
+</g>
+</g>
+<g id="shape-136" data-name="组合 135">
+<g id="shape-113" data-name="文本框 112">
+<rect x="314.97" y="348.46" width="97.88" height="84.9" rx="5.09" ry="5.09" fill="#FFCDC3" stroke-width="1" stroke="none" />
+<text x="363.9" y="385.31" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16" font-weight="bold">推送资源</tspan></text>
+<text x="363.9" y="404.51" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16" font-weight="bold">交流互动</tspan></text>
+</g>
+<g id="shape-114" data-name="文本框 113">
+<rect x="846.61" y="348.46" width="97.88" height="84.9" rx="5.09" ry="5.09" fill="#FFCDC3" stroke-width="1" stroke="none" />
+<text x="895.55" y="385.31" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16" font-weight="bold">接触项目</tspan></text>
+<text x="895.55" y="404.51" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16" font-weight="bold">拓展深化</tspan></text>
+</g>
+<g id="shape-115" data-name="文本框 114">
+<rect x="421.29" y="348.46" width="97.88" height="84.9" rx="5.09" ry="5.09" fill="#FFCDC3" stroke-width="1" stroke="none" />
+<text x="470.23" y="385.31" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16" font-weight="bold">引入案例</tspan></text>
+<text x="470.23" y="404.51" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16" font-weight="bold">导出新知</tspan></text>
+</g>
+<g id="shape-116" data-name="文本框 115">
+<rect x="527.62" y="348.46" width="97.88" height="84.9" rx="5.09" ry="5.09" fill="#FFCDC3" stroke-width="1" stroke="none" />
+<text x="576.56" y="385.31" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16" font-weight="bold">发布练习</tspan></text>
+<text x="576.56" y="404.51" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16" font-weight="bold">现场示教</tspan></text>
+</g>
+<g id="shape-117" data-name="文本框 116">
+<rect x="633.95" y="348.46" width="97.88" height="84.9" rx="5.09" ry="5.09" fill="#FFCDC3" stroke-width="1" stroke="none" />
+<text x="682.89" y="385.31" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16" font-weight="bold">创设情境</tspan></text>
+<text x="682.89" y="404.51" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16" font-weight="bold">组织演习</tspan></text>
+</g>
+<g id="shape-118" data-name="文本框 117">
+<rect x="740.28" y="348.46" width="97.88" height="84.9" rx="5.09" ry="5.09" fill="#FFCDC3" stroke-width="1" stroke="none" />
+<text x="789.22" y="385.31" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16" font-weight="bold">答疑解惑</tspan></text>
+<text x="789.22" y="404.51" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16" font-weight="bold">即使评价</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-29" data-name="组合 28">
+<g id="shape-55" data-name="矩形: 圆角 54">
+<rect x="314.97" y="486" width="629.52" height="180.18" rx="3.6" ry="3.6" fill="#F8F4FA" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-46" data-name="组合 45">
+<g id="shape-7" data-name="Freeform: Shape 84">
+<path d="M 457.27 520.42 L 463.69 525.22 C 479.68 536.02 498.94 542.33 519.68 542.33 C 540.42 542.33 559.69 536.02 575.67 525.22 L 582.1 520.42 L 577.88 524.25 C 564.62 537.52 556.41 555.84 556.41 576.09 C 556.41 596.34 564.62 614.66 577.88 627.93 L 582.1 631.76 L 575.67 626.96 C 559.69 616.16 540.42 609.85 519.68 609.85 C 498.94 609.85 479.68 616.16 463.69 626.96 L 457.27 631.76 L 461.48 627.93 C 474.75 614.66 482.96 596.34 482.96 576.09 C 482.96 555.84 474.75 537.52 461.48 524.25 L 457.27 520.42 Z" fill="#D02300" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-8" data-name="Freeform: Shape 85">
+<path d="M 457.27 520.42 L 463.69 525.22 C 479.68 536.02 498.94 542.33 519.68 542.33 C 540.42 542.33 559.69 536.02 575.67 525.22 L 582.1 520.42 L 577.88 524.25 C 564.62 537.52 556.41 555.84 556.41 576.09 C 556.41 596.34 564.62 614.66 577.88 627.93 L 582.1 631.76 L 575.67 626.96 C 559.69 616.16 540.42 609.85 519.68 609.85 C 498.94 609.85 479.68 616.16 463.69 626.96 L 457.27 631.76 L 461.48 627.93 C 474.75 614.66 482.96 596.34 482.96 576.09 C 482.96 555.84 474.75 537.52 461.48 524.25 L 457.27 520.42 Z" fill="url(#ggrad7)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-9" data-name="Freeform: Shape 139">
+<path d="M 677.36 520.42 L 683.78 525.22 C 699.76 536.02 719.03 542.33 739.77 542.33 C 760.51 542.33 779.77 536.02 795.76 525.22 L 802.18 520.42 L 797.97 524.25 C 784.7 537.52 776.49 555.84 776.49 576.09 C 776.49 596.34 784.7 614.66 797.97 627.93 L 802.18 631.76 L 795.76 626.96 C 779.77 616.16 760.51 609.85 739.77 609.85 C 719.03 609.85 699.76 616.16 683.78 626.96 L 677.36 631.76 L 681.57 627.93 C 694.83 614.66 703.04 596.34 703.04 576.09 C 703.04 555.84 694.83 537.52 681.57 524.25 L 677.36 520.42 Z" fill="#FF684A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-11" data-name="Freeform: Shape 140">
+<path d="M 677.36 520.42 L 683.78 525.22 C 699.76 536.02 719.03 542.33 739.77 542.33 C 760.51 542.33 779.77 536.02 795.76 525.22 L 802.18 520.42 L 797.97 524.25 C 784.7 537.52 776.49 555.84 776.49 576.09 C 776.49 596.34 784.7 614.66 797.97 627.93 L 802.18 631.76 L 795.76 626.96 C 779.77 616.16 760.51 609.85 739.77 609.85 C 719.03 609.85 699.76 616.16 683.78 626.96 L 677.36 631.76 L 681.57 627.93 C 694.83 614.66 703.04 596.34 703.04 576.09 C 703.04 555.84 694.83 537.52 681.57 524.25 L 677.36 520.42 Z" fill="url(#ggrad8)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-16" data-name="Freeform: Shape 133">
+<path d="M 776.49 576.09 C 776.49 535.6 809.32 502.78 849.81 502.78 C 890.3 502.78 923.12 535.6 923.12 576.09 C 923.12 616.58 890.3 649.4 849.81 649.4 C 809.32 649.4 776.49 616.58 776.49 576.09 Z" fill="url(#ggrad9)" stroke="#FFFFFF" stroke-width="1" filter="url(#fx10)" />
+</g>
+<g id="shape-17" data-name="Oval 129">
+<ellipse cx="849.81" cy="576.09" rx="60.34" ry="60.34" fill="#FFFFFF" stroke-width="2.066" stroke="#FFFFFF" filter="url(#fx11)" />
+</g>
+<g id="shape-19" data-name="Freeform: Shape 78">
+<path d="M 556.41 576.09 C 556.41 535.6 589.24 502.78 629.73 502.78 C 670.22 502.78 703.04 535.6 703.04 576.09 C 703.04 616.58 670.22 649.4 629.73 649.4 C 589.24 649.4 556.41 616.58 556.41 576.09 Z" fill="url(#ggrad10)" stroke="#FFFFFF" stroke-width="1" filter="url(#fx12)" />
+</g>
+<g id="shape-20" data-name="Oval 79">
+<ellipse cx="629.73" cy="576.09" rx="60.34" ry="60.34" fill="#FFFFFF" stroke-width="2.066" stroke="#FFFFFF" filter="url(#fx13)" />
+</g>
+<g id="shape-21" data-name="Freeform: Shape 160">
+<path d="M 336.33 576.09 C 336.33 535.6 369.15 502.78 409.64 502.78 C 450.13 502.78 482.96 535.6 482.96 576.09 C 482.96 616.58 450.13 649.4 409.64 649.4 C 369.15 649.4 336.33 616.58 336.33 576.09 Z" fill="url(#ggrad11)" stroke="#FFFFFF" stroke-width="1" filter="url(#fx14)" />
+</g>
+<g id="shape-24" data-name="Oval 161">
+<ellipse cx="409.64" cy="576.09" rx="60.34" ry="60.34" fill="#FFFFFF" stroke-width="2.066" stroke="#FFFFFF" filter="url(#fx15)" />
+</g>
+<g id="shape-27" data-name="文本框 26">
+<rect x="354.63" y="519.73" width="110.02" height="112.72" fill="none" />
+<text x="409.64" y="544.93" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#FFC000" font-weight="bold"><tspan fill="#FFC000" font-size="24">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-32" data-name="文本框 31">
+<rect x="794.8" y="519.73" width="110.02" height="112.72" fill="none" />
+<text x="849.81" y="544.93" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#E17467" font-weight="bold"><tspan fill="#E17467" font-size="24">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-41" data-name="矩形: 圆角 40">
+<rect x="586.55" y="563.78" width="86.35" height="22.95" rx="11.47" ry="11.47" fill="#FFFFFF" stroke-width="1" stroke="#D02300" filter="url(#fx16)" />
+<text x="629.73" y="582.18" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="16" fill="#D02300"><tspan fill="#D02300" font-size="16">前沿技术</tspan></text>
+</g>
+<g id="shape-38" data-name="文本框 37">
+<rect x="595.8" y="519.73" width="67.86" height="38.78" fill="none" />
+<text x="605.4" y="544.93" text-anchor="start" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#D02300" font-weight="bold"><tspan fill="#D02300" font-size="24" font-weight="bold">教师</tspan></text>
+</g>
+<g id="shape-45" data-name="矩形: 圆角 44">
+<rect x="586.55" y="593.45" width="86.35" height="22.95" rx="11.47" ry="11.47" fill="#FFFFFF" stroke-width="1" stroke="#D02300" filter="url(#fx17)" />
+<text x="629.73" y="611.85" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="16" fill="#D02300"><tspan fill="#D02300" font-size="16">发展动态</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-57" data-name="等腰三角形 56" transform="translate(625.73 460.96) scale(1 -1) translate(-625.73 -460.96)">
+<polygon points="625.73,439 940.49,482.92 310.97,482.92" fill="url(#ggrad12)" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-35" data-name="文本框 77">
+<rect x="46.5" y="16.36" width="332.61" height="54.93" fill="none" />
+<text x="56.1" y="52.9" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="37.33" fill="#D02300"><tspan fill="#D02300" font-size="37.33">{{TITLE}}</tspan></text>
+</g>
+<g id="shape-36" data-name="文本框 78">
+<rect x="286.32" y="19.59" width="175.9" height="48.47" fill="none" />
+<text x="295.92" y="51.59" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="32" fill="#808080"><tspan fill="#808080" font-size="32">{{TAGLINE}}</tspan></text>
+</g></svg>

@@ -1,0 +1,265 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="2.67" flood-color="#00329D" flood-opacity="0.4" /></filter><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="2.67" flood-color="#00329D" flood-opacity="0.4" /></filter><filter id="fx3" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="2.67" flood-color="#00329D" flood-opacity="0.4" /></filter><filter id="fx4" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="2.67" flood-color="#4480FB" flood-opacity="0.4" /></filter><filter id="fx5" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="0" stdDeviation="29.33" flood-color="#00329D" flood-opacity="0.1" /></filter><filter id="fx6" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="0" stdDeviation="29.33" flood-color="#00329D" flood-opacity="0.1" /></filter><filter id="fx7" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="0" stdDeviation="29.33" flood-color="#00329D" flood-opacity="0.1" /></filter><marker id="marrow1" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#00329D" /></marker><marker id="marrow2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#00329D" /></marker><marker id="marrow3" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#00329D" /></marker><marker id="marrow4" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#00329D" /></marker><marker id="marrow5" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#00329D" /></marker><marker id="marrow6" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#00329D" /></marker><marker id="marrow7" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#00329D" /></marker><marker id="marrow8" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#00329D" /></marker><filter id="fx8" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="0" stdDeviation="20" flood-color="#000000" flood-opacity="0.07" /></filter><filter id="fx9" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="0" stdDeviation="20" flood-color="#000000" flood-opacity="0.07" /></filter><filter id="fx10" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#000000" flood-opacity="0.2" /></filter><filter id="fx11" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#000000" flood-opacity="0.2" /></filter><filter id="fx12" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="0" stdDeviation="20" flood-color="#000000" flood-opacity="0.07" /></filter><filter id="fx13" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="0" stdDeviation="20" flood-color="#000000" flood-opacity="0.07" /></filter></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="master-shape-12" data-name="直线连接符 11">
+<line x1="55.17" y1="691.85" x2="1250.83" y2="691.85" stroke-width="1" stroke="#00329D" fill="#00329D" />
+</g>
+<g id="shape-85" data-name="lemon1">
+<ellipse cx="136.32" cy="330.48" rx="84.24" ry="84.24" fill="#00329D" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-dasharray="3 3" stroke-linejoin="miter" filter="url(#fx1)" />
+</g>
+<g id="shape-84" data-name="lemon2">
+<ellipse cx="343.3" cy="604.35" rx="84.24" ry="84.24" fill="#00329D" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-dasharray="3 3" stroke-linejoin="miter" filter="url(#fx2)" />
+</g>
+<g id="shape-83" data-name="lemon3">
+<ellipse cx="550.89" cy="330.54" rx="84.24" ry="84.24" fill="#00329D" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-dasharray="3 3" stroke-linejoin="miter" filter="url(#fx3)" />
+</g>
+<g id="shape-5" data-name="lemon4">
+<ellipse cx="343.88" cy="430.47" rx="71.05" ry="71.05" fill="#4480FB" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-dasharray="3 3" stroke-linejoin="miter" filter="url(#fx4)" />
+</g>
+<g id="shape-6" data-name="lemon5">
+<rect x="279.78" y="391.87" width="127.15" height="82.15" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="343.36" y="410.01" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">{{PAGE_TITLE}}</tspan></text>
+</g>
+<g id="shape-7" data-name="lemon6">
+<ellipse cx="136.32" cy="330.48" rx="71.05" ry="71.05" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="#00329D" stroke-dasharray="3 3" stroke-linejoin="miter" filter="url(#fx5)" />
+</g>
+<g id="shape-8" data-name="lemon7">
+<rect x="69.15" y="291.88" width="134.67" height="40.76" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="136.49" y="305.48" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#00329D"><tspan fill="#00329D" font-size="16">品牌形象打造</tspan></text>
+</g>
+<g id="shape-9" data-name="lemon8">
+<rect x="69.15" y="332.71" width="134.67" height="34.47" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="136.49" y="348.24" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="12" fill="#00329D" letter-spacing="1.64"><tspan fill="#00329D" font-size="12" letter-spacing="1.64">品牌调性</tspan><tspan fill="#00329D" font-size="12" letter-spacing="1.64">/</tspan><tspan fill="#00329D" font-size="12" letter-spacing="1.64">用户画像</tspan></text>
+<text x="136.49" y="365.58" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="12" fill="#00329D" letter-spacing="1.64"><tspan fill="#00329D" font-size="12" letter-spacing="1.64">/</tspan><tspan fill="#00329D" font-size="12" letter-spacing="1.64">品牌领域</tspan></text>
+</g>
+<g id="shape-10" data-name="lemon9">
+<ellipse cx="550.89" cy="330.54" rx="71.05" ry="71.05" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="#00329D" stroke-dasharray="3 3" stroke-linejoin="miter" filter="url(#fx6)" />
+</g>
+<g id="shape-11" data-name="lemon10">
+<rect x="500.32" y="291.88" width="101.91" height="40.76" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="551.28" y="305.48" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#00329D"><tspan fill="#00329D" font-size="16">品牌核心观念</tspan></text>
+</g>
+<g id="shape-12" data-name="lemon11">
+<rect x="483.94" y="332.71" width="134.67" height="34.47" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="551.28" y="348.24" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="12" fill="#00329D" letter-spacing="1.64"><tspan fill="#00329D" font-size="12" letter-spacing="1.64">品牌价值观</tspan><tspan fill="#00329D" font-size="12" letter-spacing="1.64">/</tspan><tspan fill="#00329D" font-size="12" letter-spacing="1.64">品牌</tspan></text>
+<text x="551.28" y="365.58" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="12" fill="#00329D" letter-spacing="1.64"><tspan fill="#00329D" font-size="12" letter-spacing="1.64">理念</tspan></text>
+</g>
+<g id="shape-13" data-name="lemon12">
+<ellipse cx="343.3" cy="604.35" rx="71.05" ry="71.05" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="#00329D" stroke-dasharray="3 3" stroke-linejoin="miter" filter="url(#fx7)" />
+</g>
+<g id="shape-14" data-name="lemon13">
+<rect x="292.93" y="551.21" width="101.91" height="55.46" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="343.88" y="564.81" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#00329D"><tspan fill="#00329D" font-size="16">品牌价值</tspan></text>
+<text x="343.88" y="588.81" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#00329D"><tspan fill="#00329D" font-size="16">持续提升</tspan></text>
+</g>
+<g id="shape-15" data-name="lemon14">
+<rect x="276.55" y="614.13" width="134.67" height="34.47" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="343.88" y="629.66" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="12" fill="#00329D" letter-spacing="1.64"><tspan fill="#00329D" font-size="12" letter-spacing="1.64">商品定位</tspan><tspan fill="#00329D" font-size="12" letter-spacing="1.64">/</tspan><tspan fill="#00329D" font-size="12" letter-spacing="1.64">商品销售</tspan></text>
+<text x="343.88" y="646.99" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="12" fill="#00329D" letter-spacing="1.64"><tspan fill="#00329D" font-size="12" letter-spacing="1.64">目标</tspan></text>
+</g>
+<g id="shape-16" data-name="lemon15">
+<line x1="207.38" y1="330.48" x2="479.84" y2="330.54" fill="none" stroke-width="1.333" stroke-linecap="butt" stroke="#00329D" stroke-dasharray="3 3" stroke-linejoin="miter" marker-end="url(#marrow1)" />
+</g>
+<g id="shape-17" data-name="lemon16">
+<line x1="136.32" y1="401.53" x2="272.25" y2="604.35" fill="none" stroke-width="1.333" stroke-linecap="butt" stroke="#00329D" stroke-dasharray="3 3" stroke-linejoin="miter" marker-end="url(#marrow2)" />
+</g>
+<g id="shape-18" data-name="lemon17" transform="translate(482.62 502.97) scale(-1 1) translate(-482.62 -502.97)">
+<line x1="414.35" y1="401.59" x2="550.89" y2="604.35" fill="none" stroke-width="1.333" stroke-linecap="butt" stroke="#00329D" stroke-dasharray="3 3" stroke-linejoin="miter" marker-end="url(#marrow3)" />
+</g>
+<g id="shape-19" data-name="lemon18">
+<rect x="241.36" y="304.04" width="205.03" height="17.71" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="343.88" y="319.58" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="12" fill="#000000" letter-spacing="1.64"><tspan fill="#000000" font-size="12">{{CONTENT_1}}</tspan></text>
+</g>
+<g id="shape-20" data-name="lemon19" transform="rotate(56.29 189.18 507.8)">
+<rect x="86.66" y="498.94" width="205.03" height="17.71" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="189.18" y="514.48" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="12" fill="#000000" letter-spacing="1.64"><tspan fill="#000000" font-size="12">{{CONTENT_2}}</tspan></text>
+</g>
+<g id="shape-21" data-name="lemon20" transform="rotate(303.71 497.71 505.59) translate(497.71 505.59) scale(-1 1) translate(-497.71 -505.59)">
+<rect x="395.19" y="496.73" width="205.03" height="17.71" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="497.71" y="512.27" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="12" fill="#000000" letter-spacing="1.64"><tspan fill="#000000" font-size="12">{{CONTENT_3}}</tspan></text>
+</g>
+<g id="shape-22" data-name="lemon21">
+<rect x="91.72" y="634.9" width="148.61" height="17.71" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="91.72" y="650.44" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="12" fill="#000000" letter-spacing="1.64"><tspan fill="#000000" font-size="12" letter-spacing="1.64">价值 </tspan><tspan fill="#000000" font-size="9.33" letter-spacing="1.64">电商品牌价值重点提升</tspan></text>
+</g>
+<g id="shape-23" data-name="lemon22">
+<rect x="78.83" y="627.28" width="166.36" height="31.67" fill="none" stroke-width="1.333" stroke-linecap="butt" stroke="#000000" stroke-dasharray="3 3" stroke-linejoin="miter" />
+</g>
+<g id="shape-24" data-name="lemon23">
+<rect x="455.73" y="634.9" width="148.61" height="17.71" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="455.73" y="650.44" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="12" fill="#000000" letter-spacing="1.64"><tspan fill="#000000" font-size="12" letter-spacing="1.64">定位 </tspan><tspan fill="#000000" font-size="9.33" letter-spacing="1.64">价值直接影响产品定位</tspan></text>
+</g>
+<g id="shape-25" data-name="lemon24">
+<rect x="442.85" y="627.28" width="166.36" height="31.67" fill="none" stroke-width="1.333" stroke-linecap="butt" stroke="#000000" stroke-dasharray="3 3" stroke-linejoin="miter" />
+</g>
+<g id="shape-29" data-name="lemon25" transform="translate(264.46 642.85) scale(-1 1) translate(-264.46 -642.85)">
+<line x1="245.19" y1="642.58" x2="283.72" y2="643.11" fill="none" stroke-width="1.333" stroke-linecap="butt" stroke="#00329D" stroke-dasharray="3 3" stroke-linejoin="miter" marker-end="url(#marrow4)" />
+</g>
+<g id="shape-30" data-name="lemon26" transform="translate(422.6 643.75) scale(1 -1) translate(-422.6 -643.75)">
+<line x1="402.34" y1="643.11" x2="442.85" y2="644.38" fill="none" stroke-width="1.333" stroke-linecap="butt" stroke="#00329D" stroke-dasharray="3 3" stroke-linejoin="miter" marker-end="url(#marrow5)" />
+</g>
+<g id="shape-31" data-name="lemon27" transform="translate(237.86 387.35) scale(-1 -1) translate(-237.86 -387.35)">
+<line x1="199.16" y1="367.78" x2="276.55" y2="406.93" fill="none" stroke-width="1.333" stroke-linecap="butt" stroke="#00329D" stroke-linejoin="miter" marker-end="url(#marrow6)" />
+</g>
+<g id="shape-32" data-name="lemon28" transform="translate(343.59 517.41) scale(-1 1) translate(-343.59 -517.41)">
+<line x1="343.3" y1="501.52" x2="343.88" y2="533.3" fill="none" stroke-width="1.333" stroke-linecap="butt" stroke="#00329D" stroke-linejoin="miter" marker-end="url(#marrow7)" />
+</g>
+<g id="shape-33" data-name="lemon29" transform="translate(451.41 384.65) scale(1 -1) translate(-451.41 -384.65)">
+<line x1="411.21" y1="367.78" x2="491.6" y2="401.53" fill="none" stroke-width="1.333" stroke-linecap="butt" stroke="#00329D" stroke-linejoin="miter" marker-end="url(#marrow8)" />
+</g>
+<g id="shape-35" data-name="lemon30">
+<rect x="50.86" y="102.41" width="563.64" height="118.47" rx="2.97" ry="2.97" fill="#B8CFFF" fill-opacity="0.1508" stroke-width="1.333" stroke="#00329D" stroke-dasharray="4 4" />
+</g>
+<g id="shape-36" data-name="lemon31">
+<rect x="310.38" y="113.44" width="294.03" height="97.26" fill="#FFFFFF" stroke="none" stroke-width="1" filter="url(#fx8)" />
+</g>
+<g id="shape-39" data-name="lemon32">
+<rect x="314.9" y="131.94" width="172.2" height="42.01" fill="none" />
+<text x="324.5" y="148.07" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#00329D"><tspan fill="#00329D" font-size="13.33">{{SECTION_TITLE}}</tspan></text>
+</g>
+<g id="shape-40" data-name="lemon33">
+<rect x="460.89" y="121.23" width="135.35" height="87.24" fill="none" />
+<text x="528.56" y="180.43" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="64" fill="#4480FB" font-weight="bold"><tspan fill="#4480FB" font-size="64" font-weight="bold">86</tspan><tspan fill="#4480FB" font-size="26.67" font-weight="bold">%</tspan></text>
+</g>
+<g id="shape-41" data-name="lemon34">
+<rect x="317.23" y="168.72" width="162.29" height="38.78" fill="none" />
+<text x="326.83" y="180.32" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="8" fill="#000000"><tspan fill="#000000" font-size="8">E-commerce in 2023</tspan><tspan fill="#000000" font-size="8"> </tspan><tspan fill="#000000" font-size="8">The number of </tspan><tspan x="326.83" dy="8" fill="#000000" font-size="8">consumers in the Double Eleven </tspan><tspan x="326.83" dy="8" fill="#000000" font-size="8">increased year-on-year</tspan></text>
+</g>
+<g id="shape-48" data-name="lemon35">
+<rect x="66.32" y="113.23" width="232.41" height="97.26" fill="#FFFFFF" stroke="none" stroke-width="1" filter="url(#fx9)" />
+</g>
+<g id="shape-49" data-name="lemon36">
+<rect x="66" y="114.02" width="3.67" height="97.36" fill="#00329D" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-50" data-name="lemon37">
+<rect x="89.17" y="122.7" width="154.02" height="51.7" fill="none" />
+<text x="98.77" y="145.64" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#00329D"><tspan fill="#00329D" font-size="21.33">2024</tspan><tspan fill="#00329D" font-size="21.33">年</tspan><tspan x="98.77" dy="13.33" fill="#00329D" font-size="13.33">平台各项业务数据表现</tspan></text>
+</g>
+<g id="shape-51" data-name="lemon38">
+<rect x="90.47" y="170.75" width="195.46" height="29.08" fill="none" />
+<text x="100.07" y="182.35" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="8" fill="#000000"><tspan fill="#000000" font-size="8">E-commerce in 2023</tspan><tspan fill="#000000" font-size="8"> </tspan><tspan fill="#000000" font-size="8">The number of </tspan><tspan x="100.07" dy="8" fill="#000000" font-size="8">consumers in the Double Eleven increased </tspan><tspan x="100.07" dy="8" fill="#000000" font-size="8">year-on-year</tspan></text>
+</g>
+<g id="shape-52" data-name="lemon39">
+<g id="shape-53" data-name="组合 52">
+<g id="shape-58" data-name="lemon39-1">
+<rect x="655.89" y="266.11" width="290.93" height="159.32" rx="0" ry="0" fill="none" stroke-width="1.333" stroke-linecap="butt" stroke="#00329D" stroke-linejoin="miter" filter="url(#fx10)" />
+</g>
+<g id="shape-59" data-name="lemon39-2">
+<rect x="677.44" y="322.03" width="257.25" height="20.22" fill="none" />
+<text x="677.44" y="337.89" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#000000"><tspan fill="#000000" font-size="18.67">问题</tspan><tspan fill="#000000" font-size="18.67">1</tspan><tspan fill="#000000" font-size="18.67">｜用户对品牌价值关注</tspan></text>
+</g>
+<g id="shape-60" data-name="lemon39-3">
+<rect x="677.44" y="350.3" width="261.25" height="38.78" fill="none" />
+<text x="677.44" y="363.9" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">品牌已成为用户在电商平台购物的重</tspan><tspan x="677.44" dy="16" fill="#000000" font-size="16">点关注要素</tspan></text>
+</g>
+</g>
+<g id="shape-54" data-name="lemon39-4">
+<rect x="655.89" y="434.62" width="290.93" height="159.32" rx="0" ry="0" fill="none" stroke-width="1.333" stroke-linecap="butt" stroke="#4480FB" stroke-linejoin="miter" filter="url(#fx11)" />
+</g>
+<g id="shape-55" data-name="lemon39-5">
+<rect x="677.44" y="477.02" width="257.25" height="45.24" fill="none" />
+<text x="677.44" y="492.89" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#000000"><tspan fill="#000000" font-size="18.67">问题</tspan><tspan fill="#000000" font-size="18.67">2</tspan><tspan fill="#000000" font-size="18.67">｜商品价格、定位与商品</tspan><tspan x="677.44" dy="18.67" fill="#000000" font-size="18.67">品牌之间存在显著差距</tspan></text>
+</g>
+<g id="shape-56" data-name="lemon39-6">
+<rect x="677.44" y="531.45" width="251.82" height="38.78" fill="none" />
+<text x="677.44" y="545.05" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">从数据上看</tspan><tspan fill="#000000" font-size="16">，部分商品品牌调性与</tspan><tspan x="677.44" dy="16" fill="#000000" font-size="16">商品调性严重不符</tspan></text>
+</g>
+<g id="shape-57" data-name="lemon39-7">
+<rect x="733.58" y="229.28" width="115.8" height="36.69" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="791.48" y="253.23" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">01</tspan><tspan fill="#000000" font-size="16">、问题</tspan></text>
+</g>
+</g>
+<g id="shape-61" data-name="lemon40">
+<g id="shape-62" data-name="组合 61">
+<g id="shape-64" data-name="组合 63">
+<g id="shape-71" data-name="lemon40-1">
+<rect x="955.21" y="265.63" width="290.93" height="104.82" rx="0" ry="0" fill="#00329D" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-72" data-name="lemon40-2">
+<rect x="995.22" y="307.02" width="223.58" height="45.24" fill="none" />
+<text x="1107.01" y="322.88" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">结合用户调研，持续品牌优化、提升</tspan></text>
+</g>
+</g>
+<g id="shape-65" data-name="组合 64">
+<g id="shape-69" data-name="lemon40-3">
+<rect x="955.21" y="377.14" width="290.93" height="104.82" rx="0" ry="0" fill="#4480FB" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-70" data-name="lemon40-4">
+<rect x="995.22" y="418.52" width="223.58" height="45.24" fill="none" />
+<text x="1107.01" y="434.39" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">对于销售产品调性进行调</tspan><tspan x="1107.01" dy="18.67" fill="#FFFFFF" font-size="18.67">整，符合品牌理念</tspan></text>
+</g>
+</g>
+<g id="shape-66" data-name="组合 65">
+<g id="shape-67" data-name="lemon40-5">
+<rect x="955.21" y="488.64" width="290.93" height="104.82" rx="0" ry="0" fill="#00329D" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-68" data-name="lemon40-6">
+<rect x="995.22" y="530.02" width="223.58" height="45.24" fill="none" />
+<text x="1107.01" y="545.89" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">推陈出新出新，紧密围绕</tspan><tspan x="1107.01" dy="18.67" fill="#FFFFFF" font-size="18.67">品牌做好商品开发</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-63" data-name="lemon40-7">
+<rect x="1042.77" y="229.28" width="115.8" height="36.69" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="1100.67" y="253.23" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">02</tspan><tspan fill="#000000" font-size="16">、措施</tspan></text>
+</g>
+</g>
+<g id="shape-73" data-name="lemon41">
+<rect x="655.89" y="102.41" width="563.64" height="118.47" rx="2.97" ry="2.97" fill="#B8CFFF" fill-opacity="0.1508" stroke-width="1.333" stroke="#00329D" stroke-dasharray="4 4" />
+</g>
+<g id="shape-74" data-name="lemon42">
+<rect x="915.41" y="113.44" width="294.03" height="97.26" fill="#FFFFFF" stroke="none" stroke-width="1" filter="url(#fx12)" />
+</g>
+<g id="shape-75" data-name="lemon43">
+<rect x="919.92" y="131.94" width="172.2" height="42.01" fill="none" />
+<text x="929.52" y="148.07" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#00329D"><tspan fill="#00329D" font-size="13.33">2023</tspan><tspan fill="#00329D" font-size="13.33">年电商双十一商城消</tspan><tspan x="929.52" dy="13.33" fill="#00329D" font-size="13.33">费人数同比增长</tspan></text>
+</g>
+<g id="shape-76" data-name="lemon44">
+<rect x="1065.91" y="121.23" width="135.35" height="87.24" fill="none" />
+<text x="1133.59" y="180.43" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="64" fill="#4480FB" font-weight="bold"><tspan fill="#4480FB" font-size="64" font-weight="bold">76</tspan><tspan fill="#4480FB" font-size="26.67" font-weight="bold">%</tspan></text>
+</g>
+<g id="shape-77" data-name="lemon45">
+<rect x="922.25" y="168.72" width="162.29" height="38.78" fill="none" />
+<text x="931.85" y="180.32" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="8" fill="#000000"><tspan fill="#000000" font-size="8">E-commerce in 2023</tspan><tspan fill="#000000" font-size="8"> </tspan><tspan fill="#000000" font-size="8">The number of </tspan><tspan x="931.85" dy="8" fill="#000000" font-size="8">consumers in the Double Eleven </tspan><tspan x="931.85" dy="8" fill="#000000" font-size="8">increased year-on-year</tspan></text>
+</g>
+<g id="shape-78" data-name="lemon46">
+<rect x="671.34" y="113.23" width="232.41" height="97.26" fill="#FFFFFF" stroke="none" stroke-width="1" filter="url(#fx13)" />
+</g>
+<g id="shape-79" data-name="lemon47">
+<rect x="671.02" y="114.02" width="3.67" height="97.36" fill="#00329D" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-80" data-name="lemon48">
+<rect x="694.19" y="122.7" width="154.02" height="51.7" fill="none" />
+<text x="703.79" y="145.64" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#00329D"><tspan fill="#00329D" font-size="21.33">2024</tspan><tspan fill="#00329D" font-size="21.33">年</tspan><tspan x="703.79" dy="13.33" fill="#00329D" font-size="13.33">平台各项业务数据表现</tspan></text>
+</g>
+<g id="shape-81" data-name="lemon49">
+<rect x="695.49" y="170.75" width="195.46" height="29.08" fill="none" />
+<text x="705.09" y="182.35" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="8" fill="#000000"><tspan fill="#000000" font-size="8">E-commerce in 2023</tspan><tspan fill="#000000" font-size="8"> </tspan><tspan fill="#000000" font-size="8">The number of </tspan><tspan x="705.09" dy="8" fill="#000000" font-size="8">consumers in the Double Eleven increased </tspan><tspan x="705.09" dy="8" fill="#000000" font-size="8">year-on-year</tspan></text>
+</g>
+<g id="shape-82" data-name="lemon50">
+<rect x="657.43" y="606.67" width="588.71" height="68.82" rx="1.73" ry="1.73" fill="#B8CFFF" fill-opacity="0.1508" stroke-width="1.333" stroke="#00329D" stroke-dasharray="4 4" />
+</g>
+<g id="shape-86" data-name="lemon51">
+<rect x="668.98" y="620.79" width="583.56" height="42.01" fill="none" />
+<text x="678.58" y="636.93" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">结合</tspan><tspan fill="#000000" font-size="13.33">2023</tspan><tspan fill="#000000" font-size="13.33">年度数据，可以看出用户对于产品品牌的关注更加强烈，头部品牌的用户粘性显著增加</tspan><tspan x="678.58" dy="13.33" fill="#000000" font-size="13.33">，其中价格、营销手段、产品定位都对用户的停留起到了很大的影响。</tspan></text>
+</g>
+<g id="shape-87" data-name="lemon52">
+<rect x="668.98" y="276.03" width="111.56" height="38.78" fill="none" />
+<text x="678.58" y="301.23" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#00329D"><tspan fill="#00329D" font-size="24">PART1</tspan></text>
+</g>
+<g id="shape-88" data-name="lemon53">
+<rect x="667.48" y="437.45" width="111.56" height="38.78" fill="none" />
+<text x="677.08" y="462.65" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#00329D"><tspan fill="#00329D" font-size="24">PART2</tspan></text>
+</g>
+<g id="shape-89" data-name="lemon54" transform="translate(801.82 409.01) scale(1 -1) translate(-801.82 -409.01)">
+<rect x="670.59" y="406.61" width="262.46" height="4.8" rx="0" ry="0" fill="#00329D" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-90" data-name="lemon55" transform="translate(801.82 581.59) scale(1 -1) translate(-801.82 -581.59)">
+<rect x="670.59" y="579.19" width="262.46" height="4.8" rx="0" ry="0" fill="#4480FB" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-2" data-name="矩形: 圆角 7" transform="translate(645.89 75.56) scale(1 -1) translate(-645.89 -75.56)">
+<rect x="48.06" y="73.16" width="1195.66" height="4.8" rx="0.8" ry="0.8" fill="#00329D" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-3" data-name="Venn diagram">
+<rect x="45.98" y="21.48" width="698.35" height="44.16" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="48.64" y="51.35" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="32" fill="#00329D" font-weight="bold"><tspan fill="#00329D" font-size="32" font-weight="bold">高端</tspan><tspan fill="#00329D" font-size="32" font-weight="bold">PPT</tspan><tspan fill="#00329D" font-size="32" font-weight="bold">系列之一：打工人必备</tspan><tspan fill="#00329D" font-size="32" font-weight="bold">PPT</tspan><tspan fill="#00329D" font-size="32" font-weight="bold">逻辑图</tspan></text>
+</g></svg>

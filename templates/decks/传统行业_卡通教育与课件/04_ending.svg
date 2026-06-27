@@ -1,0 +1,10 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><image href="assets/image1.jpeg" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+<g id="shape-9" data-name="文本框 8">
+<rect x="536.73" y="159.33" width="619.8" height="116.2" fill="none" />
+<text x="846.63" y="238.93" text-anchor="middle" xml:space="preserve" font-family="&quot;方正卡通简体&quot;, sans-serif" font-size="88" fill="#FFF7F2"><tspan fill="#FFF7F2" font-size="88">{{THANK_YOU}}</tspan></text>
+</g>
+<g id="shape-13" data-name="文本框 12">
+<rect x="556.17" y="313.87" width="580.8" height="67.73" fill="none" />
+<text x="846.57" y="332.27" text-anchor="middle" xml:space="preserve" font-family="&quot;Calibri Light&quot;, &quot;方正华隶简体&quot;, sans-serif" font-size="16" fill="#404040"><tspan fill="#404040" font-size="16">{{CLOSING_MESSAGE}}</tspan></text>
+</g></svg>

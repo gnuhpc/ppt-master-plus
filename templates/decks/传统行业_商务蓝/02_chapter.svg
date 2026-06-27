@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#F6F6F6"/>
+<g id="layout-shape-7" data-name="矩形 6" transform="rotate(180 156.21 117.5)">
+<rect x="40.26" y="26.65" width="231.91" height="181.7" stroke="none" fill="#485275" stroke-width="1"/>
+</g>
+<g id="layout-shape-8" data-name="矩形 7">
+<rect x="958.18" y="476.18" width="279.16" height="218.72" stroke="none" fill="#485275" stroke-width="1"/>
+</g>
+<g id="layout-shape-9" data-name="稻壳儿原创设计师【幻雨工作室】_1" transform="rotate(135 63.{{CHAPTER_NUM}} 673.31)">
+<path d="M 43.38 696.07 L 63.54 675.91 L 83.7 675.91 L 43.38 716.23 Z M 42.33 630.4 L 82.65 670.71 L 62.49 670.71 L 42.33 650.55 Z" stroke="none" fill="#485275" stroke-width="1"/>
+</g>
+<g id="layout-shape-10" data-name="稻壳儿原创设计师【幻雨工作室】_1" transform="rotate(135 1216.26 47.2) translate(1216.26 47.2) scale(-1 1) translate(-1216.26 -47.2)">
+<path d="M 1196.62 69.96 L 1216.78 49.8 L 1236.94 49.8 L 1196.62 90.12 Z M 1195.58 4.29 L 1235.89 44.6 L 1215.73 44.6 L 1195.58 24.44 Z" stroke="none" fill="#485275" stroke-width="1"/>
+</g>
+<g id="layout-shape-11" data-name="稻壳儿原创设计师【幻雨工作室】_2">
+<rect x="51.77" y="35.22" width="1176.48" height="649.59" rx="9.17" ry="9.17" fill="#FFFFFF" stroke-width="2.333" stroke="none"/>
+</g>
+<g id="layout-shape-14" data-name="任意多边形: 形状 13" transform="rotate(270 645.86 359.99)">
+<path d="M 970.66 931.97 L 970.66 933.67 C 970.66 938.73 966.55 942.83 961.49 942.83 L 330.23 942.83 C 325.17 942.83 321.07 938.73 321.07 933.67 L 321.07 -222.86 L 970.66 931.97 Z" fill="#F2F2F2" fill-opacity="0.16" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-28" data-name="稻壳儿原创设计师【幻雨工作室】_4">
+<rect x="412.2" y="367.27" width="455.61" height="155.1" fill="none"/>
+<text x="640" y="433.27" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="72" fill="#485275"><tspan fill="#485275" font-size="72">{{CHAPTER_TITLE}}</tspan></text>
+<text x="640" y="499.27" text-anchor="middle" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, sans-serif" font-size="48" fill="#485275"><tspan fill="#485275" font-size="48">{{CHAPTER_DESC}}</tspan></text>
+</g>
+<g id="shape-29" data-name="稻壳儿原创设计师【幻雨工作室】_5">
+<rect x="487.12" y="215.4" width="305.77" height="151.87" fill="none" stroke="none"/>
+<text x="640" y="319.93" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="117.33" fill="#485275" font-weight="bold"><tspan fill="#485275" font-size="117.33" font-weight="bold">{{CHAPTER_NUM}}</tspan></text>
+</g></svg>

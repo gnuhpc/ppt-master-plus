@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><g id="slide-wrapper" transform="scale(1.3333333333333333)"><defs><linearGradient id="txtgrad1" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#FEEBA5"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad2" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6E0CB"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad3" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6E0CB"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad4" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6E0CB"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad5" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#FEEBA5"/><stop offset="1" stop-color="#E29B60"/></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#CD170A"/>
+<g id="layout-shape-3" data-name="图片 2">
+<svg x="0" y="0" width="1280" height="720" viewBox="0.17593 0 0.64814 1" preserveAspectRatio="none"><image href="assets/image1.jpeg" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="layout-shape-9" data-name="图片 8">
+<svg x="7.4" y="135.53" width="952.53" height="404.53" viewBox="0 0 0.99126 0.45598" preserveAspectRatio="none"><image href="assets/image2.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="shape-9" data-name="图片 8">
+<image href="assets/image7.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none"/>
+</g>
+<g id="shape-2" data-name="组合 1">
+<g id="shape-5" data-name="文本框 4">
+<rect x="116.27" y="155.73" width="733.07" height="116.2" fill="none" stroke="none"/>
+<text x="482.8" y="235.33" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪大宋简&quot;, sans-serif" font-size="88" fill="url(#txtgrad1)" letter-spacing="-4"><tspan fill="url(#txtgrad1)" font-size="88" letter-spacing="-4">{{TITLE}}</tspan></text>
+</g>
+<g id="shape-14" data-name="文本框 13">
+<rect x="334.87" y="95.6" width="295.87" height="43.47" fill="none"/>
+<text x="344.47" y="116.27" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="18.67" fill="url(#txtgrad2)" font-weight="bold"><tspan fill="url(#txtgrad2)" font-size="18.67" font-weight="bold">{{TAGLINE}}</tspan></text>
+</g>
+</g>
+<g id="shape-12" data-name="矩形: 圆角 11">
+<rect x="400.07" y="471.69" width="159.86" height="28.96" rx="14.48" ry="14.48" fill="#FFEBA9" stroke="none" stroke-width="1"/>
+<text x="409.67" y="490.97" text-anchor="start" xml:space="preserve" font-family="&quot;Century Gothic&quot;, sans-serif" font-size="16" fill="#C82C2D"><tspan fill="#C82C2D" font-size="16">汇报人：{{AUTHOR}}</tspan></text>
+</g>
+<g id="shape-15" data-name="文本框 14">
+<rect x="24" y="31.93" width="98.73" height="29.87" fill="none" stroke="#F6E0CB" stroke-linejoin="miter"/>
+<text x="33.6" y="57.13" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="url(#txtgrad3)"><tspan fill="url(#txtgrad3)" font-size="24">{{DATE}}</tspan></text>
+</g>
+<g id="shape-16" data-name="文本框 15">
+<rect x="13.8" y="65.55" width="247.67" height="35" fill="none"/>
+<text x="23.4" y="90.75" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="url(#txtgrad4)"><tspan fill="url(#txtgrad4)" font-size="24">{{SUBTITLE}}</tspan></text>
+</g>
+<g id="shape-21" data-name="矩形 20">
+<rect x="261.2" y="277.13" width="456.13" height="35.4" fill="none" stroke-width="2" stroke="#FFEBA9" stroke-opacity="0.51"/>
+<text x="270.8" y="300.07" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪大宋简&quot;, sans-serif" font-size="21.33" fill="url(#txtgrad5)" letter-spacing="-2"><tspan fill="url(#txtgrad5)" font-size="21.33" letter-spacing="-2">{{BRAND_LINE}}</tspan></text>
+</g>
+<g id="shape-4" data-name="组合 3">
+<g id="shape-6" data-name="星形: 五角 14">
+<polygon points="697.03,104.65 699.87,113.41 709.08,113.41 701.63,118.82 704.48,127.58 697.03,122.17 689.58,127.58 692.42,118.82 684.97,113.41 694.18,113.41" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+<g id="shape-7" data-name="星形: 五角 15">
+<polygon points="671.67,109.25 673.48,114.83 679.35,114.83 674.6,118.28 676.41,123.86 671.67,120.41 666.92,123.86 668.73,118.28 663.99,114.83 669.85,114.83" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+<g id="shape-17" data-name="星形: 五角 16">
+<polygon points="652.28,112.13 653.45,115.72 657.23,115.72 654.17,117.94 655.34,121.53 652.28,119.31 649.23,121.53 650.39,117.94 647.34,115.72 651.12,115.72" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+</g>
+<g id="shape-18" data-name="组合 17" transform="translate(287.24 116.93) scale(-1 1) translate(-287.24 -116.93)">
+<g id="shape-19" data-name="星形: 五角 18">
+<polygon points="305.87,104.25 308.72,113.01 317.93,113.01 310.48,118.42 313.32,127.18 305.87,121.77 298.42,127.18 301.27,118.42 293.82,113.01 303.03,113.01" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+<g id="shape-20" data-name="星形: 五角 19">
+<polygon points="280.51,108.85 282.33,114.43 288.19,114.43 283.45,117.88 285.26,123.46 280.51,120.01 275.77,123.46 277.58,117.88 272.83,114.43 278.7,114.43" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+<g id="shape-22" data-name="星形: 五角 20">
+<polygon points="261.13,111.73 262.3,115.32 266.07,115.32 263.02,117.54 264.19,121.13 261.13,118.91 258.07,121.13 259.24,117.54 256.18,115.32 259.96,115.32" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+</g></g></svg>

@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0.15" stop-color="#B4D7FE" /><stop offset="0.53" stop-color="#5186D4" /><stop offset="1" stop-color="#023E80" /></linearGradient><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="2.67" flood-color="#011F40" flood-opacity="0.4" /></filter><radialGradient id="ggrad2" cx="0.5" cy="0.5" r="0.5"><stop offset="0.06" stop-color="#E4776D" /><stop offset="0.55" stop-color="#BA3023" /></radialGradient><linearGradient id="ggrad3" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#BA3023" stop-opacity="0" /><stop offset="1" stop-color="#BA3023" /></linearGradient><linearGradient id="ggrad4" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#BA3023" stop-opacity="0" /><stop offset="1" stop-color="#BA3023" /></linearGradient><linearGradient id="ggrad5" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#BA3023" stop-opacity="0" /><stop offset="1" stop-color="#BA3023" /></linearGradient><linearGradient id="ggrad6" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#BA3023" stop-opacity="0" /><stop offset="1" stop-color="#BA3023" /></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="layout-shape-6" data-name="任意多边形: 形状 5">
+<path d="M 3.78 23.95 L 18.9 43.77 L 3.78 63.58 L -0.33 58.19 L -0.33 29.34 Z" fill="none" stroke-width="0" stroke-linecap="butt" stroke="#023E80" stroke-opacity="0" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-5" data-name="任意多边形: 形状 4">
+<path d="M 0 23.95 L 15.12 43.77 L 0 63.58 L -0.33 63.14 L -0.33 24.39 Z" fill="url(#ggrad1)" stroke-width="0" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-68" data-name="直接连接符 67">
+<line x1="35.28" y1="67.62" x2="1244.72" y2="67.62" stroke-width="3.667" stroke="#023E80" fill="#023E80" filter="url(#fx1)" />
+</g>
+<g id="shape-326" data-name="矩形 325">
+<rect x="35.17" y="94.5" width="601.05" height="366.61" fill="#B4D7FE" fill-opacity="0.16" stroke-width="0.333" stroke="#023E80" stroke-dasharray="4 4" />
+</g>
+<g id="shape-327" data-name="矩形 326">
+<rect x="643.78" y="94.5" width="601.05" height="366.61" fill="#B4D7FE" fill-opacity="0.16" stroke-width="0.333" stroke="#023E80" stroke-dasharray="4 4" />
+</g>
+<g id="shape-328" data-name="矩形 327">
+<rect x="35.28" y="467.18" width="1209.45" height="226.34" fill="#B4D7FE" fill-opacity="0.16" stroke-width="0.333" stroke="#023E80" stroke-dasharray="4 4" />
+</g>
+<g id="shape-182" data-name="文本框 181" transform="translate(1025.54 156.42) scale(-1 1) translate(-1025.54 -156.42)">
+<rect x="894.67" y="136.28" width="261.73" height="40.27" rx="2.74" ry="2.74" fill="none" />
+<text x="904.27" y="162.42" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#000000"><tspan fill="#000000" font-size="24">{{PAGE_TITLE}}</tspan></text>
+</g>
+<g id="shape-219" data-name="文本框 218">
+<rect x="124.06" y="136.47" width="261.73" height="39.9" rx="2.24" ry="2.24" fill="none" />
+<text x="133.66" y="162.42" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#023E80"><tspan fill="#023E80" font-size="24">{{CONTENT_1}}</tspan></text>
+</g>
+<g id="shape-2" data-name="组合 1">
+<g id="shape-168" data-name="任意多边形: 形状 167">
+<path d="M 640.04 343.27 L 808.69 441.11 C 775.08 499.58 715.96 534.03 653.61 538.46 L 653.06 538.47 L 638.71 552.88 L 623.96 538.06 L 615.98 537.46 C 590.88 534.33 565.98 526.2 542.69 512.69 C 513.09 495.54 488.51 470.83 471.42 441.11 Z" fill="#023E80" stroke-width="0" stroke="none" stroke-linejoin="round" />
+</g>
+<g id="shape-169" data-name="任意多边形: 形状 168">
+<path d="M 643.46 141.75 C 710.65 141.75 769.89 175.98 804.86 228.05 L 806.99 231.57 L 827.27 237.46 L 821.31 258.16 L 822.81 261.3 C 832.66 284.72 838.1 310.46 838.1 337.49 C 838.1 371.84 829.1 405.6 812.03 435.35 L 643.46 337.49 Z" fill="#023E80" stroke-width="0" stroke="none" stroke-linejoin="round" />
+</g>
+<g id="shape-170" data-name="任意多边形: 形状 169">
+<path d="M 636.64 141.75 L 636.65 337.37 L 468.02 435.18 C 437.77 382.55 434.63 321.67 454.25 268.86 L 458.77 258.27 L 452.78 237.46 L 472.99 231.59 L 481.3 219.34 C 496.55 199.06 516 181.46 539.29 167.95 C 568.89 150.79 602.47 141.75 636.64 141.75 Z" fill="#023E80" stroke-width="0" stroke="none" stroke-linejoin="round" />
+</g>
+<g id="shape-178" data-name="文本框 39" transform="rotate(60 651 332.62)">
+<rect x="485.5" y="170.82" width="331" height="323.6" fill="none" />
+<text x="651" y="202.82" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="32" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="32" font-weight="bold">产品驱动</tspan><tspan fill="#FFFFFF" font-size="32" font-weight="bold">·</tspan><tspan fill="#FFFFFF" font-size="32" font-weight="bold">品质致胜</tspan></text>
+</g>
+<g id="shape-179" data-name="文本框 34" transform="rotate(300 634.56 334.68)">
+<rect x="474.76" y="167.12" width="319.6" height="335.13" fill="none" />
+<text x="634.56" y="199.12" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">流量驱动</tspan><tspan fill="#FFFFFF" font-size="32">·</tspan><tspan fill="#FFFFFF" font-size="32">精准拓客</tspan></text>
+</g>
+<g id="shape-180" data-name="文本框 34">
+<rect x="481.04" y="204.17" width="304.72" height="300.98" fill="none" />
+<text x="633.4" y="236.17" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="32" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="32" font-weight="bold">服务驱动</tspan><tspan fill="#FFFFFF" font-size="32" font-weight="bold">·</tspan><tspan fill="#FFFFFF" font-size="32" font-weight="bold">口碑传播</tspan></text>
+</g>
+<g id="shape-249" data-name="椭圆 25" transform="rotate(0.57 640 346.35)">
+<ellipse cx="640" cy="346.35" rx="135.64" ry="136.79" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-opacity="0.4" stroke-linejoin="miter" />
+</g>
+<g id="shape-250" data-name="椭圆 249">
+<ellipse cx="640" cy="346.35" rx="119.06" ry="119.06" fill="url(#ggrad2)" stroke-width="1.333" stroke="none" />
+</g>
+<g id="shape-251" data-name="文本框 35">
+<rect x="570.2" y="288.21" width="139.6" height="116.29" fill="none" />
+<text x="640" y="338.35" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="53.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="53.33">三驱</tspan></text>
+<text x="640" y="391.69" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="53.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="53.33">共振</tspan></text>
+</g>
+</g>
+<g id="shape-13" data-name="大标题">
+<rect x="32.96" y="15.44" width="477.78" height="47.44" fill="none" />
+<text x="32.96" y="53.22" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="40" fill="#023E80"><tspan fill="#023E80" font-size="40">圆形图</tspan><tspan fill="#023E80" font-size="40">-</tspan><tspan fill="#BA3023" font-size="40">阶段总结</tspan></text>
+</g>
+<g id="shape-25" data-name="图形 24">
+<image href="assets/image32.png" x="65.88" y="127.56" width="57.72" height="57.72" preserveAspectRatio="none" />
+</g>
+<g id="shape-27" data-name="图形 26">
+<image href="assets/image33.png" x="837.08" y="129.96" width="52.91" height="52.91" preserveAspectRatio="none" />
+</g>
+<g id="shape-31" data-name="文本框 30">
+<rect x="74.28" y="199.83" width="172.17" height="64.62" fill="none" stroke-width="0.333" stroke="#023E80" stroke-dasharray="4 4" />
+<text x="85.61" y="230.06" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="#BA3023"><tspan fill="#BA3023" font-size="26.67">40</tspan><tspan fill="#BA3023" font-size="21.33">%</tspan></text>
+<text x="85.61" y="255.26" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="18.67">社交媒体渠道流量</tspan></text>
+</g>
+<g id="shape-32" data-name="文本框 31">
+<rect x="256.24" y="199.83" width="172.17" height="64.62" fill="none" stroke-width="0.333" stroke="#023E80" stroke-dasharray="4 4" />
+<text x="267.58" y="230.06" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="#BA3023"><tspan fill="#BA3023" font-size="26.67">31</tspan><tspan fill="#BA3023" font-size="21.33">%</tspan></text>
+<text x="267.58" y="255.26" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="18.67">搜索引擎渠道流量</tspan></text>
+</g>
+<g id="shape-33" data-name="文本框 32">
+<rect x="74.19" y="289.04" width="172.17" height="64.62" fill="none" stroke-width="0.333" stroke="#023E80" stroke-dasharray="4 4" />
+<text x="85.53" y="319.26" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="#BA3023"><tspan fill="#BA3023" font-size="26.67">21</tspan><tspan fill="#BA3023" font-size="21.33">%</tspan></text>
+<text x="85.53" y="344.46" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="18.67">广告投放渠道流量</tspan></text>
+</g>
+<g id="shape-34" data-name="文本框 33">
+<rect x="256.24" y="289.04" width="172.17" height="64.62" fill="none" stroke-width="0.333" stroke="#023E80" stroke-dasharray="4 4" />
+<text x="267.58" y="319.26" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="#BA3023"><tspan fill="#BA3023" font-size="26.67">8</tspan><tspan fill="#BA3023" font-size="21.33">%</tspan></text>
+<text x="267.58" y="344.46" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="18.67">线下活动渠道流量</tspan></text>
+</g>
+<g id="shape-36" data-name="文本框 35">
+<rect x="74.28" y="378.84" width="365.58" height="62.66" fill="none" />
+<text x="83.88" y="399.51" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="18.67">{{CONTENT_2}}</tspan></text>
+</g>
+<g id="shape-41" data-name="文本框 40">
+<rect x="853.48" y="259.17" width="170.08" height="94.49" fill="none" stroke-width="0.333" stroke="#023E80" stroke-dasharray="4 4" />
+<text x="938.51" y="307.22" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="48" fill="#BA3023"><tspan fill="#BA3023" font-size="48">12</tspan><tspan fill="#BA3023" font-size="26.67">项</tspan></text>
+<text x="938.51" y="339.89" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="18.67">年度新研发技术</tspan></text>
+</g>
+<g id="shape-43" data-name="文本框 42">
+<rect x="1036.82" y="259.17" width="170.08" height="94.49" fill="none" stroke-width="0.333" stroke="#023E80" stroke-dasharray="4 4" />
+<text x="1121.86" y="305.89" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="42.67" fill="#BA3023"><tspan fill="#BA3023" font-size="42.67">99.8</tspan><tspan fill="#BA3023" font-size="26.67">%</tspan></text>
+<text x="1121.86" y="336.69" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="18.67">产品合格率</tspan></text>
+</g>
+<g id="shape-44" data-name="文本框 43">
+<rect x="868.47" y="372.38" width="339.5" height="70.23" fill="none" />
+<text x="1198.37" y="395.31" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="21.33">{{CONTENT_3}}</tspan></text>
+</g>
+<g id="shape-48" data-name="文本框 47">
+<rect x="853.48" y="199.83" width="170.08" height="45.35" rx="22.68" ry="22.68" fill="#023E80" fill-opacity="0.3" />
+<text x="938.51" y="227.84" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#023E80"><tspan fill="#023E80" font-size="21.33">技术新攻坚</tspan></text>
+</g>
+<g id="shape-49" data-name="文本框 48">
+<rect x="1037.81" y="199.83" width="170.08" height="45.35" rx="22.68" ry="22.68" fill="#023E80" fill-opacity="0.3" />
+<text x="1122.85" y="227.84" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#023E80"><tspan fill="#023E80" font-size="21.33">质量零缺陷</tspan></text>
+</g>
+<g id="shape-51" data-name="文本框 50">
+<rect x="563.63" y="566.92" width="152.74" height="32.5" rx="16.25" ry="16.25" fill="#BA3023" />
+<text x="573.23" y="592.12" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">贴心伴行</tspan></text>
+</g>
+<g id="shape-52" data-name="文本框 51">
+<rect x="563.63" y="609.96" width="152.74" height="32.5" rx="16.25" ry="16.25" fill="#BA3023" />
+<text x="573.23" y="635.16" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">高效解忧</tspan></text>
+</g>
+<g id="shape-53" data-name="文本框 52">
+<rect x="563.63" y="653" width="152.74" height="32.5" rx="16.25" ry="16.25" fill="#BA3023" />
+<text x="573.23" y="678.2" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">诚意制胜</tspan></text>
+</g>
+<g id="shape-150" data-name="文本框 149">
+<rect x="74.28" y="489.67" width="215.43" height="64.62" fill="none" stroke-width="0.333" stroke="#023E80" stroke-dasharray="4 4" />
+<text x="85.61" y="517.13" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="#BA3023"><tspan fill="#BA3023" font-size="26.67">92</tspan><tspan fill="#BA3023" font-size="18.67">%</tspan></text>
+<text x="85.61" y="542.33" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="18.67">客户定制需求满足率达</tspan></text>
+</g>
+<g id="shape-152" data-name="文本框 151">
+<rect x="308.6" y="489.67" width="177.64" height="64.62" fill="none" stroke-width="0.333" stroke="#023E80" stroke-dasharray="4 4" />
+<text x="319.94" y="517.13" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="#BA3023"><tspan fill="#BA3023" font-size="26.67">15</tspan><tspan fill="#BA3023" font-size="18.67">分钟</tspan></text>
+<text x="319.94" y="542.33" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="18.67">问题平均响应时间</tspan></text>
+</g>
+<g id="shape-154" data-name="文本框 153">
+<rect x="834.69" y="489.67" width="177.64" height="64.62" fill="none" stroke-width="0.333" stroke="#023E80" stroke-dasharray="4 4" />
+<text x="846.03" y="517.13" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="#BA3023"><tspan fill="#BA3023" font-size="26.67">98</tspan><tspan fill="#BA3023" font-size="18.67">%</tspan></text>
+<text x="846.03" y="542.33" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="18.67">服务全程跟踪率</tspan></text>
+</g>
+<g id="shape-156" data-name="文本框 155">
+<rect x="1029.26" y="489.67" width="177.64" height="64.62" fill="none" stroke-width="0.333" stroke="#023E80" stroke-dasharray="4 4" />
+<text x="1040.6" y="517.13" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="#BA3023"><tspan fill="#BA3023" font-size="26.67">25</tspan><tspan fill="#BA3023" font-size="18.67">%</tspan></text>
+<text x="1040.6" y="542.33" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="18.67">满意度同比提高</tspan></text>
+</g>
+<g id="shape-136" data-name="箭头: 燕尾形 135">
+<rect x="727.49" y="588.94" width="41.57" height="26.17" fill="url(#ggrad3)" stroke-width="0.667" stroke="#BA3023" stroke-opacity="0" />
+</g>
+<g id="shape-142" data-name="箭头: 燕尾形 141" transform="translate(527.56 602.03) scale(-1 1) translate(-527.56 -602.03)">
+<rect x="506.77" y="588.94" width="41.57" height="26.17" fill="url(#ggrad4)" stroke-width="0.667" stroke="#BA3023" stroke-opacity="0" />
+</g>
+<g id="shape-160" data-name="文本框 159">
+<rect x="118.04" y="585.87" width="385.51" height="32.31" fill="none" />
+<text x="118.04" y="606.54" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="18.67">依据客户独特需求，量身定制打造服务方案</tspan></text>
+</g>
+<g id="shape-162" data-name="文本框 161">
+<rect x="775.72" y="585.87" width="385.51" height="32.31" fill="none" />
+<text x="1161.24" y="606.54" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="18.67">服务全程紧密跟踪服务，给客户满满安全感</tspan></text>
+</g>
+<g id="shape-173" data-name="组合 172">
+<g id="shape-172" data-name="矩形: 圆角 171">
+<rect x="74.19" y="584" width="36.05" height="36.05" rx="5.67" ry="5.67" fill="#BA3023" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-171" data-name="图形 170">
+<image href="assets/image34.png" x="80.54" y="590.36" width="23.34" height="23.34" preserveAspectRatio="none" />
+</g>
+</g>
+<g id="shape-197" data-name="组合 196">
+<g id="shape-184" data-name="矩形: 圆角 183">
+<rect x="1171.1" y="584" width="36.05" height="36.05" rx="5.67" ry="5.67" fill="#BA3023" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-196" data-name="图形 195">
+<image href="assets/image35.png" x="1175.89" y="588.8" width="26.46" height="26.46" preserveAspectRatio="none" />
+</g>
+</g>
+<g id="shape-139" data-name="箭头: 燕尾形 138">
+<rect x="727.49" y="637.31" width="41.57" height="26.17" fill="url(#ggrad5)" stroke-width="0.667" stroke="#BA3023" stroke-opacity="0" />
+</g>
+<g id="shape-144" data-name="箭头: 燕尾形 143" transform="translate(527.56 650.4) scale(-1 1) translate(-527.56 -650.4)">
+<rect x="506.77" y="637.31" width="41.57" height="26.17" fill="url(#ggrad6)" stroke-width="0.667" stroke="#BA3023" stroke-opacity="0" />
+</g>
+<g id="shape-161" data-name="文本框 160">
+<rect x="118.04" y="634.24" width="385.51" height="32.31" fill="none" />
+<text x="118.04" y="654.91" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="18.67">问题快速响应，高效</tspan><tspan fill="#0D0D0D" font-size="18.67">快速</tspan><tspan fill="#0D0D0D" font-size="18.67">解决，让客户无忧</tspan></text>
+</g>
+<g id="shape-165" data-name="文本框 164">
+<rect x="777.09" y="634.24" width="385.51" height="32.31" fill="none" />
+<text x="1162.6" y="654.91" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="18.67">根据反馈不断改进服务，推动口碑持续上升</tspan></text>
+</g>
+<g id="shape-194" data-name="组合 193">
+<g id="shape-177" data-name="矩形: 圆角 176">
+<rect x="74.19" y="632.38" width="36.05" height="36.05" rx="5.67" ry="5.67" fill="#BA3023" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-191" data-name="图形 190">
+<image href="assets/image36.png" x="80.5" y="638.68" width="23.43" height="23.43" preserveAspectRatio="none" />
+</g>
+</g>
+<g id="shape-202" data-name="组合 201">
+<g id="shape-188" data-name="矩形: 圆角 187">
+<rect x="1171.1" y="632.38" width="36.05" height="36.05" rx="5.67" ry="5.67" fill="#BA3023" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-200" data-name="图形 199">
+<image href="assets/image37.png" x="1177.4" y="638.68" width="23.43" height="23.43" preserveAspectRatio="none" />
+</g>
+</g></svg>

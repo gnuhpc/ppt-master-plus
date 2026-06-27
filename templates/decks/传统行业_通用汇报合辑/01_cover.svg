@@ -1,0 +1,314 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="layout-shape-16" data-name="直接连接符 15">
+<line x1="25" y1="72" x2="1253" y2="72" stroke-width="4" stroke="#000000" fill="#5B9BD5" />
+</g>
+<g id="shape-104" data-name="Google Shape;423;p17">
+<rect x="48.67" y="243.47" width="1182.8" height="46.2" fill="#FFFFFF" />
+<rect x="48.67" y="289.67" width="188.67" height="51.87" fill="#4472C4" fill-opacity="0.3" />
+<rect x="237.33" y="289.67" width="994.13" height="51.87" fill="#4472C4" fill-opacity="0.3" />
+<rect x="48.67" y="341.53" width="188.67" height="51.87" fill="#4472C4" fill-opacity="0.2" />
+<rect x="237.33" y="341.53" width="994.13" height="51.87" fill="#4472C4" fill-opacity="0.2" />
+<rect x="48.67" y="393.4" width="188.67" height="51.8" fill="#4472C4" fill-opacity="0.3" />
+<rect x="237.33" y="393.4" width="994.13" height="51.8" fill="#4472C4" fill-opacity="0.3" />
+<rect x="48.67" y="445.2" width="188.67" height="51.87" fill="#4472C4" fill-opacity="0.2" />
+<rect x="237.33" y="445.2" width="994.13" height="51.87" fill="#4472C4" fill-opacity="0.2" />
+<rect x="48.67" y="497.07" width="188.67" height="51.87" fill="#4472C4" fill-opacity="0.3" />
+<rect x="237.33" y="497.07" width="994.13" height="51.87" fill="#4472C4" fill-opacity="0.3" />
+<text x="154.89" y="314.61" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, &quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16">{{SUBTITLE}}</tspan></text>
+<text x="154.89" y="366.47" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, &quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16">{{TAGLINE}}</tspan></text>
+<text x="154.89" y="418.34" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, &quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16">{{TAGLINE}}</tspan></text>
+<text x="154.89" y="470.14" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, &quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16">{{TAGLINE}}</tspan></text>
+<text x="150.13" y="522.01" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, &quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16">{{TAGLINE}}</tspan></text>
+<line x1="48.67" y1="289.67" x2="1231.47" y2="289.67" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="48.67" y1="289.67" x2="237.33" y2="289.67" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="289.67" x2="237.33" y2="341.53" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="48.67" y1="341.53" x2="237.33" y2="341.53" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="289.67" x2="1231.47" y2="289.67" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="341.53" x2="1231.47" y2="341.53" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="289.67" x2="237.33" y2="341.53" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="48.67" y1="341.53" x2="237.33" y2="341.53" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="341.53" x2="237.33" y2="393.4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="48.67" y1="393.4" x2="237.33" y2="393.4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="341.53" x2="1231.47" y2="341.53" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="393.4" x2="1231.47" y2="393.4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="341.53" x2="237.33" y2="393.4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="48.67" y1="393.4" x2="237.33" y2="393.4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="393.4" x2="237.33" y2="445.2" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="48.67" y1="445.2" x2="237.33" y2="445.2" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="393.4" x2="1231.47" y2="393.4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="445.2" x2="1231.47" y2="445.2" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="393.4" x2="237.33" y2="445.2" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="48.67" y1="445.2" x2="237.33" y2="445.2" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="445.2" x2="237.33" y2="497.07" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="48.67" y1="497.07" x2="237.33" y2="497.07" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="445.2" x2="1231.47" y2="445.2" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="497.07" x2="1231.47" y2="497.07" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="445.2" x2="237.33" y2="497.07" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="48.67" y1="497.07" x2="237.33" y2="497.07" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="497.07" x2="237.33" y2="548.93" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="48.67" y1="548.93" x2="237.33" y2="548.93" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="497.07" x2="1231.47" y2="497.07" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="548.93" x2="1231.47" y2="548.93" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+<line x1="237.33" y1="497.07" x2="237.33" y2="548.93" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="round" />
+</g>
+<g id="shape-37" data-name="文本框 36">
+<rect x="24.87" y="16.53" width="655" height="51.6" fill="none" />
+<text x="34.47" y="50.8" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="34.67" fill="#4472C4" font-weight="bold"><tspan fill="#4472C4" font-size="34.67">{{TITLE}}</tspan></text>
+</g>
+<g id="shape-12" data-name="组合 11">
+<g id="shape-43" data-name="任意形状 42">
+<path d="M 147.27 101.27 L 237.59 101.27 L 237.59 147.53 L 147.27 147.53 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="192.43" y="130" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16">{{DATE}}</tspan></text>
+</g>
+<g id="shape-2" data-name="任意形状 43">
+<path d="M 237.59 101.27 L 327.91 101.27 L 327.91 147.53 L 237.59 147.53 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="282.75" y="130" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16">{{DATE}}</tspan></text>
+</g>
+<g id="shape-45" data-name="任意形状 44">
+<path d="M 327.91 101.27 L 418.23 101.27 L 418.23 147.53 L 327.91 147.53 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="373.07" y="130" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16">{{DATE}}</tspan></text>
+</g>
+<g id="shape-46" data-name="任意形状 45">
+<path d="M 418.35 101.27 L 508.67 101.27 L 508.67 147.53 L 418.35 147.53 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="463.51" y="130" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16">{{DATE}}</tspan></text>
+</g>
+<g id="shape-47" data-name="任意形状 46">
+<path d="M 508.67 101.27 L 598.99 101.27 L 598.99 147.53 L 508.67 147.53 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="553.83" y="130" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16">{{DATE}}</tspan></text>
+</g>
+<g id="shape-3" data-name="任意形状 47">
+<path d="M 598.99 101.27 L 689.31 101.27 L 689.31 147.53 L 598.99 147.53 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="644.15" y="130" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16">{{DATE}}</tspan></text>
+</g>
+<g id="shape-4" data-name="任意形状 48">
+<path d="M 689.31 101.27 L 779.63 101.27 L 779.63 147.53 L 689.31 147.53 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="734.47" y="130" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16">{{DATE}}</tspan></text>
+</g>
+<g id="shape-8" data-name="任意形状 49">
+<path d="M 779.75 101.27 L 870.07 101.27 L 870.07 147.53 L 779.75 147.53 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="824.91" y="130" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16">{{DATE}}</tspan></text>
+</g>
+<g id="shape-9" data-name="任意形状 50">
+<path d="M 870.07 101.27 L 960.39 101.27 L 960.39 147.53 L 870.07 147.53 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="915.23" y="130" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16">{{DATE}}</tspan></text>
+</g>
+<g id="shape-52" data-name="任意形状 51">
+<path d="M 960.39 101.27 L 1050.71 101.27 L 1050.71 147.53 L 960.39 147.53 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="1005.55" y="130" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16">{{DATE}}</tspan></text>
+</g>
+<g id="shape-10" data-name="任意形状 52">
+<path d="M 1050.83 101.27 L 1141.15 101.27 L 1141.15 147.53 L 1050.83 147.53 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="1095.99" y="130" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16">{{DATE}}</tspan></text>
+</g>
+<g id="shape-54" data-name="任意形状 53">
+<path d="M 1141.15 101.27 L 1231.47 101.27 L 1231.47 147.53 L 1141.15 147.53 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="1186.31" y="130" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16">{{DATE}}</tspan></text>
+</g>
+</g>
+<g id="shape-118" data-name="直线连接符 117">
+<line x1="48.67" y1="169.58" x2="1231.47" y2="169.58" stroke-width="1.667" stroke="#D0CECE" stroke-dasharray="4 4" fill="#5B9BD5" />
+</g>
+<g id="shape-13" data-name="组合 12">
+<g id="shape-16" data-name="任意形状 42">
+<path d="M 147.27 189.73 L 237.59 189.73 L 237.59 236 L 147.27 236 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="192.43" y="218.47" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">55</tspan></text>
+</g>
+<g id="shape-17" data-name="任意形状 43">
+<path d="M 237.59 189.73 L 327.91 189.73 L 327.91 236 L 237.59 236 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="282.75" y="218.47" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">58</tspan></text>
+</g>
+<g id="shape-20" data-name="任意形状 44">
+<path d="M 327.91 189.73 L 418.23 189.73 L 418.23 236 L 327.91 236 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="373.07" y="218.47" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">31</tspan></text>
+</g>
+<g id="shape-22" data-name="任意形状 45">
+<path d="M 418.35 189.73 L 508.67 189.73 L 508.67 236 L 418.35 236 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="463.51" y="218.47" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">42</tspan></text>
+</g>
+<g id="shape-24" data-name="任意形状 46">
+<path d="M 508.67 189.73 L 598.99 189.73 L 598.99 236 L 508.67 236 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="553.83" y="218.47" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">56</tspan></text>
+</g>
+<g id="shape-30" data-name="任意形状 47">
+<path d="M 598.99 189.73 L 689.31 189.73 L 689.31 236 L 598.99 236 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="644.15" y="218.47" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">72</tspan></text>
+</g>
+<g id="shape-32" data-name="任意形状 48">
+<path d="M 689.31 189.73 L 779.63 189.73 L 779.63 236 L 689.31 236 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="734.47" y="218.47" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">84</tspan></text>
+</g>
+<g id="shape-33" data-name="任意形状 49">
+<path d="M 779.75 189.73 L 870.07 189.73 L 870.07 236 L 779.75 236 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="824.91" y="218.47" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">34</tspan></text>
+</g>
+<g id="shape-34" data-name="任意形状 50">
+<path d="M 870.07 189.73 L 960.39 189.73 L 960.39 236 L 870.07 236 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="915.23" y="218.47" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">58</tspan></text>
+</g>
+<g id="shape-35" data-name="任意形状 51">
+<path d="M 960.39 189.73 L 1050.71 189.73 L 1050.71 236 L 960.39 236 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="1005.55" y="218.47" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">62</tspan></text>
+</g>
+<g id="shape-36" data-name="任意形状 52">
+<path d="M 1050.83 189.73 L 1141.15 189.73 L 1141.15 236 L 1050.83 236 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="1095.99" y="218.47" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">70</tspan></text>
+</g>
+<g id="shape-39" data-name="任意形状 53">
+<path d="M 1141.15 189.73 L 1231.47 189.73 L 1231.47 236 L 1141.15 236 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="1186.31" y="218.47" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">46</tspan></text>
+</g>
+</g>
+<g id="shape-41" data-name="组合 40">
+<g id="shape-55" data-name="任意形状 42">
+<path d="M 147.2 243.87 L 237.52 243.87 L 237.52 290.13 L 147.2 290.13 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="192.36" y="272.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">28</tspan></text>
+</g>
+<g id="shape-65" data-name="任意形状 43">
+<path d="M 237.46 243.87 L 327.73 243.87 L 327.73 290.13 L 237.46 290.13 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="282.6" y="272.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">42</tspan></text>
+</g>
+<g id="shape-66" data-name="任意形状 44">
+<path d="M 327.67 243.87 L 418.17 243.87 L 418.17 290.13 L 327.67 290.13 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="372.92" y="272.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">24</tspan></text>
+</g>
+<g id="shape-70" data-name="任意形状 45">
+<path d="M 418.3 243.87 L 508.62 243.87 L 508.62 290.13 L 418.3 290.13 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="463.46" y="272.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">40</tspan></text>
+</g>
+<g id="shape-72" data-name="任意形状 46">
+<path d="M 508.62 243.87 L 598.95 243.87 L 598.95 290.13 L 508.62 290.13 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="553.78" y="272.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">62</tspan></text>
+</g>
+<g id="shape-73" data-name="任意形状 47">
+<path d="M 598.95 243.87 L 689.27 243.87 L 689.27 290.13 L 598.95 290.13 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="644.11" y="272.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">48</tspan></text>
+</g>
+<g id="shape-74" data-name="任意形状 48">
+<path d="M 689.27 243.87 L 779.6 243.87 L 779.6 290.13 L 689.27 290.13 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="734.43" y="272.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">51</tspan></text>
+</g>
+<g id="shape-75" data-name="任意形状 49">
+<path d="M 779.72 243.87 L 870.04 243.87 L 870.04 290.13 L 779.72 290.13 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="824.88" y="272.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">71</tspan></text>
+</g>
+<g id="shape-76" data-name="任意形状 50">
+<path d="M 870.04 243.87 L 960.37 243.87 L 960.37 290.13 L 870.04 290.13 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="915.21" y="272.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">62</tspan></text>
+</g>
+<g id="shape-77" data-name="任意形状 51">
+<path d="M 960.37 243.87 L 1050.69 243.87 L 1050.69 290.13 L 960.37 290.13 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="1005.53" y="272.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">52</tspan></text>
+</g>
+<g id="shape-78" data-name="任意形状 52">
+<path d="M 1050.82 243.87 L 1141.14 243.87 L 1141.14 290.13 L 1050.82 290.13 Z" fill="#4472C4" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="1095.98" y="272.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">48</tspan></text>
+</g>
+<g id="shape-79" data-name="任意形状 53">
+<path d="M 1141.14 243.87 L 1231.47 243.87 L 1231.47 290.13 L 1141.14 290.13 Z" fill="#5B9BD5" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="1186.3" y="272.6" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">52</tspan></text>
+</g>
+</g>
+<g id="shape-105" data-name="Rounded Rectangle 4">
+<rect x="254.43" y="303.66" width="963.23" height="26.41" rx="13.21" ry="13.21" fill="#FFFFFF" stroke-width="1.667" stroke="#5B9BD5" />
+</g>
+<g id="shape-106" data-name="Rounded Rectangle 4">
+<rect x="254.47" y="303.67" width="481.13" height="26.4" rx="13.2" ry="13.2" fill="#4472C4" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-107" data-name="Rounded Rectangle 4">
+<rect x="254.43" y="353.14" width="963.23" height="26.41" rx="13.21" ry="13.21" fill="#FFFFFF" stroke-width="1.667" stroke="#ED7D31" />
+</g>
+<g id="shape-108" data-name="Rounded Rectangle 4">
+<rect x="254.4" y="353.13" width="409.93" height="26.4" rx="13.2" ry="13.2" fill="#ED7D31" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-109" data-name="Rounded Rectangle 4">
+<rect x="254.43" y="404.89" width="963.23" height="26.41" rx="13.21" ry="13.21" fill="#FFFFFF" stroke-width="1.667" stroke="#5B9BD5" />
+</g>
+<g id="shape-110" data-name="Rounded Rectangle 4">
+<rect x="254.47" y="404.87" width="707.67" height="26.4" rx="13.2" ry="13.2" fill="#4472C4" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-111" data-name="Rounded Rectangle 4">
+<rect x="254.43" y="454.38" width="963.23" height="26.41" rx="13.21" ry="13.21" fill="#FFFFFF" stroke-width="1.667" stroke="#ED7D31" />
+</g>
+<g id="shape-112" data-name="Rounded Rectangle 4">
+<rect x="254.4" y="454.4" width="554.73" height="28.4" rx="14.2" ry="14.2" fill="#ED7D31" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-113" data-name="Rounded Rectangle 4">
+<rect x="254.43" y="509.67" width="963.23" height="26.41" rx="13.21" ry="13.21" fill="#FFFFFF" stroke-width="1.667" stroke="#5B9BD5" />
+</g>
+<g id="shape-114" data-name="Rounded Rectangle 4">
+<rect x="254.4" y="509.67" width="793" height="26.4" rx="13.2" ry="13.2" fill="#4472C4" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-115" data-name="文本框 114">
+<rect x="735.58" y="295.95" width="311.16" height="38.67" fill="none" />
+<text x="745.18" y="314.35" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#5B9BD5"><tspan fill="#5B9BD5" font-size="16">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-116" data-name="文本框 115">
+<rect x="664.32" y="344.57" width="311.16" height="38.67" fill="none" />
+<text x="673.92" y="362.97" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#ED7D31"><tspan fill="#ED7D31" font-size="16">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-117" data-name="文本框 116">
+<rect x="962.17" y="397.18" width="288.38" height="38.67" fill="none" />
+<text x="971.77" y="415.58" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#5B9BD5"><tspan fill="#5B9BD5" font-size="16">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-119" data-name="文本框 118">
+<rect x="809.12" y="446.74" width="311.16" height="38.67" fill="none" />
+<text x="818.72" y="465.14" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#ED7D31"><tspan fill="#ED7D31" font-size="16">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-120" data-name="文本框 119">
+<rect x="1046.72" y="500.69" width="181.32" height="38.67" fill="none" stroke-width="1.667" stroke="none" />
+<text x="1056.32" y="519.09" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#5B9BD5"><tspan fill="#5B9BD5" font-size="16">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-121" data-name="任意形状 42">
+<path d="M 48.67 101.27 L 147.27 101.27 L 147.27 147.53 L 48.67 147.53 Z" fill="#ED7D31" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="97.97" y="130" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">数据明细</tspan></text>
+</g>
+<g id="shape-122" data-name="任意形状 42">
+<path d="M 48.6 189.73 L 147.2 189.73 L 147.2 236 L 48.6 236 Z" fill="#ED7D31" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="97.9" y="217.53" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="13.33">{{DATE}}</tspan></text>
+</g>
+<g id="shape-123" data-name="任意形状 42">
+<path d="M 48.6 243.47 L 147.27 243.47 L 147.27 289.73 L 48.6 289.73 Z" fill="#ED7D31" stroke-width="1.333" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+<text x="97.93" y="271.27" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="13.33">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-126" data-name="圆角矩形 125" transform="translate(1090.83 627.33) scale(-1 1) translate(-1090.83 -627.33)">
+<rect x="950.27" y="564" width="281.13" height="126.67" rx="7.73" ry="7.73" fill="#F2F2F2" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-128" data-name="圆角矩形 127" transform="translate(790.3 627.33) scale(-1 1) translate(-790.3 -627.33)">
+<rect x="649.73" y="564" width="281.13" height="126.67" rx="7.73" ry="7.73" fill="#F2F2F2" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-129" data-name="圆角矩形 128" transform="translate(489.77 627.33) scale(-1 1) translate(-489.77 -627.33)">
+<rect x="349.2" y="564" width="281.13" height="126.67" rx="7.73" ry="7.73" fill="#F2F2F2" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-130" data-name="圆角矩形 129" transform="translate(189.23 627.33) scale(-1 1) translate(-189.23 -627.33)">
+<rect x="48.67" y="564" width="281.13" height="126.67" rx="7.73" ry="7.73" fill="#F2F2F2" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-131" data-name="文本框 130">
+<rect x="53.47" y="574.2" width="263" height="106.2" fill="none" />
+<text x="63.07" y="597.13" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#4472C4" font-weight="bold"><tspan fill="#4472C4" font-size="21.33">{{DATE}}</tspan></text>
+<text x="63.07" y="618.07" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#1F2329"><tspan fill="#1F2329" font-size="13.33">{{DATE}}</tspan></text>
+</g>
+<g id="shape-132" data-name="文本框 131">
+<rect x="353.93" y="574.2" width="263" height="106.2" fill="none" />
+<text x="363.53" y="597.13" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#4472C4" font-weight="bold"><tspan fill="#4472C4" font-size="21.33">{{DATE}}</tspan></text>
+<text x="363.53" y="618.07" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#1F2329"><tspan fill="#1F2329" font-size="13.33">{{DATE}}</tspan></text>
+</g>
+<g id="shape-133" data-name="文本框 132">
+<rect x="654.4" y="574.2" width="263" height="106.2" fill="none" />
+<text x="664" y="597.13" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#4472C4" font-weight="bold"><tspan fill="#4472C4" font-size="21.33">{{DATE}}</tspan></text>
+<text x="664" y="618.07" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#1F2329"><tspan fill="#1F2329" font-size="13.33">{{DATE}}</tspan></text>
+</g>
+<g id="shape-134" data-name="文本框 133">
+<rect x="954.87" y="574.2" width="263" height="106.2" fill="none" />
+<text x="964.47" y="597.13" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#4472C4" font-weight="bold"><tspan fill="#4472C4" font-size="21.33">{{DATE}}</tspan></text>
+<text x="964.47" y="618.07" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#1F2329"><tspan fill="#1F2329" font-size="13.33">{{DATE}}</tspan></text>
+</g>
+<g id="shape-135" data-name="直接连接符 134">
+<line x1="338.6" y1="579.99" x2="338.6" y2="675.99" stroke-width="3" stroke="#4472C4" fill="#5B9BD5" />
+</g>
+<g id="shape-137" data-name="直接连接符 136">
+<line x1="639.07" y1="579.99" x2="639.07" y2="675.99" stroke-width="3" stroke="#4472C4" fill="#5B9BD5" />
+</g>
+<g id="shape-138" data-name="直接连接符 137">
+<line x1="939.53" y1="584.39" x2="939.53" y2="680.39" stroke-width="3" stroke="#4472C4" fill="#5B9BD5" />
+</g></svg>

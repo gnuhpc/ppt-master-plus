@@ -1,0 +1,210 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0.07" stop-color="#FFF2F0" stop-opacity="0" /><stop offset="0.66" stop-color="#FF684A" /></linearGradient><linearGradient id="ggrad2" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#BF3C2E" /><stop offset="0.99" stop-color="#D02300" /></linearGradient><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="9.33" stdDeviation="17.33" flood-color="#D02300" flood-opacity="0.38" /></filter><linearGradient id="ggrad3" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#BF3C2E" /><stop offset="0.99" stop-color="#D02300" /></linearGradient><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="9.33" stdDeviation="17.33" flood-color="#D02300" flood-opacity="0.38" /></filter><linearGradient id="ggrad4" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#BF3C2E" /><stop offset="0.99" stop-color="#D02300" /></linearGradient><filter id="fx3" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="9.33" stdDeviation="17.33" flood-color="#D02300" flood-opacity="0.38" /></filter><linearGradient id="ggrad5" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#BF3C2E" /><stop offset="0.99" stop-color="#D02300" /></linearGradient><filter id="fx4" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="9.33" stdDeviation="17.33" flood-color="#D02300" flood-opacity="0.38" /></filter><filter id="fx5" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="0" stdDeviation="5.33" flood-color="#FF684A" flood-opacity="0.45" /></filter><linearGradient id="ggrad6" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#BF3C2E" /><stop offset="0.99" stop-color="#D02300" /></linearGradient><filter id="fx6" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="9.33" stdDeviation="17.33" flood-color="#D02300" flood-opacity="0.38" /></filter><filter id="fx7" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="0" stdDeviation="5.33" flood-color="#FF684A" flood-opacity="0.45" /></filter><linearGradient id="ggrad7" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0.07" stop-color="#FFF2F0" stop-opacity="0" /><stop offset="0.66" stop-color="#FF684A" /></linearGradient><linearGradient id="ggrad8" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0.48" stop-color="#FFCDC3" stop-opacity="0" /><stop offset="1" stop-color="#FFCDC3" /></linearGradient><linearGradient id="ggrad9" x1="0" y1="0" x2="1" y2="1"><stop offset="0.23" stop-color="#D02300" /><stop offset="1" stop-color="#FF684A" /></linearGradient><filter id="fx8" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="18.67" stdDeviation="16" flood-color="#D02300" flood-opacity="0.36" /></filter><linearGradient id="ggrad10" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0.15" stop-color="#D02300" stop-opacity="0.05" /><stop offset="0.95" stop-color="#D02300" stop-opacity="0.1" /></linearGradient><filter id="fx9" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="13.33" stdDeviation="20" flood-color="#D02300" flood-opacity="0.2" /></filter><linearGradient id="ggrad11" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#D02300" stop-opacity="0" /><stop offset="1" stop-color="#D02300" /></linearGradient><linearGradient id="ggrad12" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#D02300" stop-opacity="0" /><stop offset="1" stop-color="#D02300" /></linearGradient><linearGradient id="ggrad13" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#D02300" stop-opacity="0" /><stop offset="1" stop-color="#D02300" /></linearGradient><linearGradient id="ggrad14" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#D02300" stop-opacity="0" /><stop offset="1" stop-color="#D02300" /></linearGradient><linearGradient id="ggrad15" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0" stop-color="#D02300" /><stop offset="0.67" stop-color="#D02300" /><stop offset="1" stop-color="#FF9B86" /></linearGradient><filter id="fx10" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="11.2" stdDeviation="18.66" flood-color="#BF3C2E" flood-opacity="0.4" /></filter><linearGradient id="ggrad16" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0" stop-color="#D02300" /><stop offset="0.67" stop-color="#D02300" /><stop offset="1" stop-color="#FF9B86" /></linearGradient><filter id="fx11" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="11.2" stdDeviation="18.66" flood-color="#BF3C2E" flood-opacity="0.4" /></filter><linearGradient id="ggrad17" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0" stop-color="#D02300" /><stop offset="0.67" stop-color="#D02300" /><stop offset="1" stop-color="#FF9B86" /></linearGradient><filter id="fx12" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="11.2" stdDeviation="18.66" flood-color="#BF3C2E" flood-opacity="0.4" /></filter><linearGradient id="ggrad18" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0" stop-color="#D02300" /><stop offset="0.67" stop-color="#D02300" /><stop offset="1" stop-color="#FF9B86" /></linearGradient><filter id="fx13" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="11.2" stdDeviation="18.66" flood-color="#BF3C2E" flood-opacity="0.4" /></filter><linearGradient id="ggrad19" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#D02300" /><stop offset="1" stop-color="#FF684A" /></linearGradient><filter id="fx14" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="4.07" dy="4.07" stdDeviation="14.4" flood-color="#D02300" flood-opacity="0.5" /></filter></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-12" data-name="组合 11">
+<g id="shape-194" data-name="箭头: 右 34">
+<path d="M 185.14 355.32 C 192.21 361.69 202.93 371.94 211.41 372.53 L 211.41 367.11 L 222.24 377.94 L 211.41 388.77 L 211.41 383.35 C 202.22 385.44 192.56 394.23 185.97 402.91 C 185.89 397.34 185.22 360.9 185.14 355.32 Z" fill="url(#ggrad1)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-209" data-name="组合 208">
+<g id="shape-195" data-name="矩形: 圆角 194">
+<rect x="32" y="321.96" width="141.33" height="48.8" rx="4.88" ry="4.88" fill="url(#ggrad2)" stroke="none" stroke-width="1" filter="url(#fx1)" />
+<text x="102.67" y="354.76" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">虚拟实验</tspan></text>
+</g>
+<g id="shape-196" data-name="矩形: 圆角 195">
+<rect x="32" y="387.48" width="141.33" height="48.8" rx="4.88" ry="4.88" fill="url(#ggrad3)" stroke="none" stroke-width="1" filter="url(#fx2)" />
+<text x="102.67" y="420.28" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">教学视频</tspan></text>
+</g>
+<g id="shape-197" data-name="矩形: 圆角 196">
+<rect x="32" y="453.01" width="141.33" height="48.8" rx="4.88" ry="4.88" fill="url(#ggrad4)" stroke="none" stroke-width="1" filter="url(#fx3)" />
+<text x="102.67" y="485.81" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">在线题库</tspan></text>
+</g>
+<g id="shape-199" data-name="矩形: 圆角 198">
+<rect x="32" y="256.43" width="141.33" height="48.8" rx="4.88" ry="4.88" fill="url(#ggrad5)" stroke="none" stroke-width="1" filter="url(#fx4)" />
+<text x="102.67" y="289.23" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">3D</tspan><tspan fill="#FFFFFF" font-size="24">模型</tspan></text>
+</g>
+</g>
+<g id="shape-226" data-name="组合 225">
+<g id="shape-124" data-name="矩形: 圆角 123">
+<rect x="234.05" y="256.43" width="209.18" height="245.37" rx="8.37" ry="8.37" fill="#FFFFFF" stroke-width="0.667" stroke="#F9E3E1" filter="url(#fx5)" />
+</g>
+<g id="shape-210" data-name="组合 209">
+<g id="shape-204" data-name="矩形: 圆角 203">
+<rect x="244.18" y="268.08" width="188.92" height="48.8" rx="6.74" ry="6.74" fill="#F2F2F2" stroke="none" stroke-width="1" />
+<text x="338.64" y="300.88" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#404040"><tspan fill="#404040" font-size="24">数控编程</tspan></text>
+</g>
+<g id="shape-205" data-name="矩形: 圆角 204">
+<rect x="244.18" y="325.84" width="188.92" height="48.8" rx="3.35" ry="3.35" fill="#F2F2F2" stroke="none" stroke-width="1" />
+<text x="338.64" y="358.64" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#404040"><tspan fill="#404040" font-size="24">加工工艺设计</tspan></text>
+</g>
+<g id="shape-206" data-name="矩形: 圆角 205">
+<rect x="244.18" y="383.6" width="188.92" height="48.8" rx="3.35" ry="3.35" fill="#F2F2F2" stroke="none" stroke-width="1" />
+<text x="338.64" y="416.4" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#404040"><tspan fill="#404040" font-size="24">操作练习</tspan></text>
+</g>
+<g id="shape-208" data-name="矩形: 圆角 207">
+<rect x="244.18" y="441.36" width="188.92" height="48.8" rx="3.35" ry="3.35" fill="#F2F2F2" stroke="none" stroke-width="1" />
+<text x="338.64" y="474.16" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#404040"><tspan fill="#404040" font-size="24">数据导入</tspan></text>
+</g>
+</g>
+</g>
+</g>
+<g id="shape-13" data-name="组合 12">
+<g id="shape-216" data-name="矩形: 圆角 215">
+<rect x="1106.67" y="256.43" width="141.33" height="245.37" rx="5.65" ry="5.65" fill="url(#ggrad6)" stroke="none" stroke-width="1" filter="url(#fx6)" />
+<text x="1177.33" y="375.52" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">协同管理</tspan></text>
+<text x="1177.33" y="399.52" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">信息体系</tspan></text>
+</g>
+<g id="shape-229" data-name="组合 228">
+<g id="shape-218" data-name="矩形: 圆角 217">
+<rect x="836.77" y="256.43" width="209.18" height="245.37" rx="8.37" ry="8.37" fill="#FFFFFF" stroke-width="0.667" stroke="#F9E3E1" filter="url(#fx7)" />
+</g>
+<g id="shape-219" data-name="组合 218">
+<g id="shape-220" data-name="矩形: 圆角 219">
+<rect x="846.91" y="268.08" width="188.92" height="48.8" rx="6.74" ry="6.74" fill="#F2F2F2" stroke="none" stroke-width="1" />
+<text x="941.36" y="300.88" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#404040"><tspan fill="#404040" font-size="24">多模态数据</tspan></text>
+</g>
+<g id="shape-221" data-name="矩形: 圆角 220">
+<rect x="846.91" y="325.84" width="188.92" height="48.8" rx="3.35" ry="3.35" fill="#F2F2F2" stroke="none" stroke-width="1" />
+<text x="941.36" y="358.64" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#404040"><tspan fill="#404040" font-size="24">用户画像</tspan></text>
+</g>
+<g id="shape-222" data-name="矩形: 圆角 221">
+<rect x="846.91" y="383.6" width="188.92" height="48.8" rx="3.35" ry="3.35" fill="#F2F2F2" stroke="none" stroke-width="1" />
+<text x="941.36" y="416.4" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#404040"><tspan fill="#404040" font-size="24">知识图谱</tspan></text>
+</g>
+<g id="shape-223" data-name="矩形: 圆角 222">
+<rect x="846.91" y="441.36" width="188.92" height="48.8" rx="3.35" ry="3.35" fill="#F2F2F2" stroke="none" stroke-width="1" />
+<text x="941.36" y="474.16" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="24" fill="#404040"><tspan fill="#404040" font-size="24">习题库资源</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-224" data-name="箭头: 右 34">
+<path d="M 1057.76 355.32 C 1064.83 361.69 1075.55 371.94 1084.03 372.53 L 1084.03 367.11 L 1094.86 377.94 L 1084.03 388.77 L 1084.03 383.35 C 1074.84 385.44 1065.18 394.23 1058.59 402.91 C 1058.51 397.34 1057.84 360.9 1057.76 355.32 Z" fill="url(#ggrad7)" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-10" data-name="组合 9">
+<g id="shape-139" data-name="组合 138">
+<g id="shape-140" data-name="梯形 139">
+<polygon points="57.98,509.54 1222.02,509.54 1264,610.69 16,610.69" fill="url(#ggrad8)" stroke-width="1" stroke-linecap="round" stroke="#FFCDC3" stroke-opacity="0" stroke-linejoin="round" />
+</g>
+<g id="shape-141" data-name="圆角矩形 359">
+<rect x="16" y="610.41" width="1248" height="148.67" rx="0" ry="0" fill="url(#ggrad9)" stroke="none" stroke-width="1" filter="url(#fx8)" />
+</g>
+</g>
+<g id="shape-143" data-name="文本框 142">
+<rect x="141.5" y="643.94" width="997.01" height="42.01" fill="none" />
+<text x="640" y="671.4" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">{{CHAPTER_DESC}}</tspan></text>
+</g>
+</g>
+<g id="shape-9" data-name="组合 8">
+<g id="shape-178" data-name="米菲PPT13">
+<polygon points="66.06,107.46 1213.94,107.46 1248,151.88 32,151.88" fill="url(#ggrad10)" stroke-width="0.187" stroke="#D02300" stroke-opacity="0" />
+</g>
+<g id="shape-2" data-name="组合 1">
+<g id="shape-122" data-name="矩形: 圆角 121">
+<rect x="32" y="154.9" width="1216" height="59.66" rx="0.45" ry="0.45" fill="#FFFFFF" stroke-width="2" stroke="#FF684A" stroke-dasharray="4 4" filter="url(#fx9)" />
+</g>
+<g id="shape-123" data-name="组合 122">
+<g id="shape-112" data-name="文本框 111">
+<rect x="54.36" y="163.73" width="98.65" height="42.01" fill="none" />
+<text x="63.96" y="191.19" text-anchor="start" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#D02300"><tspan fill="#D02300" font-size="26.67">数字化</tspan></text>
+</g>
+<g id="shape-115" data-name="文本框 114">
+<rect x="322.52" y="163.73" width="98.65" height="42.01" fill="none" />
+<text x="332.12" y="191.19" text-anchor="start" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#D02300"><tspan fill="#D02300" font-size="26.67">智能化</tspan></text>
+</g>
+<g id="shape-114" data-name="文本框 113">
+<rect x="590.67" y="163.73" width="98.65" height="42.01" fill="none" />
+<text x="600.27" y="191.19" text-anchor="start" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#D02300"><tspan fill="#D02300" font-size="26.67">多样化</tspan></text>
+</g>
+<g id="shape-113" data-name="文本框 112">
+<rect x="858.83" y="163.73" width="98.65" height="42.01" fill="none" />
+<text x="868.43" y="191.19" text-anchor="start" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#D02300"><tspan fill="#D02300" font-size="26.67">精准化</tspan></text>
+</g>
+<g id="shape-116" data-name="文本框 115">
+<rect x="1126.99" y="163.73" width="98.65" height="42.01" fill="none" />
+<text x="1136.59" y="191.19" text-anchor="start" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#D02300"><tspan fill="#D02300" font-size="26.67">一体化</tspan></text>
+</g>
+<g id="shape-117" data-name="箭头: 右 116">
+<polygon points="172.85,182.32 237.76,182.32 237.76,178.38 302.67,184.73 237.76,191.08 237.76,187.14 172.85,187.14" fill="url(#ggrad11)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-118" data-name="箭头: 右 117">
+<polygon points="441.01,182.32 505.92,182.32 505.92,178.38 570.83,184.73 505.92,191.08 505.92,187.14 441.01,187.14" fill="url(#ggrad12)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-119" data-name="箭头: 右 118">
+<polygon points="709.17,182.32 774.08,182.32 774.08,178.38 838.99,184.73 774.08,191.08 774.08,187.14 709.17,187.14" fill="url(#ggrad13)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-120" data-name="箭头: 右 119">
+<polygon points="977.33,182.32 1042.24,182.32 1042.24,178.38 1107.15,184.73 1042.24,191.08 1042.24,187.14 977.33,187.14" fill="url(#ggrad14)" stroke="none" stroke-width="1" />
+</g>
+</g>
+</g>
+<g id="shape-170" data-name="米菲PPT30">
+<rect x="312.23" y="65.3" width="655.54" height="68.78" fill="none" />
+<text x="321.83" y="106.36" text-anchor="start" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="42.67" fill="#9C6ABA"><tspan fill="#9C6ABA" font-size="42.67">{{CHAPTER_TITLE}}</tspan></text>
+</g>
+</g>
+<g id="shape-24" data-name="组合 23">
+<g id="shape-22" data-name="组合 21" transform="rotate(317.63 640 405.51)">
+<g id="shape-6" data-name="Freeform: Shape 5">
+<path d="M 699.08 500.57 L 699.08 410.16 C 696.64 440.92 670.9 464.65 639.96 464.65 C 638.38 464.65 636.83 464.59 635.29 464.47 L 544.65 464.47 C 535.14 464.47 526.01 468.24 519.28 474.96 L 502.46 491.74 C 531.21 537.25 582.04 567.5 639.96 567.5 C 670.55 567.54 700.52 558.93 726.41 542.66 L 709.59 525.88 C 702.86 519.17 699.08 510.06 699.08 500.57 Z" fill="url(#ggrad15)" stroke-width="1.728" stroke="#FFFFFF" filter="url(#fx10)" />
+</g>
+<g id="shape-3" data-name="Freeform: Shape 2">
+<path d="M 580.84 310.43 L 580.84 400.84 C 583.28 370.07 609.02 346.34 639.96 346.34 C 641.53 346.34 643.09 346.4 644.63 346.52 L 735.26 346.52 C 744.78 346.52 753.9 342.75 760.64 336.04 L 777.45 319.26 C 748.7 273.74 697.87 243.5 639.96 243.5 C 609.36 243.45 579.39 252.06 553.51 268.34 L 570.33 285.11 C 577.06 291.83 580.84 300.93 580.84 310.43 Z" fill="url(#ggrad16)" stroke-width="1.728" stroke="#FFFFFF" filter="url(#fx11)" />
+</g>
+<g id="shape-4" data-name="Freeform: Shape 3">
+<path d="M 544.65 464.47 L 635.29 464.47 C 604.44 462.04 580.66 436.36 580.66 405.5 C 580.66 403.93 580.72 402.38 580.84 400.84 L 580.84 310.43 C 580.84 300.93 577.06 291.83 570.33 285.11 L 553.51 268.34 C 507.88 297.01 477.56 347.72 477.56 405.5 C 477.51 436.01 486.15 465.92 502.46 491.74 L 519.28 474.96 C 526.01 468.24 535.14 464.47 544.65 464.47 Z" fill="url(#ggrad17)" stroke-width="1.728" stroke="#FFFFFF" filter="url(#fx12)" />
+</g>
+<g id="shape-5" data-name="Freeform: Shape 4">
+<path d="M 802.35 405.5 C 802.4 374.98 793.76 345.07 777.45 319.26 L 760.64 336.04 C 753.9 342.75 744.78 346.52 735.26 346.52 L 644.63 346.52 C 675.47 348.95 699.26 374.63 699.26 405.5 C 699.26 407.06 699.2 408.62 699.08 410.16 L 699.08 500.57 C 699.08 510.06 702.86 519.17 709.59 525.88 L 726.41 542.66 C 772.03 513.98 802.35 463.27 802.35 405.5 Z" fill="url(#ggrad18)" stroke-width="1.728" stroke="#FFFFFF" filter="url(#fx13)" />
+</g>
+</g>
+<g id="shape-20" data-name="组合 19">
+<g id="shape-16" data-name="文本框 15" transform="rotate(324.2 598.54 337.84)">
+<rect x="525.21" y="305.38" width="146.66" height="64.91" fill="none" />
+<text x="598.54" y="328.57" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="22.4" fill="#FFFFFF" font-weight="bold" letter-spacing="1.33"><tspan fill="#FFFFFF" font-size="22.4" font-weight="bold" letter-spacing="1.33">混合式教学</tspan></text>
+</g>
+<g id="shape-17" data-name="文本框 16" transform="rotate(57.6 710.06 363.47)">
+<rect x="636.73" y="330.26" width="146.66" height="66.43" fill="none" />
+<text x="710.06" y="353.44" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="22.4" fill="#FFFFFF" font-weight="bold" letter-spacing="1.33"><tspan fill="#FFFFFF" font-size="22.4" font-weight="bold" letter-spacing="1.33">虚拟仿真</tspan></text>
+</g>
+<g id="shape-18" data-name="文本框 17" transform="rotate(323.25 687.46 476.85)">
+<rect x="614.13" y="444.02" width="146.66" height="65.67" fill="none" />
+<text x="687.46" y="467.2" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="22.4" fill="#FFFFFF" font-weight="bold" letter-spacing="1.33"><tspan fill="#FFFFFF" font-size="22.4" font-weight="bold" letter-spacing="1.33">项目式学习</tspan></text>
+</g>
+<g id="shape-19" data-name="文本框 18" transform="rotate(52.95 565.78 453.55)">
+<rect x="492.45" y="420.72" width="146.66" height="65.67" fill="none" />
+<text x="565.78" y="443.91" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="22.4" fill="#FFFFFF" font-weight="bold" letter-spacing="1.33"><tspan fill="#FFFFFF" font-size="22.4" font-weight="bold" letter-spacing="1.33">数据驱动</tspan></text>
+</g>
+</g>
+<g id="shape-11" data-name="椭圆 10">
+<ellipse cx="640" cy="405.51" rx="83.03" ry="81.81" fill="url(#ggrad19)" stroke-width="3.456" stroke="#FFFFFF" filter="url(#fx14)" />
+<text x="640" y="394.31" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="32" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="32" font-weight="bold">教学</tspan></text>
+<text x="640" y="432.71" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="32" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="32" font-weight="bold">模式</tspan></text>
+</g>
+</g>
+<g id="shape-7" data-name="组合 6">
+<g id="shape-230" data-name="组合 229">
+<g id="shape-127" data-name="任意多边形: 形状 126">
+<path d="M 91.43 518.96 C 93.16 520.51 93.75 523.31 96.62 523.6 C 99.48 523.88 332.37 524.66 334.42 523.6 C 336.48 522.53 336.59 520.98 337.67 519.68" fill="none" stroke-width="1.333" stroke="#D02300" />
+</g>
+<g id="shape-192" data-name="菱形 191">
+<polygon points="214.55,517.34 221.22,524.02 214.55,530.7 207.87,524.02" fill="#FFFFFF" stroke-width="0.667" stroke="#D02300" />
+</g>
+</g>
+<g id="shape-193" data-name="文本框 192">
+<rect x="152.01" y="533.26" width="125.08" height="42.01" fill="none" />
+<text x="161.61" y="560.73" text-anchor="start" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#D02300"><tspan fill="#D02300" font-size="26.67">教学过程</tspan></text>
+</g>
+</g>
+<g id="shape-8" data-name="组合 7">
+<g id="shape-234" data-name="组合 233">
+<g id="shape-235" data-name="任意多边形: 形状 234">
+<path d="M 940.76 518.96 C 942.49 520.51 943.09 523.31 945.95 523.6 C 948.82 523.88 1181.7 524.66 1183.76 523.6 C 1185.81 522.53 1185.92 520.98 1187 519.68" fill="none" stroke-width="1.333" stroke="#D02300" />
+</g>
+<g id="shape-236" data-name="菱形 235">
+<polygon points="1063.88,517.34 1070.56,524.02 1063.88,530.7 1057.2,524.02" fill="#FFFFFF" stroke-width="0.667" stroke="#D02300" />
+</g>
+</g>
+<g id="shape-237" data-name="文本框 236">
+<rect x="1001.34" y="533.26" width="125.08" height="42.01" fill="none" />
+<text x="1010.94" y="560.73" text-anchor="start" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="26.67" fill="#D02300"><tspan fill="#D02300" font-size="26.67">教学资源</tspan></text>
+</g>
+</g></svg>

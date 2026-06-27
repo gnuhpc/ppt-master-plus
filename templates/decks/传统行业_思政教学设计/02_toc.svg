@@ -1,0 +1,405 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#D9D9D9" /><stop offset="0.5" stop-color="#FFFFFF" /><stop offset="0.99" stop-color="#F2F2F2" /></linearGradient><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="12.26" dy="12.26" stdDeviation="11.33" flood-color="#000000" flood-opacity="0.08" /></filter><linearGradient id="ggrad2" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#D9D9D9" /><stop offset="0.5" stop-color="#FFFFFF" /><stop offset="0.99" stop-color="#F2F2F2" /></linearGradient><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="12.26" dy="12.26" stdDeviation="11.33" flood-color="#000000" flood-opacity="0.08" /></filter><linearGradient id="ggrad3" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#D9D9D9" /><stop offset="0.5" stop-color="#FFFFFF" /><stop offset="0.99" stop-color="#F2F2F2" /></linearGradient><filter id="fx3" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="12.26" dy="12.26" stdDeviation="11.33" flood-color="#000000" flood-opacity="0.08" /></filter><linearGradient id="ggrad4" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#D9D9D9" /><stop offset="0.5" stop-color="#FFFFFF" /><stop offset="0.99" stop-color="#F2F2F2" /></linearGradient><filter id="fx4" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="12.26" dy="12.26" stdDeviation="11.33" flood-color="#000000" flood-opacity="0.08" /></filter><linearGradient id="ggrad5" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#D9D9D9" /><stop offset="0.5" stop-color="#FFFFFF" /><stop offset="0.99" stop-color="#F2F2F2" /></linearGradient><filter id="fx5" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="12.26" dy="12.26" stdDeviation="11.33" flood-color="#000000" flood-opacity="0.08" /></filter><linearGradient id="ggrad6" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#D9D9D9" /><stop offset="0.5" stop-color="#FFFFFF" /><stop offset="0.99" stop-color="#F2F2F2" /></linearGradient><filter id="fx6" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="12.26" dy="12.26" stdDeviation="11.33" flood-color="#000000" flood-opacity="0.08" /></filter><linearGradient id="ggrad7" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="0" stop-color="#FD905F" stop-opacity="0.1" /><stop offset="1" stop-color="#FD905F" stop-opacity="0" /></linearGradient><linearGradient id="ggrad8" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#BF3C2E" stop-opacity="0.1" /><stop offset="1" stop-color="#BF3C2E" stop-opacity="0" /></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-19" data-name="组合 18">
+<g id="shape-4" data-name="矩形: 圆角 3">
+<rect x="166.1" y="439.33" width="1038.96" height="219.94" rx="7.28" ry="7.28" fill="#FFFFFF" stroke-width="0.667" stroke="#D02300" />
+</g>
+<g id="shape-11" data-name="箭头: 五边形 10" transform="rotate(270 166.77 549.3) translate(166.77 549.3) scale(1 -1) translate(-166.77 -549.3)">
+<polygon points="78.77,523.86 229.33,523.86 254.77,549.3 229.33,574.74 78.77,574.74" fill="url(#ggrad1)" stroke-width="0.667" stroke="#404040" filter="url(#fx1)" />
+</g>
+<g id="shape-89" data-name="文本框 88">
+<rect x="143.77" y="489.28" width="41.05" height="138.94" fill="none" />
+</g>
+<g id="shape-89-text" data-name="文本框 88 text">
+<text x="164.3" y="525.41" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="26.67" fill="#D02300"><tspan fill="#D02300" font-size="26.67">{{TOC_ITEM_1_TITLE}}</tspan></text>
+</g>
+<g id="shape-102" data-name="箭头: 五边形 101" transform="translate(697.05 659.89) scale(-1 1) translate(-697.05 -659.89)">
+<polygon points="609.05,634.45 759.61,634.45 785.05,659.89 759.61,685.33 609.05,685.33" fill="url(#ggrad2)" stroke-width="0.667" stroke="#404040" filter="url(#fx2)" />
+</g>
+<g id="shape-103" data-name="文本框 102" transform="translate(701.62 659.89) scale(-1 1) translate(-701.62 -659.89)">
+<rect x="624.61" y="638.89" width="154.02" height="42.01" fill="none" />
+<text x="634.21" y="664.09" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#D02300"><tspan fill="#D02300" font-size="24">{{TOC_ITEM_2_TITLE}}</tspan></text>
+</g>
+<g id="shape-141" data-name="箭头: 五边形 140" transform="rotate(90 1202.29 549.3)">
+<polygon points="1114.29,523.86 1264.85,523.86 1290.29,549.3 1264.85,574.74 1114.29,574.74" fill="url(#ggrad3)" stroke-width="0.667" stroke="#404040" filter="url(#fx3)" />
+</g>
+<g id="shape-142" data-name="文本框 141">
+<rect x="1179.29" y="476.28" width="46" height="138.94" fill="none" />
+<text x="1188.89" y="501.48" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#D02300"><tspan fill="#D02300" font-size="24">{{TOC_ITEM_3_TITLE}}</tspan></text>
+</g>
+</g>
+<g id="shape-17" data-name="组合 16">
+<g id="shape-3" data-name="矩形: 圆角 2">
+<rect x="166.1" y="125.39" width="1038.96" height="219.94" rx="7.28" ry="7.28" fill="#FFFFFF" stroke-width="0.667" stroke="#D02300" />
+</g>
+<g id="shape-10" data-name="箭头: 五边形 9" transform="rotate(270 166.77 235.36) translate(166.77 235.36) scale(1 -1) translate(-166.77 -235.36)">
+<polygon points="78.77,209.92 229.33,209.92 254.77,235.36 229.33,260.8 78.77,260.8" fill="url(#ggrad4)" stroke-width="0.667" stroke="#404040" filter="url(#fx4)" />
+</g>
+<g id="shape-14" data-name="文本框 13">
+<rect x="143.77" y="171.99" width="46" height="138.94" fill="none" />
+<text x="153.37" y="197.19" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#D02300"><tspan fill="#D02300" font-size="24">{{TOC_ITEM_4_TITLE}}</tspan></text>
+</g>
+<g id="shape-92" data-name="箭头: 五边形 91">
+<polygon points="609.05,99.33 759.61,99.33 785.05,124.77 759.61,150.21 609.05,150.21" fill="url(#ggrad5)" stroke-width="0.667" stroke="#404040" filter="url(#fx5)" />
+</g>
+<g id="shape-101" data-name="文本框 100">
+<rect x="633.5" y="103.77" width="127.1" height="42.01" fill="none" />
+<text x="643.1" y="128.97" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#D02300"><tspan fill="#D02300" font-size="24">实践路径</tspan></text>
+</g>
+<g id="shape-114" data-name="箭头: 五边形 113" transform="rotate(90 1202.29 235.36)">
+<polygon points="1114.29,209.92 1264.85,209.92 1290.29,235.36 1264.85,260.8 1114.29,260.8" fill="url(#ggrad6)" stroke-width="0.667" stroke="#404040" filter="url(#fx6)" />
+</g>
+<g id="shape-115" data-name="文本框 114">
+<rect x="1179.29" y="165.89" width="46" height="138.94" fill="none" />
+<text x="1188.89" y="191.09" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#D02300"><tspan fill="#D02300" font-size="24">教学目标</tspan></text>
+</g>
+</g>
+<g id="shape-105" data-name="箭头: 右 104">
+<polygon points="279.66,219.69 725.05,219.69 725.05,196.1 1170.45,243.28 725.05,290.46 725.05,266.87 279.66,266.87" fill="#FD905F" fill-opacity="0.5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-35" data-name="文本框 77">
+<rect x="46.5" y="16.36" width="332.61" height="54.93" fill="none" />
+<text x="56.1" y="52.9" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="37.33" fill="#D02300"><tspan fill="#D02300" font-size="37.33">教学整体设计</tspan></text>
+</g>
+<g id="shape-36" data-name="文本框 78">
+<rect x="286.32" y="19.59" width="175.9" height="48.47" fill="none" />
+<text x="295.92" y="51.59" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="32" fill="#808080"><tspan fill="#808080" font-size="32">/  </tspan><tspan fill="#808080" font-size="32">教学目标</tspan></text>
+</g>
+<g id="shape-37" data-name="直接连接符 36">
+<line x1="29.71" y1="71.23" x2="1250.29" y2="71.23" stroke-width="3" stroke="#D02300" fill="#D02300" />
+</g>
+<g id="shape-18" data-name="组合 17">
+<g id="shape-78" data-name="箭头: 右 77">
+<polygon points="279.66,379.61 753.56,379.61 753.56,366.89 1227.47,392.33 753.56,417.77 753.56,405.05 279.66,405.05" fill="#D02300" fill-opacity="0.5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-6" data-name="椭圆 5">
+<ellipse cx="228.57" cy="392.33" rx="62.48" ry="62.48" stroke="#D02300" fill="#D02300" stroke-width="1" />
+</g>
+<g id="shape-7" data-name="椭圆 6">
+<ellipse cx="526.95" cy="392.33" rx="62.48" ry="62.48" fill="#BF3C2E" stroke="#BF3C2E" stroke-width="1" />
+</g>
+<g id="shape-8" data-name="椭圆 7">
+<ellipse cx="825.33" cy="392.33" rx="62.48" ry="62.48" fill="#FD905F" stroke="#FD905F" stroke-width="1" />
+</g>
+<g id="shape-54" data-name="矩形: 圆角 53" transform="rotate(45 645.31 392.33)">
+<rect x="615.17" y="362.19" width="60.3" height="60.3" rx="8.95" ry="8.95" fill="#FC5409" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-55" data-name="矩形: 圆角 54" transform="rotate(45 709.95 392.33)">
+<rect x="679.8" y="362.19" width="60.3" height="60.3" rx="8.95" ry="8.95" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="#D02300" stroke-linejoin="miter" />
+</g>
+<g id="shape-57" data-name="文本框 56">
+<rect x="614.19" y="374.45" width="62.79" height="35.54" fill="none" />
+<text x="645.59" y="397.18" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="20.53" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="20.53">科学</tspan></text>
+</g>
+<g id="shape-59" data-name="文本框 58">
+<rect x="678.82" y="374.45" width="62.79" height="35.54" fill="none" />
+<text x="710.22" y="397.18" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="20.53" fill="#D02300"><tspan fill="#D02300" font-size="20.53">制度</tspan></text>
+</g>
+<g id="shape-56" data-name="矩形: 圆角 55" transform="rotate(45 946.17 392.33)">
+<rect x="916.02" y="362.19" width="60.3" height="60.3" rx="8.95" ry="8.95" fill="#FC5409" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-58" data-name="文本框 57">
+<rect x="915.05" y="374.45" width="62.79" height="35.54" fill="none" />
+<text x="946.44" y="397.18" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="20.53" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="20.53">情感</tspan></text>
+</g>
+<g id="shape-60" data-name="矩形: 圆角 59" transform="rotate(45 1010.8 392.33)">
+<rect x="980.66" y="362.19" width="60.3" height="60.3" rx="8.95" ry="8.95" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="#D02300" stroke-linejoin="miter" />
+</g>
+<g id="shape-61" data-name="矩形: 圆角 60" transform="rotate(45 1075.44 392.33)">
+<rect x="1045.29" y="362.19" width="60.3" height="60.3" rx="8.95" ry="8.95" fill="#FC5409" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-62" data-name="文本框 61">
+<rect x="979.41" y="374.56" width="62.79" height="35.54" fill="none" />
+<text x="989.97" y="397.29" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="20.53" fill="#D02300"><tspan fill="#D02300" font-size="20.53">意识</tspan></text>
+</g>
+<g id="shape-63" data-name="文本框 62">
+<rect x="1044.31" y="374.45" width="62.79" height="35.54" fill="none" />
+<text x="1075.71" y="397.18" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="20.53" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="20.53">引导</tspan></text>
+</g>
+<g id="shape-67" data-name="矩形: 圆角 66" transform="rotate(45 345.17 392.33)">
+<rect x="315.02" y="362.19" width="60.3" height="60.3" rx="8.95" ry="8.95" fill="#FC5409" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-68" data-name="矩形: 圆角 67" transform="rotate(45 409.8 392.33)">
+<rect x="379.66" y="362.19" width="60.3" height="60.3" rx="8.95" ry="8.95" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="#D02300" stroke-linejoin="miter" />
+</g>
+<g id="shape-69" data-name="文本框 68">
+<rect x="314.05" y="374.45" width="62.79" height="35.54" fill="none" />
+<text x="345.44" y="397.18" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN Heavy&quot;, sans-serif" font-size="20.53" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="20.53">历史</tspan></text>
+</g>
+<g id="shape-70" data-name="文本框 69">
+<rect x="378.68" y="374.45" width="62.79" height="35.54" fill="none" />
+<text x="410.08" y="397.18" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="20.53" fill="#D02300"><tspan fill="#D02300" font-size="20.53">理论</tspan></text>
+</g>
+<g id="shape-86" data-name="椭圆 85">
+<ellipse cx="228.57" cy="392.33" rx="54.07" ry="54.07" fill="none" stroke="#FFFFFF" stroke-dasharray="4 4" stroke-width="1" />
+</g>
+<g id="shape-87" data-name="椭圆 86">
+<ellipse cx="526.95" cy="392.33" rx="54.07" ry="54.07" fill="none" stroke="#FFFFFF" stroke-dasharray="4 4" stroke-width="1" />
+</g>
+<g id="shape-88" data-name="椭圆 87">
+<ellipse cx="825.33" cy="392.33" rx="54.07" ry="54.07" fill="none" stroke="#FFFFFF" stroke-dasharray="4 4" stroke-width="1" />
+</g>
+<g id="shape-106" data-name="文本框 105">
+<rect x="191.95" y="355.17" width="73.24" height="74.32" fill="none" />
+<text x="228.57" y="380.37" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">认知目标</tspan></text>
+</g>
+<g id="shape-107" data-name="文本框 106">
+<rect x="490.33" y="355.17" width="73.24" height="74.32" fill="none" />
+<text x="526.95" y="380.37" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">情感目标</tspan></text>
+</g>
+<g id="shape-108" data-name="文本框 107">
+<rect x="788.71" y="355.17" width="73.24" height="74.32" fill="none" />
+<text x="825.33" y="380.37" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">实践目标</tspan></text>
+</g>
+</g>
+<g id="shape-116" data-name="箭头: 右 115">
+<polygon points="279.66,519.71 725.05,519.71 725.05,496.12 1170.45,543.3 725.05,590.48 725.05,566.89 279.66,566.89" fill="#BF3C2E" fill-opacity="0.5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-2" data-name="组合 1">
+<g id="shape-90" data-name="矩形 89">
+<rect x="226.88" y="169.89" width="178.45" height="146.77" fill="#FFFFFF" stroke-width="0.667" stroke="#D02300" />
+</g>
+<g id="shape-120" data-name="矩形 119">
+<rect x="226.88" y="169.89" width="178.45" height="42.91" stroke="none" fill="#D02300" stroke-width="1" />
+</g>
+<g id="shape-121" data-name="文本框 120">
+<rect x="233.71" y="171.96" width="164.79" height="38.78" fill="none" />
+<text x="316.11" y="197.16" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">历史发展脉络</tspan></text>
+</g>
+<g id="shape-1032" data-name="Picture 8">
+<image href="assets/image1.jpeg" x="233.96" y="220.8" width="164.29" height="87.25" preserveAspectRatio="none" />
+</g>
+</g>
+<g id="shape-5" data-name="组合 4">
+<g id="shape-98" data-name="矩形 97">
+<rect x="920.24" y="169.89" width="178.45" height="146.77" fill="#FFFFFF" stroke-width="0.667" stroke="#D02300" />
+</g>
+<g id="shape-123" data-name="矩形 122">
+<rect x="920.24" y="169.89" width="178.45" height="42.91" stroke="none" fill="#D02300" stroke-width="1" />
+</g>
+<g id="shape-124" data-name="文本框 123">
+<rect x="939.19" y="171.96" width="140.56" height="38.78" fill="none" />
+<text x="948.79" y="197.16" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">全学段贯通</tspan></text>
+</g>
+<g id="shape-1028" data-name="Picture 4">
+<image href="assets/image2.jpeg" x="927.32" y="220.8" width="164.29" height="87.25" preserveAspectRatio="none" />
+</g>
+</g>
+<g id="shape-15" data-name="组合 14">
+<g id="shape-117" data-name="矩形 116">
+<rect x="226.88" y="469.92" width="178.45" height="146.77" fill="#FFFFFF" stroke-width="0.667" stroke="#D02300" />
+</g>
+<g id="shape-126" data-name="矩形 125">
+<rect x="226.88" y="469.92" width="178.45" height="42.91" stroke="none" fill="#D02300" stroke-width="1" />
+</g>
+<g id="shape-127" data-name="文本框 126">
+<rect x="245.83" y="471.98" width="140.56" height="38.78" fill="none" />
+<text x="316.11" y="497.18" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">全要素协同</tspan></text>
+</g>
+<g id="shape-1026" data-name="Picture 2">
+<image href="assets/image3.jpeg" x="233.96" y="520.83" width="164.29" height="87.25" preserveAspectRatio="none" />
+</g>
+</g>
+<g id="shape-12" data-name="组合 11">
+<g id="shape-119" data-name="矩形 118">
+<rect x="920.24" y="469.92" width="178.45" height="146.77" fill="#FFFFFF" stroke-width="0.667" stroke="#D02300" />
+</g>
+<g id="shape-131" data-name="矩形 130">
+<rect x="920.24" y="469.92" width="178.45" height="42.91" stroke="none" fill="#D02300" stroke-width="1" />
+</g>
+<g id="shape-132" data-name="文本框 131">
+<rect x="939.19" y="471.98" width="140.56" height="38.78" fill="none" />
+<text x="948.79" y="497.18" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">全领域覆盖</tspan></text>
+</g>
+<g id="shape-1030" data-name="Picture 6">
+<image href="assets/image4.jpeg" x="927.32" y="520.83" width="164.29" height="87.25" preserveAspectRatio="none" />
+</g>
+</g>
+<g id="shape-40" data-name="组合 39">
+<g id="shape-134" data-name="文本框 133">
+<rect x="408.54" y="209.35" width="39.29" height="67.86" fill="none" />
+<text x="418.14" y="234.55" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#C00000"><tspan fill="#C00000" font-size="24">爱党</tspan></text>
+</g>
+<g id="shape-135" data-name="文本框 134">
+<rect x="877.74" y="209.35" width="39.29" height="67.86" fill="none" />
+<text x="887.34" y="234.55" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#C00000"><tspan fill="#C00000" font-size="24">爱国</tspan></text>
+</g>
+<g id="shape-136" data-name="文本框 135">
+<rect x="1111.33" y="165.81" width="39.29" height="155.1" fill="none" />
+</g>
+<g id="shape-136-text" data-name="文本框 135 text">
+<text x="1130.98" y="200.76" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#C00000"><tspan fill="#C00000" font-size="24">爱</tspan><tspan x="1130.98" dy="25.2" fill="#C00000" font-size="24">社</tspan><tspan x="1130.98" dy="25.2" fill="#C00000" font-size="24">会</tspan><tspan x="1130.98" dy="25.2" fill="#C00000" font-size="24">主</tspan><tspan x="1130.98" dy="25.2" fill="#C00000" font-size="24">义</tspan></text>
+</g>
+</g>
+<g id="shape-44" data-name="组合 43">
+<g id="shape-137" data-name="文本框 136">
+<rect x="408.54" y="494.83" width="39.29" height="96.94" fill="none" />
+</g>
+<g id="shape-137-text" data-name="文本框 136 text">
+<text x="428.19" y="525.9" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#C00000"><tspan fill="#C00000" font-size="24">爱</tspan><tspan x="428.19" dy="25.2" fill="#C00000" font-size="24">国</tspan><tspan x="428.19" dy="25.2" fill="#C00000" font-size="24">情</tspan></text>
+</g>
+<g id="shape-138" data-name="文本框 137">
+<rect x="877.74" y="494.83" width="39.29" height="96.94" fill="none" />
+</g>
+<g id="shape-138-text" data-name="文本框 137 text">
+<text x="897.38" y="525.9" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#C00000"><tspan fill="#C00000" font-size="24">强</tspan><tspan x="897.38" dy="25.2" fill="#C00000" font-size="24">国</tspan><tspan x="897.38" dy="25.2" fill="#C00000" font-size="24">志</tspan></text>
+</g>
+<g id="shape-139" data-name="文本框 138">
+<rect x="1111.33" y="494.83" width="39.29" height="96.94" fill="none" />
+</g>
+<g id="shape-139-text" data-name="文本框 138 text">
+<text x="1130.98" y="525.9" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#C00000"><tspan fill="#C00000" font-size="24">报</tspan><tspan x="1130.98" dy="25.2" fill="#C00000" font-size="24">国</tspan><tspan x="1130.98" dy="25.2" fill="#C00000" font-size="24">行</tspan></text>
+</g>
+</g>
+<g id="shape-38" data-name="组合 37">
+<g id="shape-97" data-name="矩形 96">
+<rect x="451.05" y="169.89" width="423.48" height="146.77" fill="url(#ggrad7)" stroke-width="0.667" stroke="#FD905F" />
+</g>
+<g id="shape-143" data-name="矩形 142">
+<rect x="462.19" y="181.44" width="48.83" height="123.67" fill="#FFFFFF" stroke-width="0.667" stroke="#FD905F" />
+</g>
+<g id="shape-144" data-name="矩形 143">
+<rect x="520.92" y="181.44" width="48.83" height="123.67" fill="#FFFFFF" stroke-width="0.667" stroke="#FD905F" />
+</g>
+<g id="shape-145" data-name="矩形 144">
+<rect x="579.65" y="181.44" width="48.83" height="123.67" fill="#FFFFFF" stroke-width="0.667" stroke="#FD905F" />
+</g>
+<g id="shape-146" data-name="矩形 145">
+<rect x="638.37" y="181.44" width="48.83" height="123.67" fill="#FFFFFF" stroke-width="0.667" stroke="#FD905F" />
+</g>
+<g id="shape-147" data-name="矩形 146">
+<rect x="697.1" y="181.44" width="48.83" height="123.67" fill="#FFFFFF" stroke-width="0.667" stroke="#FD905F" />
+</g>
+<g id="shape-148" data-name="矩形 147">
+<rect x="755.83" y="181.44" width="48.83" height="123.67" fill="#FFFFFF" stroke-width="0.667" stroke="#FD905F" />
+</g>
+<g id="shape-150" data-name="矩形 149">
+<rect x="814.55" y="181.44" width="48.83" height="123.67" fill="#FFFFFF" stroke-width="0.667" stroke="#FD905F" />
+</g>
+<g id="shape-152" data-name="文本框 151">
+<rect x="469.24" y="186.73" width="34.74" height="113.09" fill="none" />
+</g>
+<g id="shape-152-text" data-name="文本框 151 text">
+<text x="486.61" y="216.61" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#262626"><tspan fill="#262626" font-size="21.33">社</tspan><tspan x="486.61" dy="22.4" fill="#262626" font-size="21.33">会</tspan><tspan x="486.61" dy="22.4" fill="#262626" font-size="21.33">意</tspan><tspan x="486.61" dy="22.4" fill="#262626" font-size="21.33">识</tspan></text>
+</g>
+<g id="shape-153" data-name="文本框 152">
+<rect x="527.97" y="186.73" width="34.74" height="113.09" fill="none" />
+</g>
+<g id="shape-153-text" data-name="文本框 152 text">
+<text x="545.33" y="216.61" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#262626"><tspan fill="#262626" font-size="21.33">社</tspan><tspan x="545.33" dy="22.4" fill="#262626" font-size="21.33">会</tspan><tspan x="545.33" dy="22.4" fill="#262626" font-size="21.33">价</tspan><tspan x="545.33" dy="22.4" fill="#262626" font-size="21.33">值</tspan></text>
+</g>
+<g id="shape-154" data-name="文本框 153">
+<rect x="586.69" y="186.73" width="34.74" height="113.09" fill="none" />
+</g>
+<g id="shape-154-text" data-name="文本框 153 text">
+<text x="604.06" y="216.61" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#262626"><tspan fill="#262626" font-size="21.33">爱</tspan><tspan x="604.06" dy="22.4" fill="#262626" font-size="21.33">国</tspan><tspan x="604.06" dy="22.4" fill="#262626" font-size="21.33">主</tspan><tspan x="604.06" dy="22.4" fill="#262626" font-size="21.33">义</tspan></text>
+</g>
+<g id="shape-155" data-name="文本框 154">
+<rect x="645.42" y="186.73" width="34.74" height="113.09" fill="none" />
+</g>
+<g id="shape-155-text" data-name="文本框 154 text">
+<text x="662.79" y="216.61" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#262626"><tspan fill="#262626" font-size="21.33">优</tspan><tspan x="662.79" dy="22.4" fill="#262626" font-size="21.33">秀</tspan><tspan x="662.79" dy="22.4" fill="#262626" font-size="21.33">文</tspan><tspan x="662.79" dy="22.4" fill="#262626" font-size="21.33">化</tspan></text>
+</g>
+<g id="shape-156" data-name="文本框 155">
+<rect x="704.15" y="186.73" width="34.74" height="113.09" fill="none" />
+</g>
+<g id="shape-156-text" data-name="文本框 155 text">
+<text x="721.51" y="216.61" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#262626"><tspan fill="#262626" font-size="21.33">基</tspan><tspan x="721.51" dy="22.4" fill="#262626" font-size="21.33">本</tspan><tspan x="721.51" dy="22.4" fill="#262626" font-size="21.33">原</tspan><tspan x="721.51" dy="22.4" fill="#262626" font-size="21.33">理</tspan></text>
+</g>
+<g id="shape-158" data-name="文本框 157">
+<rect x="821.6" y="186.73" width="34.74" height="113.09" fill="none" />
+</g>
+<g id="shape-158-text" data-name="文本框 157 text">
+<text x="838.97" y="216.61" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#262626"><tspan fill="#262626" font-size="21.33">价</tspan><tspan x="838.97" dy="22.4" fill="#262626" font-size="21.33">值</tspan><tspan x="838.97" dy="22.4" fill="#262626" font-size="21.33">形</tspan><tspan x="838.97" dy="22.4" fill="#262626" font-size="21.33">塑</tspan></text>
+</g>
+<g id="shape-159" data-name="文本框 158">
+<rect x="762.87" y="186.73" width="34.74" height="113.09" fill="none" />
+</g>
+<g id="shape-159-text" data-name="文本框 158 text">
+<text x="780.24" y="216.61" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#262626"><tspan fill="#262626" font-size="21.33">情</tspan><tspan x="780.24" dy="22.4" fill="#262626" font-size="21.33">感</tspan><tspan x="780.24" dy="22.4" fill="#262626" font-size="21.33">奠</tspan><tspan x="780.24" dy="22.4" fill="#262626" font-size="21.33">基</tspan></text>
+</g>
+</g>
+<g id="shape-42" data-name="组合 41">
+<g id="shape-118" data-name="矩形 117">
+<rect x="451.05" y="469.92" width="423.48" height="146.77" fill="url(#ggrad8)" stroke-width="0.667" stroke="#BF3C2E" />
+</g>
+<g id="shape-162" data-name="矩形 161">
+<rect x="462.19" y="481.47" width="48.83" height="123.67" fill="#FFFFFF" stroke-width="0.667" stroke="#BF3C2E" />
+</g>
+<g id="shape-163" data-name="矩形 162">
+<rect x="520.92" y="481.47" width="48.83" height="123.67" fill="#FFFFFF" stroke-width="0.667" stroke="#BF3C2E" />
+</g>
+<g id="shape-164" data-name="矩形 163">
+<rect x="579.65" y="481.47" width="48.83" height="123.67" fill="#FFFFFF" stroke-width="0.667" stroke="#BF3C2E" />
+</g>
+<g id="shape-165" data-name="矩形 164">
+<rect x="638.37" y="481.47" width="48.83" height="123.67" fill="#FFFFFF" stroke-width="0.667" stroke="#BF3C2E" />
+</g>
+<g id="shape-166" data-name="矩形 165">
+<rect x="697.1" y="481.47" width="48.83" height="123.67" fill="#FFFFFF" stroke-width="0.667" stroke="#BF3C2E" />
+</g>
+<g id="shape-167" data-name="矩形 166">
+<rect x="755.83" y="481.47" width="48.83" height="123.67" fill="#FFFFFF" stroke-width="0.667" stroke="#BF3C2E" />
+<text x="780.24" y="549.3" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">安全意识</tspan></text>
+</g>
+<g id="shape-168" data-name="矩形 167">
+<rect x="814.55" y="481.47" width="48.83" height="123.67" fill="#FFFFFF" stroke-width="0.667" stroke="#BF3C2E" />
+</g>
+<g id="shape-169" data-name="文本框 168">
+<rect x="469.24" y="486.76" width="34.74" height="113.09" fill="none" />
+</g>
+<g id="shape-169-text" data-name="文本框 168 text">
+<text x="486.61" y="516.64" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#262626"><tspan fill="#262626" font-size="21.33">实</tspan><tspan x="486.61" dy="22.4" fill="#262626" font-size="21.33">践</tspan><tspan x="486.61" dy="22.4" fill="#262626" font-size="21.33">创</tspan><tspan x="486.61" dy="22.4" fill="#262626" font-size="21.33">新</tspan></text>
+</g>
+<g id="shape-170" data-name="文本框 169">
+<rect x="527.97" y="486.76" width="34.74" height="113.09" fill="none" />
+</g>
+<g id="shape-170-text" data-name="文本框 169 text">
+<text x="545.33" y="516.64" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#262626"><tspan fill="#262626" font-size="21.33">网</tspan><tspan x="545.33" dy="22.4" fill="#262626" font-size="21.33">络</tspan><tspan x="545.33" dy="22.4" fill="#262626" font-size="21.33">文</tspan><tspan x="545.33" dy="22.4" fill="#262626" font-size="21.33">学</tspan></text>
+</g>
+<g id="shape-171" data-name="文本框 170">
+<rect x="586.69" y="486.76" width="34.74" height="113.09" fill="none" />
+</g>
+<g id="shape-171-text" data-name="文本框 170 text">
+<text x="604.06" y="516.64" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#262626"><tspan fill="#262626" font-size="21.33">现</tspan><tspan x="604.06" dy="22.4" fill="#262626" font-size="21.33">代</tspan><tspan x="604.06" dy="22.4" fill="#262626" font-size="21.33">强</tspan><tspan x="604.06" dy="22.4" fill="#262626" font-size="21.33">国</tspan></text>
+</g>
+<g id="shape-172" data-name="文本框 171">
+<rect x="645.42" y="486.76" width="34.74" height="113.09" fill="none" />
+</g>
+<g id="shape-172-text" data-name="文本框 171 text">
+<text x="662.79" y="516.64" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#262626"><tspan fill="#262626" font-size="21.33">伟</tspan><tspan x="662.79" dy="22.4" fill="#262626" font-size="21.33">大</tspan><tspan x="662.79" dy="22.4" fill="#262626" font-size="21.33">复</tspan><tspan x="662.79" dy="22.4" fill="#262626" font-size="21.33">兴</tspan></text>
+</g>
+<g id="shape-173" data-name="文本框 172">
+<rect x="704.15" y="486.76" width="34.74" height="113.09" fill="none" />
+</g>
+<g id="shape-173-text" data-name="文本框 172 text">
+<text x="721.51" y="516.64" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#262626"><tspan fill="#262626" font-size="21.33">文</tspan><tspan x="721.51" dy="22.4" fill="#262626" font-size="21.33">化</tspan><tspan x="721.51" dy="22.4" fill="#262626" font-size="21.33">精</tspan><tspan x="721.51" dy="22.4" fill="#262626" font-size="21.33">髓</tspan></text>
+</g>
+<g id="shape-174" data-name="文本框 173">
+<rect x="821.6" y="486.76" width="34.74" height="113.09" fill="none" />
+</g>
+<g id="shape-174-text" data-name="文本框 173 text">
+<text x="838.97" y="516.64" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#262626"><tspan fill="#262626" font-size="21.33">民</tspan><tspan x="838.97" dy="22.4" fill="#262626" font-size="21.33">族</tspan><tspan x="838.97" dy="22.4" fill="#262626" font-size="21.33">团</tspan><tspan x="838.97" dy="22.4" fill="#262626" font-size="21.33">结</tspan></text>
+</g>
+<g id="shape-175" data-name="文本框 174">
+<rect x="762.87" y="486.76" width="34.74" height="113.09" fill="none" />
+</g>
+<g id="shape-175-text" data-name="文本框 174 text">
+<text x="780.24" y="516.64" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#262626"><tspan fill="#262626" font-size="21.33">安</tspan><tspan x="780.24" dy="22.4" fill="#262626" font-size="21.33">全</tspan><tspan x="780.24" dy="22.4" fill="#262626" font-size="21.33">意</tspan><tspan x="780.24" dy="22.4" fill="#262626" font-size="21.33">识</tspan></text>
+</g>
+</g>
+<g id="shape-16" data-name="组合 15">
+<g id="shape-9" data-name="矩形: 圆角 8">
+<rect x="52" y="219.33" width="54.67" height="346" rx="0" ry="0" stroke-width="0.667" stroke="#9C1A00" fill="#D02300" />
+</g>
+<g id="shape-13" data-name="文本框 12">
+<rect x="56.33" y="242.08" width="46" height="300.51" fill="none" />
+<text x="65.93" y="269.55" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">马克思主义理论基础</tspan></text>
+</g>
+<g id="shape-176" data-name="箭头: 圆角右 175">
+<rect x="72.33" y="125.89" width="77.4" height="93.04" fill="#D9D9D9" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-177" data-name="箭头: 圆角右 176" transform="translate(111.03 613.3) scale(1 -1) translate(-111.03 -613.3)">
+<rect x="72.33" y="566.78" width="77.4" height="93.04" fill="#D9D9D9" stroke="none" stroke-width="1" />
+</g>
+</g></svg>

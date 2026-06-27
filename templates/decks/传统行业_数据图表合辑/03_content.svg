@@ -1,0 +1,217 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="4" stdDeviation="2.67" flood-color="#000000" flood-opacity="0.4" /></filter><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="4" stdDeviation="2.67" flood-color="#000000" flood-opacity="0.4" /></filter><filter id="fx3" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="4" stdDeviation="2.67" flood-color="#000000" flood-opacity="0.4" /></filter><filter id="fx4" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="4" stdDeviation="2.67" flood-color="#000000" flood-opacity="0.4" /></filter></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="layout-shape-15" data-name="直接连接符 14">
+<line x1="0" y1="64.68" x2="1279.68" y2="64.68" stroke-width="4" stroke="#000000" fill="#305598" />
+</g>
+<g id="shape-36" data-name="矩形 35">
+<rect x="332.96" y="131.62" width="926.87" height="139.23" fill="#F2F2F2" stroke="#D9D9D9" stroke-width="1" />
+</g>
+<g id="shape-34" data-name="矩形 33">
+<rect x="332.96" y="290.59" width="926.87" height="139.23" fill="#F2F2F2" stroke="#D9D9D9" stroke-width="1" />
+</g>
+<g id="shape-35" data-name="矩形 34">
+<rect x="332.96" y="455.47" width="926.87" height="138.24" fill="#F2F2F2" stroke="#D9D9D9" stroke-width="1" />
+</g>
+<g id="shape-5" data-name="矩形 4">
+<rect x="20.46" y="6.7" width="523.93" height="54.93" fill="none" />
+<text x="30.06" y="43.23" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="37.33" fill="#000000"><tspan fill="#000000" font-size="37.33">{{PAGE_TITLE}}</tspan></text>
+</g>
+<g id="shape-8" data-name="矩形 1" transform="translate(205.21 677.29) scale(1 -1) translate(-205.21 -677.29)">
+<path d="M 155.29 713.3 L 255.14 641.27 L 255.14 713.3 L 155.29 713.3 Z" fill="#A6A6A6" stroke-width="2.667" stroke-linecap="butt" stroke="none" />
+</g>
+<g id="shape-9" data-name="矩形 1">
+<path d="M 59.97 156.05 L 219.61 83.02 L 219.61 156.05 L 59.97 156.05 Z" fill="#244072" stroke-width="2.667" stroke-linecap="butt" stroke="none" />
+</g>
+<g id="shape-10" data-name="流程图: 决策 6" transform="rotate(344.55 255.14 615.63)">
+<path d="M 143.21 591.31 L 271.83 588.25 L 367.06 618.45 L 301.26 643.01 L 143.21 591.31 Z" fill="#4E76CF" stroke-width="2.667" stroke-linecap="butt" stroke="none" />
+</g>
+<g id="shape-11" data-name="流程图: 决策 6" transform="rotate(348.77 255.14 449.16)">
+<path d="M 83.68 428.91 L 291.26 426.37 L 426.59 457.07 L 338.77 471.96 L 83.68 428.91 Z" fill="#3259AE" stroke-width="2.667" stroke-linecap="butt" stroke="none" />
+</g>
+<g id="shape-12" data-name="流程图: 决策 6" transform="rotate(348.5 212 289.93)">
+<path d="M 23.1 256.18 L 256.34 262.75 L 400.9 302.58 L 303.31 323.68 L 23.1 256.18 Z" fill="#2F5698" stroke-width="2.667" stroke-linecap="butt" stroke="none" />
+</g>
+<g id="shape-13" data-name="矩形 4">
+<path d="M 20.17 294.2 C 20.66 295.57 477.18 290.31 480.92 289.93 C 484.65 289.56 426.24 422.71 427.12 423.71 C 384.57 429.71 304.75 430.06 243.85 431.29 C 182.94 432.51 130.59 424.81 73.96 421.57 C 68.53 418.18 19.68 292.84 20.17 294.2 Z" fill="#4474C5" stroke-width="2.667" stroke-linecap="butt" stroke="#4474C5" filter="url(#fx1)" />
+</g>
+<g id="shape-16" data-name="矩形 4">
+<path d="M 86.36 459.72 C 88.36 457.02 410.14 455.84 412.79 455.47 C 415.43 455.09 386.99 567.03 374.67 588.67 C 372.23 589.54 304.71 602.33 253.47 601.21 C 202.22 600.1 131.31 592.56 124.47 586.54 C 120.62 583.17 84.36 462.42 86.36 459.72 Z" fill="#5B80D0" stroke-width="2.667" stroke-linecap="butt" stroke="#5B80D0" filter="url(#fx2)" />
+</g>
+<g id="shape-17" data-name="矩形 4">
+<path d="M 144.76 620.56 C 146.03 619.79 349.88 619.45 351.56 619.34 C 353.24 619.24 335.41 651.09 327.42 657.39 C 324.39 658.87 280.75 663.67 256.81 663.15 C 232.86 662.63 178.14 662.33 168.91 656.79 C 166.46 655.82 143.49 621.33 144.76 620.56 Z" fill="#99B0E3" stroke-width="2.667" stroke-linecap="butt" stroke="#99B0E3" filter="url(#fx3)" />
+</g>
+<g id="shape-18" data-name="矩形 4">
+<path d="M 57.41 135.18 C 57.83 136.53 440.57 131.33 443.7 130.96 C 446.83 130.59 397.86 262.25 398.6 263.23 C 362.92 269.16 296.01 269.51 244.94 270.72 C 193.88 271.94 149.99 264.32 102.51 261.12 C 97.95 257.77 57 133.84 57.41 135.18 Z" fill="#305598" stroke-width="2.667" stroke-linecap="butt" stroke="#305598" filter="url(#fx4)" />
+</g>
+<g id="shape-37" data-name="矩形 36">
+<rect x="1252.35" y="130.96" width="7.48" height="141.49" stroke="none" fill="#305598" stroke-width="1" />
+</g>
+<g id="shape-38" data-name="矩形 37">
+<rect x="1252.35" y="289.93" width="7.48" height="139.51" fill="#4474C5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-39" data-name="矩形 38">
+<rect x="1252.35" y="455.47" width="7.48" height="139.51" fill="#99B0E3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-40" data-name="文本框 39">
+<rect x="517.19" y="143.46" width="293.36" height="38.57" fill="none" />
+<text x="526.79" y="166.39" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="21.33" fill="#000000"><tspan fill="#000000" font-size="21.33">项目前期准备阶段</tspan></text>
+</g>
+<g id="shape-41" data-name="文本框 40">
+<rect x="517.93" y="175.61" width="713.71" height="54.66" fill="none" />
+<text x="527.53" y="194.01" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="16" fill="#595959"><tspan fill="#595959" font-size="16">{{CONTENT_1}}</tspan></text>
+</g>
+<g id="shape-43" data-name="矩形: 圆角 42">
+<rect x="528.63" y="233.55" width="88.97" height="25.64" rx="12.82" ry="12.82" stroke="none" fill="#305598" stroke-width="1" />
+</g>
+<g id="shape-44" data-name="文本框 43">
+<rect x="541.21" y="230.25" width="63.82" height="29.59" fill="none" />
+<text x="573.12" y="247.51" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">运营部</tspan></text>
+</g>
+<g id="shape-48" data-name="矩形: 圆角 47">
+<rect x="627.42" y="233.55" width="88.97" height="25.64" rx="12.82" ry="12.82" stroke="none" fill="#305598" stroke-width="1" />
+</g>
+<g id="shape-49" data-name="文本框 48">
+<rect x="632.6" y="230.25" width="78.63" height="29.59" fill="none" />
+<text x="671.91" y="247.51" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">供应链部</tspan></text>
+</g>
+<g id="shape-50" data-name="矩形: 圆角 49">
+<rect x="726.22" y="233.55" width="88.97" height="25.64" rx="12.82" ry="12.82" stroke="none" fill="#305598" stroke-width="1" />
+</g>
+<g id="shape-51" data-name="文本框 50">
+<rect x="737.11" y="230.25" width="67.18" height="29.59" fill="none" />
+<text x="770.7" y="247.51" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">设计部 </tspan></text>
+</g>
+<g id="shape-52" data-name="文本框 51">
+<rect x="517.19" y="299.45" width="293.36" height="38.57" fill="none" />
+<text x="526.79" y="322.38" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="21.33" fill="#000000"><tspan fill="#000000" font-size="21.33">项目中期执行阶段</tspan></text>
+</g>
+<g id="shape-53" data-name="文本框 52">
+<rect x="517.93" y="331.61" width="713.71" height="54.66" fill="none" />
+<text x="527.53" y="350.01" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="16" fill="#595959"><tspan fill="#595959" font-size="16">{{CONTENT_2}}</tspan></text>
+</g>
+<g id="shape-54" data-name="矩形: 圆角 53">
+<rect x="528.63" y="389.54" width="88.97" height="25.64" rx="12.82" ry="12.82" fill="#4474C5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-55" data-name="文本框 54">
+<rect x="541.21" y="386.24" width="63.82" height="29.59" fill="none" />
+<text x="573.12" y="403.51" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">预热期</tspan></text>
+</g>
+<g id="shape-56" data-name="矩形: 圆角 55">
+<rect x="627.42" y="389.54" width="88.97" height="25.64" rx="12.82" ry="12.82" fill="#4474C5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-61" data-name="文本框 60">
+<rect x="640" y="386.24" width="63.82" height="29.59" fill="none" />
+<text x="671.91" y="403.51" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">爆发期</tspan></text>
+</g>
+<g id="shape-64" data-name="矩形: 圆角 63">
+<rect x="726.22" y="389.54" width="88.97" height="25.64" rx="12.82" ry="12.82" fill="#4474C5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-65" data-name="文本框 64">
+<rect x="738.79" y="386.24" width="63.82" height="29.59" fill="none" />
+<text x="770.7" y="403.51" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">返场期</tspan></text>
+</g>
+<g id="shape-66" data-name="文本框 65">
+<rect x="517.19" y="465.17" width="293.36" height="38.57" fill="none" />
+<text x="526.79" y="488.1" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="21.33" fill="#000000"><tspan fill="#000000" font-size="21.33">项目后期复盘阶段</tspan></text>
+</g>
+<g id="shape-67" data-name="文本框 66">
+<rect x="517.93" y="497.33" width="713.71" height="54.66" fill="none" />
+<text x="527.53" y="515.73" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="16" fill="#595959"><tspan fill="#595959" font-size="16">{{CONTENT_3}}</tspan></text>
+</g>
+<g id="shape-68" data-name="矩形: 圆角 67">
+<rect x="528.63" y="555.26" width="88.97" height="25.64" rx="12.82" ry="12.82" fill="#99B0E3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-69" data-name="文本框 68">
+<rect x="533.8" y="551.96" width="78.63" height="29.59" fill="none" />
+<text x="573.12" y="569.23" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">数据复盘</tspan></text>
+</g>
+<g id="shape-70" data-name="矩形: 圆角 69">
+<rect x="627.42" y="555.26" width="88.97" height="25.64" rx="12.82" ry="12.82" fill="#99B0E3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-71" data-name="文本框 70">
+<rect x="632.6" y="551.96" width="78.63" height="29.59" fill="none" />
+<text x="671.91" y="569.23" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">问题优化</tspan></text>
+</g>
+<g id="shape-73" data-name="矩形: 圆角 72">
+<rect x="726.22" y="555.26" width="88.97" height="25.64" rx="12.82" ry="12.82" fill="#99B0E3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-74" data-name="文本框 73">
+<rect x="731.39" y="551.96" width="78.63" height="29.59" fill="none" />
+<text x="770.7" y="569.23" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">经验沉淀</tspan></text>
+</g>
+<g id="shape-75" data-name="文本框 74">
+<rect x="98.58" y="197.14" width="293.36" height="53.01" fill="none" />
+<text x="245.26" y="229.14" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">启动规划</tspan></text>
+</g>
+<g id="shape-76" data-name="文本框 75">
+<rect x="98.58" y="363.58" width="293.36" height="53.01" fill="none" />
+<text x="245.26" y="395.58" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">执行监控</tspan></text>
+</g>
+<g id="shape-77" data-name="文本框 76">
+<rect x="98.58" y="530.56" width="293.36" height="53.01" fill="none" />
+<text x="245.26" y="562.56" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">业绩复盘</tspan></text>
+</g>
+<g id="shape-81" data-name="Freeform: Shape 69">
+<path d="M 254.96 355.89 C 255.19 355.89 255.41 355.98 255.58 356.15 C 255.74 356.31 255.83 356.54 255.83 356.77 C 255.83 357 255.74 357.22 255.58 357.38 C 255.41 357.55 255.19 357.64 254.96 357.64 C 254.73 357.64 254.5 357.55 254.34 357.38 C 254.18 357.22 254.08 357 254.08 356.77 C 254.08 356.54 254.18 356.31 254.34 356.15 C 254.5 355.98 254.73 355.89 254.96 355.89 Z M 238.16 351.76 C 238.64 351.76 239.03 352.15 239.03 352.63 L 239.03 355.33 C 239.03 355.81 238.64 356.2 238.16 356.2 C 237.68 356.2 237.28 355.81 237.28 355.33 L 237.28 352.63 C 237.28 352.15 237.68 351.76 238.16 351.76 Z M 243.5 349.42 C 243.68 351.58 244.64 353.65 246.2 355.18 L 246.56 355.54 L 246.92 355.18 C 248.48 353.65 249.44 351.58 249.62 349.42 Z M 260.03 336.6 L 260.03 346.79 C 260.03 347.1 259.98 347.39 259.88 347.67 L 263.36 347.67 L 263.36 342.36 C 263.36 339.95 262.06 337.77 260.03 336.6 Z M 233.08 336.6 C 231.05 337.77 229.76 339.95 229.76 342.36 L 229.76 347.67 L 233.23 347.67 C 233.14 347.39 233.08 347.1 233.08 346.79 Z M 252.46 333.31 L 247.45 338.33 C 247.11 338.67 246.55 338.67 246.21 338.33 L 244.38 336.5 L 241.73 339.14 C 242.87 340.55 244.61 341.45 246.56 341.45 C 249.98 341.45 252.77 338.67 252.77 335.24 C 252.77 334.57 252.66 333.92 252.46 333.31 Z M 246.56 329.03 C 243.13 329.03 240.35 331.82 240.35 335.24 C 240.35 336.07 240.51 336.86 240.81 337.59 L 243.76 334.64 C 244.1 334.3 244.65 334.3 245 334.64 L 246.83 336.47 L 251.64 331.67 C 250.51 330.07 248.65 329.03 246.56 329.03 Z M 246.56 327.28 C 250.95 327.28 254.52 330.85 254.52 335.24 C 254.52 339.63 250.95 343.2 246.56 343.2 C 243.77 343.2 241.31 341.76 239.89 339.58 C 239.86 339.54 239.83 339.5 239.81 339.45 C 239.04 338.23 238.6 336.79 238.6 335.24 C 238.6 330.85 242.17 327.28 246.56 327.28 Z M 243.76 324.61 C 243.99 324.61 244.21 324.7 244.38 324.87 C 244.54 325.03 244.63 325.25 244.63 325.48 C 244.63 325.71 244.54 325.94 244.38 326.1 C 244.21 326.27 243.99 326.36 243.76 326.36 C 243.53 326.36 243.3 326.27 243.14 326.1 C 242.98 325.94 242.88 325.71 242.88 325.48 C 242.88 325.25 242.98 325.03 243.14 324.87 C 243.3 324.7 243.53 324.61 243.76 324.61 Z M 238.42 322.82 C 238.06 323.4 237.72 324 237.42 324.61 L 240.58 324.61 C 241.07 324.61 241.46 325 241.46 325.48 C 241.46 325.97 241.07 326.36 240.58 326.36 L 236.62 326.36 C 235.46 329.21 234.83 332.3 234.83 335.47 L 234.83 346.79 C 234.83 347.27 235.23 347.67 235.71 347.67 L 257.41 347.67 C 257.89 347.67 258.28 347.27 258.28 346.79 L 258.28 335.47 C 258.28 330.93 257 326.57 254.7 322.82 Z M 246.56 314.73 C 243.81 316.39 241.46 318.55 239.6 321.07 L 253.52 321.07 C 251.66 318.55 249.31 316.39 246.56 314.73 Z M 246.56 312.84 C 246.71 312.84 246.86 312.88 246.99 312.96 C 250.95 315.23 254.25 318.51 256.54 322.46 C 258.69 326.17 259.88 330.36 260.02 334.64 C 263.09 335.95 265.11 338.98 265.11 342.36 L 265.11 348.54 C 265.11 349.02 264.72 349.42 264.23 349.42 L 255.83 349.42 L 255.83 353.93 C 255.83 354.42 255.44 354.81 254.96 354.81 C 254.48 354.81 254.08 354.42 254.08 353.93 L 254.08 349.42 L 251.38 349.42 C 251.19 352.05 250.04 354.57 248.15 356.43 L 247.17 357.39 C 247 357.56 246.78 357.64 246.56 357.64 C 246.34 357.64 246.11 357.56 245.94 357.39 L 244.97 356.43 C 243.08 354.57 241.93 352.05 241.74 349.42 L 228.88 349.42 C 228.4 349.42 228.01 349.02 228.01 348.54 L 228.01 342.36 C 228.01 338.98 230.03 335.95 233.1 334.64 C 233.23 330.36 234.43 326.17 236.58 322.46 C 238.87 318.51 242.17 315.23 246.12 312.96 C 246.26 312.88 246.41 312.84 246.56 312.84 Z" fill="#FFFFFF" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-82" data-name="Freeform: Shape 51">
+<path d="M 253.8 184.68 L 251.46 187.02 C 252.74 188.56 253.83 190.01 254.62 191.26 L 257.22 195.33 C 258.67 196.99 261.26 196.93 262.63 195.18 C 263.76 193.74 263.55 191.6 262.16 190.39 L 257.9 187.68 C 256.67 186.89 255.26 185.86 253.8 184.68 Z M 249.58 180.95 C 249 181.63 248.36 182.26 247.68 182.84 C 248.56 183.74 249.46 184.71 250.32 185.69 L 252.44 183.56 C 251.42 182.69 250.44 181.8 249.58 180.95 Z M 229.06 172.82 L 229.06 176.32 L 232.56 176.32 L 232.56 172.82 Z M 234.31 167.57 C 234.31 168.97 234.31 173.95 234.31 176.32 L 237.81 176.32 L 237.81 167.57 Z M 224.68 166.89 C 225.05 166.89 225.34 167.19 225.34 167.55 C 225.34 167.91 225.05 168.21 224.68 168.21 C 224.32 168.21 224.03 167.91 224.03 167.55 C 224.03 167.19 224.32 166.89 224.68 166.89 Z M 239.56 162.32 C 239.56 164.02 239.56 174.63 239.56 176.32 L 243.06 176.32 L 243.06 162.32 Z M 238.68 160.57 L 243.93 160.57 C 244.42 160.57 244.81 160.96 244.81 161.45 L 244.81 176.32 L 245.68 176.32 C 246.17 176.32 246.56 176.71 246.56 177.2 C 246.56 177.68 246.17 178.07 245.68 178.07 L 226.43 178.07 C 225.95 178.07 225.56 177.68 225.56 177.2 C 225.56 176.71 225.95 176.32 226.43 176.32 L 227.31 176.32 L 227.31 171.95 C 227.31 171.46 227.7 171.07 228.18 171.07 L 232.56 171.07 L 232.56 166.7 C 232.56 166.21 232.95 165.82 233.43 165.82 L 237.81 165.82 L 237.81 161.45 C 237.81 160.96 238.2 160.57 238.68 160.57 Z M 236.93 156.99 C 237.42 156.99 237.81 157.38 237.81 157.86 C 237.81 158.34 237.42 158.74 236.93 158.74 C 232.64 158.74 228.76 161.12 226.8 164.95 C 226.58 165.38 226.05 165.55 225.62 165.33 C 225.19 165.11 225.02 164.59 225.24 164.16 C 227.43 159.87 231.88 156.99 236.93 156.99 Z M 236.93 155.24 C 228.73 155.24 222.06 161.91 222.06 170.11 C 222.06 178.33 228.75 185.01 236.97 185.01 C 240.19 185.01 243.26 183.99 245.84 182.06 C 249.45 179.37 251.84 175.06 251.84 170.13 C 251.84 161.92 245.15 155.24 236.93 155.24 Z M 236.93 153.49 C 246.12 153.49 253.59 160.95 253.59 170.13 C 253.59 173.54 252.58 176.78 250.66 179.56 C 252.94 181.81 256.19 184.51 258.84 186.2 L 263.15 188.95 C 263.19 188.97 263.22 189 263.25 189.02 C 265.47 190.9 265.67 194.13 264.01 196.26 C 261.93 198.91 257.99 198.96 255.85 196.42 C 255.83 196.39 255.8 196.36 255.78 196.33 L 253.15 192.2 C 251.42 189.49 248.55 186.21 246.27 183.91 C 243.52 185.77 240.32 186.76 236.97 186.76 C 227.78 186.76 220.31 179.29 220.31 170.11 C 220.31 160.94 227.77 153.49 236.93 153.49 Z" fill="#FFFFFF" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-84" data-name="Freeform: Shape 53">
+<path d="M 232.83 517.29 L 232.21 517.91 C 231.19 518.93 231.19 520.6 232.21 521.62 C 233.24 522.65 234.9 522.64 235.92 521.62 L 236.54 521 Z M 232.32 510.38 L 232.21 510.48 C 231.19 511.51 231.19 513.17 232.21 514.2 L 239.64 521.62 C 240.66 522.65 242.32 522.65 243.35 521.62 L 243.46 521.51 Z M 232.32 503.68 C 231.87 503.68 231.42 503.85 231.08 504.19 C 230.39 504.88 230.4 505.99 231.08 506.67 C 231.88 507.47 246.44 522.02 247.17 522.75 C 247.85 523.43 248.96 523.44 249.64 522.75 C 250.33 522.07 250.33 520.96 249.64 520.28 L 233.56 504.19 C 233.21 503.85 232.77 503.68 232.32 503.68 Z M 253.52 499.44 C 253.74 499.44 253.97 499.52 254.14 499.7 C 254.48 500.04 254.48 500.59 254.14 500.93 L 247.06 508.01 C 246.72 508.35 246.17 508.35 245.82 508.01 C 245.48 507.67 245.48 507.11 245.82 506.77 L 252.9 499.7 C 253.07 499.52 253.3 499.44 253.52 499.44 Z M 255.99 496.96 C 256.22 496.96 256.44 497.05 256.61 497.22 C 256.95 497.56 256.95 498.12 256.61 498.46 C 256.27 498.8 255.72 498.8 255.38 498.46 C 255.03 498.12 255.03 497.56 255.38 497.22 C 255.55 497.05 255.77 496.96 255.99 496.96 Z M 257.74 492.38 L 240.98 509.14 L 244.69 512.85 L 261.46 496.09 Z M 268.37 482.84 C 267.69 482.84 267.02 483.1 266.51 483.61 L 265.89 484.23 L 269.61 487.94 L 270.22 487.32 C 271.25 486.3 271.25 484.63 270.22 483.61 C 269.71 483.1 269.04 482.84 268.37 482.84 Z M 260.94 482.84 C 260.27 482.84 259.6 483.1 259.09 483.61 L 258.98 483.72 L 270.12 494.85 L 270.22 494.75 C 271.25 493.72 271.25 492.06 270.22 491.03 L 262.8 483.61 C 262.29 483.1 261.61 482.84 260.94 482.84 Z M 254.03 481.97 C 253.59 481.96 253.14 482.14 252.79 482.48 C 252.11 483.16 252.11 484.27 252.79 484.95 L 268.88 501.04 C 269.57 501.72 270.67 501.72 271.35 501.04 C 272.05 500.35 272.03 499.24 271.36 498.56 C 270.64 497.84 256.07 483.28 255.27 482.48 C 254.93 482.14 254.48 481.97 254.03 481.97 Z M 254.03 480.21 C 254.93 480.22 255.82 480.56 256.51 481.24 L 257.74 482.48 L 257.85 482.37 C 259.56 480.66 262.33 480.66 264.04 482.37 L 264.66 482.99 L 265.28 482.37 C 266.98 480.66 269.75 480.66 271.46 482.37 C 273.17 484.08 273.17 486.85 271.46 488.56 L 270.84 489.18 L 271.46 489.8 C 272.29 490.62 272.74 491.72 272.74 492.89 C 272.74 494.93 271.4 496.02 271.36 496.09 L 272.59 497.33 C 273.96 498.69 273.96 500.91 272.59 502.28 C 271.23 503.65 269.01 503.64 267.64 502.28 L 262.69 497.33 L 245.93 514.09 L 250.88 519.04 C 252.25 520.41 252.25 522.62 250.88 523.99 C 249.51 525.36 247.3 525.36 245.93 523.99 L 244.69 522.75 L 244.59 522.86 C 242.88 524.57 240.11 524.57 238.4 522.86 L 237.78 522.24 L 237.16 522.86 C 235.45 524.57 232.69 524.57 230.98 522.86 C 229.27 521.15 229.27 518.38 230.98 516.67 L 231.6 516.05 L 230.98 515.43 C 229.27 513.72 229.27 510.96 230.98 509.25 L 231.08 509.14 L 229.85 507.9 C 228.48 506.53 228.48 504.32 229.85 502.95 C 231.21 501.58 233.43 501.59 234.79 502.95 L 239.74 507.9 L 256.51 491.14 L 251.56 486.19 C 250.19 484.82 250.19 482.61 251.56 481.24 C 252.24 480.56 253.14 480.21 254.03 480.21 Z" fill="#FFFFFF" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-85" data-name="矩形: 圆角 84">
+<rect x="362.89" y="619.34" width="168.58" height="84.66" rx="0" ry="0" fill="#244072" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-87" data-name="文本框 86">
+<rect x="379.52" y="629.77" width="136.32" height="31.4" fill="none" />
+<text x="389.12" y="648.17" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="16" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="16">店铺 </tspan><tspan fill="#FFFFFF" font-size="16">GMV </tspan><tspan fill="#FFFFFF" font-size="16">突破</tspan></text>
+</g>
+<g id="shape-88" data-name="文本框 87">
+<rect x="379.52" y="654.09" width="107.68" height="38.57" fill="none" />
+<text x="389.12" y="677.02" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">800</tspan><tspan fill="#FFFFFF" font-size="21.33">万元</tspan></text>
+</g>
+<g id="shape-98" data-name="矩形: 圆角 97">
+<rect x="545.48" y="619.34" width="168.58" height="84.66" rx="0" ry="0" fill="#2F5698" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-99" data-name="文本框 98">
+<rect x="562.11" y="629.77" width="136.32" height="31.4" fill="none" />
+<text x="571.71" y="648.17" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="16" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="16">销售额同比增长</tspan></text>
+</g>
+<g id="shape-100" data-name="文本框 99">
+<rect x="562.11" y="654.09" width="107.68" height="38.57" fill="none" />
+<text x="571.71" y="677.02" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">35%</tspan></text>
+</g>
+<g id="shape-101" data-name="矩形: 圆角 100">
+<rect x="727.8" y="619.34" width="168.58" height="84.66" rx="0" ry="0" fill="#4474C5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-102" data-name="文本框 101">
+<rect x="744.43" y="629.77" width="136.32" height="31.4" fill="none" />
+<text x="754.03" y="648.17" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="16" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="16">全渠道曝光量</tspan></text>
+</g>
+<g id="shape-103" data-name="文本框 102">
+<rect x="744.43" y="654.09" width="107.68" height="38.57" fill="none" />
+<text x="754.03" y="677.02" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">500 </tspan><tspan fill="#FFFFFF" font-size="21.33">万次</tspan></text>
+</g>
+<g id="shape-104" data-name="矩形: 圆角 103">
+<rect x="910.13" y="619.34" width="168.58" height="84.66" rx="0" ry="0" fill="#5B80D0" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-105" data-name="文本框 104">
+<rect x="926.75" y="629.77" width="136.32" height="31.4" fill="none" />
+<text x="936.35" y="648.17" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="16" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="16">店铺访客数（</tspan><tspan fill="#FFFFFF" font-size="16">UV</tspan><tspan fill="#FFFFFF" font-size="16">）</tspan></text>
+</g>
+<g id="shape-107" data-name="文本框 106">
+<rect x="926.75" y="654.09" width="107.68" height="38.57" fill="none" />
+<text x="936.35" y="677.02" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">20 </tspan><tspan fill="#FFFFFF" font-size="21.33">万人</tspan></text>
+</g>
+<g id="shape-109" data-name="矩形: 圆角 108">
+<rect x="1091.25" y="619.34" width="168.58" height="84.66" rx="0" ry="0" fill="#99B0E3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-110" data-name="文本框 109">
+<rect x="1107.87" y="629.77" width="136.32" height="31.4" fill="none" />
+<text x="1117.47" y="648.17" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="16" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="16">整体转化率</tspan></text>
+</g>
+<g id="shape-111" data-name="文本框 110">
+<rect x="1107.87" y="654.09" width="107.68" height="38.57" fill="none" />
+<text x="1117.47" y="677.02" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">82.5%</tspan></text>
+</g></svg>

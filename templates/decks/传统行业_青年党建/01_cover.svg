@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><image href="assets/image1.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none"/>
+<g id="shape-13" data-name="图片 12">
+<svg x="-4.04" y="-0.06" width="1284.04" height="720.06" viewBox="0.0708 0 0.9292 1" preserveAspectRatio="none"><image href="assets/image2.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="shape-32" data-name="矩形 31">
+<rect x="-4.04" y="-1.3" width="1284.04" height="721.3" fill="#921F1F" fill-opacity="0.71" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-18" data-name="文本框 17">
+<rect x="245.25" y="186.69" width="781.87" height="151.73" fill="none"/>
+<text x="254.85" y="266.29" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, &quot;汉仪全唐诗简&quot;, sans-serif" font-size="88" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="88">{{TITLE}}</tspan></text>
+</g>
+<g id="shape-20" data-name="文本框 19">
+<rect x="266.61" y="338.56" width="746.78" height="111.48" fill="none"/>
+<text x="640" y="359.23" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪全唐诗简&quot;, sans-serif" font-size="18.67" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="18.67">{{SUBTITLE}}</tspan></text>
+</g>
+<g id="shape-21" data-name="文本框 20">
+<rect x="455.28" y="119.25" width="369.44" height="42.01" fill="none"/>
+<text x="464.88" y="146.72" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪书宋一简&quot;, sans-serif" font-size="26.67" fill="#FFE3C1"><tspan fill="#FFE3C1" font-size="26.67">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-22" data-name="文本框 21">
+<rect x="554.91" y="507.54" width="170.18" height="35.54" fill="#FFE3C1"/>
+<text x="564.51" y="530.48" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="21.33" fill="#C00000"><tspan fill="#C00000" font-size="21.33">汇报人：{{AUTHOR}}</tspan></text>
+</g>
+<g id="shape-24" data-name="直接连接符 23" transform="translate(638.33 106.49) scale(1 -1) translate(-638.33 -106.49)">
+<line x1="467.33" y1="106.31" x2="809.33" y2="106.67" stroke="#FFE3C1" fill="#5B9BD5" stroke-width="1"/>
+</g>
+<g id="shape-28" data-name="直接连接符 27" transform="translate(638.33 174.34) scale(1 -1) translate(-638.33 -174.34)">
+<line x1="467.33" y1="174.16" x2="809.33" y2="174.51" stroke="#FFE3C1" fill="#5B9BD5" stroke-width="1"/>
+</g></svg>

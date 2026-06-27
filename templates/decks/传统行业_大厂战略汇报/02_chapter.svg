@@ -1,0 +1,274 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B51D25" /><stop offset="1" stop-color="#88161C" /></linearGradient><linearGradient id="ggrad2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DE3039" /><stop offset="1" stop-color="#AC1C23" /></linearGradient><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="18.86" dy="18.86" stdDeviation="33.33" flood-color="#000000" flood-opacity="0.1" /></filter><linearGradient id="ggrad3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DE3039" /><stop offset="1" stop-color="#AC1C23" /></linearGradient><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="18.86" dy="18.86" stdDeviation="33.33" flood-color="#000000" flood-opacity="0.1" /></filter><linearGradient id="ggrad4" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DE3039" /><stop offset="1" stop-color="#AC1C23" /></linearGradient><filter id="fx3" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="18.86" dy="18.86" stdDeviation="33.33" flood-color="#000000" flood-opacity="0.1" /></filter><linearGradient id="ggrad5" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DE3039" /><stop offset="1" stop-color="#AC1C23" /></linearGradient><filter id="fx4" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="18.86" dy="18.86" stdDeviation="33.33" flood-color="#000000" flood-opacity="0.1" /></filter><linearGradient id="ggrad6" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DE3039" /><stop offset="1" stop-color="#AC1C23" /></linearGradient><filter id="fx5" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="18.86" dy="18.86" stdDeviation="33.33" flood-color="#000000" flood-opacity="0.1" /></filter><linearGradient id="ggrad7" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DE3039" /><stop offset="1" stop-color="#AC1C23" /></linearGradient><filter id="fx6" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="18.86" dy="18.86" stdDeviation="33.33" flood-color="#000000" flood-opacity="0.1" /></filter><linearGradient id="ggrad8" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DE3039" /><stop offset="1" stop-color="#AC1C23" /></linearGradient><filter id="fx7" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="18.86" dy="18.86" stdDeviation="33.33" flood-color="#000000" flood-opacity="0.1" /></filter><linearGradient id="ggrad9" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DE3039" /><stop offset="1" stop-color="#AC1C23" /></linearGradient><filter id="fx8" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="18.86" dy="18.86" stdDeviation="33.33" flood-color="#000000" flood-opacity="0.1" /></filter><linearGradient id="ggrad10" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0" stop-color="#44546A" stop-opacity="0" /><stop offset="1" stop-color="#44546A" /></linearGradient><marker id="marrow1" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#FFFFFF" /></marker><marker id="marrow2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#FFFFFF" /></marker><linearGradient id="ggrad11" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0" stop-color="#44546A" stop-opacity="0" /><stop offset="1" stop-color="#44546A" /></linearGradient><marker id="marrow3" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#FFFFFF" /></marker><marker id="marrow4" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#FFFFFF" /></marker></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-137" data-name="矩形 136" transform="translate(1031.47 160.65) scale(-1 1) translate(-1031.47 -160.65)">
+<rect x="821.61" y="118.67" width="419.73" height="83.96" fill="#B51D25" fill-opacity="0.1" stroke="none" stroke-width="1" />
+<text x="1031.47" y="173.71" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="37.33" fill="#B51D25"><tspan fill="#B51D25" font-size="37.33">  短板怎么补救？方法：</tspan></text>
+</g>
+<g id="shape-136" data-name="矩形 135">
+<rect x="38.67" y="118.67" width="417.97" height="83.96" fill="#B51D25" fill-opacity="0.1" stroke="none" stroke-width="1" />
+<text x="247.65" y="173.71" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="37.33" fill="#B51D25"><tspan fill="#B51D25" font-size="37.33">长板怎么维持？方法：</tspan></text>
+</g>
+<g id="shape-134" data-name="矩形 133">
+<rect x="38.67" y="208.2" width="1202.67" height="431.16" fill="#B51D25" fill-opacity="0.1" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-4" data-name="文本框 3">
+<rect x="28.62" y="21.05" width="377.18" height="54.93" fill="none" />
+<text x="38.22" y="57.59" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="37.33" fill="#44546A"><tspan fill="#44546A" font-size="37.33">两段内容页</tspan><tspan fill="#44546A" font-size="37.33">-</tspan><tspan fill="#44546A" font-size="37.33">木桶效应</tspan></text>
+</g>
+<g id="shape-5" data-name="直线连接符 11">
+<line x1="30.33" y1="75.93" x2="1238.87" y2="75.93" stroke-width="4" stroke-linecap="round" stroke="#B51D25" fill="#B51D25" />
+</g>
+<g id="shape-2" data-name="矩形: 圆顶角 1">
+<path d="M 10.53 698.95 L 1269.47 698.95 A 10.53 10.53 0 0 1 1280 709.47 L 1280 720 L 1280 720 L 0 720 L 0 720 L 0 709.47 A 10.53 10.53 0 0 1 10.53 698.95 Z" data-pptx-prst="round2SameRect" data-pptx-adj1="50000" data-pptx-adj2="0" fill="url(#ggrad1)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-15" data-name="组合 14">
+<g id="shape-133" data-name="任意形状 6" transform="rotate(176.07 636.27 403.3)">
+<path d="M 423.65 636.64 L 453.72 240.12 L 453.48 238.06 C 453.98 199.18 536.18 168.71 637.09 169.99 C 731.7 171.2 809.16 199.89 818.06 235.5 L 818.45 238.76 L 818.72 238.76 L 848.9 636.64 Z" fill="#B51D25" stroke-width="3" stroke-linecap="butt" stroke="#5B0E12" stroke-linejoin="miter" />
+</g>
+<g id="shape-97" data-name="椭圆 96" transform="rotate(356.8 620.45 171.21)">
+<ellipse cx="620.45" cy="171.21" rx="213.22" ry="70.4" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-111" data-name="直线连接符 8">
+<line x1="478.43" y1="235.05" x2="521.7" y2="622.99" fill="none" stroke-width="2" stroke-linecap="butt" stroke="#FFFFFF" stroke-dasharray="4 4" stroke-linejoin="miter" />
+</g>
+<g id="shape-112" data-name="直线连接符 9">
+<line x1="568.92" y1="243.71" x2="601.97" y2="635.58" fill="none" stroke-width="2" stroke-linecap="butt" stroke="#FFFFFF" stroke-dasharray="4 4" stroke-linejoin="miter" />
+</g>
+<g id="shape-113" data-name="直线连接符 12">
+<line x1="676.72" y1="239.77" x2="687.38" y2="630.86" fill="none" stroke-width="2" stroke-linecap="butt" stroke="#FFFFFF" stroke-dasharray="4 4" stroke-linejoin="miter" />
+</g>
+<g id="shape-114" data-name="任意形状 20">
+<path d="M 679.09 239.25 C 679.47 298.07 683.61 325.44 683.99 384.26 L 760.67 369.78 L 764.39 217.41 L 679.09 239.25 Z" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" fill="none" />
+</g>
+<g id="shape-114-text" data-name="任意形状 20 text">
+<text x="721.74" y="294.44" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="32" fill="#B51D25" letter-spacing="8"><tspan fill="#B51D25" font-size="32" letter-spacing="8">短</tspan><tspan x="721.74" dy="33.6" fill="#B51D25" font-size="32" letter-spacing="8">板</tspan></text>
+</g>
+<g id="shape-115" data-name="直线连接符 14" transform="translate(762.67 415.25) scale(-1 1) translate(-762.67 -415.25)">
+<line x1="759.34" y1="215.38" x2="765.99" y2="615.12" fill="none" stroke-width="2" stroke-linecap="butt" stroke="#FFFFFF" stroke-dasharray="4 4" stroke-linejoin="miter" />
+</g>
+<g id="shape-116" data-name="椭圆 115" transform="rotate(356.8 620.2 173.4)">
+<ellipse cx="620.2" cy="173.4" rx="211.52" ry="68.78" fill="none" stroke-width="2.333" stroke-linecap="butt" stroke="#5B0E12" stroke-dasharray="3 3" stroke-linejoin="miter" />
+</g>
+<g id="shape-117" data-name="文本框 116" transform="rotate(351.91 467.31 404.71)">
+<rect x="441.46" y="346.01" width="51.7" height="117.4" fill="none" />
+</g>
+<g id="shape-117-text" data-name="文本框 116 text">
+<text x="467.31" y="371.38" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">技</tspan><tspan x="467.31" dy="28" fill="#FFFFFF" font-size="26.67">术</tspan><tspan x="467.31" dy="28" fill="#FFFFFF" font-size="26.67">壁</tspan><tspan x="467.31" dy="28" fill="#FFFFFF" font-size="26.67">垒</tspan></text>
+</g>
+<g id="shape-118" data-name="文本框 117" transform="rotate(353.84 539.91 407.51)">
+<rect x="514.06" y="348.81" width="51.7" height="117.4" fill="none" />
+</g>
+<g id="shape-118-text" data-name="文本框 117 text">
+<text x="539.91" y="374.18" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">市</tspan><tspan x="539.91" dy="28" fill="#FFFFFF" font-size="26.67">场</tspan><tspan x="539.91" dy="28" fill="#FFFFFF" font-size="26.67">优</tspan><tspan x="539.91" dy="28" fill="#FFFFFF" font-size="26.67">势</tspan></text>
+</g>
+<g id="shape-119" data-name="文本框 118" transform="rotate(356.3 631.47 409.07)">
+<rect x="605.62" y="350.36" width="51.7" height="117.4" fill="none" />
+</g>
+<g id="shape-119-text" data-name="文本框 118 text">
+<text x="631.47" y="375.73" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">团</tspan><tspan x="631.47" dy="28" fill="#FFFFFF" font-size="26.67">队</tspan><tspan x="631.47" dy="28" fill="#FFFFFF" font-size="26.67">实</tspan><tspan x="631.47" dy="28" fill="#FFFFFF" font-size="26.67">力</tspan></text>
+</g>
+<g id="shape-120" data-name="文本框 119">
+<rect x="697.57" y="394.18" width="51.7" height="63.55" fill="none" />
+</g>
+<g id="shape-120-text" data-name="文本框 119 text">
+<text x="723.42" y="420.62" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">运</tspan><tspan x="723.42" dy="28" fill="#FFFFFF" font-size="26.67">营</tspan></text>
+</g>
+<g id="shape-121" data-name="文本框 120">
+<rect x="773.79" y="348" width="51.7" height="90.47" fill="none" />
+</g>
+<g id="shape-121-text" data-name="文本框 120 text">
+<text x="799.64" y="373.91" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">现</tspan><tspan x="799.64" dy="28" fill="#FFFFFF" font-size="26.67">金</tspan><tspan x="799.64" dy="28" fill="#FFFFFF" font-size="26.67">流</tspan></text>
+</g>
+<g id="shape-132" data-name="文本框 131" transform="rotate(355.1 618.48 168.41)">
+<rect x="519.34" y="131.25" width="198.28" height="74.32" fill="none" />
+<text x="528.94" y="181.38" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="53.33" fill="#B51D25"><tspan fill="#B51D25" font-size="53.33">{{CHAPTER_TITLE}}</tspan></text>
+</g>
+</g>
+<g id="shape-17" data-name="组合 16">
+<g id="shape-142" data-name="矩形 141">
+<rect x="95.1" y="222.24" width="138.58" height="35.54" fill="none" />
+<text x="104.7" y="245.18" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="21.33" fill="#404040" font-weight="bold"><tspan fill="#404040" font-size="21.33" font-weight="bold">方法</tspan><tspan fill="#404040" font-size="21.33" font-weight="bold">1</tspan><tspan fill="#404040" font-size="21.33" font-weight="bold">：</tspan></text>
+</g>
+<g id="shape-143" data-name="矩形 142">
+<rect x="59.19" y="253.7" width="353.37" height="61.81" fill="none" />
+<text x="68.79" y="274.36" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="18.67" fill="#404040"><tspan fill="#404040" font-size="18.67">{{CHAPTER_DESC}}</tspan></text>
+</g>
+</g>
+<g id="shape-18" data-name="组合 17">
+<g id="shape-150" data-name="矩形 149">
+<rect x="97.72" y="329.19" width="138.58" height="35.54" fill="none" />
+<text x="107.32" y="352.12" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="21.33" fill="#404040" font-weight="bold"><tspan fill="#404040" font-size="21.33" font-weight="bold">方法</tspan><tspan fill="#404040" font-size="21.33" font-weight="bold">2</tspan><tspan fill="#404040" font-size="21.33" font-weight="bold">：</tspan></text>
+</g>
+<g id="shape-151" data-name="矩形 150">
+<rect x="59.19" y="361.57" width="353.37" height="61.81" fill="none" />
+<text x="68.79" y="382.24" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="18.67" fill="#404040"><tspan fill="#404040" font-size="18.67">绑定头部供应商，签订</tspan><tspan fill="#404040" font-size="18.67">2</tspan><tspan fill="#404040" font-size="18.67">年协议，确保供</tspan><tspan x="68.79" dy="22.4" fill="#404040" font-size="18.67">应链稳定性。</tspan></text>
+</g>
+</g>
+<g id="shape-19" data-name="组合 18">
+<g id="shape-152" data-name="矩形 151">
+<rect x="100.18" y="437.98" width="138.58" height="35.54" fill="none" />
+<text x="109.78" y="460.91" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="21.33" fill="#404040" font-weight="bold"><tspan fill="#404040" font-size="21.33" font-weight="bold">方法</tspan><tspan fill="#404040" font-size="21.33" font-weight="bold">3</tspan><tspan fill="#404040" font-size="21.33" font-weight="bold">：</tspan></text>
+</g>
+<g id="shape-153" data-name="矩形 152">
+<rect x="59.19" y="469.45" width="353.37" height="61.81" fill="none" />
+<text x="68.79" y="490.12" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="18.67" fill="#404040"><tspan fill="#404040" font-size="18.67">建立用户社区，每月举办产品共创会，</tspan><tspan x="68.79" dy="22.4" fill="#404040" font-size="18.67">强化品牌忠诚度。</tspan></text>
+</g>
+</g>
+<g id="shape-20" data-name="组合 19">
+<g id="shape-154" data-name="矩形 153">
+<rect x="99.75" y="548.68" width="138.58" height="35.54" fill="none" />
+<text x="109.35" y="571.62" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="21.33" fill="#404040" font-weight="bold"><tspan fill="#404040" font-size="21.33" font-weight="bold">方法</tspan><tspan fill="#404040" font-size="21.33" font-weight="bold">4</tspan><tspan fill="#404040" font-size="21.33" font-weight="bold">：</tspan></text>
+</g>
+<g id="shape-155" data-name="矩形 154">
+<rect x="59.19" y="577.33" width="353.37" height="34.67" fill="none" />
+<text x="68.79" y="597.99" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="18.67" fill="#404040"><tspan fill="#404040" font-size="18.67">提前布局海外专利，规避技术抄袭风险。</tspan></text>
+</g>
+</g>
+<g id="shape-22" data-name="直接连接符 21">
+<line x1="72" y1="325.93" x2="391.5" y2="325.93" stroke="#B51D25" stroke-opacity="0.42" stroke-dasharray="4 4" fill="#B51D25" stroke-width="1" />
+</g>
+<g id="shape-156" data-name="直接连接符 155">
+<line x1="72" y1="432.35" x2="391.5" y2="432.35" stroke="#B51D25" stroke-opacity="0.42" stroke-dasharray="4 4" fill="#B51D25" stroke-width="1" />
+</g>
+<g id="shape-157" data-name="直接连接符 156">
+<line x1="72" y1="540.65" x2="391.5" y2="540.65" stroke="#B51D25" stroke-opacity="0.42" stroke-dasharray="4 4" fill="#B51D25" stroke-width="1" />
+</g>
+<g id="shape-158" data-name="组合 157">
+<g id="shape-159" data-name="Rectangle: Rounded Corners 27">
+<rect x="67.98" y="223.42" width="31.77" height="31.77" rx="15.88" ry="15.88" fill="url(#ggrad2)" stroke-width="2" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" filter="url(#fx1)" />
+</g>
+<g id="shape-160" data-name="图形 159">
+<image href="assets/image19.png" x="74.13" y="228.84" width="19.06" height="19.06" preserveAspectRatio="none" />
+</g>
+</g>
+<g id="shape-161" data-name="组合 160">
+<g id="shape-162" data-name="Rectangle: Rounded Corners 27">
+<rect x="67.98" y="331.34" width="31.77" height="31.77" rx="15.88" ry="15.88" fill="url(#ggrad3)" stroke-width="2" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" filter="url(#fx2)" />
+</g>
+<g id="shape-163" data-name="图形 162">
+<image href="assets/image19.png" x="74.13" y="336.76" width="19.06" height="19.06" preserveAspectRatio="none" />
+</g>
+</g>
+<g id="shape-164" data-name="组合 163">
+<g id="shape-165" data-name="Rectangle: Rounded Corners 27">
+<rect x="67.98" y="439.46" width="31.77" height="31.77" rx="15.88" ry="15.88" fill="url(#ggrad4)" stroke-width="2" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" filter="url(#fx3)" />
+</g>
+<g id="shape-166" data-name="图形 165">
+<image href="assets/image19.png" x="74.13" y="444.89" width="19.06" height="19.06" preserveAspectRatio="none" />
+</g>
+</g>
+<g id="shape-167" data-name="组合 166">
+<g id="shape-168" data-name="Rectangle: Rounded Corners 27">
+<rect x="67.98" y="548.68" width="31.77" height="31.77" rx="15.88" ry="15.88" fill="url(#ggrad5)" stroke-width="2" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" filter="url(#fx4)" />
+</g>
+<g id="shape-169" data-name="图形 168">
+<image href="assets/image19.png" x="74.13" y="554.11" width="19.06" height="19.06" preserveAspectRatio="none" />
+</g>
+</g>
+<g id="shape-196" data-name="组合 195">
+<g id="shape-197" data-name="矩形 196">
+<rect x="894.23" y="222.24" width="138.58" height="35.54" fill="none" />
+<text x="903.83" y="245.18" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="21.33" fill="#404040" font-weight="bold"><tspan fill="#404040" font-size="21.33" font-weight="bold">方法</tspan><tspan fill="#404040" font-size="21.33" font-weight="bold">1</tspan><tspan fill="#404040" font-size="21.33" font-weight="bold">：</tspan></text>
+</g>
+<g id="shape-198" data-name="矩形 197">
+<rect x="858.33" y="253.7" width="353.37" height="61.81" fill="none" />
+<text x="867.93" y="274.36" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="18.67" fill="#404040"><tspan fill="#404040" font-size="18.67">引入战略出资人，以资源置换估值，缓</tspan><tspan x="867.93" dy="22.4" fill="#404040" font-size="18.67">解资金压力。</tspan></text>
+</g>
+</g>
+<g id="shape-201" data-name="组合 200">
+<g id="shape-202" data-name="矩形 201">
+<rect x="896.86" y="329.19" width="138.58" height="35.54" fill="none" />
+<text x="906.46" y="352.12" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="21.33" fill="#404040" font-weight="bold"><tspan fill="#404040" font-size="21.33" font-weight="bold">方法</tspan><tspan fill="#404040" font-size="21.33" font-weight="bold">2</tspan><tspan fill="#404040" font-size="21.33" font-weight="bold">：</tspan></text>
+</g>
+<g id="shape-203" data-name="矩形 202">
+<rect x="858.33" y="361.57" width="353.37" height="61.81" fill="none" />
+<text x="867.93" y="382.24" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="18.67" fill="#404040"><tspan fill="#404040" font-size="18.67">高薪招募</tspan><tspan fill="#404040" font-size="18.67">2</tspan><tspan fill="#404040" font-size="18.67">名行业资深顾问，补齐管理短</tspan><tspan x="867.93" dy="22.4" fill="#404040" font-size="18.67">板。</tspan></text>
+</g>
+</g>
+<g id="shape-204" data-name="组合 203">
+<g id="shape-206" data-name="矩形 205">
+<rect x="899.32" y="437.98" width="138.58" height="35.54" fill="none" />
+<text x="908.92" y="460.91" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="21.33" fill="#404040" font-weight="bold"><tspan fill="#404040" font-size="21.33" font-weight="bold">方法</tspan><tspan fill="#404040" font-size="21.33" font-weight="bold">3</tspan><tspan fill="#404040" font-size="21.33" font-weight="bold">：</tspan></text>
+</g>
+<g id="shape-210" data-name="矩形 209">
+<rect x="858.33" y="469.45" width="353.37" height="61.81" fill="none" />
+<text x="867.93" y="490.12" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="18.67" fill="#404040"><tspan fill="#404040" font-size="18.67">与高校联合培养管培生，低成本储备技</tspan><tspan x="867.93" dy="22.4" fill="#404040" font-size="18.67">术人才。</tspan></text>
+</g>
+</g>
+<g id="shape-211" data-name="组合 210">
+<g id="shape-212" data-name="矩形 211">
+<rect x="898.89" y="548.68" width="138.58" height="35.54" fill="none" />
+<text x="908.49" y="571.62" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="21.33" fill="#404040" font-weight="bold"><tspan fill="#404040" font-size="21.33" font-weight="bold">方法</tspan><tspan fill="#404040" font-size="21.33" font-weight="bold">4</tspan><tspan fill="#404040" font-size="21.33" font-weight="bold">：</tspan></text>
+</g>
+<g id="shape-230" data-name="矩形 229">
+<rect x="858.33" y="577.33" width="375.55" height="34.67" fill="none" />
+<text x="867.93" y="597.99" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="18.67" fill="#404040"><tspan fill="#404040" font-size="18.67">推行轻资产运营，将</tspan><tspan fill="#404040" font-size="18.67">30%</tspan><tspan fill="#404040" font-size="18.67">非核心业务外包。</tspan></text>
+</g>
+</g>
+<g id="shape-231" data-name="直接连接符 230">
+<line x1="871.13" y1="325.93" x2="1190.63" y2="325.93" stroke="#B51D25" stroke-opacity="0.42" stroke-dasharray="4 4" fill="#B51D25" stroke-width="1" />
+</g>
+<g id="shape-232" data-name="直接连接符 231">
+<line x1="871.13" y1="432.35" x2="1190.63" y2="432.35" stroke="#B51D25" stroke-opacity="0.42" stroke-dasharray="4 4" fill="#B51D25" stroke-width="1" />
+</g>
+<g id="shape-233" data-name="直接连接符 232">
+<line x1="871.13" y1="540.65" x2="1190.63" y2="540.65" stroke="#B51D25" stroke-opacity="0.42" stroke-dasharray="4 4" fill="#B51D25" stroke-width="1" />
+</g>
+<g id="shape-234" data-name="组合 233">
+<g id="shape-235" data-name="Rectangle: Rounded Corners 27">
+<rect x="867.12" y="223.42" width="31.77" height="31.77" rx="15.88" ry="15.88" fill="url(#ggrad6)" stroke-width="2" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" filter="url(#fx5)" />
+</g>
+<g id="shape-236" data-name="图形 235">
+<image href="assets/image19.png" x="873.27" y="228.84" width="19.06" height="19.06" preserveAspectRatio="none" />
+</g>
+</g>
+<g id="shape-237" data-name="组合 236">
+<g id="shape-238" data-name="Rectangle: Rounded Corners 27">
+<rect x="867.12" y="331.34" width="31.77" height="31.77" rx="15.88" ry="15.88" fill="url(#ggrad7)" stroke-width="2" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" filter="url(#fx6)" />
+</g>
+<g id="shape-239" data-name="图形 238">
+<image href="assets/image19.png" x="873.27" y="336.76" width="19.06" height="19.06" preserveAspectRatio="none" />
+</g>
+</g>
+<g id="shape-240" data-name="组合 239">
+<g id="shape-241" data-name="Rectangle: Rounded Corners 27">
+<rect x="867.12" y="439.46" width="31.77" height="31.77" rx="15.88" ry="15.88" fill="url(#ggrad8)" stroke-width="2" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" filter="url(#fx7)" />
+</g>
+<g id="shape-242" data-name="图形 241">
+<image href="assets/image19.png" x="873.27" y="444.89" width="19.06" height="19.06" preserveAspectRatio="none" />
+</g>
+</g>
+<g id="shape-245" data-name="组合 244">
+<g id="shape-246" data-name="Rectangle: Rounded Corners 27">
+<rect x="867.12" y="548.68" width="31.77" height="31.77" rx="15.88" ry="15.88" fill="url(#ggrad9)" stroke-width="2" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" filter="url(#fx8)" />
+</g>
+<g id="shape-247" data-name="图形 246">
+<image href="assets/image19.png" x="873.27" y="554.11" width="19.06" height="19.06" preserveAspectRatio="none" />
+</g>
+</g>
+<g id="shape-248" data-name="矩形 247">
+<rect x="38.67" y="646.47" width="601.33" height="39.84" fill="url(#ggrad10)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-23" data-name="矩形 22">
+<rect x="136.98" y="651.85" width="221.34" height="29.08" fill="none" />
+<text x="247.65" y="670.25" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">核心技术优势</tspan><tspan fill="#FFFFFF" font-size="16" font-weight="bold">+</tspan><tspan fill="#FFFFFF" font-size="16" font-weight="bold">市场先发优势</tspan></text>
+</g>
+<g id="shape-249" data-name="直接箭头连接符 248" transform="translate(375.41 665.8) scale(1 -1) translate(-375.41 -665.8)">
+<line x1="375.41" y1="650.67" x2="375.41" y2="680.93" stroke="#FFFFFF" marker-end="url(#marrow1)" fill="#B51D25" stroke-width="1" />
+</g>
+<g id="shape-251" data-name="直接箭头连接符 250" transform="translate(119.41 665.8) scale(1 -1) translate(-119.41 -665.8)">
+<line x1="119.41" y1="650.67" x2="119.41" y2="680.93" stroke="#FFFFFF" marker-end="url(#marrow2)" fill="#B51D25" stroke-width="1" />
+</g>
+<g id="shape-252" data-name="矩形 251" transform="translate(940.67 666.39) scale(-1 1) translate(-940.67 -666.39)">
+<rect x="640" y="646.47" width="601.33" height="39.84" fill="url(#ggrad11)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-253" data-name="矩形 252">
+<rect x="929.75" y="651.85" width="205.18" height="29.08" fill="none" />
+<text x="1032.35" y="670.25" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">现金流紧张</tspan><tspan fill="#FFFFFF" font-size="16" font-weight="bold">+</tspan><tspan fill="#FFFFFF" font-size="16" font-weight="bold">团队经验不足</tspan></text>
+</g>
+<g id="shape-254" data-name="直接箭头连接符 253" transform="translate(1160.1 665.8) scale(1 -1) translate(-1160.1 -665.8)">
+<line x1="1160.1" y1="650.67" x2="1160.1" y2="680.93" stroke="#FFFFFF" marker-end="url(#marrow3)" fill="#B51D25" stroke-width="1" />
+</g>
+<g id="shape-255" data-name="直接箭头连接符 254" transform="translate(904.1 665.8) scale(1 -1) translate(-904.1 -665.8)">
+<line x1="904.1" y1="650.67" x2="904.1" y2="680.93" stroke="#FFFFFF" marker-end="url(#marrow4)" fill="#B51D25" stroke-width="1" />
+</g></svg>

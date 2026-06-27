@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FDFEFB" />
+<g id="shape-7" data-name="Oval 52">
+<ellipse cx="890.17" cy="581.38" rx="257.71" ry="152.72" fill="#5B805B" stroke-width="2.667" stroke-linecap="butt" stroke="none" />
+</g>
+<g id="shape-9" data-name="Oval 53">
+<ellipse cx="890.17" cy="581.51" rx="187.28" ry="110.98" fill="#FFFFFF" stroke-width="2.667" stroke-linecap="butt" stroke="none" />
+</g>
+<g id="shape-10" data-name="Oval 54">
+<ellipse cx="890.17" cy="581.38" rx="102.64" ry="60.82" fill="#FFFFFF" stroke-width="2.667" stroke-linecap="butt" stroke="#A9C683" />
+</g>
+<g id="shape-11" data-name="Oval 55">
+<ellipse cx="890.17" cy="581.38" rx="82.16" ry="48.69" fill="#A9D3A9" stroke-width="2.667" stroke-linecap="butt" stroke="none" />
+</g>
+<g id="shape-12" data-name="Isosceles Triangle 41" transform="translate(890.17 526.47) scale(1 -1) translate(-890.17 -526.47)">
+<polygon points="890.17,465.66 982.49,587.28 797.85,587.28" fill="#5B805B" stroke-width="2.667" stroke-linecap="butt" stroke="none" />
+</g>
+<g id="shape-13" data-name="Freeform: Shape 42">
+<path d="M 815.48 450.02 L 973.17 450.02 L 984.01 465.66 L 799.22 465.66 L 815.48 450.02 Z" fill="#A9C683" stroke-width="2.667" stroke-linecap="butt" stroke="none" />
+</g>
+<g id="shape-14" data-name="Freeform: Shape 43">
+<path d="M 716.92 349.34 L 1061.76 349.34 L 997.79 455.03 L 780.89 455.03 Z" fill="#5B805B" stroke-width="2.667" stroke-linecap="butt" stroke="none" />
+</g>
+<g id="shape-15" data-name="Freeform: Shape 44">
+<path d="M 642.82 227.71 L 1134.95 227.71 L 1071 333.25 L 706.77 333.25 Z" fill="#5B805B" stroke-width="2.667" stroke-linecap="butt" stroke="none" />
+</g>
+<g id="shape-16" data-name="Freeform: Shape 45">
+<path d="M 747.56 333.85 L 1041.83 333.85 L 1062.06 349.34 L 717.22 349.34 L 747.56 333.85 Z" fill="#A9C683" stroke-width="2.667" stroke-linecap="butt" stroke="none" />
+</g>
+<g id="shape-17" data-name="Freeform: Shape 46">
+<path d="M 686.12 212.23 L 1106.08 212.23 L 1134.95 227.71 L 642.82 227.71 L 686.12 212.23 Z" fill="#A9C683" stroke-width="2.667" stroke-linecap="butt" stroke="none" />
+</g>
+<g id="shape-18" data-name="Straight Connector 5">
+<line x1="561.73" y1="284.96" x2="656.94" y2="284.96" stroke-width="1.333" stroke="#7D7789" stroke-dasharray="3 3" fill="#5B805B" />
+</g>
+<g id="shape-19" data-name="Straight Connector 6">
+<line x1="561.73" y1="419.53" x2="734.99" y2="419.53" stroke-width="1.333" stroke="#7D7789" stroke-dasharray="3 3" fill="#5B805B" />
+</g>
+<g id="shape-20" data-name="Straight Connector 7">
+<line x1="556.13" y1="560.07" x2="763.67" y2="560.07" stroke-width="1.333" stroke="#7D7789" stroke-dasharray="3 3" fill="#5B805B" />
+</g>
+<g id="shape-22" data-name="Oval 29">
+<ellipse cx="511.13" cy="422.53" rx="36.13" ry="36.13" fill="#5B805B" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-34" data-name="Oval 25">
+<ellipse cx="511.13" cy="560.07" rx="36.13" ry="36.13" fill="#5B805B" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-39" data-name="Oval 20">
+<ellipse cx="511.13" cy="284.93" rx="36.13" ry="36.13" fill="#5B805B" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-44" data-name="Rectangle 47">
+<rect x="735.3" y="257.73" width="307.16" height="46.4" fill="none" stroke="none" />
+<text x="888.88" y="271.33" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="16" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="16">{{TOC_ITEM_1_TITLE}}</tspan></text>
+</g>
+<g id="shape-45" data-name="Rectangle 47">
+<rect x="779.79" y="367.8" width="219.09" height="69.67" fill="none" stroke="none" />
+<text x="889.34" y="381.4" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="16" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="16">{{TOC_ITEM_2_TITLE}}</tspan></text>
+</g>
+<g id="shape-2" data-name="组合 1">
+<g id="shape-47" data-name="文本框 46">
+<rect x="98.67" y="216.47" width="338.2" height="48.33" fill="none" />
+<text x="427.27" y="248.47" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="32" fill="#000000"><tspan fill="#000000" font-size="32">{{TOC_ITEM_3_TITLE}}</tspan></text>
+</g>
+<g id="shape-48" data-name="文本框 47">
+<rect x="63.2" y="253.8" width="373.67" height="96.8" fill="none" />
+<text x="427.27" y="272.2" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="16" fill="#5B805B"><tspan fill="#5B805B" font-size="16">{{TOC_ITEM_4_TITLE}}</tspan></text>
+</g>
+<g id="shape-50" data-name="文本框 49">
+<rect x="98.67" y="367.27" width="338.2" height="48.33" fill="none" />
+<text x="427.27" y="399.27" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="32" fill="#000000"><tspan fill="#000000" font-size="32">平台经济理论</tspan></text>
+</g>
+<g id="shape-51" data-name="文本框 50">
+<rect x="98.73" y="404.6" width="338.13" height="67.73" fill="none" />
+<text x="427.27" y="423" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="16" fill="#5B805B"><tspan fill="#5B805B" font-size="16">{{TOC_ITEM_1_DESC}}</tspan></text>
+</g>
+<g id="shape-53" data-name="文本框 52">
+<rect x="98.67" y="518.07" width="338.2" height="48.33" fill="none" />
+<text x="427.27" y="550.07" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="32" fill="#000000"><tspan fill="#000000" font-size="32">计量经济学</tspan></text>
+</g>
+<g id="shape-54" data-name="文本框 53">
+<rect x="98.73" y="555.4" width="338.13" height="96.8" fill="none" />
+<text x="427.27" y="573.8" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="16" fill="#5B805B"><tspan fill="#5B805B" font-size="16">{{TOC_ITEM_2_DESC}}</tspan></text>
+</g>
+</g>
+<g id="shape-6" data-name="图片 5">
+<image href="assets/image12.png" x="491.9" y="265.7" width="38.47" height="38.47" preserveAspectRatio="none" />
+</g>
+<g id="shape-58" data-name="图片 57">
+<image href="assets/image13.png" x="489.4" y="400.8" width="43.47" height="43.47" preserveAspectRatio="none" />
+</g>
+<g id="shape-59" data-name="图片 58">
+<image href="assets/image14.png" x="491.9" y="540.83" width="38.47" height="38.47" preserveAspectRatio="none" />
+</g>
+<g id="shape-21" data-name="组合 20">
+<g id="shape-23" data-name="矩形 22">
+<rect x="76.13" y="109.87" width="40.23" height="8.11" fill="#5B805B" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-24" data-name="矩形 23">
+<rect x="116.37" y="109.87" width="40.23" height="8.11" fill="#A9C683" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-25" data-name="文本框 24">
+<rect x="63.2" y="42.87" width="1153.6" height="71.6" fill="none" />
+<text x="72.8" y="89.33" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;思源黑体 Regular&quot;, sans-serif" font-size="42.67" fill="#000000"><tspan fill="#000000" font-size="42.67">{{TOC_ITEM_3_DESC}}</tspan></text>
+</g></svg>

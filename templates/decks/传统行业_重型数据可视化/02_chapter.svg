@@ -1,0 +1,384 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5088D3" /><stop offset="1" stop-color="#1D4273" /></linearGradient><linearGradient id="ggrad2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#5088D3" /><stop offset="1" stop-color="#1D4273" /></linearGradient><linearGradient id="ggrad3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#DE7463" /><stop offset="1" stop-color="#A13422" /></linearGradient><linearGradient id="ggrad4" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#5088D3" /><stop offset="1" stop-color="#1D4273" /></linearGradient><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="8.67" flood-color="#1D4273" flood-opacity="0.4" /></filter><linearGradient id="txtgrad5" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#5088D3" /><stop offset="1" stop-color="#1D4273" /></linearGradient><linearGradient id="txtgrad6" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#5088D3" /><stop offset="1" stop-color="#1D4273" /></linearGradient><linearGradient id="txtgrad7" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#5088D3" /><stop offset="1" stop-color="#1D4273" /></linearGradient><linearGradient id="txtgrad8" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#5088D3" /><stop offset="1" stop-color="#1D4273" /></linearGradient><linearGradient id="ggrad9" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#DE7463" /><stop offset="1" stop-color="#A13422" /></linearGradient><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="8" stdDeviation="8.67" flood-color="#A13422" flood-opacity="0.4" /></filter></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-3" data-name="小红书平北职场PPT1">
+<rect x="70.78" y="122.72" width="385.12" height="428.14" rx="11.21" ry="11.21" fill="url(#ggrad1)" stroke-width="1" stroke="none" stroke-linejoin="round" />
+</g>
+<g id="shape-4" data-name="小红书平北职场PPT2">
+<rect x="461.23" y="122.72" width="385.12" height="428.14" rx="11.55" ry="11.55" fill="url(#ggrad2)" stroke-width="1" stroke="none" stroke-linejoin="round" />
+</g>
+<g id="shape-5" data-name="小红书平北职场PPT3">
+<rect x="851.67" y="122.72" width="385.12" height="428.14" rx="11.55" ry="11.55" fill="url(#ggrad3)" stroke-width="1" stroke="none" stroke-linejoin="round" />
+</g>
+<g id="shape-6" data-name="小红书平北职场PPT4">
+<rect x="189.18" y="87.07" width="148.32" height="31.24" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="263.34" y="110.15" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="21.33" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="21.33" font-weight="bold">待办</tspan></text>
+</g>
+<g id="shape-7" data-name="小红书平北职场PPT5">
+<rect x="579.63" y="87.07" width="148.32" height="31.24" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="653.79" y="110.15" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="21.33" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="21.33" font-weight="bold">进行中</tspan></text>
+</g>
+<g id="shape-8" data-name="小红书平北职场PPT6">
+<rect x="970.07" y="87.07" width="148.32" height="31.24" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="1044.23" y="110.15" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="21.33" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="21.33" font-weight="bold">完成</tspan></text>
+</g>
+<g id="shape-9" data-name="小红书平北职场PPT7" transform="translate(653.79 263.77) scale(1 -1) translate(-653.79 -263.77)">
+<line x1="68.59" y1="263.77" x2="1238.99" y2="263.77" stroke-width="4" stroke="#FFFFFF" fill="none" />
+</g>
+<g id="shape-10" data-name="小红书平北职场PPT8" transform="translate(653.79 408.35) scale(1 -1) translate(-653.79 -408.35)">
+<line x1="68.59" y1="408.35" x2="1238.99" y2="408.35" stroke-width="4" stroke="#FFFFFF" fill="none" />
+</g>
+<g id="shape-11" data-name="小红书平北职场PPT9">
+<g id="shape-59" data-name="组合 58">
+<g id="shape-93" data-name="Group">
+<g id="shape-137" data-name="Group">
+<g id="shape-148" data-name="Group">
+<g id="shape-150" data-name="小红书平北职场PPT9-1">
+<path d="M 88.41 129.67 C 85.57 129.67 83.86 129.68 82.72 130.12 C 81.08 130.65 79.8 131.83 79.2 133.32 C 78.73 134.35 78.72 135.9 78.72 138.49 L 78.72 233.61 L 104.53 257.08 L 188.93 257.08 C 191.77 257.08 193.46 257.07 194.6 256.64 C 196.23 256.1 197.54 254.92 198.14 253.43 C 198.62 252.4 198.6 250.85 198.6 248.27 L 198.6 138.49 C 198.6 135.9 198.62 134.35 198.14 133.32 C 197.54 131.83 196.23 130.65 194.6 130.12 C 193.46 129.68 191.77 129.67 188.93 129.67 L 88.41 129.67 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-151" data-name="小红书平北职场PPT9-2" transform="rotate(180 91.62 245.34)">
+<path d="M 78.71 233.61 L 78.71 248.26 C 78.71 250.85 78.72 252.4 79.19 253.43 C 79.79 254.93 81.08 256.1 82.72 256.64 C 83.85 257.07 85.56 257.08 88.4 257.08 L 104.52 257.08 L 78.71 233.61 Z" fill="#C5D7F0" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-149" data-name="小红书平北职场PPT9-3">
+<rect x="87.84" y="167.64" width="102.44" height="47.53" fill="none" />
+<text x="139.06" y="183.77" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">完成</tspan><tspan fill="#000000" font-size="13.33">12</tspan><tspan fill="#000000" font-size="13.33">支品牌宣传视频拍摄</tspan></text>
+</g>
+</g>
+<g id="shape-138" data-name="Group">
+<g id="shape-144" data-name="Group">
+<g id="shape-146" data-name="小红书平北职场PPT9-4">
+<path d="M 212.95 129.67 C 210.11 129.67 208.4 129.68 207.26 130.12 C 205.62 130.65 204.34 131.83 203.74 133.32 C 203.27 134.35 203.26 135.9 203.26 138.49 L 203.26 233.61 L 229.07 257.08 L 313.47 257.08 C 316.31 257.08 318 257.07 319.14 256.64 C 320.77 256.1 322.08 254.92 322.68 253.43 C 323.15 252.4 323.14 250.85 323.14 248.27 L 323.14 138.49 C 323.14 135.9 323.15 134.35 322.68 133.32 C 322.08 131.83 320.77 130.65 319.14 130.12 C 318 129.68 316.31 129.67 313.47 129.67 L 212.95 129.67 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-147" data-name="小红书平北职场PPT9-5" transform="rotate(180 216.15 245.34)">
+<path d="M 203.25 233.61 L 203.25 248.26 C 203.25 250.85 203.26 252.4 203.73 253.43 C 204.33 254.93 205.62 256.1 207.26 256.64 C 208.39 257.07 210.1 257.08 212.94 257.08 L 229.06 257.08 L 203.25 233.61 Z" fill="#C5D7F0" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-145" data-name="小红书平北职场PPT9-6">
+<rect x="212.38" y="167.64" width="102.44" height="47.53" fill="none" />
+<text x="263.6" y="183.77" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">搭建</tspan><tspan fill="#000000" font-size="13.33">3</tspan><tspan fill="#000000" font-size="13.33">个虚拟摄影棚</tspan></text>
+</g>
+</g>
+<g id="shape-139" data-name="Group">
+<g id="shape-140" data-name="Group">
+<g id="shape-142" data-name="小红书平北职场PPT9-7">
+<path d="M 337.49 129.67 C 334.64 129.67 332.94 129.68 331.8 130.12 C 330.16 130.65 328.88 131.83 328.28 133.32 C 327.81 134.35 327.79 135.9 327.79 138.49 L 327.79 233.61 L 353.61 257.08 L 438.01 257.08 C 440.85 257.08 442.54 257.07 443.68 256.64 C 445.31 256.1 446.62 254.92 447.22 253.43 C 447.69 252.4 447.68 250.85 447.68 248.27 L 447.68 138.49 C 447.68 135.9 447.69 134.35 447.22 133.32 C 446.62 131.83 445.31 130.65 443.68 130.12 C 442.54 129.68 440.85 129.67 438.01 129.67 L 337.49 129.67 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-143" data-name="小红书平北职场PPT9-8" transform="rotate(180 340.69 245.34)">
+<path d="M 327.79 233.61 L 327.79 248.26 C 327.79 250.85 327.8 252.4 328.27 253.43 C 328.87 254.93 330.16 256.1 331.8 256.64 C 332.93 257.07 334.64 257.08 337.48 257.08 L 353.6 257.08 L 327.79 233.61 Z" fill="#C5D7F0" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-141" data-name="小红书平北职场PPT9-9">
+<rect x="336.92" y="167.64" width="102.44" height="47.53" fill="none" />
+<text x="388.14" y="183.77" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">采购</tspan><tspan fill="#000000" font-size="13.33">8K</tspan><tspan fill="#000000" font-size="13.33">摄影设备</tspan><tspan fill="#000000" font-size="13.33">3</tspan><tspan fill="#000000" font-size="13.33">套</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-94" data-name="Group">
+<g id="shape-127" data-name="Group">
+<g id="shape-133" data-name="Group">
+<g id="shape-135" data-name="小红书平北职场PPT9-10">
+<path d="M 88.41 273.3 C 85.57 273.3 83.86 273.31 82.72 273.75 C 81.08 274.28 79.8 275.46 79.2 276.95 C 78.73 277.98 78.72 279.53 78.72 282.12 L 78.72 377.24 L 104.53 400.71 L 188.93 400.71 C 191.77 400.71 193.46 400.7 194.6 400.27 C 196.23 399.73 197.54 398.56 198.14 397.06 C 198.62 396.03 198.6 394.48 198.6 391.9 L 198.6 282.12 C 198.6 279.53 198.62 277.98 198.14 276.95 C 197.54 275.46 196.23 274.28 194.6 273.75 C 193.46 273.31 191.77 273.3 188.93 273.3 L 88.41 273.3 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-136" data-name="小红书平北职场PPT9-11" transform="rotate(180 91.62 388.98)">
+<path d="M 78.71 377.24 L 78.71 391.9 C 78.71 394.48 78.72 396.03 79.19 397.07 C 79.79 398.56 81.08 399.73 82.72 400.27 C 83.85 400.7 85.56 400.71 88.4 400.71 L 104.52 400.71 L 78.71 377.24 Z" fill="#C5D7F0" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-134" data-name="小红书平北职场PPT9-12">
+<path d="M 87.84 311.27 L 190.28 311.27 L 190.28 311.27 L 87.84 311.27 Z" fill="none" />
+<text x="139.06" y="327.4" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">输出品牌</tspan><tspan fill="#000000" font-size="13.33">VI</tspan><tspan fill="#000000" font-size="13.33">手册</tspan><tspan fill="#000000" font-size="13.33">4</tspan><tspan fill="#000000" font-size="13.33">套</tspan></text>
+</g>
+</g>
+<g id="shape-128" data-name="Group">
+<g id="shape-129" data-name="Group">
+<g id="shape-131" data-name="小红书平北职场PPT9-13">
+<path d="M 212.95 273.3 C 210.11 273.3 208.4 273.31 207.26 273.75 C 205.62 274.28 204.34 275.46 203.74 276.95 C 203.27 277.98 203.26 279.53 203.26 282.12 L 203.26 377.24 L 229.07 400.71 L 313.47 400.71 C 316.31 400.71 318 400.7 319.14 400.27 C 320.77 399.73 322.08 398.56 322.68 397.06 C 323.15 396.03 323.14 394.48 323.14 391.9 L 323.14 282.12 C 323.14 279.53 323.15 277.98 322.68 276.95 C 322.08 275.46 320.77 274.28 319.14 273.75 C 318 273.31 316.31 273.3 313.47 273.3 L 212.95 273.3 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-132" data-name="小红书平北职场PPT9-14" transform="rotate(180 216.15 388.98)">
+<path d="M 203.25 377.24 L 203.25 391.9 C 203.25 394.48 203.26 396.03 203.73 397.07 C 204.33 398.56 205.62 399.73 207.26 400.27 C 208.39 400.7 210.1 400.71 212.94 400.71 L 229.06 400.71 L 203.25 377.24 Z" fill="#C5D7F0" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-130" data-name="小红书平北职场PPT9-15">
+<path d="M 212.38 311.27 L 314.81 311.27 L 314.81 311.27 L 212.38 311.27 Z" fill="none" />
+<text x="263.6" y="327.4" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">开发动态图形模板库</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-95" data-name="Group">
+<g id="shape-123" data-name="Group">
+<g id="shape-125" data-name="小红书平北职场PPT9-16">
+<path d="M 88.41 416.94 C 85.57 416.94 83.86 416.94 82.72 417.38 C 81.08 417.91 79.8 419.09 79.2 420.58 C 78.73 421.61 78.72 423.16 78.72 425.75 L 78.72 520.87 L 104.53 544.34 L 188.93 544.34 C 191.77 544.34 193.46 544.33 194.6 543.9 C 196.23 543.36 197.54 542.19 198.14 540.69 C 198.62 539.66 198.6 538.11 198.6 535.53 L 198.6 425.75 C 198.6 423.16 198.62 421.61 198.14 420.58 C 197.54 419.09 196.23 417.91 194.6 417.38 C 193.46 416.94 191.77 416.94 188.93 416.94 L 88.41 416.94 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-126" data-name="小红书平北职场PPT9-17" transform="rotate(180 91.62 532.61)">
+<path d="M 78.71 520.87 L 78.71 535.53 C 78.71 538.11 78.72 539.66 79.19 540.7 C 79.79 542.19 81.08 543.36 82.72 543.9 C 83.85 544.33 85.56 544.34 88.4 544.34 L 104.52 544.34 L 78.71 520.87 Z" fill="#C5D7F0" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-124" data-name="小红书平北职场PPT9-18">
+<path d="M 87.84 454.9 L 190.28 454.9 L 190.28 454.9 L 87.84 454.9 Z" fill="none" />
+<text x="139.06" y="471.04" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">自研</tspan><tspan fill="#000000" font-size="13.33">AIGC</tspan><tspan fill="#000000" font-size="13.33">内容引擎</tspan></text>
+</g>
+</g>
+<g id="shape-96" data-name="Group">
+<g id="shape-113" data-name="Group">
+<g id="shape-119" data-name="Group">
+<g id="shape-121" data-name="小红书平北职场PPT9-19">
+<path d="M 478.88 129.67 C 476.04 129.67 474.34 129.68 473.2 130.12 C 471.56 130.65 470.27 131.83 469.68 133.32 C 469.2 134.35 469.19 135.9 469.19 138.49 L 469.19 233.61 L 495 257.08 L 579.41 257.08 C 582.25 257.08 583.94 257.07 585.07 256.64 C 586.71 256.1 588.02 254.92 588.62 253.43 C 589.09 252.4 589.08 250.85 589.08 248.27 L 589.08 138.49 C 589.08 135.9 589.09 134.35 588.62 133.32 C 588.02 131.83 586.71 130.65 585.07 130.12 C 583.94 129.68 582.25 129.67 579.41 129.67 L 478.88 129.67 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-122" data-name="小红书平北职场PPT9-20" transform="rotate(180 482.09 245.34)">
+<path d="M 469.19 233.61 L 469.19 248.26 C 469.19 250.85 469.2 252.4 469.67 253.43 C 470.27 254.93 471.55 256.1 473.19 256.64 C 474.33 257.07 476.04 257.08 478.88 257.08 L 495 257.08 L 469.19 233.61 Z" fill="#C5D7F0" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-120" data-name="小红书平北职场PPT9-21">
+<path d="M 478.31 167.64 L 580.75 167.64 L 580.75 167.64 L 478.31 167.64 Z" fill="none" />
+<text x="529.53" y="183.77" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">建立供应商白名单</tspan></text>
+</g>
+</g>
+<g id="shape-114" data-name="Group">
+<g id="shape-115" data-name="Group">
+<g id="shape-117" data-name="小红书平北职场PPT9-22">
+<path d="M 603.42 129.67 C 600.58 129.67 598.88 129.68 597.74 130.12 C 596.1 130.65 594.81 131.83 594.21 133.32 C 593.74 134.35 593.73 135.9 593.73 138.49 L 593.73 233.61 L 619.54 257.08 L 703.95 257.08 C 706.79 257.08 708.47 257.07 709.61 256.64 C 711.25 256.1 712.56 254.92 713.15 253.43 C 713.63 252.4 713.62 250.85 713.62 248.27 L 713.62 138.49 C 713.62 135.9 713.63 134.35 713.15 133.32 C 712.56 131.83 711.25 130.65 709.61 130.12 C 708.47 129.68 706.79 129.67 703.95 129.67 L 603.42 129.67 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-118" data-name="小红书平北职场PPT9-23" transform="rotate(180 606.63 245.34)">
+<path d="M 593.73 233.61 L 593.73 248.26 C 593.73 250.85 593.73 252.4 594.21 253.43 C 594.81 254.93 596.09 256.1 597.73 256.64 C 598.87 257.07 600.58 257.08 603.42 257.08 L 619.54 257.08 L 593.73 233.61 Z" fill="#C5D7F0" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-116" data-name="小红书平北职场PPT9-24">
+<path d="M 602.85 167.64 L 705.29 167.64 L 705.29 167.64 L 602.85 167.64 Z" fill="none" />
+<text x="654.07" y="183.77" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">标准化素材管理流程</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-97" data-name="Group">
+<g id="shape-109" data-name="Group">
+<g id="shape-111" data-name="小红书平北职场PPT9-25">
+<path d="M 478.88 273.3 C 476.04 273.3 474.34 273.31 473.2 273.75 C 471.56 274.28 470.27 275.46 469.68 276.95 C 469.2 277.98 469.19 279.53 469.19 282.12 L 469.19 377.24 L 495 400.71 L 579.41 400.71 C 582.25 400.71 583.94 400.7 585.07 400.27 C 586.71 399.73 588.02 398.56 588.61 397.06 C 589.09 396.03 589.08 394.48 589.08 391.9 L 589.08 282.12 C 589.08 279.53 589.09 277.98 588.61 276.95 C 588.02 275.46 586.71 274.28 585.07 273.75 C 583.94 273.31 582.25 273.3 579.41 273.3 L 478.88 273.3 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-112" data-name="小红书平北职场PPT9-26" transform="rotate(180 482.09 388.98)">
+<path d="M 469.19 377.24 L 469.19 391.9 C 469.19 394.48 469.2 396.03 469.67 397.07 C 470.27 398.56 471.55 399.73 473.19 400.27 C 474.33 400.7 476.04 400.71 478.88 400.71 L 495 400.71 L 469.19 377.24 Z" fill="#C5D7F0" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-110" data-name="小红书平北职场PPT9-27">
+<path d="M 478.31 311.27 L 580.75 311.27 L 580.75 311.27 L 478.31 311.27 Z" fill="none" />
+<text x="529.53" y="327.4" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">原创</tspan><tspan fill="#000000" font-size="13.33">3D</tspan><tspan fill="#000000" font-size="13.33">角色建模</tspan><tspan fill="#000000" font-size="13.33">28</tspan><tspan fill="#000000" font-size="13.33">个</tspan></text>
+</g>
+</g>
+<g id="shape-98" data-name="Group">
+<g id="shape-99" data-name="Group">
+<g id="shape-105" data-name="Group">
+<g id="shape-107" data-name="小红书平北职场PPT9-28">
+<path d="M 478.88 416.94 C 476.04 416.94 474.34 416.94 473.2 417.38 C 471.56 417.91 470.27 419.09 469.68 420.58 C 469.2 421.61 469.19 423.16 469.19 425.75 L 469.19 520.87 L 495 544.34 L 579.41 544.34 C 582.25 544.34 583.94 544.33 585.07 543.9 C 586.71 543.36 588.02 542.19 588.62 540.69 C 589.09 539.66 589.08 538.11 589.08 535.53 L 589.08 425.75 C 589.08 423.16 589.09 421.61 588.62 420.58 C 588.02 419.09 586.71 417.91 585.07 417.38 C 583.94 416.94 582.25 416.94 579.41 416.94 L 478.88 416.94 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-108" data-name="小红书平北职场PPT9-29" transform="rotate(180 482.09 532.61)">
+<path d="M 469.19 520.87 L 469.19 535.53 C 469.19 538.11 469.2 539.66 469.67 540.7 C 470.27 542.19 471.55 543.36 473.19 543.9 C 474.33 544.33 476.04 544.34 478.88 544.34 L 495 544.34 L 469.19 520.87 Z" fill="#C5D7F0" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-106" data-name="小红书平北职场PPT9-30">
+<path d="M 478.31 454.9 L 580.75 454.9 L 580.75 454.9 L 478.31 454.9 Z" fill="none" />
+<text x="529.53" y="471.04" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">上线实时渲染云平台</tspan></text>
+</g>
+</g>
+<g id="shape-100" data-name="Group">
+<g id="shape-101" data-name="Group">
+<g id="shape-103" data-name="小红书平北职场PPT9-31">
+<path d="M 603.42 416.94 C 600.58 416.94 598.88 416.94 597.74 417.38 C 596.1 417.91 594.81 419.09 594.21 420.58 C 593.74 421.61 593.73 423.16 593.73 425.75 L 593.73 520.87 L 619.54 544.34 L 703.95 544.34 C 706.79 544.34 708.47 544.33 709.61 543.9 C 711.25 543.36 712.56 542.19 713.15 540.69 C 713.63 539.66 713.62 538.11 713.62 535.53 L 713.62 425.75 C 713.62 423.16 713.63 421.61 713.15 420.58 C 712.56 419.09 711.25 417.91 709.61 417.38 C 708.47 416.94 706.79 416.94 703.95 416.94 L 603.42 416.94 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-104" data-name="小红书平北职场PPT9-32" transform="rotate(180 606.63 532.61)">
+<path d="M 593.73 520.87 L 593.73 535.53 C 593.73 538.11 593.73 539.66 594.21 540.7 C 594.81 542.19 596.09 543.36 597.73 543.9 C 598.87 544.33 600.58 544.34 603.42 544.34 L 619.54 544.34 L 593.73 520.87 Z" fill="#C5D7F0" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-102" data-name="小红书平北职场PPT9-33">
+<path d="M 602.85 454.9 L 705.29 454.9 L 705.29 454.9 L 602.85 454.9 Z" fill="none" />
+<text x="654.07" y="471.04" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">实现</tspan><tspan fill="#000000" font-size="13.33">8</tspan><tspan fill="#000000" font-size="13.33">K HDR</tspan><tspan fill="#000000" font-size="13.33">直播</tspan></text>
+</g>
+</g>
+</g>
+</g>
+<g id="shape-60" data-name="组合 59">
+<g id="shape-61" data-name="Group">
+<g id="shape-81" data-name="Group">
+<g id="shape-88" data-name="Group">
+<g id="shape-91" data-name="小红书平北职场PPT9-34">
+<path d="M 869.36 129.67 C 866.52 129.67 864.81 129.68 863.68 130.12 C 862.03 130.65 860.75 131.83 860.15 133.32 C 859.68 134.35 859.67 135.9 859.67 138.49 L 859.67 233.61 L 885.48 257.08 L 969.88 257.08 C 972.72 257.08 974.41 257.07 975.55 256.64 C 977.19 256.1 978.5 254.92 979.09 253.43 C 979.57 252.4 979.55 250.85 979.55 248.27 L 979.55 138.49 C 979.55 135.9 979.57 134.35 979.09 133.32 C 978.5 131.83 977.19 130.65 975.55 130.12 C 974.41 129.68 972.72 129.67 969.88 129.67 L 869.36 129.67 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-92" data-name="小红书平北职场PPT9-35" transform="rotate(180 872.57 245.34)">
+<path d="M 859.66 233.61 L 859.66 248.26 C 859.66 250.85 859.67 252.4 860.15 253.43 C 860.74 254.93 862.03 256.1 863.67 256.64 C 864.81 257.07 866.51 257.08 869.36 257.08 L 885.47 257.08 L 859.66 233.61 Z" fill="#F4D1CB" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-89" data-name="小红书平北职场PPT9-36">
+<path d="M 868.79 167.64 L 971.23 167.64 L 971.23 167.64 L 868.79 167.64 Z" fill="none" />
+<text x="920.01" y="183.77" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">实施碳中和拍摄方案</tspan></text>
+</g>
+<g id="shape-90" data-name="小红书平北职场PPT9-37">
+<path d="M 889.29 140.17 L 889.19 140.08 C 888.85 139.77 888.38 139.59 887.89 139.6 C 887.41 139.61 886.95 139.8 886.62 140.13 L 876.66 150.01 L 876.46 150.08 L 876.27 150 L 873.8 147.38 C 873.44 147 872.93 146.77 872.38 146.75 C 871.83 146.73 871.3 146.93 870.91 147.28 C 870.29 147.84 870.21 148.73 870.72 149.37 L 875.82 155.86 C 876.11 156.23 876.58 156.45 877.08 156.45 L 877.52 156.45 C 878.36 156.45 879.14 156.08 879.62 155.45 L 889.52 142.45 C 890.06 141.74 889.96 140.78 889.29 140.17 Z" fill="#A13422" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-82" data-name="Group">
+<g id="shape-83" data-name="Group">
+<g id="shape-86" data-name="小红书平北职场PPT9-38">
+<path d="M 993.9 129.67 C 991.06 129.67 989.35 129.68 988.22 130.12 C 986.57 130.65 985.29 131.83 984.69 133.32 C 984.22 134.35 984.21 135.9 984.21 138.49 L 984.21 233.61 L 1010.02 257.08 L 1094.42 257.08 C 1097.26 257.08 1098.95 257.07 1100.09 256.64 C 1101.73 256.1 1103.04 254.92 1103.63 253.43 C 1104.11 252.4 1104.09 250.85 1104.09 248.27 L 1104.09 138.49 C 1104.09 135.9 1104.11 134.35 1103.63 133.32 C 1103.04 131.83 1101.73 130.65 1100.09 130.12 C 1098.95 129.68 1097.26 129.67 1094.42 129.67 L 993.9 129.67 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-87" data-name="小红书平北职场PPT9-39" transform="rotate(180 997.11 245.34)">
+<path d="M 984.2 233.61 L 984.2 248.26 C 984.2 250.85 984.21 252.4 984.69 253.43 C 985.28 254.93 986.57 256.1 988.21 256.64 C 989.35 257.07 991.05 257.08 993.9 257.08 L 1010.01 257.08 L 984.2 233.61 Z" fill="#F4D1CB" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-84" data-name="小红书平北职场PPT9-40">
+<path d="M 993.33 167.64 L 1095.77 167.64 L 1095.77 167.64 L 993.33 167.64 Z" fill="none" />
+<text x="1044.55" y="183.77" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">培养多技能制片人</tspan></text>
+</g>
+<g id="shape-85" data-name="小红书平北职场PPT9-41">
+<path d="M 1013.83 140.17 L 1013.73 140.08 C 1013.39 139.77 1012.92 139.59 1012.43 139.6 C 1011.95 139.61 1011.49 139.8 1011.16 140.13 L 1001.2 150.01 L 1001 150.08 L 1000.81 150 L 998.34 147.38 C 997.98 147 997.47 146.77 996.92 146.75 C 996.37 146.73 995.84 146.93 995.45 147.28 C 994.83 147.84 994.75 148.73 995.26 149.37 L 1000.36 155.86 C 1000.65 156.23 1001.12 156.45 1001.61 156.45 L 1002.06 156.45 C 1002.9 156.45 1003.68 156.08 1004.16 155.45 L 1014.06 142.45 C 1014.6 141.74 1014.5 140.78 1013.83 140.17 Z" fill="#A13422" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+</g>
+<g id="shape-62" data-name="Group">
+<g id="shape-76" data-name="Group">
+<g id="shape-79" data-name="小红书平北职场PPT9-42">
+<path d="M 869.36 273.3 C 866.52 273.3 864.81 273.31 863.68 273.75 C 862.03 274.28 860.75 275.46 860.15 276.95 C 859.68 277.98 859.67 279.53 859.67 282.12 L 859.67 377.24 L 885.48 400.71 L 969.88 400.71 C 972.72 400.71 974.41 400.7 975.55 400.27 C 977.19 399.73 978.5 398.56 979.09 397.06 C 979.57 396.03 979.55 394.48 979.55 391.9 L 979.55 282.12 C 979.55 279.53 979.57 277.98 979.09 276.95 C 978.5 275.46 977.19 274.28 975.55 273.75 C 974.41 273.31 972.72 273.3 969.88 273.3 L 869.36 273.3 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-80" data-name="小红书平北职场PPT9-43" transform="rotate(180 872.57 388.98)">
+<path d="M 859.66 377.24 L 859.66 391.9 C 859.66 394.48 859.67 396.03 860.15 397.07 C 860.74 398.56 862.03 399.73 863.67 400.27 C 864.81 400.7 866.51 400.71 869.36 400.71 L 885.47 400.71 L 859.66 377.24 Z" fill="#F4D1CB" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-77" data-name="小红书平北职场PPT9-44">
+<path d="M 868.79 311.27 L 971.23 311.27 L 971.23 311.27 L 868.79 311.27 Z" fill="none" />
+<text x="920.01" y="327.4" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">落地</tspan><tspan fill="#000000" font-size="13.33">AR</tspan><tspan fill="#000000" font-size="13.33">交互设计</tspan><tspan fill="#000000" font-size="13.33">3</tspan><tspan fill="#000000" font-size="13.33">例</tspan></text>
+</g>
+<g id="shape-78" data-name="小红书平北职场PPT9-45">
+<path d="M 889.29 283.8 L 889.19 283.71 C 888.85 283.4 888.38 283.23 887.89 283.24 C 887.41 283.24 886.95 283.43 886.62 283.76 L 876.66 293.64 L 876.46 293.71 L 876.27 293.63 L 873.8 291.01 C 873.44 290.63 872.93 290.4 872.38 290.39 C 871.83 290.36 871.3 290.56 870.91 290.91 C 870.29 291.47 870.21 292.36 870.72 293.01 L 875.82 299.5 C 876.11 299.86 876.58 300.08 877.08 300.08 L 877.52 300.08 C 878.36 300.08 879.14 299.71 879.62 299.08 L 889.52 286.08 C 890.06 285.37 889.96 284.41 889.29 283.8 Z" fill="#A13422" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-63" data-name="Group">
+<g id="shape-64" data-name="Group">
+<g id="shape-71" data-name="Group">
+<g id="shape-74" data-name="小红书平北职场PPT9-46">
+<path d="M 869.36 416.94 C 866.52 416.94 864.81 416.94 863.68 417.38 C 862.03 417.91 860.75 419.09 860.15 420.58 C 859.68 421.61 859.67 423.16 859.67 425.75 L 859.67 520.87 L 885.48 544.34 L 969.88 544.34 C 972.72 544.34 974.41 544.33 975.55 543.9 C 977.19 543.36 978.5 542.19 979.09 540.69 C 979.57 539.66 979.55 538.11 979.55 535.53 L 979.55 425.75 C 979.55 423.16 979.57 421.61 979.09 420.58 C 978.5 419.09 977.19 417.91 975.55 417.38 C 974.41 416.94 972.72 416.94 969.88 416.94 L 869.36 416.94 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-75" data-name="小红书平北职场PPT9-47" transform="rotate(180 872.57 532.61)">
+<path d="M 859.66 520.87 L 859.66 535.53 C 859.66 538.11 859.67 539.66 860.15 540.7 C 860.74 542.19 862.03 543.36 863.67 543.9 C 864.81 544.33 866.51 544.34 869.36 544.34 L 885.47 544.34 L 859.66 520.87 Z" fill="#F4D1CB" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-72" data-name="小红书平北职场PPT9-48">
+<path d="M 868.79 454.9 L 971.23 454.9 L 971.23 454.9 L 868.79 454.9 Z" fill="none" />
+<text x="920.01" y="471.04" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">构建用户行为分析系统</tspan></text>
+</g>
+<g id="shape-73" data-name="小红书平北职场PPT9-49">
+<path d="M 889.29 427.43 L 889.19 427.34 C 888.85 427.03 888.38 426.86 887.89 426.87 C 887.41 426.87 886.95 427.06 886.62 427.39 L 876.66 437.27 L 876.46 437.34 L 876.27 437.26 L 873.8 434.64 C 873.44 434.26 872.93 434.04 872.38 434.02 C 871.83 434 871.3 434.19 870.91 434.54 C 870.29 435.1 870.21 435.99 870.72 436.64 L 875.82 443.13 C 876.11 443.5 876.58 443.71 877.08 443.71 L 877.52 443.71 C 878.36 443.71 879.14 443.34 879.62 442.71 L 889.52 429.71 C 890.06 429 889.96 428.04 889.29 427.43 Z" fill="#A13422" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-65" data-name="Group">
+<g id="shape-66" data-name="Group">
+<g id="shape-69" data-name="小红书平北职场PPT9-50">
+<path d="M 993.9 416.94 C 991.06 416.94 989.35 416.94 988.22 417.38 C 986.57 417.91 985.29 419.09 984.69 420.58 C 984.22 421.61 984.21 423.16 984.21 425.75 L 984.21 520.87 L 1010.02 544.34 L 1094.42 544.34 C 1097.26 544.34 1098.95 544.33 1100.09 543.9 C 1101.73 543.36 1103.04 542.19 1103.63 540.69 C 1104.11 539.66 1104.09 538.11 1104.09 535.53 L 1104.09 425.75 C 1104.09 423.16 1104.11 421.61 1103.63 420.58 C 1103.04 419.09 1101.73 417.91 1100.09 417.38 C 1098.95 416.94 1097.26 416.94 1094.42 416.94 L 993.9 416.94 Z" fill="#FFFFFF" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-70" data-name="小红书平北职场PPT9-51" transform="rotate(180 997.11 532.61)">
+<path d="M 984.2 520.87 L 984.2 535.53 C 984.2 538.11 984.21 539.66 984.69 540.7 C 985.28 542.19 986.57 543.36 988.21 543.9 C 989.35 544.33 991.05 544.34 993.9 544.34 L 1010.01 544.34 L 984.2 520.87 Z" fill="#F4D1CB" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-67" data-name="小红书平北职场PPT9-52">
+<path d="M 993.33 454.9 L 1095.77 454.9 L 1095.77 454.9 L 993.33 454.9 Z" fill="none" />
+<text x="1044.55" y="471.04" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="13.33" fill="#000000"><tspan fill="#000000" font-size="13.33">通过</tspan><tspan fill="#000000" font-size="13.33">ISO27001</tspan><tspan fill="#000000" font-size="13.33">信息安全认证</tspan></text>
+</g>
+<g id="shape-68" data-name="小红书平北职场PPT9-53">
+<path d="M 1013.83 427.43 L 1013.73 427.34 C 1013.39 427.03 1012.92 426.86 1012.43 426.87 C 1011.95 426.87 1011.49 427.06 1011.16 427.39 L 1001.2 437.27 L 1001 437.34 L 1000.81 437.26 L 998.34 434.64 C 997.98 434.26 997.47 434.04 996.92 434.02 C 996.37 434 995.84 434.19 995.45 434.54 C 994.83 435.1 994.75 435.99 995.26 436.64 L 1000.36 443.13 C 1000.65 443.5 1001.12 443.71 1001.61 443.71 L 1002.06 443.71 C 1002.9 443.71 1003.68 443.34 1004.16 442.71 L 1014.06 429.71 C 1014.6 429 1014.5 428.04 1013.83 427.43 Z" fill="#A13422" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+</g>
+</g>
+</g>
+<g id="shape-12" data-name="小红书平北职场PPT10">
+<rect x="33.19" y="166.37" width="25.65" height="57.09" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="46.01" y="202.38" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="21.33" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="21.33" font-weight="bold">制作</tspan></text>
+</g>
+<g id="shape-13" data-name="小红书平北职场PPT11">
+<rect x="33.19" y="305.8" width="25.65" height="57.09" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="46.01" y="341.81" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="21.33" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="21.33" font-weight="bold">设计 </tspan></text>
+</g>
+<g id="shape-14" data-name="小红书平北职场PPT12">
+<rect x="33.19" y="446.79" width="25.65" height="57.09" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="46.01" y="482.8" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, Roboto, sans-serif" font-size="21.33" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="21.33" font-weight="bold">开发</tspan></text>
+</g>
+<g id="shape-15" data-name="小红书平北职场PPT13">
+<rect x="33.19" y="580.73" width="183.62" height="96.53" fill="url(#ggrad4)" stroke-width="1" stroke="none" stroke-linejoin="round" filter="url(#fx1)" />
+</g>
+<g id="shape-16" data-name="小红书平北职场PPT14">
+<rect x="49.33" y="633.35" width="151.33" height="32.31" fill="none" />
+<text x="125" y="654.01" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">年度总结与亮点</tspan></text>
+</g>
+<g id="shape-17" data-name="小红书平北职场PPT15">
+<path d="M 124.97 597.1 C 125.52 597.13 125.83 597.41 126.01 597.91 C 126.83 600.14 127.65 602.36 128.48 604.59 C 129 606.01 129.54 607.44 130.05 608.87 C 130.16 609.18 130.34 609.35 130.65 609.46 C 134.35 610.77 138.04 612.1 141.73 613.42 C 142.22 613.6 142.55 613.9 142.55 614.45 C 142.54 614.99 142.2 615.29 141.71 615.46 C 138.04 616.78 134.36 618.1 130.68 619.41 C 130.35 619.53 130.16 619.69 130.04 620.02 C 128.75 623.55 127.44 627.08 126.15 630.61 C 125.94 631.17 125.75 631.76 125.01 631.76 C 124.23 631.77 124.04 631.17 123.83 630.59 C 122.53 627.06 121.23 623.53 119.94 620.01 C 119.82 619.7 119.65 619.53 119.33 619.42 C 115.63 618.11 111.94 616.78 108.25 615.46 C 107.77 615.28 107.44 614.97 107.44 614.43 C 107.44 613.88 107.79 613.59 108.28 613.41 C 111.95 612.1 115.63 610.77 119.31 609.47 C 119.64 609.35 119.83 609.18 119.95 608.85 C 121.25 605.31 122.56 601.77 123.86 598.22 C 124.03 597.77 124.17 597.29 124.73 597.14 C 124.81 597.12 124.89 597.11 124.97 597.1 Z" fill="#E7E6E6" stroke-width="0" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-18" data-name="小红书平北职场PPT16">
+<path d="M 119.2 604.93 C 118.88 605.82 118.58 606.66 118.27 607.48 C 118.23 607.59 118.12 607.72 118.02 607.76 C 117.17 608.08 116.31 608.38 115.38 608.71 C 115.18 608.13 114.98 607.57 114.78 607.01 C 114.57 606.39 114.36 605.78 114.15 605.16 C 114 604.72 113.98 604.3 114.34 603.95 C 114.71 603.57 115.13 603.58 115.6 603.74 C 116.78 604.15 117.96 604.53 119.2 604.93 Z" fill="#E7E6E6" stroke-width="0" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-19" data-name="小红书平北职场PPT17">
+<path d="M 115.37 620.15 C 116.29 620.48 117.16 620.79 118.03 621.11 C 118.12 621.15 118.21 621.26 118.25 621.35 C 118.57 622.19 118.87 623.04 119.2 623.94 C 118.09 624.3 117.01 624.67 115.92 625.02 C 115.38 625.2 114.83 625.44 114.33 624.92 C 113.86 624.41 114.1 623.9 114.28 623.37 C 114.64 622.32 115 621.26 115.37 620.16 Z" fill="#E7E6E6" stroke-width="0" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-20" data-name="小红书平北职场PPT18">
+<path d="M 134.62 608.71 C 133.68 608.38 132.82 608.08 131.98 607.76 C 131.87 607.72 131.76 607.59 131.72 607.48 C 131.41 606.65 131.12 605.82 130.8 604.93 C 131.91 604.56 133.01 604.2 134.1 603.83 C 134.63 603.66 135.17 603.44 135.65 603.94 C 136.13 604.44 135.9 604.96 135.72 605.49 C 135.35 606.54 135 607.6 134.62 608.71 Z" fill="#E7E6E6" stroke-width="0" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-21" data-name="小红书平北职场PPT19">
+<path d="M 130.79 623.94 C 131.11 623.05 131.4 622.23 131.71 621.42 C 131.76 621.3 131.87 621.16 131.99 621.11 C 132.84 620.79 133.7 620.49 134.61 620.16 C 134.9 620.98 135.17 621.76 135.44 622.55 C 135.6 623.02 135.78 623.49 135.9 623.98 C 136.09 624.74 135.42 625.43 134.67 625.21 C 133.38 624.83 132.11 624.38 130.8 623.94 Z" fill="#E7E6E6" stroke-width="0" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-22" data-name="小红书平北职场PPT20">
+<rect x="227.05" y="580.73" width="753.25" height="96.53" fill="#FFFFFF" stroke-width="0.667" stroke="#A6A6A6" />
+</g>
+<g id="shape-23" data-name="小红书平北职场PPT21">
+<g id="shape-50" data-name="小红书平北职场PPT21-1">
+<rect x="250.64" y="596.42" width="148.64" height="70.61" fill="none" />
+<text x="260.24" y="623.89" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="url(#txtgrad5)" font-weight="bold"><tspan fill="url(#txtgrad5)" font-size="26.67" font-weight="bold">1500</tspan></text>
+<text x="260.24" y="646.82" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">全年累计项目收入</tspan></text>
+</g>
+<g id="shape-51" data-name="小红书平北职场PPT21-2">
+<line x1="419.75" y1="605.93" x2="419.75" y2="658.18" stroke-width="0.667" stroke="#595959" stroke-opacity="0.5" fill="#1D4273" />
+</g>
+<g id="shape-52" data-name="小红书平北职场PPT21-3">
+<rect x="463.4" y="596.42" width="100.17" height="70.61" fill="none" />
+<text x="473" y="623.89" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="url(#txtgrad6)" font-weight="bold"><tspan fill="url(#txtgrad6)" font-size="26.67" font-weight="bold">88.6%</tspan></text>
+<text x="473" y="646.82" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">客户满意度</tspan></text>
+</g>
+<g id="shape-53" data-name="小红书平北职场PPT21-4">
+<rect x="651.09" y="596.42" width="116.33" height="70.61" fill="none" />
+<text x="660.69" y="623.89" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="url(#txtgrad7)" font-weight="bold"><tspan fill="url(#txtgrad7)" font-size="26.67" font-weight="bold">20</tspan></text>
+<text x="660.69" y="646.82" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">技术团队扩充</tspan></text>
+</g>
+<g id="shape-54" data-name="小红书平北职场PPT21-5">
+<rect x="835.53" y="596.42" width="132.48" height="70.61" fill="none" />
+<text x="845.13" y="623.89" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="url(#txtgrad8)" font-weight="bold"><tspan fill="url(#txtgrad8)" font-size="26.67" font-weight="bold">120%</tspan></text>
+<text x="845.13" y="646.82" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">创新项目增长率</tspan></text>
+</g>
+<g id="shape-55" data-name="小红书平北职场PPT21-6">
+<line x1="616.96" y1="605.93" x2="616.96" y2="658.18" stroke-width="0.667" stroke="#595959" stroke-opacity="0.5" fill="#1D4273" />
+</g>
+<g id="shape-56" data-name="小红书平北职场PPT21-7">
+<line x1="810.92" y1="605.93" x2="810.92" y2="658.18" stroke-width="0.667" stroke="#595959" stroke-opacity="0.5" fill="#1D4273" />
+</g>
+<g id="shape-57" data-name="小红书平北职场PPT21-8">
+<rect x="309.74" y="608.73" width="140.49" height="31.83" fill="none" />
+<text x="319.34" y="627.13" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">万元</tspan></text>
+</g>
+<g id="shape-58" data-name="小红书平北职场PPT21-9">
+<rect x="687.96" y="608.73" width="140.49" height="31.83" fill="none" />
+<text x="697.56" y="627.13" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#404040"><tspan fill="#404040" font-size="16">人</tspan></text>
+</g>
+</g>
+<g id="shape-24" data-name="小红书平北职场PPT22">
+<g id="shape-47" data-name="小红书平北职场PPT22-1">
+<rect x="990" y="580.73" width="244.7" height="96.53" fill="url(#ggrad9)" stroke-width="1" stroke="none" stroke-linejoin="round" filter="url(#fx2)" />
+</g>
+<g id="shape-48" data-name="小红书平北职场PPT22-2">
+<rect x="1065.63" y="643.7" width="93.44" height="29.5" fill="none" />
+<text x="1112.35" y="660.96" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">项目完成度</tspan></text>
+</g>
+<g id="shape-49" data-name="小红书平北职场PPT22-3">
+<rect x="1057.51" y="586.26" width="109.69" height="62.08" fill="none" />
+<text x="1112.35" y="627.33" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="42.67" fill="#F8F8F8" font-weight="bold"><tspan fill="#F8F8F8" font-size="42.67">{{CHAPTER_TITLE}}</tspan></text>
+</g>
+</g>
+<g id="shape-25" data-name="小红书平北职场PPT23">
+<g id="shape-45" data-name="小红书平北职场PPT23-1">
+<line x1="35.17" y1="72.49" x2="1244.83" y2="72.49" stroke-width="2" stroke="#000000" fill="#1D4273" />
+</g>
+<g id="shape-46" data-name="小红书平北职场PPT23-2">
+<rect x="35.17" y="19.35" width="547.97" height="45.24" fill="none" />
+<text x="35.17" y="51.08" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="37.33" fill="#000000"><tspan fill="#000000" font-size="37.33">{{CHAPTER_DESC}}</tspan></text>
+</g>
+</g></svg>

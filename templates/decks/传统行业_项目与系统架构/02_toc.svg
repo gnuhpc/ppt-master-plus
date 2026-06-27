@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#4472C4" /><stop offset="1" stop-color="#5B80D1" /><stop offset="0.93" stop-color="#99B0E3" /></linearGradient><linearGradient id="ggrad2" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#4472C4" /><stop offset="1" stop-color="#5B80D1" /><stop offset="0.93" stop-color="#99B0E3" /></linearGradient><linearGradient id="ggrad3" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#4472C4" /><stop offset="1" stop-color="#5B80D1" /><stop offset="0.93" stop-color="#99B0E3" /></linearGradient><linearGradient id="ggrad4" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#4472C4" /><stop offset="1" stop-color="#5B80D1" /><stop offset="0.93" stop-color="#99B0E3" /></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-2" data-name="矩形 1">
+<rect x="121.15" y="306.45" width="1112.35" height="176.97" fill="#F2F2F2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-3" data-name="矩形: 圆角 2">
+<rect x="185.32" y="338.59" width="408.21" height="112.7" rx="56.35" ry="56.35" fill="none" stroke="#305598" stroke-width="1" />
+</g>
+<g id="shape-6" data-name="直接连接符 5">
+<line x1="46.5" y1="69" x2="1233.27" y2="69" stroke-width="1.333" stroke="#305598" fill="#305598" />
+</g>
+<g id="shape-10" data-name="文本框 9">
+<rect x="175.32" y="20.62" width="226.19" height="45.24" fill="none" />
+<text x="175.32" y="56.31" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="37.33" fill="#000000"><tspan fill="#000000" font-size="37.33">{{TOC_ITEM_1_TITLE}}</tspan></text>
+</g>
+<g id="shape-11" data-name="文本框 10">
+<rect x="45.25" y="20.62" width="113.09" height="45.24" fill="none" />
+<text x="45.25" y="56.31" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="37.33" fill="#305598"><tspan fill="#305598" font-size="37.33">框架图</tspan></text>
+</g>
+<g id="shape-13" data-name="矩形 12">
+<rect x="121.15" y="231.57" width="243.04" height="60.67" stroke="none" fill="#305598" stroke-width="1" />
+</g>
+<g id="shape-14" data-name="文本框 13">
+<rect x="160.46" y="250.59" width="166.95" height="22.62" fill="none" />
+<text x="160.46" y="266.46" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">{{TOC_ITEM_2_TITLE}}</tspan></text>
+</g>
+<g id="shape-15" data-name="Rectangle 32+">
+<rect x="410.92" y="231.57" width="243.04" height="60.67" fill="#4472C4" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-16" data-name="文本框 15">
+<rect x="455.87" y="250.59" width="153.15" height="22.62" fill="none" />
+<text x="532.44" y="266.46" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">{{TOC_ITEM_3_TITLE}}</tspan></text>
+</g>
+<g id="shape-17" data-name="Rectangle 32++">
+<rect x="700.69" y="231.57" width="243.04" height="60.67" fill="#5B80D1" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-18" data-name="文本框 17">
+<rect x="708.73" y="250.59" width="229.57" height="22.62" fill="none" />
+<text x="823.51" y="266.46" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">{{TOC_ITEM_4_TITLE}}</tspan></text>
+</g>
+<g id="shape-19" data-name="Rectangle 32+++">
+<rect x="990.46" y="231.57" width="243.04" height="60.67" fill="#99B0E3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-20" data-name="文本框 19">
+<rect x="1059.81" y="250.59" width="104.34" height="22.62" fill="none" />
+<text x="1111.98" y="266.46" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">分析</tspan><tspan fill="#FFFFFF" font-size="18.67">ROI≥1:5</tspan></text>
+</g>
+<g id="shape-21" data-name="任意多边形: 形状 20">
+<path d="M 119.5 148.91 L 1215.25 148.91 L 1232.95 166.53 C 1233.68 167.25 1233.68 168.42 1232.95 169.15 L 1215.25 186.76 L 119.5 186.76 L 119.5 148.91 Z" fill="#D9D9D9" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-134" data-name="组合 133">
+<g id="shape-25" data-name="任意多边形: 形状 24">
+<path d="M 172.6 134.14 L 312.74 134.14 C 320.16 134.14 326.17 140.16 326.17 147.58 L 325.78 149.53 L 159.56 149.53 L 159.17 147.58 C 159.17 140.16 165.18 134.14 172.6 134.14 Z" fill="#244072" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-26" data-name="任意多边形: 形状 25" transform="translate(242.67 167.28) scale(-1 -1) translate(-242.67 -167.28)">
+<path d="M 315.7 200.53 L 169.1 200.53 L 173.99 199.5 C 177.19 198.15 179.88 195.57 181.3 192.09 L 200.75 144.23 L 200.91 144.23 L 201.2 142.78 C 203.38 137.64 208.47 134.03 214.41 134.03 L 270.08 134.03 C 276.01 134.03 281.11 137.64 283.28 142.78 L 283.46 143.67 L 283.69 143.77 L 283.88 144.23 L 284.05 144.23 L 303.5 192.09 C 304.92 195.57 307.61 198.15 310.81 199.5 Z M 316.24 200.53 L 316.16 200.53 L 316.23 200.51 Z" fill="url(#ggrad1)" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-24" data-name="文本框 23">
+<rect x="206.32" y="153.3" width="72.7" height="29.08" fill="none" />
+<text x="242.67" y="173.7" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">策划期</tspan></text>
+</g>
+<g id="shape-133" data-name="组合 132">
+<g id="shape-30" data-name="任意多边形: 形状 29">
+<path d="M 462.37 134.14 L 602.51 134.14 C 609.93 134.14 615.94 140.16 615.94 147.58 L 615.55 149.53 L 449.33 149.53 L 448.94 147.58 C 448.94 140.16 454.95 134.14 462.37 134.14 Z" fill="#244072" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-31" data-name="任意多边形: 形状 30" transform="translate(532.44 167.28) scale(-1 -1) translate(-532.44 -167.28)">
+<path d="M 605.47 200.53 L 458.87 200.53 L 463.76 199.5 C 466.96 198.15 469.65 195.57 471.07 192.09 L 490.52 144.23 L 490.68 144.23 L 490.97 142.78 C 493.15 137.64 498.24 134.03 504.18 134.03 L 559.85 134.03 C 565.78 134.03 570.88 137.64 573.05 142.78 L 573.23 143.67 L 573.46 143.77 L 573.65 144.23 L 573.82 144.23 L 593.27 192.09 C 594.69 195.57 597.38 198.15 600.58 199.5 Z M 606.01 200.53 L 605.93 200.53 L 606 200.51 Z" fill="url(#ggrad2)" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-29" data-name="TextBox 18+">
+<rect x="496.09" y="153.3" width="72.7" height="29.08" fill="none" />
+<text x="532.44" y="173.7" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">执行期</tspan></text>
+</g>
+<g id="shape-132" data-name="组合 131">
+<g id="shape-35" data-name="任意多边形: 形状 34">
+<path d="M 752.14 134.14 L 892.28 134.14 C 899.7 134.14 905.71 140.16 905.71 147.58 L 905.32 149.53 L 739.1 149.53 L 738.71 147.58 C 738.71 140.16 744.72 134.14 752.14 134.14 Z" fill="#244072" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-36" data-name="任意多边形: 形状 35" transform="translate(822.21 167.28) scale(-1 -1) translate(-822.21 -167.28)">
+<path d="M 895.24 200.53 L 748.64 200.53 L 753.53 199.5 C 756.73 198.15 759.42 195.57 760.84 192.09 L 780.29 144.23 L 780.45 144.23 L 780.74 142.78 C 782.92 137.64 788.01 134.03 793.95 134.03 L 849.62 134.03 C 855.55 134.03 860.65 137.64 862.82 142.78 L 863 143.67 L 863.23 143.77 L 863.42 144.23 L 863.59 144.23 L 883.04 192.09 C 884.46 195.57 887.15 198.15 890.35 199.5 Z M 895.78 200.53 L 895.7 200.53 L 895.77 200.51 Z" fill="url(#ggrad3)" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-34" data-name="TextBox 18++">
+<rect x="785.86" y="153.3" width="72.7" height="29.08" fill="none" />
+<text x="822.21" y="173.7" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">监测期</tspan></text>
+</g>
+<g id="shape-131" data-name="组合 130">
+<g id="shape-40" data-name="任意多边形: 形状 39">
+<path d="M 1041.91 134.14 L 1182.05 134.14 C 1189.47 134.14 1195.48 140.16 1195.48 147.58 L 1195.09 149.53 L 1028.87 149.53 L 1028.48 147.58 C 1028.48 140.16 1034.49 134.14 1041.91 134.14 Z" fill="#244072" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-41" data-name="任意多边形: 形状 40" transform="translate(1111.98 167.28) scale(-1 -1) translate(-1111.98 -167.28)">
+<path d="M 1185.01 200.53 L 1038.41 200.53 L 1043.3 199.5 C 1046.5 198.15 1049.19 195.57 1050.61 192.09 L 1070.06 144.23 L 1070.22 144.23 L 1070.51 142.78 C 1072.69 137.64 1077.78 134.03 1083.72 134.03 L 1139.39 134.03 C 1145.32 134.03 1150.42 137.64 1152.59 142.78 L 1152.77 143.67 L 1153 143.77 L 1153.19 144.23 L 1153.36 144.23 L 1172.81 192.09 C 1174.22 195.57 1176.92 198.15 1180.12 199.5 Z M 1185.55 200.53 L 1185.47 200.53 L 1185.54 200.51 Z" fill="url(#ggrad4)" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-39" data-name="TextBox 18+++">
+<rect x="1075.63" y="153.3" width="72.7" height="29.08" fill="none" />
+<text x="1111.98" y="173.7" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">收尾期</tspan></text>
+</g>
+<g id="shape-42" data-name="图形 2169">
+<g id="shape-43" data-name="任意多边形: 形状 42">
+<path d="M 387.55 182.23 C 387 182.23 386.48 182.01 386.08 181.62 C 385.69 181.23 385.47 180.71 385.47 180.15 C 385.47 179.59 385.69 179.07 386.08 178.68 L 396.25 168.51 C 396.62 168.14 396.62 167.54 396.25 167.17 L 386.08 157 C 385.27 156.19 385.27 154.86 386.08 154.05 C 386.48 153.66 387 153.44 387.55 153.44 C 388.11 153.44 388.63 153.66 389.03 154.05 L 401.34 166.36 C 402.15 167.18 402.15 168.5 401.34 169.31 L 389.03 181.62 C 388.63 182.01 388.11 182.23 387.55 182.23 Z" stroke-width="0.375" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" fill="none" />
+</g>
+<g id="shape-44" data-name="任意多边形: 形状 43">
+<path d="M 375.24 182.23 C 374.69 182.23 374.17 182.01 373.77 181.62 C 373.38 181.23 373.16 180.71 373.16 180.15 C 373.16 179.59 373.38 179.07 373.77 178.68 L 383.94 168.51 C 384.31 168.14 384.31 167.54 383.94 167.17 L 373.77 157 C 372.96 156.19 372.96 154.86 373.77 154.05 C 374.17 153.66 374.69 153.44 375.24 153.44 C 375.8 153.44 376.32 153.66 376.72 154.05 L 389.03 166.36 C 389.84 167.18 389.84 168.5 389.03 169.31 L 376.72 181.62 C 376.32 182.01 375.8 182.23 375.24 182.23 Z" stroke-width="0.375" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" fill="none" />
+</g>
+</g>
+<g id="shape-45" data-name="图形 2169+">
+<g id="shape-46" data-name="任意多边形: 形状 45">
+<path d="M 677.32 182.23 C 676.77 182.23 676.25 182.01 675.85 181.62 C 675.46 181.23 675.24 180.71 675.24 180.15 C 675.24 179.59 675.46 179.07 675.85 178.68 L 686.02 168.51 C 686.39 168.14 686.39 167.54 686.02 167.17 L 675.85 157 C 675.04 156.19 675.04 154.86 675.85 154.05 C 676.25 153.66 676.77 153.44 677.32 153.44 C 677.88 153.44 678.4 153.66 678.8 154.05 L 691.11 166.36 C 691.92 167.18 691.92 168.5 691.11 169.31 L 678.8 181.62 C 678.4 182.01 677.88 182.23 677.32 182.23 Z" stroke-width="0.375" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" fill="none" />
+</g>
+<g id="shape-47" data-name="任意多边形: 形状 46">
+<path d="M 665.01 182.23 C 664.46 182.23 663.93 182.01 663.54 181.62 C 663.15 181.23 662.93 180.71 662.93 180.15 C 662.93 179.59 663.15 179.07 663.54 178.68 L 673.71 168.51 C 674.08 168.14 674.08 167.54 673.71 167.17 L 663.54 157 C 662.73 156.19 662.73 154.86 663.54 154.05 C 663.93 153.66 664.46 153.44 665.01 153.44 C 665.57 153.44 666.09 153.66 666.49 154.05 L 678.8 166.36 C 679.61 167.18 679.61 168.5 678.8 169.31 L 666.49 181.62 C 666.09 182.01 665.57 182.23 665.01 182.23 Z" stroke-width="0.375" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" fill="none" />
+</g>
+</g>
+<g id="shape-48" data-name="图形 2169++">
+<g id="shape-49" data-name="任意多边形: 形状 48">
+<path d="M 967.09 182.23 C 966.54 182.23 966.02 182.01 965.62 181.62 C 965.23 181.23 965.01 180.71 965.01 180.15 C 965.01 179.59 965.23 179.07 965.62 178.68 L 975.79 168.51 C 976.16 168.14 976.16 167.54 975.79 167.17 L 965.62 157 C 964.81 156.19 964.81 154.86 965.62 154.05 C 966.02 153.66 966.54 153.44 967.09 153.44 C 967.65 153.44 968.17 153.66 968.57 154.05 L 980.88 166.36 C 981.69 167.18 981.69 168.5 980.88 169.31 L 968.57 181.62 C 968.17 182.01 967.65 182.23 967.09 182.23 Z" stroke-width="0.375" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" fill="none" />
+</g>
+<g id="shape-50" data-name="任意多边形: 形状 49">
+<path d="M 954.78 182.23 C 954.23 182.23 953.7 182.01 953.31 181.62 C 952.92 181.23 952.7 180.71 952.7 180.15 C 952.7 179.59 952.92 179.07 953.31 178.68 L 963.48 168.51 C 963.85 168.14 963.85 167.54 963.48 167.17 L 953.31 157 C 952.5 156.19 952.5 154.86 953.31 154.05 C 953.7 153.66 954.23 153.44 954.78 153.44 C 955.34 153.44 955.86 153.66 956.26 154.05 L 968.57 166.36 C 969.38 167.18 969.38 168.5 968.57 169.31 L 956.26 181.62 C 955.86 182.01 955.34 182.23 954.78 182.23 Z" stroke-width="0.375" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" fill="none" />
+</g>
+</g>
+<g id="shape-51" data-name="文本框 50">
+<rect x="194.54" y="99.53" width="94.58" height="29.08" fill="none" />
+<text x="194.54" y="119.93" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#305598"><tspan fill="#305598" font-size="24">6.1-6.15</tspan></text>
+</g>
+<g id="shape-52" data-name="文本框 51">
+<rect x="477.15" y="99.53" width="108.55" height="29.08" fill="none" />
+<text x="477.15" y="119.93" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#305598"><tspan fill="#305598" font-size="24">6.16-7.15</tspan></text>
+</g>
+<g id="shape-53" data-name="文本框 52">
+<rect x="766.92" y="99.53" width="108.55" height="29.08" fill="none" />
+<text x="766.92" y="119.93" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#305598"><tspan fill="#305598" font-size="24">7.16-7.31</tspan></text>
+</g>
+<g id="shape-54" data-name="文本框 53">
+<rect x="1063.85" y="99.53" width="94.58" height="29.08" fill="none" />
+<text x="1063.85" y="119.93" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#305598"><tspan fill="#305598" font-size="24">8.1-8.15</tspan></text>
+</g>
+<g id="shape-55" data-name="图形 2169">
+<path d="M 341.53 380.52 L 341.53 388.49 L 312.51 388.49 L 312.51 401.38 L 341.53 401.38 L 341.53 409.35 L 357.48 394.93 Z" fill="#305598" stroke-width="0.375" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-56" data-name="图形 2169+">
+<path d="M 637.41 380.52 L 637.41 388.49 L 608.38 388.49 L 608.38 401.38 L 637.41 401.38 L 637.41 409.35 L 653.36 394.93 Z" fill="#305598" stroke-width="0.375" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-57" data-name="图形 2169++">
+<path d="M 920.4 380.52 L 920.4 388.49 L 891.38 388.49 L 891.38 401.38 L 920.4 401.38 L 920.4 409.35 L 936.35 394.93 Z" fill="#305598" stroke-width="0.375" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-58" data-name="Oval 29+">
+<ellipse cx="242.67" cy="394.93" rx="74.61" ry="74.61" fill="#F1F5F9" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-59" data-name="椭圆 58">
+<ellipse cx="242.67" cy="394.93" rx="56.24" ry="56.24" stroke="none" fill="#305598" stroke-width="1" />
+</g>
+<g id="shape-60" data-name="文本框 59">
+<rect x="204.97" y="400.97" width="75.4" height="22.62" fill="none" />
+<text x="204.97" y="416.84" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">口碑引爆</tspan></text>
+</g>
+<g id="shape-61" data-name="Oval 29++">
+<ellipse cx="532.44" cy="394.93" rx="74.61" ry="74.61" fill="#F1F5F9" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-62" data-name="Oval 29+">
+<ellipse cx="532.44" cy="394.93" rx="56.24" ry="56.24" fill="#4472C4" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-63" data-name="文本框 62">
+<rect x="494.74" y="400.97" width="75.4" height="22.62" fill="none" />
+<text x="494.74" y="416.84" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">终端激励</tspan></text>
+</g>
+<g id="shape-64" data-name="Oval 29+++">
+<ellipse cx="822.21" cy="394.93" rx="74.61" ry="74.61" fill="#F1F5F9" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-65" data-name="Oval 29++">
+<ellipse cx="822.21" cy="394.93" rx="56.24" ry="56.24" fill="#5B80D1" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-66" data-name="TextBox 59+">
+<rect x="784.51" y="400.97" width="75.4" height="22.62" fill="none" />
+<text x="784.51" y="416.84" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">私域沉淀</tspan></text>
+</g>
+<g id="shape-67" data-name="Oval 29+++">
+<ellipse cx="1111.98" cy="394.93" rx="74.61" ry="74.61" fill="#F1F5F9" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-68" data-name="Rounded Rectangle 36+">
+<rect x="186.63" y="338.59" width="981.23" height="112.7" rx="56.35" ry="56.35" fill="none" stroke="#305598" stroke-width="1" />
+</g>
+<g id="shape-69" data-name="文本框 68">
+<rect x="182.61" y="518.72" width="108.55" height="22.62" fill="none" />
+<text x="182.61" y="534.59" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#000000"><tspan fill="#000000" font-size="18.67">预算：</tspan><tspan fill="#000000" font-size="18.67">¥30</tspan><tspan fill="#000000" font-size="18.67">万</tspan></text>
+</g>
+<g id="shape-70" data-name="文本框 69">
+<rect x="493.73" y="518.72" width="77.42" height="22.62" fill="none" />
+<text x="493.73" y="534.59" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#000000"><tspan fill="#000000" font-size="18.67">地推</tspan><tspan fill="#000000" font-size="18.67">50</tspan><tspan fill="#000000" font-size="18.67">人</tspan></text>
+</g>
+<g id="shape-71" data-name="文本框 70">
+<rect x="783.75" y="518.72" width="77.92" height="22.62" fill="none" />
+<text x="783.75" y="534.59" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#000000"><tspan fill="#000000" font-size="18.67">CRM</tspan><tspan fill="#000000" font-size="18.67">系统</tspan></text>
+</g>
+<g id="shape-72" data-name="文本框 71">
+<rect x="1055.43" y="518.72" width="113.09" height="22.62" fill="none" />
+<text x="1055.43" y="534.59" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#000000"><tspan fill="#000000" font-size="18.67">外包数据团队</tspan></text>
+</g>
+<g id="shape-73" data-name="Rectangle 32+">
+<rect x="121.15" y="499.7" width="243.04" height="60.67" fill="none" stroke="#305598" stroke-dasharray="4 4" stroke-width="1" />
+</g>
+<g id="shape-74" data-name="Rectangle 32++">
+<rect x="410.92" y="499.7" width="243.04" height="60.67" fill="none" stroke="#305598" stroke-dasharray="4 4" stroke-width="1" />
+</g>
+<g id="shape-75" data-name="Rectangle 32+++">
+<rect x="700.69" y="499.7" width="243.04" height="60.67" fill="none" stroke="#305598" stroke-dasharray="4 4" stroke-width="1" />
+</g>
+<g id="shape-76" data-name="Rectangle 32++++">
+<rect x="990.46" y="499.7" width="243.04" height="60.67" fill="none" stroke="#305598" stroke-dasharray="4 4" stroke-width="1" />
+</g>
+<g id="shape-77" data-name="Rectangle 32++">
+<rect x="121.15" y="577.67" width="243.04" height="107.33" fill="#F1F5F9" stroke="none" stroke-dasharray="4 4" stroke-width="1" />
+</g>
+<g id="shape-78" data-name="Rectangle 32+++">
+<rect x="121.15" y="577.67" width="243.04" height="46.75" fill="#4472C4" stroke="none" stroke-dasharray="4 4" stroke-width="1" />
+</g>
+<g id="shape-79" data-name="Group 87+">
+<g id="shape-80" data-name="Rectangle 32++">
+<rect x="410.92" y="577.67" width="243.04" height="107.33" fill="#F1F5F9" stroke="none" stroke-dasharray="4 4" stroke-width="1" />
+</g>
+<g id="shape-81" data-name="Rectangle 32+++">
+<rect x="410.92" y="577.67" width="243.04" height="46.75" fill="#4472C4" stroke="none" stroke-dasharray="4 4" stroke-width="1" />
+</g>
+</g>
+<g id="shape-82" data-name="Group 87++">
+<g id="shape-83" data-name="Rectangle 32++">
+<rect x="700.69" y="577.67" width="243.04" height="107.33" fill="#F1F5F9" stroke="none" stroke-dasharray="4 4" stroke-width="1" />
+</g>
+<g id="shape-84" data-name="Rectangle 32+++">
+<rect x="700.69" y="577.67" width="243.04" height="46.75" fill="#4472C4" stroke="none" stroke-dasharray="4 4" stroke-width="1" />
+</g>
+</g>
+<g id="shape-85" data-name="Group 87+++">
+<g id="shape-86" data-name="Rectangle 32++">
+<rect x="990.46" y="577.67" width="243.04" height="107.33" fill="#F1F5F9" stroke="none" stroke-dasharray="4 4" stroke-width="1" />
+</g>
+<g id="shape-87" data-name="Rectangle 32+++">
+<rect x="990.46" y="577.67" width="243.04" height="46.75" fill="#4472C4" stroke="none" stroke-dasharray="4 4" stroke-width="1" />
+</g>
+</g>
+<g id="shape-88" data-name="文本框 87">
+<rect x="201.94" y="642.18" width="79.43" height="29.08" fill="none" />
+<text x="201.94" y="662.58" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#305598"><tspan fill="#305598" font-size="24">500</tspan><tspan fill="#305598" font-size="24">万</tspan><tspan fill="#305598" font-size="24">+</tspan></text>
+</g>
+<g id="shape-89" data-name="文本框 88">
+<rect x="204.97" y="589.73" width="75.4" height="22.62" fill="none" />
+<text x="204.97" y="605.6" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">预热曝光</tspan></text>
+</g>
+<g id="shape-90" data-name="Oval 29+++">
+<ellipse cx="1111.98" cy="394.93" rx="56.24" ry="56.24" fill="#99B0E3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-91" data-name="TextBox 59++">
+<rect x="1074.28" y="400.97" width="75.4" height="22.62" fill="none" />
+<text x="1074.28" y="416.84" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">热度延续</tspan></text>
+</g>
+<g id="shape-92" data-name="TextBox 100+">
+<rect x="494.74" y="589.73" width="75.4" height="22.62" fill="none" />
+<text x="494.74" y="605.6" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">终端动销</tspan></text>
+</g>
+<g id="shape-93" data-name="TextBox 98+">
+<rect x="493.9" y="642.18" width="77.08" height="29.08" fill="none" />
+<text x="493.9" y="662.58" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#305598"><tspan fill="#305598" font-size="24">80</tspan><tspan fill="#305598" font-size="24">万罐</tspan></text>
+</g>
+<g id="shape-94" data-name="TextBox 100++">
+<rect x="775.09" y="589.73" width="94.24" height="22.62" fill="none" />
+<text x="775.09" y="605.6" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">用户留存率</tspan></text>
+</g>
+<g id="shape-95" data-name="TextBox 98++">
+<rect x="789.06" y="642.18" width="59.07" height="29.08" fill="none" />
+<text x="789.06" y="662.58" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#305598"><tspan fill="#305598" font-size="24">+22%</tspan></text>
+</g>
+<g id="shape-96" data-name="TextBox 100+++">
+<rect x="1083.71" y="589.73" width="56.55" height="22.62" fill="none" />
+<text x="1083.71" y="605.6" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">总销售</tspan></text>
+</g>
+<g id="shape-97" data-name="TextBox 98+++">
+<rect x="1064.1" y="642.18" width="94.92" height="29.08" fill="none" />
+<text x="1064.1" y="662.58" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="24" fill="#305598"><tspan fill="#305598" font-size="24">¥1560</tspan><tspan fill="#305598" font-size="24">万</tspan></text>
+</g>
+<g id="shape-98" data-name="矩形 97">
+<rect x="46.5" y="91.67" width="53" height="124.67" fill="#F2F2F2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-99" data-name="Rectangle 130+">
+<rect x="46.5" y="225.09" width="53" height="73.62" fill="#F2F2F2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-100" data-name="Rectangle 130++">
+<rect x="46.5" y="307.48" width="53" height="174.92" fill="#F2F2F2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-101" data-name="Rectangle 130+++">
+<rect x="46.5" y="491.15" width="53" height="77.75" fill="#F2F2F2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-102" data-name="Rectangle 130++++">
+<rect x="46.5" y="577.67" width="53" height="107.33" fill="#F2F2F2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-103" data-name="文本框 102">
+<rect x="60.08" y="132.46" width="25.85" height="43.08" fill="none" />
+</g>
+<g id="shape-103-text" data-name="文本框 102 text">
+<text x="73" y="150.59" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#000000"><tspan fill="#000000" font-size="21.33">阶</tspan></text>
+</g>
+<g id="shape-104" data-name="TextBox 138+">
+<rect x="60.08" y="240.36" width="25.85" height="43.08" fill="none" />
+</g>
+<g id="shape-104-text" data-name="TextBox 138+ text">
+<text x="73" y="258.5" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#000000"><tspan fill="#000000" font-size="21.33">目</tspan></text>
+</g>
+<g id="shape-105" data-name="TextBox 138++">
+<rect x="60.08" y="351.85" width="25.85" height="86.17" fill="none" />
+</g>
+<g id="shape-105-text" data-name="TextBox 138++ text">
+<text x="73" y="369.98" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#000000"><tspan fill="#000000" font-size="21.33">核</tspan><tspan x="73" dy="22.4" fill="#000000" font-size="21.33">心</tspan><tspan x="73" dy="22.4" fill="#000000" font-size="21.33">策</tspan></text>
+</g>
+<g id="shape-106" data-name="TextBox 138+++">
+<rect x="60.08" y="508.49" width="25.85" height="43.08" fill="none" />
+</g>
+<g id="shape-106-text" data-name="TextBox 138+++ text">
+<text x="73" y="526.62" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#000000"><tspan fill="#000000" font-size="21.33">部</tspan></text>
+</g>
+<g id="shape-107" data-name="TextBox 138++++">
+<rect x="60.08" y="609.79" width="25.85" height="43.08" fill="none" />
+</g>
+<g id="shape-107-text" data-name="TextBox 138++++ text">
+<text x="73" y="627.93" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#000000"><tspan fill="#000000" font-size="21.33">成</tspan></text>
+</g>
+<g id="shape-112" data-name="图形 110">
+<path d="M 260.42 384.07 L 260.42 351.21 L 249.4 358.53 L 226.36 358.53 L 226.36 376.71 L 230.38 376.71 L 233.34 389.41 L 243.19 389.41 L 240.23 376.71 L 249.4 376.71 L 260.42 384.07 Z M 258.14 379.8 L 250.89 374.95 L 250.89 360.29 L 258.14 355.47 L 258.14 379.8 Z M 240.31 387.12 L 235.15 387.12 L 232.72 376.71 L 237.88 376.71 L 240.31 387.12 Z M 229.85 374.43 L 228.64 374.43 L 228.64 360.82 L 242.25 360.82 L 242.25 374.43 L 229.85 374.43 Z M 248.6 374.43 L 244.53 374.43 L 244.53 360.82 L 248.6 360.82 L 248.6 374.43 Z" fill="#FFFFFF" stroke-width="0.195" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-115" data-name="图形 113">
+<path d="M 552.18 371.2 L 549.39 363.61 C 549.38 363.59 549.38 363.58 549.37 363.57 C 548.17 360.64 546.39 360 545.81 360 C 545.75 360 545.68 360.01 545.62 360.02 L 522.42 360.02 C 521.74 360.02 520.99 360.35 520.31 360.97 C 519.64 361.59 519.08 362.43 518.71 363.42 C 516.62 368.73 515.43 372.19 515.16 373.73 C 515.15 373.83 515.14 373.94 515.15 374.04 L 515.18 374.26 C 515.17 374.37 515.15 374.51 515.15 374.67 C 515.15 377.13 516.6 379.11 518.76 379.88 L 518.76 390.72 C 518.76 392.99 520.68 395.24 522.92 395.24 L 545.32 395.24 C 547.56 395.24 549.48 392.99 549.48 390.72 L 549.48 379.88 C 551.59 379.08 553.01 377.1 553.01 374.67 C 553.01 374.59 553 374.51 552.99 374.45 C 553.09 373.58 552.84 372.56 552.18 371.2 L 552.18 371.2 Z M 544.96 393.43 L 523.28 393.43 C 522.22 393.43 520.56 392.18 520.56 390.72 L 520.56 379.88 C 522.28 379.82 524.07 379.68 525 378.62 C 525.19 378.39 525.36 378.16 525.5 377.92 C 525.61 378.07 525.71 378.2 525.83 378.34 C 526.91 379.62 528.24 379.88 529.6 379.88 C 531.11 379.88 532.45 379.9 533.44 379.1 C 533.68 378.91 533.89 378.7 534.08 378.48 C 534.27 378.7 534.48 378.91 534.71 379.1 C 535.71 379.9 537.13 379.88 538.64 379.88 C 539.99 379.88 541.21 379.74 542.25 378.67 C 542.41 378.51 542.56 378.34 542.7 378.16 C 542.81 378.32 542.93 378.48 543.07 378.63 C 544.02 379.71 545.86 379.83 547.67 379.88 L 547.67 391.63 C 547.67 392.69 546.01 393.43 544.96 393.43 L 544.96 393.43 Z M 552.19 374.46 C 552.75 374.5 551.28 374.41 551.29 374.46 C 551.29 374.46 551.29 374.45 551.29 374.46 C 551.27 376.35 549.32 378.14 547.46 378.14 C 546.19 378.14 545.25 377.82 544.69 377.19 C 543.91 376.32 544.01 375.06 544.02 375.02 C 544.08 374.43 543.66 373.89 543.07 373.82 C 542.48 373.75 541.95 374.17 541.87 374.77 C 541.66 376.39 540.27 378.14 538.54 378.14 C 536.9 378.14 535.16 377.41 535.16 375.37 C 535.16 374.77 534.67 374.28 534.08 374.28 C 533.48 374.28 533 374.77 533 375.37 C 533 377.41 531.25 378.14 529.61 378.14 C 528.64 378.14 527.85 377.37 527.47 376.92 C 526.82 376.15 526.36 375.13 526.25 374.21 C 526.25 374.21 526.24 374.21 526.24 374.21 C 526.17 373.61 525.63 373.19 525.03 373.27 C 524.44 373.34 524.03 373.89 524.1 374.49 C 524.1 374.5 524.29 376.14 523.37 377.18 C 522.82 377.81 521.91 378.14 520.69 378.14 C 518.82 378.14 516.95 376.37 516.95 374.46 C 516.95 374.44 516.94 374.5 516.95 374.46 C 516.96 374.4 516.62 374.53 516.95 374.46 C 517.03 374.44 516.96 374.53 516.95 374.46 L 516.95 373.55 C 517.24 372.11 518.66 369.37 520.56 364.52 C 520.57 364.51 520.56 364.52 520.56 364.52 C 521.13 363.03 522.16 361.82 522.37 361.81 L 545.87 361.81 C 546.12 361.93 547.02 362.94 547.67 364.52 L 550.38 371.75 C 550.4 371.78 550.37 371.71 550.38 371.75 C 550.99 372.98 551.34 374.17 551.29 374.46 C 551.27 374.54 551.28 374.38 551.29 374.46 L 552.19 374.46 Z" fill="#FFFFFF" stroke-width="0" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" />
+</g>
+<g id="shape-121" data-name="组合 120">
+<g id="shape-119" data-name="任意多边形: 形状 118">
+<path d="M 834.89 360 L 813.1 360 C 810.09 360 807.65 362.44 807.65 365.45 L 807.65 366.54 C 807.65 367.29 808.26 367.9 809.02 367.9 C 809.77 367.9 810.38 367.29 810.38 366.54 C 810.38 364.44 812.09 362.73 814.19 362.73 L 833.8 362.73 C 835.9 362.73 837.61 364.44 837.61 366.54 L 837.61 375.26 C 837.61 377.37 835.9 379.07 833.8 379.07 C 833.05 379.07 832.46 379.68 832.46 380.43 C 832.46 381.17 833.05 381.78 833.8 381.79 L 834.89 381.79 C 837.9 381.79 840.34 379.35 840.34 376.34 L 840.34 365.45 C 840.34 362.44 837.9 360 834.89 360 Z M 807.66 379.85 C 807.66 380.6 808.27 381.22 809.02 381.22 C 809.77 381.22 810.38 380.6 810.38 379.85 C 810.38 379.1 809.77 378.49 809.02 378.49 C 808.27 378.49 807.66 379.1 807.66 379.85 Z M 813.1 379.85 C 813.1 380.6 813.71 381.22 814.47 381.22 C 815.22 381.22 815.83 380.6 815.83 379.85 C 815.83 379.1 815.22 378.49 814.47 378.49 C 813.71 378.49 813.1 379.1 813.1 379.85 Z M 818.55 379.85 C 818.55 380.6 819.16 381.22 819.91 381.22 C 820.66 381.22 821.27 380.6 821.27 379.85 C 821.27 379.1 820.66 378.49 819.91 378.49 C 819.16 378.49 818.55 379.1 818.55 379.85 Z" stroke-width="0.036" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" fill="none" />
+</g>
+<g id="shape-120" data-name="任意多边形: 形状 119">
+<path d="M 825.49 368.96 L 803.71 368.96 C 800.7 368.96 798.26 371.4 798.26 374.41 L 798.26 385.3 C 798.26 388.31 800.7 390.75 803.71 390.75 L 813.34 390.75 L 824.1 398.62 C 824.11 398.62 824.11 398.63 824.12 398.63 C 824.12 398.63 824.14 398.64 824.14 398.65 C 824.15 398.66 824.16 398.67 824.17 398.67 C 824.17 398.68 824.19 398.69 824.19 398.69 C 824.21 398.69 824.22 398.7 824.23 398.71 C 824.23 398.71 824.24 398.71 824.25 398.72 C 824.26 398.73 824.27 398.74 824.29 398.74 C 824.29 398.74 824.29 398.75 824.3 398.75 C 824.32 398.75 824.33 398.76 824.35 398.77 C 824.36 398.77 824.36 398.77 824.37 398.77 C 824.38 398.78 824.4 398.79 824.42 398.8 C 824.42 398.8 824.42 398.8 824.42 398.8 C 824.44 398.81 824.45 398.82 824.47 398.82 C 824.48 398.82 824.48 398.82 824.49 398.83 C 824.51 398.83 824.52 398.84 824.54 398.84 C 824.55 398.84 824.56 398.85 824.56 398.85 C 824.58 398.85 824.59 398.85 824.6 398.86 C 824.62 398.86 824.62 398.87 824.64 398.87 C 824.65 398.87 824.66 398.87 824.67 398.87 C 824.68 398.87 824.69 398.88 824.71 398.88 C 824.71 398.88 824.72 398.88 824.73 398.88 C 824.74 398.88 824.76 398.89 824.78 398.89 L 825.06 398.89 C 825.08 398.89 825.08 398.89 825.09 398.88 C 825.11 398.88 825.12 398.88 825.13 398.88 L 825.15 398.88 C 825.15 398.88 825.16 398.88 825.16 398.87 C 825.18 398.87 825.19 398.87 825.21 398.87 C 825.21 398.87 825.23 398.86 825.23 398.86 C 825.25 398.86 825.25 398.86 825.26 398.86 C 825.28 398.86 825.28 398.85 825.29 398.85 C 825.31 398.85 825.31 398.85 825.32 398.85 C 825.34 398.84 825.35 398.84 825.36 398.83 C 825.36 398.83 825.38 398.83 825.38 398.82 C 825.4 398.81 825.4 398.81 825.41 398.8 C 825.42 398.8 825.43 398.8 825.44 398.79 C 825.45 398.78 825.46 398.78 825.47 398.77 C 825.48 398.76 825.49 398.76 825.5 398.75 C 825.51 398.75 825.52 398.74 825.53 398.74 C 825.53 398.73 825.55 398.72 825.55 398.72 C 825.56 398.72 825.57 398.71 825.58 398.71 C 825.59 398.7 825.6 398.69 825.61 398.69 C 825.62 398.68 825.63 398.67 825.64 398.67 C 825.65 398.67 825.66 398.66 825.67 398.65 C 825.67 398.64 825.68 398.64 825.69 398.63 C 825.7 398.63 825.71 398.61 825.72 398.61 C 825.72 398.6 825.73 398.6 825.74 398.59 C 825.76 398.59 825.76 398.57 825.77 398.57 C 825.78 398.56 825.79 398.56 825.79 398.55 C 825.81 398.55 825.81 398.53 825.82 398.53 C 825.83 398.52 825.84 398.51 825.84 398.51 L 825.87 398.48 L 825.89 398.46 L 825.92 398.44 L 825.94 398.42 C 825.94 398.41 825.95 398.4 825.96 398.39 C 825.96 398.39 825.97 398.37 825.98 398.36 C 825.98 398.36 825.98 398.35 825.99 398.35 C 825.99 398.34 826 398.34 826 398.33 C 826 398.33 826.01 398.31 826.02 398.31 C 826.02 398.29 826.04 398.29 826.04 398.28 C 826.05 398.27 826.05 398.26 826.06 398.26 C 826.06 398.24 826.07 398.23 826.08 398.22 C 826.08 398.22 826.08 398.21 826.09 398.2 C 826.1 398.19 826.11 398.18 826.11 398.16 C 826.11 398.16 826.12 398.16 826.12 398.15 C 826.12 398.13 826.13 398.12 826.14 398.1 C 826.14 398.1 826.14 398.1 826.14 398.1 C 826.15 398.07 826.16 398.06 826.16 398.04 L 826.16 398.04 C 826.17 398.02 826.18 398.01 826.19 397.99 C 826.19 397.98 826.19 397.98 826.19 397.97 C 826.2 397.96 826.21 397.94 826.21 397.92 C 826.21 397.91 826.21 397.9 826.21 397.9 C 826.22 397.88 826.22 397.87 826.23 397.86 C 826.23 397.84 826.23 397.84 826.23 397.83 C 826.23 397.82 826.24 397.8 826.24 397.8 C 826.24 397.78 826.24 397.77 826.24 397.75 L 826.24 397.73 C 826.24 397.71 826.25 397.7 826.25 397.68 L 826.25 397.66 L 826.25 397.61 L 826.25 397.6 L 826.25 397.55 L 826.25 397.53 L 826.25 397.49 L 826.25 397.46 L 826.25 397.42 L 826.25 397.39 C 826.25 397.38 826.25 397.37 826.24 397.36 C 826.24 397.34 826.24 397.33 826.24 397.33 L 826.24 397.31 L 825.09 390.77 L 825.5 390.77 C 828.5 390.77 830.95 388.33 830.95 385.32 L 830.95 374.41 C 830.94 371.4 828.5 368.96 825.49 368.96 Z M 828.22 384.21 C 828.22 386.31 826.51 388.02 824.41 388.02 L 823.46 388.02 C 822.71 388.02 822.1 388.64 822.1 389.39 C 822.1 389.51 822.11 389.62 822.15 389.74 L 822.97 394.43 L 814.71 388.38 C 814.65 388.34 814.6 388.3 814.53 388.27 C 814.32 388.11 814.05 388.02 813.76 388.02 L 804.79 388.02 C 802.69 388.02 800.98 386.31 800.98 384.21 L 800.98 375.5 C 800.98 373.4 802.69 371.68 804.79 371.68 L 824.4 371.68 C 826.5 371.68 828.21 373.4 828.21 375.5 L 828.21 384.21 L 828.22 384.21 Z" stroke-width="0.036" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" fill="none" />
+</g>
+</g>
+<g id="shape-130" data-name="组合 129">
+<g id="shape-128" data-name="任意多边形: 形状 127">
+<path d="M 1093.08 387.83 C 1092.2 387.83 1091.31 387.79 1090.42 387.71 C 1089.87 387.66 1089.46 387.18 1089.51 386.63 C 1089.56 386.08 1090.05 385.67 1090.6 385.72 C 1102.34 386.73 1113.48 380.33 1118.52 369.67 C 1118.76 369.17 1119.36 368.96 1119.86 369.19 C 1120.36 369.43 1120.57 370.03 1120.34 370.53 C 1115.35 381.07 1104.74 387.8 1093.08 387.83 Z M 1126.09 396.17 L 1090.06 396.17 C 1089.5 396.17 1089.06 395.72 1089.06 395.17 C 1089.06 394.62 1089.5 394.17 1090.06 394.17 L 1126.09 394.17 C 1126.64 394.17 1127.09 394.62 1127.09 395.17 C 1127.09 395.72 1126.64 396.17 1126.09 396.17 Z" stroke-width="0.195" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" fill="none" />
+</g>
+<g id="shape-129" data-name="任意多边形: 形状 128">
+<path d="M 1123.65 362.42 L 1124.06 367.62 L 1124.38 371.73 L 1120.81 368.62 L 1120.47 368.32 L 1120.03 368.2 L 1115.47 366.93 L 1119.08 364.94 L 1123.65 362.42 M 1124.2 360 C 1123.99 360 1123.79 360.05 1123.61 360.15 L 1118.12 363.18 L 1112.62 366.22 C 1112.08 366.55 1111.91 367.26 1112.25 367.8 C 1112.37 368.01 1112.56 368.16 1112.78 368.26 L 1119.49 370.13 L 1124.75 374.71 C 1124.95 374.82 1125.18 374.88 1125.4 374.88 C 1126 374.91 1126.51 374.45 1126.54 373.85 C 1126.54 373.81 1126.54 373.76 1126.54 373.72 L 1126.05 367.46 L 1125.56 361.2 C 1125.48 360.51 1124.89 360 1124.2 360 Z" stroke-width="0.195" stroke-linecap="butt" stroke="#FFFFFF" stroke-linejoin="miter" fill="none" />
+</g>
+</g>
+<g id="shape-22" data-name="直接连接符 21">
+<line x1="166.38" y1="20.24" x2="166.38" y2="66.24" stroke-width="1.333" stroke="#000000" fill="#305598" />
+</g></svg>

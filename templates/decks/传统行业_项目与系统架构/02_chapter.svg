@@ -1,0 +1,143 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="23.57" dy="23.57" stdDeviation="23.33" flood-color="#002576" flood-opacity="0.53" /></filter><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="23.57" dy="23.57" stdDeviation="23.33" flood-color="#707070" flood-opacity="0.53" /></filter></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="master-shape-12" data-name="直线连接符 11">
+<line x1="55.17" y1="691.85" x2="1250.83" y2="691.85" stroke-width="1" stroke="#00329D" fill="#00329D" />
+</g>
+<g id="shape-4" data-name="lemon1">
+<rect x="599.41" y="230.09" width="453.24" height="440.81" fill="#DAE6FE" fill-opacity="0.4" stroke-width="1.667" stroke="#4480FB" stroke-dasharray="4 4" />
+</g>
+<g id="shape-5" data-name="lemon2">
+<rect x="262.26" y="229.57" width="453.24" height="440.81" fill="#B8CFFF" fill-opacity="0.4" stroke-width="1.667" stroke="#00329D" stroke-dasharray="4 4" />
+</g>
+<g id="shape-6" data-name="lemon3">
+<path d="M 916.33 452.48 L 940.77 452.48 C 961.54 452.48 978.39 436.09 978.39 415.9 L 978.39 343.49 C 978.39 323.3 995.24 306.91 1016 306.91 L 1069.41 306.91" fill="none" stroke-width="15.333" stroke-linecap="round" stroke="#00329D" />
+</g>
+<g id="shape-7" data-name="lemon4">
+<path d="M 916.33 453.1 L 940.77 453.1 C 961.54 453.1 978.39 469.49 978.39 489.69 L 978.39 562.1 C 978.39 582.29 995.24 598.68 1016 598.68 L 1069.41 598.68" fill="none" stroke-width="15.333" stroke-linecap="round" stroke="#00329D" />
+</g>
+<g id="shape-8" data-name="lemon5">
+<path d="M 396.06 452.48 L 371.62 452.48 C 350.86 452.48 334.01 436.09 334.01 415.9 L 334.01 343.49 C 334.01 323.3 317.15 306.91 296.39 306.91 L 242.99 306.91" fill="none" stroke-width="15.333" stroke-linecap="round" stroke="#4480FB" />
+</g>
+<g id="shape-9" data-name="lemon6">
+<path d="M 396.06 453.1 L 371.62 453.1 C 350.86 453.1 334.01 469.49 334.01 489.69 L 334.01 562.1 C 334.01 582.29 317.15 598.68 296.39 598.68 L 242.99 598.68" fill="none" stroke-width="15.333" stroke-linecap="round" stroke="#4480FB" />
+</g>
+<g id="shape-17" data-name="lemon7">
+<rect x="1025.58" y="279.97" width="169.55" height="50.89" rx="10.63" ry="10.63" fill="#4480FB" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-18" data-name="lemon8">
+<rect x="1040.87" y="285.08" width="138.98" height="42.01" fill="none" />
+<text x="1110.35" y="312.55" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">PART 03</tspan></text>
+</g>
+<g id="shape-15" data-name="lemon9">
+<rect x="1025.58" y="573.85" width="169.55" height="50.89" rx="10.63" ry="10.63" fill="#4480FB" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-16" data-name="lemon10">
+<rect x="1045.75" y="578.97" width="129.22" height="42.01" fill="none" />
+<text x="1110.35" y="606.44" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">PART 04</tspan></text>
+</g>
+<g id="shape-21" data-name="lemon11">
+<rect x="107.5" y="279.97" width="169.55" height="50.89" rx="13.33" ry="13.33" fill="#00329D" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-22" data-name="lemon12">
+<rect x="122.78" y="285.08" width="138.98" height="42.01" fill="none" />
+<text x="192.27" y="312.55" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">PART 01</tspan></text>
+</g>
+<g id="shape-23" data-name="lemon13">
+<rect x="107.5" y="573.85" width="169.55" height="50.89" rx="16.02" ry="16.02" fill="#00329D" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-24" data-name="lemon14">
+<rect x="127.66" y="578.97" width="129.22" height="42.01" fill="none" />
+<text x="192.27" y="606.44" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">PART 02</tspan></text>
+</g>
+<g id="shape-26" data-name="lemon15">
+<ellipse cx="488.81" cy="452.36" rx="113.34" ry="110.23" fill="#00329D" stroke="none" stroke-width="1" filter="url(#fx1)" />
+</g>
+<g id="shape-27" data-name="lemon16">
+<ellipse cx="824.86" cy="452.36" rx="111.1" ry="110.23" fill="#4480FB" stroke="none" stroke-width="1" filter="url(#fx2)" />
+</g>
+<g id="shape-28" data-name="lemon17">
+<rect x="408.73" y="410.13" width="160.16" height="87.24" fill="none" />
+<text x="488.81" y="442.13" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">{{CHAPTER_NUM}}</tspan></text>
+</g>
+<g id="shape-29" data-name="lemon18">
+<rect x="739.6" y="410.13" width="170.51" height="87.24" fill="none" />
+<text x="824.86" y="442.13" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">{{CHAPTER_TITLE}}</tspan></text>
+</g>
+<g id="shape-34" data-name="lemon19">
+<path d="M 667.76 576.85 A 161.72 157.29 0 1 1 705.36 571.06" stroke-width="3.333" stroke="#002576" stroke-opacity="0.09" fill="#00329D" />
+</g>
+<g id="shape-35" data-name="lemon20" transform="translate(668.79 468.26) scale(1 -1) translate(-668.79 -468.26)">
+<path d="M 830.38 461.99 A 161.72 157.29 0 0 1 553.58 578.64" stroke-width="3.333" stroke="#4480FB" stroke-opacity="0" fill="#00329D" />
+</g>
+<g id="shape-36" data-name="lemon21" transform="rotate(43.49 777.72 304.14) translate(777.72 304.14) scale(-1 1) translate(-777.72 -304.14)">
+<polygon points="787.27,298.42 787.27,309.87 768.17,309.87" fill="#00329D" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-37" data-name="lemon22" transform="rotate(225.5 548.57 579.02) translate(548.57 579.02) scale(-1 1) translate(-548.57 -579.02)">
+<polygon points="557.86,573.13 557.86,584.91 539.28,584.91" fill="#4480FB" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-38" data-name="lemon23">
+<rect x="74.17" y="104.42" width="1154.79" height="85.52" rx="5.77" ry="5.77" fill="#B8CFFF" fill-opacity="0.1508" stroke-width="1.333" stroke="#00329D" stroke-dasharray="4 4" />
+</g>
+<g id="shape-39" data-name="lemon24">
+<rect x="145.66" y="118.75" width="1285.86" height="45.06" fill="none" />
+<text x="155.26" y="141.68" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#202020"><tspan fill="#202020" font-size="21.33">2023</tspan><tspan fill="#202020" font-size="21.33">年，在公司营收、销量方面来看，日常出行以及阅读学习成为本年度销量的有力增长点。</tspan></text>
+</g>
+<g id="shape-41" data-name="lemon25">
+<g id="shape-42" data-name="lemon25-1">
+<ellipse cx="76.65" cy="149.69" rx="25.61" ry="25.61" fill="#00329D" stroke-width="4" stroke="#FFFFFF" />
+</g>
+<g id="shape-43" data-name="lemon25-2">
+<path d="M 91.36 145.82 C 77.24 159.59 77.24 159.59 77.24 159.59 C 74.72 162.15 74.72 162.15 74.72 162.15 C 74.22 162.66 74.22 162.66 73.71 162.66 C 73.21 162.66 72.7 162.66 72.2 162.15 C 69.68 159.59 69.68 159.59 69.68 159.59 C 62.62 152.96 62.62 152.96 62.62 152.96 C 62.12 152.45 62.12 151.94 62.12 151.43 C 62.12 150.92 62.12 150.41 62.62 149.9 C 65.14 147.35 65.14 147.35 65.14 147.35 C 65.65 146.84 66.15 146.84 66.65 146.84 C 67.16 146.84 67.66 146.84 67.66 147.35 C 73.71 152.96 73.71 152.96 73.71 152.96 C 85.81 140.21 85.81 140.21 85.81 140.21 C 86.32 140.21 86.82 139.7 87.33 139.7 C 87.83 139.7 88.33 140.21 88.84 140.21 C 91.36 143.27 91.36 143.27 91.36 143.27 C 91.36 143.27 91.86 143.78 91.86 144.29 C 91.86 144.8 91.36 145.31 91.36 145.82 Z" fill="#FFFFFF" stroke-width="1" stroke="none" stroke-linejoin="round" />
+</g>
+</g>
+<g id="shape-45" data-name="lemon26">
+<rect x="1003.25" y="402.56" width="242.69" height="80.14" fill="#FFFFFF" stroke-width="4" stroke="#4480FB" />
+</g>
+<g id="shape-46" data-name="lemon27">
+<rect x="1012.28" y="409.72" width="125.99" height="67.86" fill="none" />
+<text x="1021.88" y="455.32" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="48" fill="#4480FB" font-weight="bold"><tspan fill="#4480FB" font-size="48" font-weight="bold">50%</tspan></text>
+</g>
+<g id="shape-47" data-name="lemon28">
+<rect x="1127.8" y="414.77" width="114.83" height="60.59" fill="none" />
+<text x="1137.4" y="431.47" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="14" fill="#000000"><tspan fill="#000000" font-size="14">文字内容可根据需求单击进行修改</tspan></text>
+</g>
+<g id="shape-48" data-name="lemon29">
+<rect x="42.04" y="417.53" width="242.69" height="80.14" fill="#FFFFFF" stroke-width="4" stroke="#00329D" />
+</g>
+<g id="shape-49" data-name="lemon30">
+<rect x="51.06" y="424.69" width="125.99" height="67.86" fill="none" />
+<text x="60.66" y="470.29" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="48" fill="#00329D" font-weight="bold"><tspan fill="#00329D" font-size="48" font-weight="bold">50%</tspan></text>
+</g>
+<g id="shape-50" data-name="lemon31">
+<rect x="166.58" y="429.74" width="114.83" height="60.59" fill="none" />
+<text x="176.18" y="446.44" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="14" fill="#000000"><tspan fill="#000000" font-size="14">文字内容可根据需求单击进行修改</tspan></text>
+</g>
+<g id="shape-51" data-name="lemon32">
+<rect x="637.91" y="584" width="242.69" height="80.14" fill="#FFFFFF" stroke-width="4" stroke="#4480FB" />
+</g>
+<g id="shape-52" data-name="lemon33">
+<rect x="646.93" y="591.16" width="125.99" height="67.86" fill="none" />
+<text x="656.53" y="636.76" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="48" fill="#4480FB" font-weight="bold"><tspan fill="#4480FB" font-size="48" font-weight="bold">50%</tspan></text>
+</g>
+<g id="shape-53" data-name="lemon34">
+<rect x="762.45" y="596.22" width="114.83" height="60.59" fill="none" />
+<text x="772.05" y="612.92" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="14" fill="#000000"><tspan fill="#000000" font-size="14">文字内容可根据需求单击进行修改</tspan></text>
+</g>
+<g id="shape-54" data-name="lemon35">
+<rect x="375.95" y="231.09" width="242.69" height="80.14" fill="#FFFFFF" stroke-width="4" stroke="#00329D" />
+</g>
+<g id="shape-55" data-name="lemon36">
+<rect x="384.98" y="238.26" width="125.99" height="67.86" fill="none" />
+<text x="394.58" y="283.86" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="48" fill="#00329D" font-weight="bold"><tspan fill="#00329D" font-size="48" font-weight="bold">50%</tspan></text>
+</g>
+<g id="shape-56" data-name="lemon37">
+<rect x="500.49" y="243.31" width="114.83" height="60.59" fill="none" />
+<text x="510.09" y="260.01" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="14" fill="#000000"><tspan fill="#000000" font-size="14">文字内容可根据需求单击进行修改</tspan></text>
+</g>
+<g id="shape-2" data-name="矩形: 圆角 7" transform="translate(645.89 75.56) scale(1 -1) translate(-645.89 -75.56)">
+<rect x="48.06" y="73.16" width="1195.66" height="4.8" rx="0.8" ry="0.8" fill="#00329D" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-3" data-name="Venn diagram">
+<rect x="45.98" y="21.48" width="698.35" height="44.16" stroke-width="1.333" stroke-linejoin="miter" fill="none" />
+<text x="48.64" y="51.35" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Normal&quot;, sans-serif" font-size="32" fill="#00329D" font-weight="bold"><tspan fill="#00329D" font-size="32">{{CHAPTER_DESC}}</tspan></text>
+</g></svg>

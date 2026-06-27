@@ -1,0 +1,71 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><clipPath id="clip1" clipPathUnits="userSpaceOnUse"><path d="M 406.28 234.42 L 528.23 356.37 L 406.28 478.31 L 284.33 356.37 L 406.28 234.42 Z"/></clipPath><clipPath id="clip2" clipPathUnits="userSpaceOnUse"><path d="M 294.68 476.39 L 369.54 551.25 L 294.68 626.1 L 219.83 551.25 L 294.68 476.39 Z"/></clipPath><clipPath id="clip3" clipPathUnits="userSpaceOnUse"><path d="M 509.43 476.39 L 584.28 551.25 L 509.43 626.1 L 434.57 551.25 L 509.43 476.39 Z"/></clipPath></defs><rect x="0" y="0" width="1280" height="720" fill="#F6F6F6"/>
+<g id="layout-shape-7" data-name="矩形 6" transform="rotate(180 156.21 117.5)">
+<rect x="40.26" y="26.65" width="231.91" height="181.7" stroke="none" fill="#485275" stroke-width="1"/>
+</g>
+<g id="layout-shape-8" data-name="矩形 7">
+<rect x="958.18" y="476.18" width="279.16" height="218.72" stroke="none" fill="#485275" stroke-width="1"/>
+</g>
+<g id="layout-shape-9" data-name="稻壳儿原创设计师【幻雨工作室】_1" transform="rotate(135 63.01 673.31)">
+<path d="M 43.38 696.07 L 63.54 675.91 L 83.7 675.91 L 43.38 716.23 Z M 42.33 630.4 L 82.65 670.71 L 62.49 670.71 L 42.33 650.55 Z" stroke="none" fill="#485275" stroke-width="1"/>
+</g>
+<g id="layout-shape-10" data-name="稻壳儿原创设计师【幻雨工作室】_1" transform="rotate(135 1216.26 47.2) translate(1216.26 47.2) scale(-1 1) translate(-1216.26 -47.2)">
+<path d="M 1196.62 69.96 L 1216.78 49.8 L 1236.94 49.8 L 1196.62 90.12 Z M 1195.58 4.29 L 1235.89 44.6 L 1215.73 44.6 L 1195.58 24.44 Z" stroke="none" fill="#485275" stroke-width="1"/>
+</g>
+<g id="layout-shape-11" data-name="稻壳儿原创设计师【幻雨工作室】_2">
+<rect x="51.77" y="35.22" width="1176.48" height="649.59" rx="9.17" ry="9.17" fill="#FFFFFF" stroke-width="2.333" stroke="none"/>
+</g>
+<g id="layout-shape-14" data-name="任意多边形: 形状 13" transform="rotate(270 645.86 359.99)">
+<path d="M 970.66 931.97 L 970.66 933.67 C 970.66 938.73 966.55 942.83 961.49 942.83 L 330.23 942.83 C 325.17 942.83 321.07 938.73 321.07 933.67 L 321.07 -222.86 L 970.66 931.97 Z" fill="#F2F2F2" fill-opacity="0.16" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-31" data-name="稻壳儿原创设计师【幻雨工作室】_4">
+<rect x="86.1" y="73.18" width="551.55" height="61.39" fill="none"/>
+<text x="95.7" y="114.24" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="42.67" fill="#485275"><tspan fill="#485275" font-size="42.67">01.</tspan><tspan fill="#485275" font-size="42.67">工作完成情况 </tspan><tspan fill="#485275" font-size="24">{{KEY_MESSAGE}}</tspan></text>
+</g>
+<g id="shape-32" data-name="稻壳儿原创设计师【幻雨工作室】_4">
+<image clip-path="url(#clip1)" href="assets/image1.png" x="284.33" y="234.42" width="243.9" height="243.9" preserveAspectRatio="none"/>
+<path d="M 406.28 234.42 L 528.23 356.37 L 406.28 478.31 L 284.33 356.37 L 406.28 234.42 Z" fill="none" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-33" data-name="稻壳儿原创设计师【幻雨工作室】_5">
+<image clip-path="url(#clip2)" href="assets/image2.png" x="219.83" y="476.39" width="149.71" height="149.71" preserveAspectRatio="none"/>
+<path d="M 294.68 476.39 L 369.54 551.25 L 294.68 626.1 L 219.83 551.25 L 294.68 476.39 Z" fill="none" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-34" data-name="稻壳儿原创设计师【幻雨工作室】_6">
+<image clip-path="url(#clip3)" href="assets/image3.png" x="434.57" y="476.39" width="149.71" height="149.71" preserveAspectRatio="none"/>
+<path d="M 509.43 476.39 L 584.28 551.25 L 509.43 626.1 L 434.57 551.25 L 509.43 476.39 Z" fill="none" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-35" data-name="稻壳儿原创设计师【幻雨工作室】_7">
+<polygon points="404.77,198.55 561.53,355.32 404.77,512.08 248.01,355.32" fill="none" stroke-width="1.333" stroke="#D9D9D9"/>
+</g>
+<g id="shape-36" data-name="稻壳儿原创设计师【幻雨工作室】_8">
+<polygon points="293.76,454.38 389.98,550.6 293.76,646.82 197.53,550.6" fill="none" stroke-width="1.333" stroke="#D9D9D9"/>
+</g>
+<g id="shape-37" data-name="稻壳儿原创设计师【幻雨工作室】_9">
+<polygon points="508.5,454.38 604.72,550.6 508.5,646.82 412.28,550.6" fill="none" stroke-width="1.333" stroke="#D9D9D9"/>
+</g>
+<g id="shape-38" data-name="稻壳儿原创设计师【幻雨工作室】_10">
+<polygon points="734.06,197.8 788.57,252.31 734.06,306.81 679.56,252.31" fill="#485275" stroke-width="1.333" stroke="none"/>
+<text x="734.06" y="258.97" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, Arial, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">01</tspan></text>
+</g>
+<g id="shape-39" data-name="稻壳儿原创设计师【幻雨工作室】_11">
+<polygon points="734.82,361.83 789.33,416.33 734.82,470.84 680.32,416.33" fill="#485275" stroke-width="1.333" stroke="none"/>
+<text x="734.82" y="423" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, Arial, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">02</tspan></text>
+</g>
+<g id="shape-40" data-name="稻壳儿原创设计师【幻雨工作室】_12">
+<polygon points="734.82,525.86 789.33,580.36 734.82,634.86 680.32,580.36" fill="#485275" stroke-width="1.333" stroke="none"/>
+<text x="734.82" y="587.03" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, Arial, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">03</tspan></text>
+</g>
+<g id="shape-41" data-name="稻壳儿原创设计师【幻雨工作室】_20">
+<rect x="803.69" y="349.66" width="278.77" height="121.17" fill="none"/>
+<text x="813.29" y="372.6" text-anchor="start" xml:space="preserve" font-family="Arial, sans-serif" font-size="21.33" fill="#485275"><tspan fill="#485275" font-size="21.33">{{LIST_ITEM_2_TITLE}}</tspan></text>
+<text x="813.29" y="397.8" text-anchor="start" xml:space="preserve" font-family="Arial, &quot;Open Sans&quot;, sans-serif" font-size="13.33" fill="#404040">{{LIST_ITEM_1_DESC}}</text>
+</g>
+<g id="shape-42" data-name="稻壳儿原创设计师【幻雨工作室】_21">
+<rect x="803.69" y="186.21" width="278.77" height="121.17" fill="none"/>
+<text x="813.29" y="209.15" text-anchor="start" xml:space="preserve" font-family="Arial, sans-serif" font-size="21.33" fill="#485275"><tspan fill="#485275" font-size="21.33">{{LIST_ITEM_1_TITLE}}</tspan></text>
+<text x="813.29" y="234.35" text-anchor="start" xml:space="preserve" font-family="Arial, &quot;Open Sans&quot;, sans-serif" font-size="13.33" fill="#404040">{{LIST_ITEM_2_DESC}}</text>
+</g>
+<g id="shape-43" data-name="稻壳儿原创设计师【幻雨工作室】_20">
+<rect x="803.69" y="513.69" width="278.77" height="121.17" fill="none"/>
+<text x="813.29" y="536.63" text-anchor="start" xml:space="preserve" font-family="Arial, sans-serif" font-size="21.33" fill="#485275"><tspan fill="#485275" font-size="21.33">{{LIST_ITEM_3_TITLE}}</tspan></text>
+<text x="813.29" y="561.83" text-anchor="start" xml:space="preserve" font-family="Arial, &quot;Open Sans&quot;, sans-serif" font-size="13.33" fill="#404040">{{LIST_ITEM_3_DESC}}</text>
+</g></svg>

@@ -1,0 +1,35 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="5.33" stdDeviation="2.67" flood-color="#2B7D1E" flood-opacity="1" /></filter><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="5.33" stdDeviation="2.67" flood-color="#2B7D1E" flood-opacity="1" /></filter><filter id="fx3" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="5.33" stdDeviation="2.67" flood-color="#2B7D1E" flood-opacity="1" /></filter></defs><image href="assets/image2.jpeg" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+<g id="shape-2" data-name="图片 1">
+<svg x="336" y="277.27" width="608" height="277.67" viewBox="0 0.2516 1 0.45667" preserveAspectRatio="none"><image href="assets/image4.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-8" data-name="组合 7">
+<g id="shape-9" data-name="文本框 8">
+<rect x="507.93" y="227.73" width="297.47" height="145.27" fill="none" />
+<text x="656.67" y="248.4" text-anchor="middle" xml:space="preserve" font-family="&quot;Calibri Light&quot;, &quot;方正华隶简体&quot;, sans-serif" font-size="18.67" fill="#595959"><tspan fill="#595959" font-size="18.67">{{PAGE_TITLE}}</tspan></text>
+</g>
+<g id="shape-10" data-name="文本框 9">
+<rect x="572.4" y="185.73" width="168.53" height="54.8" fill="none" stroke="none" filter="url(#fx1)" />
+<text x="582" y="222.27" text-anchor="start" xml:space="preserve" font-family="&quot;方正卡通简体&quot;, sans-serif" font-size="37.33" fill="#595959"><tspan fill="#595959" font-size="37.33">{{SECTION_TITLE}}</tspan></text>
+</g>
+</g>
+<g id="shape-11" data-name="组合 10">
+<g id="shape-13" data-name="文本框 12">
+<rect x="96.33" y="355" width="275.4" height="145.27" fill="none" />
+<text x="105.93" y="375.67" text-anchor="start" xml:space="preserve" font-family="&quot;Calibri Light&quot;, &quot;方正华隶简体&quot;, sans-serif" font-size="18.67" fill="#595959"><tspan fill="#595959" font-size="18.67">{{CONTENT_1}}</tspan></text>
+</g>
+<g id="shape-21" data-name="文本框 20">
+<rect x="96.33" y="313" width="168.53" height="54.8" fill="none" stroke="none" filter="url(#fx2)" />
+<text x="105.93" y="349.53" text-anchor="start" xml:space="preserve" font-family="&quot;方正卡通简体&quot;, sans-serif" font-size="37.33" fill="#595959"><tspan fill="#595959" font-size="37.33">{{CONTENT_2}}</tspan></text>
+</g>
+</g>
+<g id="shape-25" data-name="组合 24">
+<g id="shape-26" data-name="文本框 25">
+<rect x="944" y="355" width="275.4" height="145.27" fill="none" />
+<text x="953.6" y="375.67" text-anchor="start" xml:space="preserve" font-family="&quot;Calibri Light&quot;, &quot;方正华隶简体&quot;, sans-serif" font-size="18.67" fill="#595959"><tspan fill="#595959" font-size="18.67">{{CONTENT_3}}</tspan></text>
+</g>
+<g id="shape-27" data-name="文本框 26">
+<rect x="944" y="313" width="168.53" height="54.8" fill="none" stroke="none" filter="url(#fx3)" />
+<text x="953.6" y="349.53" text-anchor="start" xml:space="preserve" font-family="&quot;方正卡通简体&quot;, sans-serif" font-size="37.33" fill="#595959"><tspan fill="#595959" font-size="37.33">输入标题</tspan></text>
+</g>
+</g></svg>

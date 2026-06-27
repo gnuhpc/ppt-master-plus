@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#F2F2F2" />
+<g id="shape-23" data-name="矩形 22">
+<rect x="51.17" y="64.7" width="1193.74" height="625.49" fill="#D9D9D9" stroke="#091724" stroke-width="1" />
+</g>
+<g id="shape-4" data-name="图片 3" transform="rotate(270 627.99 350.01)">
+<svg x="309.89" y="-239.32" width="636.21" height="1178.67" viewBox="0.02037 0.00837 0.95723 1" preserveAspectRatio="none"><image href="assets/image1.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-6" data-name="矩形 5">
+<rect x="1190.45" y="29.82" width="34.02" height="638.74" fill="#FFFFFF" stroke-width="1.333" stroke="#262626" />
+</g>
+<g id="shape-9" data-name="矩形 8">
+<rect x="1190.45" y="113.29" width="34.02" height="294.11" fill="#808080" stroke-width="1.333" stroke="#262626" />
+</g>
+<g id="shape-11" data-name="组合 10">
+<g id="shape-8" data-name="矩形 7">
+<rect x="1190.45" y="29.82" width="34.02" height="45.76" fill="#808080" stroke-width="1.333" stroke="#262626" />
+</g>
+<g id="shape-10" data-name="等腰三角形 9">
+<polygon points="1207.46,41.74 1218.9,63.65 1196.02,63.65" fill="#000000" stroke-width="1.333" stroke="#262626" />
+</g>
+</g>
+<g id="shape-12" data-name="组合 11" transform="translate(1207.46 645.74) scale(1 -1) translate(-1207.46 -645.74)">
+<g id="shape-13" data-name="矩形 12">
+<rect x="1190.45" y="622.86" width="34.02" height="45.76" fill="#808080" stroke-width="1.333" stroke="#262626" />
+</g>
+<g id="shape-14" data-name="等腰三角形 13">
+<polygon points="1207.46,634.78 1218.9,656.69 1196.02,656.69" fill="#000000" stroke-width="1.333" stroke="#262626" />
+</g>
+</g>
+<g id="shape-2" data-name="任意多边形: 形状 1">
+<path d="M 62.2 597.33 L 62.2 643.48 L 106.19 643.48" fill="none" stroke-width="2" stroke="#000000" />
+</g>
+<g id="shape-5" data-name="文本框 4">
+<rect x="143.73" y="297.4" width="563.4" height="96.8" fill="none" />
+<text x="153.33" y="363.4" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="72" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="72">{{CHAPTER_TITLE}}</tspan></text>
+</g>
+<g id="shape-18" data-name="序号">
+<rect x="150.73" y="179.02" width="152.12" height="113.29" fill="none" />
+<text x="150.73" y="273" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="106.67" fill="#435BE1" font-weight="bold"><tspan fill="#435BE1" font-size="106.67">{{CHAPTER_NUM}}</tspan></text>
+</g>
+<g id="shape-49" data-name="组合 48">
+<g id="shape-24" data-name="矩形 23">
+<rect x="63.56" y="57.73" width="29.1" height="29.1" fill="#000000" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-46" data-name="乘号 45">
+<rect x="60.64" y="54.81" width="34.94" height="34.94" fill="#FFFFFF" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-50" data-name="直接箭头连接符 49">
+<line x1="126.87" y1="72.28" x2="1032.13" y2="72.28" stroke-width="2" stroke="#0D0D0D" fill="#5B9BD5" />
+</g>
+<g id="shape-56" data-name="组合 55">
+<g id="shape-57" data-name="直接连接符 56">
+<line x1="1197.27" y1="128.03" x2="1217.65" y2="128.03" stroke-width="2.667" stroke-linecap="round" stroke="#000000" stroke-linejoin="round" fill="#5B9BD5" />
+</g>
+<g id="shape-58" data-name="直接连接符 57">
+<line x1="1197.27" y1="135.01" x2="1217.65" y2="135.01" stroke-width="2.667" stroke-linecap="round" stroke="#000000" stroke-linejoin="round" fill="#5B9BD5" />
+</g>
+<g id="shape-60" data-name="直接连接符 59">
+<line x1="1197.27" y1="141.99" x2="1217.65" y2="141.99" stroke-width="2.667" stroke-linecap="round" stroke="#000000" stroke-linejoin="round" fill="#5B9BD5" />
+</g>
+</g>
+<g id="shape-15" data-name="图片 14">
+<svg x="1016.6" y="148.13" width="91.4" height="74.87" viewBox="0.80875 0.03729 0.16865 0.27401" preserveAspectRatio="none"><image href="assets/image5.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-16" data-name="椭圆 15">
+<ellipse cx="928.83" cy="597.4" rx="180.43" ry="36.53" fill="#D9D9D9" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-25" data-name="图形 8">
+<image href="assets/image6.png" x="999.87" y="376" width="99.8" height="107.67" preserveAspectRatio="none" />
+</g>
+<g id="shape-17" data-name="图形 8">
+<image href="assets/image6.png" x="762.13" y="306.27" width="178.47" height="192.33" preserveAspectRatio="none" />
+</g>
+<g id="shape-7" data-name="图片 6" transform="translate(898.67 388.8) scale(-1 1) translate(-898.67 -388.8)">
+<svg x="701.67" y="145.2" width="394" height="487.2" viewBox="0.425 0.2823 0.18464 0.7177" preserveAspectRatio="none"><image href="assets/image12.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-21" data-name="图形 10">
+<image href="assets/image10.png" x="1057.2" y="269.4" width="71.27" height="68.47" preserveAspectRatio="none" />
+</g>
+<g id="shape-80" data-name="组合 79" transform="translate(406.37 222.48) scale(-1 1) translate(-406.37 -222.48)">
+<g id="shape-81" data-name="箭头: V 形 80" transform="translate(398.25 222.48) scale(-1 1) translate(-398.25 -222.48)">
+<polygon points="389.14,213.36 398.25,213.36 407.37,222.48 398.25,231.6 389.14,231.6 398.25,222.48" fill="#000000" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-82" data-name="箭头: V 形 81" transform="translate(414.48 222.48) scale(-1 1) translate(-414.48 -222.48)">
+<polygon points="405.36,213.36 414.48,213.36 423.6,222.48 414.48,231.6 405.36,231.6 414.48,222.48" fill="#000000" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-30" data-name="文本框 29">
+<rect x="1044.67" y="58.2" width="113.13" height="28.93" fill="none" />
+<text x="1148.2" y="76.6" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="16" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="16" font-weight="bold">YOUR LOGO</tspan></text>
+</g>
+<g id="shape-28" data-name="组合 27">
+<g id="shape-3" data-name="文本框 2">
+<rect x="143.73" y="407" width="211.4" height="41.87" fill="none" />
+<text x="153.33" y="434.47" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="26.67" fill="#404040"><tspan fill="#404040" font-size="26.67">添加副标题</tspan></text>
+</g>
+<g id="shape-26" data-name="文本框 25">
+<rect x="143.73" y="454.73" width="560.8" height="67.73" fill="none" />
+<text x="153.33" y="473.13" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#404040"><tspan fill="#404040" font-size="16">{{CHAPTER_DESC}}</tspan></text>
+</g>
+<g id="shape-27" data-name="直接连接符 26">
+<line x1="373.13" y1="427.93" x2="671.27" y2="427.93" stroke-width="1.333" stroke="#000000" fill="#5B9BD5" />
+</g>
+</g></svg>

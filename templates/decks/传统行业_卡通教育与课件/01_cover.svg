@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><image href="assets/image1.jpeg" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+<g id="shape-9" data-name="文本框 8">
+<rect x="536.67" y="155.07" width="619.8" height="116.2" fill="none" />
+<text x="846.57" y="234.67" text-anchor="middle" xml:space="preserve" font-family="&quot;方正卡通简体&quot;, sans-serif" font-size="88" fill="#FFF7F2"><tspan fill="#FFF7F2" font-size="88">{{TITLE}}</tspan></text>
+</g>
+<g id="shape-13" data-name="文本框 12">
+<rect x="556.17" y="303.67" width="580.8" height="67.73" fill="none" />
+<text x="846.57" y="322.07" text-anchor="middle" xml:space="preserve" font-family="&quot;Calibri Light&quot;, &quot;方正华隶简体&quot;, sans-serif" font-size="16" fill="#404040"><tspan fill="#404040" font-size="16">{{SUBTITLE}}</tspan></text>
+</g>
+<g id="shape-10" data-name="流程图: 可选过程 9">
+<rect x="769.3" y="379.87" width="154.53" height="34.2" fill="#FFC655" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-11" data-name="文本框 10">
+<rect x="772.67" y="382" width="147.8" height="28.93" fill="none" />
+<text x="846.57" y="400.4" text-anchor="middle" xml:space="preserve" font-family="sans-serif" font-size="16" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="16">汇报人：{{AUTHOR}}</tspan></text>
+</g></svg>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#924437" />
+<g id="master-shape-8" data-name="圆角矩形 7">
+<rect x="29.07" y="26.07" width="1221.8" height="667" rx="26.53" ry="26.53" fill="#FFFFFF" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-3" data-name="标题 2" data-ph-type="title">
+<rect x="209.01" y="404.03" width="815.62" height="80.5" fill="none" />
+<text x="218.61" y="429.23" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#000000"><tspan fill="#000000" font-size="24">{{TITLE}}</tspan></text>
+</g>
+<g id="shape-5" data-name="文本占位符 4" data-ph-type="body">
+<rect x="209.01" y="484.54" width="815.62" height="91.09" fill="none" />
+<text x="218.61" y="509.74" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#000000"><tspan fill="#000000" font-size="24">{{SUBTITLE}}</tspan></text>
+</g>
+<g id="shape-6" data-name="文本占位符 5" data-ph-type="body">
+<rect x="210" y="261.33" width="250.67" height="144" fill="none" />
+<text x="219.6" y="286.53" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#000000"><tspan fill="#000000" font-size="24">01</tspan></text>
+</g></svg>

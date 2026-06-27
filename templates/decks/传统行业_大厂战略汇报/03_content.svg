@@ -1,0 +1,241 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#B51D25" /><stop offset="1" stop-color="#88161C" /></linearGradient><linearGradient id="ggrad2" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0.8" stop-color="#E6646B" /><stop offset="0" stop-color="#FFFFFF" /></linearGradient><linearGradient id="ggrad3" x1="0" y1="0" x2="1" y2="1"><stop offset="0.28" stop-color="#B51D25" /><stop offset="0" stop-color="#E6646B" /></linearGradient><linearGradient id="ggrad4" x1="0" y1="0" x2="1" y2="1"><stop offset="0.83" stop-color="#FFFFFF" /><stop offset="0.1" stop-color="#F7CBCE" /></linearGradient><linearGradient id="ggrad5" x1="0" y1="0" x2="1" y2="1"><stop offset="1" stop-color="#B51D25" /><stop offset="0" stop-color="#88161C" /></linearGradient><linearGradient id="ggrad6" x1="0" y1="0" x2="1" y2="1"><stop offset="1" stop-color="#B51D25" /><stop offset="0" stop-color="#88161C" /></linearGradient><linearGradient id="ggrad7" x1="0" y1="0" x2="1" y2="1"><stop offset="1" stop-color="#B51D25" /><stop offset="0" stop-color="#88161C" /></linearGradient><linearGradient id="ggrad8" x1="0" y1="0" x2="1" y2="1"><stop offset="1" stop-color="#FBE5E6" /><stop offset="0" stop-color="#FBE5E6" /></linearGradient><linearGradient id="ggrad9" x1="0" y1="0" x2="1" y2="1"><stop offset="1" stop-color="#B51D25" /><stop offset="0" stop-color="#F7CBCE" /></linearGradient><linearGradient id="ggrad10" x1="0" y1="0" x2="1" y2="1"><stop offset="1" stop-color="#44546A" /><stop offset="0" stop-color="#D6DCE5" /></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-19" data-name="椭圆 18" transform="rotate(90 640 525.26)">
+<ellipse cx="640" cy="525.26" rx="34.07" ry="173.01" fill="#5B0E12" stroke-width="3" stroke="#B51D25" />
+</g>
+<g id="shape-4" data-name="文本框 3">
+<rect x="28.21" y="21.05" width="470.08" height="54.93" fill="none" />
+<text x="37.81" y="57.59" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="37.33" fill="#44546A"><tspan fill="#44546A" font-size="37.33">{{PAGE_TITLE}}</tspan></text>
+</g>
+<g id="shape-5" data-name="直线连接符 11">
+<line x1="30.33" y1="75.93" x2="1238.87" y2="75.93" stroke-width="4" stroke-linecap="round" stroke="#B51D25" fill="#B51D25" />
+</g>
+<g id="shape-2" data-name="矩形: 圆顶角 1">
+<path d="M 10.53 698.95 L 1269.47 698.95 A 10.53 10.53 0 0 1 1280 709.47 L 1280 720 L 1280 720 L 0 720 L 0 720 L 0 709.47 A 10.53 10.53 0 0 1 10.53 698.95 Z" data-pptx-prst="round2SameRect" data-pptx-adj1="50000" data-pptx-adj2="0" fill="url(#ggrad1)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-11" data-name="椭圆 10" transform="rotate(90 640 277.01)">
+<ellipse cx="640" cy="277.01" rx="31.4" ry="173.01" fill="#5B0E12" stroke-width="3" stroke="#B51D25" />
+</g>
+<g id="shape-12" data-name="椭圆 11" transform="rotate(90 640 158.44)">
+<ellipse cx="640" cy="158.44" rx="31.4" ry="173.01" fill="#5B0E12" stroke-width="3" stroke="#B51D25" />
+</g>
+<g id="shape-13" data-name="椭圆 12" transform="rotate(90 640 400.07)">
+<ellipse cx="640" cy="400.07" rx="34.07" ry="173.01" fill="#5B0E12" stroke-width="3" stroke="#B51D25" />
+</g>
+<g id="shape-14" data-name="矩形 13" transform="rotate(90 643.46 396.55)">
+<rect x="401.23" y="295.81" width="484.47" height="201.47" fill="url(#ggrad2)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-15" data-name="任意多边形: 形状 14" transform="rotate(90 640 208.85)">
+<path d="M 588.95 35.84 L 655.65 35.84 L 655.65 37.39 L 656.44 36.73 C 657.49 36.14 658.56 35.84 659.65 35.84 C 676.99 35.84 691.05 113.3 691.05 208.85 C 691.05 304.4 676.99 381.85 659.65 381.85 C 658.56 381.85 657.49 381.55 656.44 380.96 L 655.65 380.3 L 655.65 381.85 L 588.95 381.85 C 606.3 381.85 620.35 304.4 620.35 208.85 C 620.35 113.3 606.3 35.84 588.95 35.84 Z" fill="url(#ggrad3)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-16" data-name="椭圆 15" transform="rotate(90 643.46 156.92)">
+<ellipse cx="643.46" cy="156.92" rx="17.04" ry="100.74" fill="url(#ggrad4)" stroke-width="3" stroke="none" />
+</g>
+<g id="shape-17" data-name="任意多边形: 形状 16" transform="rotate(90 640 328.05)">
+<path d="M 588.95 155.04 L 655.65 155.04 L 655.65 156.6 L 656.44 155.94 C 657.49 155.35 658.56 155.04 659.65 155.04 C 676.99 155.04 691.05 232.5 691.05 328.05 C 691.05 423.6 676.99 501.06 659.65 501.06 C 658.56 501.06 657.49 500.76 656.44 500.17 L 655.65 499.51 L 655.65 501.06 L 588.95 501.06 C 606.3 501.06 620.35 423.6 620.35 328.05 C 620.35 232.5 606.3 155.04 588.95 155.04 Z" fill="url(#ggrad5)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-18" data-name="任意多边形: 形状 17" transform="rotate(90 640 450.43)">
+<path d="M 584.62 277.42 L 656.98 277.42 L 656.98 278.97 L 657.83 278.31 C 658.98 277.72 660.14 277.42 661.31 277.42 C 680.13 277.42 695.38 354.88 695.38 450.43 C 695.38 545.98 680.13 623.43 661.31 623.43 C 660.14 623.43 658.98 623.13 657.83 622.54 L 656.98 621.88 L 656.98 623.43 L 584.62 623.43 C 603.43 623.43 618.69 545.98 618.69 450.43 C 618.69 354.88 603.43 277.42 584.62 277.42 Z" fill="url(#ggrad6)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-20" data-name="任意多边形: 形状 19" transform="rotate(90 640 575.62)">
+<path d="M 584.62 402.61 L 656.98 402.61 L 656.98 404.16 L 657.83 403.51 C 658.98 402.92 660.14 402.61 661.31 402.61 C 680.13 402.61 695.38 480.07 695.38 575.62 C 695.38 671.17 680.13 748.63 661.31 748.63 C 660.14 748.63 658.98 748.33 657.83 747.73 L 656.98 747.08 L 656.98 748.63 L 584.62 748.63 C 603.43 748.63 618.69 671.17 618.69 575.62 C 618.69 480.07 603.43 402.61 584.62 402.61 Z" fill="url(#ggrad7)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-27" data-name="组合 26">
+<g id="shape-23" data-name="矩形 22">
+<rect x="38.67" y="638.78" width="292.59" height="46" fill="#B51D25" fill-opacity="0.1" stroke="none" stroke-width="1" />
+<text x="184.96" y="670.18" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="24" fill="#B51D25" font-weight="bold" letter-spacing="8"><tspan fill="#B51D25" font-size="24" font-weight="bold" letter-spacing="8">银发市场攻坚</tspan></text>
+</g>
+<g id="shape-24" data-name="矩形 23">
+<rect x="342.03" y="638.78" width="292.59" height="46" fill="#B51D25" fill-opacity="0.1" stroke="none" stroke-width="1" />
+<text x="488.32" y="670.18" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="24" fill="#B51D25" font-weight="bold" letter-spacing="8"><tspan fill="#B51D25" font-size="24" font-weight="bold" letter-spacing="8">跨境产能协同</tspan></text>
+</g>
+<g id="shape-25" data-name="矩形 24">
+<rect x="645.39" y="638.78" width="292.59" height="46" fill="#B51D25" fill-opacity="0.1" stroke="none" stroke-width="1" />
+<text x="791.68" y="670.18" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="24" fill="#B51D25" font-weight="bold" letter-spacing="8"><tspan fill="#B51D25" font-size="24" font-weight="bold" letter-spacing="8">芯片国产替代</tspan></text>
+</g>
+<g id="shape-26" data-name="矩形 25">
+<rect x="948.75" y="638.78" width="292.59" height="46" fill="#B51D25" fill-opacity="0.1" stroke="none" stroke-width="1" />
+<text x="1095.04" y="670.18" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="24" fill="#B51D25" font-weight="bold" letter-spacing="8"><tspan fill="#B51D25" font-size="24" font-weight="bold" letter-spacing="8">订阅制转型</tspan></text>
+</g>
+</g>
+<g id="shape-29" data-name="文本框 28">
+<rect x="567.95" y="136.71" width="154.87" height="38.78" fill="none" />
+<text x="645.39" y="161.91" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="24" fill="#44546A" font-weight="bold"><tspan fill="#44546A" font-size="24" font-weight="bold">相关闭环</tspan></text>
+</g>
+<g id="shape-46" data-name="组合 45">
+<g id="shape-21" data-name="矩形 20">
+<rect x="37.33" y="141.29" width="360.85" height="104.44" fill="#B51D25" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-22" data-name="矩形 21">
+<rect x="38.67" y="245.61" width="359.44" height="379.01" fill="url(#ggrad8)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-30" data-name="文本框 29">
+<rect x="167.97" y="147.72" width="219.89" height="38.78" fill="none" />
+<text x="177.57" y="172.92" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="24" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="24" font-weight="bold">市场增量空间挖掘</tspan></text>
+</g>
+<g id="shape-31" data-name="文本框 30">
+<rect x="168.48" y="180.25" width="210.43" height="63.01" fill="none" />
+<text x="178.08" y="197.52" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">{{CONTENT_1}}</tspan></text>
+</g>
+<g id="shape-32" data-name="Google Shape;6082;p78">
+<path d="M 121.87 176.89 C 123.34 176.89 124.39 178.36 124.39 179.83 L 124.39 190.94 C 124.39 192.4 123.13 193.66 121.87 193.66 C 120.62 193.66 119.15 192.4 119.15 190.94 L 119.15 186.32 L 107.41 198.27 C 106.89 198.79 106.15 199.05 105.42 199.05 C 104.68 199.05 103.95 198.79 103.43 198.27 L 99.87 194.49 L 90.65 203.71 C 90.12 204.24 89.39 204.5 88.65 204.5 C 87.92 204.5 87.19 204.24 86.66 203.71 C 85.61 202.67 85.61 200.78 86.66 199.74 L 97.77 188.84 C 98.3 188.31 99.03 188.05 99.76 188.05 C 100.49 188.05 101.23 188.31 101.75 188.84 L 105.32 192.4 L 115.37 182.55 L 110.76 182.55 C 109.3 182.55 108.25 181.08 108.25 179.83 C 108.25 178.36 109.51 176.89 110.76 176.89 Z M 143.67 215.46 C 143.67 217.34 144.09 221.11 140.95 221.11 L 73.04 221.11 C 71.58 221.11 70.32 219.65 70.32 218.18 L 70.32 215.46 Z M 78.7 160.54 C 74.09 160.54 70.52 164.11 70.52 168.72 L 70.52 210 L 67.8 210 C 66.33 210 65.08 211.27 65.08 212.73 L 65.08 218.18 C 65.08 222.58 68.64 226.35 73.46 226.35 L 141.15 226.35 C 145.76 226.35 149.33 222.58 149.33 218.18 L 149.33 212.73 C 149.12 211.05 147.86 210 146.39 210 L 143.67 210 L 143.67 168.72 C 143.67 164.11 139.9 160.54 135.5 160.54 Z" fill="#FFFFFF" stroke="none" />
+</g>
+<g id="shape-3" data-name="矩形 2">
+<rect x="166.59" y="267.88" width="213.26" height="35.54" fill="none" />
+<text x="176.19" y="290.82" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="21.33" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="21.33" font-weight="bold">用户渗透率分层运营</tspan></text>
+</g>
+<g id="shape-28" data-name="矩形 27">
+<rect x="168.56" y="304.43" width="213.26" height="116.1" fill="none" />
+<text x="178.16" y="325.1" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="18.67" fill="#404040"><tspan fill="#404040" font-size="18.67">{{CONTENT_2}}</tspan></text>
+</g>
+<g id="shape-33" data-name="矩形 32">
+<rect x="166.59" y="442.69" width="213.26" height="35.54" fill="none" />
+<text x="176.19" y="465.62" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="21.33" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="21.33" font-weight="bold">用户渗透率分层运营</tspan></text>
+</g>
+<g id="shape-34" data-name="矩形 33">
+<rect x="168.56" y="479.24" width="213.26" height="116.1" fill="none" />
+<text x="178.16" y="499.9" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="18.67" fill="#404040"><tspan fill="#404040" font-size="18.67">{{CONTENT_3}}</tspan></text>
+</g>
+<g id="shape-40" data-name="直接连接符 39">
+<line x1="107.08" y1="297.3" x2="107.08" y2="563.78" stroke-width="1" stroke-dasharray="4 4" fill="#B51D25" stroke="#B51D25" />
+</g>
+<g id="shape-35" data-name="矩形 34">
+<rect x="59.83" y="273.63" width="94.49" height="23.67" stroke="none" fill="#B51D25" stroke-width="1" />
+<text x="107.08" y="292.03" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">场景适配</tspan></text>
+</g>
+<g id="shape-36" data-name="矩形 35">
+<rect x="59.83" y="563.78" width="94.49" height="23.67" stroke="none" fill="#B51D25" stroke-width="1" />
+<text x="107.08" y="582.18" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">服务增值</tspan></text>
+</g>
+<g id="shape-37" data-name="矩形 36">
+<rect x="59.83" y="467.07" width="94.49" height="23.67" stroke="none" fill="#B51D25" stroke-width="1" />
+<text x="107.08" y="485.47" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">渠道下沉</tspan></text>
+</g>
+<g id="shape-38" data-name="矩形 37">
+<rect x="59.83" y="370.35" width="94.49" height="23.67" stroke="none" fill="#B51D25" stroke-width="1" />
+<text x="107.08" y="388.75" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">价格分级</tspan></text>
+</g>
+<g id="shape-41" data-name="直接连接符 40">
+<line x1="183.03" y1="430.54" x2="363.41" y2="430.54" stroke-width="1" stroke="#44546A" stroke-opacity="0.5" stroke-dasharray="4 4" fill="#B51D25" />
+</g>
+<g id="shape-43" data-name="等腰三角形 42" transform="translate(107.2 336.1) scale(1 -1) translate(-107.2 -336.1)">
+<polygon points="107.2,330.67 113.5,341.53 100.91,341.53" stroke="none" fill="#B51D25" stroke-width="1" />
+</g>
+<g id="shape-44" data-name="等腰三角形 43" transform="translate(107.2 432.16) scale(1 -1) translate(-107.2 -432.16)">
+<polygon points="107.2,426.73 113.5,437.59 100.91,437.59" stroke="none" fill="#B51D25" stroke-width="1" />
+</g>
+<g id="shape-45" data-name="等腰三角形 44" transform="translate(107.2 528.22) scale(1 -1) translate(-107.2 -528.22)">
+<polygon points="107.2,522.79 113.5,533.65 100.91,533.65" stroke="none" fill="#B51D25" stroke-width="1" />
+</g>
+</g>
+<g id="shape-48" data-name="矩形 47">
+<rect x="880.48" y="141.29" width="360.85" height="104.44" fill="#44546A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-49" data-name="矩形 48">
+<rect x="881.81" y="245.61" width="359.44" height="379.01" fill="#44546A" fill-opacity="0.1" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-50" data-name="文本框 49">
+<rect x="898.74" y="147.72" width="219.89" height="38.78" fill="none" />
+<text x="908.34" y="172.92" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="24" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="24" font-weight="bold">供应链韧性重构</tspan></text>
+</g>
+<g id="shape-51" data-name="文本框 50">
+<rect x="899.25" y="180.25" width="210.43" height="63.01" fill="none" />
+<text x="908.85" y="197.52" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="14.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14.67">东南亚产能占比从</tspan><tspan fill="#FFFFFF" font-size="14.67">15%</tspan><tspan fill="#FFFFFF" font-size="14.67">提升至</tspan><tspan x="908.85" dy="14.67" fill="#FFFFFF" font-size="14.67">35%</tspan><tspan fill="#FFFFFF" font-size="14.67">，但物流成本增加</tspan><tspan fill="#FFFFFF" font-size="14.67">8</tspan><tspan fill="#FFFFFF" font-size="14.67">个百</tspan><tspan x="908.85" dy="14.67" fill="#FFFFFF" font-size="14.67">分点。</tspan></text>
+</g>
+<g id="shape-75" data-name="组合 74">
+<g id="shape-53" data-name="矩形 52">
+<rect x="901.17" y="267.88" width="191.72" height="35.54" fill="none" />
+<text x="910.77" y="290.82" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="21.33" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="21.33" font-weight="bold">地缘政治风险对冲</tspan></text>
+</g>
+<g id="shape-54" data-name="矩形 53">
+<rect x="903.14" y="304.43" width="213.26" height="88.95" fill="none" />
+<text x="912.74" y="325.1" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="18.67" fill="#404040"><tspan fill="#404040" font-size="18.67">通过“中国芯</tspan><tspan fill="#404040" font-size="18.67">+</tspan><tspan fill="#404040" font-size="18.67">海外厂</tspan><tspan x="912.74" dy="22.4" fill="#404040" font-size="18.67">”模式，关键元器件备</tspan><tspan x="912.74" dy="22.4" fill="#404040" font-size="18.67">库周期从</tspan><tspan fill="#404040" font-size="18.67">30</tspan><tspan fill="#404040" font-size="18.67">天延长至</tspan><tspan fill="#404040" font-size="18.67">90</tspan><tspan x="912.74" dy="22.4" fill="#404040" font-size="18.67">天。</tspan></text>
+</g>
+<g id="shape-55" data-name="矩形 54">
+<rect x="901.17" y="442.69" width="191.72" height="35.54" fill="none" />
+<text x="910.77" y="465.62" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="21.33" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="21.33" font-weight="bold">地缘政治风险对冲</tspan></text>
+</g>
+<g id="shape-56" data-name="矩形 55">
+<rect x="903.14" y="479.24" width="213.26" height="88.95" fill="none" />
+<text x="912.74" y="499.9" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="18.67" fill="#404040"><tspan fill="#404040" font-size="18.67">通过“中国芯</tspan><tspan fill="#404040" font-size="18.67">+</tspan><tspan fill="#404040" font-size="18.67">海外厂</tspan><tspan x="912.74" dy="22.4" fill="#404040" font-size="18.67">”模式，关键元器件备</tspan><tspan x="912.74" dy="22.4" fill="#404040" font-size="18.67">库周期从</tspan><tspan fill="#404040" font-size="18.67">30</tspan><tspan fill="#404040" font-size="18.67">天延长至</tspan><tspan fill="#404040" font-size="18.67">90</tspan><tspan x="912.74" dy="22.4" fill="#404040" font-size="18.67">天。</tspan></text>
+</g>
+<g id="shape-62" data-name="直接连接符 61">
+<line x1="917.61" y1="420.53" x2="1097.99" y2="420.53" stroke-width="1" stroke="#44546A" stroke-opacity="0.5" stroke-dasharray="4 4" fill="#B51D25" />
+</g>
+</g>
+<g id="shape-57" data-name="直接连接符 56">
+<line x1="1175.58" y1="297.3" x2="1175.58" y2="563.78" stroke-width="1" stroke="#44546A" stroke-dasharray="4 4" fill="#B51D25" />
+</g>
+<g id="shape-58" data-name="矩形 57">
+<rect x="1128.33" y="273.63" width="94.49" height="23.67" fill="#44546A" stroke="none" stroke-width="1" />
+<text x="1175.58" y="292.03" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">多源进入</tspan></text>
+</g>
+<g id="shape-59" data-name="矩形 58">
+<rect x="1128.33" y="563.78" width="94.49" height="23.67" fill="#44546A" stroke="none" stroke-width="1" />
+<text x="1175.58" y="582.18" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">税筹优化</tspan></text>
+</g>
+<g id="shape-60" data-name="矩形 59">
+<rect x="1128.33" y="467.07" width="94.49" height="23.67" fill="#44546A" stroke="none" stroke-width="1" />
+<text x="1175.58" y="485.47" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="16">库存缓冲</tspan></text>
+</g>
+<g id="shape-61" data-name="矩形 60">
+<rect x="1128.33" y="370.35" width="94.49" height="23.67" fill="#44546A" stroke="none" stroke-width="1" />
+<text x="1175.58" y="388.75" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="16" font-weight="bold">产能备份</tspan></text>
+</g>
+<g id="shape-63" data-name="等腰三角形 62" transform="translate(1175.91 336.1) scale(1 -1) translate(-1175.91 -336.1)">
+<polygon points="1175.91,330.67 1182.21,341.53 1169.62,341.53" fill="#44546A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-64" data-name="等腰三角形 63" transform="translate(1175.91 432.16) scale(1 -1) translate(-1175.91 -432.16)">
+<polygon points="1175.91,426.73 1182.21,437.59 1169.62,437.59" fill="#44546A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-65" data-name="等腰三角形 64" transform="translate(1175.91 528.22) scale(1 -1) translate(-1175.91 -528.22)">
+<polygon points="1175.91,522.79 1182.21,533.65 1169.62,533.65" fill="#44546A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-66" data-name="Google Shape;5279;p76">
+<g id="shape-67" data-name="Google Shape;5280;p76">
+<path d="M 1196.37 210.08 C 1195.87 210.08 1195.36 210.27 1194.98 210.65 C 1194.2 211.43 1194.2 212.67 1194.98 213.45 L 1200.55 219.02 C 1200.93 219.39 1201.43 219.58 1201.92 219.58 C 1202.42 219.58 1202.93 219.38 1203.31 218.99 C 1204.07 218.24 1204.08 217 1203.34 216.24 L 1197.76 210.65 C 1197.38 210.27 1196.88 210.08 1196.37 210.08 Z" stroke="none" fill="none" />
+</g>
+<g id="shape-68" data-name="Google Shape;5281;p76">
+<path d="M 1199.2 201.74 C 1198.37 201.74 1197.61 202.26 1197.33 203.08 C 1197 204.09 1197.52 205.2 1198.53 205.57 L 1206.9 208.35 C 1207.11 208.42 1207.32 208.45 1207.52 208.45 C 1208.35 208.45 1209.11 207.93 1209.39 207.1 C 1209.74 206.07 1209.18 204.94 1208.14 204.61 L 1199.78 201.82 C 1199.59 201.76 1199.39 201.74 1199.2 201.74 Z" stroke="none" fill="none" />
+</g>
+<g id="shape-69" data-name="Google Shape;5282;p76">
+<path d="M 1187.99 212.87 C 1187.79 212.87 1187.58 212.9 1187.38 212.97 C 1186.35 213.31 1185.79 214.43 1186.14 215.47 L 1188.92 223.83 C 1189.17 224.69 1189.96 225.25 1190.81 225.25 C 1191.02 225.25 1191.23 225.21 1191.43 225.14 C 1192.5 224.8 1193.05 223.63 1192.67 222.59 L 1189.88 214.22 C 1189.6 213.39 1188.83 212.87 1187.99 212.87 Z" stroke="none" fill="none" />
+</g>
+<g id="shape-70" data-name="Google Shape;5283;p76">
+<path d="M 1157.36 171.08 C 1156.86 171.08 1156.36 171.27 1155.97 171.65 C 1155.21 172.42 1155.2 173.65 1155.94 174.42 L 1161.52 180 C 1161.9 180.37 1162.39 180.55 1162.89 180.55 C 1163.39 180.55 1163.9 180.35 1164.29 179.97 C 1165.05 179.21 1165.06 177.98 1164.31 177.2 L 1158.73 171.63 C 1158.35 171.26 1157.85 171.08 1157.36 171.08 Z" stroke="none" fill="none" />
+</g>
+<g id="shape-71" data-name="Google Shape;5284;p76">
+<path d="M 1168.51 165.52 C 1168.31 165.52 1168.09 165.56 1167.88 165.63 C 1166.87 165.96 1166.31 167.05 1166.62 168.08 L 1169.41 176.43 C 1169.67 177.29 1170.45 177.83 1171.29 177.83 C 1171.5 177.83 1171.71 177.8 1171.91 177.73 C 1172.96 177.38 1173.52 176.24 1173.15 175.19 L 1170.36 166.83 C 1170.07 166.02 1169.32 165.52 1168.51 165.52 Z" stroke="none" fill="none" />
+</g>
+<g id="shape-72" data-name="Google Shape;5285;p76">
+<path d="M 1151.82 182.22 C 1150.98 182.22 1150.21 182.74 1149.94 183.56 C 1149.59 184.58 1150.13 185.68 1151.14 186.04 L 1159.51 188.83 C 1159.73 188.91 1159.96 188.95 1160.19 188.95 C 1161.01 188.95 1161.78 188.43 1162.06 187.61 C 1162.41 186.55 1161.82 185.41 1160.74 185.1 L 1152.39 182.3 C 1152.2 182.24 1152.01 182.22 1151.82 182.22 Z" stroke="none" fill="none" />
+</g>
+<g id="shape-73" data-name="Google Shape;5286;p76">
+<path d="M 1187.9 184.29 L 1182.18 189.99 C 1182.78 190.29 1183.34 190.68 1183.82 191.14 C 1186.14 193.44 1186.14 197.2 1183.82 199.5 L 1164.31 219.02 C 1163.15 220.18 1161.64 220.76 1160.13 220.76 C 1158.62 220.76 1157.1 220.18 1155.95 219.02 C 1153.64 216.71 1153.64 212.97 1155.95 210.65 L 1163.65 202.97 C 1162.23 199.99 1161.67 196.69 1162.03 193.43 L 1162.03 193.43 L 1150.37 205.08 C 1145.04 210.47 1145.06 219.17 1150.43 224.54 C 1153.12 227.23 1156.66 228.58 1160.19 228.58 C 1163.7 228.58 1167.2 227.25 1169.89 224.59 L 1189.41 205.08 C 1193.16 201.32 1194.4 195.72 1192.61 190.72 C 1192.17 189.41 1191.53 188.18 1190.69 187.07 L 1190.66 187.1 C 1190.27 186.6 1189.88 186.04 1189.41 185.57 C 1188.92 185.11 1188.43 184.69 1187.9 184.29 Z" stroke="none" fill="none" />
+</g>
+<g id="shape-74" data-name="Google Shape;5287;p76">
+<path d="M 1199.77 161.4 C 1196.27 161.4 1192.76 162.72 1190.08 165.38 L 1169.89 185.57 C 1166.14 189.33 1164.89 194.93 1166.69 199.93 C 1167.12 201.24 1167.77 202.48 1168.61 203.58 L 1168.63 203.55 C 1169.03 204.05 1169.41 204.61 1169.89 205.08 C 1170.37 205.54 1170.86 205.96 1171.4 206.37 L 1177.11 200.65 C 1176.5 200.35 1175.95 199.97 1175.46 199.51 C 1173.15 197.2 1173.15 193.45 1175.46 191.14 L 1195.65 170.96 C 1196.81 169.8 1198.32 169.22 1199.83 169.22 C 1201.35 169.22 1202.86 169.8 1204.01 170.96 C 1206.32 173.27 1206.32 177.01 1204.01 179.33 L 1195.65 187.68 C 1197.06 190.66 1197.62 193.96 1197.26 197.22 L 1209.59 184.9 C 1214.92 179.5 1214.9 170.81 1209.53 165.44 C 1206.84 162.74 1203.3 161.4 1199.77 161.4 Z" stroke="none" fill="none" />
+</g>
+</g>
+<g id="shape-77" data-name="矩形 76">
+<rect x="530.86" y="202.94" width="225.21" height="38.78" fill="none" />
+<text x="540.46" y="228.14" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">需求</tspan><tspan fill="#FFFFFF" font-size="24">-</tspan><tspan fill="#FFFFFF" font-size="24">产能校准闭环</tspan></text>
+</g>
+<g id="shape-78" data-name="矩形 77">
+<rect x="530.86" y="326.37" width="225.21" height="38.78" fill="none" />
+<text x="540.46" y="351.57" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">研发</tspan><tspan fill="#FFFFFF" font-size="24">-</tspan><tspan fill="#FFFFFF" font-size="24">市场联动闭环</tspan></text>
+</g>
+<g id="shape-79" data-name="矩形 78">
+<rect x="530.86" y="449.79" width="225.21" height="38.78" fill="none" />
+<text x="540.46" y="474.99" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">成本</tspan><tspan fill="#FFFFFF" font-size="24">-</tspan><tspan fill="#FFFFFF" font-size="24">溢价平衡闭环</tspan></text>
+</g>
+<g id="shape-80" data-name="矩形 79">
+<rect x="530.86" y="573.22" width="225.21" height="38.78" fill="none" />
+<text x="540.46" y="598.42" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">风险</tspan><tspan fill="#FFFFFF" font-size="24">-</tspan><tspan fill="#FFFFFF" font-size="24">收益对赌闭环</tspan></text>
+</g>
+<g id="shape-82" data-name="右大括号 81">
+<rect x="396.58" y="141.29" width="54.44" height="483.33" fill="url(#ggrad9)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-83" data-name="右大括号 82" transform="translate(854.95 382.95) scale(-1 1) translate(-854.95 -382.95)">
+<rect x="827.74" y="141.29" width="54.44" height="483.33" fill="url(#ggrad10)" stroke="none" stroke-width="1" />
+</g></svg>

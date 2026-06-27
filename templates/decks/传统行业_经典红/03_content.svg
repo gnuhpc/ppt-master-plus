@@ -1,0 +1,83 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><g id="slide-wrapper" transform="scale(1.3333333333333333)"><defs><linearGradient id="ggrad1" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6E0CB"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad2" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#C50013"/><stop offset="1" stop-color="#E00014"/></linearGradient><linearGradient id="ggrad3" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6E0CB"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad4" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#C50013"/><stop offset="1" stop-color="#E00014"/></linearGradient><linearGradient id="ggrad5" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6E0CB"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad6" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#C50013"/><stop offset="1" stop-color="#E00014"/></linearGradient><linearGradient id="ggrad7" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6E0CB"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad8" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#C50013"/><stop offset="1" stop-color="#E00014"/></linearGradient><linearGradient id="ggrad9" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6E0CB"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad10" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#C50013"/><stop offset="1" stop-color="#E00014"/></linearGradient><linearGradient id="ggrad11" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6E0CB"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad12" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#C50013"/><stop offset="1" stop-color="#E00014"/></linearGradient><linearGradient id="ggrad13" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6E0CB"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad14" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#C50013"/><stop offset="1" stop-color="#E00014"/></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#CD170A"/>
+<g id="layout-shape-3" data-name="图片 2">
+<svg x="0" y="0" width="1280" height="720" viewBox="0.25054 0.12994 0.47971 0.74012" preserveAspectRatio="none"><image href="assets/image1.jpeg" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="shape-34" data-name="文本框 33">
+<rect x="351.2" y="26.53" width="257.27" height="41.87" fill="none" stroke="none"/>
+<text x="360.8" y="54" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪大宋简&quot;, sans-serif" font-size="26.67" fill="#000000"><tspan fill="#000000" font-size="26.67">{{PAGE_TITLE}}</tspan></text>
+</g>
+<g id="shape-35" data-name="组合 34">
+<g id="shape-36" data-name="星形: 五角 35">
+<polygon points="324.81,33.27 327.66,42.02 336.87,42.02 329.42,47.44 332.26,56.2 324.81,50.78 317.36,56.2 320.21,47.44 312.76,42.02 321.97,42.02" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+<g id="shape-37" data-name="星形: 五角 36">
+<polygon points="299.45,37.87 301.27,43.45 307.13,43.45 302.39,46.89 304.2,52.47 299.45,49.03 294.71,52.47 296.52,46.89 291.77,43.45 297.64,43.45" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+<g id="shape-38" data-name="星形: 五角 37">
+<polygon points="280.07,40.74 281.24,44.33 285.02,44.33 281.96,46.55 283.13,50.15 280.07,47.93 277.01,50.15 278.18,46.55 275.13,44.33 278.9,44.33" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+</g>
+<g id="shape-39" data-name="组合 38" transform="translate(658.97 45.94) scale(-1 1) translate(-658.97 -45.94)">
+<g id="shape-40" data-name="星形: 五角 39">
+<polygon points="677.6,33.27 680.45,42.02 689.66,42.02 682.21,47.44 685.05,56.2 677.6,50.78 670.15,56.2 673,47.44 665.55,42.02 674.76,42.02" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+<g id="shape-41" data-name="星形: 五角 40">
+<polygon points="652.24,37.87 654.06,43.45 659.92,43.45 655.18,46.89 656.99,52.47 652.24,49.03 647.5,52.47 649.31,46.89 644.56,43.45 650.43,43.45" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+<g id="shape-42" data-name="星形: 五角 41">
+<polygon points="632.86,40.74 634.03,44.33 637.8,44.33 634.75,46.55 635.91,50.15 632.86,47.93 629.8,50.15 630.97,46.55 627.91,44.33 631.69,44.33" stroke="none" fill="#F3B05F" stroke-width="1"/>
+</g>
+</g>
+<g id="shape-15" data-name="文本框 14">
+<rect x="45.92" y="83.52" width="868.16" height="96.8" fill="none"/>
+<text x="55.52" y="101.92" text-anchor="start" xml:space="preserve" font-family="&quot;Century Gothic&quot;, sans-serif" font-size="16" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="16">{{KEY_MESSAGE}}</tspan><tspan x="55.52" dy="19.2" fill="#FFFFFF" font-size="16"></tspan><tspan x="55.52" dy="19.2" fill="#FFFFFF" font-size="16"></tspan></text>
+</g>
+<g id="shape-16" data-name="椭圆 15">
+<ellipse cx="107.94" cy="283.71" rx="55.91" ry="55.91" fill="url(#ggrad1)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-17" data-name="文本框 16">
+<rect x="49.16" y="255.71" width="112.63" height="67.73" fill="none" stroke="none"/>
+<text x="105.47" y="280.91" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪大宋简&quot;, sans-serif" font-size="24" fill="url(#txtgrad2)" letter-spacing="-2"><tspan fill="url(#txtgrad2)" font-size="24" letter-spacing="-2">{{CONTENT_1}}</tspan></text>
+</g>
+<g id="shape-18" data-name="椭圆 17">
+<ellipse cx="226.05" cy="406.16" rx="55.91" ry="55.91" fill="url(#ggrad3)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-19" data-name="文本框 18">
+<rect x="167.27" y="378.96" width="112.63" height="67.73" fill="none" stroke="none"/>
+<text x="223.58" y="404.16" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪大宋简&quot;, sans-serif" font-size="24" fill="url(#txtgrad4)" letter-spacing="-2"><tspan fill="url(#txtgrad4)" font-size="24" letter-spacing="-2">{{CONTENT_2}}</tspan></text>
+</g>
+<g id="shape-20" data-name="椭圆 19">
+<ellipse cx="348.7" cy="283.71" rx="55.91" ry="55.91" fill="url(#ggrad5)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-21" data-name="文本框 20">
+<rect x="285.38" y="255.71" width="121.69" height="67.73" fill="none" stroke="none"/>
+<text x="346.23" y="280.91" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪大宋简&quot;, sans-serif" font-size="24" fill="url(#txtgrad6)" letter-spacing="-2"><tspan fill="url(#txtgrad6)" font-size="24" letter-spacing="-2">{{CONTENT_3}}</tspan></text>
+</g>
+<g id="shape-22" data-name="椭圆 21">
+<ellipse cx="480" cy="406.16" rx="55.91" ry="55.91" fill="url(#ggrad7)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-23" data-name="文本框 22">
+<rect x="413.69" y="378.96" width="127.68" height="67.73" fill="none" stroke="none"/>
+<text x="477.53" y="404.16" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪大宋简&quot;, sans-serif" font-size="24" fill="url(#txtgrad8)" letter-spacing="-2"><tspan fill="url(#txtgrad8)" font-size="24" letter-spacing="-2">{{CONTENT_4}}</tspan></text>
+</g>
+<g id="shape-24" data-name="椭圆 23">
+<ellipse cx="615.05" cy="283.71" rx="55.91" ry="55.91" fill="url(#ggrad9)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-25" data-name="文本框 24">
+<rect x="548.74" y="255.71" width="127.68" height="67.73" fill="none" stroke="none"/>
+<text x="612.58" y="280.91" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪大宋简&quot;, sans-serif" font-size="24" fill="url(#txtgrad10)" letter-spacing="-2"><tspan fill="url(#txtgrad10)" font-size="24" letter-spacing="-2">{{CONTENT_5}}</tspan></text>
+</g>
+<g id="shape-26" data-name="椭圆 25">
+<ellipse cx="750.1" cy="406.16" rx="55.91" ry="55.91" fill="url(#ggrad11)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-27" data-name="文本框 26">
+<rect x="683.79" y="378.96" width="127.68" height="67.73" fill="none" stroke="none"/>
+<text x="747.63" y="404.16" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪大宋简&quot;, sans-serif" font-size="24" fill="url(#txtgrad12)" letter-spacing="-2"><tspan fill="url(#txtgrad12)" font-size="24" letter-spacing="-2">{{CONTENT_6}}</tspan></text>
+</g>
+<g id="shape-28" data-name="椭圆 27">
+<ellipse cx="885.14" cy="283.71" rx="55.91" ry="55.91" fill="url(#ggrad13)" stroke="none" stroke-width="1"/>
+</g>
+<g id="shape-29" data-name="文本框 28">
+<rect x="818.83" y="255.71" width="127.68" height="67.73" fill="none" stroke="none"/>
+<text x="882.68" y="280.91" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪大宋简&quot;, sans-serif" font-size="24" fill="url(#txtgrad14)" letter-spacing="-2"><tspan fill="url(#txtgrad14)" font-size="24" letter-spacing="-2">{{CONTENT_7}}</tspan></text>
+</g></g></svg>

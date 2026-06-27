@@ -1,0 +1,106 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="0" stdDeviation="13.33" flood-color="#1C4273" flood-opacity="0.15" /></filter><linearGradient id="ggrad1" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F5F8FB" stop-opacity="0" /><stop offset="1" stop-color="#C4D7F1" /></linearGradient><marker id="marrow1" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10" fill="#748EAE" /></marker><marker id="marrow2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10" fill="#748EAE" /></marker></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="layout-shape-4" data-name="矩形: 圆角 3">
+<rect x="0" y="79.7" width="50.72" height="4.98" rx="0" ry="0" fill="#1C4273" stroke="#1C4273" stroke-width="1" filter="url(#fx1)" />
+</g>
+<g id="shape-39" data-name="箭头: V 形 38" transform="translate(932.77 403.61) scale(-1 1) translate(-932.77 -403.61)">
+<polygon points="609.78,106.32 1255.76,106.32 1255.76,403.61 1255.76,700.91 609.78,700.91 609.78,403.61" fill="#E3E8EF" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-2" data-name="标题 1" data-ph-type="title">
+<rect x="7.56" y="19.09" width="969.29" height="57.67" fill="none" />
+<text x="17.16" y="44.29" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#000000"><tspan fill="#000000" font-size="24">消费者购物动因分析</tspan></text>
+</g>
+<g id="shape-57" data-name="梯形 56" transform="rotate(270 455.11 400.04)">
+<polygon points="253.33,245.37 656.9,245.37 755.98,554.7 154.24,554.7" fill="url(#ggrad1)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-58" data-name="不完整圆 57">
+<path d="M 146.17 237.15 A 213.42 213.42 0 0 1 490.59 405.63 L 277.17 405.63 Z" fill="#E0B5AE" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-59" data-name="弧形 58">
+<path d="M 277.17 192.21 A 213.42 213.42 0 0 1 490.59 405.63" fill="none" stroke-width="1.333" stroke-linecap="butt" stroke="#748EAE" stroke-dasharray="8 4" stroke-linejoin="miter" marker-start="url(#marrow1)" marker-end="url(#marrow2)" />
+</g>
+<g id="shape-60" data-name="图表 59">
+<rect x="71.83" y="169.69" width="410.67" height="512.09" fill="none" stroke="#999999" stroke-dasharray="4 4" /><text x="277.17" y="425.73" text-anchor="middle" font-size="14" fill="#999999">[chart]</text>
+</g>
+<g id="shape-61" data-name="等腰三角形 60" transform="rotate(90 692.37 175.9)">
+<polygon points="692.37,153.75 718.06,198.04 666.68,198.04" fill="#748EAE" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-62" data-name="等腰三角形 61" transform="rotate(90 692.37 325.83)">
+<polygon points="692.37,303.68 718.06,347.98 666.68,347.98" fill="#748EAE" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-63" data-name="等腰三角形 62" transform="rotate(90 692.37 477.73)">
+<polygon points="692.37,455.59 718.06,499.88 666.68,499.88" fill="#748EAE" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-64" data-name="等腰三角形 63" transform="rotate(90 692.37 627.67)">
+<polygon points="692.37,605.52 718.06,649.81 666.68,649.81" fill="#748EAE" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-65" data-name="组合 64">
+<g id="shape-66" data-name="组合 65">
+<g id="shape-76" data-name="椭圆 75">
+<ellipse cx="609.94" cy="177.71" rx="71.39" ry="71.39" stroke-width="8" stroke="#FFFFFF" fill="#1C4273" />
+</g>
+<g id="shape-77" data-name="矩形 76">
+<rect x="569.94" y="150.21" width="88.89" height="54.93" stroke="none" fill="none" />
+<text x="614.39" y="186.74" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="37.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="37.33">{{THANK_YOU}}</tspan></text>
+</g>
+</g>
+<g id="shape-67" data-name="组合 66">
+<g id="shape-74" data-name="椭圆 73">
+<ellipse cx="609.94" cy="326.85" rx="71.39" ry="71.39" fill="#436A98" stroke-width="8" stroke="#FFFFFF" />
+</g>
+<g id="shape-75" data-name="矩形 74">
+<rect x="569.94" y="299.35" width="88.89" height="54.93" stroke="none" fill="none" />
+<text x="614.39" y="335.88" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="37.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="37.33">57 </tspan><tspan fill="#FFFFFF" font-size="24">%</tspan></text>
+</g>
+</g>
+<g id="shape-68" data-name="组合 67">
+<g id="shape-72" data-name="椭圆 71">
+<ellipse cx="609.94" cy="476" rx="71.39" ry="71.39" fill="#9D3728" stroke-width="8" stroke="#FFFFFF" />
+</g>
+<g id="shape-73" data-name="矩形 72">
+<rect x="569.94" y="448.49" width="88.89" height="54.93" stroke="none" fill="none" />
+<text x="614.39" y="485.03" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="37.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="37.33">52 </tspan><tspan fill="#FFFFFF" font-size="24">%</tspan></text>
+</g>
+</g>
+<g id="shape-69" data-name="组合 68">
+<g id="shape-70" data-name="椭圆 69">
+<ellipse cx="609.94" cy="625.14" rx="71.39" ry="71.39" fill="#CB8378" stroke-width="8" stroke="#FFFFFF" />
+</g>
+<g id="shape-71" data-name="矩形 70">
+<rect x="569.94" y="597.64" width="88.89" height="54.93" stroke="none" fill="none" />
+<text x="614.39" y="634.17" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="37.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="37.33">27 </tspan><tspan fill="#FFFFFF" font-size="24">%</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-78" data-name="矩形: 圆角 77">
+<rect x="722.64" y="127.64" width="518.75" height="100.06" rx="6.54" ry="6.54" fill="#FFFFFF" stroke="#748EAE" stroke-width="1" />
+</g>
+<g id="shape-79" data-name="矩形: 圆角 78">
+<rect x="722.64" y="278.1" width="518.75" height="100.06" rx="6.54" ry="6.54" fill="#FFFFFF" stroke="#748EAE" stroke-width="1" />
+</g>
+<g id="shape-80" data-name="矩形: 圆角 79">
+<rect x="722.64" y="428.56" width="518.75" height="100.06" rx="6.54" ry="6.54" fill="#FFFFFF" stroke="#748EAE" stroke-width="1" />
+</g>
+<g id="shape-81" data-name="矩形: 圆角 80">
+<rect x="722.64" y="579.02" width="518.75" height="100.06" rx="6.54" ry="6.54" fill="#FFFFFF" stroke="#748EAE" stroke-width="1" />
+</g>
+<g id="shape-82" data-name="文本框 81">
+<rect x="736.06" y="148.01" width="494.27" height="55.1" fill="none" />
+<text x="745.66" y="166.41" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">• </tspan><tspan fill="#000000" font-size="16">叠加功能带来的舒适体感，花样颜值提升可穿搭性，根据不同场</tspan><tspan x="745.66" dy="19.2" fill="#000000" font-size="16">景选择相应的搭配方案，是消费者购买多件防晒服的主要动因。</tspan></text>
+</g>
+<g id="shape-83" data-name="文本框 82">
+<rect x="736.06" y="300.58" width="494.27" height="55.1" fill="none" />
+<text x="745.66" y="318.98" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">• </tspan><tspan fill="#000000" font-size="16">被颜值吸引，不同款式</tspan><tspan fill="#000000" font-size="16">/</tspan><tspan fill="#000000" font-size="16">色系防晒衣可以搭配不同日常服饰。款式</tspan><tspan x="745.66" dy="19.2" fill="#000000" font-size="16">白搭，非常适合出行穿搭。</tspan></text>
+</g>
+<g id="shape-84" data-name="文本框 83">
+<rect x="736.06" y="450.78" width="494.27" height="55.1" fill="none" />
+<text x="745.66" y="469.18" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">• </tspan><tspan fill="#000000" font-size="16">针对不同防晒强度场景，选择不同防晒效果的防晒衣物。这样不</tspan><tspan x="745.66" dy="19.2" fill="#000000" font-size="16">用担心仅有一件衣物防晒不到位。</tspan></text>
+</g>
+<g id="shape-85" data-name="文本框 84">
+<rect x="736.06" y="603.35" width="494.27" height="55.1" fill="none" />
+<text x="745.66" y="621.75" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">• </tspan><tspan fill="#000000" font-size="16">担心反复清洗防晒效果打折，多件换着穿，不容易弄坏衣物，还</tspan><tspan x="745.66" dy="19.2" fill="#000000" font-size="16">能长时间保持衣物效果。</tspan></text>
+</g>
+<g id="shape-89" data-name="矩形 88">
+<rect x="63.63" y="123.6" width="426.84" height="42.01" fill="none" />
+<text x="277.05" y="151.06" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="26.67" fill="#1C4273"><tspan fill="#1C4273" font-size="26.67">{{CLOSING_MESSAGE}}</tspan></text>
+</g></svg>

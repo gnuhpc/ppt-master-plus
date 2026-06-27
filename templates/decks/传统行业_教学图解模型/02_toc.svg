@@ -1,0 +1,327 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0" stop-color="#D02300" /><stop offset="0.9" stop-color="#FFCDC3" stop-opacity="0" /></linearGradient><linearGradient id="ggrad2" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="0" stop-color="#D02300" /><stop offset="0.9" stop-color="#FFCDC3" stop-opacity="0" /></linearGradient><linearGradient id="ggrad3" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="1" stop-color="#FF684A" stop-opacity="0.48" /><stop offset="0.42" stop-color="#DF857B" stop-opacity="0" /></linearGradient><linearGradient id="ggrad4" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="1" stop-color="#FF684A" stop-opacity="0.48" /><stop offset="0.42" stop-color="#DF857B" stop-opacity="0" /></linearGradient><marker id="marrow1" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D02300" /></marker><marker id="marrow2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#D02300" /></marker><linearGradient id="ggrad5" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#BF3C2E" /><stop offset="1" stop-color="#BF3C2E" stop-opacity="0" /></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-2" data-name="组合 1">
+<g id="shape-82" data-name="组合 81">
+<g id="shape-83" data-name="箭头: 右 82" transform="rotate(90 116.77 197.03)">
+<polygon points="31.5,187.89 116.77,187.89 116.77,178.75 202.05,197.03 116.77,215.32 116.77,206.18 31.5,206.18" fill="url(#ggrad1)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-84" data-name="箭头: 右 83" transform="rotate(90 116.77 476.48)">
+<polygon points="18.2,467.34 116.77,467.34 116.77,458.19 215.34,476.48 116.77,494.77 116.77,485.62 18.2,485.62" fill="url(#ggrad2)" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-93" data-name="组合 92">
+<g id="shape-90" data-name="Freeform 2390">
+<path d="M 49.22 116.94 L 184.86 116.94 L 184.86 38.67 L 49.22 38.67 L 49.22 116.94 Z" fill="#D02300" stroke-width="0.64" stroke="none" />
+</g>
+<g id="shape-76" data-name="文本框 75">
+<rect x="39.59" y="45.69" width="154.36" height="67.86" fill="none" />
+<text x="116.77" y="70.89" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">{{TOC_ITEM_1_TITLE}}</tspan></text>
+<text x="116.77" y="99.69" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">{{TOC_ITEM_2_TITLE}}</tspan></text>
+</g>
+</g>
+<g id="shape-102" data-name="组合 101">
+<g id="shape-88" data-name="Freeform 2390">
+<path d="M 49.22 383.9 L 184.86 383.9 L 184.86 305.63 L 49.22 305.63 L 49.22 383.9 Z" fill="#D02300" stroke-width="0.64" stroke="none" />
+</g>
+<g id="shape-77" data-name="文本框 76">
+<rect x="39.59" y="310.84" width="154.36" height="67.86" fill="none" />
+<text x="116.77" y="336.04" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">{{TOC_ITEM_3_TITLE}}</tspan></text>
+<text x="116.77" y="364.84" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">{{TOC_ITEM_4_TITLE}}</tspan></text>
+</g>
+</g>
+<g id="shape-91" data-name="组合 90">
+<g id="shape-86" data-name="Freeform 2390">
+<path d="M 48.96 685 L 184.59 685 L 184.59 584.04 L 48.96 584.04 L 48.96 685 Z" fill="#D02300" stroke-width="0.64" stroke="none" />
+</g>
+<g id="shape-78" data-name="文本框 77">
+<rect x="39.59" y="602.94" width="154.36" height="67.86" fill="none" />
+<text x="116.77" y="628.46" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">特色与</tspan></text>
+<text x="116.77" y="657.26" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">创新点</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-4" data-name="组合 3">
+<g id="shape-17" data-name="矩形 16">
+<rect x="212.61" y="156.37" width="325.92" height="376.78" fill="#FFFFFF" stroke-width="0.667" stroke="#BF3C2E" />
+</g>
+<g id="shape-7" data-name="组合 6">
+<g id="shape-9" data-name="Freeform 2389">
+<path d="M 228.9 180.55 L 248.29 167.1 L 522.24 167.1 L 522.24 218.75 L 502.86 232.2 L 228.9 232.2 Z M 228.9 180.55 L 502.86 180.55 L 522.24 167.1 M 502.86 180.55 L 502.86 232.2" fill="none" stroke-width="1" stroke-linecap="butt" stroke="#D02300" stroke-linejoin="miter" />
+</g>
+<g id="shape-10" data-name="矩形: 圆角 9" transform="translate(366.39 206.26) scale(-1 1) translate(-366.39 -206.26)">
+<rect x="229.2" y="179.99" width="274.38" height="52.53" rx="0" ry="0" fill="#D02300" stroke="none" stroke-width="1" />
+<text x="366.39" y="213.46" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">课议题教学原则</tspan></text>
+</g>
+</g>
+<g id="shape-94" data-name="矩形 93">
+<rect x="212.61" y="60.94" width="1020.89" height="78.27" fill="#FFFFFF" stroke-width="0.667" stroke="#BF3C2E" />
+</g>
+<g id="shape-95" data-name="矩形 94">
+<rect x="212.61" y="570.96" width="1020.89" height="100.96" fill="#FFFFFF" stroke-width="0.667" stroke="#BF3C2E" />
+</g>
+<g id="shape-21" data-name="组合 20">
+<g id="shape-22" data-name="矩形 21">
+<rect x="560.75" y="156.37" width="325.92" height="376.78" fill="#FFFFFF" stroke-width="0.667" stroke="#BF3C2E" />
+</g>
+<g id="shape-23" data-name="组合 22">
+<g id="shape-24" data-name="Freeform 2389">
+<path d="M 577.04 180.55 L 596.42 167.1 L 870.38 167.1 L 870.38 218.75 L 850.99 232.2 L 577.04 232.2 Z M 577.04 180.55 L 850.99 180.55 L 870.38 167.1 M 850.99 180.55 L 850.99 232.2" fill="none" stroke-width="1" stroke-linecap="butt" stroke="#D02300" stroke-linejoin="miter" />
+</g>
+<g id="shape-25" data-name="矩形: 圆角 24" transform="translate(714.53 206.26) scale(-1 1) translate(-714.53 -206.26)">
+<rect x="577.34" y="179.99" width="274.38" height="52.53" rx="0" ry="0" fill="#D02300" stroke="none" stroke-width="1" />
+<text x="714.53" y="213.46" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">开发三类议题</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-26" data-name="组合 25">
+<g id="shape-27" data-name="矩形 26">
+<rect x="908.88" y="156.37" width="325.92" height="376.78" fill="#FFFFFF" stroke-width="0.667" stroke="#BF3C2E" />
+</g>
+<g id="shape-28" data-name="组合 27">
+<g id="shape-29" data-name="Freeform 2389">
+<path d="M 925.17 180.55 L 944.56 167.1 L 1218.51 167.1 L 1218.51 218.75 L 1199.13 232.2 L 925.17 232.2 Z M 925.17 180.55 L 1199.13 180.55 L 1218.51 167.1 M 1199.13 180.55 L 1199.13 232.2" fill="none" stroke-width="1" stroke-linecap="butt" stroke="#D02300" stroke-linejoin="miter" />
+</g>
+<g id="shape-30" data-name="矩形: 圆角 29" transform="translate(1062.66 206.26) scale(-1 1) translate(-1062.66 -206.26)">
+<rect x="925.47" y="179.99" width="274.38" height="52.53" rx="0" ry="0" fill="#D02300" stroke="none" stroke-width="1" />
+<text x="1062.66" y="213.46" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">多样化评价方式</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-103" data-name="组合 102">
+<g id="shape-46" data-name="组合 45">
+<g id="shape-32" data-name="组合 31">
+<g id="shape-33" data-name="椭圆 32">
+<ellipse cx="721.85" cy="381.61" rx="105.72" ry="105.72" fill="#FFCDC3" fill-opacity="0.2" stroke-width="0.667" stroke="#D02300" />
+</g>
+<g id="shape-34" data-name="椭圆 33">
+<ellipse cx="721.47" cy="297.8" rx="51.78" ry="51.78" fill="#BF3C2E" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-35" data-name="椭圆 34">
+<ellipse cx="644.89" cy="418.95" rx="51.78" ry="51.78" fill="#BF3C2E" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-36" data-name="椭圆 35">
+<ellipse cx="798.81" cy="418.95" rx="51.78" ry="51.78" fill="#BF3C2E" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-42" data-name="文本框 41">
+<rect x="669.03" y="258.76" width="104.88" height="67.86" fill="none" />
+<text x="721.47" y="283.96" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">目标</tspan></text>
+<text x="721.47" y="312.76" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">议题</tspan></text>
+</g>
+<g id="shape-43" data-name="文本框 42">
+<rect x="598.83" y="382.89" width="86.4" height="67.86" fill="none" />
+<text x="642.03" y="408.09" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">活动议题</tspan></text>
+</g>
+<g id="shape-44" data-name="文本框 43">
+<rect x="759.2" y="382.89" width="86.4" height="67.86" fill="none" />
+<text x="802.41" y="408.09" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">情境议题</tspan></text>
+</g>
+</g>
+<g id="shape-47" data-name="图片 46">
+<svg x="672.3" y="343.58" width="101.61" height="72.11" viewBox="0.03161 0 0.93678 1" preserveAspectRatio="none"><image href="assets/image1.jpeg" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-50" data-name="组合 49">
+<g id="shape-48" data-name="文本框 47">
+<rect x="789.1" y="295.86" width="68.41" height="54.93" fill="#F4D6D3" stroke-width="0.667" stroke="#D02300" />
+<text x="823.3" y="316.53" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="18.67" fill="#000000"><tspan fill="#000000" font-size="18.67">可变议题</tspan></text>
+</g>
+<g id="shape-49" data-name="文本框 48">
+<rect x="586.19" y="295.86" width="68.41" height="54.93" fill="#F4D6D3" stroke-width="0.667" stroke="#D02300" />
+<text x="620.4" y="316.53" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="18.67" fill="#000000"><tspan fill="#000000" font-size="18.67">实践项目</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-96" data-name="箭头: 五边形 95">
+<polygon points="228.9,76.28 513.83,76.28 538.53,100.98 513.83,125.68 228.9,125.68" fill="#FD905F" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-97" data-name="箭头: V 形 96">
+<polygon points="569.73,76.28 859.95,76.28 884.65,100.98 859.95,125.68 569.73,125.68 594.43,100.98" fill="#FD905F" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-98" data-name="箭头: V 形 97">
+<polygon points="915.85,76.28 1206.07,76.28 1230.78,100.98 1206.07,125.68 915.85,125.68 940.55,100.98" fill="#FD905F" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-99" data-name="文本框 98">
+<rect x="636.72" y="79.98" width="180.95" height="42.01" fill="none" />
+<text x="727.19" y="107.44" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">操作路径设计</tspan></text>
+</g>
+<g id="shape-100" data-name="文本框 99">
+<rect x="982.84" y="79.98" width="180.95" height="42.01" fill="none" />
+<text x="1073.31" y="107.44" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">评价体系创新</tspan></text>
+</g>
+<g id="shape-101" data-name="文本框 100">
+<rect x="285.1" y="79.98" width="180.95" height="42.01" fill="none" />
+<text x="375.57" y="107.44" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">教学原则探索</tspan></text>
+</g>
+<g id="shape-3" data-name="组合 2">
+<g id="shape-54" data-name="矩形 53">
+<rect x="577.04" y="508" width="293.34" height="46.44" fill="#E17467" stroke-width="0.667" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-104" data-name="文本框 103">
+<rect x="592.84" y="510.22" width="261.73" height="42.01" fill="none" />
+<text x="723.71" y="537.68" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">形成实施的议题序列</tspan></text>
+</g>
+</g>
+<g id="shape-105" data-name="矩形 104">
+<rect x="925.17" y="508" width="293.34" height="46.44" fill="#E17467" stroke-width="0.667" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-106" data-name="矩形 105">
+<rect x="228.9" y="508" width="293.34" height="46.44" fill="#E17467" stroke-width="0.667" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-107" data-name="组合 106">
+<g id="shape-108" data-name="椭圆 107" transform="translate(953.61 281.3) scale(-1 1) translate(-953.61 -281.3)">
+<ellipse cx="953.61" cy="281.3" rx="28.43" ry="29.54" fill="#BF3C2E" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-109" data-name="图形 108">
+<image href="assets/image25.png" x="935.7" y="263.39" width="35.82" height="35.82" preserveAspectRatio="none" />
+</g>
+<g id="shape-110" data-name="文本框 109">
+<rect x="980.95" y="260.3" width="247" height="42.01" fill="none" />
+<text x="990.55" y="287.76" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="26.67">结合课堂观察</tspan></text>
+</g>
+</g>
+<g id="shape-111" data-name="组合 110">
+<g id="shape-112" data-name="椭圆 111" transform="translate(953.61 370.17) scale(-1 1) translate(-953.61 -370.17)">
+<ellipse cx="953.61" cy="370.17" rx="28.43" ry="29.54" fill="#BF3C2E" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-113" data-name="图形 112">
+<image href="assets/image25.png" x="935.7" y="352.26" width="35.82" height="35.82" preserveAspectRatio="none" />
+</g>
+<g id="shape-114" data-name="文本框 113">
+<rect x="980.95" y="349.16" width="237.56" height="42.01" fill="none" />
+<text x="990.55" y="376.63" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="26.67">评估学生责任素养</tspan></text>
+</g>
+</g>
+<g id="shape-115" data-name="组合 114">
+<g id="shape-116" data-name="椭圆 115" transform="translate(953.61 459.03) scale(-1 1) translate(-953.61 -459.03)">
+<ellipse cx="953.61" cy="459.03" rx="28.43" ry="29.54" fill="#BF3C2E" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-117" data-name="图形 116">
+<image href="assets/image25.png" x="935.7" y="441.12" width="35.82" height="35.82" preserveAspectRatio="none" />
+</g>
+<g id="shape-118" data-name="文本框 117">
+<rect x="980.95" y="438.03" width="242.38" height="42.01" fill="none" />
+<text x="990.55" y="465.49" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#0D0D0D"><tspan fill="#0D0D0D" font-size="26.67">议题教学成效</tspan></text>
+</g>
+</g>
+<g id="shape-121" data-name="组合 120">
+<g id="shape-119" data-name="直接连接符 118">
+<line x1="925.98" y1="414.6" x2="1218.51" y2="414.6" stroke-width="1" stroke="#D02300" fill="#D02300" />
+</g>
+<g id="shape-120" data-name="直接连接符 119">
+<line x1="925.98" y1="325.73" x2="1218.51" y2="325.73" stroke-width="1" stroke="#D02300" fill="#D02300" />
+</g>
+</g>
+<g id="shape-149" data-name="组合 148">
+<g id="shape-122" data-name="组合 121">
+<g id="shape-123" data-name="矩形: 圆角 122">
+<rect x="228.9" y="248.08" width="293.34" height="51.13" rx="3.47" ry="3.47" fill="#FFFFFF" stroke-width="1" stroke="#BF3C2E" />
+</g>
+<g id="shape-124" data-name="文本框 123">
+<rect x="237.92" y="252.64" width="275.3" height="42.01" fill="none" />
+<text x="375.57" y="280.11" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#000000"><tspan fill="#000000" font-size="26.67">结合初中生认知特点</tspan></text>
+</g>
+</g>
+<g id="shape-125" data-name="组合 124">
+<g id="shape-126" data-name="矩形: 圆角 125">
+<rect x="228.9" y="313.84" width="293.34" height="51.13" rx="3.47" ry="3.47" fill="#FFFFFF" stroke-width="1" stroke="#BF3C2E" />
+</g>
+<g id="shape-127" data-name="文本框 126">
+<rect x="237.92" y="318.4" width="275.3" height="42.01" fill="none" />
+<text x="375.57" y="345.87" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#000000"><tspan fill="#000000" font-size="26.67">制定初中的实施原则</tspan></text>
+</g>
+</g>
+<g id="shape-131" data-name="组合 130">
+<g id="shape-132" data-name="矩形: 圆角 131">
+<rect x="228.9" y="379.6" width="293.34" height="51.13" rx="3.47" ry="3.47" fill="#FFFFFF" stroke-width="1" stroke="#BF3C2E" />
+</g>
+<g id="shape-133" data-name="文本框 132">
+<rect x="246.36" y="384.16" width="258.43" height="42.01" fill="none" />
+<text x="375.57" y="411.63" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#000000"><tspan fill="#000000" font-size="26.67">课程内容活动化</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-146" data-name="组合 145">
+<g id="shape-140" data-name="组合 139">
+<g id="shape-138" data-name="文本框 137">
+<rect x="229.69" y="446.35" width="139.02" height="38.78" fill="none" />
+<text x="299.2" y="471.55" text-anchor="middle" xml:space="preserve" font-family="&quot;梦源黑体 CN W20&quot;, sans-serif" font-size="24" fill="#000000"><tspan fill="#000000" font-size="24">议题引导</tspan></text>
+</g>
+<g id="shape-139" data-name="椭圆 138">
+<ellipse cx="299.2" cy="478.25" rx="61.28" ry="9.69" fill="url(#ggrad3)" stroke-width="1.333" stroke-linecap="butt" stroke="#F4D6D3" stroke-opacity="0" stroke-linejoin="miter" />
+</g>
+<g id="shape-141" data-name="椭圆 140">
+<ellipse cx="299.2" cy="481.85" rx="70.3" ry="12.13" fill="none" stroke-width="1.333" stroke-linecap="butt" stroke="#F4D6D3" stroke-opacity="0" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="shape-142" data-name="组合 141">
+<g id="shape-143" data-name="文本框 142">
+<rect x="382.43" y="446.35" width="139.02" height="38.78" fill="none" />
+<text x="451.94" y="471.55" text-anchor="middle" xml:space="preserve" font-family="&quot;梦源黑体 CN W20&quot;, sans-serif" font-size="24" fill="#000000"><tspan fill="#000000" font-size="24">合作探究</tspan></text>
+</g>
+<g id="shape-144" data-name="椭圆 143">
+<ellipse cx="451.94" cy="478.25" rx="61.28" ry="9.69" fill="url(#ggrad4)" stroke-width="1.333" stroke-linecap="butt" stroke="#F4D6D3" stroke-opacity="0" stroke-linejoin="miter" />
+</g>
+<g id="shape-145" data-name="椭圆 144">
+<ellipse cx="451.94" cy="481.85" rx="70.3" ry="12.13" fill="none" stroke-width="1.333" stroke-linecap="butt" stroke="#F4D6D3" stroke-opacity="0" stroke-linejoin="miter" />
+</g>
+</g>
+</g>
+<g id="shape-147" data-name="文本框 146">
+<rect x="981.37" y="510.22" width="180.95" height="42.01" fill="none" />
+<text x="1071.84" y="537.68" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">理论知识讲解</tspan></text>
+</g>
+<g id="shape-148" data-name="文本框 147">
+<rect x="285.1" y="510.22" width="180.95" height="42.01" fill="none" />
+<text x="375.57" y="537.68" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">操作路径设计</tspan></text>
+</g>
+<g id="shape-170" data-name="组合 169">
+<g id="shape-150" data-name="组合 149">
+<g id="shape-151" data-name="矩形 150">
+<rect x="251.61" y="580.63" width="247.92" height="81.63" fill="#E17467" fill-opacity="0.07" stroke-width="0.667" stroke="#E17467" />
+</g>
+<g id="shape-153" data-name="文本框 152">
+<rect x="266.84" y="587.41" width="217.47" height="70.08" fill="none" />
+<text x="375.57" y="610.58" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;OPPOSans L&quot;, sans-serif" font-size="21.33" fill="#000000" letter-spacing="1.6"><tspan fill="#000000" font-size="21.33">{{TOC_ITEM_1_DESC}}</tspan></text>
+</g>
+</g>
+<g id="shape-155" data-name="组合 154">
+<g id="shape-156" data-name="矩形 155">
+<rect x="599.75" y="580.63" width="247.92" height="81.63" fill="#E17467" fill-opacity="0.07" stroke-width="0.667" stroke="#E17467" />
+</g>
+<g id="shape-157" data-name="文本框 156">
+<rect x="614.97" y="587.41" width="217.47" height="70.08" fill="none" />
+<text x="723.71" y="610.58" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;OPPOSans L&quot;, sans-serif" font-size="21.33" fill="#000000" letter-spacing="1.6"><tspan fill="#000000" font-size="21.33">{{TOC_ITEM_2_DESC}}</tspan></text>
+</g>
+</g>
+<g id="shape-158" data-name="组合 157">
+<g id="shape-159" data-name="矩形 158">
+<rect x="947.88" y="580.63" width="247.92" height="81.63" fill="#E17467" fill-opacity="0.07" stroke-width="0.667" stroke="#E17467" />
+</g>
+<g id="shape-160" data-name="文本框 159">
+<rect x="963.11" y="587.41" width="217.47" height="70.08" fill="none" />
+<text x="1071.84" y="610.58" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;OPPOSans L&quot;, sans-serif" font-size="21.33" fill="#000000" letter-spacing="1.6"><tspan fill="#000000" font-size="21.33" letter-spacing="1.6">依托教研平台整合区域资源</tspan></text>
+</g>
+</g>
+</g>
+<g id="shape-166" data-name="组合 165">
+<g id="shape-161" data-name="直接箭头连接符 160">
+<line x1="499.53" y1="640.83" x2="590.5" y2="640.83" stroke-width="1.333" marker-end="url(#marrow1)" fill="#D02300" stroke="#D02300" />
+</g>
+<g id="shape-165" data-name="文本框 164">
+<rect x="508.3" y="602.05" width="73.44" height="38.78" fill="none" />
+<text x="545.02" y="627.25" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="24" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="24" font-weight="bold">强化</tspan></text>
+</g>
+</g>
+<g id="shape-167" data-name="组合 166">
+<g id="shape-168" data-name="直接箭头连接符 167">
+<line x1="847.59" y1="640.83" x2="938.55" y2="640.83" stroke-width="1.333" marker-end="url(#marrow2)" fill="#D02300" stroke="#D02300" />
+</g>
+<g id="shape-169" data-name="文本框 168">
+<rect x="856.35" y="602.05" width="73.44" height="38.78" fill="none" />
+<text x="893.07" y="627.25" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="24" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="24" font-weight="bold">推广</tspan></text>
+</g>
+</g>
+<g id="shape-171" data-name="任意多边形: 形状 170" transform="rotate(180 722.78 471.32) translate(722.78 471.32) scale(-1 1) translate(-722.78 -471.32)">
+<path d="M 722.82 445.1 L 722.78 445.14 L 722.75 445.1 L 702.53 465.87 L 702.6 465.87 L 714.49 465.87 C 714.86 477.61 705.72 490.04 695.8 497.53 L 722.78 497.22 L 749.77 497.53 C 739.84 490.04 730.7 477.61 731.07 465.87 L 742.96 465.87 L 743.03 465.87 Z" fill="url(#ggrad5)" stroke-width="1.253" stroke="none" />
+</g>
+</g></svg>

@@ -1,0 +1,33 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><g id="slide-wrapper" transform="scale(1.3333333333333333)"><defs><linearGradient id="txtgrad1" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6E0CB"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad2" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6E0CB"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad3" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#FEEBA5"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad4" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#F6E0CB"/><stop offset="1" stop-color="#E29B60"/></linearGradient><linearGradient id="txtgrad5" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#FEEBA5"/><stop offset="1" stop-color="#E29B60"/></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#CD170A"/>
+<g id="layout-shape-3" data-name="图片 2">
+<svg x="0" y="0" width="1280" height="720" viewBox="0.17593 0 0.64814 1" preserveAspectRatio="none"><image href="assets/image1.jpeg" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="layout-shape-9" data-name="图片 8">
+<svg x="7.4" y="135.53" width="952.53" height="404.53" viewBox="0 0 0.99126 0.45598" preserveAspectRatio="none"><image href="assets/image2.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none"/></svg>
+</g>
+<g id="shape-3" data-name="文本框 2">
+<rect x="24" y="31.93" width="98.73" height="29.87" fill="none" stroke="#F6E0CB" stroke-linejoin="miter"/>
+<text x="33.6" y="57.13" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="url(#txtgrad1)"><tspan fill="url(#txtgrad1)" font-size="24">{{DATE}}</tspan></text>
+</g>
+<g id="shape-16" data-name="文本框 15">
+<rect x="13.8" y="65.55" width="247.67" height="35" fill="none"/>
+<text x="23.4" y="90.75" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="url(#txtgrad2)"><tspan fill="url(#txtgrad2)" font-size="24">{{CLOSING_MESSAGE}}</tspan></text>
+</g>
+<g id="shape-4" data-name="组合 3">
+<g id="shape-6" data-name="文本框 5">
+<rect x="116.27" y="155.73" width="733.07" height="116.2" fill="none" stroke="none"/>
+<text x="482.8" y="235.33" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪大宋简&quot;, sans-serif" font-size="88" fill="url(#txtgrad3)" letter-spacing="-4"><tspan fill="url(#txtgrad3)" font-size="88" letter-spacing="-4">{{THANK_YOU}}</tspan></text>
+</g>
+<g id="shape-7" data-name="文本框 6">
+<rect x="334.87" y="95.6" width="295.87" height="43.47" fill="none"/>
+<text x="344.47" y="116.27" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="18.67" fill="url(#txtgrad4)" font-weight="bold"><tspan fill="url(#txtgrad4)" font-size="18.67" font-weight="bold">{{SUBTITLE}}</tspan></text>
+</g>
+</g>
+<g id="shape-21" data-name="矩形 20">
+<rect x="261.2" y="270.47" width="456.13" height="35.4" fill="none" stroke-width="2" stroke="#FFEBA9" stroke-opacity="0.51"/>
+<text x="270.8" y="293.4" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪大宋简&quot;, sans-serif" font-size="21.33" fill="url(#txtgrad5)" letter-spacing="-2"><tspan fill="url(#txtgrad5)" font-size="21.33" letter-spacing="-2">{{BRAND_LINE}}</tspan></text>
+</g>
+<g id="shape-8" data-name="矩形: 圆角 11">
+<rect x="400.07" y="471.69" width="159.86" height="28.96" rx="14.48" ry="14.48" fill="#FFEBA9" stroke="none" stroke-width="1"/>
+<text x="409.67" y="490.97" text-anchor="start" xml:space="preserve" font-family="&quot;Century Gothic&quot;, sans-serif" font-size="16" fill="#C82C2D"><tspan fill="#C82C2D" font-size="16">汇报人：{{AUTHOR}}</tspan></text>
+</g></g></svg>

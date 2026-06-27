@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FDFEFB" />
+<g id="shape-14" data-name="组合 13">
+<g id="shape-15" data-name="任意多边形: 形状 14" transform="translate(756.94 383.26) scale(-1 1) translate(-756.94 -383.26)">
+<path d="M 801.29 191.99 C 823.1 191.99 840.88 213.58 840.88 240.19 L 840.88 526.33 C 840.88 552.88 823.1 574.53 801.29 574.53 C 784.37 574.53 769.96 561.57 764.25 543.39 C 761.4 544.2 758.49 544.57 755.54 544.57 C 733.73 544.57 715.95 522.99 715.95 496.44 C 715.95 495.51 716 494.64 716 493.71 C 708.56 491.85 701.73 487.32 696.23 480.62 C 688.74 471.56 684.61 459.4 684.61 446.56 C 684.61 438.07 686.45 429.88 689.81 422.68 C 679.67 413.94 672.99 399.55 672.99 383.23 C 672.99 366.98 679.67 352.59 689.86 343.84 C 681.2 325.42 683.34 301.54 696.23 285.85 C 701.73 279.15 708.56 274.68 716 272.76 C 716 271.89 715.95 271.02 715.95 270.09 C 715.95 243.54 733.73 221.89 755.54 221.89 C 758.49 221.89 761.4 222.33 764.25 223.07 C 769.96 204.9 784.37 191.99 801.29 191.99 Z" fill="#537E85" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-16" data-name="任意多边形: 形状 15">
+<path d="M 573.95 191.89 C 595.75 191.89 613.54 213.48 613.54 240.09 L 613.54 526.23 C 613.54 552.78 595.75 574.43 573.95 574.43 C 557.03 574.43 542.61 561.47 536.9 543.29 C 534.05 544.1 531.15 544.47 528.19 544.47 C 506.38 544.47 488.6 522.89 488.6 496.34 C 488.6 495.41 488.65 494.54 488.65 493.61 C 481.21 491.75 474.39 487.22 468.88 480.52 C 461.39 471.46 457.27 459.3 457.27 446.46 C 457.27 437.97 459.1 429.78 462.46 422.58 C 452.33 413.84 445.65 399.45 445.65 383.13 C 445.65 366.88 452.33 352.49 462.52 343.74 C 453.85 325.32 455.99 301.44 468.88 285.75 C 474.39 279.05 481.21 274.58 488.65 272.66 C 488.65 271.79 488.6 270.92 488.6 269.99 C 488.6 243.44 506.38 221.79 528.19 221.79 C 531.15 221.79 534.05 222.23 536.9 222.97 C 542.61 204.8 557.03 191.89 573.95 191.89 Z" fill="#A9C683" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-17" data-name="brain_285118">
+<path d="M 724.59 397.86 C 752.89 397.86 775.83 420.77 775.83 449 L 760.21 449 C 760.21 429.39 744.25 413.46 724.59 413.46 Z M 563.02 397.86 L 563.02 413.46 C 543.44 413.46 527.47 429.39 527.47 449 L 511.78 449 C 511.78 420.77 534.8 397.86 563.02 397.86 Z M 760.21 319.22 L 775.83 319.22 C 775.83 347.42 752.89 370.41 724.59 370.41 L 724.59 354.8 C 744.25 354.8 760.21 338.85 760.21 319.22 Z M 511.78 319.22 L 527.47 319.22 C 527.47 338.85 543.44 354.8 563.02 354.8 L 563.02 370.41 C 534.8 370.41 511.78 347.42 511.78 319.22 Z M 702.89 196.68 C 683.24 196.68 667.28 212.62 667.28 232.25 L 667.28 297.51 C 667.35 317.07 683.31 332.94 702.89 332.94 L 702.89 348.54 C 689.05 348.54 676.51 343.08 667.28 334.19 L 667.28 434.09 C 676.51 425.2 689.05 419.67 702.89 419.67 L 702.89 435.27 C 683.24 435.27 667.28 451.28 667.28 470.83 L 667.28 536.03 C 667.28 555.59 683.24 571.59 702.89 571.59 C 722.55 571.59 738.51 555.59 738.51 536.03 C 738.51 516.4 722.55 500.47 702.89 500.47 L 702.89 484.86 C 731.12 484.86 754.14 507.78 754.14 536.03 C 754.14 536.95 754.14 537.94 754.07 538.86 C 756.64 539.45 759.35 539.78 762.05 539.78 C 781.71 539.78 797.67 523.85 797.67 504.22 C 797.67 503.56 797.67 502.9 797.6 502.25 C 786.19 501.13 775.11 496.25 766.41 487.5 L 777.49 476.5 C 791.34 490.33 813.96 490.33 827.81 476.5 C 839.61 464.71 841.39 446.6 833.08 432.9 C 828.2 434.48 823.06 435.27 817.72 435.27 L 817.72 419.67 C 837.3 419.67 853.26 403.73 853.26 384.1 C 853.26 364.55 837.3 348.54 817.72 348.54 L 817.72 332.94 C 823.06 332.94 828.2 333.79 833.08 335.31 C 841.39 321.67 839.61 303.57 827.81 291.78 C 813.96 277.88 791.34 277.88 777.49 291.78 L 766.41 280.71 C 775.11 272.02 786.19 267.15 797.6 266.03 C 797.67 265.37 797.67 264.64 797.67 263.99 C 797.67 244.36 781.71 228.43 762.05 228.43 C 759.35 228.43 756.64 228.75 754.07 229.35 C 754.14 230.33 754.14 231.26 754.14 232.25 C 754.14 260.43 731.12 283.41 702.89 283.41 L 702.89 267.81 C 722.55 267.81 738.51 251.87 738.51 232.25 C 738.51 212.62 722.55 196.68 702.89 196.68 Z M 584.77 196.68 C 565.12 196.68 549.16 212.62 549.16 232.25 C 549.16 251.87 565.12 267.81 584.77 267.81 L 584.77 283.41 C 556.48 283.41 533.53 260.43 533.53 232.25 C 533.53 231.26 533.53 230.33 533.59 229.35 C 530.96 228.75 528.32 228.43 525.55 228.43 C 505.96 228.43 489.93 244.36 489.93 263.99 C 489.93 264.64 490 265.3 490 265.96 C 501.81 267.15 512.75 272.28 521.26 280.71 L 510.18 291.78 C 503.45 285.06 494.48 281.37 484.99 281.37 C 475.49 281.37 466.59 285.06 459.86 291.78 C 447.99 303.56 446.27 321.67 454.52 335.31 C 459.4 333.79 464.61 332.94 469.95 332.94 L 469.95 348.54 C 450.3 348.54 434.34 364.55 434.34 384.1 C 434.34 403.73 450.3 419.67 469.95 419.67 L 469.95 435.27 C 464.61 435.27 459.4 434.48 454.52 432.9 C 451.22 438.43 449.37 444.76 449.37 451.34 C 449.37 460.82 453.13 469.78 459.86 476.5 C 466.59 483.21 475.49 486.9 484.99 486.9 C 494.55 486.9 503.45 483.21 510.18 476.5 L 521.26 487.5 C 512.75 495.99 501.81 501.13 490 502.25 C 490 502.9 489.93 503.56 489.93 504.29 C 489.93 523.85 505.96 539.78 525.55 539.78 C 528.32 539.78 530.96 539.45 533.59 538.86 C 533.53 537.94 533.53 536.95 533.53 536.03 C 533.53 507.78 556.48 484.86 584.77 484.86 L 584.77 500.47 C 565.12 500.47 549.16 516.4 549.16 536.03 C 549.16 555.59 565.12 571.59 584.77 571.59 C 604.36 571.59 620.39 555.59 620.39 536.03 L 620.39 470.83 C 620.39 451.28 604.36 435.27 584.77 435.27 L 584.77 419.67 C 598.56 419.67 611.15 425.2 620.39 434.09 L 620.39 334.19 C 611.15 343.08 598.56 348.54 584.77 348.61 L 584.77 332.94 C 604.36 332.94 620.39 317 620.39 297.37 L 620.39 232.25 C 620.39 212.62 604.36 196.68 584.77 196.68 Z M 702.89 181.08 C 724.72 181.08 743.45 194.77 750.78 214.07 C 754.47 213.28 758.23 212.82 762.05 212.82 C 790.35 212.82 813.36 235.8 813.36 263.99 C 813.36 264.97 813.3 265.9 813.23 266.88 C 822.66 268.86 831.57 273.47 838.89 280.71 C 855.57 297.37 858.28 322.73 847.13 342.29 C 860.32 351.57 868.96 366.85 868.96 384.1 C 868.96 401.42 860.32 416.7 847.13 425.99 C 858.28 445.48 855.57 470.9 838.89 487.5 C 831.57 494.81 822.66 499.41 813.23 501.39 C 813.3 502.31 813.3 503.3 813.3 504.29 C 813.3 532.47 790.35 555.39 762.05 555.39 C 758.23 555.39 754.47 555 750.84 554.14 C 743.45 573.43 724.79 587.2 702.89 587.2 C 674.6 587.2 651.65 564.21 651.65 536.03 L 651.65 232.25 C 651.65 203.99 674.6 181.08 702.89 181.08 Z M 584.77 181.08 C 613 181.08 636.02 203.99 636.02 232.25 L 636.02 536.03 C 636.02 564.21 613 587.2 584.77 587.2 C 562.88 587.2 544.21 573.43 536.83 554.14 C 533.13 555 529.37 555.39 525.55 555.39 C 497.32 555.39 474.3 532.47 474.3 504.29 C 474.3 503.3 474.37 502.38 474.37 501.39 C 464.74 499.41 455.9 494.61 448.78 487.5 C 439.09 477.88 433.74 464.97 433.74 451.34 C 433.74 442.32 436.12 433.63 440.47 425.99 C 427.35 416.7 418.71 401.42 418.71 384.1 C 418.71 366.85 427.35 351.57 440.54 342.29 C 429.33 322.73 432.09 297.37 448.78 280.71 C 455.9 273.6 464.74 268.86 474.37 266.82 C 474.37 265.9 474.3 264.97 474.3 263.99 C 474.3 235.8 497.32 212.82 525.55 212.82 C 529.37 212.82 533.13 213.28 536.83 214.07 C 544.21 194.77 562.88 181.08 584.77 181.08 Z" fill="#5B805B" stroke="none" />
+</g>
+</g>
+<g id="shape-34" data-name="矩形: 圆角 33">
+<rect x="284.53" y="162.5" width="170" height="46.27" rx="23.13" ry="23.13" fill="#A9C683" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-20" data-name="矩形 19">
+<rect x="147.6" y="209.77" width="303.27" height="96.8" fill="none" />
+<text x="441.27" y="228.17" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#5B805B"><tspan fill="#5B805B" font-size="16">{{CHAPTER_DESC}}</tspan></text>
+</g>
+<g id="shape-21" data-name="矩形 20">
+<rect x="284.53" y="154.93" width="170" height="56.07" fill="none" />
+<text x="369.53" y="190.97" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="32" fill="#FFFFFF" letter-spacing="0.67"><tspan fill="#FFFFFF" font-size="32" letter-spacing="0.67">研究内容</tspan></text>
+</g>
+<g id="shape-8" data-name="矩形: 圆角 33">
+<rect x="219.8" y="342.33" width="170" height="46.27" rx="23.13" ry="23.13" fill="#5B805B" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-9" data-name="矩形 8">
+<rect x="82.87" y="389.5" width="303.27" height="96.8" fill="none" />
+<text x="376.53" y="407.9" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#5B805B"><tspan fill="#5B805B" font-size="16"> </tspan><tspan fill="#5B805B" font-size="16">借鉴投资者情绪理论（</tspan><tspan fill="#5B805B" font-size="16">Investor </tspan><tspan x="376.53" dy="24" fill="#5B805B" font-size="16">Sentiment Theory</tspan><tspan fill="#5B805B" font-size="16">），分析非理性情绪</tspan><tspan x="376.53" dy="24" fill="#5B805B" font-size="16">对资产定价的影响</tspan></text>
+</g>
+<g id="shape-10" data-name="矩形 9">
+<rect x="225.27" y="335.8" width="166.2" height="56.07" fill="none" />
+<text x="308.37" y="371.83" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="32" fill="#FFFFFF" letter-spacing="0.67"><tspan fill="#FFFFFF" font-size="32" letter-spacing="0.67">行为金融</tspan></text>
+</g>
+<g id="shape-40" data-name="矩形: 圆角 33" transform="translate(925.87 176) scale(-1 1) translate(-925.87 -176)">
+<rect x="840.87" y="152.87" width="170" height="46.27" rx="23.13" ry="23.13" fill="#5B805B" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-41" data-name="矩形 40" transform="translate(996.17 248.43) scale(-1 1) translate(-996.17 -248.43)">
+<rect x="844.53" y="200.03" width="303.27" height="96.8" fill="none" />
+<text x="854.13" y="218.43" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#5B805B"><tspan fill="#5B805B" font-size="16"> </tspan><tspan fill="#5B805B" font-size="16">采用格兰杰因果检验和向量自回归模型</tspan><tspan x="854.13" dy="24" fill="#5B805B" font-size="16">（</tspan><tspan fill="#5B805B" font-size="16">VAR</tspan><tspan fill="#5B805B" font-size="16">），检验社交媒体情绪与股市波动</tspan><tspan x="854.13" dy="24" fill="#5B805B" font-size="16">之间的动态关系</tspan></text>
+</g>
+<g id="shape-42" data-name="矩形 41" transform="translate(929.33 173.33) scale(-1 1) translate(-929.33 -173.33)">
+<rect x="846.13" y="145.3" width="166.4" height="56.07" fill="none" />
+<text x="929.33" y="181.33" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="32" fill="#FFFFFF" letter-spacing="0.67"><tspan fill="#FFFFFF" font-size="32" letter-spacing="0.67">时序分析</tspan></text>
+</g>
+<g id="shape-44" data-name="矩形: 圆角 33" transform="translate(982.87 352.4) scale(-1 1) translate(-982.87 -352.4)">
+<rect x="897.87" y="329.27" width="170" height="46.27" rx="23.13" ry="23.13" fill="#A9C683" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-45" data-name="矩形 44" transform="translate(1053.17 424.83) scale(-1 1) translate(-1053.17 -424.83)">
+<rect x="901.53" y="376.43" width="303.27" height="96.8" fill="none" />
+<text x="911.13" y="394.83" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#5B805B"><tspan fill="#5B805B" font-size="16">选取重大突发公共事件，分析社交媒体</tspan><tspan x="911.13" dy="24" fill="#5B805B" font-size="16">情绪在事件发生后对股价异常收益的影</tspan><tspan x="911.13" dy="24" fill="#5B805B" font-size="16">响</tspan></text>
+</g>
+<g id="shape-46" data-name="矩形 45" transform="translate(984.23 349.63) scale(-1 1) translate(-984.23 -349.63)">
+<rect x="900.13" y="321.6" width="168.2" height="56.07" fill="none" />
+<text x="984.23" y="357.63" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="32" fill="#FFFFFF" letter-spacing="0.67"><tspan fill="#FFFFFF" font-size="32" letter-spacing="0.67">事件研究</tspan></text>
+</g>
+<g id="shape-49" data-name="矩形: 圆角 33" transform="translate(929.53 566.4) scale(-1 1) translate(-929.53 -566.4)">
+<rect x="844.53" y="543.27" width="170" height="46.27" rx="23.13" ry="23.13" fill="#5B805B" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-50" data-name="矩形 49" transform="translate(999.83 638.83) scale(-1 1) translate(-999.83 -638.83)">
+<rect x="848.2" y="590.43" width="303.27" height="96.8" fill="none" />
+<text x="857.8" y="608.83" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#5B805B"><tspan fill="#5B805B" font-size="16">构建一个高频社交媒体情绪指数，并量</tspan><tspan x="857.8" dy="24" fill="#5B805B" font-size="16">化其对</tspan><tspan fill="#5B805B" font-size="16">A</tspan><tspan fill="#5B805B" font-size="16">股市场特定板块（如科技股）的</tspan><tspan x="857.8" dy="24" fill="#5B805B" font-size="16">预测能力。形成跨市场的比较研究报告</tspan></text>
+</g>
+<g id="shape-51" data-name="矩形 50" transform="translate(929 565.37) scale(-1 1) translate(-929 -565.37)">
+<rect x="845.8" y="537.33" width="166.4" height="56.07" fill="none" />
+<text x="929" y="573.37" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="32" fill="#FFFFFF" letter-spacing="0.67"><tspan fill="#FFFFFF" font-size="32" letter-spacing="0.67">预期成果</tspan></text>
+</g>
+<g id="shape-57" data-name="矩形: 圆角 33">
+<rect x="282.73" y="544.4" width="170" height="46.27" rx="23.13" ry="23.13" fill="#A9C683" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-58" data-name="矩形 57">
+<rect x="121.07" y="591.6" width="328" height="67.73" fill="none" />
+<text x="439.47" y="610" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, sans-serif" font-size="16" fill="#5B805B"><tspan fill="#5B805B" font-size="16">采用词典法或情感分析模型（</tspan><tspan fill="#5B805B" font-size="16">NLP</tspan><tspan fill="#5B805B" font-size="16">），对海</tspan><tspan x="439.47" dy="24" fill="#5B805B" font-size="16">量社交媒体文本进行情感评分和聚合</tspan></text>
+</g>
+<g id="shape-59" data-name="矩形 58">
+<rect x="282.73" y="538.07" width="166.4" height="56.07" fill="none" />
+<text x="365.93" y="574.1" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Medium&quot;, &quot;思源黑体 CN Regular&quot;, sans-serif" font-size="32" fill="#FFFFFF" letter-spacing="0.67"><tspan fill="#FFFFFF" font-size="32" letter-spacing="0.67">指数构建</tspan></text>
+</g>
+<g id="shape-6" data-name="组合 5">
+<g id="shape-22" data-name="矩形 21">
+<rect x="76.13" y="109.87" width="40.23" height="8.11" fill="#5B805B" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-23" data-name="矩形 22">
+<rect x="116.37" y="109.87" width="40.23" height="8.11" fill="#A9C683" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-7" data-name="文本框 6">
+<rect x="63.2" y="42.87" width="1153.6" height="71.6" fill="none" />
+<text x="72.8" y="89.33" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;思源黑体 Regular&quot;, sans-serif" font-size="42.67" fill="#000000"><tspan fill="#000000" font-size="42.67">{{CHAPTER_TITLE}}</tspan></text>
+</g></svg>

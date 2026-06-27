@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><image href="assets/image1.jpeg" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+<g id="shape-8" data-name="文本框 6">
+<rect x="765.37" y="180.67" width="259.2" height="67.73" fill="none" stroke="none" />
+<text x="774.97" y="226.27" text-anchor="start" xml:space="preserve" font-family="&quot;方正卡通简体&quot;, sans-serif" font-size="48" fill="#FFF7F2"><tspan fill="#FFF7F2" font-size="48">{{CHAPTER_TITLE}}</tspan></text>
+</g>
+<g id="shape-21" data-name="文本框 20">
+<rect x="646.27" y="161.27" width="113.27" height="106.53" fill="none" />
+<text x="702.9" y="234.07" text-anchor="middle" xml:space="preserve" font-family="&quot;阿里巴巴普惠体 M&quot;, sans-serif" font-size="80" fill="#FFF7F2"><tspan fill="#FFF7F2" font-size="80">{{CHAPTER_NUM}}</tspan></text>
+</g>
+<g id="shape-2" data-name="文本框 1">
+<rect x="588.67" y="321.27" width="566.87" height="77.4" fill="none" />
+<text x="872.1" y="341.93" text-anchor="middle" xml:space="preserve" font-family="&quot;Calibri Light&quot;, &quot;方正华隶简体&quot;, sans-serif" font-size="18.67" fill="#595959"><tspan fill="#595959" font-size="18.67">{{CHAPTER_DESC}}</tspan></text>
+</g></svg>

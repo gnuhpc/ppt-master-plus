@@ -1,0 +1,350 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="layout-shape-3" data-name="组合 2" transform="translate(73.87 89.34) scale(-1 -1) translate(-73.87 -89.34)">
+<g id="layout-shape-4" data-name="组合 3">
+<g id="layout-shape-8" data-name="任意多边形: 形状 7">
+<path d="M -54.33 184.22 L 177.1 -47.21 L 177.1 29.93 L -54.33 261.35 Z" fill="#F2634B" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-9" data-name="任意多边形: 形状 8">
+<path d="M 20.31 110.45 C 20.31 93.42 13.81 76.39 0.82 63.38 L 47.88 110.45 L 0.82 157.52 C 13.81 144.53 20.31 127.48 20.31 110.45 Z" fill="#2B357A" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-10" data-name="任意多边形: 形状 9">
+<path d="M -46.25 110.45 L -14.75 78.95 C -6.05 87.65 -1.71 99.05 -1.71 110.45 C -1.71 121.86 -6.05 133.25 -14.75 141.95 L -46.25 110.45 Z" fill="#2B357A" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-11" data-name="任意多边形: 形状 10">
+<path d="M -46.25 110.45 L -14.75 78.95 C -6.05 87.65 -1.71 99.05 -1.71 110.45 C -1.71 121.86 -6.05 133.25 -14.75 141.95 L -46.25 110.45 Z" fill="#FFFFFF" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-12" data-name="任意多边形: 形状 11">
+<path d="M -46.25 110.45 L -14.75 78.95 C -6.05 87.65 -1.71 99.05 -1.71 110.45 C -1.71 121.86 -6.05 133.25 -14.75 141.95 L -46.25 110.45 Z" fill="#61C9DC" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-13" data-name="任意多边形: 形状 12">
+<path d="M 70.69 133.38 L 93.48 110.59 L 70.69 87.82 L 47.92 65.04 L 25.14 87.82 L 47.92 110.59 L 25.14 133.38 L 47.92 156.16 Z" fill="#F2634B" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-14" data-name="任意多边形: 形状 13">
+<path d="M 47.92 110.59 L 47.92 65.04 L 25.14 87.82 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-15" data-name="任意多边形: 形状 14">
+<path d="M 201.74 140.06 L 106.67 44.49 L 93.39 57.76 L 188.47 153.33 Z" fill="#2B357A" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-16" data-name="任意多边形: 形状 15">
+<path d="M 66.85 84.31 L 93.39 110.86 L 66.85 137.42 L 93.39 163.96 L 119.95 137.42 L 146.49 110.86 L 119.95 84.31 L 93.39 57.76 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-17" data-name="任意多边形: 形状 16">
+<path d="M -54.81 110.45 C -54.81 116.33 -59.58 121.09 -65.45 121.09 C -71.33 121.09 -76.1 116.33 -76.1 110.45 C -76.1 104.57 -71.33 99.81 -65.45 99.81 C -59.58 99.81 -54.81 104.57 -54.81 110.45 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-18" data-name="任意多边形: 形状 17">
+<path d="M 149.4 167.15 L 93.05 110.79 L 111.83 92.01 L 168.18 148.36 Z" fill="#61C9DC" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-19" data-name="任意多边形: 形状 18">
+<path d="M 117.28 115.67 C 118.14 114.81 118.14 113.41 117.28 112.55 C 116.42 111.68 115.02 111.68 114.16 112.55 C 113.29 113.41 113.29 114.81 114.16 115.67 C 115.02 116.54 116.42 116.54 117.28 115.67 Z" fill="#2B357A" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-20" data-name="任意多边形: 形状 19">
+<path d="M 133.98 132.37 C 134.84 131.51 134.84 130.11 133.98 129.25 C 133.12 128.39 131.72 128.39 130.86 129.25 C 129.99 130.11 129.99 131.51 130.86 132.37 C 131.72 133.24 133.12 133.24 133.98 132.37 Z" fill="#2B357A" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-21" data-name="任意多边形: 形状 20">
+<path d="M 151.33 147.51 C 151.33 148.73 150.34 149.72 149.12 149.72 C 147.9 149.72 146.91 148.73 146.91 147.51 C 146.91 146.29 147.9 145.3 149.12 145.3 C 150.34 145.3 151.33 146.29 151.33 147.51 Z" fill="#2B357A" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-22" data-name="任意多边形: 形状 21">
+<path d="M 87.71 -21.87 C 87.71 -21.14 87.12 -20.54 86.38 -20.54 C 85.64 -20.54 85.05 -21.14 85.05 -21.87 C 85.05 -22.61 85.64 -23.21 86.38 -23.21 C 87.12 -23.21 87.71 -22.61 87.71 -21.87 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-23" data-name="任意多边形: 形状 22">
+<path d="M 98.38 -21.87 C 98.38 -21.14 97.78 -20.54 97.05 -20.54 C 96.31 -20.54 95.71 -21.14 95.71 -21.87 C 95.71 -22.61 96.31 -23.21 97.05 -23.21 C 97.77 -23.21 98.38 -22.61 98.38 -21.87 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-24" data-name="任意多边形: 形状 23">
+<path d="M 109.04 -21.87 C 109.04 -21.14 108.44 -20.54 107.7 -20.54 C 106.97 -20.54 106.37 -21.14 106.37 -21.87 C 106.37 -22.61 106.97 -23.21 107.7 -23.21 C 108.44 -23.21 109.04 -22.61 109.04 -21.87 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-25" data-name="任意多边形: 形状 24">
+<path d="M 119.71 -21.87 C 119.71 -21.14 119.11 -20.54 118.37 -20.54 C 117.64 -20.54 117.04 -21.14 117.04 -21.87 C 117.04 -22.61 117.64 -23.21 118.37 -23.21 C 119.1 -23.21 119.71 -22.61 119.71 -21.87 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-26" data-name="任意多边形: 形状 25">
+<path d="M 130.36 -21.87 C 130.36 -21.14 129.76 -20.54 129.03 -20.54 C 128.29 -20.54 127.69 -21.14 127.69 -21.87 C 127.69 -22.61 128.29 -23.21 129.03 -23.21 C 129.76 -23.21 130.36 -22.61 130.36 -21.87 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-27" data-name="任意多边形: 形状 26">
+<path d="M 141.02 -21.87 C 141.02 -21.14 140.42 -20.54 139.68 -20.54 C 138.95 -20.54 138.35 -21.14 138.35 -21.87 C 138.35 -22.61 138.95 -23.21 139.68 -23.21 C 140.42 -23.21 141.02 -22.61 141.02 -21.87 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-28" data-name="任意多边形: 形状 27">
+<path d="M 87.71 -11.23 C 87.71 -10.49 87.12 -9.9 86.38 -9.9 C 85.64 -9.9 85.05 -10.49 85.05 -11.23 C 85.05 -11.97 85.64 -12.56 86.38 -12.56 C 87.12 -12.56 87.71 -11.97 87.71 -11.23 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-29" data-name="任意多边形: 形状 28">
+<path d="M 98.37 -11.23 C 98.37 -10.49 97.77 -9.9 97.04 -9.9 C 96.3 -9.9 95.7 -10.49 95.7 -11.23 C 95.7 -11.97 96.3 -12.56 97.04 -12.56 C 97.77 -12.56 98.37 -11.97 98.37 -11.23 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-30" data-name="任意多边形: 形状 29">
+<path d="M 109.04 -11.23 C 109.04 -10.49 108.44 -9.9 107.7 -9.9 C 106.97 -9.9 106.37 -10.49 106.37 -11.23 C 106.37 -11.97 106.97 -12.56 107.7 -12.56 C 108.44 -12.56 109.04 -11.97 109.04 -11.23 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-31" data-name="任意多边形: 形状 30">
+<path d="M 119.69 -11.23 C 119.69 -10.49 119.1 -9.9 118.36 -9.9 C 117.62 -9.9 117.03 -10.49 117.03 -11.23 C 117.03 -11.97 117.62 -12.56 118.36 -12.56 C 119.1 -12.56 119.69 -11.97 119.69 -11.23 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-32" data-name="任意多边形: 形状 31">
+<path d="M 130.36 -11.23 C 130.36 -10.49 129.76 -9.9 129.03 -9.9 C 128.29 -9.9 127.69 -10.49 127.69 -11.23 C 127.69 -11.97 128.29 -12.56 129.03 -12.56 C 129.76 -12.56 130.36 -11.97 130.36 -11.23 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-33" data-name="任意多边形: 形状 32">
+<path d="M 87.71 -0.58 C 87.71 0.16 87.12 0.76 86.38 0.76 C 85.64 0.76 85.05 0.16 85.05 -0.58 C 85.05 -1.31 85.64 -1.91 86.38 -1.91 C 87.12 -1.91 87.71 -1.31 87.71 -0.58 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-34" data-name="任意多边形: 形状 33">
+<path d="M 98.37 -0.58 C 98.37 0.16 97.77 0.76 97.04 0.76 C 96.3 0.76 95.7 0.16 95.7 -0.58 C 95.7 -1.31 96.3 -1.91 97.04 -1.91 C 97.77 -1.91 98.37 -1.31 98.37 -0.58 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-35" data-name="任意多边形: 形状 34">
+<path d="M 109.04 -0.58 C 109.04 0.16 108.44 0.76 107.7 0.76 C 106.97 0.76 106.37 0.16 106.37 -0.58 C 106.37 -1.31 106.97 -1.91 107.7 -1.91 C 108.44 -1.91 109.04 -1.31 109.04 -0.58 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-36" data-name="任意多边形: 形状 35">
+<path d="M 119.69 -0.58 C 119.69 0.16 119.1 0.76 118.36 0.76 C 117.62 0.76 117.03 0.16 117.03 -0.58 C 117.03 -1.31 117.62 -1.91 118.36 -1.91 C 119.1 -1.91 119.69 -1.31 119.69 -0.58 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-37" data-name="任意多边形: 形状 36">
+<path d="M 87.71 10.07 C 87.71 10.8 87.12 11.4 86.38 11.4 C 85.64 11.4 85.05 10.8 85.05 10.07 C 85.05 9.33 85.64 8.73 86.38 8.73 C 87.12 8.73 87.71 9.33 87.71 10.07 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-38" data-name="任意多边形: 形状 37">
+<path d="M 98.38 10.07 C 98.38 10.8 97.78 11.4 97.05 11.4 C 96.31 11.4 95.71 10.8 95.71 10.07 C 95.71 9.33 96.31 8.73 97.05 8.73 C 97.77 8.73 98.38 9.33 98.38 10.07 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-39" data-name="任意多边形: 形状 38">
+<path d="M 109.04 10.07 C 109.04 10.8 108.44 11.4 107.7 11.4 C 106.97 11.4 106.37 10.8 106.37 10.07 C 106.37 9.33 106.97 8.73 107.7 8.73 C 108.44 8.73 109.04 9.33 109.04 10.07 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-40" data-name="任意多边形: 形状 39">
+<path d="M 87.71 20.71 C 87.71 21.45 87.12 22.04 86.38 22.04 C 85.64 22.04 85.05 21.45 85.05 20.71 C 85.05 19.97 85.64 19.38 86.38 19.38 C 87.12 19.38 87.71 19.97 87.71 20.71 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-41" data-name="任意多边形: 形状 40">
+<path d="M 98.38 20.71 C 98.38 21.45 97.78 22.04 97.05 22.04 C 96.31 22.04 95.71 21.45 95.71 20.71 C 95.71 19.97 96.31 19.38 97.05 19.38 C 97.77 19.38 98.38 19.97 98.38 20.71 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-42" data-name="任意多边形: 形状 41">
+<path d="M 87.71 31.35 C 87.71 32.09 87.12 32.69 86.38 32.69 C 85.64 32.69 85.05 32.09 85.05 31.35 C 85.05 30.62 85.64 30.02 86.38 30.02 C 87.12 30.02 87.71 30.62 87.71 31.35 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="layout-shape-5" data-name="组合 4">
+<g id="layout-shape-6" data-name="矩形 5">
+<rect x="-96.82" y="180.56" width="329.57" height="95.25" fill="#F5F7F9" stroke="none" stroke-width="1" />
+</g>
+<g id="layout-shape-7" data-name="矩形 6" transform="rotate(90 196.92 67.66)">
+<rect x="32.14" y="20.04" width="329.57" height="95.25" fill="#F5F7F9" stroke="none" stroke-width="1" />
+</g>
+</g>
+</g>
+<g id="layout-shape-102" data-name="组合 101">
+<g id="layout-shape-103" data-name="组合 102">
+<g id="layout-shape-107" data-name="任意多边形: 形状 106">
+<path d="M 1078.02 725.81 L 1309.45 494.38 L 1309.45 571.53 L 1078.02 802.94 Z" fill="#F2634B" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-108" data-name="任意多边形: 形状 107">
+<path d="M 1152.66 652.05 C 1152.66 635.02 1146.16 617.99 1133.17 604.98 L 1180.24 652.05 L 1133.17 699.12 C 1146.16 686.12 1152.66 669.08 1152.66 652.05 Z" fill="#2B357A" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-109" data-name="任意多边形: 形状 108">
+<path d="M 1086.1 652.05 L 1117.6 620.55 C 1126.3 629.25 1130.64 640.64 1130.64 652.05 C 1130.64 663.45 1126.3 674.85 1117.6 683.55 L 1086.1 652.05 Z" fill="#2B357A" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-110" data-name="任意多边形: 形状 109">
+<path d="M 1086.1 652.05 L 1117.6 620.55 C 1126.3 629.25 1130.64 640.64 1130.64 652.05 C 1130.64 663.45 1126.3 674.85 1117.6 683.55 L 1086.1 652.05 Z" fill="#FFFFFF" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-111" data-name="任意多边形: 形状 110">
+<path d="M 1086.1 652.05 L 1117.6 620.55 C 1126.3 629.25 1130.64 640.64 1130.64 652.05 C 1130.64 663.45 1126.3 674.85 1117.6 683.55 L 1086.1 652.05 Z" fill="#61C9DC" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-112" data-name="任意多边形: 形状 111">
+<path d="M 1203.05 674.97 L 1225.83 652.19 L 1203.05 629.42 L 1180.27 606.63 L 1157.49 629.42 L 1180.27 652.19 L 1157.49 674.97 L 1180.27 697.76 Z" fill="#F2634B" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-113" data-name="任意多边形: 形状 112">
+<path d="M 1180.27 652.19 L 1180.27 606.63 L 1157.49 629.42 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-114" data-name="任意多边形: 形状 113">
+<path d="M 1334.09 681.65 L 1239.03 586.08 L 1225.74 599.35 L 1320.82 694.92 Z" fill="#2B357A" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-115" data-name="任意多边形: 形状 114">
+<path d="M 1199.2 625.91 L 1225.74 652.45 L 1199.2 679.01 L 1225.74 705.56 L 1252.3 679.01 L 1278.84 652.45 L 1252.3 625.91 L 1225.74 599.35 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-116" data-name="任意多边形: 形状 115">
+<path d="M 1077.54 652.05 C 1077.54 657.93 1072.77 662.69 1066.9 662.69 C 1061.02 662.69 1056.25 657.93 1056.25 652.05 C 1056.25 646.17 1061.02 641.41 1066.9 641.41 C 1072.77 641.41 1077.54 646.17 1077.54 652.05 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-117" data-name="任意多边形: 形状 116">
+<path d="M 1281.75 708.74 L 1225.4 652.39 L 1244.18 633.61 L 1300.53 689.96 Z" fill="#61C9DC" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-118" data-name="任意多边形: 形状 117">
+<path d="M 1249.63 657.27 C 1250.49 656.4 1250.49 655.01 1249.63 654.14 C 1248.77 653.28 1247.37 653.28 1246.51 654.14 C 1245.64 655.01 1245.64 656.4 1246.51 657.27 C 1247.37 658.13 1248.77 658.13 1249.63 657.27 Z" fill="#2B357A" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-119" data-name="任意多边形: 形状 118">
+<path d="M 1266.33 673.97 C 1267.2 673.11 1267.2 671.71 1266.33 670.84 C 1265.47 669.98 1264.07 669.98 1263.21 670.84 C 1262.34 671.71 1262.34 673.11 1263.21 673.97 C 1264.07 674.83 1265.47 674.83 1266.33 673.97 Z" fill="#2B357A" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-120" data-name="任意多边形: 形状 119">
+<path d="M 1283.68 689.11 C 1283.68 690.33 1282.69 691.32 1281.47 691.32 C 1280.25 691.32 1279.26 690.33 1279.26 689.11 C 1279.26 687.89 1280.25 686.9 1281.47 686.9 C 1282.69 686.9 1283.68 687.89 1283.68 689.11 Z" fill="#2B357A" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-121" data-name="任意多边形: 形状 120">
+<path d="M 1220.06 519.72 C 1220.06 520.46 1219.47 521.06 1218.73 521.06 C 1217.99 521.06 1217.4 520.46 1217.4 519.72 C 1217.4 518.99 1217.99 518.39 1218.73 518.39 C 1219.47 518.39 1220.06 518.99 1220.06 519.72 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-122" data-name="任意多边形: 形状 121">
+<path d="M 1230.73 519.72 C 1230.73 520.46 1230.14 521.06 1229.4 521.06 C 1228.66 521.06 1228.07 520.46 1228.07 519.72 C 1228.07 518.99 1228.66 518.39 1229.4 518.39 C 1230.12 518.39 1230.73 518.99 1230.73 519.72 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-123" data-name="任意多边形: 形状 122">
+<path d="M 1241.39 519.72 C 1241.39 520.46 1240.79 521.06 1240.05 521.06 C 1239.32 521.06 1238.72 520.46 1238.72 519.72 C 1238.72 518.99 1239.32 518.39 1240.05 518.39 C 1240.79 518.39 1241.39 518.99 1241.39 519.72 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-124" data-name="任意多边形: 形状 123">
+<path d="M 1252.06 519.72 C 1252.06 520.46 1251.46 521.06 1250.72 521.06 C 1249.99 521.06 1249.39 520.46 1249.39 519.72 C 1249.39 518.99 1249.99 518.39 1250.72 518.39 C 1251.45 518.39 1252.06 518.99 1252.06 519.72 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-125" data-name="任意多边形: 形状 124">
+<path d="M 1262.71 519.72 C 1262.71 520.46 1262.12 521.06 1261.38 521.06 C 1260.64 521.06 1260.05 520.46 1260.05 519.72 C 1260.05 518.99 1260.64 518.39 1261.38 518.39 C 1262.12 518.39 1262.71 518.99 1262.71 519.72 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-126" data-name="任意多边形: 形状 125">
+<path d="M 1273.37 519.72 C 1273.37 520.46 1272.77 521.06 1272.03 521.06 C 1271.3 521.06 1270.7 520.46 1270.7 519.72 C 1270.7 518.99 1271.3 518.39 1272.03 518.39 C 1272.77 518.39 1273.37 518.99 1273.37 519.72 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-127" data-name="任意多边形: 形状 126">
+<path d="M 1220.06 530.36 C 1220.06 531.1 1219.47 531.7 1218.73 531.7 C 1217.99 531.7 1217.4 531.1 1217.4 530.36 C 1217.4 529.63 1217.99 529.03 1218.73 529.03 C 1219.47 529.03 1220.06 529.63 1220.06 530.36 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-128" data-name="任意多边形: 形状 127">
+<path d="M 1230.72 530.36 C 1230.72 531.1 1230.12 531.7 1229.39 531.7 C 1228.65 531.7 1228.05 531.1 1228.05 530.36 C 1228.05 529.63 1228.65 529.03 1229.39 529.03 C 1230.12 529.03 1230.72 529.63 1230.72 530.36 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-129" data-name="任意多边形: 形状 128">
+<path d="M 1241.39 530.36 C 1241.39 531.1 1240.79 531.7 1240.05 531.7 C 1239.32 531.7 1238.72 531.1 1238.72 530.36 C 1238.72 529.63 1239.32 529.03 1240.05 529.03 C 1240.79 529.03 1241.39 529.63 1241.39 530.36 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-130" data-name="任意多边形: 形状 129">
+<path d="M 1252.04 530.36 C 1252.04 531.1 1251.45 531.7 1250.71 531.7 C 1249.97 531.7 1249.38 531.1 1249.38 530.36 C 1249.38 529.63 1249.97 529.03 1250.71 529.03 C 1251.45 529.03 1252.04 529.63 1252.04 530.36 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-131" data-name="任意多边形: 形状 130">
+<path d="M 1262.71 530.36 C 1262.71 531.1 1262.12 531.7 1261.38 531.7 C 1260.64 531.7 1260.05 531.1 1260.05 530.36 C 1260.05 529.63 1260.64 529.03 1261.38 529.03 C 1262.12 529.03 1262.71 529.63 1262.71 530.36 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-132" data-name="任意多边形: 形状 131">
+<path d="M 1220.06 541.02 C 1220.06 541.76 1219.47 542.35 1218.73 542.35 C 1217.99 542.35 1217.4 541.76 1217.4 541.02 C 1217.4 540.28 1217.99 539.69 1218.73 539.69 C 1219.47 539.69 1220.06 540.28 1220.06 541.02 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-133" data-name="任意多边形: 形状 132">
+<path d="M 1230.72 541.02 C 1230.72 541.76 1230.12 542.35 1229.39 542.35 C 1228.65 542.35 1228.05 541.76 1228.05 541.02 C 1228.05 540.28 1228.65 539.69 1229.39 539.69 C 1230.12 539.69 1230.72 540.28 1230.72 541.02 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-134" data-name="任意多边形: 形状 133">
+<path d="M 1241.39 541.02 C 1241.39 541.76 1240.79 542.35 1240.05 542.35 C 1239.32 542.35 1238.72 541.76 1238.72 541.02 C 1238.72 540.28 1239.32 539.69 1240.05 539.69 C 1240.79 539.69 1241.39 540.28 1241.39 541.02 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-135" data-name="任意多边形: 形状 134">
+<path d="M 1252.04 541.02 C 1252.04 541.76 1251.45 542.35 1250.71 542.35 C 1249.97 542.35 1249.38 541.76 1249.38 541.02 C 1249.38 540.28 1249.97 539.69 1250.71 539.69 C 1251.45 539.69 1252.04 540.28 1252.04 541.02 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-136" data-name="任意多边形: 形状 135">
+<path d="M 1220.06 551.66 C 1220.06 552.4 1219.47 553 1218.73 553 C 1217.99 553 1217.4 552.4 1217.4 551.66 C 1217.4 550.93 1217.99 550.33 1218.73 550.33 C 1219.47 550.33 1220.06 550.93 1220.06 551.66 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-137" data-name="任意多边形: 形状 136">
+<path d="M 1230.73 551.66 C 1230.73 552.4 1230.14 553 1229.4 553 C 1228.66 553 1228.07 552.4 1228.07 551.66 C 1228.07 550.93 1228.66 550.33 1229.4 550.33 C 1230.12 550.33 1230.73 550.93 1230.73 551.66 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-138" data-name="任意多边形: 形状 137">
+<path d="M 1241.39 551.66 C 1241.39 552.4 1240.79 553 1240.05 553 C 1239.32 553 1238.72 552.4 1238.72 551.66 C 1238.72 550.93 1239.32 550.33 1240.05 550.33 C 1240.79 550.33 1241.39 550.93 1241.39 551.66 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-139" data-name="任意多边形: 形状 138">
+<path d="M 1220.06 562.31 C 1220.06 563.04 1219.47 563.64 1218.73 563.64 C 1217.99 563.64 1217.4 563.04 1217.4 562.31 C 1217.4 561.57 1217.99 560.97 1218.73 560.97 C 1219.47 560.97 1220.06 561.57 1220.06 562.31 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-140" data-name="任意多边形: 形状 139">
+<path d="M 1230.73 562.31 C 1230.73 563.04 1230.14 563.64 1229.4 563.64 C 1228.66 563.64 1228.07 563.04 1228.07 562.31 C 1228.07 561.57 1228.66 560.97 1229.4 560.97 C 1230.12 560.97 1230.73 561.57 1230.73 562.31 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="layout-shape-141" data-name="任意多边形: 形状 140">
+<path d="M 1220.06 572.95 C 1220.06 573.69 1219.47 574.28 1218.73 574.28 C 1217.99 574.28 1217.4 573.69 1217.4 572.95 C 1217.4 572.21 1217.99 571.62 1218.73 571.62 C 1219.47 571.62 1220.06 572.21 1220.06 572.95 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+<g id="layout-shape-104" data-name="组合 103">
+<g id="layout-shape-105" data-name="矩形 104">
+<rect x="1035.54" y="722.15" width="329.57" height="95.25" fill="#F5F7F9" stroke="none" stroke-width="1" />
+</g>
+<g id="layout-shape-106" data-name="矩形 105" transform="rotate(90 1329.28 609.26)">
+<rect x="1164.49" y="561.63" width="329.57" height="95.25" fill="#F5F7F9" stroke="none" stroke-width="1" />
+</g>
+</g>
+</g>
+<g id="shape-94" data-name="组合 93">
+<g id="shape-58" data-name="组合 57" transform="rotate(90 228.57 517.07)">
+<g id="shape-59" data-name="组合 58">
+<g id="shape-65" data-name="椭圆 64">
+<ellipse cx="199.88" cy="507.55" rx="5.34" ry="5.34" stroke="none" fill="#2B357A" stroke-width="1" />
+</g>
+<g id="shape-66" data-name="椭圆 65">
+<ellipse cx="219" cy="507.55" rx="5.34" ry="5.34" stroke="none" fill="#2B357A" stroke-width="1" />
+</g>
+<g id="shape-67" data-name="椭圆 66">
+<ellipse cx="238.13" cy="507.55" rx="5.34" ry="5.34" stroke="none" fill="#2B357A" stroke-width="1" />
+</g>
+<g id="shape-68" data-name="椭圆 67">
+<ellipse cx="257.25" cy="507.55" rx="5.34" ry="5.34" stroke="none" fill="#2B357A" stroke-width="1" />
+</g>
+</g>
+<g id="shape-60" data-name="组合 59">
+<g id="shape-61" data-name="椭圆 60">
+<ellipse cx="199.88" cy="526.59" rx="5.34" ry="5.34" stroke="none" fill="#2B357A" stroke-width="1" />
+</g>
+<g id="shape-62" data-name="椭圆 61">
+<ellipse cx="219" cy="526.59" rx="5.34" ry="5.34" stroke="none" fill="#2B357A" stroke-width="1" />
+</g>
+<g id="shape-63" data-name="椭圆 62">
+<ellipse cx="238.13" cy="526.59" rx="5.34" ry="5.34" stroke="none" fill="#2B357A" stroke-width="1" />
+</g>
+<g id="shape-64" data-name="椭圆 63">
+<ellipse cx="257.25" cy="526.59" rx="5.34" ry="5.34" stroke="none" fill="#2B357A" stroke-width="1" />
+</g>
+</g>
+</g>
+<g id="shape-69" data-name="组合 68">
+<g id="shape-70" data-name="组合 69">
+<g id="shape-76" data-name="椭圆 75">
+<ellipse cx="981.06" cy="223.76" rx="5.34" ry="5.34" stroke="none" fill="#2B357A" stroke-width="1" />
+</g>
+<g id="shape-77" data-name="椭圆 76">
+<ellipse cx="1000.18" cy="223.76" rx="5.34" ry="5.34" stroke="none" fill="#2B357A" stroke-width="1" />
+</g>
+<g id="shape-78" data-name="椭圆 77">
+<ellipse cx="1019.31" cy="223.76" rx="5.34" ry="5.34" stroke="none" fill="#2B357A" stroke-width="1" />
+</g>
+<g id="shape-79" data-name="椭圆 78">
+<ellipse cx="1038.43" cy="223.76" rx="5.34" ry="5.34" stroke="none" fill="#2B357A" stroke-width="1" />
+</g>
+</g>
+<g id="shape-71" data-name="组合 70">
+<g id="shape-72" data-name="椭圆 71">
+<ellipse cx="981.06" cy="242.79" rx="5.34" ry="5.34" stroke="none" fill="#2B357A" stroke-width="1" />
+</g>
+<g id="shape-73" data-name="椭圆 72">
+<ellipse cx="1000.18" cy="242.79" rx="5.34" ry="5.34" stroke="none" fill="#2B357A" stroke-width="1" />
+</g>
+<g id="shape-74" data-name="椭圆 73">
+<ellipse cx="1019.31" cy="242.79" rx="5.34" ry="5.34" stroke="none" fill="#2B357A" stroke-width="1" />
+</g>
+<g id="shape-75" data-name="椭圆 74">
+<ellipse cx="1038.43" cy="242.79" rx="5.34" ry="5.34" stroke="none" fill="#2B357A" stroke-width="1" />
+</g>
+</g>
+</g>
+</g>
+<g id="shape-93" data-name="组合 92">
+<g id="shape-30" data-name="文本框 29">
+<rect x="522.6" y="395.57" width="234.8" height="35.54" fill="none" />
+<text x="640" y="418.5" text-anchor="middle" xml:space="preserve" font-family="&quot;MiSans Normal&quot;, sans-serif" font-size="21.33" fill="#262626" fill-opacity="0.5"><tspan fill="#262626" font-size="21.33" fill-opacity="0.5">工作具体内容回顾概述</tspan></text>
+</g>
+<g id="shape-37" data-name="文本框 36">
+<rect x="468.74" y="325.61" width="342.51" height="74.32" fill="none" />
+<text x="640" y="375.75" text-anchor="middle" xml:space="preserve" font-family="&quot;MiSans Normal&quot;, sans-serif" font-size="53.33" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="53.33">{{CHAPTER_TITLE}}</tspan></text>
+</g>
+<g id="shape-57" data-name="图形 56">
+<image href="assets/image1.png" x="399.21" y="157.13" width="48.11" height="37.42" preserveAspectRatio="none" />
+</g>
+<g id="shape-81" data-name="文本框 80">
+<rect x="378.12" y="478.43" width="523.75" height="104.05" fill="none" />
+<text x="640" y="501.36" text-anchor="middle" xml:space="preserve" font-family="&quot;MiSans Normal&quot;, sans-serif" font-size="21.33" fill="#262626" fill-opacity="0.6"><tspan fill="#262626" font-size="21.33" fill-opacity="0.6">单击此处输入你的正文，文字是您思想的提炼，为了</tspan><tspan x="640" dy="25.6" fill="#262626" font-size="21.33" fill-opacity="0.6">最终演示发布的良好效果，请尽量言简意赅的阐述观</tspan><tspan x="640" dy="25.6" fill="#262626" font-size="21.33" fill-opacity="0.6">点；根据需要可酌情增减文字</tspan><tspan fill="#262626" font-size="21.33" fill-opacity="0.6">…</tspan></text>
+</g>
+<g id="shape-87" data-name="组合 86">
+<g id="shape-82" data-name="直接连接符 81" transform="translate(640 451.31) scale(-1 1) translate(-640 -451.31)">
+<line x1="439.3" y1="451.31" x2="840.7" y2="451.31" stroke-width="2.667" stroke="#FAA718" stroke-opacity="0.5" fill="#2B357A" />
+</g>
+<g id="shape-83" data-name="直接连接符 82" transform="translate(453.93 451.31) scale(1 -1) translate(-453.93 -451.31)">
+<line x1="453.93" y1="438.99" x2="453.93" y2="463.63" stroke-width="2.667" stroke="#FAA718" stroke-opacity="0.5" fill="#2B357A" />
+</g>
+<g id="shape-85" data-name="直接连接符 84" transform="translate(823.93 451.31) scale(1 -1) translate(-823.93 -451.31)">
+<line x1="823.93" y1="438.99" x2="823.93" y2="463.63" stroke-width="2.667" stroke="#FAA718" stroke-opacity="0.5" fill="#2B357A" />
+</g>
+</g>
+<g id="shape-91" data-name="组合 90">
+<g id="shape-45" data-name="组合 44">
+<g id="shape-43" data-name="矩形 42">
+<rect x="452.7" y="125.17" width="164.46" height="232.65" fill="none" />
+<text x="462.3" y="286.37" text-anchor="start" xml:space="preserve" font-family="&quot;MiSans Normal&quot;, sans-serif" font-size="184" fill="#2B357A" font-weight="bold"><tspan fill="#2B357A" font-size="184" font-weight="bold">O</tspan></text>
+</g>
+<g id="shape-44" data-name="矩形 43">
+<rect x="596.71" y="125.17" width="230.6" height="232.65" fill="none" />
+<text x="606.31" y="286.37" text-anchor="start" xml:space="preserve" font-family="&quot;MiSans Normal&quot;, sans-serif" font-size="184" fill="#F2634B" font-weight="bold"><tspan fill="#F2634B" font-size="184" font-weight="bold">ne</tspan></text>
+</g>
+</g>
+<g id="shape-90" data-name="组合 89">
+<g id="shape-88" data-name="矩形 87">
+<rect x="606.86" y="148.2" width="163.45" height="38.78" fill="none" />
+<text x="616.46" y="173.4" text-anchor="start" xml:space="preserve" font-family="&quot;MiSans Normal&quot;, sans-serif" font-size="24" fill="#61C9DC"><tspan fill="#61C9DC" font-size="24">{{CHAPTER_DESC}}</tspan></text>
+</g>
+<g id="shape-89" data-name="任意多边形: 形状 88" transform="translate(781.26 167.78) scale(-1 1) translate(-781.26 -167.78)">
+<path d="M 788.91 167.9 C 788.91 172.06 785.54 175.43 781.38 175.43 C 777.22 175.43 773.84 172.06 773.84 167.9 C 773.84 163.74 777.22 160.37 781.38 160.37 C 785.54 160.37 788.91 163.74 788.91 167.9 Z" fill="#FAA718" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g>
+</g>
+<g id="shape-92" data-name="任意多边形: 形状 91">
+<path d="M 818.85 142.69 L 818.85 186.55 L 862.71 186.55 L 862.71 142.69 L 818.85 142.69 Z M 855.84 179.68 L 843.89 179.68 C 848.77 176.73 852.89 172.61 855.84 167.74 L 855.84 179.68 Z M 825.71 179.68 L 825.71 179.68 L 825.71 149.54 L 855.84 149.54 L 855.84 149.54 C 855.84 166.19 842.35 179.68 825.71 179.68 Z" fill="#F2634B" stroke-width="1" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+</g></svg>

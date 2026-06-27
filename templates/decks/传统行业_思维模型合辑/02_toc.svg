@@ -1,0 +1,251 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><marker id="marrow1" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10" fill="#305598" /></marker><marker id="marrow2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10" fill="#305598" /></marker><linearGradient id="ggrad1" x1="0.5" y1="0" x2="0.5" y2="1"><stop offset="0" stop-color="#305598" /><stop offset="1" stop-color="#305598" stop-opacity="0" /></linearGradient><marker id="marrow3" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10" fill="#4474C5" /></marker><marker id="marrow4" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10" fill="#4474C5" /></marker><marker id="marrow5" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10" fill="#4474C5" /></marker><marker id="marrow6" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10" fill="#4474C5" /></marker></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="layout-shape-15" data-name="直接连接符 14">
+<line x1="0" y1="64.68" x2="1279.68" y2="64.68" stroke-width="4" stroke="#000000" fill="#305598" />
+</g>
+<g id="shape-2" data-name="矩形: 圆角 1">
+<rect x="31.5" y="95.33" width="1217" height="86.34" rx="0" ry="0" fill="#305598" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-3" data-name="文本框 2">
+<rect x="116.65" y="106.39" width="1122.06" height="62.85" fill="none" />
+<text x="126.25" y="127.06" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="18.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="18.67">{{TOC_ITEM_1_TITLE}}</tspan></text>
+</g>
+<g id="shape-4" data-name="矩形: 圆角 3">
+<rect x="41.29" y="105.72" width="65.56" height="65.56" rx="0" ry="0" fill="#FFFFFF" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-5" data-name="文本框 4">
+<rect x="45.53" y="107.66" width="57.09" height="61.7" fill="none" />
+<text x="74.07" y="128.32" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="18.67" fill="#5B80D0"><tspan fill="#5B80D0" font-size="18.67">模型</tspan></text>
+<text x="74.07" y="150.72" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="18.67" fill="#5B80D0"><tspan fill="#5B80D0" font-size="18.67">概念</tspan></text>
+</g>
+<g id="shape-6" data-name="矩形: 圆角 5">
+<rect x="31.5" y="192.07" width="1217" height="500.6" rx="0" ry="0" fill="#F2F2F2" stroke="#99B0E3" stroke-width="1" />
+</g>
+<g id="shape-7" data-name="矩形: 圆角 6">
+<rect x="58.38" y="217.32" width="196.09" height="37.68" rx="6.28" ry="6.28" fill="#D0DBF0" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-8" data-name="矩形: 单圆角 7" transform="translate(110.83 236.16) scale(1 -1) translate(-110.83 -236.16)">
+<rect x="58.38" y="217.32" width="104.89" height="37.68" fill="#305598" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-9" data-name="文本框 8">
+<rect x="66.76" y="219.19" width="84.33" height="33.93" fill="none" />
+<text x="108.93" y="242.13" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">{{TOC_ITEM_2_TITLE}}</tspan></text>
+</g>
+<g id="shape-10" data-name="文本框 9">
+<rect x="167.26" y="221.07" width="84.33" height="33.93" fill="none" />
+<text x="209.42" y="244.01" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="21.33" fill="#305598"><tspan fill="#305598" font-size="21.33">保持</tspan></text>
+</g>
+<g id="shape-11" data-name="文本框 10">
+<rect x="50.85" y="269.36" width="412.37" height="54.61" fill="none" />
+<text x="60.45" y="287.76" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="16" fill="#305598"><tspan fill="#305598" font-size="16">{{TOC_ITEM_3_TITLE}}</tspan></text>
+</g>
+<g id="shape-12" data-name="文本框 11">
+<rect x="50.85" y="322.26" width="412.37" height="54.61" fill="none" />
+<text x="60.45" y="340.66" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="16" fill="#305598"><tspan fill="#305598" font-size="16">{{TOC_ITEM_4_TITLE}}</tspan></text>
+</g>
+<g id="shape-13" data-name="矩形: 圆角 12">
+<rect x="58.38" y="387.38" width="92.72" height="25.25" rx="12.62" ry="12.62" fill="#305598" fill-opacity="0.2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-14" data-name="文本框 13">
+<rect x="62.57" y="381.54" width="84.33" height="31.09" fill="none" />
+<text x="104.74" y="397.68" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="13.33" fill="#305598"><tspan fill="#305598" font-size="13.33">好的方法</tspan></text>
+</g>
+<g id="shape-15" data-name="矩形: 圆角 14">
+<rect x="163.23" y="387.38" width="92.72" height="25.25" rx="12.62" ry="12.62" fill="#305598" fill-opacity="0.2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-16" data-name="文本框 15">
+<rect x="167.43" y="381.54" width="84.33" height="31.09" fill="none" />
+<text x="209.59" y="397.68" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="13.33" fill="#305598"><tspan fill="#305598" font-size="13.33">好的习惯</tspan></text>
+</g>
+<g id="shape-17" data-name="矩形: 圆角 16">
+<rect x="268.09" y="387.38" width="92.72" height="25.25" rx="12.62" ry="12.62" fill="#305598" fill-opacity="0.2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-18" data-name="文本框 17">
+<rect x="272.28" y="381.54" width="84.33" height="31.09" fill="none" />
+<text x="314.45" y="397.68" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="13.33" fill="#305598"><tspan fill="#305598" font-size="13.33">好的想法</tspan></text>
+</g>
+<g id="shape-19" data-name="直接箭头连接符 18" transform="translate(245.38 441.72) scale(-1 -1) translate(-245.38 -441.72)">
+<line x1="45.53" y1="441.11" x2="445.23" y2="442.32" stroke-width="11.333" stroke-linecap="round" marker-end="url(#marrow1)" fill="#305598" stroke="#305598" />
+</g>
+<g id="shape-20" data-name="直接箭头连接符 19" transform="translate(1034.57 441.72) scale(1 -1) translate(-1034.57 -441.72)">
+<line x1="834.72" y1="441.11" x2="1234.42" y2="442.32" stroke-width="11.333" stroke-linecap="round" marker-end="url(#marrow2)" fill="#305598" stroke="#305598" />
+</g>
+<g id="shape-21" data-name="矩形: 圆角 20">
+<rect x="58.38" y="472.81" width="196.09" height="37.68" rx="6.28" ry="6.28" fill="#EBEFF9" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-22" data-name="矩形: 单圆角 21" transform="translate(110.83 491.65) scale(1 -1) translate(-110.83 -491.65)">
+<rect x="58.38" y="472.81" width="104.89" height="37.68" fill="#99B0E3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-23" data-name="文本框 22">
+<rect x="66.76" y="474.68" width="84.33" height="33.93" fill="none" />
+<text x="108.93" y="497.62" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">Stop</tspan></text>
+</g>
+<g id="shape-24" data-name="文本框 23">
+<rect x="167.26" y="476.56" width="84.33" height="33.93" fill="none" />
+<text x="209.42" y="499.49" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="21.33" fill="#5B80D0"><tspan fill="#5B80D0" font-size="21.33">停止</tspan></text>
+</g>
+<g id="shape-25" data-name="文本框 24">
+<rect x="50.85" y="525.83" width="412.37" height="54.61" fill="none" />
+<text x="60.45" y="544.23" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="16" fill="#4E76CF"><tspan fill="#4E76CF" font-size="16">{{TOC_ITEM_1_DESC}}</tspan></text>
+</g>
+<g id="shape-26" data-name="文本框 25">
+<rect x="50.85" y="577.75" width="412.37" height="54.61" fill="none" />
+<text x="60.45" y="596.15" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="16" fill="#4E76CF"><tspan fill="#4E76CF" font-size="16">{{TOC_ITEM_2_DESC}}</tspan></text>
+</g>
+<g id="shape-27" data-name="矩形: 圆角 26">
+<rect x="58.38" y="642.87" width="92.72" height="25.25" rx="12.62" ry="12.62" fill="#DAE3F3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-28" data-name="文本框 27">
+<rect x="62.57" y="637.03" width="84.33" height="31.09" fill="none" />
+<text x="104.74" y="653.17" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="13.33" fill="#4E76CF"><tspan fill="#4E76CF" font-size="13.33">错误方法</tspan></text>
+</g>
+<g id="shape-29" data-name="矩形: 圆角 28">
+<rect x="163.23" y="642.87" width="92.72" height="25.25" rx="12.62" ry="12.62" fill="#DAE3F3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-30" data-name="文本框 29">
+<rect x="167.43" y="637.03" width="84.33" height="31.09" fill="none" />
+<text x="209.59" y="653.17" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="13.33" fill="#4E76CF"><tspan fill="#4E76CF" font-size="13.33">错误习惯</tspan></text>
+</g>
+<g id="shape-31" data-name="矩形: 圆角 30">
+<rect x="1028.41" y="217.32" width="196.09" height="37.68" rx="6.28" ry="6.28" fill="#DAE3F3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-32" data-name="矩形: 单圆角 31" transform="translate(1172.06 236.16) scale(-1 -1) translate(-1172.06 -236.16)">
+<rect x="1119.61" y="217.32" width="104.89" height="37.68" fill="#4474C5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-33" data-name="文本框 32">
+<rect x="1109.05" y="218.94" width="126.01" height="33.93" fill="none" />
+<text x="1172.06" y="241.87" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">Improve</tspan></text>
+</g>
+<g id="shape-34" data-name="文本框 33">
+<rect x="1036.79" y="220.26" width="84.33" height="33.93" fill="none" />
+<text x="1078.96" y="243.19" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="21.33" fill="#4474C5"><tspan fill="#4474C5" font-size="21.33">改进</tspan></text>
+</g>
+<g id="shape-35" data-name="文本框 34">
+<rect x="822.62" y="269.36" width="412.37" height="54.61" fill="none" />
+<text x="832.22" y="287.76" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="16" fill="#4474C5"><tspan fill="#4474C5" font-size="16">{{TOC_ITEM_3_DESC}}</tspan></text>
+</g>
+<g id="shape-36" data-name="文本框 35">
+<rect x="822.62" y="322.26" width="412.37" height="54.61" fill="none" />
+<text x="832.22" y="340.66" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="16" fill="#4474C5"><tspan fill="#4474C5" font-size="16">{{TOC_ITEM_4_DESC}}</tspan></text>
+</g>
+<g id="shape-37" data-name="矩形: 圆角 36">
+<rect x="922.68" y="387.38" width="92.72" height="25.25" rx="12.62" ry="12.62" fill="#4474C5" fill-opacity="0.2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-38" data-name="文本框 37">
+<rect x="926.87" y="381.54" width="84.33" height="31.09" fill="none" />
+<text x="969.04" y="397.68" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="13.33" fill="#4474C5"><tspan fill="#4474C5" font-size="13.33">流程优化</tspan></text>
+</g>
+<g id="shape-39" data-name="矩形: 圆角 38">
+<rect x="1027.53" y="387.38" width="92.72" height="25.25" rx="12.62" ry="12.62" fill="#4474C5" fill-opacity="0.2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-40" data-name="文本框 39">
+<rect x="1031.72" y="381.54" width="84.33" height="31.09" fill="none" />
+<text x="1073.89" y="397.68" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="13.33" fill="#4474C5"><tspan fill="#4474C5" font-size="13.33">方法改进</tspan></text>
+</g>
+<g id="shape-41" data-name="矩形: 圆角 40">
+<rect x="1132.39" y="387.38" width="92.72" height="25.25" rx="12.62" ry="12.62" fill="#4474C5" fill-opacity="0.2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-42" data-name="文本框 41">
+<rect x="1136.58" y="381.54" width="84.33" height="31.09" fill="none" />
+<text x="1178.75" y="397.68" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="13.33" fill="#4474C5"><tspan fill="#4474C5" font-size="13.33">工具使用</tspan></text>
+</g>
+<g id="shape-43" data-name="矩形: 圆角 42">
+<rect x="1028.41" y="473.91" width="196.09" height="37.68" rx="6.28" ry="6.28" fill="#DEE6F6" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-44" data-name="矩形: 单圆角 43" transform="translate(1172.06 492.75) scale(-1 -1) translate(-1172.06 -492.75)">
+<rect x="1119.61" y="473.91" width="104.89" height="37.68" fill="#5B80D0" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-45" data-name="文本框 44">
+<rect x="1137.29" y="475.53" width="84.33" height="33.93" fill="none" />
+<text x="1179.45" y="498.46" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Heavy&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">Start</tspan></text>
+</g>
+<g id="shape-46" data-name="文本框 45">
+<rect x="1036.79" y="476.85" width="84.33" height="33.93" fill="none" />
+<text x="1078.96" y="499.78" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="21.33" fill="#5B80D0"><tspan fill="#5B80D0" font-size="21.33">开始</tspan></text>
+</g>
+<g id="shape-47" data-name="文本框 46">
+<rect x="822.62" y="526.93" width="412.37" height="54.61" fill="none" />
+<text x="832.22" y="545.33" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="16" fill="#5B80D0"><tspan fill="#5B80D0" font-size="16">归零心态，主动探索：</tspan><tspan fill="#595959" font-size="16">摆正心态，在做好本职工作的情</tspan><tspan x="832.22" dy="19.2" fill="#595959" font-size="16">况下向同事们学习新的技能</tspan></text>
+</g>
+<g id="shape-48" data-name="文本框 47">
+<rect x="822.6" y="578.87" width="419.53" height="56" fill="none" />
+<text x="832.2" y="597.27" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="16" fill="#5B80D0"><tspan fill="#5B80D0" font-size="16">加强网站推广：</tspan><tspan fill="#595959" font-size="16">除了规定的活动策划以外，还要根据新闻</tspan><tspan x="832.2" dy="19.2" fill="#595959" font-size="16">事件热点制造公司话题，进而达到公司品牌推广的效果</tspan></text>
+</g>
+<g id="shape-49" data-name="矩形: 圆角 48">
+<rect x="1027.53" y="643.97" width="92.72" height="25.25" rx="12.62" ry="12.62" fill="#4474C5" fill-opacity="0.2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-50" data-name="矩形: 圆角 49">
+<rect x="1132.39" y="643.97" width="92.72" height="25.25" rx="12.62" ry="12.62" fill="#4474C5" fill-opacity="0.2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-51" data-name="文本框 50">
+<rect x="1136.58" y="638.13" width="84.33" height="31.41" fill="none" />
+<text x="1178.75" y="654.26" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="13.33" fill="#5B80D0"><tspan fill="#5B80D0" font-size="13.33">计划中的</tspan></text>
+</g>
+<g id="shape-52" data-name="文本框 51">
+<rect x="1031.72" y="638.13" width="84.33" height="31.41" fill="none" />
+<text x="1073.89" y="654.26" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="13.33" fill="#5B80D0"><tspan fill="#5B80D0" font-size="13.33">未完成的</tspan></text>
+</g>
+<g id="shape-53" data-name="梯形 52">
+<polygon points="491.3,530.13 788.7,530.13 822.62,675.43 457.38,675.43" fill="url(#ggrad1)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-54" data-name="椭圆 53">
+<ellipse cx="640" cy="442.37" rx="180.65" ry="180.65" fill="#DAE3F3" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-55" data-name="椭圆 54">
+<ellipse cx="640" cy="442.37" rx="158.97" ry="158.97" fill="#FFFFFF" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-56" data-name="椭圆 55">
+<ellipse cx="640" cy="442.37" rx="64" ry="64" fill="#4474C5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-57" data-name="空心弧 56">
+<rect x="496.52" y="298.88" width="286.97" height="286.97" fill="#305598" stroke-width="5.667" stroke-linecap="round" stroke="#FFFFFF" stroke-linejoin="round" />
+</g>
+<g id="shape-75" data-name="任意多边形: 形状 74" transform="rotate(90 711.74 370.92)">
+<path d="M 639.71 442.66 C 639.71 404.5 654.9 367.92 681.94 340.99 C 708.98 314.07 745.62 299.02 783.78 299.18 C 783.7 318.74 783.62 338.31 783.54 357.87 C 760.99 357.78 739.34 366.67 723.36 382.58 C 707.38 398.49 698.4 420.11 698.4 442.66 L 639.71 442.66 Z" fill="#4474C5" stroke-width="5.667" stroke-linecap="round" stroke="#FFFFFF" stroke-linejoin="round" />
+</g>
+<g id="shape-59" data-name="空心弧 58" transform="rotate(180 640 442.37)">
+<rect x="496.52" y="298.88" width="286.97" height="286.97" fill="#5B80D0" stroke-width="5.667" stroke-linecap="round" stroke="#FFFFFF" stroke-linejoin="round" />
+</g>
+<g id="shape-60" data-name="空心弧 59" transform="rotate(270 640 442.37)">
+<rect x="496.52" y="298.88" width="286.97" height="286.97" fill="#99B0E3" stroke-width="5.667" stroke-linecap="round" stroke="#FFFFFF" stroke-linejoin="round" />
+</g>
+<g id="shape-61" data-name="弧形 60">
+<path d="M 480.26 388.73 A 168.51 168.51 0 1 1 609.08 608.01" stroke-width="2.333" stroke="#4474C5" marker-end="url(#marrow3)" fill="#305598" />
+</g>
+<g id="shape-62" data-name="弧形 61" transform="rotate(90 640 442.37)">
+<path d="M 480.26 388.73 A 168.51 168.51 0 1 1 609.08 608.01" stroke-width="2.333" stroke="#4474C5" marker-end="url(#marrow4)" fill="#305598" />
+</g>
+<g id="shape-63" data-name="弧形 62" transform="rotate(180 640 442.37)">
+<path d="M 480.26 388.73 A 168.51 168.51 0 1 1 609.08 608.01" stroke-width="2.333" stroke="#4474C5" marker-end="url(#marrow5)" fill="#305598" />
+</g>
+<g id="shape-64" data-name="弧形 63" transform="rotate(270 640 442.37)">
+<path d="M 480.26 388.73 A 168.51 168.51 0 1 1 609.08 608.01" stroke-width="2.333" stroke="#4474C5" marker-end="url(#marrow6)" fill="#305598" />
+</g>
+<g id="shape-65" data-name="文本占位符 1">
+<rect x="580.57" y="406.22" width="118.86" height="65" fill="none" />
+<text x="640" y="444.75" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="24" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="24" font-weight="bold">KISS</tspan></text>
+<text x="640" y="479.69" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="24" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="24" font-weight="bold">复盘法</tspan></text>
+</g>
+<g id="shape-66" data-name="文本占位符 1">
+<rect x="532.72" y="330.38" width="65.68" height="51.16" fill="none" />
+<text x="565.56" y="384.78" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="42.67" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="42.67" font-weight="bold">K</tspan></text>
+</g>
+<g id="shape-67" data-name="文本占位符 1">
+<rect x="682.33" y="330.38" width="63.86" height="51.16" fill="none" />
+<text x="714.26" y="384.78" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="42.67" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="42.67" font-weight="bold">I</tspan></text>
+</g>
+<g id="shape-68" data-name="文本占位符 1">
+<rect x="532.72" y="502.91" width="65.68" height="51.16" fill="none" />
+<text x="565.56" y="557.31" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="42.67" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="42.67" font-weight="bold">S</tspan></text>
+</g>
+<g id="shape-69" data-name="文本占位符 1">
+<rect x="682.33" y="502.91" width="63.86" height="51.16" fill="none" />
+<text x="714.26" y="557.31" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="42.67" fill="#FFFFFF" font-weight="bold"><tspan fill="#FFFFFF" font-size="42.67" font-weight="bold">S</tspan></text>
+</g>
+<g id="shape-70" data-name="梯形 69">
+<polygon points="464.68,629.19 815.27,629.19 827,677.5 452.95,677.5" fill="#305598" fill-opacity="0" stroke="#305598" stroke-opacity="0" stroke-width="1" />
+</g>
+<g id="shape-73" data-name="矩形 72">
+<rect x="20.56" y="6.7" width="431.22" height="54.93" fill="none" />
+<text x="30.16" y="43.23" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Heavy&quot;, Roboto, sans-serif" font-size="37.33" fill="#000000"><tspan fill="#000000" font-size="37.33">四段内容页</tspan><tspan fill="#000000" font-size="37.33">/</tspan><tspan fill="#4474C5" font-size="37.33"> </tspan><tspan fill="#4474C5" font-size="37.33">KISS</tspan><tspan fill="#4474C5" font-size="37.33">复盘法</tspan></text>
+</g></svg>

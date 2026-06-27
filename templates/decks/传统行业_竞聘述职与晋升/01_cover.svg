@@ -1,0 +1,178 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="0" stdDeviation="13.33" flood-color="#1C4273" flood-opacity="0.15" /></filter><linearGradient id="ggrad1" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="1" stop-color="#1C4273" /><stop offset="0.08" stop-color="#436A98" /></linearGradient><linearGradient id="ggrad2" x1="0.5" y1="1" x2="0.5" y2="0"><stop offset="1" stop-color="#1C4273" /><stop offset="0.08" stop-color="#436A98" /></linearGradient><linearGradient id="ggrad3" x1="1" y1="0.5" x2="0" y2="0.5"><stop offset="1" stop-color="#CDDAE9" stop-opacity="0" /><stop offset="0.08" stop-color="#CDDAE9" stop-opacity="0.27" /></linearGradient><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="4.71" dy="4.71" stdDeviation="10.67" flood-color="#1C4273" flood-opacity="0.19" /></filter><filter id="fx3" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="4.71" dy="4.71" stdDeviation="10.67" flood-color="#9D3728" flood-opacity="0.19" /></filter><filter id="fx4" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="4.71" dy="4.71" stdDeviation="10.67" flood-color="#1C4273" flood-opacity="0.19" /></filter><filter id="fx5" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="4.71" dy="4.71" stdDeviation="10.67" flood-color="#9D3728" flood-opacity="0.19" /></filter><filter id="fx6" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="4.71" dy="4.71" stdDeviation="10.67" flood-color="#9D3728" flood-opacity="0.19" /></filter></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="layout-shape-4" data-name="矩形: 圆角 3">
+<rect x="0" y="79.7" width="50.72" height="4.98" rx="0" ry="0" fill="#1C4273" stroke="#1C4273" stroke-width="1" filter="url(#fx1)" />
+</g>
+<g id="shape-1061" data-name="任意多边形: 形状 1060">
+<path d="M 0 548.07 L 5.72 549.2 C 207.18 586.54 429.73 607.25 663.69 607.25 C 868.41 607.25 1064.39 591.39 1245.15 562.42 L 1280 556.4 L 1280 720 L 0 720 Z" fill="#CDDAE9" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-144" data-name="矩形: 圆角 143">
+<rect x="22.81" y="615.76" width="1234" height="104.24" rx="0" ry="0" fill="url(#ggrad1)" stroke-width="1.333" stroke-linecap="butt" stroke="none" stroke-linejoin="miter" />
+</g>
+<g id="shape-78" data-name="任意多边形: 形状 77">
+<path d="M 91.39 560.17 L 100.1 561.55 C 235.94 581.55 427.6 594.01 640 594.01 C 852.4 594.01 1044.06 581.55 1179.9 561.55 L 1188.23 560.23 L 1256.81 616.35 L 1215.53 623.44 C 1078.73 644.71 871.71 658.27 640 658.27 C 408.29 658.27 201.27 644.71 64.47 623.44 L 22.81 616.29 Z" fill="url(#ggrad2)" stroke="#FFFFFF" stroke-width="1" />
+</g>
+<g id="shape-2" data-name="标题 1" data-ph-type="title">
+<rect x="0" y="19.09" width="984.49" height="57.67" fill="none" />
+<text x="9.6" y="44.29" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="24" fill="#000000"><tspan fill="#000000" font-size="24">{{SUBTITLE}}</tspan></text>
+</g>
+<g id="shape-142" data-name="任意多边形: 形状 141" transform="translate(1222.89 593.33) scale(-1 1) translate(-1222.89 -593.33)">
+<path d="M 1256.81 560.17 L 1256.81 626.5 L 1230.62 622.84 L 1188.96 615.7 Z" fill="url(#ggrad3)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-150" data-name="任意多边形: 形状 149">
+<path d="M 1186.51 570.47 L 1223.41 609.34 L 1215.53 610.69 C 1164.23 618.67 1103.06 625.56 1034.41 631.06 L 1010.02 632.79 L 989.26 595.79 L 990.55 595.69 C 1053.25 590.16 1110.62 583.19 1161.03 575.05 L 1186.51 570.47 Z" fill="#F07662" stroke="#FFFFFF" stroke-width="1" />
+</g>
+<g id="shape-149" data-name="任意多边形: 形状 148">
+<path d="M 93.49 570.47 L 118.97 575.05 C 169.38 583.19 226.75 590.16 289.45 595.69 L 290.74 595.79 L 269.98 632.79 L 245.59 631.06 C 176.94 625.56 115.77 618.67 64.47 610.69 L 56.59 609.34 L 93.49 570.47 Z" fill="#F07662" stroke="#FFFFFF" stroke-width="1" />
+</g>
+<g id="shape-148" data-name="任意多边形: 形状 147">
+<path d="M 316.51 597.81 L 353.87 600.74 C 397.93 603.76 444.12 606.12 491.96 607.71 L 496.85 607.83 L 487.97 643.44 L 471.56 643.08 C 417.43 641.47 365.55 639.11 316.64 636.09 L 295.86 634.62 L 316.51 597.81 Z" fill="#F07662" stroke="#FFFFFF" stroke-width="1" />
+</g>
+<g id="shape-147" data-name="任意多边形: 形状 146">
+<path d="M 963.49 597.81 L 984.14 634.62 L 963.36 636.09 C 914.45 639.11 862.57 641.47 808.44 643.08 L 792.03 643.44 L 783.15 607.83 L 788.04 607.71 C 835.88 606.12 882.07 603.76 926.13 600.74 L 963.49 597.81 Z" fill="#F07662" stroke="#FFFFFF" stroke-width="1" />
+</g>
+<g id="shape-146" data-name="任意多边形: 形状 145">
+<path d="M 527.17 608.58 L 564.92 609.52 C 589.61 609.93 614.66 610.14 640 610.14 C 665.34 610.14 690.39 609.93 715.08 609.52 L 752.83 608.58 L 761.69 644.11 L 725.64 644.9 C 697.54 645.31 668.96 645.53 640 645.53 C 611.04 645.53 582.46 645.31 554.36 644.9 L 518.31 644.11 L 527.17 608.58 Z" fill="#F07662" stroke="#FFFFFF" stroke-width="1" />
+</g>
+<g id="shape-1027" data-name="任意多边形: 形状 1026">
+<path d="M 290.09 108.66 L 512.2 108.66 C 514.35 108.66 516.09 110.4 516.09 112.54 L 516.09 581.06 L 477.86 579.74 C 421.39 577.41 366.34 573.95 313.05 569.46 L 286.21 567 L 286.21 112.54 C 286.21 110.4 287.95 108.66 290.09 108.66 Z" fill="#1C4273" stroke="#040A11" stroke-width="1" />
+</g>
+<g id="shape-187" data-name="任意多边形: 形状 186">
+<path d="M 286.96 102.53 L 509.07 102.53 C 511.22 102.53 512.96 104.27 512.96 106.41 L 512.96 574.93 L 474.73 573.62 C 418.26 571.28 363.21 567.82 309.92 563.33 L 283.08 560.87 L 283.08 106.41 C 283.08 104.27 284.82 102.53 286.96 102.53 Z" fill="#FFFFFF" stroke="#040A11" stroke-width="1" />
+</g>
+<g id="shape-103" data-name="矩形: 圆角 102">
+<rect x="297.62" y="123.33" width="207.05" height="36.32" rx="18.16" ry="18.16" fill="#1C4273" stroke="none" stroke-width="1" filter="url(#fx2)" />
+<text x="401.15" y="148.96" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-108" data-name="文本框 107">
+<rect x="297.62" y="211.79" width="207.05" height="102.47" fill="none" />
+<text x="307.22" y="230.19" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-109" data-name="文本框 108">
+<rect x="297.62" y="185.14" width="207.05" height="35.4" fill="none" />
+<text x="307.22" y="208.08" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#1C4273"><tspan fill="#1C4273" font-size="21.33">创新点</tspan></text>
+</g>
+<g id="shape-106" data-name="文本框 105">
+<rect x="297.62" y="391.1" width="207.05" height="102.47" fill="none" />
+<text x="307.22" y="409.5" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-107" data-name="文本框 106">
+<rect x="297.62" y="364.45" width="207.05" height="35.4" fill="none" />
+<text x="307.22" y="387.39" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#1C4273"><tspan fill="#1C4273" font-size="21.33">具体实施</tspan></text>
+</g>
+<g id="shape-1028" data-name="任意多边形: 形状 1027">
+<path d="M 537.14 108.66 L 759.25 108.66 C 761.4 108.66 763.14 110.4 763.14 112.54 L 763.14 581.79 L 709.82 582.89 C 690.41 583.15 670.87 583.29 651.21 583.29 C 611.89 583.29 573.06 582.75 534.8 581.7 L 533.26 581.65 L 533.26 112.54 C 533.26 110.4 535 108.66 537.14 108.66 Z" fill="#9D3728" stroke="#9D3728" stroke-width="1" />
+</g>
+<g id="shape-186" data-name="任意多边形: 形状 185">
+<path d="M 534.01 102.53 L 756.12 102.53 C 758.27 102.53 760.01 104.27 760.01 106.41 L 760.01 575.66 L 706.69 576.76 C 687.28 577.03 667.74 577.16 648.08 577.16 C 608.76 577.16 569.93 576.62 531.67 575.57 L 530.13 575.52 L 530.13 106.41 C 530.13 104.27 531.86 102.53 534.01 102.53 Z" fill="#FFFFFF" stroke="#9D3728" stroke-width="1" />
+</g>
+<g id="shape-122" data-name="文本框 121">
+<rect x="544.67" y="391.1" width="207.05" height="125.67" fill="none" />
+<text x="554.27" y="409.5" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-123" data-name="文本框 122">
+<rect x="544.67" y="364.45" width="207.05" height="35.4" fill="none" />
+<text x="554.27" y="387.39" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#9D3728"><tspan fill="#9D3728" font-size="21.33">具体实施</tspan></text>
+</g>
+<g id="shape-111" data-name="矩形: 圆角 110">
+<rect x="544.67" y="123.33" width="207.05" height="36.32" rx="18.16" ry="18.16" fill="#9D3728" stroke="none" stroke-width="1" filter="url(#fx3)" />
+<text x="648.2" y="148.96" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-116" data-name="文本框 115">
+<rect x="544.67" y="211.79" width="207.05" height="148.93" fill="none" />
+<text x="554.27" y="230.19" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-117" data-name="文本框 116">
+<rect x="544.67" y="185.14" width="207.05" height="35.4" fill="none" />
+<text x="554.27" y="208.08" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#9D3728"><tspan fill="#9D3728" font-size="21.33">创新点</tspan></text>
+</g>
+<g id="shape-1033" data-name="任意多边形: 形状 1032">
+<path d="M 777.43 108.66 L 999.55 108.66 C 1001.69 108.66 1003.43 110.4 1003.43 112.54 L 1003.43 568.17 L 989.37 569.46 C 936.09 573.95 881.03 577.41 824.56 579.74 L 773.55 581.5 L 773.55 112.54 C 773.55 110.4 775.29 108.66 777.43 108.66 Z" fill="#1C4273" stroke="#040A11" stroke-width="1" />
+</g>
+<g id="shape-185" data-name="任意多边形: 形状 184">
+<path d="M 774.3 102.53 L 996.42 102.53 C 998.56 102.53 1000.3 104.27 1000.3 106.41 L 1000.3 562.05 L 986.24 563.33 C 932.96 567.82 877.9 571.28 821.43 573.62 L 770.42 575.37 L 770.42 106.41 C 770.42 104.27 772.16 102.53 774.3 102.53 Z" fill="#FFFFFF" stroke="#040A11" stroke-width="1" />
+</g>
+<g id="shape-114" data-name="文本框 113">
+<rect x="784.96" y="391.1" width="207.05" height="102.47" fill="none" />
+<text x="794.56" y="409.5" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-115" data-name="文本框 114">
+<rect x="784.96" y="364.45" width="207.05" height="35.4" fill="none" />
+<text x="794.56" y="387.39" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#1C4273"><tspan fill="#1C4273" font-size="21.33">具体实施</tspan></text>
+</g>
+<g id="shape-119" data-name="矩形: 圆角 118">
+<rect x="784.96" y="123.33" width="207.05" height="36.32" rx="18.16" ry="18.16" fill="#1C4273" stroke="none" stroke-width="1" filter="url(#fx4)" />
+<text x="888.49" y="148.96" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-124" data-name="文本框 123">
+<rect x="784.96" y="211.79" width="207.05" height="125.67" fill="none" />
+<text x="794.56" y="230.19" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-125" data-name="文本框 124">
+<rect x="784.96" y="185.14" width="207.05" height="35.4" fill="none" />
+<text x="794.56" y="208.08" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#1C4273"><tspan fill="#1C4273" font-size="21.33">创新点</tspan></text>
+</g>
+<g id="shape-1026" data-name="任意多边形: 形状 1025">
+<path d="M 38.65 108.66 L 260.77 108.66 C 262.91 108.66 264.65 110.4 264.65 112.54 L 264.65 565.02 L 260.36 564.63 C 190.93 557.74 124.84 549.07 62.9 538.83 L 34.77 533.91 L 34.77 112.54 C 34.77 110.4 36.51 108.66 38.65 108.66 Z" fill="#9D3728" stroke="#9D3728" stroke-width="1" />
+</g>
+<g id="shape-188" data-name="任意多边形: 形状 187">
+<path d="M 35.52 102.53 L 257.64 102.53 C 259.78 102.53 261.52 104.27 261.52 106.41 L 261.52 558.9 L 257.23 558.5 C 187.8 551.61 121.71 542.94 59.77 532.7 L 31.64 527.79 L 31.64 106.41 C 31.64 104.27 33.38 102.53 35.52 102.53 Z" fill="#FFFFFF" stroke="#9D3728" stroke-width="1" />
+</g>
+<g id="shape-92" data-name="矩形: 圆角 91">
+<rect x="46.18" y="123.33" width="207.05" height="36.32" rx="18.16" ry="18.16" fill="#9D3728" stroke="none" stroke-width="1" filter="url(#fx5)" />
+<text x="149.71" y="148.96" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-90" data-name="文本框 89">
+<rect x="40.36" y="211.79" width="218.69" height="148.93" fill="none" />
+<text x="49.96" y="230.19" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-94" data-name="文本框 93">
+<rect x="40.36" y="185.14" width="207.05" height="35.4" fill="none" />
+<text x="49.96" y="208.08" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#9D3728"><tspan fill="#9D3728" font-size="21.33">创新点</tspan></text>
+</g>
+<g id="shape-1034" data-name="任意多边形: 形状 1033">
+<path d="M 1024.59 108.66 L 1246.71 108.66 C 1248.85 108.66 1250.59 110.4 1250.59 112.54 L 1250.59 536.89 L 1239.52 538.83 C 1177.58 549.07 1111.49 557.74 1042.06 564.63 L 1020.71 566.59 L 1020.71 112.54 C 1020.71 110.4 1022.45 108.66 1024.59 108.66 Z" fill="#9D3728" stroke="#9D3728" stroke-width="1" />
+</g>
+<g id="shape-184" data-name="任意多边形: 形状 183">
+<path d="M 1021.46 102.53 L 1243.58 102.53 C 1245.72 102.53 1247.46 104.27 1247.46 106.41 L 1247.46 530.77 L 1236.39 532.7 C 1174.45 542.94 1108.36 551.61 1038.93 558.5 L 1017.58 560.46 L 1017.58 106.41 C 1017.58 104.27 1019.32 102.53 1021.46 102.53 Z" fill="#FFFFFF" stroke="#9D3728" stroke-width="1" />
+</g>
+<g id="shape-163" data-name="文本框 162">
+<rect x="1032.12" y="391.1" width="207.05" height="125.67" fill="none" />
+<text x="1041.72" y="409.5" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-164" data-name="文本框 163">
+<rect x="1032.12" y="364.45" width="207.05" height="35.4" fill="none" />
+<text x="1041.72" y="387.39" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#9D3728"><tspan fill="#9D3728" font-size="21.33">具体实施</tspan></text>
+</g>
+<g id="shape-159" data-name="矩形: 圆角 158">
+<rect x="1032.12" y="123.33" width="207.05" height="36.32" rx="18.16" ry="18.16" fill="#9D3728" stroke="none" stroke-width="1" filter="url(#fx6)" />
+<text x="1135.65" y="148.96" text-anchor="middle" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="21.33">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-161" data-name="文本框 160">
+<rect x="1032.12" y="211.79" width="207.05" height="148.93" fill="none" />
+<text x="1041.72" y="230.19" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">{{TAGLINE}}</tspan></text>
+</g>
+<g id="shape-162" data-name="文本框 161">
+<rect x="1032.12" y="185.14" width="207.05" height="35.4" fill="none" />
+<text x="1041.72" y="208.08" text-anchor="start" xml:space="preserve" font-family="Roboto, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="21.33" fill="#9D3728"><tspan fill="#9D3728" font-size="21.33">创新点</tspan></text>
+</g>
+<g id="shape-176" data-name="文本框 175">
+<rect x="145.66" y="556.14" width="84.3" height="96.94" fill="none" />
+<text x="155.26" y="622.14" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="72" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="72">{{TITLE}}</tspan></text>
+</g>
+<g id="shape-177" data-name="文本框 176">
+<rect x="1075.76" y="556.14" width="84.3" height="96.94" fill="none" />
+<text x="1085.36" y="622.14" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="72" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="72">5</tspan></text>
+</g>
+<g id="shape-178" data-name="文本框 177">
+<rect x="363.48" y="575.8" width="84.3" height="96.94" fill="none" />
+<text x="373.08" y="641.8" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="72" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="72">2</tspan></text>
+</g>
+<g id="shape-179" data-name="文本框 178">
+<rect x="597.85" y="581.52" width="84.3" height="96.94" fill="none" />
+<text x="607.45" y="647.52" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="72" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="72">3</tspan></text>
+</g>
+<g id="shape-181" data-name="文本框 180">
+<rect x="843.87" y="575.8" width="84.3" height="96.94" fill="none" />
+<text x="853.47" y="641.8" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 CN Bold&quot;, &quot;思源黑体 CN Normal&quot;, sans-serif" font-size="72" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="72">4</tspan></text>
+</g></svg>
