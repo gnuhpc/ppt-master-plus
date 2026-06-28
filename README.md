@@ -14,11 +14,11 @@
 | :--- | :--- | :--- |
 | **定位与重点** | 面向标准 SVG→PPTX 生成，强调快捷、批量自动排版。 | 面向高水准商业汇报、流程交互确认、以及多源技术架构图路由。 |
 | **生成模式控制** | • **连续模式**：一气呵成直接生成整份 PPT。 | • **逐页确定精修（Gated）**：生成每页都停下供预览与批注确认。<br>• **连续模式**：自动不打断生成。<br>• **分段模式（Split）**：长文档跨对话分阶段执行。 |
-| **网页配置端** | 基础配置（调色板、字体、主题元素）。 | 升级版 Confirm UI，网页上可直接切换生成模式，并支持配置源 PPT 母版和版式的保留（`preserve_master`）。 |
-| **美化还原能力** | 纯内容提取后的重新版式渲染。 | 完美支持 1:1 母版级美化，支持输出页面与源 PPT 版式/母版精准映射，背景及图形无损保留。 |
-| **图例与模板丰富度**| • 29 套基础风格 Deck 模板<br>• 71 个 SVG 信息图解/图表 | • 29 套基础模板 + 71 个图表组件<br>• **新增 21 套“传统行业模板”**（更贴合中文商业汇报、述职、答辩、课件场景）。 |
+| **网页配置端与批注机制** | 基础配置（调色板、字体、主题元素）。生成过程中忽视批注，导出后统一应用。 | 升级版 Confirm UI（支持模式切换与 `preserve_master`）。**支持中途批注修复**：生成过程中可随时暂停并应用批注修复。 |
+| **美化还原能力** | 纯内容提取后的重新版式渲染。不可精确保留母版。 | 完美支持 1:1 母版级美化，支持输出页面与源 PPT 版式/母版精准映射，背景及图形无损保留（支持 `preserve_master` 及物理尺寸 1:1 对齐）。 |
+| **图例与模板丰富度**| • 29 套基础风格 Deck 模板<br>• 71 个 SVG 信息图解/图表 | • 29 套基础模板 + 71 个图表组件<br>• **新增 21 套“传统行业模板”**并配有 3 套**专属版式规范指导文件**（[`executor-general.md`](references/executor-general.md)、[`executor-consultant.md`](references/executor-consultant.md)、[`executor-consultant-top.md`](references/executor-consultant-top.md)）。 |
 | **外部绘图路由** | 仅支持内置 SVG 基础图解。 | **软依赖绘图路由器**：智能分流到 `fireworks-tech-graph`、`excalidraw`（手绘风格可编辑源文件）、`Mermaid`、`PlantUML` 或 `draw.io`，环境缺失时自动降级回内置 SVG，绝不阻塞。 |
-| **讲稿与质检** | 基础字数和段落检查。 | 强制性的讲稿及幻灯片联动审核、SVG 结构警告（规范锁偏移检查）以及 PPTX 导出最终校验。 |
+| **讲稿与质检** | 基础字数和段落检查。 | 强制性 SVG 结构警告、PPTX 导出校验，并**新增讲稿专项校验脚本**（[`check_speaker_notes.py`](scripts/check_speaker_notes.py) 与 [`speaker-notes.md`](references/speaker-notes.md)）。 |
 
 ## 推荐 AI Agent 与模型
 
@@ -143,7 +143,7 @@ AI Agent 会根据聊天指令或浏览器批注修改 `svg_output/`，运行 SV
 | 对成品 PPTX 追加讲稿、音频、自动播放、转场等，不改变可见内容和布局 | 支持 | `native-enhance-pptx` |
 | 上传或指定一个 PPTX 作为模板，再填入另一批新内容 | 当前不支持 | 如需基于该 PPTX 产出新 deck，请改走主生产流程；内部模板化能力作为未来扩展，不作为当前替代路径承诺 |
 
-这个边界是故意的：美化关注“把现有 deck 做得更好”，主流程关注“从资料生成新的 deck”，而用户提供模板填充容易把外部 deck 当作不稳定的占位符系统处理，已经从公开能力中移除。
+这个边界是故意的：美化关注“把现有 deck 做得更好”，主流程关注“从资料生成新的 deck”，而用户提供模板填充（原 `template-fill` 路由及 `template_fill_pptx.py` 脚本等）容易把外部 deck 当作不稳定的占位符系统处理，**已被完全物理废弃并从代码中移除**。
 
 ## 模板与图例丰富度
 
@@ -195,7 +195,7 @@ Post-processing
   - 可选原生增强
 ```
 
-核心入口是 [`SKILL.md`](SKILL.md)。分阶段生产流程在 [`workflows/gated-production.md`](workflows/gated-production.md)，上游与本地合并记录在 [`references/upstream.md`](references/upstream.md)。
+核心入口是 [`SKILL.md`](SKILL.md)。分阶段生产流程在 [`workflows/gated-production.md`](workflows/gated-production.md)，上游与本地合并记录在 [`references/upstream.md`](references/upstream.md)。关于模板设计架构请参考 [`references/templates-architecture.md`](references/templates-architecture.md)，系统技术架构设计参考 [`references/technical-design.md`](references/technical-design.md)。
 
 ## 致敬 ppt-master
 
