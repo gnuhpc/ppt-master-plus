@@ -69,6 +69,7 @@ from server_common import (  # noqa: E402
 
 from annotations import (  # noqa: E402
     assign_temp_ids,
+    delete_element,
     is_editable_attr,
     parse_annotations,
     promote_tspan_to_text,
@@ -223,6 +224,7 @@ def _validate_edit_attrs(attrs: dict, existing_attrs: set[str]) -> Optional[str]
 
 EDIT_LOG_NAME = 'edits.jsonl'
 ANNOTATION_LOG_NAME = 'annotations.jsonl'
+ANNOTATION_READY_FLAG = 'annotations_ready.flag'
 
 
 def _append_live_preview_log(project_path: Path, filename: str, record: dict) -> None:
@@ -257,6 +259,8 @@ def _apply_edit_record(root: ET.Element, record: dict) -> tuple[bool, Optional[s
     element_id = record.get('element_id')
     if not isinstance(element_id, str):
         return False, 'invalid-record'
+    if record.get('delete'):
+        return delete_element(root, element_id)
     promote = record.get('promote_tspan')
     if promote:
         if not isinstance(promote, dict):
@@ -592,6 +596,31 @@ def create_app(
             'undo_depth': len(pending_edits),
         })
 
+    @app.route('/api/slide/<name>/notes')
+    def get_notes(name: str):
+        if '/' in name or '\\' in name or '..' in name:
+            return jsonify({'notes': ''}), 400
+        stem = name.rsplit('.', 1)[0] if '.' in name else name
+        notes_file = project_path / 'notes' / (stem + '.md')
+        if notes_file.is_file():
+            return jsonify({'notes': notes_file.read_text(encoding='utf-8')})
+        return jsonify({'notes': ''})
+
+    @app.route('/api/slide/<name>/notes', methods=['POST'])
+    def post_notes(name: str):
+        if '/' in name or '\\' in name or '..' in name:
+            return jsonify({'error': 'invalid name'}), 400
+        data = request.get_json(silent=True) or {}
+        text = data.get('notes', '')
+        if not isinstance(text, str) or len(text) > 200_000:
+            return jsonify({'error': 'invalid notes'}), 400
+        stem = name.rsplit('.', 1)[0] if '.' in name else name
+        notes_dir = project_path / 'notes'
+        notes_dir.mkdir(parents=True, exist_ok=True)
+        notes_file = notes_dir / (stem + '.md')
+        notes_file.write_text(text, encoding='utf-8')
+        return jsonify({'status': 'ok'})
+
     @app.route('/api/slide/<name>/annotate', methods=['POST'])
     def post_annotate(name: str):
         data = request.get_json()
@@ -657,8 +686,9 @@ def create_app(
         new_text = data.get('text')
         attrs = data.get('attrs')
         promote = data.get('promote_tspan')
-        if new_text is None and not attrs and not promote:
-            return jsonify({'error': 'Nothing to edit (no text or attrs)'}), 400
+        delete = data.get('delete')
+        if new_text is None and not attrs and not promote and not delete:
+            return jsonify({'error': 'Nothing to edit (no text, attrs, or delete)'}), 400
 
         if new_text is not None:
             if not isinstance(new_text, str) or len(new_text) > _MAX_EDIT_TEXT_LEN:
@@ -695,6 +725,21 @@ def create_app(
             attr_err = _validate_edit_attrs(attrs, set(target.attrib.keys()))
             if attr_err:
                 return jsonify({'error': attr_err}), 400
+
+        if delete:
+            ok, reason = delete_element(root, element_id)
+            if not ok:
+                return jsonify({'error': f'Delete failed: {reason}'}), (
+                    404 if reason == 'not-found' else 400
+                )
+            staged: dict = {
+                'element_id': element_id,
+                'delete': True,
+                'changes': [{'kind': 'delete', 'key': None, 'old': element_id, 'new': None}],
+            }
+            pending = app.config['PENDING_EDITS'].setdefault(name, [])
+            pending.append(staged)
+            return jsonify({'status': 'ok', 'undo_depth': len(pending)})
 
         changes = []
         staged: dict = {'element_id': element_id}
@@ -844,6 +889,14 @@ def create_app(
         app.config['ANNOTATIONS'] = {}
         app.config['PENDING_EDITS'] = {}
 
+        if annotation_files:
+            flag = _runtime_dir(project_path) / ANNOTATION_READY_FLAG
+            flag.parent.mkdir(parents=True, exist_ok=True)
+            flag.write_text(
+                json.dumps({'files': annotation_files}, ensure_ascii=False),
+                encoding='utf-8',
+            )
+
         return jsonify({
             'status': 'ok',
             'files_modified': modified,
@@ -886,6 +939,25 @@ def _wait_for_ready(url: str, proc: subprocess.Popen, timeout: int = 15) -> bool
     return False
 
 
+def _wait_for_annotation_flag(project_path: Path, timeout: int = 86400) -> bool:
+    """Block until live_preview/annotations_ready.flag appears, then return True.
+
+    Returns False on timeout; timeout <= 0 waits forever. The flag is written by
+    save_all() when the user clicks Apply changes with at least one annotated
+    file. The caller is responsible for deleting the flag after applying the
+    annotations so that the next --wait-annotation call blocks again for the
+    following round.
+    """
+    flag = _runtime_dir(project_path) / ANNOTATION_READY_FLAG
+    deadline = None if timeout <= 0 else time.time() + timeout
+    while deadline is None or time.time() < deadline:
+        if flag.exists():
+            logger.info('annotation flag detected: %s', flag)
+            return True
+        time.sleep(0.5)
+    return False
+
+
 def _open_browser(url: str) -> bool:
     """Best-effort browser launch after the local server is reachable."""
     try:
@@ -924,6 +996,16 @@ def build_parser() -> argparse.ArgumentParser:
         default=None,
         help='Idle timeout in seconds (default: 900; live mode default: 7200; 0 = disabled)',
     )
+    parser.add_argument(
+        '--wait-annotation',
+        action='store_true',
+        help=(
+            'Block until the user clicks Apply changes with annotations '
+            '(live_preview/annotations_ready.flag appears), then exit 0. '
+            'Does not start a server — connect to an already-running instance. '
+            'Use after --daemon to let the AI wait for annotation saves without polling.'
+        ),
+    )
     return parser
 
 
@@ -947,6 +1029,15 @@ def main(argv: Optional[list[str]] = None) -> int:
             return 1
     elif not svg_output.is_dir():
         logger.error('%s is not a directory', svg_output)
+        return 1
+
+    if args.wait_annotation:
+        timeout = args.timeout if args.timeout is not None else 86400
+        logger.info('waiting for annotation flag in %s (timeout=%ds)...', project_path, timeout)
+        if _wait_for_annotation_flag(project_path, timeout):
+            logger.info('annotations ready — returning to caller')
+            return 0
+        logger.error('--wait-annotation timed out after %ds', timeout)
         return 1
 
     legacy_existing = _legacy_live_lock(project_path)

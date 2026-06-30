@@ -36,12 +36,55 @@ html, body {
     overflow: hidden;
 }
 
-#panel-left .panel-header {
-    padding: 14px 16px;
-    font-weight: 600;
-    font-size: 15px;
+.panel-left-tabs {
+    display: flex;
+    align-items: center;
     border-bottom: 1px solid #2a2a4a;
     flex-shrink: 0;
+    background: #16162a;
+}
+
+.panel-tab {
+    flex: 1;
+    padding: 11px 8px;
+    font-size: 13px;
+    font-weight: 600;
+    background: none;
+    border: none;
+    border-bottom: 2px solid transparent;
+    color: #5a5a8a;
+    cursor: pointer;
+    transition: color 0.15s, border-color 0.15s;
+    text-align: center;
+}
+
+.panel-tab.active {
+    color: #a0c4ff;
+    border-bottom-color: #4a8aff;
+}
+
+.panel-tab:hover:not(.active) {
+    color: #9090c0;
+    background: #1f1f38;
+}
+
+.notes-save-btn {
+    margin: 0 8px 0 4px;
+    padding: 4px 10px;
+    font-size: 12px;
+    font-weight: 600;
+    background: #1e3558;
+    border: 1px solid #4a8aff;
+    border-radius: 4px;
+    color: #8ab4ff;
+    cursor: pointer;
+    transition: background 0.15s;
+    flex-shrink: 0;
+    white-space: nowrap;
+}
+
+.notes-save-btn:hover {
+    background: #2a4a70;
 }
 
 #slide-list {
@@ -268,6 +311,13 @@ body.svg-dragging * {
     outline-offset: 2px;
 }
 
+/* Delete annotation: red outline + reduced opacity to signal pending removal */
+.svg-deleting {
+    outline: 2px solid #ef4444 !important;
+    outline-offset: 2px;
+    opacity: 0.45;
+}
+
 /* ======================== RIGHT PANEL ======================== */
 #panel-right {
     width: 280px;
@@ -466,6 +516,16 @@ body.svg-dragging * {
     color: #5a5a7a;
     font-size: 13px;
     font-style: italic;
+}
+
+/* Delete annotation entry — red tint to distinguish from regular annotations */
+.ann-item-delete {
+    border-left: 3px solid #ef4444;
+    padding-left: 6px;
+}
+
+.ann-item-delete .ann-text {
+    color: #f87171;
 }
 
 /* --- Action buttons --- */
@@ -846,6 +906,23 @@ input.prop-edit-multi-geo {
     background: #2d4370;
 }
 
+.btn-delete-el {
+    width: 100%;
+    margin-bottom: 8px;
+    padding: 5px 7px;
+    color: #fecaca;
+    background: #4a1a1a;
+    border: 1px solid #7f2a2a;
+    border-radius: 4px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+.btn-delete-el:hover {
+    background: #6b2222;
+}
+
 .multi-el-list {
     margin-top: 6px;
     max-height: 100px;
@@ -946,6 +1023,35 @@ input.prop-edit-multi-geo {
     outline: 2px solid #f59e0b !important;
     outline-offset: 2px;
 }
+
+/* ======================== NOTES TEXTAREA ======================== */
+#notes-content {
+    display: block;
+    flex: 1;
+    width: 100%;
+    padding: 14px 13px;
+    font-size: 12.5px;
+    line-height: 1.75;
+    color: #c8c8e0;
+    background: #16162a;
+    border: none;
+    outline: none;
+    resize: none;
+    font-family: inherit;
+    white-space: pre-wrap;
+    word-break: break-word;
+    box-sizing: border-box;
+    overflow-y: auto;
+}
+
+#notes-content::placeholder {
+    color: #5a5a7a;
+    font-style: italic;
+}
+
+#notes-content::-webkit-scrollbar { width: 4px; }
+#notes-content::-webkit-scrollbar-track { background: transparent; }
+#notes-content::-webkit-scrollbar-thumb { background: #3a3a5a; border-radius: 2px; }
 
 /* ======================== UTILITY ======================== */
 .visually-hidden {

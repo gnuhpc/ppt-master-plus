@@ -9,8 +9,13 @@
 <body>
     <div id="app">
         <div id="panel-left">
-            <div class="panel-header" data-i18n="panel_slides">Slides</div>
+            <div class="panel-left-tabs">
+                <button id="tab-slides" class="panel-tab active" type="button" data-i18n="tab_slides">目录</button>
+                <button id="tab-notes" class="panel-tab" type="button" data-i18n="tab_notes">演讲稿</button>
+                <button id="btn-notes-save" class="notes-save-btn" type="button" style="display:none;" data-i18n="btn_notes_save">保存</button>
+            </div>
             <div id="slide-list"></div>
+            <textarea id="notes-content" class="notes-textarea" style="display:none;"></textarea>
         </div>
         <div id="panel-center">
             <div id="slide-nav">

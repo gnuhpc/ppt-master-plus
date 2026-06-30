@@ -319,6 +319,15 @@ def remove_attribute(
     return True, None
 
 
+def delete_element(root: ET.Element, element_id: str) -> tuple[bool, Optional[str]]:
+    """Remove an element from the SVG tree by id. Returns (ok, reason)."""
+    target, parent = _find_with_parent(root, element_id)
+    if target is None or parent is None:
+        return False, 'not-found'
+    parent.remove(target)
+    return True, None
+
+
 def strip_unused_temp_ids(root: ET.Element, keep_ids: set) -> None:
     """Drop transient ``_edit_N`` ids except those in ``keep_ids`` and any
     element still carrying a submitted annotation (its id is the AI's locator).

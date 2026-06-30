@@ -57,8 +57,8 @@
             slide_error_tooltip: "Failed to parse this slide: ",
             reload_banner: "This slide was updated on disk. Click to reload.",
             modal_confirm_submit: "Apply staged attribute edits and annotations to disk?\n\nThe preview service will keep running. Click Exit preview when you want to stop it.",
-            modal_success_submit: "Changes saved to svg_output.\n\nReturn to the chat to re-export the PPTX or apply AI-needed annotations. The preview service is still running.",
-            modal_prompt_label: "Click to copy this prompt, then paste it into your AI tool chat:",
+            modal_success_submit: "Changes saved to svg_output.\n\nThe AI agent should apply annotations automatically. If it does not start within a minute, use the prompt below.",
+            modal_prompt_label: "Fallback: if the AI does not start automatically, copy this prompt and paste it into chat:",
             modal_prompt_copied: "Copied. Paste it into your AI tool chat.",
             apply_annotation_prompt: "Please modify slide page(s) {pages} according to the annotations saved in svg_output. The annotations have already been written into svg_output; inspect the annotated SVG element(s), apply the requested changes for those page(s), and MUST remove the annotation markers (`data-edit-target` and `data-edit-annotation`) after applying each annotation. Do not leave resolved annotations in the SVG. Re-export the PPTX if needed.",
             modal_confirm_exit: "Exit preview and stop the local server?\n\nUnapplied edits and annotations will be discarded.",
@@ -70,7 +70,17 @@
             nav_next: "Next slide (→)",
             nav_last: "Last slide (End)",
             nav_counter: "{current} / {total}",
-            nav_empty: "— / —"
+            nav_empty: "— / —",
+            btn_notes_title: "Speaker notes",
+            notes_panel_title: "Speaker Notes",
+            notes_loading: "Loading…",
+            notes_none: "No speaker notes for this slide.",
+            btn_delete: "Delete",
+            err_delete: "Delete failed: ",
+            annotation_delete_text: "Delete this element",
+            tab_slides: "Outline",
+            tab_notes: "Notes",
+            btn_notes_save: "Save"
         },
         zh: {
             page_title: "PPT Master - 实时预览",
@@ -122,9 +132,9 @@
             slide_error_tooltip: "该幻灯片解析失败:",
             reload_banner: "当前页已在磁盘上更新,点此重新加载。",
             modal_confirm_submit: "确认将暂存属性修改和标注写入磁盘?\n\n预览服务会继续运行。需要关闭时请点击退出预览。",
-            modal_success_submit: "修改已保存到 svg_output。\n\n请回到对话窗口重新导出 PPTX，或让 AI 应用需要判断的标注。预览服务仍在运行。",
-            modal_prompt_label: "点击复制以下 prompt，然后粘贴到你的 AI 工具对话框：",
-            modal_prompt_copied: "已复制。请粘贴到你的 AI 工具对话框。",
+            modal_success_submit: "修改已保存到 svg_output。\n\nAI Agent 应会自动开始应用标注，无需任何操作。如果一分钟内没有自动开始，再使用下方备用 prompt。",
+            modal_prompt_label: "备用：如果 AI 没有自动开始，复制以下 prompt 粘贴到对话框：",
+            modal_prompt_copied: "已复制。如需手动触发，请粘贴到 AI 对话框。",
             apply_annotation_prompt: "请修改第 {pages} 页：根据该页已保存到 svg_output 中的标注进行修改。标注已经写入 svg_output，请检查对应 SVG 中带标注的元素，按标注要求完成该页修改；每条标注修复完成后，必须移除标注标记（`data-edit-target` 和 `data-edit-annotation`），不要把已解决的标注留在 SVG 中。需要时重新导出 PPTX。",
             modal_confirm_exit: "退出预览并停止本地服务?\n\n未应用的属性修改和标注将被丢弃。",
             modal_success_exit: "预览已停止。\n\n可以关闭本标签页并回到对话窗口。",
@@ -135,9 +145,26 @@
             nav_next: "下一页 (→)",
             nav_last: "末页 (End)",
             nav_counter: "{current} / {total}",
-            nav_empty: "— / —"
+            nav_empty: "— / —",
+            btn_notes_title: "演讲稿",
+            notes_panel_title: "演讲稿",
+            notes_loading: "加载中…",
+            notes_none: "该页暂无演讲稿",
+            btn_delete: "删除",
+            err_delete: "删除失败: ",
+            annotation_delete_text: "删除此元素",
+            tab_slides: "目录",
+            tab_notes: "演讲稿",
+            btn_notes_save: "保存"
         }
     };
+
+    // Canonical delete annotation texts for both languages — used to detect
+    // delete annotations regardless of which language was active when they were added.
+    var _DELETE_ANNOTATION_TEXTS = ["Delete this element", "删除此元素"];
+    function isDeleteAnnotation(text) {
+        return _DELETE_ANNOTATION_TEXTS.indexOf(text) !== -1;
+    }
 
     var LANG = (function () {
         try {
@@ -220,6 +247,10 @@
     var navLastBtn        = document.getElementById("nav-last");
     var navCounterEl      = document.getElementById("nav-counter");
     var navNameEl         = document.getElementById("nav-name");
+    var tabSlides         = document.getElementById("tab-slides");
+    var tabNotes          = document.getElementById("tab-notes");
+    var btnNotesSave      = document.getElementById("btn-notes-save");
+    var notesContentEl    = document.getElementById("notes-content");
 
     // ---- State ------------------------------------------------------
     var currentSlide      = null;   // filename, e.g. "slide_01.svg"
@@ -234,12 +265,16 @@
     var editStackCount    = {};     // {name: staged edit count} — mirrors backend PENDING_EDITS
     var savedHintShown    = false;  // show the "staged edit" hint once per session
     var annotationsDirty  = false;  // unsaved annotations added/removed this session
+    var notesMode         = false;  // false=slides tab, true=notes tab
+    var notesDirty        = false;  // unsaved notes changes
+    var _notesLoadedText  = "";     // last-loaded notes text for dirty detection
 
     // Staged edits live in server memory until "Apply changes"; the server can
     // still idle-timeout or be killed and drop them. Warn before the tab leaves
     // so the user remembers to apply (browsers show their own generic prompt).
     function hasUnsavedWork() {
         if (annotationsDirty) return true;
+        if (notesDirty) return true;
         return Object.keys(editStackCount).some(function (k) {
             return editStackCount[k] > 0;
         });
@@ -455,6 +490,7 @@
         selectedElementIds.clear();
         slideAnnotations = {};
         updateNavLabel();
+        if (notesMode) loadCurrentNotes();
 
         // Reset right panel and rubber band
         cancelRubberBand();
@@ -1259,6 +1295,20 @@
                 updateSelectionPanel();
             }
 
+            // Delete/Backspace: delete selected elements when not typing.
+            if (e.key === "Delete" || e.key === "Backspace") {
+                var focusedEl = document.activeElement;
+                if (focusedEl && (focusedEl === annotationText || focusedEl.tagName === "INPUT" ||
+                        focusedEl.tagName === "TEXTAREA" || focusedEl.tagName === "SELECT")) {
+                    return;
+                }
+                if (selectedElementIds.size > 0) {
+                    e.preventDefault();
+                    deleteSelectedElements();
+                    return;
+                }
+            }
+
             // Escape: close the overlap picker first if open, else clear selection.
             if (e.key === "Escape") {
                 if (document.activeElement === annotationText) return;
@@ -1306,6 +1356,106 @@
         if (navPrevBtn)  navPrevBtn.addEventListener("click", function ()  { gotoSlideIndex(currentSlideIndex() - 1); });
         if (navNextBtn)  navNextBtn.addEventListener("click", function ()  { gotoSlideIndex(currentSlideIndex() + 1); });
         if (navLastBtn)  navLastBtn.addEventListener("click", function ()  { gotoSlideIndex(slideNames.length - 1); });
+    }
+
+    // ================================================================
+    //  Notes tab (left panel)
+    // ================================================================
+    function setNotesDirty(dirty) {
+        notesDirty = dirty;
+        if (btnNotesSave) btnNotesSave.style.display = dirty ? "" : "none";
+    }
+
+    function loadCurrentNotes() {
+        if (!notesContentEl) return;
+        if (!currentSlide) {
+            notesContentEl.value = "";
+            notesContentEl.placeholder = t("notes_none");
+            _notesLoadedText = "";
+            setNotesDirty(false);
+            return;
+        }
+        notesContentEl.placeholder = t("notes_loading");
+        notesContentEl.value = "";
+        _notesLoadedText = "";
+        setNotesDirty(false);
+        fetch("/api/slide/" + encodeURIComponent(currentSlide) + "/notes")
+            .then(function (r) { return r.json(); })
+            .then(function (data) {
+                if (!notesContentEl) return;
+                var text = (data.notes || "").trim();
+                notesContentEl.value = text;
+                notesContentEl.placeholder = t("notes_none");
+                _notesLoadedText = text;
+                setNotesDirty(false);
+            })
+            .catch(function () {
+                if (notesContentEl) {
+                    notesContentEl.value = "";
+                    notesContentEl.placeholder = t("notes_none");
+                }
+            });
+    }
+
+    function saveCurrentNotes(silent) {
+        if (!currentSlide || !notesContentEl) return Promise.resolve();
+        var text = notesContentEl.value;
+        return fetch("/api/slide/" + encodeURIComponent(currentSlide) + "/notes", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ notes: text })
+        })
+        .then(function (r) { return r.json(); })
+        .then(function () {
+            _notesLoadedText = text;
+            if (!silent && btnNotesSave) {
+                var orig = btnNotesSave.textContent;
+                btnNotesSave.textContent = "✓";
+                setTimeout(function () {
+                    setNotesDirty(false);
+                    btnNotesSave.textContent = orig;
+                }, 700);
+            } else {
+                setNotesDirty(false);
+            }
+        })
+        .catch(function (err) {
+            if (!silent) showError(t("err_save") + (err.message || err));
+        });
+    }
+
+    function switchTab(mode) {
+        notesMode = (mode === "notes");
+        if (tabSlides) tabSlides.classList.toggle("active", !notesMode);
+        if (tabNotes) tabNotes.classList.toggle("active", notesMode);
+        if (slideListEl) slideListEl.style.display = notesMode ? "none" : "";
+        if (notesContentEl) notesContentEl.style.display = notesMode ? "" : "none";
+        if (!notesMode) setNotesDirty(false);
+        if (notesMode) loadCurrentNotes();
+    }
+
+    function initNotes() {
+        if (tabSlides) {
+            tabSlides.addEventListener("click", function () {
+                if (notesMode && notesDirty) saveCurrentNotes(true);
+                switchTab("slides");
+            });
+        }
+        if (tabNotes) {
+            tabNotes.addEventListener("click", function () {
+                switchTab("notes");
+            });
+        }
+        if (notesContentEl) {
+            notesContentEl.addEventListener("input", function () {
+                setNotesDirty(notesContentEl.value !== _notesLoadedText);
+            });
+        }
+        if (btnNotesSave) {
+            btnNotesSave.addEventListener("click", function () {
+                saveCurrentNotes(false);
+            });
+        }
     }
 
     // ================================================================
@@ -1370,14 +1520,20 @@
     //  8.  refreshAnnotationVisuals
     // ================================================================
     function refreshAnnotationVisuals() {
-        // Clear all annotated marks
-        svgContent.querySelectorAll(".svg-annotated").forEach(function (el) {
+        // Clear all annotated/deleting marks
+        svgContent.querySelectorAll(".svg-annotated, .svg-deleting").forEach(function (el) {
             el.classList.remove("svg-annotated");
+            el.classList.remove("svg-deleting");
         });
-        // Apply marks
+        // Apply marks — delete annotations get an extra red overlay class
         Object.keys(slideAnnotations).forEach(function (eid) {
             var el = svgContent.querySelector("#" + CSS.escape(eid));
-            if (el) el.classList.add("svg-annotated");
+            if (el) {
+                el.classList.add("svg-annotated");
+                if (isDeleteAnnotation(slideAnnotations[eid])) {
+                    el.classList.add("svg-deleting");
+                }
+            }
         });
     }
 
@@ -1430,9 +1586,14 @@
 
             item.appendChild(header);
 
+            var annText = slideAnnotations[eid];
+            if (isDeleteAnnotation(annText)) {
+                item.classList.add("ann-item-delete");
+            }
+
             var textDiv = document.createElement("div");
             textDiv.className = "ann-text";
-            textDiv.textContent = slideAnnotations[eid];
+            textDiv.textContent = annText;
             item.appendChild(textDiv);
 
             annotationsEl.appendChild(item);
@@ -1635,7 +1796,7 @@
     }
 
     function startSlidePolling() {
-        if (!liveMode || slidePollTimer) return;
+        if (slidePollTimer) return;
         slidePollTimer = window.setInterval(function () {
             loadSlides();
         }, 2000);
@@ -1681,6 +1842,39 @@
     }
 
     // ================================================================
+    //  Delete selected elements  (annotation-based: marks the element
+    //  for deletion via the annotation workflow so the AI discovers it
+    //  after Apply changes and removes it from the SVG)
+    // ================================================================
+    function deleteSelectedElements() {
+        if (!currentSlide || selectedElementIds.size === 0) return;
+        var ids = Array.from(selectedElementIds);
+        var deleteText = t("annotation_delete_text");
+
+        var promises = ids.map(function (eid) {
+            return fetch("/api/slide/" + encodeURIComponent(currentSlide) + "/annotate", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ element_id: eid, annotation: deleteText })
+            }).then(jsonOrThrow);
+        });
+
+        Promise.all(promises)
+            .then(function () {
+                ids.forEach(function (eid) {
+                    slideAnnotations[eid] = deleteText;
+                });
+                annotationsDirty = true;
+                refreshAnnotationVisuals();
+                updateAnnotationList();
+                loadSlides();
+            })
+            .catch(function (err) {
+                showError(t("err_delete") + err.message);
+            });
+    }
+
+    // ================================================================
     //  Property extraction & rendering
     // ================================================================
     // Editable property panel for a single selected element: computed geometry,
@@ -1689,7 +1883,8 @@
         var tag = localName(el);
         var isGroup = tag === "g";
         var html = '<div class="prop-caption">' +
-            escapeHtml(isGroup ? t("label_group_edit") : t("label_direct_edit")) + '</div>';
+            escapeHtml(isGroup ? t("label_group_edit") : t("label_direct_edit")) + '</div>' +
+            '<button type="button" class="btn-delete-el">' + escapeHtml(t("btn_delete")) + '</button>';
 
         var parentGroup = nearestParentGroup(el);
         if (parentGroup && !isGroup) {
@@ -2186,6 +2381,11 @@
         var eid = el.id;
         var panel = elementPropsEl;
 
+        var deleteBtn = panel.querySelector(".btn-delete-el");
+        if (deleteBtn) {
+            deleteBtn.addEventListener("click", deleteSelectedElements);
+        }
+
         var groupBtn = panel.querySelector(".btn-select-group");
         if (groupBtn) {
             groupBtn.addEventListener("click", function () {
@@ -2345,7 +2545,8 @@
 
     function renderMultiSelectSummary(ids) {
         var moveEls = topLevelSelectedElements(ids);
-        var summary = '<div class="prop-caption">' + escapeHtml(t("label_batch_edit")) + '</div>';
+        var summary = '<div class="prop-caption">' + escapeHtml(t("label_batch_edit")) + '</div>' +
+            '<button type="button" class="btn-delete-el">' + escapeHtml(t("btn_delete")) + '</button>';
 
         if (moveEls.length > 0) {
             try {
@@ -2459,6 +2660,12 @@
 
     function attachMultiSelectionEditors(ids) {
         var panel = elementPropsEl;
+
+        var deleteBtn = panel.querySelector(".btn-delete-el");
+        if (deleteBtn) {
+            deleteBtn.addEventListener("click", deleteSelectedElements);
+        }
+
         var moveEls = topLevelSelectedElements(ids);
         if (moveEls.length === 0) return;
 
@@ -2557,5 +2764,6 @@
     initRubberBand();
     initKeyboardShortcuts();
     initSlideNav();
+    initNotes();
     if (btnUndo) btnUndo.addEventListener("click", runUndo);
 })();
