@@ -4,7 +4,54 @@
 
 `ppt-master-plus` 是一个面向高质量、可编辑 PPTX 生产的通用 AI agent skill。它以 [`ppt-master`](https://github.com/hugohe3/ppt-master) 的 SVG→PPTX 方法论和制作链路为底座，融合上游 [`hugohe3/ppt-master`](https://github.com/hugohe3/ppt-master) 的 PPTX intake、美化、原生增强与 Confirm UI 能力，并新增传统行业模板、分阶段审核和软依赖绘图路由。
 
-它的目标不是“快速吐几页幻灯片”，而是把资料理解、叙事组织、视觉规范、逐页制作、讲稿质检和最终导出串成一条可控的生产线。
+它的目标不是”快速吐几页幻灯片”，而是把资料理解、叙事组织、视觉规范、逐页制作、讲稿质检和最终导出串成一条可控的生产线。
+
+## 安装
+
+### 1. 告诉 AI Agent 使用此 skill
+
+将以下地址告知你的 AI agent（例如 FleetView / Claude Code 的 skill 配置）：
+
+```
+https://github.com/gnuhpc/ppt-master-plus
+```
+
+Agent 会自动拉取 skill 并将 `SKILL_DIR` 指向本地目录。
+
+### 2. 安装 Python 依赖（必需）
+
+在 skill 目录下执行：
+
+```bash
+pip install -r requirements.txt
+```
+
+这会安装 SVG→PPTX 转换（`python-pptx`）、文档解析（`PyMuPDF`、`mammoth`、`openpyxl` 等）、网页抓取（`requests`、`beautifulsoup4`）、AI 图片生成（`google-genai`）、TTS 旁白（`edge-tts`）和 Live Preview 编辑器（`flask`）所需的全部核心库。
+
+**可选增强（推荐安装）**
+
+| 工具 | 用途 | 安装命令 |
+|---|---|---|
+| CairoSVG | 更高质量的 SVG→PNG 渲染（Office 兼容模式）| macOS: `brew install cairo && pip install cairosvg`<br>Ubuntu: `sudo apt install libcairo2 && pip install cairosvg` |
+| Pandoc | 支持 `.doc` / `.odt` / `.rtf` / `.rst` / `.tex` 等小众文档格式 | macOS: `brew install pandoc`<br>Ubuntu: `sudo apt install pandoc` |
+| curl_cffi | 访问微信公众号等有 TLS 指纹屏蔽的网页 | `pip install curl_cffi` |
+
+### 3. 安装可选伴侣 skill（按需）
+
+以下绘图 skill 均为**软依赖**——缺失时自动降级回内置 SVG，不影响核心 PPTX 生产流程。仅在需要对应绘图风格时安装：
+
+| Skill | 适用场景 | GitHub 地址 |
+|---|---|---|
+| `fireworks-tech-graph` | 正式技术架构图、系统拓扑、数据流图 | [yizhiyanhua-ai/fireworks-tech-graph](https://github.com/yizhiyanhua-ai/fireworks-tech-graph) |
+| `excalidraw` | 手绘风格、白板、头脑风暴，保留可编辑源文件 | [Agents365-ai/excalidraw-skill](https://github.com/Agents365-ai/excalidraw-skill) |
+| `creating-mermaid-diagrams` | Mermaid 流程图、时序图、ER 图、C4 | [Agents365-ai/creating-mermaid-diagrams](https://github.com/Agents365-ai/creating-mermaid-diagrams) |
+| `plantuml-skill` | PlantUML UML 图、状态机、组件图 | [Agents365-ai/plantuml-skill](https://github.com/Agents365-ai/plantuml-skill) |
+| `drawio-skill` | draw.io 精准拓扑、云厂商图标、严格 UML | [Agents365-ai/drawio-skill](https://github.com/Agents365-ai/drawio-skill) |
+| `tldraw-skill` | tldraw 白板原生风格 | [Agents365-ai/tldraw-skill](https://github.com/Agents365-ai/tldraw-skill) |
+
+将上述 skill 地址逐一告知 AI Agent 即可完成安装，Agent 会在需要时自动路由到对应 skill。
+
+---
 
 ## 与 ppt-master 的功能对比
 
