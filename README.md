@@ -2,7 +2,7 @@
 
 ![PPT Master Plus 扁平手绘宣传图](assets/ppt-master-plus-cover.png)
 
-`ppt-master-plus` 是一个面向高质量、可编辑 PPTX 生产的通用 AI agent skill。它以 [`ppt-master`](https://github.com/hugohe3/ppt-master) 的 SVG→PPTX 方法论和制作链路为底座，融合上游 [`hugohe3/ppt-master`](https://github.com/hugohe3/ppt-master) 的 PPTX intake、美化、原生增强与 Confirm UI 能力，并新增传统行业模板、分阶段审核和软依赖绘图路由。
+`ppt-master-plus` 是一个面向高质量、可编辑 PPTX 生产的通用 AI agent skill。它以 [`ppt-master`](https://github.com/hugohe3/ppt-master) 的 SVG→PPTX 方法论和制作链路为底座，在本仓库中补强 PPTX intake、保真美化、原生增强与 Confirm UI 能力，并新增传统行业模板、分阶段审核和软依赖绘图路由。
 
 它的目标不是”快速吐几页幻灯片”，而是把资料理解、叙事组织、视觉规范、逐页制作、讲稿质检和最终导出串成一条可控的生产线。
 
@@ -28,21 +28,22 @@
 
 | 功能维度 | `ppt-master` (标准版) | `ppt-master-plus` (进阶版) |
 | :--- | :--- | :--- |
-| **定位与重点** | 面向标准 SVG→PPTX 生成，强调快捷、批量自动排版。 | 面向高水准商业汇报、流程交互确认、以及多源技术架构图路由。 |
-| **生成模式控制** | • **连续模式**：一气呵成直接生成整份 PPT。 | • **逐页确定精修（Gated）**：生成每页都停下供预览与批注确认。<br>• **连续模式**：自动不打断生成。<br>• **分段模式（Split）**：长文档跨对话分阶段执行。 |
-| **网页配置端与批注机制** | 基础配置（调色板、字体、主题元素）。生成过程中忽视批注，导出后统一应用。 | 升级版 Confirm UI（支持模式切换与 `preserve_master`）。**支持中途批注修复**：生成过程中点击 **Apply changes** 后，AI 自动读取批注并开始修复；Antigravity CLI 与 Codex Desktop 都通过 `--wait-annotation` 监听适配。 |
-| **Live Preview 页内直接编辑** | 无。导出后在 PowerPoint 中手动修改。 | 支持三类无需 AI 介入的交互式编辑：**直接属性改写**（文字、颜色、坐标、SVG 属性）；**批注标记**（描述复杂意图，交由 AI 在 Apply changes 后处理）；**元素删除标注**（选中元素后按 Delete/Backspace 或点击删除按钮，元素以红框+半透明标记为"待删"，记录到批注面板，AI 在 Apply changes 后完成实际删除）。 |
-| **演讲稿在线编辑** | 无。需在 PowerPoint 中手动输入讲稿。 | Left 面板内置 **目录 / 演讲稿** 切换标签：切换到演讲稿标签即可直接编辑当前页讲稿，有改动时面板顶部出现 **保存** 按钮，点击后立即写入 `notes/<slide>.md`，无需 Apply changes。 |
-| **美化入口路由** | 无独立美化流程。无论用户要求如何，PPTX 一律经 `ppt_to_md.py` 提取为 Markdown 后走主生产流程，Strategist 可自由重构叙事、页数、页序和视觉系统。 | 智能路由：泛化请求（"美化一下"/"让它更专业"）→ 主流程（Strategist 自由重构）；用户显式要求保留页数/页序/文字/母版 → [`beautify-pptx.md`](workflows/beautify-pptx.md) 保真美化流程，两种路线互不混淆。 |
-| **保真美化（Faithful Beautify）** | 不支持。PPTX 被当作普通资料输入，不区分内容保留约束，不保证页数/页序/文字不变。 | 专属工作流 [`beautify-pptx.md`](workflows/beautify-pptx.md)：<br>• **画布原尺寸**：`beautify_identity.py` 从 PPTX `p:sldSz` 读取精确像素尺寸，不强制归一化到 1280×720<br>• **内容冻结契约**：`pptx_intake.py` + `beautify_inventory.py` 生成逐页台账（文字/图表数据/表格/图片），文字逐字冻结，数据值锁定，严格 1:1 页数映射<br>• **源身份提取**：`analysis/<stem>.identity.json` 含主题调色板、实际观察字体/字号；Confirm UI 以源 PPT 风格预填，用户可确认或覆盖<br>• **`preserve_master`**：OOXML 级逐页保留——源第 N 页的 slideLayout/master 映射到输出第 N 页，主版式背景/Logo/页脚等 PPT 原生元素不转入 SVG，由母版承载<br>• **图表再生成模式**：`preserve_master=true` → 自由设计；`false` → catalog 引导（与主流程一致）<br>• **输出验证**：对导出 PPTX 重跑 `ppt_to_md.py`，逐页核对文字保真度和页数 |
+| **定位与重点** | 严格串行的多源资料→SVG→PPTX 生产链，强调内容理解、模板/规范锁定、逐页手写 SVG、质量检查和原生可编辑 PPTX 导出。 | 在同一方法论上扩展为更完整的 PPTX 生产系统，重点补强已有 PPTX 处理、逐页确认、批注回修、讲稿门禁、原生增强和多源技术图路由。 |
+| **生成模式控制** | 默认在八项设计确认后连续生成整份 PPT；长文档可在 Step 5 后用 `resume-execute` 跨对话进入 Phase B。 | 把 `continuous` / `gated` / `split` 明确纳入 Confirm UI 与 `spec_lock.md`：可全自动一次性生成，也可逐页确定精修，长文档仍可跨对话生产。 |
+| **网页配置端与批注机制** | 有 Confirm UI 作为八项设计确认界面，也有 Live Preview；生成期继续按串行流程推进，注解主要在导出后按 `live-preview` 工作流统一处理。 | Confirm UI 升级为两阶段确认，覆盖 `content_divergence`、`generation_mode`、`transition_effect`、`refine_spec` 等字段；生成期通过 `--wait-annotation` 监听 **Apply changes**，可在安全检查点自动读取批注并回修。 |
+| **Live Preview 页内直接编辑** | 支持浏览器实时预览、staged direct edits（文本与 SVG 属性暂存后应用）和批注回收；导出后可按工作流处理注解并重新导出。 | 保留这些能力，并把它们接入 Gated/Continuous 生产闭环：逐页门禁下每页可确认、批注、修复、再确认；Continuous 下也能在生成安全点捕获批注并自动重挂监听。 |
+| **演讲稿在线编辑** | 生成 speaker notes，并通过 `total_md_split.py` 拆分进 PPTX；主要由 Agent/文件流程维护讲稿。 | Live Preview 左侧面板内置 **目录 / 演讲稿** 切换标签：可直接编辑当前页讲稿，点击 **保存** 后写入 `notes/<slide>.md`，无需 Apply changes。 |
+| **PPTX intake / source profile** | PPTX 可经 `ppt_to_md.py` 提取为 Markdown 后作为普通资料进入主流程。 | `import-sources` 会额外运行 `pptx_intake.py`，生成 `analysis/source_profile.json`、`<stem>.identity.json`、`<stem>.slide_library.json`，把画布、主题、几何、表格和图表事实提供给 Strategist 作上下文。 |
+| **美化入口路由** | 既有 PPTX 作为资料输入主生产流程，Strategist 可自由重构叙事、页数、页序和视觉系统；不单独区分“保留原稿”的美化契约。 | 路由边界更清晰：泛化请求（"美化一下"/"让它更专业"）→ 主流程自由重构；显式要求保留页数/页序/文字/母版 → [`beautify-pptx.md`](workflows/beautify-pptx.md) 保真美化；成品只追加讲稿/音频/转场 → [`native-enhance-pptx.md`](workflows/native-enhance-pptx.md)。 |
+| **保真美化（Faithful Beautify）** | 不提供独立 1:1 保真美化路线；若输入 PPTX，仍按资料重建，不把原页数、页序、逐页文字或母版当作锁定契约。 | 专属工作流 [`beautify-pptx.md`](workflows/beautify-pptx.md)：<br>• **画布原尺寸**：`beautify_identity.py` 从 PPTX `p:sldSz` 读取精确像素尺寸，不强制归一化到 1280×720<br>• **内容冻结契约**：`pptx_intake.py` + `beautify_inventory.py` 生成逐页台账（文字/图表数据/表格/图片），文字逐字冻结，数据值锁定，严格 1:1 页数映射<br>• **源身份提取**：`analysis/<stem>.identity.json` 含主题调色板、实际观察字体/字号；Confirm UI 以源 PPT 风格预填，用户可确认或覆盖<br>• **`preserve_master`**：OOXML 级逐页保留，源第 N 页的 slideLayout/master 映射到输出第 N 页，主版式背景/Logo/页脚等 PPT 原生元素由母版承载<br>• **输出验证**：对导出 PPTX 重跑 `ppt_to_md.py`，逐页核对文字保真度和页数 |
 | **Deck 模板** | 8 套品牌专属 Deck 模板（中国电信、中国电建、中汽研、招商银行、重庆大学等企业/高校定制风格）。 | **30 套**：继承 8 套品牌模板 + 1 套 ffa_shenzhen + **21 套传统行业模板**（商业汇报、咨询麦肯锡风、教学课件、党建、竞聘述职、数据可视化、学术开题等全场景覆盖），配 3 套专属版式规范指导文件（[`executor-general.md`](references/executor-general.md)、[`executor-consultant.md`](references/executor-consultant.md)、[`executor-consultant-top.md`](references/executor-consultant-top.md)）。 |
 | **图表 / 信息图 SVG** | 71 个（图表、流程、框架、信息图、战略模型等基础覆盖）。 | **131 个**（在 71 个基础上新增 60 个，进一步覆盖更丰富的可视化结构和行业场景）。 |
 | **Layout 骨架** | 7 组（学术答辩、AI 运营、政务蓝/红、医学、像素复古、心理学共 7 种结构骨架）。 | **23 组**（在 7 组基础上新增 16 组，覆盖极简商务、编辑性衬线、水彩多彩、产品发布、大理石灰、水墨极简等更多版式风格）。 |
 | **Brand preset** | 2 套（anthropic、google）。 | **3 套**（新增 flink_ai_style）。 |
 | **图标库** | 11,631 个 SVG，含 chunk-filled / phosphor-duotone / simple-icons / tabler-filled / tabler-outline 五套图标库。 | 同款 5 套图标库、同等规模（11,631 个），未扩展；图标检索和复制流程相同。 |
-| **外部绘图路由** | 仅支持内置 SVG 基础图解。 | **软依赖绘图路由器**：智能分流到 `fireworks-tech-graph`、`excalidraw`（手绘风格可编辑源文件）、`Mermaid`、`PlantUML` 或 `draw.io`，环境缺失时自动降级回内置 SVG，绝不阻塞。 |
-| **讲稿与质检** | 基础字数和段落检查。 | 强制性 SVG 结构警告、PPTX 导出校验，新增讲稿专项校验脚本（[`check_speaker_notes.py`](scripts/check_speaker_notes.py) 与 [`speaker-notes.md`](references/speaker-notes.md)）；讲稿检查是导出前的**硬性门禁**，零错误才允许进入后处理。 |
-| **原生 PPTX 增强** | 无此路线。给定 PPTX 必须先提取为 Markdown 再走 SVG 重建流程，不能只追加元数据。 | 专属工作流 [`native-enhance-pptx.md`](workflows/native-enhance-pptx.md)：对已有成品 PPTX 进行 **OOXML zip 级直接 patch**，可追加讲稿、录音音频、自动播放时序和页面转场——全程不走 SVG 转换，不改写任何已有形状/图表/图片/母版，是"加料不重建"的专属路线。 |
+| **外部绘图路由** | 主要依靠内置 SVG、图表模板和图标库完成图解表达。 | **软依赖绘图路由器**：可按场景分流到 `fireworks-tech-graph`、`excalidraw`（手绘风格可编辑源文件）、`Mermaid`、`PlantUML`、`draw.io` 或 `tldraw`；环境缺失时自动降级回内置 SVG，绝不阻塞主流程。 |
+| **讲稿与质检** | 支持生成 speaker notes，并通过 `total_md_split.py` 拆分后随 PPTX 导出；SVG 质量检查是导出前的重要门禁。 | 在此基础上新增讲稿专项规范与校验脚本（[`check_speaker_notes.py`](scripts/check_speaker_notes.py) 与 [`speaker-notes.md`](references/speaker-notes.md)）；讲稿检查是导出前的**硬性门禁**，零错误才允许进入后处理。 |
+| **原生 PPTX 增强** | 给定 PPTX 通常先提取为 Markdown 再走 SVG 重建流程；不提供只追加播放/讲稿/音频元数据的独立路线。 | 专属工作流 [`native-enhance-pptx.md`](workflows/native-enhance-pptx.md)：对已有成品 PPTX 进行 **OOXML zip 级直接 patch**，可追加讲稿、录音音频、自动播放时序和页面转场，全程不走 SVG 转换，不改写任何已有形状/图表/图片/母版。 |
 | **默认动画策略** | 导出时默认启用元素入场动画（`-a auto`），AI 自动按组别匹配效果。 | 导出时**默认关闭动画**（`-a none`），整页一次性出现，避免"AI 痕迹"感知；仅在用户明确要求时才开启入场动画或页面转场。 |
 | **用户配置文件夹** | 使用 `~/.ppt-master` 存储配置与密钥。 | 使用新路径 `~/.ppt-master-plus`，并**支持平滑回退**以读取旧的 `~/.ppt-master` 配置文件。 |
 | **自动化契约测试** | 无专门的自动化合约测试套件。 | **新增契约测试**（[`test_skill_contract.py`](scripts/tests/test_skill_contract.py)），自动验证 Gated/Continuous 流程、Live Preview 交互细节及 OOXML 母版媒体完整性。 |
@@ -79,7 +80,7 @@
 
 ## 常见使用方式
 
-关于用户使用时候的具体动作和交互指令，请首先参阅 **[最佳实践指南](file:///Users/gnuhpc/projects/skills/ppt-master-plus/references/best-practices.md)**。
+关于用户使用时候的具体动作和交互指令，请首先参阅 **[最佳实践指南](references/best-practices.md)**。
 
 ### 1. 从文档创建新的 PPTX
 
@@ -125,7 +126,7 @@
 
 ## 浏览器确认、预览与反馈
 
-在生成过程中，系统会自动提示并引导您打开本地浏览器进行配置和预览确认。具体的交互细节请参考 **[最佳实践指南](file:///Users/gnuhpc/projects/skills/ppt-master-plus/references/best-practices.md)**。
+在生成过程中，系统会自动提示并引导您打开本地浏览器进行配置和预览确认。具体的交互细节请参考 **[最佳实践指南](references/best-practices.md)**。
 
 ### 设计确认页面（Confirm UI）
 *   **动作**：在 Strategist 阶段，系统提示后在浏览器中打开 `http://localhost:5050`。
@@ -210,6 +211,6 @@ Post-processing
 
 `ppt-master-plus` 继承并致敬 [`ppt-master`](https://github.com/hugohe3/ppt-master)：它保留了原有 skill 对”原生可编辑 PPTX””高质量 SVG 页面””模板驱动制作”和”中文汇报场景”的执着，同时在此基础上把 Deck 模板从 8 套扩充到 30 套（新增 21 套传统行业模板和 ffa_shenzhen）、图表 SVG 从 71 个扩充到 131 个、Layout 骨架从 7 组扩充到 23 组，并新增了讲稿质检能力和更严格的生产流程。
 
-这个 `plus` 不是推翻，而是延展：在 [`ppt-master`](https://github.com/hugohe3/ppt-master) 的地基上，把上游的新工具链、分阶段审核、PPTX 原生增强、软依赖绘图路由和更严格的生产纪律合并到一条更完整的工作流里。
+这个 `plus` 不是推翻，而是延展：在 [`ppt-master`](https://github.com/hugohe3/ppt-master) 的地基上，把新的 intake / beautify / enhance 工具链、分阶段审核、PPTX 原生增强、软依赖绘图路由和更严格的生产纪律合并到一条更完整的工作流里。
 
 感谢 [`ppt-master`](https://github.com/hugohe3/ppt-master) 打下的底层方法论：先理解内容，再设计叙事；先锁定规范，再逐页制作；最终交付的不是图片截图，而是可编辑、可演示、可继续加工的 PowerPoint。
