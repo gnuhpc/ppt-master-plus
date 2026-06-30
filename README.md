@@ -25,7 +25,9 @@
 | **Brand preset** | 2 套（anthropic、google）。 | **3 套**（新增 flink_ai_style）。 |
 | **图标库** | 11,631 个 SVG，含 chunk-filled / phosphor-duotone / simple-icons / tabler-filled / tabler-outline 五套图标库。 | 同款 5 套图标库、同等规模（11,631 个），未扩展；图标检索和复制流程相同。 |
 | **外部绘图路由** | 仅支持内置 SVG 基础图解。 | **软依赖绘图路由器**：智能分流到 `fireworks-tech-graph`、`excalidraw`（手绘风格可编辑源文件）、`Mermaid`、`PlantUML` 或 `draw.io`，环境缺失时自动降级回内置 SVG，绝不阻塞。 |
-| **讲稿与质检** | 基础字数和段落检查。 | 强制性 SVG 结构警告、PPTX 导出校验，并**新增讲稿专项校验脚本**（[`check_speaker_notes.py`](scripts/check_speaker_notes.py) 与 [`speaker-notes.md`](references/speaker-notes.md)）。 |
+| **讲稿与质检** | 基础字数和段落检查。 | 强制性 SVG 结构警告、PPTX 导出校验，新增讲稿专项校验脚本（[`check_speaker_notes.py`](scripts/check_speaker_notes.py) 与 [`speaker-notes.md`](references/speaker-notes.md)）；讲稿检查是导出前的**硬性门禁**，零错误才允许进入后处理。 |
+| **原生 PPTX 增强** | 无此路线。给定 PPTX 必须先提取为 Markdown 再走 SVG 重建流程，不能只追加元数据。 | 专属工作流 [`native-enhance-pptx.md`](workflows/native-enhance-pptx.md)：对已有成品 PPTX 进行 **OOXML zip 级直接 patch**，可追加讲稿、录音音频、自动播放时序和页面转场——全程不走 SVG 转换，不改写任何已有形状/图表/图片/母版，是"加料不重建"的专属路线。 |
+| **默认动画策略** | 导出时默认启用元素入场动画（`-a auto`），AI 自动按组别匹配效果。 | 导出时**默认关闭动画**（`-a none`），整页一次性出现，避免"AI 痕迹"感知；仅在用户明确要求时才开启入场动画或页面转场。 |
 | **用户配置文件夹** | 使用 `~/.ppt-master` 存储配置与密钥。 | 使用新路径 `~/.ppt-master-plus`，并**支持平滑回退**以读取旧的 `~/.ppt-master` 配置文件。 |
 | **自动化契约测试** | 无专门的自动化合约测试套件。 | **新增契约测试**（[`test_skill_contract.py`](scripts/tests/test_skill_contract.py)），自动验证 Gated/Continuous 流程、Live Preview 交互细节及 OOXML 母版媒体完整性。 |
 
