@@ -80,7 +80,11 @@
             annotation_delete_text: "Delete this element",
             tab_slides: "Outline",
             tab_notes: "Notes",
-            btn_notes_save: "Save"
+            btn_notes_save: "Save",
+            popover_title_page: "Annotate page",
+            popover_placeholder: "Additional notes...",
+            ann_tag_page: "Page",
+            btn_page_annotate_title: "Annotate entire page"
         },
         zh: {
             page_title: "PPT Master - 实时预览",
@@ -155,7 +159,11 @@
             annotation_delete_text: "删除此元素",
             tab_slides: "目录",
             tab_notes: "演讲稿",
-            btn_notes_save: "保存"
+            btn_notes_save: "保存",
+            popover_title_page: "标注整页",
+            popover_placeholder: "补充说明……",
+            ann_tag_page: "整页",
+            btn_page_annotate_title: "标注整页"
         }
     };
 
@@ -165,6 +173,15 @@
     function isDeleteAnnotation(text) {
         return _DELETE_ANNOTATION_TEXTS.indexOf(text) !== -1;
     }
+
+    var QUICK_ISSUES = [
+        { en: "Text obscured", zh: "文字遮挡" },
+        { en: "Text overflow", zh: "文字溢出" },
+        { en: "Legend obscured", zh: "图例遮挡" },
+        { en: "Elements overlapping", zh: "元素重叠" },
+        { en: "Misaligned", zh: "对齐偏移" },
+        { en: "Improper size", zh: "尺寸不当" }
+    ];
 
     var LANG = (function () {
         try {
@@ -252,6 +269,14 @@
     var btnNotesSave      = document.getElementById("btn-notes-save");
     var notesContentEl    = document.getElementById("notes-content");
 
+    var popoverOverlay    = document.getElementById("annotation-popover-overlay");
+    var popoverTitle      = document.getElementById("popover-title");
+    var popoverClose      = document.getElementById("popover-close");
+    var popoverChips      = document.getElementById("popover-chips");
+    var popoverText       = document.getElementById("popover-text");
+    var popoverSubmit     = document.getElementById("popover-submit");
+    var btnPageAnnotate   = document.getElementById("btn-page-annotate");
+
     // ---- State ------------------------------------------------------
     var currentSlide      = null;   // filename, e.g. "slide_01.svg"
     var slideNames        = [];     // ordered slide filenames for navigation
@@ -268,6 +293,9 @@
     var notesMode         = false;  // false=slides tab, true=notes tab
     var notesDirty        = false;  // unsaved notes changes
     var _notesLoadedText  = "";     // last-loaded notes text for dirty detection
+    var _popoverTargetIds = [];
+    var _popoverSelectedChips = new Set();
+    var _popoverIsPage    = false;
 
     // Staged edits live in server memory until "Apply changes"; the server can
     // still idle-timeout or be killed and drop them. Warn before the tab leaves
@@ -484,7 +512,10 @@
         document.querySelectorAll(".slide-item").forEach(function (it) {
             it.classList.remove("active");
         });
-        if (el) el.classList.add("active");
+        if (el) {
+            el.classList.add("active");
+            el.scrollIntoView({ block: "nearest" });
+        }
 
         currentSlide = name;
         selectedElementIds.clear();
@@ -697,6 +728,7 @@
             annotationText.value = "";
             propsEl.style.display = "none";
             propsEl.innerHTML = "";
+            hideAnnotationPopover();
             return;
         }
 
@@ -721,13 +753,8 @@
             attachMultiSelectionEditors(Array.from(selectedElementIds));
         }
 
-        annotationInput.style.display = "block";
-        annotationText.placeholder = count > 1
-            ? t("placeholder_annotation_multi", { count: count })
-            : t("placeholder_annotation");
-        annotationText.value = count === 1
-            ? (slideAnnotations[selectedElementIds.values().next().value] || "")
-            : "";
+        annotationInput.style.display = "none";
+        showAnnotationPopover(Array.from(selectedElementIds), false);
     }
 
     // ---- Rubber band selection ----
@@ -1309,8 +1336,12 @@
                 }
             }
 
-            // Escape: close the overlap picker first if open, else clear selection.
+            // Escape: close annotation popover first, then overlap picker, then clear selection.
             if (e.key === "Escape") {
+                if (popoverOverlay && popoverOverlay.style.display !== "none") {
+                    hideAnnotationPopover();
+                    return;
+                }
                 if (document.activeElement === annotationText) return;
                 if (overlapPickerEl) { closeOverlapPicker(); return; }
                 clearSelection();
@@ -1356,6 +1387,18 @@
         if (navPrevBtn)  navPrevBtn.addEventListener("click", function ()  { gotoSlideIndex(currentSlideIndex() - 1); });
         if (navNextBtn)  navNextBtn.addEventListener("click", function ()  { gotoSlideIndex(currentSlideIndex() + 1); });
         if (navLastBtn)  navLastBtn.addEventListener("click", function ()  { gotoSlideIndex(slideNames.length - 1); });
+
+        if (slideListEl) {
+            slideListEl.setAttribute("tabindex", "0");
+            slideListEl.addEventListener("keydown", function (e) {
+                if (e.key === "ArrowUp" || e.key === "ArrowDown") {
+                    e.preventDefault();
+                    var idx = currentSlideIndex();
+                    var next = e.key === "ArrowUp" ? idx - 1 : idx + 1;
+                    gotoSlideIndex(next);
+                }
+            });
+        }
     }
 
     // ================================================================
@@ -1459,6 +1502,127 @@
     }
 
     // ================================================================
+    //  Annotation popover
+    // ================================================================
+    function showAnnotationPopover(targetIds, isPage) {
+        if (!popoverOverlay) return;
+        _popoverTargetIds = targetIds;
+        _popoverSelectedChips.clear();
+        _popoverIsPage = isPage;
+
+        if (isPage) {
+            popoverTitle.textContent = t("popover_title_page");
+        } else if (targetIds.length === 1) {
+            var el = svgContent.querySelector("#" + CSS.escape(targetIds[0]));
+            if (el) {
+                var tag = el.tagName.toLowerCase();
+                popoverTitle.textContent = "<" + tag + "> " + targetIds[0];
+            } else {
+                popoverTitle.textContent = targetIds[0];
+            }
+        } else {
+            popoverTitle.textContent = t("multi_selected", { count: targetIds.length });
+        }
+
+        renderPopoverChips();
+
+        if (!isPage && targetIds.length === 1 && slideAnnotations[targetIds[0]]) {
+            popoverText.value = slideAnnotations[targetIds[0]];
+        } else if (isPage && slideAnnotations["__page__"]) {
+            popoverText.value = slideAnnotations["__page__"];
+        } else {
+            popoverText.value = "";
+        }
+        popoverText.placeholder = t("popover_placeholder");
+
+        popoverOverlay.style.display = "flex";
+        setTimeout(function () { popoverText.focus(); }, 50);
+    }
+
+    function hideAnnotationPopover() {
+        if (!popoverOverlay) return;
+        popoverOverlay.style.display = "none";
+        _popoverTargetIds = [];
+        _popoverSelectedChips.clear();
+    }
+
+    function renderPopoverChips() {
+        if (!popoverChips) return;
+        popoverChips.innerHTML = "";
+        QUICK_ISSUES.forEach(function (issue, idx) {
+            var chip = document.createElement("button");
+            chip.className = "popover-chip";
+            chip.type = "button";
+            chip.textContent = issue[LANG] || issue.en;
+            chip.addEventListener("click", function () {
+                if (_popoverSelectedChips.has(idx)) {
+                    _popoverSelectedChips.delete(idx);
+                    chip.classList.remove("selected");
+                } else {
+                    _popoverSelectedChips.add(idx);
+                    chip.classList.add("selected");
+                }
+            });
+            popoverChips.appendChild(chip);
+        });
+    }
+
+    function submitAnnotation(ids, text) {
+        if (!currentSlide || !text) return;
+        var promises = ids.map(function (eid) {
+            return fetch("/api/slide/" + encodeURIComponent(currentSlide) + "/annotate", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ element_id: eid, annotation: text })
+            }).then(jsonOrThrow);
+        });
+        Promise.all(promises)
+            .then(function () {
+                ids.forEach(function (eid) { slideAnnotations[eid] = text; });
+                annotationsDirty = true;
+                refreshAnnotationVisuals();
+                updateAnnotationList();
+                loadSlides();
+            })
+            .catch(function (err) {
+                showError(t("err_add_annotation") + err.message);
+            });
+    }
+
+    function initAnnotationPopover() {
+        if (popoverClose) {
+            popoverClose.addEventListener("click", hideAnnotationPopover);
+        }
+        if (popoverOverlay) {
+            popoverOverlay.addEventListener("click", function (e) {
+                if (e.target === popoverOverlay) hideAnnotationPopover();
+            });
+        }
+        if (popoverSubmit) {
+            popoverSubmit.addEventListener("click", function () {
+                var parts = [];
+                QUICK_ISSUES.forEach(function (issue, idx) {
+                    if (_popoverSelectedChips.has(idx)) {
+                        parts.push(issue[LANG] || issue.en);
+                    }
+                });
+                var custom = popoverText.value.trim();
+                if (custom) parts.push(custom);
+                var text = parts.join("; ");
+                if (!text) return;
+                submitAnnotation(_popoverTargetIds.slice(), text);
+                hideAnnotationPopover();
+            });
+        }
+        if (btnPageAnnotate) {
+            btnPageAnnotate.addEventListener("click", function () {
+                if (!currentSlide) return;
+                showAnnotationPopover(["__page__"], true);
+            });
+        }
+    }
+
+    // ================================================================
     //  6.  Add annotation  -- POST /api/slide/{name}/annotate
     // ================================================================
     btnAddAnnotation.addEventListener("click", function () {
@@ -1527,6 +1691,7 @@
         });
         // Apply marks — delete annotations get an extra red overlay class
         Object.keys(slideAnnotations).forEach(function (eid) {
+            if (eid === "__page__") return;
             var el = svgContent.querySelector("#" + CSS.escape(eid));
             if (el) {
                 el.classList.add("svg-annotated");
@@ -1553,25 +1718,30 @@
             var item = document.createElement("div");
             item.className = "annotation-item";
 
-            // Try to resolve tag from live SVG
-            var tag = "";
-            var el = svgContent.querySelector("#" + CSS.escape(eid));
-            if (el) tag = el.tagName.toLowerCase();
-
             var header = document.createElement("div");
             header.className = "ann-header";
 
             var leftSpan = document.createElement("span");
-            if (tag) {
-                var tagSpan = document.createElement("span");
-                tagSpan.className = "ann-tag";
-                tagSpan.textContent = "<" + tag + ">";
-                leftSpan.appendChild(tagSpan);
+            if (eid === "__page__") {
+                var pageSpan = document.createElement("span");
+                pageSpan.className = "ann-tag ann-tag-page";
+                pageSpan.textContent = t("ann_tag_page");
+                leftSpan.appendChild(pageSpan);
+            } else {
+                var tag = "";
+                var el = svgContent.querySelector("#" + CSS.escape(eid));
+                if (el) tag = el.tagName.toLowerCase();
+                if (tag) {
+                    var tagSpan = document.createElement("span");
+                    tagSpan.className = "ann-tag";
+                    tagSpan.textContent = "<" + tag + ">";
+                    leftSpan.appendChild(tagSpan);
+                }
+                var idSpan = document.createElement("span");
+                idSpan.className = "ann-id";
+                idSpan.textContent = eid;
+                leftSpan.appendChild(idSpan);
             }
-            var idSpan = document.createElement("span");
-            idSpan.className = "ann-id";
-            idSpan.textContent = eid;
-            leftSpan.appendChild(idSpan);
 
             header.appendChild(leftSpan);
 
@@ -2765,5 +2935,6 @@
     initKeyboardShortcuts();
     initSlideNav();
     initNotes();
+    initAnnotationPopover();
     if (btnUndo) btnUndo.addEventListener("click", runUndo);
 })();

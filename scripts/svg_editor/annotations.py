@@ -205,8 +205,9 @@ def parse_annotations(root: ET.Element) -> list[dict]:
     annotations = []
     for elem in root.iter():
         if elem.get('data-edit-target') == 'true':
+            eid = '__page__' if elem is root else elem.get('id', '')
             annotations.append({
-                'element_id': elem.get('id', ''),
+                'element_id': eid,
                 'tag': elem.tag.split('}', 1)[1] if '}' in elem.tag else elem.tag,
                 'annotation': elem.get('data-edit-annotation', ''),
             })
@@ -215,6 +216,10 @@ def parse_annotations(root: ET.Element) -> list[dict]:
 
 def set_annotation(root: ET.Element, element_id: str, annotation: str) -> bool:
     """Add or update an annotation on an SVG element. Returns True if found."""
+    if element_id == '__page__':
+        root.set('data-edit-target', 'true')
+        root.set('data-edit-annotation', annotation)
+        return True
     elem = _find_by_id(root, element_id)
     if elem is None:
         return False

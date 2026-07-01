@@ -91,6 +91,11 @@ html, body {
     flex: 1;
     overflow-y: auto;
     padding: 8px 0;
+    outline: none;
+}
+
+#slide-list:focus-visible {
+    box-shadow: inset 0 0 0 2px #4a9eff;
 }
 
 .slide-list-empty {
@@ -526,6 +531,181 @@ body.svg-dragging * {
 
 .ann-item-delete .ann-text {
     color: #f87171;
+}
+
+/* Page annotation tag */
+.ann-tag-page {
+    font-size: 11px;
+    color: #4a9eff;
+    background: rgba(74, 158, 255, 0.1);
+    padding: 2px 6px;
+    border-radius: 3px;
+    margin-right: 6px;
+}
+
+/* --- Annotation list header with + button --- */
+.ann-list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.btn-page-annotate {
+    width: 24px;
+    height: 24px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 1;
+    color: #4a9eff;
+    background: transparent;
+    border: 1px solid #3a3a5a;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s;
+    flex-shrink: 0;
+}
+
+.btn-page-annotate:hover {
+    background: rgba(74, 158, 255, 0.12);
+    border-color: #4a9eff;
+}
+
+/* --- Annotation popover --- */
+#annotation-popover-overlay {
+    position: fixed;
+    inset: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgba(0, 0, 0, 0.45);
+    z-index: 1000;
+}
+
+#annotation-popover {
+    width: 380px;
+    max-width: 90vw;
+    background: #1e1e36;
+    border: 1px solid #3a3a5a;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5);
+}
+
+.popover-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 14px;
+}
+
+#popover-title {
+    font-size: 14px;
+    font-weight: 600;
+    color: #e0e0e0;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    flex: 1;
+    margin-right: 8px;
+}
+
+#popover-close {
+    background: none;
+    border: none;
+    color: #7a7a9a;
+    font-size: 20px;
+    line-height: 1;
+    cursor: pointer;
+    padding: 0 4px;
+    border-radius: 4px;
+    transition: color 0.15s, background 0.15s;
+    flex-shrink: 0;
+}
+
+#popover-close:hover {
+    color: #e0e0e0;
+    background: rgba(255, 255, 255, 0.08);
+}
+
+.popover-chips {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-bottom: 12px;
+}
+
+.popover-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 5px 12px;
+    font-size: 12px;
+    color: #c0c0d8;
+    background: #16162a;
+    border: 1px solid #3a3a5a;
+    border-radius: 14px;
+    cursor: pointer;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+    user-select: none;
+}
+
+.popover-chip:hover {
+    border-color: #5a5a7a;
+    background: #22223c;
+}
+
+.popover-chip.selected {
+    color: #fff;
+    background: #4a9eff;
+    border-color: #4a9eff;
+}
+
+#popover-text {
+    width: 100%;
+    min-height: 72px;
+    max-height: 140px;
+    resize: vertical;
+    padding: 10px 12px;
+    font-size: 13px;
+    font-family: inherit;
+    color: #e0e0e0;
+    background: #16162a;
+    border: 1px solid #3a3a5a;
+    border-radius: 6px;
+    outline: none;
+    transition: border-color 0.2s;
+}
+
+#popover-text:focus {
+    border-color: #4a9eff;
+}
+
+#popover-text::placeholder {
+    color: #5a5a7a;
+}
+
+#popover-submit {
+    margin-top: 12px;
+    width: 100%;
+    padding: 9px 0;
+    font-size: 13px;
+    font-weight: 600;
+    color: #fff;
+    background: #4a9eff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background 0.15s;
+}
+
+#popover-submit:hover {
+    background: #3a8eef;
+}
+
+#popover-submit:active {
+    background: #2a7edf;
 }
 
 /* --- Action buttons --- */

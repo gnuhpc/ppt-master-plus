@@ -48,7 +48,10 @@
                 <button id="btn-add-annotation" data-i18n="btn_add_annotation">Add annotation</button>
             </div>
             <div id="annotation-list">
-                <div class="section-label" data-i18n="label_annotations_on_slide">Annotations on this slide</div>
+                <div class="section-label ann-list-header">
+                    <span data-i18n="label_annotations_on_slide">Annotations on this slide</span>
+                    <button id="btn-page-annotate" class="btn-page-annotate" type="button" data-i18n-title="btn_page_annotate_title">+</button>
+                </div>
                 <div id="annotations"></div>
             </div>
             <div id="preview-actions">
@@ -69,6 +72,17 @@
                 <button id="modal-confirm" data-i18n="modal_submit">Submit</button>
                 <button id="modal-cancel" data-i18n="modal_cancel">Cancel</button>
             </div>
+        </div>
+    </div>
+    <div id="annotation-popover-overlay" style="display:none;">
+        <div id="annotation-popover">
+            <div class="popover-header">
+                <span id="popover-title"></span>
+                <button id="popover-close" type="button">&times;</button>
+            </div>
+            <div id="popover-chips" class="popover-chips"></div>
+            <textarea id="popover-text"></textarea>
+            <button id="popover-submit" type="button" data-i18n="btn_add_annotation">Add annotation</button>
         </div>
     </div>
     <script src="/static/app.js"></script>
