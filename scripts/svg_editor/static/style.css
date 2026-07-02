@@ -265,6 +265,34 @@ html, body {
     user-select: none;
 }
 
+/* --- Shortcut hints bar --- */
+#shortcut-bar {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 16px;
+    padding: 5px 16px;
+    border-top: 1px solid #2a2a4a;
+    background: #16162a;
+    font-size: 11px;
+    color: #5a5a7a;
+    user-select: none;
+    flex-wrap: wrap;
+}
+
+#shortcut-bar kbd {
+    display: inline-block;
+    padding: 1px 5px;
+    font-family: inherit;
+    font-size: 10px;
+    color: #8a8aaa;
+    background: #22223c;
+    border: 1px solid #3a3a5a;
+    border-radius: 3px;
+    line-height: 1.4;
+}
+
 #svg-content {
     background: #ffffff;
     border-radius: 4px;

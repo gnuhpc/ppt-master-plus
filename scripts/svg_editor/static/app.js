@@ -84,7 +84,8 @@
             popover_title_page: "Annotate page",
             popover_placeholder: "Additional notes...",
             ann_tag_page: "Page",
-            btn_page_annotate_title: "Annotate entire page"
+            btn_page_annotate_title: "Annotate entire page",
+            shortcut_bar: "<kbd>Click</kbd> Select <kbd>Ctrl</kbd>+<kbd>Click</kbd> Multi-select <kbd>Right-click</kbd> Overlapping <kbd>Tab</kbd> Annotate <kbd>←</kbd><kbd>→</kbd> Prev / Next <kbd>Del</kbd> Delete <kbd>Esc</kbd> Deselect"
         },
         zh: {
             page_title: "PPT Master - 实时预览",
@@ -163,7 +164,8 @@
             popover_title_page: "标注整页",
             popover_placeholder: "补充说明……",
             ann_tag_page: "整页",
-            btn_page_annotate_title: "标注整页"
+            btn_page_annotate_title: "标注整页",
+            shortcut_bar: "<kbd>单击</kbd> 选中 <kbd>Ctrl</kbd>+<kbd>单击</kbd> 多选 <kbd>右键</kbd> 重叠元素 <kbd>Tab</kbd> 标注 <kbd>←</kbd><kbd>→</kbd> 翻页 <kbd>Del</kbd> 删除 <kbd>Esc</kbd> 取消选择"
         }
     };
 
@@ -213,6 +215,9 @@
         });
         document.querySelectorAll("[data-i18n-placeholder]").forEach(function (el) {
             el.placeholder = t(el.getAttribute("data-i18n-placeholder"));
+        });
+        document.querySelectorAll("[data-i18n-html]").forEach(function (el) {
+            el.innerHTML = t(el.getAttribute("data-i18n-html"));
         });
         document.querySelectorAll("[data-i18n-title]").forEach(function (el) {
             el.title = t(el.getAttribute("data-i18n-title"));
