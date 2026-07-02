@@ -85,7 +85,7 @@
             popover_placeholder: "Additional notes...",
             ann_tag_page: "Page",
             btn_page_annotate_title: "Annotate entire page",
-            shortcut_bar: "<kbd>Click</kbd> Select <kbd>Ctrl</kbd>+<kbd>Click</kbd> Multi-select <kbd>Right-click</kbd> Overlapping <kbd>Tab</kbd> Annotate <kbd>←</kbd><kbd>→</kbd> Prev / Next <kbd>Del</kbd> Delete <kbd>Esc</kbd> Deselect"
+            shortcut_bar: "<span class='hint'><kbd>Click</kbd> Select</span><span class='hint'><kbd>Ctrl</kbd>+<kbd>Click</kbd> Multi-select</span><span class='hint'><kbd>Right-click</kbd> Overlapping</span><span class='hint'><kbd>Tab</kbd> Annotate</span><span class='hint'><kbd>←</kbd> <kbd>→</kbd> Prev / Next</span><span class='hint'><kbd>Del</kbd> Delete</span><span class='hint'><kbd>Esc</kbd> Deselect</span>"
         },
         zh: {
             page_title: "PPT Master - 实时预览",
@@ -165,7 +165,7 @@
             popover_placeholder: "补充说明……",
             ann_tag_page: "整页",
             btn_page_annotate_title: "标注整页",
-            shortcut_bar: "<kbd>单击</kbd> 选中 <kbd>Ctrl</kbd>+<kbd>单击</kbd> 多选 <kbd>右键</kbd> 重叠元素 <kbd>Tab</kbd> 标注 <kbd>←</kbd><kbd>→</kbd> 翻页 <kbd>Del</kbd> 删除 <kbd>Esc</kbd> 取消选择"
+            shortcut_bar: "<span class='hint'><kbd>单击</kbd> 选中</span><span class='hint'><kbd>Ctrl</kbd>+<kbd>单击</kbd> 多选</span><span class='hint'><kbd>右键</kbd> 重叠元素</span><span class='hint'><kbd>Tab</kbd> 标注</span><span class='hint'><kbd>←</kbd> <kbd>→</kbd> 翻页</span><span class='hint'><kbd>Del</kbd> 删除</span><span class='hint'><kbd>Esc</kbd> 取消选择</span>"
         }
     };
 
@@ -1075,9 +1075,17 @@
                 if (ev.button !== 0 && ev.button !== 2) return;
                 ev.stopPropagation();
                 ev.preventDefault();
-                selectElement(el, ev.ctrlKey || ev.metaKey);
-                closeOverlapPicker();
+                var multi = ev.ctrlKey || ev.metaKey;
+                selectElement(el, multi);
+                if (multi) {
+                    menu.querySelectorAll(".overlap-item").forEach(function (it, idx) {
+                        it.classList.toggle("overlap-selected", selectedElementIds.has(candidates[idx].id));
+                    });
+                } else {
+                    closeOverlapPicker();
+                }
             });
+            if (selectedElementIds.has(el.id)) item.classList.add("overlap-selected");
             menu.appendChild(item);
         });
         menu.addEventListener("contextmenu", function (ev) { ev.preventDefault(); });
