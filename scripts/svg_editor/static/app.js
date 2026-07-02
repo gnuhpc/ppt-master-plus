@@ -1066,13 +1066,16 @@
                 (txt ? '<span class="overlap-txt">' + escapeHtml(txt) + '</span>' : '');
             item.addEventListener("mouseenter", function () { el.classList.add("overlap-hover"); });
             item.addEventListener("mouseleave", function () { el.classList.remove("overlap-hover"); });
-            item.addEventListener("click", function (ev) {
+            item.addEventListener("mousedown", function (ev) {
+                if (ev.button !== 0 && ev.button !== 2) return;
                 ev.stopPropagation();
+                ev.preventDefault();
                 selectElement(el, ev.ctrlKey || ev.metaKey);
                 closeOverlapPicker();
             });
             menu.appendChild(item);
         });
+        menu.addEventListener("contextmenu", function (ev) { ev.preventDefault(); });
         document.body.appendChild(menu);
         // Keep the menu inside the viewport.
         var x = Math.min(clientX, window.innerWidth - menu.offsetWidth - 8);
