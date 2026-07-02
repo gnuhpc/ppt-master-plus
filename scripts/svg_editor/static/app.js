@@ -702,7 +702,7 @@
             elem.classList.add("svg-selected");
         }
 
-        updateSelectionPanel();
+        updateSelectionPanel(addToSelection);
     }
 
     // ================================================================
@@ -717,7 +717,7 @@
         updateSelectionPanel();
     }
 
-    function updateSelectionPanel() {
+    function updateSelectionPanel(suppressPopover) {
         var propsEl = elementPropsEl;
         var count = selectedElementIds.size;
 
@@ -754,7 +754,9 @@
         }
 
         annotationInput.style.display = "none";
-        showAnnotationPopover(Array.from(selectedElementIds), false);
+        if (!suppressPopover) {
+            showAnnotationPopover(Array.from(selectedElementIds), false);
+        }
     }
 
     // ---- Rubber band selection ----
@@ -1345,6 +1347,16 @@
                 if (document.activeElement === annotationText) return;
                 if (overlapPickerEl) { closeOverlapPicker(); return; }
                 clearSelection();
+            }
+
+            // Tab: open annotation popover for current selection
+            if (e.key === "Tab" && selectedElementIds.size > 0) {
+                if (popoverOverlay && popoverOverlay.style.display !== "none") return;
+                var ae = document.activeElement;
+                if (ae && (ae.tagName === "INPUT" || ae.tagName === "TEXTAREA" || ae.tagName === "SELECT")) return;
+                e.preventDefault();
+                showAnnotationPopover(Array.from(selectedElementIds), false);
+                return;
             }
 
             // Slide navigation: ArrowLeft/Right + Home/End (skip while typing)
