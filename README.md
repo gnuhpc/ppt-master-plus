@@ -31,7 +31,7 @@
 | **定位与重点** | 严格串行的多源资料→SVG→PPTX 生产链，强调内容理解、模板/规范锁定、逐页手写 SVG、质量检查和原生可编辑 PPTX 导出。 | 在同一方法论上扩展为更完整的 PPTX 生产系统，重点补强已有 PPTX 处理、逐页确认、批注回修、讲稿门禁、原生增强和多源技术图路由。 |
 | **生成模式控制** | 默认在八项设计确认后连续生成整份 PPT；长文档可在 Step 5 后用 `resume-execute` 跨对话进入 Phase B。 | 把 `continuous` / `gated` / `split` 明确纳入 Confirm UI 与 `spec_lock.md`：可全自动一次性生成，也可逐页确定精修，长文档仍可跨对话生产。 |
 | **网页配置端与批注机制** | 有 Confirm UI 作为八项设计确认界面，也有 Live Preview；生成期继续按串行流程推进，注解主要在导出后按 `live-preview` 工作流统一处理。 | Confirm UI 升级为两阶段确认，覆盖 `content_divergence`、`generation_mode`、`transition_effect`、`refine_spec` 等字段；生成期通过 `--wait-annotation` 监听 **Apply changes**，可在安全检查点自动读取批注并回修。 |
-| **Live Preview 页内直接编辑** | 支持浏览器实时预览、staged direct edits（文本与 SVG 属性暂存后应用）和批注回收；导出后可按工作流处理注解并重新导出。 | 保留这些能力，并把它们接入 Gated/Continuous 生产闭环：逐页门禁下每页可确认、批注、修复、再确认；Continuous 下也能在生成安全点捕获批注并自动重挂监听。 |
+| **Live Preview 页内直接编辑** | 支持浏览器实时预览、staged direct edits（文本与 SVG 属性暂存后应用）和批注回收；导出后可按工作流处理注解并重新导出。 | 保留这些能力，并把它们接入 Gated/Continuous 生产闭环：逐页门禁下每页可确认、批注、修复、再确认；Continuous 下也能在生成安全点捕获批注并自动重挂监听。新增快速标注浮窗（预设问题标签 + 自由文本）、整页标注、Shift+单击多选、右键重叠元素选择器、键盘导航和快捷键提示栏。 |
 | **演讲稿在线编辑** | 生成 speaker notes，并通过 `total_md_split.py` 拆分进 PPTX；主要由 Agent/文件流程维护讲稿。 | Live Preview 左侧面板内置 **目录 / 演讲稿** 切换标签：可直接编辑当前页讲稿，点击 **保存** 后写入 `notes/<slide>.md`，无需 Apply changes。 |
 | **PPTX intake / source profile** | PPTX 可经 `ppt_to_md.py` 提取为 Markdown 后作为普通资料进入主流程。 | `import-sources` 会额外运行 `pptx_intake.py`，生成 `analysis/source_profile.json`、`<stem>.identity.json`、`<stem>.slide_library.json`，把画布、主题、几何、表格和图表事实提供给 Strategist 作上下文。 |
 | **美化入口路由** | 既有 PPTX 作为资料输入主生产流程，Strategist 可自由重构叙事、页数、页序和视觉系统；不单独区分“保留原稿”的美化契约。 | 路由边界更清晰：泛化请求（"美化一下"/"让它更专业"）→ 主流程自由重构；显式要求保留页数/页序/文字/母版 → [`beautify-pptx.md`](workflows/beautify-pptx.md) 保真美化；成品只追加讲稿/音频/转场 → [`native-enhance-pptx.md`](workflows/native-enhance-pptx.md)。 |
@@ -136,7 +136,20 @@
 ### 逐页预览与微调页面（Live Preview）
 *   **动作**：在幻灯片制作阶段，在网页端查看实时生成的 slide 效果。
 *   **动作（直改）**：直接在预览页面上选中文字或形状，通过右侧属性面板微调文本或属性，点击 **Apply changes** 应用回项目。
-*   **动作（批注）**：若需 Agent 进行复杂重构，在 Annotations 框内输入批注要求，点击 **Add annotation** 及 **Apply changes**；AI 会自动读取保存到 `svg_output/` 的批注并开始修复。在 Codex Desktop 这类桌面端工具中，Agent 会保持一个后台 `--wait-annotation --timeout 0` 监听会话来捕获点击事件；每轮修复完成后会重新挂起监听，所以可以继续提交第二批、第三批修改意见。页面中的复制提示仅作为自动监听失效时的备用触发方式。
+*   **动作（批注）**：选中元素后按 **Tab** 打开快速标注浮窗，可勾选预设问题标签（文字遮挡、文字溢出、图例遮挡等）并填写补充说明；也可点击标注列表旁的 **+** 按钮对整页进行标注。完成后点击 **Apply changes**；AI 会自动读取保存到 `svg_output/` 的批注并开始修复。在 Codex Desktop 这类桌面端工具中，Agent 会保持一个后台 `--wait-annotation --timeout 0` 监听会话来捕获点击事件；每轮修复完成后会重新挂起监听，所以可以继续提交第二批、第三批修改意见。页面中的复制提示仅作为自动监听失效时的备用触发方式。
+
+**Live Preview 键鼠操作速查**：
+
+| 操作 | 说明 |
+|---|---|
+| 单击元素 | 选中 |
+| Shift+单击 | 多选 |
+| 右键 | 重叠元素选择器（Shift+单击可在列表中多选） |
+| Tab | 打开标注浮窗 |
+| ← → | 前一页 / 后一页 |
+| ↑ ↓ | 在左侧目录中上下浏览 |
+| Del | 删除选中元素的标注 |
+| Esc | 关闭浮窗 / 取消选择 |
 
 ### 回到 Agent 修改
 *   **动作**：您也可以随时跳过网页，在聊天里直接描述修改要求（例如：“第 3 页标题改成‘增长飞轮’，重新导出。”），Agent 将自动修改并更新。
