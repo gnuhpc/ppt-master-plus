@@ -1049,7 +1049,6 @@
 
     function showOverlapPicker(clientX, clientY, candidates) {
         closeOverlapPicker();
-        var hadSelection = selectedElementIds.size > 0;
         var menu = document.createElement("div");
         menu.id = "overlap-picker";
         var cap = document.createElement("div");
@@ -1069,8 +1068,7 @@
             item.addEventListener("mouseleave", function () { el.classList.remove("overlap-hover"); });
             item.addEventListener("click", function (ev) {
                 ev.stopPropagation();
-                var addMode = ev.ctrlKey || ev.metaKey || hadSelection;
-                selectElement(el, addMode);
+                selectElement(el, ev.ctrlKey || ev.metaKey);
                 closeOverlapPicker();
             });
             menu.appendChild(item);
