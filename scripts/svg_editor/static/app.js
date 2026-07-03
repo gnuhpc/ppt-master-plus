@@ -1323,8 +1323,8 @@
 
             // Ctrl+A / Cmd+A: select all elements
             if ((e.ctrlKey || e.metaKey) && e.key === "a") {
-                // Don't intercept if focus is in textarea
-                if (document.activeElement === annotationText) return;
+                var _f = document.activeElement;
+                if (_f && (_f.tagName === "INPUT" || _f.tagName === "TEXTAREA" || _f.tagName === "SELECT")) return;
 
                 e.preventDefault();
                 var svg = svgContent.querySelector("svg");
@@ -1376,7 +1376,8 @@
             }
 
             // Slide navigation: ArrowLeft/Right + Home/End (skip while typing)
-            if (document.activeElement === annotationText) return;
+            var _ae = document.activeElement;
+            if (_ae && (_ae.tagName === "INPUT" || _ae.tagName === "TEXTAREA" || _ae.tagName === "SELECT")) return;
             if (e.ctrlKey || e.metaKey || e.altKey) return;
 
             // Arrow keys nudge the selection (1px, Shift = 10px) instead of
