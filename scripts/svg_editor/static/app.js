@@ -85,6 +85,7 @@
             popover_placeholder: "Additional notes...",
             ann_tag_page: "Page",
             btn_page_annotate_title: "Annotate entire page",
+            hint_tab_annotate: "Tab → annotate",
             shortcut_bar: "<span class='hint'><kbd>Click</kbd> Select</span><span class='hint'><kbd>Shift</kbd>+<kbd>Click</kbd> Multi-select</span><span class='hint'><kbd>Right-click</kbd> Overlapping</span><span class='hint'><kbd>Tab</kbd> Annotate</span><span class='hint'><kbd>←</kbd> <kbd>→</kbd> Prev / Next</span><span class='hint'><kbd>Del</kbd> Delete</span><span class='hint'><kbd>Esc</kbd> Deselect</span>"
         },
         zh: {
@@ -165,6 +166,7 @@
             popover_placeholder: "补充说明……",
             ann_tag_page: "整页",
             btn_page_annotate_title: "标注整页",
+            hint_tab_annotate: "Tab → 标注",
             shortcut_bar: "<span class='hint'><kbd>单击</kbd> 选中</span><span class='hint'><kbd>Shift</kbd>+<kbd>单击</kbd> 多选</span><span class='hint'><kbd>右键</kbd> 重叠元素</span><span class='hint'><kbd>Tab</kbd> 标注</span><span class='hint'><kbd>←</kbd> <kbd>→</kbd> 翻页</span><span class='hint'><kbd>Del</kbd> 删除</span><span class='hint'><kbd>Esc</kbd> 取消选择</span>"
         }
     };
@@ -182,7 +184,9 @@
         { en: "Legend obscured", zh: "图例遮挡" },
         { en: "Elements overlapping", zh: "元素重叠" },
         { en: "Misaligned", zh: "对齐偏移" },
-        { en: "Improper size", zh: "尺寸不当" }
+        { en: "Improper size", zh: "尺寸不当" },
+        { en: "Chinese/English conversion", zh: "中英文转换" },
+        { en: "Delete", zh: "删除" }
     ];
 
     var LANG = (function () {
@@ -753,7 +757,8 @@
             }
         } else {
             selectedElementEl.innerHTML =
-                '<span class="multi-count">' + escapeHtml(t("multi_selected", { count: count })) + '</span>';
+                '<span class="multi-count">' + escapeHtml(t("multi_selected", { count: count })) + '</span>' +
+                '<span class="tab-hint">' + escapeHtml(t("hint_tab_annotate")) + '</span>';
             propsEl.innerHTML = renderMultiSelectSummary(Array.from(selectedElementIds));
             attachMultiSelectionEditors(Array.from(selectedElementIds));
         }
@@ -2082,8 +2087,7 @@
         var tag = localName(el);
         var isGroup = tag === "g";
         var html = '<div class="prop-caption">' +
-            escapeHtml(isGroup ? t("label_group_edit") : t("label_direct_edit")) + '</div>' +
-            '<button type="button" class="btn-delete-el">' + escapeHtml(t("btn_delete")) + '</button>';
+            escapeHtml(isGroup ? t("label_group_edit") : t("label_direct_edit")) + '</div>';
 
         var parentGroup = nearestParentGroup(el);
         if (parentGroup && !isGroup) {
@@ -2580,11 +2584,6 @@
         var eid = el.id;
         var panel = elementPropsEl;
 
-        var deleteBtn = panel.querySelector(".btn-delete-el");
-        if (deleteBtn) {
-            deleteBtn.addEventListener("click", deleteSelectedElements);
-        }
-
         var groupBtn = panel.querySelector(".btn-select-group");
         if (groupBtn) {
             groupBtn.addEventListener("click", function () {
@@ -2744,8 +2743,7 @@
 
     function renderMultiSelectSummary(ids) {
         var moveEls = topLevelSelectedElements(ids);
-        var summary = '<div class="prop-caption">' + escapeHtml(t("label_batch_edit")) + '</div>' +
-            '<button type="button" class="btn-delete-el">' + escapeHtml(t("btn_delete")) + '</button>';
+        var summary = '<div class="prop-caption">' + escapeHtml(t("label_batch_edit")) + '</div>';
 
         if (moveEls.length > 0) {
             try {
@@ -2859,11 +2857,6 @@
 
     function attachMultiSelectionEditors(ids) {
         var panel = elementPropsEl;
-
-        var deleteBtn = panel.querySelector(".btn-delete-el");
-        if (deleteBtn) {
-            deleteBtn.addEventListener("click", deleteSelectedElements);
-        }
 
         var moveEls = topLevelSelectedElements(ids);
         if (moveEls.length === 0) return;

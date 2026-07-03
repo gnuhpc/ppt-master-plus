@@ -1127,22 +1127,6 @@ input.prop-edit-multi-geo {
     background: #2d4370;
 }
 
-.btn-delete-el {
-    width: 100%;
-    margin-bottom: 8px;
-    padding: 5px 7px;
-    color: #fecaca;
-    background: #4a1a1a;
-    border: 1px solid #7f2a2a;
-    border-radius: 4px;
-    font-size: 12px;
-    cursor: pointer;
-    transition: background 0.15s;
-}
-
-.btn-delete-el:hover {
-    background: #6b2222;
-}
 
 .multi-el-list {
     margin-top: 6px;
@@ -1172,6 +1156,13 @@ input.prop-edit-multi-geo {
     color: #4a9eff;
     font-weight: 600;
     font-size: 14px;
+}
+.tab-hint {
+    display: block;
+    margin-top: 4px;
+    font-size: 11px;
+    color: #6a6a8a;
+    letter-spacing: 0.02em;
 }
 
 /* --- Rubber band selection --- */
