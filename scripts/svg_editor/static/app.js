@@ -85,7 +85,7 @@
             popover_placeholder: "Additional notes...",
             ann_tag_page: "Page",
             btn_page_annotate_title: "Annotate entire page",
-            hint_tab_annotate: "Tab → annotate",
+            hint_tab_annotate: "annotate",
             shortcut_bar: "<span class='hint'><kbd>Click</kbd> Select</span><span class='hint'><kbd>Shift</kbd>+<kbd>Click</kbd> Multi-select</span><span class='hint'><kbd>Right-click</kbd> Overlapping</span><span class='hint'><kbd>Tab</kbd> Annotate</span><span class='hint'><kbd>←</kbd> <kbd>→</kbd> Prev / Next</span><span class='hint'><kbd>Del</kbd> Delete</span><span class='hint'><kbd>Esc</kbd> Deselect</span>"
         },
         zh: {
@@ -166,7 +166,7 @@
             popover_placeholder: "补充说明……",
             ann_tag_page: "整页",
             btn_page_annotate_title: "标注整页",
-            hint_tab_annotate: "Tab → 标注",
+            hint_tab_annotate: "标注",
             shortcut_bar: "<span class='hint'><kbd>单击</kbd> 选中</span><span class='hint'><kbd>Shift</kbd>+<kbd>单击</kbd> 多选</span><span class='hint'><kbd>右键</kbd> 重叠元素</span><span class='hint'><kbd>Tab</kbd> 标注</span><span class='hint'><kbd>←</kbd> <kbd>→</kbd> 翻页</span><span class='hint'><kbd>Del</kbd> 删除</span><span class='hint'><kbd>Esc</kbd> 取消选择</span>"
         }
     };
@@ -758,7 +758,7 @@
         } else {
             selectedElementEl.innerHTML =
                 '<span class="multi-count">' + escapeHtml(t("multi_selected", { count: count })) + '</span>' +
-                '<span class="tab-hint">' + escapeHtml(t("hint_tab_annotate")) + '</span>';
+                '<span class="tab-hint"><kbd>Tab</kbd> ' + escapeHtml(t("hint_tab_annotate")) + '</span>';
             propsEl.innerHTML = renderMultiSelectSummary(Array.from(selectedElementIds));
             attachMultiSelectionEditors(Array.from(selectedElementIds));
         }

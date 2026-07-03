@@ -1158,11 +1158,27 @@ input.prop-edit-multi-geo {
     font-size: 14px;
 }
 .tab-hint {
-    display: block;
-    margin-top: 4px;
+    display: inline-block;
+    margin-left: 8px;
+    padding: 2px 8px;
     font-size: 11px;
-    color: #6a6a8a;
-    letter-spacing: 0.02em;
+    color: #8a8aaa;
+    background: #1e1e36;
+    border: 1px solid #3a3a5a;
+    border-radius: 10px;
+    vertical-align: middle;
+}
+.tab-hint kbd {
+    display: inline-block;
+    padding: 0 4px;
+    font-family: inherit;
+    font-size: 10px;
+    color: #c0c0d8;
+    background: #2a2a44;
+    border: 1px solid #444466;
+    border-radius: 3px;
+    margin-right: 2px;
+    line-height: 1.5;
 }
 
 /* --- Rubber band selection --- */
