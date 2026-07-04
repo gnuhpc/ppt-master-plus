@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="4.71" dy="4.71" stdDeviation="10" flood-color="#000000" flood-opacity="0.25" /></filter></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="layout-shape-5" data-name="图片 4" transform="rotate(326.15 -32.8 81.76)">
+<image href="bg_blob.png" x="-178.36" y="-66.16" width="291.1" height="295.84" preserveAspectRatio="none" />
+</g>
+<g id="shape-5" data-name="组合 4">
+<g id="shape-14" data-name="文本框 13">
+<rect x="87.61" y="34.07" width="372.76" height="42.01" fill="none" />
+<text x="97.21" y="61.54" text-anchor="start" xml:space="preserve" font-family="Impact, &quot;思源黑体&quot;, sans-serif" font-size="26.67" fill="#000000" font-weight="bold">{{PAGE_TITLE}}</text>
+</g>
+<g id="shape-19" data-name="文本框 18">
+<rect x="89.53" y="67.45" width="501.85" height="27.49" fill="none" />
+<text x="99.13" y="83.59" text-anchor="start" xml:space="preserve" font-family="&quot;方正黑体简体&quot;, sans-serif" font-size="13.33" fill="#808080">{{PAGE_SUBTITLE}}</text>
+</g>
+</g><rect x="72" y="120" width="1136" height="540" fill="none" stroke="#7F7F7F" stroke-opacity="0.2" stroke-dasharray="4 4" /><text x="640" y="390" text-anchor="middle" font-family="&quot;思源黑体&quot;, sans-serif" font-size="18" fill="#7F7F7F">{{CONTENT_AREA}}</text><text x="640" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7F7F7F">{{PAGE_NUM}}</text></svg>

@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<!-- Page title -->
+<text x="640" y="103.66" text-anchor="middle" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="18.67" fill="#262626" font-weight="bold">{{PAGE_TITLE}}</text>
+<!-- Subtitle -->
+<text x="640" y="137.56" text-anchor="middle" font-family="sans-serif" font-size="14" fill="#808080">{{SUBTITLE}}</text>
+<!-- Three photo placeholders -->
+<rect x="129.96" y="196.65" width="307.59" height="297.83" fill="#D0D0D0"/>
+<rect x="486.2" y="195.53" width="307.59" height="297.83" fill="#D0D0D0"/>
+<rect x="842.45" y="196.65" width="307.59" height="297.83" fill="#D0D0D0"/>
+<!-- Content area below images -->
+<text x="640" y="560.52" text-anchor="middle" font-family="&quot;Calibri Light&quot;, Arial, sans-serif" font-size="14" fill="#808080">{{CONTENT_AREA}}</text>
+</svg>

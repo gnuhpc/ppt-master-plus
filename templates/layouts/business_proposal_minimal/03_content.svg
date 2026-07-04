@@ -1,0 +1,14 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#F8F8F8" />
+<g id="shape-447" data-name="TextBox 446">
+<rect x="861.76" y="158.4" width="150.66" height="44.15" fill="none" />
+<text x="871.36" y="187.4" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, Arial, sans-serif" font-size="28.47" fill="#383737" letter-spacing="4">{{PAGE_TITLE}}</text>
+</g>
+<g id="shape-460" data-name="TextBox 459">
+<rect x="468.59" y="124.9" width="150.66" height="44.15" fill="none" />
+<text x="543.92" y="153.9" text-anchor="middle" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, Arial, sans-serif" font-size="28.47" fill="#1A1F29" letter-spacing="4">{{PAGE_TITLE}}</text>
+</g>
+<g id="shape-21" data-name="矩形 20">
+<rect x="77.89" y="32.09" width="197.11" height="38.78" fill="none" />
+<text x="87.49" y="57.29" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, Montserrat, sans-serif" font-size="24" fill="#1A1F29" font-weight="bold" letter-spacing="5.33">{{PAGE_TITLE}}</text>
+</g><rect x="72" y="120" width="1136" height="540" fill="none" stroke="#7F7F7F" stroke-opacity="0.2" stroke-dasharray="4 4" /><text x="640" y="390" text-anchor="middle" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="18" fill="#7F7F7F">{{CONTENT_AREA}}</text><text x="640" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7F7F7F">{{PAGE_NUM}}</text></svg>

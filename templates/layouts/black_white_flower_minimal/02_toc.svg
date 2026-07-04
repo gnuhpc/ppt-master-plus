@@ -1,0 +1,96 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FCFBF9" />
+<g id="shape-4" data-name="矩形 3">
+<image href="toc_decor.jpeg" x="101.39" y="-1.33" width="327.33" height="721.33" preserveAspectRatio="none" />
+<rect x="101.39" y="-1.33" width="327.33" height="721.33" fill="none" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-5" data-name="文本框 4">
+<rect x="544.67" y="61.64" width="294.67" height="48.47" fill="none" stroke="none" />
+<text x="692" y="93.64" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="32" fill="#232525"><tspan fill="#232525" font-size="32">输入文字</tspan></text>
+</g>
+<g id="shape-41" data-name="组合 40">
+<g id="shape-14341" data-name="组合 5">
+<g id="shape-12" data-name="直接连接符 11">
+<line x1="687.98" y1="121.1" x2="687.98" y2="720" stroke="#232525" fill="#E71F3C" stroke-width="1" />
+</g>
+<g id="shape-16" data-name="椭圆 15">
+<ellipse cx="687.89" cy="123.06" rx="4.78" ry="4.8" stroke="#232525" fill="#E71F3C" stroke-width="1" />
+</g>
+</g>
+<g id="shape-14344" data-name="组合 17" transform="rotate(180 687.89 24.31)">
+<g id="shape-19" data-name="直接连接符 18">
+<line x1="687.8" y1="1.47" x2="687.8" y2="49.46" stroke="#232525" fill="#E71F3C" stroke-width="1" />
+</g>
+<g id="shape-20" data-name="椭圆 19">
+<ellipse cx="687.89" cy="3.6" rx="4.78" ry="4.8" stroke="#232525" fill="#E71F3C" stroke-width="1" />
+</g>
+</g>
+</g>
+<g id="shape-25" data-name="组合 24">
+<g id="shape-14348" data-name="文本框 20">
+<rect x="484.89" y="221.83" width="178.76" height="44.12" fill="none" stroke="none" />
+<text x="494.49" y="250.82" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="28.47" fill="#232525"><tspan fill="#232525" font-size="28.47">WELCOME</tspan></text>
+</g>
+<g id="shape-22" data-name="文本框 21">
+<rect x="723.56" y="221.74" width="462.67" height="49.37" fill="none" stroke="none" />
+<text x="733.16" y="240.42" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="16.33" fill="#232525"><tspan fill="#232525" font-size="16.33">Lorem ipsum dolor sit amet, consectetur adipiscing </tspan><tspan x="733.16" dy="19.6" fill="#232525" font-size="16.33">elit, sed do eiusmod te mpor incididunt ut labore et </tspan><tspan x="733.16" dy="19.6" fill="#232525" font-size="16.33">dolore.</tspan></text>
+</g>
+<g id="shape-23" data-name="椭圆 22">
+<ellipse cx="686.89" cy="243.31" rx="21.56" ry="21.57" fill="#232525" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-14351" data-name="文本框 23">
+<rect x="665.69" y="216.22" width="36.44" height="48.48" fill="none" stroke="none" />
+<text x="675.29" y="248.22" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">1</tspan></text>
+</g>
+</g>
+<g id="shape-26" data-name="组合 25">
+<g id="shape-14353" data-name="文本框 26">
+<rect x="484.89" y="334.03" width="178.79" height="44.13" fill="none" stroke="none" />
+<text x="494.49" y="363.02" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="28.47" fill="#232525"><tspan fill="#232525" font-size="28.47">PROJECTS</tspan></text>
+</g>
+<g id="shape-28" data-name="文本框 27">
+<rect x="723.78" y="334.03" width="462.67" height="49.36" fill="none" stroke="none" />
+<text x="733.38" y="352.71" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="16.33" fill="#232525"><tspan fill="#232525" font-size="16.33">Lorem ipsum dolor sit amet, consectetur adipiscing </tspan><tspan x="733.38" dy="19.6" fill="#232525" font-size="16.33">elit, sed do eiusmod te mpor incididunt ut labore et </tspan><tspan x="733.38" dy="19.6" fill="#232525" font-size="16.33">dolore.</tspan></text>
+</g>
+<g id="shape-29" data-name="椭圆 28">
+<ellipse cx="686.93" cy="355.47" rx="21.56" ry="21.44" fill="#232525" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-14356" data-name="文本框 29">
+<rect x="665.72" y="328.44" width="36.45" height="48.47" fill="none" stroke="none" />
+<text x="675.32" y="360.44" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">2</tspan></text>
+</g>
+</g>
+<g id="shape-31" data-name="组合 30">
+<g id="shape-14358" data-name="文本框 31">
+<rect x="484.89" y="445.38" width="178.79" height="44.12" fill="none" stroke="none" />
+<text x="494.49" y="474.38" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="28.47" fill="#232525"><tspan fill="#232525" font-size="28.47">ABOUT US</tspan></text>
+</g>
+<g id="shape-33" data-name="文本框 32">
+<rect x="723.78" y="445.29" width="462.67" height="49.37" fill="none" stroke="none" />
+<text x="733.38" y="463.98" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="16.33" fill="#232525"><tspan fill="#232525" font-size="16.33">Lorem ipsum dolor sit amet, consectetur adipiscing </tspan><tspan x="733.38" dy="19.6" fill="#232525" font-size="16.33">elit, sed do eiusmod te mpor incididunt ut labore et </tspan><tspan x="733.38" dy="19.6" fill="#232525" font-size="16.33">dolore.</tspan></text>
+</g>
+<g id="shape-34" data-name="椭圆 33">
+<ellipse cx="686.93" cy="466.87" rx="21.56" ry="21.57" fill="#232525" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-14361" data-name="文本框 34">
+<rect x="665.72" y="439.78" width="36.45" height="48.48" fill="none" stroke="none" />
+<text x="675.32" y="471.78" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">3</tspan></text>
+</g>
+</g>
+<g id="shape-36" data-name="组合 35">
+<g id="shape-14363" data-name="文本框 36">
+<rect x="551.33" y="558.4" width="124.97" height="44.12" fill="none" stroke="none" />
+<text x="560.93" y="587.4" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="28.47" fill="#232525"><tspan fill="#232525" font-size="28.47">TEAM</tspan></text>
+</g>
+<g id="shape-38" data-name="文本框 37">
+<rect x="723.59" y="559.29" width="462.63" height="49.37" fill="none" stroke="none" />
+<text x="733.19" y="577.98" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="16.33" fill="#232525"><tspan fill="#232525" font-size="16.33">Lorem ipsum dolor sit amet, consectetur adipiscing </tspan><tspan x="733.19" dy="19.6" fill="#232525" font-size="16.33">elit, sed do eiusmod te mpor incididunt ut labore et </tspan><tspan x="733.19" dy="19.6" fill="#232525" font-size="16.33">dolore.</tspan></text>
+</g>
+<g id="shape-39" data-name="椭圆 38">
+<ellipse cx="686.66" cy="580.87" rx="21.55" ry="21.57" fill="#232525" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-14366" data-name="文本框 39">
+<rect x="665.64" y="553.78" width="36.44" height="48.48" fill="none" stroke="none" />
+<text x="675.24" y="585.78" text-anchor="start" xml:space="preserve" font-family="sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">4</tspan></text>
+</g>
+</g></svg>

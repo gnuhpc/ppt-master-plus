@@ -1,0 +1,46 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFBFBF" /><stop offset="0.5" stop-color="#F2F2F2" /><stop offset="1" stop-color="#FFFFFF" /></linearGradient><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="-9.33" dy="16.17" stdDeviation="11.33" flood-color="#0D0D0D" flood-opacity="0.5" /></filter><linearGradient id="ggrad2" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFBFBF" /><stop offset="0.5" stop-color="#F2F2F2" /><stop offset="1" stop-color="#FFFFFF" /></linearGradient><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="-9.33" dy="16.17" stdDeviation="11.33" flood-color="#0D0D0D" flood-opacity="0.5" /></filter><linearGradient id="ggrad3" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFBFBF" /><stop offset="0.5" stop-color="#F2F2F2" /><stop offset="1" stop-color="#FFFFFF" /></linearGradient><filter id="fx3" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="-9.33" dy="16.17" stdDeviation="11.33" flood-color="#0D0D0D" flood-opacity="0.5" /></filter><linearGradient id="ggrad4" x1="1" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#BFBFBF" /><stop offset="0.5" stop-color="#F2F2F2" /><stop offset="1" stop-color="#FFFFFF" /></linearGradient><filter id="fx4" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="-9.33" dy="16.17" stdDeviation="11.33" flood-color="#0D0D0D" flood-opacity="0.5" /></filter></defs><rect x="0" y="0" width="1280" height="720" fill="#F3F3F3" />
+<g id="shape-31" data-name="椭圆 30">
+<ellipse cx="192.61" cy="428.61" rx="51.98" ry="51.98" fill="url(#ggrad1)" stroke="#FFFFFF" stroke-width="1" filter="url(#fx1)" />
+<text x="192.61" y="440.61" text-anchor="middle" xml:space="preserve" font-family="Impact, &quot;微软雅黑&quot;, sans-serif" font-size="48" fill="#404040"><tspan fill="#404040" font-size="48">01</tspan></text>
+</g>
+<g id="shape-32" data-name="RainbowowPPT">
+<rect x="88.17" y="551.56" width="294.6" height="64.14" fill="none" />
+<text x="97.77" y="583.56" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="32" fill="#404040">{{TOC_ITEM_1_TITLE}}</text>
+<text x="97.77" y="610.63" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="18.67" fill="#404040">{{TOC_ITEM_1_DESC}}</text>
+</g>
+<g id="shape-33" data-name="椭圆 32">
+<ellipse cx="487.21" cy="428.61" rx="51.98" ry="51.98" fill="url(#ggrad2)" stroke="#FFFFFF" stroke-width="1" filter="url(#fx2)" />
+<text x="487.21" y="440.61" text-anchor="middle" xml:space="preserve" font-family="Impact, &quot;微软雅黑&quot;, sans-serif" font-size="48" fill="#404040"><tspan fill="#404040" font-size="48">02</tspan></text>
+</g>
+<g id="shape-34" data-name="RainbowowPPT">
+<rect x="382.77" y="551.56" width="291.82" height="64.14" fill="none" />
+<text x="392.37" y="583.56" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="32" fill="#404040">{{TOC_ITEM_1_TITLE}}</text>
+<text x="392.37" y="610.63" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="18.67" fill="#404040">{{TOC_ITEM_1_DESC}}</text>
+</g>
+<g id="shape-35" data-name="椭圆 34">
+<ellipse cx="799.34" cy="428.61" rx="51.98" ry="51.98" fill="url(#ggrad3)" stroke="#FFFFFF" stroke-width="1" filter="url(#fx3)" />
+<text x="799.34" y="440.61" text-anchor="middle" xml:space="preserve" font-family="Impact, &quot;微软雅黑&quot;, sans-serif" font-size="48" fill="#404040"><tspan fill="#404040" font-size="48">03</tspan></text>
+</g>
+<g id="shape-36" data-name="RainbowowPPT">
+<rect x="694.91" y="551.56" width="294.6" height="64.14" fill="none" />
+<text x="704.51" y="583.56" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="32" fill="#404040">{{TOC_ITEM_1_TITLE}}</text>
+<text x="704.51" y="610.63" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="18.67" fill="#404040">{{TOC_ITEM_1_DESC}}</text>
+</g>
+<g id="shape-37" data-name="椭圆 36">
+<ellipse cx="1093.95" cy="428.61" rx="51.98" ry="51.98" fill="url(#ggrad4)" stroke="#FFFFFF" stroke-width="1" filter="url(#fx4)" />
+<text x="1093.95" y="440.61" text-anchor="middle" xml:space="preserve" font-family="Impact, &quot;微软雅黑&quot;, sans-serif" font-size="48" fill="#404040"><tspan fill="#404040" font-size="48">04</tspan></text>
+</g>
+<g id="shape-38" data-name="RainbowowPPT">
+<rect x="989.51" y="551.56" width="288.51" height="64.14" fill="none" />
+<text x="999.11" y="583.56" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="32" fill="#404040">{{TOC_ITEM_1_TITLE}}</text>
+<text x="999.11" y="610.63" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="18.67" fill="#404040">{{TOC_ITEM_1_DESC}}</text>
+</g>
+<g id="shape-39" data-name="RainbowowPPT">
+<rect x="514.83" y="175.45" width="327.38" height="68.66" fill="none" />
+<text x="524.43" y="255.05" text-anchor="start" xml:space="preserve" font-family="Arial, &quot;微软雅黑&quot;, sans-serif" font-size="88" fill="#0070C0" font-weight="bold"><tspan fill="#0070C0" font-size="88" font-weight="bold">目  录</tspan></text>
+</g>
+<g id="shape-40" data-name="文本框 39">
+<rect x="540.65" y="244.11" width="210.31" height="77.55" fill="none" />
+<text x="550.25" y="280.64" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="37.33" fill="#0070C0"><tspan fill="#0070C0" font-size="37.33">CONTENT</tspan></text>
+</g></svg>

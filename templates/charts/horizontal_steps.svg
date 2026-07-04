@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#F8FAFC" />
+  
+  <!-- Step Lines -->
+  <line x1="280" y1="280" x2="1000" y2="280" stroke="#CBD5E1" stroke-width="4" />
+  
+  <!-- Step 1 -->
+  <g id="step-1">
+    <circle cx="280" cy="280" r="40" fill="#3B82F6" stroke="#FFFFFF" stroke-width="4" />
+    <text x="280" y="287" font-family="-apple-system, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>01</tspan>
+    </text>
+    <text x="280" y="360" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#1E3A8A" text-anchor="middle">
+      <tspan>一阶段 / 线下吸纳</tspan>
+    </text>
+    <text x="280" y="400" font-family="-apple-system, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>完成试点高校的</tspan>
+      <tspan x="280" dy="20">首批种子核心用户积累</tspan>
+    </text>
+  </g>
+  
+  <!-- Step 2 -->
+  <g id="step-2">
+    <circle cx="520" cy="280" r="40" fill="#10B981" stroke="#FFFFFF" stroke-width="4" />
+    <text x="520" y="287" font-family="-apple-system, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>02</tspan>
+    </text>
+    <text x="520" y="360" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#065F46" text-anchor="middle">
+      <tspan>二阶段 / 模式复制</tspan>
+    </text>
+    <text x="520" y="400" font-family="-apple-system, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>打通全省高校网络</tspan>
+      <tspan x="520" dy="20">建立仓储运营标准化模型</tspan>
+    </text>
+  </g>
+  
+  <!-- Step 3 -->
+  <g id="step-3">
+    <circle cx="760" cy="280" r="40" fill="#F59E0B" stroke="#FFFFFF" stroke-width="4" />
+    <text x="760" y="287" font-family="-apple-system, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>03</tspan>
+    </text>
+    <text x="760" y="360" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#92400E" text-anchor="middle">
+      <tspan>三阶段 / 数智升级</tspan>
+    </text>
+    <text x="760" y="400" font-family="-apple-system, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>上线无人化清洗分拣设备</tspan>
+      <tspan x="760" dy="20">全链路智能云仓管理系统</tspan>
+    </text>
+  </g>
+  
+  <!-- Step 4 -->
+  <g id="step-4">
+    <circle cx="1000" cy="280" r="40" fill="#8B5CF6" stroke="#FFFFFF" stroke-width="4" />
+    <text x="1000" y="287" font-family="-apple-system, sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>04</tspan>
+    </text>
+    <text x="1000" y="360" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#5B21B6" text-anchor="middle">
+      <tspan>四阶段 / 生态共赢</tspan>
+    </text>
+    <text x="1000" y="400" font-family="-apple-system, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>联合生活大厂与商超生态</tspan>
+      <tspan x="1000" dy="20">提供跨场景一站式权益包</tspan>
+    </text>
+  </g>
+</svg>

@@ -65,8 +65,9 @@ source.pptx
 |---|---|
 | Existing `.pptx` + wants notes / narration / voiceover / auto-play / page transitions while keeping format stable | Run this workflow |
 | Existing `.pptx` + asks to optimize it but says not to change existing content or layout | Run this workflow only for V1 narration enhancements; clarify any visible-slide request |
-| Existing `.pptx` + asks to beautify or re-layout | Use [`beautify-pptx`](./beautify-pptx.md) |
-| Existing `.pptx` + asks to fill new content into the design | Not supported; route as main-pipeline source material, beautify the existing content, or create/register an internal template package first |
+| Existing `.pptx` + generic beautify / optimize / make professional request | Route as main-pipeline source material |
+| Existing `.pptx` + explicitly preserve page count/order/wording or source master/layout | Use [`faithful-beautify`](./beautify-pptx.md) |
+| Existing `.pptx` + asks to fill new content into the design | Not supported; route as main-pipeline source material, faithful-beautify the existing content when preservation is required, or create/register an internal template package first |
 | PPT Master generated project with `svg_output/` | Use [`generate-audio`](./generate-audio.md) for narration |
 
 ---

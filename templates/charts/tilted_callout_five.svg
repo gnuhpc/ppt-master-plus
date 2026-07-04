@@ -1,0 +1,80 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+<rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+<!-- Page title -->
+<text id="page-title" x="640" y="85" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="30" fill="#232525" font-weight="bold">{{PAGE_TITLE}}</text>
+
+<!-- ── Row 1: 3 circles + 3 tilted callout boxes ── -->
+
+<!-- Circle 01 -->
+<g id="node-1">
+  <circle cx="328.58" cy="215.42" r="25.42" fill="#232525"/>
+  <text x="328.58" y="222" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold">01</text>
+</g>
+<!-- Connector: circle 01 bottom → box 1 top -->
+<line id="conn-1" x1="328" y1="241" x2="324" y2="316" stroke="#232525" stroke-width="1.5"/>
+<!-- Callout box 01 (rotated 9.81° around box center) -->
+<g id="box-1" transform="rotate(9.81 323.65 366.17)">
+  <rect x="221.98" y="315.5" width="203.33" height="101.33" rx="11.44" ry="11.44" fill="#232525"/>
+  <text x="323.65" y="353" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="15" fill="#FFFFFF" font-weight="bold">{{BOX_TITLE_1}}</text>
+  <text x="323.65" y="374" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="11" fill="#AAAAAA">{{CONTENT_AREA_1}}</text>
+</g>
+
+<!-- Circle 02 -->
+<g id="node-2">
+  <circle cx="643.58" cy="215.42" r="25.42" fill="#232525"/>
+  <text x="643.58" y="222" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold">02</text>
+</g>
+<!-- Connector: circle 02 → box 2 -->
+<line id="conn-2" x1="643" y1="241" x2="639" y2="316" stroke="#232525" stroke-width="1.5"/>
+<!-- Callout box 02 -->
+<g id="box-2" transform="rotate(9.81 638.65 366.17)">
+  <rect x="536.98" y="315.5" width="203.33" height="101.33" rx="11.44" ry="11.44" fill="#232525"/>
+  <text x="638.65" y="353" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="15" fill="#FFFFFF" font-weight="bold">{{BOX_TITLE_2}}</text>
+  <text x="638.65" y="374" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="11" fill="#AAAAAA">{{CONTENT_AREA_2}}</text>
+</g>
+
+<!-- Circle 03 -->
+<g id="node-3">
+  <circle cx="958.58" cy="215.42" r="25.42" fill="#232525"/>
+  <text x="958.58" y="222" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold">03</text>
+</g>
+<!-- Connector: circle 03 → box 3 -->
+<line id="conn-3" x1="958" y1="241" x2="954" y2="316" stroke="#232525" stroke-width="1.5"/>
+<!-- Callout box 03 -->
+<g id="box-3" transform="rotate(9.81 953.83 366.17)">
+  <rect x="852.17" y="315.5" width="203.33" height="101.33" rx="11.44" ry="11.44" fill="#232525"/>
+  <text x="953.83" y="353" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="15" fill="#FFFFFF" font-weight="bold">{{BOX_TITLE_3}}</text>
+  <text x="953.83" y="374" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="11" fill="#AAAAAA">{{CONTENT_AREA_3}}</text>
+</g>
+
+<!-- ── Row 2: 2 circles + 2 tilted callout boxes (staggered, between row-1 items) ── -->
+
+<!-- Circle 04 -->
+<g id="node-4">
+  <circle cx="486.08" cy="432.42" r="25.42" fill="#232525"/>
+  <text x="486.08" y="439" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold">04</text>
+</g>
+<!-- Connector: circle 04 → box 4 -->
+<line id="conn-4" x1="486" y1="458" x2="481" y2="533" stroke="#232525" stroke-width="1.5"/>
+<!-- Callout box 04 -->
+<g id="box-4" transform="rotate(9.81 481.33 583.08)">
+  <rect x="379.67" y="532.5" width="203.33" height="101.17" rx="11.42" ry="11.42" fill="#232525"/>
+  <text x="481.33" y="570" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="15" fill="#FFFFFF" font-weight="bold">{{BOX_TITLE_4}}</text>
+  <text x="481.33" y="591" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="11" fill="#AAAAAA">{{CONTENT_AREA_4}}</text>
+</g>
+
+<!-- Circle 05 -->
+<g id="node-5">
+  <circle cx="801.08" cy="432.42" r="25.42" fill="#232525"/>
+  <text x="801.08" y="439" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-size="16" fill="#FFFFFF" font-weight="bold">05</text>
+</g>
+<!-- Connector: circle 05 → box 5 -->
+<line id="conn-5" x1="801" y1="458" x2="796" y2="533" stroke="#232525" stroke-width="1.5"/>
+<!-- Callout box 05 -->
+<g id="box-5" transform="rotate(9.81 796.33 583.08)">
+  <rect x="694.67" y="532.5" width="203.33" height="101.17" rx="11.42" ry="11.42" fill="#232525"/>
+  <text x="796.33" y="570" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="15" fill="#FFFFFF" font-weight="bold">{{BOX_TITLE_5}}</text>
+  <text x="796.33" y="591" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="11" fill="#AAAAAA">{{CONTENT_AREA_5}}</text>
+</g>
+</svg>

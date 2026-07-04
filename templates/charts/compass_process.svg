@@ -1,0 +1,152 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#F3F3F3" />
+<g id="shape-3" data-name="等腰三角形 2" transform="rotate(90 62.53 72.16)">
+<polygon points="62.53,49.31 89.04,95.01 36.02,95.01" stroke="none" fill="#0070C0" stroke-width="1" />
+</g>
+<g id="shape-22" data-name="Title 1">
+<rect x="107.66" y="50.91" width="223.62" height="39.84" fill="none" />
+<text x="107.66" y="82.91" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, &quot;Open Sans Light&quot;, sans-serif" font-size="32" fill="#404040">Compass Loop Process Chart</text>
+</g>
+<g id="shape-4" data-name="Group 3" transform="rotate(45 957.75 297.45)">
+<g id="shape-5" data-name="Rectangle 4">
+<rect x="916.2" y="34.02" width="80.76" height="406.41" fill="none" stroke-width="2" stroke="#0070C0" stroke-dasharray="4 4 1 4" />
+</g>
+<g id="shape-6" data-name="Group 5">
+<g id="shape-43" data-name="Isosceles Triangle 41" transform="translate(956.58 521.18) scale(1 -1) translate(-956.58 -521.18)">
+<polygon points="956.58,466.18 996.96,576.18 916.2,576.18" fill="#7F7F7F" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-44" data-name="Isosceles Triangle 7" transform="translate(956.58 547.98) scale(1 -1) translate(-956.58 -547.98)">
+<path d="M 937.99 570.08 L 956.58 519.78 L 975.17 570.08 C 968.34 570.2 963 576.06 956.16 576.18 L 937.99 570.08 Z" fill="#000000" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-7" data-name="Oval 6">
+<ellipse cx="957.23" cy="440.8" rx="10.45" ry="10.44" fill="#7F7F7F" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-8" data-name="Straight Connector 7" transform="translate(957.63 60.24) scale(-1 1) translate(-957.63 -60.24)">
+<line x1="923.6" y1="37.47" x2="991.67" y2="83.02" stroke-width="2" stroke-dasharray="4 4 1 4" fill="#0070C0" stroke="#0070C0" />
+</g>
+<g id="shape-9" data-name="Straight Connector 8" transform="translate(975.96 96.46) scale(-1 1) translate(-975.96 -96.46)">
+<line x1="964.1" y1="85.65" x2="987.82" y2="107.27" stroke-width="2" stroke-dasharray="4 4 1 4" fill="#0070C0" stroke="#0070C0" />
+</g>
+<g id="shape-10" data-name="Straight Connector 9" transform="translate(975.57 142.6) scale(-1 -1) translate(-975.57 -142.6)">
+<line x1="964.1" y1="128.89" x2="987.03" y2="156.3" stroke-width="2" stroke-dasharray="4 4 1 4" fill="#0070C0" stroke="#0070C0" />
+</g>
+<g id="shape-11" data-name="Straight Connector 10" transform="translate(929.33 97.15) scale(-1 -1) translate(-929.33 -97.15)">
+<line x1="916.2" y1="87.03" x2="942.47" y2="107.27" stroke-width="2" stroke-dasharray="4 4 1 4" fill="#0070C0" stroke="#0070C0" />
+</g>
+<g id="shape-12" data-name="Straight Connector 11" transform="translate(935.87 141.3) scale(1 -1) translate(-935.87 -141.3)">
+<line x1="923.6" y1="122.11" x2="948.13" y2="160.5" stroke-width="2" stroke-dasharray="4 4 1 4" fill="#0070C0" stroke="#0070C0" />
+</g>
+<g id="shape-13" data-name="Straight Connector 12" transform="translate(969.48 208.79) scale(-1 -1) translate(-969.48 -208.79)">
+<line x1="951.08" y1="202.8" x2="987.88" y2="214.78" stroke-width="2" stroke-dasharray="4 4 1 4" fill="#0070C0" stroke="#0070C0" />
+</g>
+<g id="shape-14" data-name="Straight Connector 13" transform="translate(935.93 225.9) scale(1 -1) translate(-935.93 -225.9)">
+<line x1="925.31" y1="204.28" x2="946.55" y2="247.52" stroke-width="2" stroke-dasharray="4 4 1 4" fill="#0070C0" stroke="#0070C0" />
+</g>
+<g id="shape-15" data-name="Straight Connector 14" transform="translate(932.3 186.9) scale(-1 -1) translate(-932.3 -186.9)">
+<line x1="914.61" y1="172.29" x2="949.98" y2="201.51" stroke-width="2" stroke-dasharray="4 4 1 4" fill="#0070C0" stroke="#0070C0" />
+</g>
+<g id="shape-16" data-name="Straight Connector 15" transform="translate(975.14 177.74) scale(1 -1) translate(-975.14 -177.74)">
+<line x1="953.28" y1="158.59" x2="996.99" y2="196.89" stroke-width="2" stroke-dasharray="4 4 1 4" fill="#0070C0" stroke="#0070C0" />
+</g>
+<g id="shape-17" data-name="Straight Connector 16" transform="translate(964.75 242.95) scale(1 -1) translate(-964.75 -242.95)">
+<line x1="929.38" y1="228.55" x2="1000.12" y2="257.34" stroke-width="2" stroke-dasharray="4 4 1 4" fill="#0070C0" stroke="#0070C0" />
+</g>
+<g id="shape-18" data-name="Straight Connector 17" transform="translate(927.38 282.55) scale(-1 -1) translate(-927.38 -282.55)">
+<line x1="919.2" y1="263.98" x2="935.57" y2="301.13" stroke-width="2" stroke-dasharray="4 4 1 4" fill="#0070C0" stroke="#0070C0" />
+</g>
+<g id="shape-19" data-name="Straight Connector 18" transform="translate(964.75 301.24) scale(1 -1) translate(-964.75 -301.24)">
+<line x1="935.57" y1="281.7" x2="993.93" y2="320.78" stroke-width="2" stroke-dasharray="4 4 1 4" fill="#0070C0" stroke="#0070C0" />
+</g>
+<g id="shape-20" data-name="Straight Connector 19" transform="translate(972.66 372.58) scale(-1 -1) translate(-972.66 -372.58)">
+<line x1="955.75" y1="370.03" x2="989.58" y2="375.14" stroke-width="2" stroke-dasharray="4 4 1 4" fill="#0070C0" stroke="#0070C0" />
+</g>
+<g id="shape-21" data-name="Straight Connector 20" transform="translate(934.61 399.9) scale(-1 1) translate(-934.61 -399.9)">
+<line x1="922.44" y1="367.32" x2="946.79" y2="432.48" stroke-width="2" stroke-dasharray="4 4 1 4" fill="#0070C0" stroke="#0070C0" />
+</g>
+<g id="shape-23" data-name="Straight Connector 21" transform="translate(974.06 405.2) scale(-1 -1) translate(-974.06 -405.2)">
+<line x1="954.19" y1="376.41" x2="993.93" y2="433.98" stroke-width="2" stroke-dasharray="4 4 1 4" fill="#0070C0" stroke="#0070C0" />
+</g>
+<g id="shape-24" data-name="Straight Connector 22" transform="translate(968.93 328.2) scale(1 -1) translate(-968.93 -328.2)">
+<line x1="950.09" y1="289.55" x2="987.77" y2="366.85" stroke-width="2" stroke-dasharray="4 4 1 4" fill="#0070C0" stroke="#0070C0" />
+</g>
+<g id="shape-25" data-name="Oval 23">
+<ellipse cx="916.2" cy="34.02" rx="15.29" ry="15.29" stroke="none" fill="#0070C0" stroke-width="1" />
+</g>
+<g id="shape-26" data-name="Oval 24">
+<ellipse cx="995.47" cy="34.4" rx="15.29" ry="15.29" fill="#7F7F7F" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-27" data-name="Oval 25">
+<ellipse cx="995.47" cy="79.65" rx="11.49" ry="11.49" fill="#0070C0" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-28" data-name="Oval 26">
+<ellipse cx="915.48" cy="91.14" rx="11.49" ry="11.49" fill="#7F7F7F" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-29" data-name="Oval 27">
+<ellipse cx="956.58" cy="33.35" rx="10.45" ry="10.44" fill="#0070C0" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-30" data-name="Oval 28">
+<ellipse cx="916.2" cy="434.38" rx="15.29" ry="15.29" fill="#7F7F7F" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-31" data-name="Oval 29">
+<ellipse cx="993.98" cy="434.38" rx="15.29" ry="15.29" fill="#0070C0" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-32" data-name="Oval 30">
+<ellipse cx="953.28" cy="118.08" rx="15.29" ry="15.29" fill="#7F7F7F" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-33" data-name="Oval 31">
+<ellipse cx="915.48" cy="257.34" rx="13.9" ry="13.9" fill="#7F7F7F" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-34" data-name="Oval 32">
+<ellipse cx="996.01" cy="222.9" rx="11.49" ry="11.49" stroke="none" fill="#0070C0" stroke-width="1" />
+</g>
+<g id="shape-35" data-name="Oval 33">
+<ellipse cx="915.48" cy="168.62" rx="11.49" ry="11.49" fill="#7F7F7F" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-36" data-name="Oval 34">
+<ellipse cx="997.03" cy="284.12" rx="15.29" ry="15.29" fill="#7F7F7F" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-37" data-name="Oval 35">
+<ellipse cx="999.31" cy="155.48" rx="15.29" ry="15.29" fill="#7F7F7F" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-38" data-name="Oval 36">
+<ellipse cx="996.96" cy="382.52" rx="10.45" ry="10.44" fill="#7F7F7F" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-39" data-name="Oval 37">
+<ellipse cx="917.69" cy="338.39" rx="10.45" ry="10.44" fill="#7F7F7F" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-40" data-name="Oval 38">
+<ellipse cx="950" cy="364.02" rx="18.51" ry="18.5" stroke="none" fill="#0070C0" stroke-width="1" />
+</g>
+<g id="shape-41" data-name="Oval 39">
+<ellipse cx="945.4" cy="310.96" rx="13.9" ry="13.9" fill="#0070C0" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-42" data-name="Oval 40">
+<ellipse cx="950.36" cy="199.92" rx="15.29" ry="15.29" fill="#0070C0" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-45" data-name="Freeform 43">
+<path d="M 741.01 512.58 C 720.41 506.27 699.81 499.97 695.93 505.3 C 692.06 510.64 727.2 541.43 717.74 544.58 C 708.29 547.73 661.52 528.09 639.22 524.21 C 616.93 520.34 583 510.88 583.97 521.3 C 584.94 531.73 663.7 583.37 645.04 586.76 C 626.38 590.15 491.15 529.3 472 541.67 C 452.86 554.03 549.55 652.94 530.17 660.94 L 355.67 589.67 C 324.41 576.82 333.5 580.34 342.59 583.85" fill="none" stroke-width="6" stroke-linecap="square" stroke="#000000" stroke-linejoin="bevel" />
+</g>
+<g id="shape-46" data-name="TextBox 45">
+<rect x="265.69" y="305.09" width="535.37" height="48.47" fill="none" />
+<text x="275.29" y="323.48" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="16" fill="#808080"><tspan fill="#808080" font-size="16">在此框中选择粘贴，并选择只保留文字。您的内容打在这里，或者通过复</tspan><tspan x="275.29" dy="19.2" fill="#808080" font-size="16">制您的文本后</tspan></text>
+</g>
+<g id="shape-47" data-name="Group 46">
+<g id="shape-48" data-name="TextBox 47">
+<rect x="266.23" y="355.19" width="105.55" height="35.53" fill="none" />
+<text x="275.83" y="378.12" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="21.33" fill="#404040">Process Milestone</text>
+</g>
+<g id="shape-49" data-name="Rectangle 48">
+<rect x="270.18" y="393.97" width="441.67" height="48.47" fill="none" />
+<text x="279.78" y="412.37" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="16" fill="#808080"><tspan fill="#808080" font-size="16">在此框中选择粘贴，并选择只保留文字。您的内容打在这里</tspan><tspan x="279.78" dy="19.2" fill="#808080" font-size="16">，或者通过复制您的文本后</tspan></text>
+</g>
+</g>
+<g id="shape-50" data-name="Group 49">
+<g id="shape-51" data-name="Oval 50">
+<ellipse cx="163.93" cy="355.6" rx="85.01" ry="85.03" fill="#0070C0" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-52" data-name="Freeform 51">
+<path d="M 167.15 366.76 C 167.15 363.04 169.97 360.99 174.59 357.91 C 180.23 354.19 187.28 349.57 187.28 338.54 C 187.28 337.51 186.38 336.74 185.49 336.74 C 176.64 336.74 176.64 336.74 176.64 336.74 C 175.36 334.43 171.64 332 164.2 332 C 156.63 332 152.91 334.43 151.76 336.74 C 142.91 336.74 142.91 336.74 142.91 336.74 C 141.89 336.74 141.12 337.51 141.12 338.54 C 141.12 349.57 148.04 354.19 153.68 357.91 C 158.3 360.99 161.12 363.04 161.12 366.76 C 161.12 370.1 161.12 370.1 161.12 370.1 C 156.25 370.61 152.79 372.41 152.79 374.59 C 152.79 377.16 157.92 379.21 164.2 379.21 C 170.48 379.21 175.61 377.16 175.61 374.59 C 175.61 372.41 172.02 370.61 167.15 370.1 L 167.15 366.76 Z M 174.33 353.81 C 175.74 350.73 176.9 346.49 177.15 340.33 C 183.56 340.33 183.56 340.33 183.56 340.33 C 182.92 347.26 178.82 350.73 174.33 353.81 Z M 164.2 335.07 C 171.12 335.07 173.95 338.03 173.95 339.05 C 173.95 340.08 171.12 343.03 164.2 343.03 C 157.15 343.03 154.45 340.08 154.45 339.05 C 154.45 338.03 157.15 335.07 164.2 335.07 Z M 144.83 340.33 C 151.25 340.33 151.25 340.33 151.25 340.33 C 151.38 346.49 152.53 350.73 154.07 353.81 C 149.58 350.73 145.35 347.26 144.83 340.33 Z" fill="#E7E6E6" stroke="none" />
+</g>
+</g></svg>

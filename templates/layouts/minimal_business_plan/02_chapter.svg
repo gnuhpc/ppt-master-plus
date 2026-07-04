@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#FFFFFF" /><stop offset="1" stop-color="#FFFFFF" stop-opacity="0" /></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="layout-shape-94" data-name="图片 93" transform="rotate(347.69 1023.99 210.82)">
+<image href="image2.png" x="588.65" y="-149.18" width="870.68" height="720" preserveAspectRatio="none" />
+</g>
+<g id="layout-shape-96" data-name="图片 95" transform="rotate(336.5 927.44 559.41)">
+<image href="split_office.png" x="472.35" y="106.94" width="910.18" height="904.94" preserveAspectRatio="none" />
+</g>
+<g id="layout-shape-95" data-name="矩形 94">
+<rect x="0" y="0" width="1110" height="720" fill="url(#ggrad1)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-10" data-name="矩形 9">
+<rect x="60.55" y="117" width="321.53" height="387.96" fill="#ECECEC" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-423" data-name="文本框 422">
+<rect x="94.44" y="314.47" width="393.89" height="80.78" fill="none" />
+<text x="104.04" y="369.14" text-anchor="start" xml:space="preserve" font-family="Impact, &quot;思源黑体&quot;, sans-serif" font-size="58.67" fill="#000000" font-weight="bold">{{CHAPTER_TITLE}}</text>
+</g>
+<g id="shape-7" data-name="文本框 6">
+<rect x="96.36" y="180.54" width="569.1" height="78.14" fill="none" />
+<text x="105.96" y="221.6" text-anchor="start" xml:space="preserve" font-family="&quot;思源宋体 CN&quot;, sans-serif" font-size="42.67" fill="#000000" font-weight="bold">PART {{CHAPTER_NUM}}</text>
+</g>
+<g id="shape-9" data-name="文本框 8">
+<rect x="98.36" y="392.69" width="501.85" height="48.47" fill="none" />
+<text x="107.96" y="408.83" text-anchor="start" xml:space="preserve" font-family="&quot;方正黑体简体&quot;, sans-serif" font-size="13.33" fill="#808080"><tspan fill="#808080" font-size="13.33">Lorem ipsum dolor sit amet, consectetuer dipiscing elit, sed diam </tspan><tspan fill="#808080" font-size="13.33">nonummy</tspan></text>
+<text x="107.96" y="424.83" text-anchor="start" xml:space="preserve" font-family="&quot;方正黑体简体&quot;, sans-serif" font-size="13.33" fill="#808080"><tspan fill="#808080" font-size="13.33">nibheuismod </tspan><tspan fill="#808080" font-size="13.33">tincidunt ut laoreet </tspan><tspan fill="#808080" font-size="13.33">dolore</tspan></text>
+</g>
+<g id="shape-5" data-name="直接连接符 4">
+<line x1="109.44" y1="274.04" x2="167.04" y2="274.04" stroke-width="3" stroke="#0D0D0D" fill="#4F81BD" />
+</g></svg>

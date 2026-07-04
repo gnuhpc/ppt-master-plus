@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#F8FAFC"/>
+
+  <!-- Defs: arrow markers for connector lines -->
+  <defs>
+    <marker id="arrow-sm" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#94A3B8"/>
+    </marker>
+  </defs>
+
+  <!-- Page Title -->
+  <g id="page-title">
+    <text x="640" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="28" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>{{PAGE_TITLE}}</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Connector lines (satellite → secondary → central) ===== -->
+  <!-- Lines from small satellite nodes to nearest secondary hub -->
+  <g id="satellite-connectors">
+    <!-- Left cluster lines (nodes → Left secondary) -->
+    <line x1="148" y1="160" x2="285" y2="235" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arrow-sm)"/>
+    <line x1="115" y1="310" x2="240" y2="305" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arrow-sm)"/>
+    <line x1="148" y1="458" x2="248" y2="390" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arrow-sm)"/>
+    <line x1="240" y1="545" x2="296" y2="450" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arrow-sm)"/>
+    <line x1="370" y1="172" x2="320" y2="235" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arrow-sm)"/>
+    <!-- Right cluster lines (nodes → Right secondary) -->
+    <line x1="1132" y1="160" x2="980" y2="240" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arrow-sm)"/>
+    <line x1="1165" y1="310" x2="1016" y2="304" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arrow-sm)"/>
+    <line x1="1132" y1="458" x2="1008" y2="390" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arrow-sm)"/>
+    <line x1="1040" y1="545" x2="972" y2="450" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arrow-sm)"/>
+    <line x1="910" y1="172" x2="958" y2="240" stroke="#CBD5E1" stroke-width="1.5" marker-end="url(#arrow-sm)"/>
+  </g>
+
+  <!-- Lines from secondary hubs to central hub -->
+  <g id="hub-connectors">
+    <line x1="395" y1="320" x2="518" y2="358" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow-sm)"/>
+    <line x1="885" y1="320" x2="762" y2="358" stroke="#94A3B8" stroke-width="2" marker-end="url(#arrow-sm)"/>
+  </g>
+
+  <!-- ===== Secondary Hub — Left ===== -->
+  <g id="hub-left">
+    <!-- Double-ring circles (outer dark, white gap, inner dark, white interior) -->
+    <circle cx="320" cy="320" r="80" fill="#1A1F29"/>
+    <circle cx="320" cy="320" r="68" fill="#FFFFFF"/>
+    <circle cx="320" cy="320" r="60" fill="#1A1F29"/>
+    <circle cx="320" cy="320" r="50" fill="#FFFFFF"/>
+    <!-- Metric text -->
+    <text x="320" y="313" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="34" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>33%</tspan>
+    </text>
+    <text x="320" y="333" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Metric A</tspan>
+    </text>
+    <!-- Hub label below -->
+    <text x="320" y="414" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Category Label A</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Secondary Hub — Right ===== -->
+  <g id="hub-right">
+    <circle cx="960" cy="320" r="80" fill="#383737"/>
+    <circle cx="960" cy="320" r="68" fill="#FFFFFF"/>
+    <circle cx="960" cy="320" r="60" fill="#383737"/>
+    <circle cx="960" cy="320" r="50" fill="#FFFFFF"/>
+    <text x="960" y="313" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="34" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>35%</tspan>
+    </text>
+    <text x="960" y="333" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Metric B</tspan>
+    </text>
+    <text x="960" y="414" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Category Label B</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Central Hub (large) ===== -->
+  <g id="hub-central">
+    <!-- Outer ring -->
+    <circle cx="640" cy="380" r="128" fill="#383737"/>
+    <circle cx="640" cy="380" r="114" fill="#FFFFFF"/>
+    <!-- Inner ring -->
+    <circle cx="640" cy="380" r="104" fill="#1A1F29"/>
+    <circle cx="640" cy="380" r="90" fill="#FFFFFF"/>
+    <!-- Hero metric -->
+    <text x="640" y="369" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="72" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>97</tspan>
+    </text>
+    <text x="640" y="400" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" font-weight="600" fill="#64748B" text-anchor="middle">
+      <tspan>% Overall</tspan>
+    </text>
+    <!-- Central label below -->
+    <text x="640" y="525" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Core Metric Label</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Small Satellite Nodes — Left Cluster ===== -->
+  <g id="satellites-left">
+    <!-- Node A -->
+    <circle cx="148" cy="160" r="22" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="148" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">
+      <tspan>A</tspan>
+    </text>
+    <!-- Node B -->
+    <circle cx="115" cy="310" r="22" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="115" y="315" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">
+      <tspan>B</tspan>
+    </text>
+    <!-- Node C -->
+    <circle cx="148" cy="458" r="22" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="148" y="463" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">
+      <tspan>C</tspan>
+    </text>
+    <!-- Node D -->
+    <circle cx="240" cy="545" r="22" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="240" y="550" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">
+      <tspan>D</tspan>
+    </text>
+    <!-- Node E -->
+    <circle cx="370" cy="172" r="22" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="370" y="177" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">
+      <tspan>E</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Small Satellite Nodes — Right Cluster ===== -->
+  <g id="satellites-right">
+    <!-- Node F -->
+    <circle cx="1132" cy="160" r="22" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="1132" y="165" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">
+      <tspan>F</tspan>
+    </text>
+    <!-- Node G -->
+    <circle cx="1165" cy="310" r="22" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="1165" y="315" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">
+      <tspan>G</tspan>
+    </text>
+    <!-- Node H -->
+    <circle cx="1132" cy="458" r="22" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="1132" y="463" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">
+      <tspan>H</tspan>
+    </text>
+    <!-- Node I -->
+    <circle cx="1040" cy="545" r="22" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="1040" y="550" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">
+      <tspan>I</tspan>
+    </text>
+    <!-- Node J -->
+    <circle cx="910" cy="172" r="22" fill="none" stroke="#94A3B8" stroke-width="1.5"/>
+    <text x="910" y="177" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="16" font-weight="600" fill="#475569" text-anchor="middle">
+      <tspan>J</tspan>
+    </text>
+  </g>
+
+  <!-- Source note -->
+  <text x="60" y="698" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#CBD5E1">
+    <tspan>Source: Internal Report</tspan>
+  </text>
+</svg>

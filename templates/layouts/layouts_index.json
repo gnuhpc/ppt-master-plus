@@ -11,6 +11,18 @@
       "ending"
     ]
   },
+  "academic_thesis_colorful": {
+    "summary": "Four-color academic thesis defense; Chinese calligraphic TOC header, per-chapter accent ovals, persistent left-edge colored circle tabs, dashed boundary lines on chapter slides.",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
   "ai_ops": {
     "summary": "Telecom AI operations architecture, IT system overviews, digital transformation proposals, smart infrastructure reports.",
     "canvas_format": "ppt169",
@@ -22,6 +34,73 @@
       "content",
       "ending",
       "reference_style"
+    ]
+  },
+  "black_white_flower_minimal": {
+    "summary": "Elegant black and white minimalist style with hand-drawn flower sketch accents.",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "chapter",
+      "toc",
+      "content",
+      "ending"
+    ]
+  },
+  "blue_gray_classic": {
+    "summary": "Simple business blue and gray layout style.",
+    "canvas_format": "ppt169",
+    "page_count": 12,
+    "page_types": [
+      "cover",
+      "chapter",
+      "toc",
+      "content",
+      "content_img_list",
+      "content_two_col",
+      "content_timeline",
+      "content_grid",
+      "content_table",
+      "content_funnel",
+      "content_venn",
+      "ending"
+    ]
+  },
+  "business_proposal_minimal": {
+    "summary": "Elegant minimalist layout using classic serif Chinese typography and skyline backgrounds.",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "chapter",
+      "toc",
+      "content",
+      "ending"
+    ]
+  },
+  "creative_watercolor_multihued": {
+    "summary": "Highly artistic hand-drawn sketch style with multi-hued watercolor flower accents.",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "chapter",
+      "toc",
+      "content",
+      "ending"
+    ]
+  },
+  "fresh_product_launch": {
+    "summary": "Minimalist fresh green leaves style layout for product launches.",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "chapter",
+      "toc",
+      "content",
+      "ending"
     ]
   },
   "government_blue": {
@@ -48,6 +127,31 @@
       "ending"
     ]
   },
+  "ink_smoke_minimal": {
+    "summary": "Artistic grey ink wash and smoke textured layout using classic vertical script formatting.",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "chapter",
+      "toc",
+      "content",
+      "ending"
+    ]
+  },
+  "marble_gray_minimal": {
+    "summary": "High-end marble textured background with gold accented borders and modern typography.",
+    "canvas_format": "ppt169",
+    "page_count": 6,
+    "page_types": [
+      "cover",
+      "chapter",
+      "toc",
+      "content",
+      "ending",
+      "content_three_columns"
+    ]
+  },
   "medical_university": {
     "summary": "Medical academic reports, case discussions, research presentations, hospital work reports, medical education and training.",
     "canvas_format": "ppt169",
@@ -56,6 +160,92 @@
       "cover",
       "toc",
       "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "minimal_blue_gray": {
+    "summary": "Ultra-minimalist business style in slate blue-gray.",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "chapter",
+      "toc",
+      "content",
+      "ending"
+    ]
+  },
+  "minimal_business_plan": {
+    "summary": "Sleek modern corporate style with off-center grey panels and soft gradient office split images.",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "chapter",
+      "toc",
+      "content",
+      "ending"
+    ]
+  },
+  "minimal_clean_01": {
+    "summary": "Super-clean minimalist corporate style with fine line-art concentric waves.",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "chapter",
+      "toc",
+      "content",
+      "ending"
+    ]
+  },
+  "minimal_clean_18": {
+    "summary": "Elegant minimalist layout with vertical typography and subtle gray backgrounds.",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "chapter",
+      "toc",
+      "content",
+      "ending"
+    ]
+  },
+  "minimal_clean_19": {
+    "summary": "Sleek dark-mode digital tech style layout with network line details.",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "chapter",
+      "toc",
+      "content",
+      "ending"
+    ]
+  },
+  "minimal_editorial_serif": {
+    "summary": "High-end editorial style layout with clean serif typography and split-image divider blocks.",
+    "canvas_format": "ppt169",
+    "page_count": 7,
+    "page_types": [
+      "cover",
+      "chapter",
+      "toc",
+      "content",
+      "ending",
+      "content_two_col",
+      "content_three_circles"
+    ]
+  },
+  "peach_blossom_fresh": {
+    "summary": "Fresh and artistic peach blossom flower layout style.",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "chapter",
+      "toc",
       "content",
       "ending"
     ]
@@ -80,6 +270,20 @@
       "cover",
       "toc",
       "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "work_summary_elegant_bw": {
+    "summary": "Monochromatic B&W work-summary; \"WE LOVE WHAT WE DO\" brand mark, thin gray title frame, three-dot footer signature; heavy full-bleed photography, zero color accent.",
+    "canvas_format": "ppt169",
+    "page_count": 7,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "content",
       "content",
       "ending"
     ]

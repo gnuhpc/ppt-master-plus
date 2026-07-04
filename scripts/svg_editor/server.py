@@ -979,6 +979,7 @@ def build_parser() -> argparse.ArgumentParser:
     )
     parser.add_argument('project_dir', help='Path to project directory (contains svg_output/)')
     parser.add_argument('--port', type=int, default=5050, help='Port to listen on (default: 5050)')
+    parser.add_argument('--host', default='127.0.0.1', help='Host to listen on (default: 127.0.0.1)')
     parser.add_argument('--no-browser', action='store_true', help='Do not auto-open browser')
     parser.add_argument(
         '--daemon',
@@ -1087,6 +1088,8 @@ def main(argv: Optional[list[str]] = None) -> int:
             str(idle_timeout),
             '--no-browser',
         ]
+        if args.host:
+            cmd.extend(['--host', args.host])
         if args.live:
             cmd.append('--live')
         creationflags = 0
@@ -1108,8 +1111,21 @@ def main(argv: Optional[list[str]] = None) -> int:
         except OSError as exc:
             logger.error('cannot write live preview log: %s (%s)', log_path, exc)
             return 1
-        url = f'http://localhost:{port}'
-        if not _wait_for_ready(url, proc):
+        check_url = f'http://127.0.0.1:{port}'
+        host_str = args.host
+        if host_str == '0.0.0.0':
+            import socket
+            try:
+                s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+                s.connect(('8.8.8.8', 80))
+                host_str = s.getsockname()[0]
+                s.close()
+            except Exception:
+                host_str = 'localhost'
+        elif host_str == '127.0.0.1':
+            host_str = 'localhost'
+        url = f'http://{host_str}:{port}'
+        if not _wait_for_ready(check_url, proc):
             logger.error('live preview failed to become reachable: %s (log: %s)', url, log_path)
             return 1
         logger.info('started live preview in background: %s (pid=%s)', url, proc.pid)
@@ -1174,7 +1190,19 @@ def main(argv: Optional[list[str]] = None) -> int:
         lock_file=lock_file,
     )
 
-    url = f'http://localhost:{port}'
+    host_str = args.host
+    if host_str == '0.0.0.0':
+        import socket
+        try:
+            s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
+            s.connect(('8.8.8.8', 80))
+            host_str = s.getsockname()[0]
+            s.close()
+        except Exception:
+            host_str = 'localhost'
+    elif host_str == '127.0.0.1':
+        host_str = 'localhost'
+    url = f'http://{host_str}:{port}'
     if not args.no_browser:
         _open_browser(url)
 
@@ -1184,7 +1212,7 @@ def main(argv: Optional[list[str]] = None) -> int:
     logger.info('project: %s', project_path)
     logger.info('svg_output: %s (%d slides)', svg_output, svg_count)
     logger.info('idle timeout: %ds (0 = disabled)', idle_timeout)
-    app.run(host='127.0.0.1', port=port, debug=False)
+    app.run(host=args.host, port=port, debug=False)
     return 0
 
 

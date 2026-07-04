@@ -1,0 +1,59 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#F8FAFC" />
+  
+  <!-- Left Decorative Triangle Stack -->
+  <g id="left-triangle-stack">
+    <path d="M 0 0 L 520 360 L 0 720 Z" fill="#EFF6FF" stroke="none" />
+    <path d="M 0 0 L 480 360 L 0 680 Z" fill="#DBEAFE" stroke="none" />
+    <path d="M 0 0 L 440 360 L 0 640 Z" fill="#BFDBFE" stroke="none" />
+    <path d="M 0 0 L 400 360 L 0 600 Z" fill="#93C5FD" stroke="none" />
+    <path d="M 0 0 L 360 360 L 0 560 Z" fill="#60A5FA" stroke="none" />
+    <path d="M 0 0 L 320 360 L 0 520 Z" fill="#3B82F6" stroke="none" />
+  </g>
+  
+  <!-- Right Decorative Triangle Stack -->
+  <g id="right-triangle-stack">
+    <path d="M 1280 720 L 760 360 L 1280 0 Z" fill="#FFF1F2" stroke="none" />
+    <path d="M 1280 720 L 800 360 L 1280 40 Z" fill="#FFE4E6" stroke="none" />
+    <path d="M 1280 720 L 840 360 L 1280 80 Z" fill="#FECDD3" stroke="none" />
+    <path d="M 1280 720 L 880 360 L 1280 120 Z" fill="#FDA4AF" stroke="none" />
+    <path d="M 1280 720 L 920 360 L 1280 160 Z" fill="#FB7185" stroke="none" />
+    <path d="M 1280 720 L 960 360 L 1280 200 Z" fill="#F43F5E" stroke="none" />
+  </g>
+  
+  <!-- Left Side Text Group -->
+  <g id="left-text">
+    <line x1="280" y1="200" x2="520" y2="200" stroke="#3B82F6" stroke-width="2" />
+    <text x="520" y="180" font-family="-apple-system, sans-serif" font-size="24" font-weight="bold" fill="#1E3A8A" text-anchor="end">
+      <tspan>OPTION A / 传统模式</tspan>
+    </text>
+    <text x="520" y="235" font-family="-apple-system, sans-serif" font-size="16" fill="#475569" text-anchor="end">
+      <tspan>洗衣房距离同学们的住处较远，洗涤时间固定局限，</tspan>
+      <tspan x="520" dy="24">设备老化排队时间长，且衣物甩干后依然潮湿难耐。</tspan>
+    </text>
+  </g>
+  
+  <!-- Right Side Text Group -->
+  <g id="right-text">
+    <line x1="760" y1="520" x2="1000" y2="520" stroke="#F43F5E" stroke-width="2" />
+    <text x="760" y="500" font-family="-apple-system, sans-serif" font-size="24" font-weight="bold" fill="#9F1239" text-anchor="start">
+      <tspan>OPTION B / 智能清洗服务</tspan>
+    </text>
+    <text x="760" y="555" font-family="-apple-system, sans-serif" font-size="16" fill="#475569" text-anchor="start">
+      <tspan>提供24小时全天候下单上门收取配送，一小时极速洗涤，</tspan>
+      <tspan x="760" dy="24">配合高温烘干杀菌一体化服务，给用户极致体验。</tspan>
+    </text>
+  </g>
+  
+  <!-- Central Header Badge -->
+  <g id="center-badge">
+    <rect x="520" y="320" width="240" height="80" rx="8" ry="8" fill="#0F172A" stroke="#FFFFFF" stroke-width="3" />
+    <text x="640" y="355" font-family="-apple-system, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>CONTRAST</tspan>
+    </text>
+    <text x="640" y="380" font-family="-apple-system, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">
+      <tspan>DIFFERENTIATION</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+
+  <!-- Left side panel -->
+  <rect x="0" y="0" width="380" height="720" fill="#0F172A" />
+  <text x="190" y="360" font-family="sans-serif" font-size="40" font-weight="bold" fill="#FFFFFF" text-anchor="middle" transform="rotate(-90, 190, 360)">{{PAGE_TITLE}}</text>
+
+  <!-- Right content rows -->
+  <g id="rows" transform="translate(420, 100)">
+    <!-- Row 1 -->
+    <g id="row1">
+      <rect x="0" y="0" width="8" height="80" fill="#3B82F6" rx="4" />
+      <text x="30" y="28" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1E293B">01. First Key Point</text>
+      <text x="30" y="60" font-family="sans-serif" font-size="15" fill="#64748B">
+        <tspan x="30" dy="0">Detailed supporting information for point one.</tspan>
+      </text>
+    </g>
+    <!-- Row 2 -->
+    <g id="row2" transform="translate(0, 130)">
+      <rect x="0" y="0" width="8" height="80" fill="#0F172A" rx="4" />
+      <text x="30" y="28" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1E293B">02. Second Key Point</text>
+      <text x="30" y="60" font-family="sans-serif" font-size="15" fill="#64748B">
+        <tspan x="30" dy="0">Detailed supporting information for point two.</tspan>
+      </text>
+    </g>
+    <!-- Row 3 -->
+    <g id="row3" transform="translate(0, 260)">
+      <rect x="0" y="0" width="8" height="80" fill="#3B82F6" rx="4" />
+      <text x="30" y="28" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1E293B">03. Third Key Point</text>
+      <text x="30" y="60" font-family="sans-serif" font-size="15" fill="#64748B">
+        <tspan x="30" dy="0">Detailed supporting information for point three.</tspan>
+      </text>
+    </g>
+    <!-- Row 4 -->
+    <g id="row4" transform="translate(0, 390)">
+      <rect x="0" y="0" width="8" height="80" fill="#0F172A" rx="4" />
+      <text x="30" y="28" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1E293B">04. Fourth Key Point</text>
+      <text x="30" y="60" font-family="sans-serif" font-size="15" fill="#64748B">
+        <tspan x="30" dy="0">Detailed supporting information for point four.</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

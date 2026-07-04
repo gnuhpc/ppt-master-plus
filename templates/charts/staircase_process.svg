@@ -1,0 +1,32 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#F8FAFC" />
+  <text x="640" y="100" font-family="sans-serif" font-size="36" font-weight="bold" fill="#1E293B" text-anchor="middle">{{PAGE_TITLE}}</text>
+
+  <g id="steps" transform="translate(120, 560)">
+    <!-- Step 5 (bottom, widest) -->
+    <rect x="0" y="-80" width="1040" height="80" fill="#E2E8F0" rx="4" />
+    <text x="24" y="-30" font-family="sans-serif" font-size="20" font-weight="bold" fill="#475569">Step 5: Foundation Layer</text>
+    <text x="24" y="-5" font-family="sans-serif" font-size="14" fill="#64748B">The base that supports everything above.</text>
+
+    <!-- Step 4 -->
+    <rect x="80" y="-180" width="880" height="80" fill="#CBD5E1" rx="4" />
+    <text x="104" y="-130" font-family="sans-serif" font-size="20" font-weight="bold" fill="#334155">Step 4: Core Processes</text>
+    <text x="104" y="-105" font-family="sans-serif" font-size="14" fill="#64748B">Critical systems and procedures.</text>
+
+    <!-- Step 3 -->
+    <rect x="160" y="-280" width="720" height="80" fill="#94A3B8" rx="4" />
+    <text x="184" y="-230" font-family="sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">Step 3: Capabilities</text>
+    <text x="184" y="-205" font-family="sans-serif" font-size="14" fill="#E2E8F0">Key skills and resources.</text>
+
+    <!-- Step 2 -->
+    <rect x="240" y="-380" width="560" height="80" fill="#475569" rx="4" />
+    <text x="264" y="-330" font-family="sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">Step 2: Strategy</text>
+    <text x="264" y="-305" font-family="sans-serif" font-size="14" fill="#CBD5E1">Directional planning.</text>
+
+    <!-- Step 1 (top, narrowest) -->
+    <rect x="320" y="-480" width="400" height="80" fill="#1E293B" rx="4" />
+    <text x="344" y="-430" font-family="sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF">Step 1: Vision</text>
+    <text x="344" y="-405" font-family="sans-serif" font-size="14" fill="#94A3B8">The guiding purpose.</text>
+  </g>
+</svg>

@@ -23,6 +23,9 @@ Each style has its own file with: shape & decoration, typography character, colo
 | [`glassmorphism`](./glassmorphism.md) | Translucent glass panels, gradient light, floating depth | Modern SaaS, fintech, product launches, AI demos | `glassmorphism` |
 | [`dark-tech`](./dark-tech.md) | Dark canvas, glow accents, geometric precision | Tech, AI, data products, launches | `digital-dashboard` |
 | [`blueprint`](./blueprint.md) | Schematic line work on dark paper, isometric, annotated | Technical briefings, architecture, engineering | `blueprint` |
+| [`marble-luxury`](./marble-luxury.md) | Stone-texture panel, metallic hairline rules, bold/thin CJK contrast | Real estate, luxury brand, board-level corporate, premium consulting | `corporate-photo` |
+| [`sage-minimal`](./sage-minimal.md) | Muted earthy tones, ultra-light CJK, vast breathing whitespace | Product launch, lifestyle, wellness, sustainable / ESG, clean-tech | `nature` |
+| [`dark-serif`](./dark-serif.md) | Near-black canvas, CJK serif voice, restrained metallic accent | Business plans, formal pitches, legal / finance, investment memos | `editorial` |
 
 ### 1.2 Editorial / publication
 
@@ -64,6 +67,9 @@ Each style has its own file with: shape & decoration, typography character, colo
 | Signal | Recommended style | Alternates |
 |---|---|---|
 | High-end consulting / architecture / luxury / minimal | `swiss-minimal` | `editorial` |
+| Luxury brand / real estate / premium board-level / 高端地产 / 奢品 | `marble-luxury` | `swiss-minimal` |
+| Product launch / lifestyle / wellness / ESG / 健康 / 环保 | `sage-minimal` | `soft-rounded` |
+| Business plan / formal pitch / legal / finance / 投资备忘录 | `dark-serif` | `editorial` |
 | Finance / journalism / research / long-form analysis | `editorial` | `data-journalism` |
 | Photography-led / architecture / design / fashion / 大图 | `photo-editorial` | `editorial` |
 | Data report / market review / 财经 / Bloomberg / Economist | `data-journalism` | `editorial` |

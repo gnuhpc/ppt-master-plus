@@ -6,7 +6,7 @@ PPT Master's exported PPTX supports **page transitions** (slide-to-slide) and **
 
 | Layer | Default | Why |
 |---|---|---|
-| Page transition | `fade`, 0.4s | Calm baseline that suits most decks |
+| Page transition | **`none` (off)** | Page transitions are a delivery preference, so the Confirm UI asks explicitly. Turn them on with `-t fade` / `push` / etc. |
 | Per-element animation | **`none` (off)** | A page appears as a whole. Auto-firing element builds are an unsolicited "AI deck" tell, so element entrance is opt-in. Turn it on with `-a auto` (or another effect): effects map from group id (chart→wipe, card-/step-/pillar-→fly, title/takeaway→fade); image-like ids (`hero` / `figure-` / `image` / `img-` / `kpi`) cycle a richer visual pool (zoom / dissolve / circle / box / diamond / wheel) so multiple images vary across the deck; unmatched ids cycle a small fade/wipe/fly/zoom pool |
 
 To regenerate a deck with different settings, rerun `svg_to_pptx.py` against the same `svg_output/` (or `svg_final/`) — no need to rerun the LLM. To turn per-element animation on for the whole deck, pass `-a auto`.
@@ -69,11 +69,11 @@ python3 skills/ppt-master-plus/scripts/svg_to_pptx.py <project> -t none
 python3 skills/ppt-master-plus/scripts/svg_to_pptx.py <project> --auto-advance 5
 ```
 
-Available effects: `fade`, `push`, `wipe`, `split`, `strips`, `cover`, `random`.
+Available effects: `none`, `fade`, `push`, `wipe`, `split`, `strips`, `cover`, `random`.
 
 Flags:
 
-- `-t/--transition` — effect name, or `none` to disable. Default: `fade`.
+- `-t/--transition` — effect name, or `none` to disable. Default: `none`.
 - `--transition-duration` — seconds, default `0.4`.
 - `--auto-advance` — seconds; omit for presenter-controlled advance.
 
@@ -86,7 +86,7 @@ Off by default — enable deck-wide with `-a auto` (or another effect). Once ena
 - **`after-previous`** (default) — first group fires on slide entry, subsequent groups cascade after the previous one finishes, with `--animation-stagger` extra spacing. Suits kiosk playback, recorded walkthroughs, or anyone who wants visual flow without clicking.
 
 ```bash
-# Default behavior (no flags): page transitions only, no per-element builds
+# Default behavior (no flags): no page transitions, no per-element builds
 python3 skills/ppt-master-plus/scripts/svg_to_pptx.py <project>
 
 # Enable per-element animation deck-wide (auto effect + after-previous cascade)

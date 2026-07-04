@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-27" data-name="组合 26">
+<g id="shape-19" data-name="椭圆 18">
+<ellipse cx="611.39" cy="664.73" rx="7.27" ry="7.27" fill="#262626" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-23" data-name="椭圆 22">
+<ellipse cx="640" cy="664.73" rx="7.27" ry="7.27" fill="#262626" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-24" data-name="椭圆 23">
+<ellipse cx="668.61" cy="664.73" rx="7.27" ry="7.27" fill="#262626" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-28" data-name="组合 27">
+<g id="shape-25" data-name="直接连接符 24">
+<line x1="461.09" y1="97.17" x2="503.76" y2="97.17" stroke-width="2" fill="#000000" stroke="#000000" />
+</g>
+<g id="shape-29" data-name="直接连接符 28">
+<line x1="771.39" y1="97.17" x2="814.06" y2="97.17" stroke-width="2" fill="#000000" stroke="#000000" />
+</g>
+</g>
+<g id="shape-26" data-name="文本框 25">
+<rect x="487.27" y="82.62" width="305.45" height="29.08" fill="none" />
+<text x="640" y="101.02" text-anchor="middle" xml:space="preserve" font-family="&quot;Open Sans&quot;, sans-serif" font-size="16" fill="#000000" letter-spacing="4"><tspan fill="#000000" font-size="16" letter-spacing="4">WE LOVE WHAT WE DO</tspan></text>
+</g><text x="80" y="140" text-anchor="start" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="28" font-weight="bold" fill="#262626">{{PAGE_TITLE}}</text><line x1="80" y1="160" x2="1200" y2="160" stroke="#D9D9D9" stroke-width="1" /><rect x="80" y="180" width="1120" height="440" fill="none" stroke="#7F7F7F" stroke-opacity="0.2" stroke-dasharray="4 4" /><text x="640" y="400" text-anchor="middle" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="18" fill="#7F7F7F">{{CONTENT_AREA}}</text></svg>

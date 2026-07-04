@@ -83,6 +83,8 @@ def main() -> int:
     )
     parser.add_argument("project_path", type=Path, nargs="?")
     parser.add_argument("-o", "--output", type=Path, default=None)
+    parser.add_argument("-n", "--notes", default="notes",
+                        help="speaker notes source directory name/path (default: notes)")
     parser.add_argument(
         "--provider",
         choices=["edge", "elevenlabs", "minimax", "qwen", "cosyvoice"],
@@ -285,7 +287,9 @@ def main() -> int:
         backend = AudioBackend(provider=args.provider, extension=backend_edge.edge_output_extension(), voice_id=args.voice)
 
     project = args.project_path
-    notes_dir = project / "notes"
+    notes_dir = Path(args.notes)
+    if not notes_dir.is_absolute():
+        notes_dir = project / notes_dir
     output_dir = args.output or (project / "audio")
     output_dir.mkdir(parents=True, exist_ok=True)
 

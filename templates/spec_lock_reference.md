@@ -11,6 +11,18 @@
 - format: PPT 16:9
 
 > Strategist: fill viewBox and format for the chosen canvas. Common values: `0 0 1280 720` (PPT 16:9), `0 0 1024 768` (PPT 4:3), `0 0 1242 1660` (Xiaohongshu), `0 0 1080 1080` (WeChat Moments), `0 0 1080 1920` (Story).
+>
+> `preserve_master` is omitted in normal/main-pipeline projects. Only faithful PPTX beautify writes it, together with `base_pptx`, when the user explicitly chose source master/layout preservation.
+
+## generation_mode
+- generation_mode: continuous
+
+> Strategist: copy verbatim from `confirm_ui/result.json` → `generation_mode`. One of `continuous` (default one-pass), `gated` (逐页精修 — per-slide approval loop), or `split` (Phase A/B split). Executor MUST check this before Visual Construction and follow `workflows/gated-production.md` Per-slide Gate when value is `gated`.
+
+## transition_effect
+- transition_effect: none
+
+> Strategist: copy verbatim from `confirm_ui/result.json` → `transition_effect`; default `none` when absent. One of `none` / `fade` / `push` / `wipe` / `split` / `strips` / `cover` / `random`. Export MUST pass this to `svg_to_pptx.py -t <effect>`. No user confirmation or unchanged default means `none`.
 
 ## mode
 - mode: pyramid

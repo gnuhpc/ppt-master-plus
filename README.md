@@ -220,6 +220,32 @@ Post-processing
 
 核心入口是 [`SKILL.md`](SKILL.md)。分阶段生产流程在 [`workflows/gated-production.md`](workflows/gated-production.md)，上游与本地合并记录在 [`references/upstream.md`](references/upstream.md)。关于模板设计架构请参考 [`references/templates-architecture.md`](references/templates-architecture.md)，系统技术架构设计参考 [`references/technical-design.md`](references/technical-design.md)。
 
+## 更新记录
+
+### 最近更新 (2026-07)
+
+- **新增原生 PPTX 模版填充工作流 (Template Fill Workflow)**
+  - 支持直接将新内容填充到已有 PPTX 原生模版中，无需经过 SVG 转换，完美保留原幻灯片的主题、图表、表格、逻辑布局与复杂动画。
+  - 提供模版分析 (`analyze`)、填充方案生成 (`scaffold`)、文字容量智能校验 (`check-plan`)、应用填充 (`apply`) 和提取验证 (`ppt_to_md.py`) 的全套闭环流程。
+- **模板与图表资产库大幅扩容**
+  - **模版扩充**：新增 21 套传统行业模版和 1 套 ffa_shenzhen 模版，使模版总数从 8 套扩增至 **30 套**，覆盖商业汇报、竞聘述职、学术答辩等全场景。
+  - **图表扩充**：新增 60 个 SVG 图表/信息图，使图表总数扩充至 **131 个**，涵盖更多行业可视化场景。
+  - **Layout 骨架扩充**：新增 16 组 Layout 骨架，使骨架总数从 7 组扩充至 **23 组**，包含极简商务、编辑性衬线、水彩多彩、产品发布等风格。
+  - **新增品牌预设**：增加 `flink_ai_style` 品牌风格预设。
+- **Confirm UI 与 Live Preview 网页交互终端重构与体验优化**
+  - **两阶段确认**：Confirm UI 升级，支持更精细的 `content_divergence`、`generation_mode`、`transition_effect`、`refine_spec` 控制。
+  - **逐页精修 (Gated Mode)**：新增 `gated` 生产模式，每生成一页将暂停等待用户在浏览器中预览、批注、重新修复并显式确认后，再行继续。
+  - **Live Preview 功能增强**：
+    - 内置**演讲稿 (Speaker Notes) 直接编辑与实时保存**功能。
+    - 新增底部键盘与鼠标快捷操作提示栏（键盘导航、←/→翻页、右键重叠元素选择器等）。
+    - 支持 Shift+点击多选、Tab 快速标注等操作。
+- **母版保留功能 (Preserve Master) 原生支持**
+  - 原生支持 `preserve_master: true`（保真美化模式），通过 `svg_to_pptx.py` 自动应用源 PPT 幻灯片的母版布局。
+  - 制定并自动执行了严格的背景/图表容器透明度规范，避免全画布大卡片（Full-canvas wrapper card）遮挡底色，确保局部重构元素与原生母版完美融合。
+- **质量检验与自动化合约测试**
+  - 新增自动化合约测试套件 `test_skill_contract.py`，保证 Gated 流程、Live Preview 交互以及 OOXML 结构的稳定性。
+  - 优化转场与动画配置默认值：转场效果默认关闭 (`-t none`)，避免不必要的 AI 痕迹。
+
 ## 致敬 ppt-master
 
 `ppt-master-plus` 继承并致敬 [`ppt-master`](https://github.com/hugohe3/ppt-master)：它保留了原有 skill 对”原生可编辑 PPTX””高质量 SVG 页面””模板驱动制作”和”中文汇报场景”的执着，同时在此基础上把 Deck 模板从 8 套扩充到 30 套（新增 21 套传统行业模板和 ffa_shenzhen）、图表 SVG 从 71 个扩充到 131 个、Layout 骨架从 7 组扩充到 23 组，并新增了讲稿质检能力和更严格的生产流程。

@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect x="0" y="0" width="1280" height="720" fill="#000000" />
+  <image href="cover_bg.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+  
+  <!-- Logo -->
+  <image href="logo.png" x="33.165" y="26.635" width="99.41" height="48.145" preserveAspectRatio="none" />
+
+  <!-- Thank you typography -->
+  <g id="ending-group">
+    <text x="640" y="340" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-size="96" fill="#FFFFFF" font-weight="bold">{{THANK_YOU}}</text>
+    
+    <!-- Chinese subtitle -->
+    <text x="640" y="420" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="40" fill="#FFFFFF" letter-spacing="10">{{CLOSING_MESSAGE}}</text>
+    
+    <!-- Decorative side bars -->
+    <rect x="250" y="413" width="14" height="4" fill="#FFFFFF" stroke="none" />
+    <rect x="1016" y="413" width="14" height="4" fill="#FFFFFF" stroke="none" />
+  </g>
+</svg>

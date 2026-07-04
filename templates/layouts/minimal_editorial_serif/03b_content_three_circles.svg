@@ -1,0 +1,64 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  
+  <!-- Bottom dots decoration -->
+  <g id="shape-27" data-name="组合 26">
+    <ellipse cx="611.39" cy="664.73" rx="7.27" ry="7.27" fill="#262626" />
+    <ellipse cx="640" cy="664.73" rx="7.27" ry="7.27" fill="#262626" />
+    <ellipse cx="668.61" cy="664.73" rx="7.27" ry="7.27" fill="#262626" />
+  </g>
+  
+  <!-- Top Badge decoration -->
+  <g id="shape-28" data-name="组合 27">
+    <line x1="461.09" y1="97.17" x2="503.76" y2="97.17" stroke-width="2" stroke="#000000" />
+    <line x1="771.39" y1="97.17" x2="814.06" y2="97.17" stroke-width="2" stroke="#000000" />
+  </g>
+  <g id="shape-26" data-name="文本框 25">
+    <rect x="487.27" y="82.62" width="305.45" height="29.08" fill="none" />
+    <text x="640" y="101.02" text-anchor="middle" font-family="'Georgia', serif" font-size="16" fill="#000000" letter-spacing="4">WE LOVE WHAT WE DO</text>
+  </g>
+  
+  <!-- Page Title & Divider -->
+  <text x="80" y="140" text-anchor="start" font-family="'Georgia', serif" font-size="28" font-weight="bold" fill="#262626">{{PAGE_TITLE}}</text>
+  <line x1="80" y1="160" x2="1200" y2="160" stroke="#D9D9D9" stroke-width="1" />
+  
+  <!-- Circle Metric 1 -->
+  <g id="circle-metric-1">
+    <circle cx="280" cy="320" r="80" fill="none" stroke="#D9D9D9" stroke-width="12" />
+    <circle cx="280" cy="320" r="80" fill="none" stroke="#262626" stroke-width="12" stroke-dasharray="502.65" stroke-dashoffset="125.66" transform="rotate(-90 280 320)" />
+    <text x="280" y="328" font-family="'Georgia', serif" font-size="24" font-weight="bold" fill="#262626" text-anchor="middle">{{LABEL_1}}</text>
+    <text x="280" y="440" font-family="sans-serif" font-size="18" font-weight="bold" fill="#262626" text-anchor="middle">{{TITLE_1}}</text>
+    <text x="280" y="480" font-family="sans-serif" font-size="14" fill="#7F7F7F" text-anchor="middle">
+      <tspan x="280" dy="0">{{DESC_1_L1}}</tspan>
+      <tspan x="280" dy="20">{{DESC_1_L2}}</tspan>
+    </text>
+  </g>
+  
+  <!-- Circle Metric 2 -->
+  <g id="circle-metric-2">
+    <circle cx="640" cy="320" r="80" fill="none" stroke="#D9D9D9" stroke-width="12" />
+    <circle cx="640" cy="320" r="80" fill="none" stroke="#262626" stroke-width="12" stroke-dasharray="502.65" stroke-dashoffset="251.33" transform="rotate(-90 640 320)" />
+    <text x="640" y="328" font-family="'Georgia', serif" font-size="24" font-weight="bold" fill="#262626" text-anchor="middle">{{LABEL_2}}</text>
+    <text x="640" y="440" font-family="sans-serif" font-size="18" font-weight="bold" fill="#262626" text-anchor="middle">{{TITLE_2}}</text>
+    <text x="640" y="480" font-family="sans-serif" font-size="14" fill="#7F7F7F" text-anchor="middle">
+      <tspan x="640" dy="0">{{DESC_2_L1}}</tspan>
+      <tspan x="640" dy="20">{{DESC_2_L2}}</tspan>
+    </text>
+  </g>
+  
+  <!-- Circle Metric 3 -->
+  <g id="circle-metric-3">
+    <circle cx="1000" cy="320" r="80" fill="none" stroke="#D9D9D9" stroke-width="12" />
+    <circle cx="1000" cy="320" r="80" fill="none" stroke="#262626" stroke-width="12" stroke-dasharray="502.65" stroke-dashoffset="376.99" transform="rotate(-90 1000 320)" />
+    <text x="1000" y="328" font-family="'Georgia', serif" font-size="24" font-weight="bold" fill="#262626" text-anchor="middle">{{LABEL_3}}</text>
+    <text x="1000" y="440" font-family="sans-serif" font-size="18" font-weight="bold" fill="#262626" text-anchor="middle">{{TITLE_3}}</text>
+    <text x="1000" y="480" font-family="sans-serif" font-size="14" fill="#7F7F7F" text-anchor="middle">
+      <tspan x="1000" dy="0">{{DESC_3_L1}}</tspan>
+      <tspan x="1000" dy="20">{{DESC_3_L2}}</tspan>
+    </text>
+  </g>
+  
+  <!-- Footer Page Number -->
+  <text x="640" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7F7F7F">{{PAGE_NUM}}</text>
+</svg>

@@ -1,6 +1,6 @@
 /* PPT Master - Eight Confirmations UI
  * Finite/enumerable fields (canvas, mode, visual style, icons, image usage,
- * AI source, formula policy, generation mode) list ALL options from
+ * AI source, formula policy, generation mode, transition effect) list ALL options from
  * /static/catalogs.json with the AI's recommendation marked. Open/generative
  * fields (color, typography, generated-image style) show >=3 AI candidates. Open fields also expose
  * Custom controls. On confirm the page saves result.json and closes.
@@ -24,13 +24,14 @@
             lang_toggle_title: "Switch language",
             sec_canvas: "Canvas format",
             sec_pages: "Page count",
+            page_count_locked_note: "Locked to source PPTX — faithful beautify keeps the original page count.",
             sec_preserve_master: "Source master",
             preserve_master_yes: "Preserve source master/layouts",
             preserve_master_yes_desc: "Keep each output slide on the same source slide layout/master, including master backgrounds and background images.",
             preserve_master_no: "Create a new deck",
             preserve_master_no_desc: "Do not preserve the source master; use a newly generated visual system.",
             preserve_master_note_on: "Output slide N keeps source slide N's layout/master mapping.",
-            preserve_master_note_off: "The source master is not used; only the beautify 1:1 content contract remains.",
+            preserve_master_note_off: "The source master is not used; only the faithful-beautify 1:1 content contract remains.",
             sec_audience: "Target audience",
             sec_style: "Style objective",
             sec_color: "Color scheme",
@@ -38,6 +39,7 @@
             sec_type: "Typography",
             sec_images: "Image usage",
             sec_mode: "Generation mode",
+            sec_transition: "Page transitions",
             sec_refine: "Refine spec first",
             sub_mode: "Narrative mode",
             sub_visual: "Visual style",
@@ -91,6 +93,8 @@
             mode_continuous_desc: "Generate the whole deck in one pass without interruptions.",
             mode_gated_desc: "Stop at every slide for preview and manual approval before continuing.",
             mode_split_desc: "Stop after the spec; resume SVG generation in a fresh window.",
+            transition_none_desc: "Default: no page transition animation.",
+            transition_effect_desc: "Confirmed page transition effect used at PPTX export.",
             refine_off_desc: "Spec is written in one go; the pipeline auto-proceeds.",
             refine_on_desc: "Stop after the spec for review/revision before any generation.",
             off_default: "Off",
@@ -112,13 +116,14 @@
             lang_toggle_title: "切换语言",
             sec_canvas: "画布格式",
             sec_pages: "页数",
+            page_count_locked_note: "已锁定为源 PPTX 页数 — 保真美化保持原始页数不变。",
             sec_preserve_master: "源 PPT 母版",
             preserve_master_yes: "保留源 PPT 母版/版式",
             preserve_master_yes_desc: "输出第 N 页继续使用源第 N 页的同一版式/母版，完整保留母版背景和背景图片。",
             preserve_master_no: "完全新建",
             preserve_master_no_desc: "不保留源母版，使用重新生成的视觉系统。",
             preserve_master_note_on: "输出第 N 页会一一对应保留源第 N 页的版式/母版映射。",
-            preserve_master_note_off: "不使用源母版，仅保留 beautify 的内容 1:1 约束。",
+            preserve_master_note_off: "不使用源母版，仅保留 faithful-beautify 的内容 1:1 约束。",
             sec_audience: "目标受众",
             sec_style: "风格目标",
             sec_color: "色彩方案",
@@ -126,6 +131,7 @@
             sec_type: "字体方案",
             sec_images: "图片使用",
             sec_mode: "生成模式",
+            sec_transition: "转场动画",
             sec_refine: "先精修设计规范",
             sub_mode: "叙事模式",
             sub_visual: "视觉风格",
@@ -179,6 +185,8 @@
             mode_continuous_desc: "一次性连续生成整份演示文稿，不中途打断。",
             mode_gated_desc: "生成每一页都停下，在 Live Preview 预览并等待你确认后再继续下一页。",
             mode_split_desc: "写完设计规范后停止，另开窗口继续生成页面。",
+            transition_none_desc: "默认：不添加页面转场动画。",
+            transition_effect_desc: "导出 PPTX 时使用已确认的页面转场效果。",
             refine_off_desc: "设计规范一次写完，流程自动继续。",
             refine_on_desc: "写完设计规范后停下供你审阅或修改，再开始生成。",
             off_default: "关",
@@ -554,8 +562,17 @@
 
     function renderPages(host) {
         var sec = section(2, "sec_pages");
-        textField(sec, function () { return STATE.page_count; },
-            function (v) { STATE.page_count = v; }, "placeholder_pages", true);
+        if (REC && REC.page_count && REC.page_count.locked) {
+            var val = el("div", "locked-field-value");
+            val.textContent = STATE.page_count || "—";
+            sec.appendChild(val);
+            var note = el("div", "locked-field-note");
+            note.textContent = t("page_count_locked_note");
+            sec.appendChild(note);
+        } else {
+            textField(sec, function () { return STATE.page_count; },
+                function (v) { STATE.page_count = v; }, "placeholder_pages", true);
+        }
         host.appendChild(sec);
     }
 
@@ -769,10 +786,10 @@
     function renderColor(host) {
         var cands = (REC.color && REC.color.candidates) || [];
         var sec = section(5, "sec_color");
-        var grid = el("div", "color-grid");
+        var rows = el("div", "palette-rows");
         var hexInputs = {};
         var hexSwatches = {};
-        var cardSwatchRefs = [];   // idx -> {role: swatchEl}, for live override feedback
+        var cellRefs = [];   // idx -> {role: cellEl}, for live override feedback
         var selectedIdx = -1;
 
         function paintSwatch(elem, val) {
@@ -795,7 +812,7 @@
             var c = cands[idx] || {};
             selectedIdx = idx;
             STATE.color = { name: c.name || "", palette: Object.assign({}, normPalette(c)) };
-            grid.querySelectorAll(".color-card").forEach(function (card, i) { card.classList.toggle("selected", i === idx); });
+            rows.querySelectorAll(".palette-row").forEach(function (row, i) { row.classList.toggle("selected", i === idx); });
             customInput.style.display = "none";
             applyHexInputs(STATE.color.palette);
             refreshStylePreview();
@@ -804,8 +821,8 @@
         function selectCustomColor() {
             selectedIdx = -1;
             STATE.color = { name: "custom", custom: customInput.value || "", palette: {} };
-            grid.querySelectorAll(".color-card").forEach(function (card) { card.classList.remove("selected"); });
-            customCard.classList.add("selected");
+            rows.querySelectorAll(".palette-row").forEach(function (row) { row.classList.remove("selected"); });
+            customRow.classList.add("selected");
             customInput.style.display = "block";
             customInput.focus();
             refreshStylePreview();
@@ -814,28 +831,35 @@
         cands.forEach(function (c, idx) {
             var pal = normPalette(c);
             var refs = {};
-            var card = el("div", "color-card");
-            var sw = el("div", "swatches");
+            var row = el("div", "palette-row");
+
+            // Strip of color cells (the Office-style swatch bar)
+            var strip = el("div", "palette-strip");
             PALETTE_ROLES.forEach(function (role) {
                 if (!pal[role]) return;
-                var col = el("div", "swatch-col");
-                var s = el("div", "swatch"); s.style.background = pal[role];
-                refs[role] = s;
-                col.appendChild(s); col.appendChild(el("div", "swatch-role", t("role_" + role)));
-                sw.appendChild(col);
+                var cell = el("div", "palette-cell");
+                cell.style.background = pal[role];
+                cell.title = t("role_" + role) + "  " + pal[role];
+                refs[role] = cell;
+                strip.appendChild(cell);
             });
-            cardSwatchRefs[idx] = refs;
-            card.appendChild(sw);
-            card.appendChild(el("div", "color-name", localized(c, "name") || (t("option_prefix") + " " + (idx + 1))));
-            if (localized(c, "note")) card.appendChild(el("div", "color-note", localized(c, "note")));
-            card.addEventListener("click", function () { selectCard(idx); });
-            grid.appendChild(card);
+            cellRefs[idx] = refs;
+            row.appendChild(strip);
+
+            // Name + note
+            var meta = el("div", "palette-meta");
+            meta.appendChild(el("span", "palette-name", localized(c, "name") || (t("option_prefix") + " " + (idx + 1))));
+            if (localized(c, "note")) meta.appendChild(el("span", "palette-note-row", localized(c, "note")));
+            row.appendChild(meta);
+
+            row.addEventListener("click", function () { selectCard(idx); });
+            rows.appendChild(row);
         });
-        var customCard = el("div", "color-card color-card-custom");
-        customCard.appendChild(el("div", "color-name", t("custom_color")));
-        customCard.addEventListener("click", selectCustomColor);
-        grid.appendChild(customCard);
-        sec.appendChild(grid);
+        var customRow = el("div", "palette-row palette-row-custom");
+        customRow.appendChild(el("span", "palette-name", t("custom_color")));
+        customRow.addEventListener("click", selectCustomColor);
+        rows.appendChild(customRow);
+        sec.appendChild(rows);
         customInput.addEventListener("input", function () {
             if (!STATE.color || STATE.color.name !== "custom") selectCustomColor();
             STATE.color.custom = customInput.value;
@@ -861,8 +885,8 @@
                 // Reflect a valid override straight onto the selected card so the
                 // user sees the change in context, not just in the input row.
                 var n = normHex(inp.value);
-                if (n && selectedIdx >= 0 && cardSwatchRefs[selectedIdx] && cardSwatchRefs[selectedIdx][role]) {
-                    cardSwatchRefs[selectedIdx][role].style.background = n;
+                if (n && selectedIdx >= 0 && cellRefs[selectedIdx] && cellRefs[selectedIdx][role]) {
+                    cellRefs[selectedIdx][role].style.background = n;
                 }
                 refreshStylePreview();
             });
@@ -1280,6 +1304,17 @@
         host.appendChild(sec);
     }
 
+    function renderTransition(host) {
+        var sec = section("T", "sec_transition");
+        function refresh() {
+            setSectionNote(sec, STATE.transition_effect === "none" ? t("transition_none_desc") : t("transition_effect_desc"));
+        }
+        enumField(sec, CAT.transition_effect, recOrFirst("transition_effect", CAT.transition_effect),
+            function () { return STATE.transition_effect; }, function (v) { STATE.transition_effect = v; refresh(); });
+        refresh();
+        host.appendChild(sec);
+    }
+
     function renderRefine(host) {
         var sec = section("R", "sec_refine");
         var opts = [{ id: "off", label: t("off_default") }, { id: "on", label: t("on") }];
@@ -1334,6 +1369,7 @@
             host.appendChild(styleGroup);
             renderImages(host);
             renderMode(host);
+            renderTransition(host);
             renderRefine(host);
         }
         updateActionBar(tier);
@@ -1399,6 +1435,7 @@
         STATE.image_ai_path = pick("image_ai_path", CAT.image_ai_path);
 
         STATE.generation_mode = pick("generation_mode", CAT.generation_mode);
+        STATE.transition_effect = recId("transition_effect") || "none";
         STATE.refine_spec = !!((REC.refine_spec && REC.refine_spec.value) || (REC.recommend && REC.recommend.refine_spec));
         if (hasPreserveMasterField()) {
             STATE.preserve_master = recommendedPreserveMaster();

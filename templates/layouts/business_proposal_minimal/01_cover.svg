@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#F8F8F8" />
+<g id="shape-5" data-name="图片 4">
+<svg x="422.27" y="2.13" width="880.8" height="722.4" viewBox="0 0.0522 0.78021 0.95061" preserveAspectRatio="none"><image href="business_skyline.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-10" data-name="文本框 9">
+<rect x="59.27" y="505.2" width="733.13" height="32.2" fill="none" />
+<text x="68.87" y="525.87" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="18.67" fill="#1A1F2A">{{TITLE}}</text>
+</g>
+<g id="shape-8" data-name="文本框 7">
+<rect x="50.2" y="292.33" width="795.87" height="116.2" fill="none" />
+<text x="59.8" y="371.93" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="88" fill="#1A1F2A" font-weight="bold" letter-spacing="40">{{TITLE}}</text>
+</g>
+<g id="shape-18" data-name="文本框 17">
+<rect x="59.27" y="400.33" width="562.6" height="70.93" fill="none" />
+<text x="68.87" y="421" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, Calibri, sans-serif" font-size="18.67" fill="#1A1F2A"><tspan fill="#1A1F2A" font-size="18.67">Don't aim for success if you want it; just do what you love </tspan><tspan x="68.87" dy="22.4" fill="#1A1F2A" font-size="18.67">and believe in, and it will come naturally.</tspan></text>
+<text x="68.87" y="461.27" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="13.33" fill="#1A1F2A"><tspan fill="#1A1F2A" font-size="13.33"> </tspan></text>
+</g>
+<g id="shape-29" data-name="文本框 28">
+<rect x="59.27" y="195.53" width="363" height="96.8" fill="none" />
+<text x="68.87" y="261.53" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="72" fill="#1A1F2A" font-weight="bold" letter-spacing="40">{{DATE}}</text>
+</g>
+</svg>

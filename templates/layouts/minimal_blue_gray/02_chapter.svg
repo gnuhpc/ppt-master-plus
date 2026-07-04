@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-2" data-name="圆角矩形 1">
+<rect x="532.32" y="70.17" width="226.77" height="226.77" fill="#D9D9D9" fill-opacity="0.7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-3" data-name="圆角矩形 2">
+<rect x="473.25" y="149.57" width="25.53" height="25.53" fill="#D9D9D9" fill-opacity="0.7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-4" data-name="圆角矩形 3">
+<rect x="498.78" y="198.16" width="13.38" height="13.38" fill="#D9D9D9" fill-opacity="0.7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-5" data-name="圆角矩形 4">
+<rect x="768.34" y="138.67" width="21.95" height="21.95" fill="#D9D9D9" fill-opacity="0.7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-6" data-name="文本框 5">
+<rect x="554.53" y="164.36" width="188.77" height="54.93" fill="none" />
+<text x="564.13" y="200.9" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="37.33" fill="#44546A">{{CHAPTER_NUM}}</text>
+</g>
+<g id="shape-7" data-name="文本框 6">
+<rect x="555.78" y="209.84" width="186.28" height="35.54" fill="none" />
+<text x="565.38" y="232.78" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="21.33" fill="#44546A">Part {{CHAPTER_NUM}}</text>
+</g>
+<g id="shape-8" data-name="文本框 7">
+<rect x="328.21" y="290.87" width="641.4" height="116.33" fill="none" />
+<text x="337.81" y="370.47" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="88" fill="#44546A">{{CHAPTER_TITLE}}</text>
+</g>
+<g id="shape-9" data-name="文本框 8">
+<rect x="309.18" y="407.19" width="679.48" height="58.48" fill="none" />
+<text x="648.92" y="423.89" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体 CN Regular&quot;, +mn-cs, sans-serif" font-size="14" fill="#808080">{{CHAPTER_DESC}}</text>
+</g></svg>

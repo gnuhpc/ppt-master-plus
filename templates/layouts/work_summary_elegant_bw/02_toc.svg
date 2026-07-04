@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<!-- Triangular photo placeholder (lower-left triangle: 0,0 → 0,720 → 720,720) -->
+<polygon points="0,0 0,720 720,720" fill="#D0D0D0"/>
+<!-- Diagonal separator line -->
+<line x1="102.79" y1="-6.79" x2="837.82" y2="728.24" stroke="#D9D9D9" stroke-width="1"/>
+<!-- White overlay for CONTENTS heading area -->
+<rect x="3.74" y="28.95" width="613.82" height="81.59" fill="#FFFFFF"/>
+<!-- CONTENTS heading -->
+<text x="138.82" y="92.9" text-anchor="start" font-family="&quot;Open Sans&quot;, sans-serif" font-size="48" fill="#262626" font-weight="bold">CONTENTS</text>
+<!-- Item 1: circle + number + labels -->
+<ellipse cx="357.9" cy="237.57" rx="41.47" ry="41.47" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1"/>
+<text x="339.81" y="276.65" text-anchor="start" font-family="&quot;Open Sans&quot;, sans-serif" font-size="64" fill="#262626">1</text>
+<text x="430.46" y="230.44" text-anchor="start" font-family="&quot;Open Sans&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold">PART 01</text>
+<text x="430.46" y="255" text-anchor="start" font-family="&quot;等线&quot;, DengXian, sans-serif" font-size="18.67" fill="#262626" font-weight="bold">{{TOC_ITEM_1_TITLE}}</text>
+<text x="430.46" y="275" text-anchor="start" font-family="&quot;等线&quot;, DengXian, sans-serif" font-size="13.33" fill="#A6A6A6">{{TOC_ITEM_1_DESC}}</text>
+<!-- Item 2: circle + number + labels -->
+<ellipse cx="463.98" cy="354.82" rx="41.47" ry="41.47" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1"/>
+<text x="445.89" y="393.9" text-anchor="start" font-family="&quot;Open Sans&quot;, sans-serif" font-size="64" fill="#262626">2</text>
+<text x="528.83" y="348.81" text-anchor="start" font-family="&quot;Open Sans&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold">PART 02</text>
+<text x="528.83" y="373" text-anchor="start" font-family="&quot;等线&quot;, DengXian, sans-serif" font-size="18.67" fill="#262626" font-weight="bold">{{TOC_ITEM_2_TITLE}}</text>
+<text x="528.83" y="393" text-anchor="start" font-family="&quot;等线&quot;, DengXian, sans-serif" font-size="13.33" fill="#A6A6A6">{{TOC_ITEM_2_DESC}}</text>
+<!-- Item 3: circle + number + labels -->
+<ellipse cx="576.67" cy="472.24" rx="41.47" ry="41.47" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1"/>
+<text x="558.58" y="511.32" text-anchor="start" font-family="&quot;Open Sans&quot;, sans-serif" font-size="64" fill="#262626">3</text>
+<text x="655.9" y="459.12" text-anchor="start" font-family="&quot;Open Sans&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold">PART 03</text>
+<text x="655.9" y="484" text-anchor="start" font-family="&quot;等线&quot;, DengXian, sans-serif" font-size="18.67" fill="#262626" font-weight="bold">{{TOC_ITEM_3_TITLE}}</text>
+<text x="655.9" y="504" text-anchor="start" font-family="&quot;等线&quot;, DengXian, sans-serif" font-size="13.33" fill="#A6A6A6">{{TOC_ITEM_3_DESC}}</text>
+<!-- Item 4: circle + number + labels -->
+<ellipse cx="698.02" cy="586.45" rx="41.47" ry="41.47" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1"/>
+<text x="679.94" y="625.53" text-anchor="start" font-family="&quot;Open Sans&quot;, sans-serif" font-size="64" fill="#262626">4</text>
+<text x="769.98" y="580.87" text-anchor="start" font-family="&quot;Open Sans&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold">PART 04</text>
+<text x="769.98" y="605" text-anchor="start" font-family="&quot;等线&quot;, DengXian, sans-serif" font-size="18.67" fill="#262626" font-weight="bold">{{TOC_ITEM_4_TITLE}}</text>
+<text x="769.98" y="625" text-anchor="start" font-family="&quot;等线&quot;, DengXian, sans-serif" font-size="13.33" fill="#A6A6A6">{{TOC_ITEM_4_DESC}}</text>
+</svg>

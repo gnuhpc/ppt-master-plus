@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+
+  <!-- Left triangle decorative fill -->
+  <polygon points="0,150 600,720 0,720" fill="#F1F5F9" />
+
+  <!-- Left image placeholder (clipped to triangle-ish region) -->
+  <rect x="0" y="0" width="580" height="720" fill="#E2E8F0" opacity="0.4" />
+  <text x="290" y="380" font-family="sans-serif" font-size="18" fill="#94A3B8" text-anchor="middle">PHOTO / IMAGE</text>
+
+  <!-- Accent top-left section number -->
+  <text x="60" y="120" font-family="sans-serif" font-size="100" font-weight="bold" fill="#1E293B" opacity="0.07">01</text>
+  <text x="80" y="80" font-family="sans-serif" font-size="22" font-weight="bold" fill="#94A3B8" letter-spacing="4">SECTION ONE</text>
+
+  <!-- Right side content -->
+  <g id="right" transform="translate(660, 120)">
+    <text x="0" y="80" font-family="sans-serif" font-size="56" font-weight="bold" fill="#1E293B">{{PAGE_TITLE}}</text>
+    <line x1="0" y1="105" x2="100" y2="105" stroke="#1E293B" stroke-width="4" />
+    <text x="0" y="160" font-family="sans-serif" font-size="16" fill="#64748B">
+      <tspan x="0" dy="0">Primary description text here. Use two to three</tspan>
+      <tspan x="0" dy="24">sentences that elaborate on the slide's subject</tspan>
+      <tspan x="0" dy="24">and provide the reader with relevant context.</tspan>
+    </text>
+
+    <!-- Two small icon rows -->
+    <g transform="translate(0, 260)">
+      <circle cx="20" cy="0" r="18" fill="#F1F5F9" />
+      <text x="20" y="7" font-family="sans-serif" font-size="14" fill="#475569" text-anchor="middle">IC</text>
+      <text x="50" y="-6" font-family="sans-serif" font-size="16" font-weight="bold" fill="#1E293B">Aspect One</text>
+      <text x="50" y="18" font-family="sans-serif" font-size="14" fill="#64748B">Brief supporting note.</text>
+    </g>
+
+    <g transform="translate(0, 340)">
+      <circle cx="20" cy="0" r="18" fill="#F1F5F9" />
+      <text x="20" y="7" font-family="sans-serif" font-size="14" fill="#475569" text-anchor="middle">IC</text>
+      <text x="50" y="-6" font-family="sans-serif" font-size="16" font-weight="bold" fill="#1E293B">Aspect Two</text>
+      <text x="50" y="18" font-family="sans-serif" font-size="14" fill="#64748B">Brief supporting note.</text>
+    </g>
+  </g>
+</svg>

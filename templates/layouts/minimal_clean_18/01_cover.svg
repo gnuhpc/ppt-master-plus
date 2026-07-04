@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#E8E9EB" />
+<g id="shape-5" data-name="图片 4">
+<svg x="0" y="0" width="1280" height="720" viewBox="0.01217 0.22217 0.98783 0.55565" preserveAspectRatio="none"><image href="bg_minimal_art.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-8" data-name="文本框 7">
+<rect x="165.08" y="139.74" width="148.64" height="440.53" fill="none" />
+</g>
+<g id="shape-8-text" data-name="文本框 7 text">
+<text x="239.4" y="230.4" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪晓波折纸体简&quot;, sans-serif" font-size="106.67" fill="#203864">{{TITLE}}</text>
+</g>
+<g id="shape-22" data-name="组合 21">
+<g id="shape-11" data-name="文本框 10">
+<rect x="125.2" y="152.13" width="44.25" height="457.28" fill="none" />
+</g>
+<g id="shape-11-text" data-name="文本框 10 text">
+<text x="147.32" y="268.36" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪文黑-45W&quot;, sans-serif" font-size="16" fill="#949AB2"><tspan fill="#949AB2" font-size="16">A</tspan><tspan x="147.32" dy="16.8" fill="#949AB2" font-size="16">D</tspan><tspan x="147.32" dy="16.8" fill="#949AB2" font-size="16">D</tspan><tspan x="147.32" dy="16.8" fill="#949AB2" font-size="16">Y</tspan><tspan x="147.32" dy="16.8" fill="#949AB2" font-size="16">O</tspan><tspan x="147.32" dy="16.8" fill="#949AB2" font-size="16">U</tspan><tspan x="147.32" dy="16.8" fill="#949AB2" font-size="16">R</tspan><tspan x="147.32" dy="16.8" fill="#949AB2" font-size="16">T</tspan><tspan x="147.32" dy="16.8" fill="#949AB2" font-size="16">E</tspan><tspan x="147.32" dy="16.8" fill="#949AB2" font-size="16">X</tspan><tspan x="147.32" dy="16.8" fill="#949AB2" font-size="16">T</tspan><tspan x="147.32" dy="16.8" fill="#949AB2" font-size="16">H</tspan><tspan x="147.32" dy="16.8" fill="#949AB2" font-size="16">E</tspan><tspan x="147.32" dy="16.8" fill="#949AB2" font-size="16">R</tspan><tspan x="147.32" dy="16.8" fill="#949AB2" font-size="16">E</tspan></text>
+</g>
+<g id="shape-14" data-name="直接连接符 13">
+<line x1="127.14" y1="167.64" x2="127.14" y2="721.43" stroke-width="1.333" stroke="#949AB2" stroke-opacity="0.5" fill="#4472C4" />
+</g>
+</g>
+<g id="shape-21" data-name="组合 20">
+<g id="shape-10" data-name="文本框 9">
+<rect x="303.61" y="153.8" width="57.62" height="426.46" fill="none" />
+</g>
+<g id="shape-10-text" data-name="文本框 9 text">
+<text x="332.42" y="263.7" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪文黑-45W&quot;, sans-serif" font-size="26.67" fill="#949AB2" letter-spacing="8">{{SUBTITLE}}</text>
+</g>
+<g id="shape-16" data-name="直接连接符 15">
+<line x1="361.23" y1="0" x2="361.23" y2="557.37" stroke-width="1.333" stroke="#949AB2" stroke-opacity="0.5" fill="#4472C4" />
+</g>
+</g></svg>

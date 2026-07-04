@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="0" dy="0" stdDeviation="26.67" flood-color="#000000" flood-opacity="0.3" /></filter></defs><rect x="0" y="0" width="1280" height="720" fill="#F8F8F8" />
+<g id="shape-17" data-name="图片 16">
+<image href="business_skyline.jpg" x="50.38" y="0" width="1128.9" height="752" preserveAspectRatio="none" />
+</g>
+<g id="shape-15" data-name="矩形 14">
+<rect x="289.51" y="276.99" width="839.29" height="296.36" fill="#FFFFFF" stroke="none" stroke-width="1" filter="url(#fx1)" />
+</g>
+<g id="shape-13" data-name="文本框 12">
+<rect x="649" y="341" width="51.7" height="182.4" fill="none" />
+</g>
+<g id="shape-13-text" data-name="文本框 12 text">
+<text x="674.85" y="363.67" text-anchor="middle" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="26.67" fill="#AF935C" font-weight="bold" letter-spacing="4"><tspan fill="#AF935C" font-size="26.67" font-weight="bold" letter-spacing="4">P</tspan><tspan x="674.85" dy="28" fill="#AF935C" font-size="26.67" font-weight="bold" letter-spacing="4">A</tspan><tspan x="674.85" dy="28" fill="#AF935C" font-size="26.67" font-weight="bold" letter-spacing="4">R</tspan><tspan x="674.85" dy="28" fill="#AF935C" font-size="26.67" font-weight="bold" letter-spacing="4">T</tspan><tspan x="674.85" dy="28" fill="#AF935C" font-size="26.67" font-weight="bold" letter-spacing="4">O</tspan><tspan x="674.85" dy="28" fill="#AF935C" font-size="26.67" font-weight="bold" letter-spacing="4">N</tspan></text>
+</g>
+<g id="shape-26" data-name="TextBox 25">
+<rect x="741.5" y="335.56" width="200.59" height="41.98" fill="none" />
+<text x="751.1" y="363.03" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="26.67" fill="#404040"><tspan fill="#404040" font-size="26.67">国家政策分析</tspan></text>
+</g>
+<g id="shape-34" data-name="TextBox 26">
+<rect x="741.5" y="405.84" width="337.96" height="41.98" fill="none" />
+<text x="751.1" y="433.3" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="26.67" fill="#404040"><tspan fill="#404040" font-size="26.67">本区域市场分析</tspan></text>
+</g>
+<g id="shape-35" data-name="TextBox 27">
+<rect x="741.5" y="481.55" width="489.69" height="41.98" fill="none" />
+<text x="751.1" y="509.01" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="26.67" fill="#404040"><tspan fill="#404040" font-size="26.67">本区域行业调研情况</tspan></text>
+</g>
+<g id="shape-16" data-name="矩形 15" transform="translate(1104.13 552.76) scale(-1 1) translate(-1104.13 -552.76)">
+<rect x="1079.46" y="531.64" width="49.34" height="42.25" fill="#383737" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-18" data-name="文本框 17">
+<rect x="317.9" y="188.94" width="258.37" height="268.19" fill="none" />
+<text x="327.5" y="375.08" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="213.33" fill="#404040" font-style="italic">{{CHAPTER_NUM}}</text>
+</g>
+<g id="shape-25" data-name="直接连接符 24">
+<line x1="720" y1="344" x2="720" y2="515.68" stroke-width="2" stroke="#F2F2F2" fill="#1A1F29" />
+</g>
+<g id="shape-12" data-name="矩形 11">
+<rect x="144" y="386.95" width="447.43" height="80.78" fill="#1A1F29" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-21" data-name="TextBox 88">
+<rect x="158.57" y="386.95" width="423.29" height="80.78" fill="none" />
+<text x="168.17" y="441.61" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="58.67" fill="#FFFFFF" letter-spacing="8">{{CHAPTER_TITLE}}</text>
+</g></svg>

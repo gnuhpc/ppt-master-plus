@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<!-- Title frame -->
+<rect x="347.15" y="249.13" width="585.7" height="186.94" fill="none" stroke="#D9D9D9" stroke-width="1"/>
+<!-- Main title placeholder -->
+<text x="640" y="359.53" text-anchor="middle" font-family="&quot;方正小标宋简体&quot;, &quot;FZ XiaoBiaoSong Simplified&quot;, SimSun, serif" font-size="96" fill="#262626" letter-spacing="13.33">{{TITLE}}</text>
+<!-- Subtitle -->
+<text x="640" y="473.25" text-anchor="middle" font-family="&quot;Open Sans&quot;, sans-serif" font-size="13.33" fill="#BFBFBF">{{SUBTITLE}}</text>
+<!-- Author and date -->
+<text x="640" y="492" text-anchor="middle" font-family="&quot;等线&quot;, DengXian, sans-serif" font-size="13.33" fill="#A6A6A6">{{AUTHOR}}  ·  {{DATE}}</text>
+<!-- Three-dot signature -->
+<ellipse cx="611.39" cy="664.73" rx="7.27" ry="7.27" fill="#262626"/>
+<ellipse cx="640" cy="664.73" rx="7.27" ry="7.27" fill="#262626"/>
+<ellipse cx="668.61" cy="664.73" rx="7.27" ry="7.27" fill="#262626"/>
+<!-- Brand mark lines -->
+<line x1="461.09" y1="97.17" x2="503.76" y2="97.17" stroke="#000000" stroke-width="2"/>
+<line x1="771.39" y1="97.17" x2="814.06" y2="97.17" stroke="#000000" stroke-width="2"/>
+<!-- Brand mark text -->
+<text x="640" y="101.02" text-anchor="middle" font-family="&quot;Open Sans&quot;, sans-serif" font-size="16" fill="#000000" letter-spacing="4">WE LOVE WHAT WE DO</text>
+</svg>

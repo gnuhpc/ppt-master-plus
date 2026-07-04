@@ -1,0 +1,129 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <!-- Tech Dark Background -->
+  <rect x="0" y="0" width="1280" height="720" fill="#0C1838" />
+  
+  <!-- Top-Right Accent Strips -->
+  <rect x="1080" y="30" width="120" height="3" fill="#9967F7" />
+  <rect x="1120" y="40" width="80" height="3" fill="#4EB5FF" />
+  
+  <!-- Slide Title -->
+  <text x="80" y="70" font-family="sans-serif" font-size="32" font-weight="bold" fill="#FFFFFF">{{PAGE_TITLE}}</text>
+  <text x="80" y="105" font-family="sans-serif" font-size="16" fill="#4EB5FF">{{PAGE_SUBTITLE}}</text>
+
+  <!-- Top Progress Timeline (5 horizontal steps) -->
+  <g transform="translate(80, 130)">
+    <!-- Step 1 -->
+    <rect x="0" y="0" width="160" height="24" rx="12" ry="12" fill="#151C48" stroke="#3C4778" stroke-width="1" />
+    <text x="80" y="16" font-family="sans-serif" font-size="11" fill="#DCD7E5" text-anchor="middle">01 · INPUT EVENTS</text>
+    
+    <!-- Arrow 1 -->
+    <path d="M 170 12 L 180 12" stroke="#3C4778" stroke-width="1.5" />
+    
+    <!-- Step 2 -->
+    <rect x="190" y="0" width="160" height="24" rx="12" ry="12" fill="#151C48" stroke="#3C4778" stroke-width="1" />
+    <text x="270" y="16" font-family="sans-serif" font-size="11" fill="#DCD7E5" text-anchor="middle">02 · STREAMING</text>
+    
+    <!-- Arrow 2 -->
+    <path d="M 360 12 L 370 12" stroke="#3C4778" stroke-width="1.5" />
+    
+    <!-- Step 3 -->
+    <rect x="380" y="0" width="160" height="24" rx="12" ry="12" fill="#151C48" stroke="#3C4778" stroke-width="1" />
+    <text x="460" y="16" font-family="sans-serif" font-size="11" fill="#DCD7E5" text-anchor="middle">03 · FLUSS STORE</text>
+    
+    <!-- Arrow 3 -->
+    <path d="M 550 12 L 560 12" stroke="#3C4778" stroke-width="1.5" />
+    
+    <!-- Step 4 -->
+    <rect x="570" y="0" width="160" height="24" rx="12" ry="12" fill="#151C48" stroke="#3C4778" stroke-width="1" />
+    <text x="650" y="16" font-family="sans-serif" font-size="11" fill="#DCD7E5" text-anchor="middle">04 · ENRICHMENT</text>
+    
+    <!-- Arrow 4 -->
+    <path d="M 740 12 L 750 12" stroke="#3C4778" stroke-width="1.5" />
+    
+    <!-- Step 5 (Active Highlighted) -->
+    <rect x="760" y="0" width="160" height="24" rx="12" ry="12" fill="#151C48" stroke="#04CF82" stroke-width="1.5" />
+    <text x="840" y="16" font-family="sans-serif" font-size="11" fill="#04CF82" font-weight="bold" text-anchor="middle">05 · ML_PREDICT</text>
+    
+    <!-- Arrow 5 -->
+    <path d="M 930 12 L 940 12" stroke="#3C4778" stroke-width="1.5" />
+    
+    <!-- Target Result -->
+    <rect x="950" y="0" width="170" height="24" rx="12" ry="12" fill="#9967F7" />
+    <text x="1035" y="16" font-family="sans-serif" font-size="11" font-weight="bold" fill="#FFFFFF" text-anchor="middle">REAL-TIME RESULT</text>
+  </g>
+
+  <!-- Main Split Layout (Left: Code Panel, Right: Business Action Cards) -->
+  <g transform="translate(80, 185)">
+    <!-- Left Column: Code Panel (Width: 680, Height: 480) -->
+    <g transform="translate(0, 0)">
+      <!-- Editor background -->
+      <rect x="0" y="0" width="680" height="480" rx="12" ry="12" fill="#070B19" stroke="#3C4778" stroke-width="1" />
+      
+      <!-- Editor window header -->
+      <rect x="0" y="0" width="680" height="40" rx="12" ry="12" fill="#151C48" />
+      <rect x="0" y="30" width="680" height="10" fill="#151C48" />
+      
+      <!-- Mac-style window dots -->
+      <circle cx="20" cy="20" r="6" fill="#FF5F56" />
+      <circle cx="40" cy="20" r="6" fill="#FFBD2E" />
+      <circle cx="60" cy="20" r="6" fill="#27C93F" />
+      
+      <text x="90" y="24" font-family="monospace" font-size="13" fill="#9299B8">flink_realtime_job.sql</text>
+      
+      <!-- Monospace SQL text code -->
+      <g transform="translate(30, 70)" font-family="monospace" font-size="16" fill="#DCD7E5">
+        <text x="0" y="20"><tspan fill="#F8DE4B">INSERT INTO</tspan> <tspan fill="#FFFFFF">rds_sentiments</tspan></text>
+        <text x="0" y="50"><tspan fill="#F8DE4B">SELECT</tspan> comment_id, live_id, user_id, comment_text,</text>
+        <text x="20" y="80"><tspan fill="#04CF82">UPPER</tspan>(content) <tspan fill="#F8DE4B">AS</tspan> predict_label,</text>
+        <text x="20" y="110">content <tspan fill="#F8DE4B">AS</tspan> predict_raw,</text>
+        <text x="20" y="140"><tspan fill="#04CF82">CURRENT_TIMESTAMP</tspan> <tspan fill="#F8DE4B">AS</tspan> predict_time</text>
+        <text x="0" y="170"><tspan fill="#F8DE4B">FROM</tspan> <tspan fill="#9967F7">ML_PREDICT</tspan>(</text>
+        <text x="20" y="200"><tspan fill="#F8DE4B">TABLE</tspan> fluss_comments,</text>
+        <text x="20" y="230"><tspan fill="#F8DE4B">MODEL</tspan> ai_live_sentiment,</text>
+        <text x="20" y="260"><tspan fill="#F8DE4B">DESCRIPTOR</tspan>(comment_text)</text>
+        <text x="0" y="290">);</text>
+        
+        <path d="M 0 330 L 620 330" stroke="#3C4778" stroke-width="1" stroke-dasharray="4,4" />
+        <text x="0" y="370" fill="#9299B8" font-size="13">-- {{CODE_COMMENT_L1}}</text>
+        <text x="0" y="390" fill="#9299B8" font-size="13">-- {{CODE_COMMENT_L2}}</text>
+      </g>
+    </g>
+    
+    <!-- Right Column: Business Action Cards (Width: 420, Height: 480) -->
+    <g transform="translate(700, 0)">
+      <!-- Card 1 -->
+      <g transform="translate(0, 0)">
+        <rect x="0" y="0" width="420" height="145" rx="8" ry="8" fill="#151C48" stroke="#3C4778" stroke-width="1" />
+        <!-- Left color bar -->
+        <rect x="0" y="0" width="6" height="145" rx="2" ry="2" fill="#04CF82" />
+        <text x="24" y="35" font-family="sans-serif" font-size="20" font-weight="bold" fill="#04CF82">{{ACTION_1_TITLE}}</text>
+        <text x="24" y="65" font-family="sans-serif" font-size="14" fill="#FFFFFF">{{ACTION_1_SUBTITLE}}</text>
+        <text x="24" y="95" font-family="sans-serif" font-size="13" fill="#DCD7E5">{{ACTION_1_DESC_L1}}</text>
+        <text x="24" y="115" font-family="sans-serif" font-size="13" fill="#DCD7E5">{{ACTION_1_DESC_L2}}</text>
+      </g>
+      
+      <!-- Card 2 -->
+      <g transform="translate(0, 165)">
+        <rect x="0" y="0" width="420" height="145" rx="8" ry="8" fill="#151C48" stroke="#3C4778" stroke-width="1" />
+        <!-- Left color bar -->
+        <rect x="0" y="0" width="6" height="145" rx="2" ry="2" fill="#9967F7" />
+        <text x="24" y="35" font-family="sans-serif" font-size="20" font-weight="bold" fill="#9967F7">{{ACTION_2_TITLE}}</text>
+        <text x="24" y="65" font-family="sans-serif" font-size="14" fill="#FFFFFF">{{ACTION_2_SUBTITLE}}</text>
+        <text x="24" y="95" font-family="sans-serif" font-size="13" fill="#DCD7E5">{{ACTION_2_DESC_L1}}</text>
+        <text x="24" y="115" font-family="sans-serif" font-size="13" fill="#DCD7E5">{{ACTION_2_DESC_L2}}</text>
+      </g>
+      
+      <!-- Card 3 -->
+      <g transform="translate(0, 330)">
+        <rect x="0" y="0" width="420" height="150" rx="8" ry="8" fill="#151C48" stroke="#3C4778" stroke-width="1" />
+        <!-- Left color bar -->
+        <rect x="0" y="0" width="6" height="150" rx="2" ry="2" fill="#4EB5FF" />
+        <text x="24" y="35" font-family="sans-serif" font-size="20" font-weight="bold" fill="#4EB5FF">{{ACTION_3_TITLE}}</text>
+        <text x="24" y="65" font-family="sans-serif" font-size="14" fill="#FFFFFF">{{ACTION_3_SUBTITLE}}</text>
+        <text x="24" y="95" font-family="sans-serif" font-size="13" fill="#DCD7E5">{{ACTION_3_DESC_L1}}</text>
+        <text x="24" y="115" font-family="sans-serif" font-size="13" fill="#DCD7E5">{{ACTION_3_DESC_L2}}</text>
+      </g>
+    </g>
+  </g>
+</svg>

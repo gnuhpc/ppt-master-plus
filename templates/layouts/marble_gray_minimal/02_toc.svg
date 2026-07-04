@@ -1,0 +1,74 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><marker id="marrow1" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><path d="M 0 0 L 10 5 L 0 10 z" fill="#C1A36C" /></marker></defs><image href="marble_bg.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+<g id="shape-4" data-name="图片 3">
+<image href="marble_overlay.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+</g>
+<g id="shape-10" data-name="矩形: 圆角 9">
+<rect x="147.48" y="407.65" width="399.3" height="206.96" rx="0" ry="0" fill="#C1A36C" stroke-width="6" stroke="#C1A36C" />
+</g>
+<g id="shape-11" data-name="矩形: 圆角 10">
+<rect x="147.48" y="105.39" width="399.3" height="328.7" rx="0" ry="0" fill="#F2F2F2" stroke-width="6" stroke="#F2F2F2" />
+</g>
+<g id="shape-13" data-name="矩形 12">
+<rect x="733.5" y="214.55" width="123.21" height="54.93" fill="none" />
+<text x="743.1" y="251.08" text-anchor="start" xml:space="preserve" font-family="&quot;字魂59号-创粗黑&quot;, &quot;等线&quot;, sans-serif" font-size="37.33" fill="#262626"><tspan fill="#262626" font-size="37.33">Part 01</tspan></text>
+</g>
+<g id="shape-14" data-name="矩形 13">
+<rect x="874.55" y="214.55" width="223.91" height="54.93" fill="none" />
+<text x="884.15" y="251.08" text-anchor="start" xml:space="preserve" font-family="&quot;字魂58号-创中黑&quot;, &quot;等线&quot;, sans-serif" font-size="37.33" fill="#262626"><tspan fill="#262626" font-size="37.33">请输入标题</tspan></text>
+</g>
+<g id="shape-15" data-name="矩形 14">
+<rect x="726.48" y="291.82" width="145.85" height="54.93" fill="none" />
+<text x="736.08" y="328.35" text-anchor="start" xml:space="preserve" font-family="&quot;字魂59号-创粗黑&quot;, &quot;等线&quot;, sans-serif" font-size="37.33" fill="#262626"><tspan fill="#262626" font-size="37.33">Part 02</tspan></text>
+</g>
+<g id="shape-16" data-name="矩形 15">
+<rect x="874.55" y="291.82" width="223.91" height="54.93" fill="none" />
+<text x="884.15" y="328.35" text-anchor="start" xml:space="preserve" font-family="&quot;字魂58号-创中黑&quot;, &quot;等线&quot;, sans-serif" font-size="37.33" fill="#262626"><tspan fill="#262626" font-size="37.33">请输入标题</tspan></text>
+</g>
+<g id="shape-17" data-name="矩形 16">
+<rect x="726.48" y="369.09" width="137.25" height="54.93" fill="none" />
+<text x="736.08" y="405.63" text-anchor="start" xml:space="preserve" font-family="&quot;字魂59号-创粗黑&quot;, &quot;等线&quot;, sans-serif" font-size="37.33" fill="#262626"><tspan fill="#262626" font-size="37.33">Part 03</tspan></text>
+</g>
+<g id="shape-18" data-name="矩形 17">
+<rect x="874.55" y="369.09" width="223.91" height="54.93" fill="none" />
+<text x="884.15" y="405.63" text-anchor="start" xml:space="preserve" font-family="&quot;字魂58号-创中黑&quot;, &quot;等线&quot;, sans-serif" font-size="37.33" fill="#262626"><tspan fill="#262626" font-size="37.33">请输入标题</tspan></text>
+</g>
+<g id="shape-19" data-name="矩形 18">
+<rect x="728.32" y="446.22" width="137.25" height="54.93" fill="none" />
+<text x="737.92" y="482.75" text-anchor="start" xml:space="preserve" font-family="&quot;字魂59号-创粗黑&quot;, &quot;等线&quot;, sans-serif" font-size="37.33" fill="#262626"><tspan fill="#262626" font-size="37.33">Part 04</tspan></text>
+</g>
+<g id="shape-20" data-name="矩形 19">
+<rect x="876.39" y="446.22" width="223.91" height="54.93" fill="none" />
+<text x="885.99" y="482.75" text-anchor="start" xml:space="preserve" font-family="&quot;字魂58号-创中黑&quot;, &quot;等线&quot;, sans-serif" font-size="37.33" fill="#262626"><tspan fill="#262626" font-size="37.33">请输入标题</tspan></text>
+</g>
+<g id="shape-25" data-name="组合 24">
+<g id="shape-12" data-name="直接箭头连接符 11">
+<line x1="684.52" y1="171.13" x2="684.52" y2="549.57" stroke-width="3" stroke="#C1A36C" marker-end="url(#marrow1)" fill="#4472C4" />
+</g>
+<g id="shape-21" data-name="椭圆 20">
+<ellipse cx="684.52" cy="244.43" rx="11.13" ry="11.13" fill="#C1A36C" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-22" data-name="椭圆 21">
+<ellipse cx="684.52" cy="321.98" rx="11.13" ry="11.13" fill="#C1A36C" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-23" data-name="椭圆 22">
+<ellipse cx="684.52" cy="399.53" rx="11.13" ry="11.13" fill="#C1A36C" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-24" data-name="椭圆 23">
+<ellipse cx="683.13" cy="475.57" rx="11.13" ry="11.13" fill="#C1A36C" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-26" data-name="文本框 25">
+<rect x="174" y="146.06" width="311.86" height="87.24" fill="none" />
+<text x="183.6" y="205.26" text-anchor="start" xml:space="preserve" font-family="&quot;字魂59号-创粗黑&quot;, sans-serif" font-size="64" fill="#C1A36C"><tspan fill="#C1A36C" font-size="64">CONTENT</tspan></text>
+</g>
+<g id="shape-27" data-name="矩形: 圆角 26">
+<rect x="190.61" y="247.98" width="73.74" height="4.8" rx="0" ry="0" fill="#C1A36C" stroke-width="3" stroke="#C1A36C" />
+</g>
+<g id="shape-28" data-name="文本框 27">
+<rect x="181.54" y="279.16" width="265.07" height="107.91" fill="none" />
+<text x="191.14" y="299.82" text-anchor="start" xml:space="preserve" font-family="&quot;字魂58号-创中黑&quot;, sans-serif" font-size="18.67" fill="#262626"><tspan fill="#262626" font-size="18.67"> Life isn't about waiting </tspan><tspan x="191.14" dy="28" fill="#262626" font-size="18.67">for the storm to pass. </tspan><tspan x="191.14" dy="28" fill="#262626" font-size="18.67">it's about learning to </tspan><tspan x="191.14" dy="28" fill="#262626" font-size="18.67">dance</tspan></text>
+</g>
+<g id="shape-29" data-name="矩形: 圆角 28">
+<rect x="446.61" y="574.64" width="73.74" height="4.8" rx="0" ry="0" fill="#F2F2F2" stroke-width="3" stroke="#F2F2F2" />
+</g></svg>

@@ -1,0 +1,12 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<!-- Left photo placeholder -->
+<rect x="0" y="0" width="642.91" height="720" fill="#D0D0D0"/>
+<!-- Chapter label box (dark) -->
+<rect x="705.39" y="136.73" width="248.8" height="104.73" fill="#262626"/>
+<!-- Chapter title -->
+<text x="732.74" y="198.45" text-anchor="start" font-family="&quot;Open Sans&quot;, sans-serif" font-size="37.33" fill="#FFFFFF" font-weight="bold">{{CHAPTER_TITLE}}</text>
+<!-- Chapter description body text -->
+<text x="709.47" y="304.13" text-anchor="start" font-family="&quot;Calibri Light&quot;, Arial, sans-serif" font-size="14" fill="#A6A6A6">{{CHAPTER_DESC}}</text>
+</svg>

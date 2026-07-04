@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+
+  <!-- Page Title -->
+  <g id="page-title">
+    <text x="640" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="30" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>{{PAGE_TITLE}}</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Labels ABOVE baseline (for downward triangles) ===== -->
+
+  <!-- Down-2 label — above at x=384 -->
+  <g id="label-down-2">
+    <text x="384" y="207" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="17" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Item Two Heading</tspan>
+    </text>
+    <text x="384" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Brief supporting description here.</tspan>
+    </text>
+    <text x="384" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Second detail line for this point.</tspan>
+    </text>
+  </g>
+
+  <!-- Down-4 label — above at x=896 -->
+  <g id="label-down-4">
+    <text x="896" y="207" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="17" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Item Four Heading</tspan>
+    </text>
+    <text x="896" y="230" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Brief supporting description here.</tspan>
+    </text>
+    <text x="896" y="250" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Second detail line for this point.</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Five Triangles ===== -->
+  <!-- Slot width 256, base half-width 105, triangles at x=128,384,640,896,1152 -->
+  <!-- Upward: base y=520, apex y=270 | Downward: base y=270, apex y=520 -->
+
+  <!-- Up-1 (darkest) -->
+  <g id="triangle-1-up">
+    <polygon points="128,270 23,520 233,520" fill="#0F172A"/>
+    <!-- Icon placeholder: circle with cross -->
+    <circle cx="128" cy="438" r="22" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <line x1="128" y1="420" x2="128" y2="456" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="110" y1="438" x2="146" y2="438" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Down-2 -->
+  <g id="triangle-2-down">
+    <polygon points="384,520 279,270 489,270" fill="#334155"/>
+    <!-- Icon placeholder: circle with 3 dots -->
+    <circle cx="384" cy="352" r="22" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <circle cx="376" cy="352" r="3" fill="#FFFFFF"/>
+    <circle cx="384" cy="352" r="3" fill="#FFFFFF"/>
+    <circle cx="392" cy="352" r="3" fill="#FFFFFF"/>
+  </g>
+
+  <!-- Up-3 -->
+  <g id="triangle-3-up">
+    <polygon points="640,270 535,520 745,520" fill="#0F172A"/>
+    <!-- Icon placeholder: circle with 3 horizontal bars -->
+    <circle cx="640" cy="438" r="22" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <line x1="626" y1="431" x2="654" y2="431" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="626" y1="438" x2="654" y2="438" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="626" y1="445" x2="654" y2="445" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Down-4 -->
+  <g id="triangle-4-down">
+    <polygon points="896,520 791,270 1001,270" fill="#334155"/>
+    <!-- Icon placeholder: circle with star/asterisk -->
+    <circle cx="896" cy="352" r="22" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <line x1="896" y1="336" x2="896" y2="368" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="880" y1="344" x2="912" y2="360" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="912" y1="344" x2="880" y2="360" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Up-5 -->
+  <g id="triangle-5-up">
+    <polygon points="1152,270 1047,520 1257,520" fill="#0F172A"/>
+    <!-- Icon placeholder: circle with chart bars -->
+    <circle cx="1152" cy="438" r="22" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <line x1="1139" y1="449" x2="1139" y2="432" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="1147" y1="449" x2="1147" y2="426" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="1155" y1="449" x2="1155" y2="430" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="1163" y1="449" x2="1163" y2="422" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- ===== Labels BELOW baseline (for upward triangles) ===== -->
+
+  <!-- Up-1 label — below at x=128 -->
+  <g id="label-up-1">
+    <text x="128" y="546" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="17" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Item One Heading</tspan>
+    </text>
+    <text x="128" y="569" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Brief supporting description here.</tspan>
+    </text>
+    <text x="128" y="589" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Second detail line for this point.</tspan>
+    </text>
+  </g>
+
+  <!-- Up-3 label — below at x=640 -->
+  <g id="label-up-3">
+    <text x="640" y="546" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="17" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Item Three Heading</tspan>
+    </text>
+    <text x="640" y="569" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Brief supporting description here.</tspan>
+    </text>
+    <text x="640" y="589" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Second detail line for this point.</tspan>
+    </text>
+  </g>
+
+  <!-- Up-5 label — below at x=1152 -->
+  <g id="label-up-5">
+    <text x="1152" y="546" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="17" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Item Five Heading</tspan>
+    </text>
+    <text x="1152" y="569" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Brief supporting description here.</tspan>
+    </text>
+    <text x="1152" y="589" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Second detail line for this point.</tspan>
+    </text>
+  </g>
+
+  <!-- Source note -->
+  <text x="60" y="698" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#CBD5E1">
+    <tspan>Source: Internal Report</tspan>
+  </text>
+</svg>

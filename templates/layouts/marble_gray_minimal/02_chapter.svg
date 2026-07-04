@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><image href="marble_bg.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+<g id="shape-4" data-name="图片 3">
+<image href="marble_overlay.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+</g>
+<g id="shape-2" data-name="矩形: 圆角 1">
+<rect x="1200.72" y="48.28" width="106.99" height="91.78" rx="9.6" ry="9.6" fill="none" stroke-width="4" stroke="#C1A36C" />
+</g>
+<g id="shape-7" data-name="矩形 6">
+<rect x="711.62" y="194.34" width="199.09" height="87.24" fill="none" />
+<text x="721.22" y="253.54" text-anchor="start" xml:space="preserve" font-family="&quot;字魂59号-创粗黑&quot;, &quot;等线&quot;, sans-serif" font-size="64" fill="#262626">Part {{CHAPTER_NUM}}</text>
+</g>
+<g id="shape-8" data-name="矩形 7">
+<rect x="701.23" y="361.25" width="284.98" height="67.86" fill="none" />
+<text x="710.83" y="406.85" text-anchor="start" xml:space="preserve" font-family="&quot;字魂58号-创中黑&quot;, &quot;等线&quot;, sans-serif" font-size="48" fill="#262626">{{CHAPTER_TITLE}}</text>
+</g>
+<g id="shape-9" data-name="文本框 8">
+<rect x="705.05" y="445.39" width="454.73" height="48.47" fill="none" />
+<text x="714.65" y="463.79" text-anchor="start" xml:space="preserve" font-family="&quot;字魂58号-创中黑&quot;, sans-serif" font-size="16" fill="#262626"><tspan fill="#262626" font-size="16"> Life isn't about waiting for the storm to pass. it's </tspan><tspan x="714.65" dy="19.2" fill="#262626" font-size="16">about learning to dance Life isn't it's about learning </tspan><tspan x="714.65" dy="19.2" fill="#262626" font-size="16">to dance in the rain.</tspan></text>
+</g>
+<g id="shape-10" data-name="矩形: 圆角 9">
+<rect x="722.15" y="284.36" width="111.88" height="4.8" rx="0" ry="0" fill="#C1A36C" stroke-width="1.333" stroke="#C1A36C" />
+</g>
+<g id="shape-11" data-name="矩形: 圆角 10">
+<rect x="-27.7" y="373.82" width="565.01" height="427.14" rx="44.66" ry="44.66" fill="none" stroke-width="4" stroke="#C1A36C" />
+</g>
+<g id="shape-12" data-name="文本框 11">
+<rect x="121.42" y="-49.32" width="488.95" height="676.95" fill="none" />
+<text x="131.02" y="423.55" text-anchor="start" xml:space="preserve" font-family="&quot;字魂59号-创粗黑&quot;, sans-serif" font-size="550.67" fill="#F2F2F2" font-weight="bold"><tspan fill="#F2F2F2" font-size="550.67" font-weight="bold">A.</tspan></text>
+</g></svg>

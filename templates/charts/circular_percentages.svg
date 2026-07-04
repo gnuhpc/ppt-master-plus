@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#F8FAFC" />
+  
+  <!-- Gauge 1: 18% -->
+  <g id="gauge-1">
+    <circle cx="240" cy="300" r="80" fill="none" stroke="#E2E8F0" stroke-width="16" />
+    <circle cx="240" cy="300" r="80" fill="none" stroke="#3B82F6" stroke-width="16" stroke-dasharray="502.65" stroke-dashoffset="412.17" transform="rotate(-90 240 300)" />
+    <text x="240" y="312" font-family="-apple-system, sans-serif" font-size="36" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>18%</tspan>
+    </text>
+    <text x="240" y="420" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#1E3A8A" text-anchor="middle">
+      <tspan>转化流失率</tspan>
+    </text>
+    <text x="240" y="460" font-family="-apple-system, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>相较传统地推，线上</tspan>
+      <tspan x="240" dy="20">渠道流失率大幅缩减</tspan>
+    </text>
+  </g>
+  
+  <!-- Gauge 2: 35% -->
+  <g id="gauge-2">
+    <circle cx="500" cy="300" r="80" fill="none" stroke="#E2E8F0" stroke-width="16" />
+    <circle cx="500" cy="300" r="80" fill="none" stroke="#10B981" stroke-width="16" stroke-dasharray="502.65" stroke-dashoffset="326.72" transform="rotate(-90 500 300)" />
+    <text x="500" y="312" font-family="-apple-system, sans-serif" font-size="36" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>35%</tspan>
+    </text>
+    <text x="500" y="420" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#065F46" text-anchor="middle">
+      <tspan>复购留存率</tspan>
+    </text>
+    <text x="500" y="460" font-family="-apple-system, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>包月套餐订购客户的</tspan>
+      <tspan x="500" dy="20">次月黏性持续稳健提升</tspan>
+    </text>
+  </g>
+  
+  <!-- Gauge 3: 50% -->
+  <g id="gauge-3">
+    <circle cx="760" cy="300" r="80" fill="none" stroke="#E2E8F0" stroke-width="16" />
+    <circle cx="760" cy="300" r="80" fill="none" stroke="#F59E0B" stroke-width="16" stroke-dasharray="502.65" stroke-dashoffset="251.33" transform="rotate(-90 760 300)" />
+    <text x="760" y="312" font-family="-apple-system, sans-serif" font-size="36" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>50%</tspan>
+    </text>
+    <text x="760" y="420" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#92400E" text-anchor="middle">
+      <tspan>毛利贡献率</tspan>
+    </text>
+    <text x="760" y="460" font-family="-apple-system, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>智能中央配送中心</tspan>
+      <tspan x="760" dy="20">运营所带来的利润率</tspan>
+    </text>
+  </g>
+  
+  <!-- Gauge 4: 85% -->
+  <g id="gauge-4">
+    <circle cx="1020" cy="300" r="80" fill="none" stroke="#E2E8F0" stroke-width="16" />
+    <circle cx="1020" cy="300" r="80" fill="none" stroke="#8B5CF6" stroke-width="16" stroke-dasharray="502.65" stroke-dashoffset="75.40" transform="rotate(-90 1020 300)" />
+    <text x="1020" y="312" font-family="-apple-system, sans-serif" font-size="36" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>85%</tspan>
+    </text>
+    <text x="1020" y="420" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#5B21B6" text-anchor="middle">
+      <tspan>渠道渗透率</tspan>
+    </text>
+    <text x="1020" y="460" font-family="-apple-system, sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>目标高校寝室网格内</tspan>
+      <tspan x="1020" dy="20">全覆盖的品牌触达成果</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="txtgrad1" x1="1.1022" y1="0.2808" x2="-0.1022" y2="0.7192"><stop offset="0.7" stop-color="#A6A6A6" /><stop offset="0.15" stop-color="#595959" /></linearGradient><linearGradient id="txtgrad2" x1="1.1022" y1="0.2808" x2="-0.1022" y2="0.7192"><stop offset="0.7" stop-color="#A6A6A6" /><stop offset="0.15" stop-color="#595959" /></linearGradient><linearGradient id="txtgrad3" x1="1.1022" y1="0.2808" x2="-0.1022" y2="0.7192"><stop offset="0.7" stop-color="#A6A6A6" /><stop offset="0.15" stop-color="#595959" /></linearGradient><linearGradient id="txtgrad4" x1="1.1022" y1="0.2808" x2="-0.1022" y2="0.7192"><stop offset="0.7" stop-color="#A6A6A6" /><stop offset="0.15" stop-color="#595959" /></linearGradient><linearGradient id="txtgrad5" x1="1.1022" y1="0.2808" x2="-0.1022" y2="0.7192"><stop offset="0.7" stop-color="#A6A6A6" /><stop offset="0.15" stop-color="#595959" /></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="layout-shape-7" data-name="Scene_01_合并文件">
+<image href="ink_smoke_overlay.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+</g>
+<g id="layout-shape-9" data-name="图片 8">
+<image href="ink_smoke_cover.jpg" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+</g>
+<g id="shape-2" data-name="矩形 1">
+<rect x="278.84" y="155.51" width="68.51" height="189.53" fill="none" />
+<text x="313.09" y="269.11" text-anchor="middle" xml:space="preserve" font-family="&quot;文悦古典明朝体 (非商业使用) W5&quot;, &quot;等线&quot;, sans-serif" font-size="128" fill="url(#txtgrad1)">{{TITLE}}</text>
+</g>
+<g id="shape-4" data-name="矩形 3">
+<rect x="15.28" y="326.51" width="624.72" height="49.93" fill="none" />
+<text x="327.64" y="353.97" text-anchor="middle" xml:space="preserve" font-family="&quot;等线&quot;, sans-serif" font-size="26.67" fill="url(#txtgrad3)" letter-spacing="29.33">{{SUBTITLE}}</text>
+</g>
+</svg>

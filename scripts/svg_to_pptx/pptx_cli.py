@@ -6,6 +6,7 @@ import sys
 import json
 import shutil
 import argparse
+import re
 from datetime import datetime
 from pathlib import Path
 
@@ -32,6 +33,18 @@ except ImportError:
 
 def _as_dict(value: object) -> dict:
     return value if isinstance(value, dict) else {}
+
+
+def _read_spec_lock_value(project_path: Path, key: str) -> str | None:
+    spec_lock = project_path / 'spec_lock.md'
+    if not spec_lock.is_file():
+        return None
+    text = spec_lock.read_text(encoding='utf-8')
+    match = re.search(rf'^\s*-\s*{re.escape(key)}\s*:\s*(.+?)\s*$', text, re.MULTILINE)
+    if not match:
+        return None
+    value = match.group(1).strip()
+    return value or None
 
 
 def _recorded_narration_on_click_slides(
@@ -197,7 +210,7 @@ Recorded narration:
         return number
 
     parser.add_argument('-t', '--transition', type=str, choices=transition_choices, default=None,
-                        help='Page transition effect (default: fade, use "none" to disable)')
+                        help='Page transition effect (default: none; pass fade/push/etc. to enable)')
     parser.add_argument('--transition-duration', type=non_negative_float, default=None,
                         help='Transition duration in seconds (default: 0.4)')
     parser.add_argument('--auto-advance', type=non_negative_float, default=None,
@@ -230,6 +243,8 @@ Recorded narration:
 
     parser.add_argument('--no-notes', action='store_true',
                         help='Disable speaker notes embedding (enabled by default)')
+    parser.add_argument('-n', '--notes', type=str, default='notes',
+                        help='Speaker notes source directory name/path (default: notes)')
     parser.add_argument('--narration-audio-dir', type=str, default=None,
                         help='Low-level audio embedding from this directory; allows partial matches')
     parser.add_argument('--use-narration-timings', action='store_true',
@@ -365,7 +380,7 @@ Recorded narration:
     enable_notes = not args.no_notes
     notes: dict[str, str] = {}
     if enable_notes:
-        notes = find_notes_files(project_path, ref_files)
+        notes = find_notes_files(project_path, ref_files, source=args.notes)
 
     narration_audio: dict[str, Path] = {}
     narration_audio_dir_arg = args.recorded_narration or args.narration_audio_dir
@@ -444,13 +459,20 @@ Recorded narration:
     defaults = animation_config.get('defaults', {}) if animation_config else {}
     transition_defaults = defaults.get('transition', {}) if isinstance(defaults, dict) else {}
     animation_defaults = defaults.get('animation', {}) if isinstance(defaults, dict) else {}
+    spec_transition_effect = _read_spec_lock_value(project_path, 'transition_effect')
 
     transition_arg = args.transition
     transition_effect = (
         transition_arg
         if transition_arg is not None
-        else transition_defaults.get('effect', 'fade')
+        else transition_defaults.get('effect', spec_transition_effect or 'none')
     )
+    if transition_effect not in transition_choices:
+        print(
+            f"  [warn] Unknown transition effect '{transition_effect}' from defaults/spec_lock; using none",
+            file=sys.stderr,
+        )
+        transition_effect = 'none'
     transition = None if transition_effect == 'none' else transition_effect
     transition_duration = (
         args.transition_duration
@@ -463,8 +485,9 @@ Recorded narration:
         animation_arg
         if animation_arg is not None
         # Per-element entrance is opt-in by default: auto-firing element builds
-        # read as the "AI deck" tell and were unsolicited. Page transitions stay
-        # on (see transition default above). Re-enable with -a auto / animations.json.
+        # read as the "AI deck" tell and were unsolicited. Page transitions are
+        # also off by default; re-enable explicitly with -t fade/push/etc. or
+        # animations.json.
         else animation_defaults.get('effect', 'none')
     )
     animation = None if animation_effect == 'none' else animation_effect
@@ -531,6 +554,25 @@ Recorded narration:
         if not base_pptx.exists():
             print(f"Error: --base-pptx does not exist: {base_pptx}", file=sys.stderr)
             return 1
+    else:
+        # Auto-detect from spec_lock.md: when preserve_master=true and base_pptx
+        # are declared, apply --base-pptx automatically so the AI doesn't need to
+        # remember to pass the flag for beautify projects.
+        spec_lock = project_path / 'spec_lock.md'
+        if spec_lock.is_file():
+            import re as _re
+            txt = spec_lock.read_text(encoding='utf-8')
+            if _re.search(r'^\s*-\s*preserve_master\s*:\s*true\b', txt, _re.MULTILINE | _re.IGNORECASE):
+                m = _re.search(r'^\s*-\s*base_pptx\s*:\s*(.+)$', txt, _re.MULTILINE)
+                if m:
+                    candidate = Path(m.group(1).strip())
+                    if not candidate.is_absolute():
+                        candidate = project_path / candidate
+                    if candidate.exists():
+                        base_pptx = candidate
+                        print(f"  [spec_lock] preserve_master=true → auto base-pptx: {base_pptx}")
+                    else:
+                        print(f"  [warn] spec_lock.md declares preserve_master=true but base_pptx not found: {candidate}", file=sys.stderr)
 
     # svg_files is per-product (native vs legacy may now read different
     # directories); everything else is shared.

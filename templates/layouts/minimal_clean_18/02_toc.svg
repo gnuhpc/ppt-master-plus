@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><radialGradient id="bggrad1" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FBFBFB" /><stop offset="1" stop-color="#DCDDE1" /></radialGradient></defs><rect x="0" y="0" width="1280" height="720" fill="url(#bggrad1)" />
+<g id="shape-6" data-name="图片 5">
+<image href="toc_sidebar.jpg" x="0" y="0" width="720" height="720" preserveAspectRatio="none" />
+</g>
+<g id="shape-7" data-name="文本框 6">
+<rect x="804.2" y="134.69" width="224.71" height="116.33" fill="none" />
+<text x="916.56" y="214.29" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪晓波折纸体简&quot;, sans-serif" font-size="88" fill="#203864"><tspan fill="#203864" font-size="88">目  录</tspan></text>
+</g>
+<g id="shape-8" data-name="文本框 7">
+<rect x="807.75" y="231.63" width="234.8" height="38.78" fill="none" />
+<text x="817.35" y="256.83" text-anchor="start" xml:space="preserve" font-family="&quot;汉仪文黑-45W&quot;, sans-serif" font-size="24" fill="#949AB2" letter-spacing="10.67"><tspan fill="#949AB2" font-size="24" letter-spacing="10.67">CONTENTS</tspan></text>
+</g>
+<g id="shape-13" data-name="组合 12">
+<g id="shape-9" data-name="文本框 8">
+<rect x="655.56" y="379.77" width="77.55" height="203.57" fill="none" />
+</g>
+<g id="shape-9-text" data-name="文本框 8 text">
+<text x="694.33" y="421.56" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪晓波折纸体简&quot;, sans-serif" font-size="48" fill="#203864">{{TOC_ITEM_1_TITLE}}</text>
+</g>
+<g id="shape-10" data-name="文本框 9">
+<rect x="718.69" y="383.3" width="40.41" height="196.52" fill="none" />
+</g>
+<g id="shape-10-text" data-name="文本框 9 text">
+<text x="738.9" y="417.02" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪文黑-45W&quot;, sans-serif" font-size="14.67" fill="#949AB2" letter-spacing="-4"><tspan fill="#949AB2" font-size="14.67" letter-spacing="-4">C</tspan><tspan x="738.9" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">H</tspan><tspan x="738.9" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">A</tspan><tspan x="738.9" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">P</tspan><tspan x="738.9" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">T</tspan><tspan x="738.9" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">E</tspan><tspan x="738.9" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">R</tspan><tspan x="738.9" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">O</tspan><tspan x="738.9" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">N</tspan><tspan x="738.9" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">E</tspan></text>
+</g>
+<g id="shape-11" data-name="直接连接符 10">
+<line x1="758.72" y1="383.3" x2="758.72" y2="720" stroke-width="1.333" stroke="#949AB2" stroke-opacity="0.5" fill="#4472C4" />
+</g>
+</g>
+<g id="shape-14" data-name="组合 13">
+<g id="shape-15" data-name="文本框 14">
+<rect x="800.77" y="379.77" width="77.55" height="203.57" fill="none" />
+</g>
+<g id="shape-15-text" data-name="文本框 14 text">
+<text x="839.55" y="421.56" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪晓波折纸体简&quot;, sans-serif" font-size="48" fill="#203864">{{TOC_ITEM_2_TITLE}}</text>
+</g>
+<g id="shape-16" data-name="文本框 15">
+<rect x="863.91" y="383.3" width="40.41" height="196.52" fill="none" />
+</g>
+<g id="shape-16-text" data-name="文本框 15 text">
+<text x="884.11" y="417.02" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪文黑-45W&quot;, sans-serif" font-size="14.67" fill="#949AB2" letter-spacing="-4"><tspan fill="#949AB2" font-size="14.67" letter-spacing="-4">C</tspan><tspan x="884.11" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">H</tspan><tspan x="884.11" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">A</tspan><tspan x="884.11" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">P</tspan><tspan x="884.11" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">T</tspan><tspan x="884.11" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">E</tspan><tspan x="884.11" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">R</tspan><tspan x="884.11" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">T</tspan><tspan x="884.11" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">W</tspan><tspan x="884.11" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">O</tspan></text>
+</g>
+<g id="shape-17" data-name="直接连接符 16">
+<line x1="903.93" y1="383.3" x2="903.93" y2="720" stroke-width="1.333" stroke="#949AB2" stroke-opacity="0.5" fill="#4472C4" />
+</g>
+</g>
+<g id="shape-18" data-name="组合 17">
+<g id="shape-19" data-name="文本框 18">
+<rect x="945.99" y="379.77" width="77.55" height="203.57" fill="none" />
+</g>
+<g id="shape-19-text" data-name="文本框 18 text">
+<text x="984.76" y="421.56" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪晓波折纸体简&quot;, sans-serif" font-size="48" fill="#203864"><tspan fill="#203864" font-size="48">第</tspan><tspan x="984.76" dy="50.4" fill="#203864" font-size="48">三</tspan><tspan x="984.76" dy="50.4" fill="#203864" font-size="48">部</tspan><tspan x="984.76" dy="50.4" fill="#203864" font-size="48">分</tspan></text>
+</g>
+<g id="shape-20" data-name="文本框 19">
+<rect x="1009.12" y="383.3" width="40.41" height="230.49" fill="none" />
+</g>
+<g id="shape-20-text" data-name="文本框 19 text">
+<text x="1029.33" y="418.61" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪文黑-45W&quot;, sans-serif" font-size="14.67" fill="#949AB2" letter-spacing="-4"><tspan fill="#949AB2" font-size="14.67" letter-spacing="-4">C</tspan><tspan x="1029.33" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">H</tspan><tspan x="1029.33" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">A</tspan><tspan x="1029.33" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">P</tspan><tspan x="1029.33" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">T</tspan><tspan x="1029.33" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">E</tspan><tspan x="1029.33" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">R</tspan><tspan x="1029.33" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">T</tspan><tspan x="1029.33" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">H</tspan><tspan x="1029.33" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">R</tspan><tspan x="1029.33" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">E</tspan><tspan x="1029.33" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">E</tspan></text>
+</g>
+<g id="shape-21" data-name="直接连接符 20">
+<line x1="1049.15" y1="383.3" x2="1049.15" y2="720" stroke-width="1.333" stroke="#949AB2" stroke-opacity="0.5" fill="#4472C4" />
+</g>
+</g>
+<g id="shape-22" data-name="组合 21">
+<g id="shape-23" data-name="文本框 22">
+<rect x="1091.2" y="379.77" width="77.55" height="203.57" fill="none" />
+</g>
+<g id="shape-23-text" data-name="文本框 22 text">
+<text x="1129.98" y="421.56" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪晓波折纸体简&quot;, sans-serif" font-size="48" fill="#203864"><tspan fill="#203864" font-size="48">第</tspan><tspan x="1129.98" dy="50.4" fill="#203864" font-size="48">四</tspan><tspan x="1129.98" dy="50.4" fill="#203864" font-size="48">部</tspan><tspan x="1129.98" dy="50.4" fill="#203864" font-size="48">分</tspan></text>
+</g>
+<g id="shape-24" data-name="文本框 23">
+<rect x="1154.34" y="383.3" width="40.41" height="213.5" fill="none" />
+</g>
+<g id="shape-24-text" data-name="文本框 23 text">
+<text x="1174.54" y="417.82" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪文黑-45W&quot;, sans-serif" font-size="14.67" fill="#949AB2" letter-spacing="-4"><tspan fill="#949AB2" font-size="14.67" letter-spacing="-4">C</tspan><tspan x="1174.54" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">H</tspan><tspan x="1174.54" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">A</tspan><tspan x="1174.54" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">P</tspan><tspan x="1174.54" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">T</tspan><tspan x="1174.54" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">E</tspan><tspan x="1174.54" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">R</tspan><tspan x="1174.54" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">F</tspan><tspan x="1174.54" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">O</tspan><tspan x="1174.54" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">U</tspan><tspan x="1174.54" dy="15.4" fill="#949AB2" font-size="14.67" letter-spacing="-4">R</tspan></text>
+</g>
+<g id="shape-25" data-name="直接连接符 24">
+<line x1="1194.36" y1="383.3" x2="1194.36" y2="720" stroke-width="1.333" stroke="#949AB2" stroke-opacity="0.5" fill="#4472C4" />
+</g>
+</g></svg>

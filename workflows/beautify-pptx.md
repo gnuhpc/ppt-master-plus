@@ -1,14 +1,16 @@
 ---
-description: Content-faithful PPT beautification — re-layout an existing deck while preserving its text verbatim and inheriting its visual identity, so regenerated elements share the original's palette/fonts and blend with it when pasted back.
+description: Explicit source-faithful PPT beautification — re-layout an existing deck only when the user asks to preserve page count/order/wording and optionally source master/layouts.
 ---
 
-# Beautify PPTX (Re-layout) Workflow
+# Faithful Beautify PPTX (Explicit 1:1 Re-layout)
 
-> Beautify keeps a deck's content and redoes its layout. It does not reuse a user-provided PPTX as a native template for new material.
+> This workflow is intentionally conservative. It exists for source-faithful repair, not best-possible deck redesign. If the user wants the deck to look substantially better and did not require 1:1 preservation, use the main pipeline.
+
+> Faithful beautify keeps a deck's content and source slide mapping while redoing its layout. It does not reuse a user-provided PPTX as a native template for new material.
 
 Re-lays-out an existing `.pptx`: the text is preserved **verbatim**, the source deck's visual identity (palette / fonts) is **inherited as truth**, and only layout, hierarchy, and whitespace are redesigned. Output is a brand-new native deck generated through the standard SVG pipeline — not a patch over the original.
 
-**Trigger**: the user supplies a `.pptx` and asks to beautify / re-layout / 重新排版 / 美化 while keeping the content. Explicit intent + a provided file only; never auto-infer.
+**Trigger**: the user supplies a `.pptx` and explicitly asks to preserve one or more source invariants: page count, page order, per-slide wording, original master/layout, or paste-back compatibility. Generic "beautify / optimize / make professional" does not trigger this workflow; route those requests to the main SKILL.md pipeline.
 
 ---
 
@@ -16,9 +18,9 @@ Re-lays-out an existing `.pptx`: the text is preserved **verbatim**, the source 
 
 | Pattern | Example |
 |---|---|
-| Existing `.pptx` + beautify intent | "把这份 PPT 美化一下" / "make this deck look better" |
-| Existing `.pptx` + re-layout intent | "重新排版这份 PPT，内容别动" / "re-layout this, keep the wording" |
-| Existing `.pptx` + paste-back intent | "重排后我要把元素贴回原来的模板" |
+| Existing `.pptx` + explicit unchanged wording | "美化一下，但每页文字不要改" |
+| Existing `.pptx` + exact page count/order | "页数和顺序保持不变，只重新排版" |
+| Existing `.pptx` + source master | "保留原母版和版式，内容层重排" |
 
 **Hard rule — content is frozen**: every text string from the source is preserved exactly (no add / remove / reword / reorder). Beautification freedom lives only in layout, hierarchy, spacing, and visual rhythm.
 
@@ -26,7 +28,7 @@ Re-lays-out an existing `.pptx`: the text is preserved **verbatim**, the source 
 
 **Distinct from mirror templates**: `replication_mode: mirror` (executor §1.1) keeps layout + visuals verbatim and edits text. Beautify is the inverse — content verbatim, layout redone, identity inherited.
 
-**When this is the wrong route — re-architecture belongs to the main pipeline**: beautify preserves the source's page count and page order 1:1. It is for "keep this deck, just lay it out better". When the user instead wants the original page breakdown reconsidered — merge / split / reorder pages, re-outline the structure, build a *better deck* from the same content rather than a prettier version of the same pages — that is not beautify. This includes re-pagination for fit: "keep every word but split a crowded page so it reads better" changes page count, so it is the main pipeline, not beautify. Convert the deck with [`ppt_to_md`](../scripts/source_to_md/ppt_to_md.py) and run the main SKILL.md pipeline, where the Strategist re-architects the outline freely from the extracted content. The deciding question: is the source's page split information to preserve, or just the previous author's structure to improve? Preserve → beautify (here); improve → `ppt_to_md` + main pipeline.
+**When this is the wrong route — re-architecture belongs to the main pipeline**: faithful beautify preserves the source's page count and page order 1:1. It is for "keep this deck, just lay it out better". When the user instead wants the original page breakdown reconsidered — merge / split / reorder pages, re-outline the structure, build a *better deck* from the same content rather than a prettier version of the same pages — that is not faithful beautify. This includes re-pagination for fit: "keep every word but split a crowded page so it reads better" changes page count, so it is the main pipeline, not faithful beautify. Convert the deck with [`ppt_to_md`](../scripts/source_to_md/ppt_to_md.py) and run the main SKILL.md pipeline, where the Strategist re-architects the outline freely from the extracted content. Generic requests such as "把这份 PPT 美化一下" / "make this deck look better" also belong to the main pipeline unless the user explicitly asks for source-faithful preservation.
 
 ---
 
@@ -115,8 +117,15 @@ python3 ${SKILL_DIR}/scripts/pptx_intake.py <project_path>/sources/<source.pptx>
 
 | `<stem>.slide_library.json` field | Use |
 |---|---|
-| `slides[].charts[]` (`chart_type` / `categories` / `series[].values`) | regenerate as a native SVG chart via the `§VII` `templates/charts/` path |
+| `slides[].charts[]` (`chart_type` / `categories` / `series[].values`) | regenerate as a native SVG chart — see chart generation mode below |
 | `slides[].tables[]` (`row_count` / `column_count` / cell text) | regenerate as a native SVG table |
+
+**Chart generation mode — depends on `preserve_master`**:
+
+| `preserve_master` | Chart generation approach |
+|---|---|
+| `true` | **Free design** — design each chart from scratch using `design_spec.md §VII` data and the deck's `visual_style` + `spec_lock.colors`. Consult `templates/charts/charts_index.json` only to confirm the visualization *type* fits the data; do not inherit any template's structural geometry. The preserved master already provides visual scaffolding — the chart's job is to be the best possible custom visualization for this data and this deck's aesthetic, not a template filling. |
+| `false` | **Catalog-guided** — match each chart page to the closest `templates/charts/` entry; inherit its structure and adapt colors/typography to spec_lock. Equivalent to the main pipeline's `page_charts` path. |
 
 **Hard rule — regenerate visuals, do not carry them over**: charts / tables / images are rebuilt from their data in the inherited style, never spliced in byte-for-byte. This keeps the deck style-consistent and natively editable. **Data values are frozen** (categories / series / cell text / numbers unchanged); only their rendering is the deck's own. Pictures (`ppt_to_md`-extracted files) are reused but re-laid-out — position / crop / size follow the new layout, not the source slot. A user who wants an original element verbatim copies it across themselves.
 
@@ -203,7 +212,7 @@ Write `<project_path>/confirm_ui/recommendations.json` and launch the same confi
     "image_usage": "provided",
     "preserve_master": true
   },
-  "page_count": <source-slide-count>,
+  "page_count": { "value": <source-slide-count>, "locked": true },
   "source_canvas": { "width_px": <source_canvas.width_px>, "height_px": <source_canvas.height_px>, "aspect": <source_canvas.aspect> },
   "audience": "<carry over from the deck's apparent audience, or leave blank>",
   "color": { "selected": 0, "candidates": [
@@ -220,6 +229,8 @@ Write `<project_path>/confirm_ui/recommendations.json` and launch the same confi
 ```
 
 - **Recommend keep, allow override**: pre-fill canvas / mode / visual style / icons / image strategy with the source-faithful default (canvas = Step 3 format, mode = `briefing`, image_usage = `provided` since pictures are reused). Enumerable fields already list every catalog option with the source-faithful one badged, so the user can switch. Beautify's only true non-choices are the frozen text and the strict 1:1 page count (changing those means routing to the main pipeline instead — see CLAUDE.md). The §c material-divergence field is therefore not surfaced here — beautify never reshapes content (text is verbatim).
+- **Page count is locked**: write `"page_count": { "value": <source-slide-count>, "locked": true }`. The confirm UI renders this as a read-only display with a note; the user cannot edit it. The source slide count is always the exact page count — no rounding, no range.
+- **Canvas defaults to source PPTX**: always set `recommend.canvas` to the canvas id that matches the source deck's aspect ratio (Step 3 format detection). The user may still switch to a different canvas from the dropdown if they want, but the default selection must match the source.
 - **Canvas size is source-exact even when the UI canvas id is only a bucket**: the confirm UI's `canvas` field may still say `ppt169` / `ppt43`, but beautify must carry `source_canvas.width_px` / `height_px` into `design_spec.md`, `spec_lock.md`, and every generated SVG root. Do not let a confirmed `ppt169` id collapse a `2560×1440` source deck back to `1280×720`.
 - **Preserve-master default**: set `recommend.preserve_master: true`. If the user confirms it, every generated output slide keeps the source slide with the same ordinal's layout/master relationship: source slide 1's layout → output slide 1, source slide 2's layout → output slide 2, and so on. This is real OOXML preservation, not a visual imitation; master/layout background images and fixed chrome stay in the PPTX master/layout parts and are not redrawn into SVG. If the user turns it off, the export may use a completely new generated background.
 - **Our recommendation is the pre-selected default = the source replica**: for color and typography, author **several candidates** like the from-scratch flow. The pre-selected default (`selected: 0`, the first card) is what beautify recommends — the candidate that **best replicates the source deck's style** (the truest reading of `theme` / `observed`). Replicate-by-default.
@@ -232,13 +243,15 @@ python3 ${SKILL_DIR}/scripts/confirm_ui/server.py <project_path> --daemon --wait
 
 Read the confirmed canvas + palette + typography (incl. `body_size`) and any other overrides from `<project_path>/confirm_ui/result.json`. Chat is the canonical fallback when the page cannot open (remote / headless) — present the same fields in chat and honor the reply identically. Always run `--shutdown` on exit (page-confirm or chat-fallback) so port 5050 is free for Step 6 live preview.
 
-On confirmation, enter SKILL.md Step 4 as Strategist with the plan pre-resolved. The two beautify invariants always hold: the content-faithful clause ([`strategist.md`](../references/strategist.md) §d Layer 1) and page count = source slide count (strict 1:1). Everything else comes from the **confirmed** `result.json` — `mode` (recommended `briefing`), canvas, `visual_style`, color (e) + typography (g) incl. `body_size` (the reviewed values; skip both recommendation flows), and `preserve_master` — honoring whatever the user kept or overrode. §VII = chart/table data → `templates/charts/`, §VIII = source pictures for re-layout.
+On confirmation, enter SKILL.md Step 4 as Strategist with the plan pre-resolved. The two beautify invariants always hold: the content-faithful clause ([`strategist.md`](../references/strategist.md) §d Layer 1) and page count = source slide count (strict 1:1). Everything else comes from the **confirmed** `result.json` — `mode` (recommended `briefing`), canvas, `visual_style`, color (e) + typography (g) incl. `body_size` (the reviewed values; skip both recommendation flows), and `preserve_master` — honoring whatever the user kept or overrode. §VII = chart/table data → free design when `preserve_master=true`, catalog-guided when `false` (see chart generation mode above); §VIII = source pictures for re-layout.
 
 For beautify, the confirmed canvas means **source-exact size plus chosen aspect bucket**. Always write the source-exact viewBox from `source_canvas`, not the catalog default for the bucket.
 
 If `preserve_master` is true, write that into `spec_lock.md` and instruct Executor that source master/layout backgrounds, background pictures, logos, footers, and fixed chrome are already supplied by PowerPoint. Generated SVG pages must contain only slide-local redesigned content layered over that preserved master/layout; do not duplicate the master background or fixed master decorations in SVG.
 
 **Hard rule — no generated page background when preserving master**: for beautify projects with `preserve_master=true`, every generated SVG must omit page-covering background elements. Do **not** create a `<g id="background">`, a full-canvas `<rect>` background, a full-canvas `<image>` background, decorative background grids, overlays, watermarks, or page chrome intended to replace the master. The first visible SVG elements should be slide-local content such as redesigned text groups, charts, tables, pictures, callouts, icons, and local panels. If a local panel needs contrast, draw only the panel's own bounded shape; never cover the whole slide. This avoids double backgrounds and lets the original PPTX master remain the visual base.
+
+**Chart element backgrounds follow the same principle**: chart plot-area panels, legend boxes, and chart bounding wrappers must default to `fill="none"` — transparent, letting the master show through. A jarring opaque white or gray chart background on a colored master is a visual error. If data legibility genuinely requires contrast separation, use `spec_lock.colors.secondary_bg` at opacity ≤ 0.15 (not solid), sized only to the chart's own bounding box. Axis lines → `spec_lock.colors.body_text` at opacity 0.15–0.20; series colors → `spec_lock.colors.primary` / `accent` / `secondary_accent`.
 
 **Hard rule — §IX is verbatim and 1:1**: each source slide becomes exactly one page, in source order, its text transcribed word-for-word from `sources/<stem>.md`. Do not merge, split, drop, or rewrite. Write `design_spec.md` + `spec_lock.md` per `strategist.md` §6, then hand off to the Executor.
 
@@ -254,9 +267,15 @@ When `spec_lock.md` says `preserve_master: true`, also verify that the SVG does 
 
 ```bash
 python3 ${SKILL_DIR}/scripts/finalize_svg.py <project_path>
-python3 ${SKILL_DIR}/scripts/svg_to_pptx.py <project_path> --base-pptx <project_path>/sources/<source.pptx>  # if confirmed preserve_master=true
-python3 ${SKILL_DIR}/scripts/svg_to_pptx.py <project_path>  # if confirmed preserve_master=false
+python3 ${SKILL_DIR}/scripts/svg_to_pptx.py <project_path>
 ```
+
+> **Preserve-master verification (mandatory when `preserve_master=true`)**: after the export command, read its console output and confirm both of these lines are present:
+> ```
+> [spec_lock] preserve_master=true → auto base-pptx: .../sources/<source.pptx>
+> Master/layout preservation: enabled (source slide N layout -> output slide N)
+> ```
+> The script auto-detects `preserve_master` and `base_pptx` from `spec_lock.md` — you do **not** need to pass `--base-pptx` manually. If either confirmation line is absent (e.g., `spec_lock.md` was missing `preserve_master: true` or `base_pptx:` was wrong), the master was NOT applied. Fix `spec_lock.md` and re-run, or pass `--base-pptx <project_path>/sources/<source.pptx>` explicitly.
 
 ---
 
@@ -284,6 +303,7 @@ python3 ${SKILL_DIR}/scripts/source_to_md/ppt_to_md.py <project_path>/exports/<o
 - [x] Source colors + fonts inherited as locked truth
 - [x] Charts / tables regenerated as native SVG in the inherited style
 - [x] Native PPTX exported to `exports/`
+- [x] preserve_master: export log confirmed "Master/layout preservation: enabled" (or N/A when preserve_master=false)
 ```
 
 ---

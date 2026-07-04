@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<!-- Dashed boundary line (top) -->
+<path d="M 299.84 307.05 L 990.52 310.96" fill="none" stroke-width="2.667" stroke-linecap="round" stroke="#262626" stroke-dasharray="8 4" stroke-linejoin="round"/>
+<!-- Dashed boundary line (bottom) -->
+<path d="M 299.84 486.95 L 990.52 490.86" fill="none" stroke-width="2.667" stroke-linecap="round" stroke="#262626" stroke-dasharray="8 4" stroke-linejoin="round"/>
+<!-- Cloud motif (top-right, simplified from original) -->
+<ellipse cx="1108" cy="155" rx="67" ry="40" fill="#FFFFFF" stroke="#76AADB" stroke-width="2.667"/>
+<ellipse cx="1050" cy="165" rx="55" ry="34" fill="#FFFFFF" stroke="#76AADB" stroke-width="2.667"/>
+<ellipse cx="1176" cy="162" rx="48" ry="30" fill="#FFFFFF" stroke="#76AADB" stroke-width="2.667"/>
+<!-- Chapter title -->
+<text x="327.64" y="424.97" text-anchor="start" font-family="&quot;微软雅黑&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="96" fill="#404040">{{CHAPTER_TITLE}}</text>
+<!-- Sidebar circles (Yellow/Red/Blue/Green, partially off-canvas) -->
+<ellipse cx="-51.59" cy="215.59" rx="40.19" ry="40.19" fill="#F7B63E"/>
+<ellipse cx="-53.76" cy="295.6" rx="40.19" ry="40.19" fill="#FF3E3E"/>
+<ellipse cx="-53.76" cy="375.64" rx="40.19" ry="40.19" fill="#76AADB"/>
+<ellipse cx="-53.76" cy="455.32" rx="40.19" ry="40.19" fill="#70AD47"/>
+</svg>

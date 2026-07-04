@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-5" data-name="图片 4" transform="rotate(90 640 360)">
+<image href="bg_peach_soft.jpg" x="280" y="-280" width="720" height="1280" preserveAspectRatio="none" />
+</g>
+<g id="shape-7" data-name="图片 6" transform="rotate(270 107.73 206.35) translate(107.73 206.35) scale(1 -1) translate(-107.73 -206.35)">
+<svg x="-98.61" y="98.61" width="412.69" height="215.47" viewBox="0.57833 0 0.42167 1" preserveAspectRatio="none"><image href="blossom_top.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-8" data-name="图片 7" transform="rotate(90 1172.27 206.35) translate(1172.27 206.35) scale(-1 -1) translate(-1172.27 -206.35)">
+<svg x="965.92" y="98.61" width="412.69" height="215.47" viewBox="0.57833 0 0.42167 1" preserveAspectRatio="none"><image href="blossom_top.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-14" data-name="图片 13">
+<svg x="42.49" y="480" width="165.51" height="268.56" viewBox="0.40564 0.06245 0.21434 0.29029" preserveAspectRatio="none"><image href="blossom_bottom.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-11" data-name="组合 10">
+<g id="shape-12" data-name="文本框 11">
+<rect x="532.57" y="149.43" width="106.63" height="173.76" fill="none" />
+</g>
+<g id="shape-12-text" data-name="文本框 11 text">
+<text x="585.88" y="221.91" text-anchor="middle" xml:space="preserve" font-family="&quot;海派腔调奶油简&quot;, sans-serif" font-size="72" fill="#404040" letter-spacing="-4"><tspan fill="#404040" font-size="72" letter-spacing="-4">请</tspan><tspan x="585.88" dy="75.6" fill="#404040" font-size="72" letter-spacing="-4">在</tspan></text>
+</g>
+<g id="shape-13" data-name="矩形 12">
+<rect x="576.59" y="322.54" width="72.7" height="243.68" fill="none" />
+</g>
+<g id="shape-13-text" data-name="矩形 12 text">
+<text x="612.95" y="335" text-anchor="middle" xml:space="preserve" font-family="Arial, sans-serif" font-size="14.67" fill="#404040"><tspan fill="#404040" font-size="14.67">L</tspan><tspan x="612.95" dy="15.4" fill="#404040" font-size="14.67">o</tspan><tspan x="612.95" dy="15.4" fill="#404040" font-size="14.67">r</tspan><tspan x="612.95" dy="15.4" fill="#404040" font-size="14.67">e</tspan><tspan x="612.95" dy="15.4" fill="#404040" font-size="14.67">m</tspan><tspan x="612.95" dy="15.4" fill="#404040" font-size="14.67">i</tspan><tspan x="612.95" dy="15.4" fill="#404040" font-size="14.67">p</tspan><tspan x="612.95" dy="15.4" fill="#404040" font-size="14.67">s</tspan><tspan x="612.95" dy="15.4" fill="#404040" font-size="14.67">u</tspan><tspan x="612.95" dy="15.4" fill="#404040" font-size="14.67">m</tspan><tspan x="612.95" dy="15.4" fill="#404040" font-size="14.67">d</tspan><tspan x="612.95" dy="15.4" fill="#404040" font-size="14.67">o</tspan><tspan x="612.95" dy="15.4" fill="#404040" font-size="14.67">l</tspan><tspan x="612.95" dy="15.4" fill="#404040" font-size="14.67">o</tspan><tspan x="612.95" dy="15.4" fill="#404040" font-size="14.67">r</tspan></text>
+</g>
+<g id="shape-15" data-name="直接连接符 14">
+<line x1="661.44" y1="200.46" x2="661.44" y2="463.84" stroke-width="2" stroke="#404040" stroke-opacity="0.73" fill="#63BD87" />
+</g>
+<g id="shape-16" data-name="文本框 15">
+<rect x="670.61" y="252.97" width="77.55" height="336.08" fill="none" />
+</g>
+<g id="shape-16-text" data-name="文本框 15 text">
+<text x="709.39" y="310.61" text-anchor="middle" xml:space="preserve" font-family="&quot;海派腔调奶油简&quot;, sans-serif" font-size="48" fill="#404040" letter-spacing="-4"><tspan fill="#404040" font-size="48" letter-spacing="-4">此</tspan><tspan x="709.39" dy="50.4" fill="#404040" font-size="48" letter-spacing="-4">处</tspan><tspan x="709.39" dy="50.4" fill="#404040" font-size="48" letter-spacing="-4">添</tspan><tspan x="709.39" dy="50.4" fill="#404040" font-size="48" letter-spacing="-4">加</tspan><tspan x="709.39" dy="50.4" fill="#404040" font-size="48" letter-spacing="-4">标</tspan><tspan x="709.39" dy="50.4" fill="#404040" font-size="48" letter-spacing="-4">题</tspan></text>
+</g>
+<g id="shape-17" data-name="组合 16">
+<g id="shape-26" data-name="直接连接符 25" transform="translate(755.43 173.71) scale(1 -1) translate(-755.43 -173.71)">
+<line x1="708.45" y1="130.95" x2="802.42" y2="216.48" stroke-width="1.667" stroke="#404040" fill="#63BD87" />
+</g>
+<g id="shape-27" data-name="椭圆 26">
+<ellipse cx="703.2" cy="221.51" rx="7.26" ry="7.26" fill="none" stroke-width="1.667" stroke="#404040" />
+</g>
+<g id="shape-28" data-name="椭圆 27">
+<ellipse cx="762.24" cy="245.71" rx="7.26" ry="7.26" fill="none" stroke-width="1.667" stroke="#404040" />
+</g>
+</g>
+<g id="shape-18" data-name="组合 17">
+<g id="shape-19" data-name="组合 18">
+<g id="shape-23" data-name="直接连接符 22" transform="translate(529.64 363.72) scale(1 -1) translate(-529.64 -363.72)">
+<line x1="488.53" y1="326.31" x2="570.75" y2="401.14" stroke-width="1.667" stroke="#404040" fill="#63BD87" />
+</g>
+<g id="shape-24" data-name="椭圆 23">
+<ellipse cx="483.94" cy="405.55" rx="6.35" ry="6.35" fill="none" stroke-width="1.667" stroke="#404040" />
+</g>
+<g id="shape-25" data-name="椭圆 24">
+<ellipse cx="535.71" cy="296.52" rx="6.35" ry="6.35" fill="none" stroke-width="1.667" stroke="#404040" />
+</g>
+</g>
+<g id="shape-20" data-name="组合 19">
+<g id="shape-21" data-name="直接连接符 20" transform="translate(529.57 454.74) scale(1 -1) translate(-529.57 -454.74)">
+<line x1="493.62" y1="422.03" x2="565.51" y2="487.46" stroke-width="1.667" stroke="#404040" fill="#63BD87" />
+</g>
+<g id="shape-22" data-name="椭圆 21">
+<ellipse cx="489.61" cy="491.31" rx="5.56" ry="5.56" fill="none" stroke-width="1.667" stroke="#404040" />
+</g>
+</g>
+</g>
+</g><rect x="72" y="120" width="1136" height="540" fill="none" stroke="#7F7F7F" stroke-opacity="0.2" stroke-dasharray="4 4" /><text x="640" y="390" text-anchor="middle" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="18" fill="#7F7F7F">{{CONTENT_AREA}}</text><text x="640" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7F7F7F">{{PAGE_NUM}}</text></svg>

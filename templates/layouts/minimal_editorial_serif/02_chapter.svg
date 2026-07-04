@@ -1,0 +1,17 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-7" data-name="矩形 6">
+<rect x="705.39" y="136.73" width="248.8" height="104.73" fill="#262626" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-8" data-name="文本框 7">
+<rect x="723.14" y="161.91" width="218.43" height="54.93" fill="none" />
+<text x="732.74" y="198.45" text-anchor="start" xml:space="preserve" font-family="&quot;Open Sans&quot;, sans-serif" font-size="37.33" fill="#FFFFFF" font-weight="bold">PART {{CHAPTER_NUM}}</text>
+</g>
+<g id="shape-10" data-name="矩形 9">
+<rect x="699.87" y="287.43" width="505.49" height="264.15" fill="none" />
+<text x="709.47" y="304.13" text-anchor="start" xml:space="preserve" font-family="&quot;Calibri Light&quot;, Arial, sans-serif" font-size="14" fill="#A6A6A6">{{CHAPTER_TITLE}}</text>
+
+</g>
+<g id="shape-12" data-name="图片 11">
+<image href="editorial_vertical.jpg" x="0" y="0" width="642.91" height="720" preserveAspectRatio="none" />
+</g></svg>

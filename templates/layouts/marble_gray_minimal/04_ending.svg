@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><image href="marble_bg.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+<g id="shape-4" data-name="图片 3">
+<image href="marble_overlay.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+</g>
+<g id="shape-2" data-name="矩形: 圆角 1">
+<rect x="182.26" y="217.04" width="915.48" height="329.21" rx="54.87" ry="54.87" fill="none" stroke-width="6" stroke="#C1A36C" />
+</g>
+<g id="shape-5" data-name="文本框 4">
+<rect x="299.41" y="282.78" width="681.19" height="130.87" fill="none" />
+<text x="309.01" y="372.58" text-anchor="start" xml:space="preserve" font-family="&quot;字魂59号-创粗黑&quot;, sans-serif" font-size="100" fill="#262626"><tspan fill="#262626" font-size="100">感谢您的观看</tspan></text>
+</g>
+<g id="shape-6" data-name="文本框 5">
+<rect x="523.13" y="427.4" width="233.74" height="48.47" fill="none" />
+<text x="532.73" y="459.4" text-anchor="start" xml:space="preserve" font-family="&quot;字魂58号-创中黑&quot;, &quot;等线&quot;, sans-serif" font-size="32" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="32" font-weight="bold">THANKS</tspan></text>
+</g></svg>

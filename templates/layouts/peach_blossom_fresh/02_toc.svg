@@ -1,0 +1,34 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-5" data-name="图片 4" transform="rotate(90 640 360)">
+<image href="bg_peach_soft.jpg" x="280" y="-280" width="720" height="1280" preserveAspectRatio="none" />
+</g>
+<g id="shape-7" data-name="图片 6" transform="rotate(270 107.73 206.35) translate(107.73 206.35) scale(1 -1) translate(-107.73 -206.35)">
+<svg x="-98.61" y="98.61" width="412.69" height="215.47" viewBox="0.57833 0 0.42167 1" preserveAspectRatio="none"><image href="blossom_top.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-8" data-name="图片 7" transform="rotate(90 1172.27 206.35) translate(1172.27 206.35) scale(-1 -1) translate(-1172.27 -206.35)">
+<svg x="965.92" y="98.61" width="412.69" height="215.47" viewBox="0.57833 0 0.42167 1" preserveAspectRatio="none"><image href="blossom_top.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-14" data-name="图片 13">
+<svg x="42.49" y="480" width="165.51" height="268.56" viewBox="0.40564 0.06245 0.21434 0.29029" preserveAspectRatio="none"><image href="blossom_bottom.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-33" data-name="文本框 32">
+<rect x="193.68" y="275.86" width="211.12" height="106.63" fill="none" />
+<text x="203.28" y="348.66" text-anchor="start" xml:space="preserve" font-family="&quot;楷体&quot;, sans-serif" font-size="80" fill="#404040" letter-spacing="4"><tspan fill="#404040" font-size="80" letter-spacing="4">目录</tspan></text>
+</g>
+<g id="shape-34" data-name="文本框 33">
+<rect x="577.6" y="197.79" width="494.4" height="54.93" fill="none" />
+<text x="824.8" y="234.33" text-anchor="middle" xml:space="preserve" font-family="&quot;楷体&quot;, sans-serif" font-size="37.33" fill="#404040" letter-spacing="8">{{TOC_ITEM_1_TITLE}}</text>
+</g>
+<g id="shape-35" data-name="文本框 34">
+<rect x="577.6" y="285.66" width="494.4" height="54.93" fill="none" />
+<text x="824.8" y="322.2" text-anchor="middle" xml:space="preserve" font-family="&quot;楷体&quot;, sans-serif" font-size="37.33" fill="#404040" letter-spacing="8">{{TOC_ITEM_1_TITLE}}</text>
+</g>
+<g id="shape-36" data-name="文本框 35">
+<rect x="577.6" y="373.53" width="494.4" height="54.93" fill="none" />
+<text x="824.8" y="410.07" text-anchor="middle" xml:space="preserve" font-family="&quot;楷体&quot;, sans-serif" font-size="37.33" fill="#404040" letter-spacing="8">{{TOC_ITEM_1_TITLE}}</text>
+</g>
+<g id="shape-37" data-name="文本框 36">
+<rect x="577.6" y="461.4" width="494.4" height="54.93" fill="none" />
+<text x="824.8" y="497.94" text-anchor="middle" xml:space="preserve" font-family="&quot;楷体&quot;, sans-serif" font-size="37.33" fill="#404040" letter-spacing="8">{{TOC_ITEM_1_TITLE}}</text>
+</g></svg>

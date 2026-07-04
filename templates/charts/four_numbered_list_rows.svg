@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <text x="640" y="100" font-family="sans-serif" font-size="36" font-weight="bold" fill="#1E293B" text-anchor="middle">{{PAGE_TITLE}}</text>
+
+  <g id="content" transform="translate(160, 170)">
+    <!-- Row 1 -->
+    <g id="row1">
+      <text x="0" y="80" font-family="sans-serif" font-size="96" font-weight="bold" fill="#1E293B" opacity="0.15">01</text>
+      <text x="130" y="50" font-family="sans-serif" font-size="24" font-weight="bold" fill="#1E293B">Row Title One</text>
+      <text x="130" y="80" font-family="sans-serif" font-size="16" fill="#64748B">Supporting details for item one. Use 1-2 sentences of context.</text>
+    </g>
+    <line x1="0" y1="115" x2="960" y2="115" stroke="#E2E8F0" stroke-width="1" />
+
+    <!-- Row 2 -->
+    <g id="row2" transform="translate(0, 130)">
+      <text x="0" y="80" font-family="sans-serif" font-size="96" font-weight="bold" fill="#3B82F6" opacity="0.2">02</text>
+      <text x="130" y="50" font-family="sans-serif" font-size="24" font-weight="bold" fill="#1E293B">Row Title Two</text>
+      <text x="130" y="80" font-family="sans-serif" font-size="16" fill="#64748B">Supporting details for item two. Use 1-2 sentences of context.</text>
+    </g>
+    <line x1="0" y1="245" x2="960" y2="245" stroke="#E2E8F0" stroke-width="1" />
+
+    <!-- Row 3 -->
+    <g id="row3" transform="translate(0, 260)">
+      <text x="0" y="80" font-family="sans-serif" font-size="96" font-weight="bold" fill="#1E293B" opacity="0.15">03</text>
+      <text x="130" y="50" font-family="sans-serif" font-size="24" font-weight="bold" fill="#1E293B">Row Title Three</text>
+      <text x="130" y="80" font-family="sans-serif" font-size="16" fill="#64748B">Supporting details for item three. Use 1-2 sentences of context.</text>
+    </g>
+    <line x1="0" y1="375" x2="960" y2="375" stroke="#E2E8F0" stroke-width="1" />
+
+    <!-- Row 4 -->
+    <g id="row4" transform="translate(0, 390)">
+      <text x="0" y="80" font-family="sans-serif" font-size="96" font-weight="bold" fill="#3B82F6" opacity="0.2">04</text>
+      <text x="130" y="50" font-family="sans-serif" font-size="24" font-weight="bold" fill="#1E293B">Row Title Four</text>
+      <text x="130" y="80" font-family="sans-serif" font-size="16" fill="#64748B">Supporting details for item four. Use 1-2 sentences of context.</text>
+    </g>
+  </g>
+</svg>

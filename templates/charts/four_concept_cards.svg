@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#F8FAFC" />
+  
+  <!-- Card 1 -->
+  <g id="card-1">
+    <rect x="80" y="150" width="260" height="420" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" rx="8" ry="8" />
+    <circle cx="210" cy="230" r="45" fill="#3B82F6" stroke="#FFFFFF" stroke-width="3" />
+    <text x="210" y="238" font-family="sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">01</text>
+    
+    <text x="210" y="320" font-family="sans-serif" font-size="22" font-weight="bold" fill="#0F172A" text-anchor="middle">企业精神</text>
+    <text x="210" y="370" font-family="sans-serif" font-size="15" fill="#475569" text-anchor="middle">
+      <tspan x="210" dy="0">专业高效开拓创新</tspan>
+      <tspan x="210" dy="24">以终为始结果导向</tspan>
+      <tspan x="210" dy="24">团结协作使命必达</tspan>
+    </text>
+  </g>
+  
+  <!-- Card 2 -->
+  <g id="card-2">
+    <rect x="370" y="150" width="260" height="420" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" rx="8" ry="8" />
+    <circle cx="500" cy="230" r="45" fill="#10B981" stroke="#FFFFFF" stroke-width="3" />
+    <text x="500" y="238" font-family="sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">02</text>
+    
+    <text x="500" y="320" font-family="sans-serif" font-size="22" font-weight="bold" fill="#0F172A" text-anchor="middle">经营理念</text>
+    <text x="500" y="370" font-family="sans-serif" font-size="15" fill="#475569" text-anchor="middle">
+      <tspan x="500" dy="0">以用户为中心出发</tspan>
+      <tspan x="500" dy="24">精细运营降本增效</tspan>
+      <tspan x="500" dy="24">合作共赢生态闭环</tspan>
+    </text>
+  </g>
+  
+  <!-- Card 3 -->
+  <g id="card-3">
+    <rect x="660" y="150" width="260" height="420" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" rx="8" ry="8" />
+    <circle cx="790" cy="230" r="45" fill="#F59E0B" stroke="#FFFFFF" stroke-width="3" />
+    <text x="790" y="238" font-family="sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">03</text>
+    
+    <text x="790" y="320" font-family="sans-serif" font-size="22" font-weight="bold" fill="#0F172A" text-anchor="middle">企业宗旨</text>
+    <text x="790" y="370" font-family="sans-serif" font-size="15" fill="#475569" text-anchor="middle">
+      <tspan x="790" dy="0">让生活变得更简单</tspan>
+      <tspan x="790" dy="24">让校园变得更数智</tspan>
+      <tspan x="790" dy="24">让创新变得更敏捷</tspan>
+    </text>
+  </g>
+  
+  <!-- Card 4 -->
+  <g id="card-4">
+    <rect x="950" y="150" width="260" height="420" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1.5" rx="8" ry="8" />
+    <circle cx="1080" cy="230" r="45" fill="#8B5CF6" stroke="#FFFFFF" stroke-width="3" />
+    <text x="1080" y="238" font-family="sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">04</text>
+    
+    <text x="1080" y="320" font-family="sans-serif" font-size="22" font-weight="bold" fill="#0F172A" text-anchor="middle">服务理念</text>
+    <text x="1080" y="370" font-family="sans-serif" font-size="15" fill="#475569" text-anchor="middle">
+      <tspan x="1080" dy="0">全天候贴心守护</tspan>
+      <tspan x="1080" dy="24">一站式完美体验</tspan>
+      <tspan x="1080" dy="24">百分之百满意承诺</tspan>
+    </text>
+  </g>
+</svg>

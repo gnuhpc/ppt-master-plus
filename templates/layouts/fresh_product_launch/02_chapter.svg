@@ -1,0 +1,22 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#F2F2F2" />
+<g id="scaled-wrapper" transform="scale(1.199625)"><g id="shape-12" data-name="图片 11">
+<svg x="0" y="0" width="572.39" height="600" viewBox="0.18706 0 0.63668 1" preserveAspectRatio="none"><image href="chapter_leaves.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-6" data-name="文本框 5">
+<rect x="530.44" y="114.02" width="456.56" height="116.33" fill="none" />
+<text x="540.04" y="193.62" text-anchor="start" xml:space="preserve" font-family="&quot;三极能量黑 简体&quot;, sans-serif" font-size="88" fill="#000000" font-weight="bold" letter-spacing="8">PART {{CHAPTER_NUM}}</text>
+</g>
+<g id="shape-7" data-name="矩形 6">
+<rect x="41.48" y="27.83" width="106.63" height="150.65" fill="none" />
+</g>
+<g id="shape-7-text" data-name="矩形 6 text">
+<text x="94.8" y="38.03" text-anchor="middle" xml:space="preserve" font-family="&quot;三极能量黑 简体&quot;, sans-serif" font-size="12" fill="#000000"><tspan fill="#000000" font-size="12">请</tspan><tspan x="94.8" dy="12.6" fill="#000000" font-size="12">输</tspan><tspan x="94.8" dy="12.6" fill="#000000" font-size="12">入</tspan><tspan x="94.8" dy="12.6" fill="#000000" font-size="12">文</tspan><tspan x="94.8" dy="12.6" fill="#000000" font-size="12">字</tspan><tspan x="94.8" dy="12.6" fill="#000000" font-size="12">标</tspan><tspan x="94.8" dy="12.6" fill="#000000" font-size="12">题</tspan><tspan x="94.8" dy="12.6" fill="#000000" font-size="12">，</tspan><tspan x="94.8" dy="12.6" fill="#000000" font-size="12">请</tspan><tspan x="94.8" dy="12.6" fill="#000000" font-size="12">输</tspan><tspan x="94.8" dy="12.6" fill="#000000" font-size="12">入</tspan></text>
+</g>
+<g id="shape-8" data-name="文本框 7">
+<rect x="705.64" y="346.01" width="220.76" height="163.85" fill="none" />
+<text x="715.24" y="362.14" text-anchor="start" xml:space="preserve" font-family="&quot;三极能量黑 简体&quot;, sans-serif" font-size="13.33" fill="#000000">{{CHAPTER_TITLE}}</text>
+<text x="715.24" y="395.47" text-anchor="start" xml:space="preserve" font-family="&quot;三极能量黑 简体&quot;, sans-serif" font-size="13.33" fill="#000000">{{CHAPTER_TITLE}}</text>
+<text x="715.24" y="428.81" text-anchor="start" xml:space="preserve" font-family="&quot;三极能量黑 简体&quot;, sans-serif" font-size="13.33" fill="#000000">{{CHAPTER_TITLE}}</text>
+<text x="715.24" y="462.14" text-anchor="start" xml:space="preserve" font-family="&quot;三极能量黑 简体&quot;, sans-serif" font-size="13.33" fill="#000000">{{CHAPTER_TITLE}}</text>
+</g></g></svg>

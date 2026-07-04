@@ -33,15 +33,16 @@ The subagent reads inputs 2–4 **once** at the start of its turn, then iterates
 
 | # | Category | Trigger | Permitted fix |
 |---|----------|---------|---------------|
-| H1 | Out-of-bounds | element bbox falls outside `0,0,1280,720` | shrink or reposition into canvas |
-| H2 | Text overflow | text bbox extends past its visual container | reduce font-size or line-break |
-| H3 | Text overlap | two `<text>` elements' bboxes intersect (tspans within one text excluded) | reposition or resize |
+| H1 | Out-of-bounds | element bbox falls outside `0,0,1280,720` (e.g., single-line long subtitles overflowing right edge) | shrink, reposition into canvas, or line-break via `<tspan>` |
+| H2 | Text overflow | text bbox extends past its visual container (e.g., text spatially squeezed inside fixed-width cards, badges, or node boxes) | reduce font-size, simplify text, or line-break via `<tspan>` |
+| H3 | Text overlap | two `<text>` elements' bboxes intersect (tspans within one text excluded; e.g., large data metrics horizontally colliding with adjacent text) | reposition (push X/Y coordinates apart) or resize |
 | H4 | Readability | contrast < 4.5 (small text) / < 3.0 (font-size ≥ 24px); OR text directly atop a complex image with no scrim | if **neither** the foreground nor the background color is a brand token: position-only escape — add a `<rect>` scrim under the text, or raise the offending text's font-size to ≥ 24px so the 3.0 threshold applies. If **either** color is a brand token: do not edit the SVG → goto §1.1 escalation. |
 | ~~H5~~ | Font-ramp drift | *covered by `svg_quality_checker.py` — see §0 prerequisites* | n/a (do not re-check) |
-| H6 | Element collision | rect/circle/path bboxes overlap with z-order violating semantics | open spacing |
+| H6 | Element collision | rect/circle/path bboxes overlap with z-order violating semantics (e.g., edge labels overlapping arrows/lines, or text vertically crowding icons) | open spacing, adjust Y-coordinate for padding, or abbreviate text |
 | H7 | Anchored element displaced | page number / header / footer covered, missing, or out of canvas | restore to anchor position |
 | H8 | Image rendering broken | `<image>` empty / broken-image / severe distortion | fix `href`, adjust `preserveAspectRatio`, add `no-crop` if face/data is cropped |
 | H9 | Missing key element | element required by `design_spec §IX` outline is absent from rendered slide | recreate from spec |
+| H10| Cross-page Text Inconsistency | Font sizes for similar semantic elements (e.g., body text, list items, headers) vary drastically between adjacent or similar pages. | Normalize font sizes across pages to match the primary visual style, ensuring text is neither overly small nor overly large, followed by strict visual review for overlap/overflow. |
 
 Detection order (run sequentially, do not parallelize within a single subagent):
 
@@ -62,6 +63,13 @@ If H4 fires and the foreground or background color is a **brand token** (defined
 
 The aggregated brand review is the responsibility of the orchestrator at the end of the run, not the per-page subagent.
 
+### §1.2 Annotation-driven Fixes
+
+When the user manually flags issues directly in the SVG (e.g. using `data-edit-target="true"` and `data-edit-annotation="<reason>"`), these act as explicit Hard hits:
+1. **Targeted Fixes**: Address the specific issue described in `data-edit-annotation` (e.g., "文字溢出" (text overflow), "文字遮挡" (text overlap), "字体偏小" (font too small)).
+2. **Layout Stability & Consistency**: When fixing text overflow or overlap, prefer explicit `<tspan>` wrapping (with `x` and `dy` offsets) or targeted coordinate shifts. If the user complains about "font too large" or "font too small", adjust the font sizes but **always ensure cross-page consistency**. Do not make one page's body text `32px` while another is `18px`. Global font-size changes can easily break multi-page layout stability, so any widespread font adjustment **must** be immediately followed by a visual review to ensure no new overlaps or overflows are introduced.
+3. **Cleanup**: After applying the fix, you **MUST** remove the `data-edit-target` and `data-edit-annotation` attributes from the SVG element. Do not leave resolved annotation markers in the final SVG.
+
 ## §2 Soft rules (act only when clearly bad)
 
 Subagents must apply the **明显** ("clearly bad") threshold — when in doubt, leave it. Better to under-fix than to oscillate.
@@ -71,7 +79,7 @@ Subagents must apply the **明显** ("clearly bad") threshold — when in doubt,
 | S1 | Vertical rhythm tight | Within the **same logical text block**, consecutive baselines have gap < 1.05× larger font-size | open to 1.15–1.3× |
 | S2 | Vertical rhythm hollow | Within one logical block, > 150 px non-decorative whitespace; `breathing` pages exempt | tighten |
 | S3 | Visual centroid off | hero/title block centroid offset from canvas center exceeds threshold by `page_role`: `cover` > 35%, `chapter` > 25%, `tldr`/`closing`/`breathing` > 25%, `content`/`data` > 20% | shift toward intended anchor |
-| S4 | Alignment drift | same-column elements differ in `x` by > 4 px (or same-row baselines by > 4 px) **and** are semantically meant to be on the same grid line | snap to grid |
+| S4 | Alignment drift | same-column elements differ in `x` by > 4 px (or same-row baselines by > 4 px) **and** are semantically meant to be on the same grid line (e.g., table/grid column misalignment causing overflow) | snap to grid, unify X-coordinates strictly |
 | S5 | Grid non-uniform | N-card row: neighbor `x`-spacing differs by > 5% of the average | re-distribute |
 | S6 | CJK letter-spacing | CJK characters with `letter-spacing / font-size > 5%` | reduce to ≤ 2% |
 | S7 | Accent overload | > 2 accent colors across ≥ 3 distinct elements | collapse to 1 primary + 1 secondary |

@@ -1,0 +1,122 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+
+  <!-- Page Title -->
+  <g id="page-title">
+    <text x="640" y="58" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="30" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>{{PAGE_TITLE}}</tspan>
+    </text>
+  </g>
+
+  <!-- Compass Axis Lines (light, drawn behind diamonds) -->
+  <g id="compass-axes">
+    <line x1="410" y1="360" x2="870" y2="360" stroke="#E2E8F0" stroke-width="1.5"/>
+    <line x1="640" y1="165" x2="640" y2="555" stroke="#E2E8F0" stroke-width="1.5"/>
+  </g>
+
+  <!-- ===== Diamond A — North ===== -->
+  <g id="diamond-north">
+    <polygon points="640,165 710,235 640,305 570,235" fill="#0F172A"/>
+    <text x="640" y="242" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="26" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>A</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Diamond B — West ===== -->
+  <g id="diamond-west">
+    <polygon points="480,290 550,360 480,430 410,360" fill="#1E293B"/>
+    <text x="480" y="367" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="26" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>B</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Diamond C — East ===== -->
+  <g id="diamond-east">
+    <polygon points="800,290 870,360 800,430 730,360" fill="#1E293B"/>
+    <text x="800" y="367" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="26" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>C</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Diamond D — South ===== -->
+  <g id="diamond-south">
+    <polygon points="640,415 710,485 640,555 570,485" fill="#0F172A"/>
+    <text x="640" y="492" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="26" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>D</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Text Panel NW — Item A (North diamond) ===== -->
+  <g id="panel-nw">
+    <line x1="55" y1="100" x2="400" y2="100" stroke="#0F172A" stroke-width="2"/>
+    <text x="55" y="126" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start">
+      <tspan>ITEM A</tspan>
+    </text>
+    <text x="55" y="158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="600" fill="#0F172A" text-anchor="start">
+      <tspan>Item A Heading</tspan>
+    </text>
+    <text x="55" y="185" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="start">
+      <tspan>Supporting description for item A.</tspan>
+    </text>
+    <text x="55" y="205" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="start">
+      <tspan>Key insight or detail shown here.</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Text Panel NE — Item C (East diamond) ===== -->
+  <g id="panel-ne">
+    <line x1="880" y1="100" x2="1225" y2="100" stroke="#0F172A" stroke-width="2"/>
+    <text x="880" y="126" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start">
+      <tspan>ITEM C</tspan>
+    </text>
+    <text x="880" y="158" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="600" fill="#0F172A" text-anchor="start">
+      <tspan>Item C Heading</tspan>
+    </text>
+    <text x="880" y="185" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="start">
+      <tspan>Supporting description for item C.</tspan>
+    </text>
+    <text x="880" y="205" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="start">
+      <tspan>Key insight or detail shown here.</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Text Panel SW — Item B (West diamond) ===== -->
+  <g id="panel-sw">
+    <line x1="55" y1="448" x2="400" y2="448" stroke="#0F172A" stroke-width="2"/>
+    <text x="55" y="474" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start">
+      <tspan>ITEM B</tspan>
+    </text>
+    <text x="55" y="506" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="600" fill="#0F172A" text-anchor="start">
+      <tspan>Item B Heading</tspan>
+    </text>
+    <text x="55" y="533" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="start">
+      <tspan>Supporting description for item B.</tspan>
+    </text>
+    <text x="55" y="553" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="start">
+      <tspan>Key insight or detail shown here.</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Text Panel SE — Item D (South diamond) ===== -->
+  <g id="panel-se">
+    <line x1="880" y1="448" x2="1225" y2="448" stroke="#0F172A" stroke-width="2"/>
+    <text x="880" y="474" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="11" font-weight="700" fill="#94A3B8" text-anchor="start">
+      <tspan>ITEM D</tspan>
+    </text>
+    <text x="880" y="506" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="600" fill="#0F172A" text-anchor="start">
+      <tspan>Item D Heading</tspan>
+    </text>
+    <text x="880" y="533" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="start">
+      <tspan>Supporting description for item D.</tspan>
+    </text>
+    <text x="880" y="553" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="start">
+      <tspan>Key insight or detail shown here.</tspan>
+    </text>
+  </g>
+
+  <!-- Source note -->
+  <text x="60" y="698" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#CBD5E1">
+    <tspan>Source: Internal Report</tspan>
+  </text>
+</svg>

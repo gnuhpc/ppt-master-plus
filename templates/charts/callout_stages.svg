@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#F8FAFC" />
+  
+  <!-- Step 1 Group -->
+  <g id="step-1">
+    <!-- Top Image Frame Circle -->
+    <circle cx="266" cy="280" r="86" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="2" />
+    <text x="266" y="285" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">IMAGE 01</text>
+    
+    <!-- Triangle pointer -->
+    <polygon points="266,396 282,412 250,412" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <!-- Callout Box -->
+    <rect x="115" y="412" width="302" height="180" rx="8" ry="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <!-- Content -->
+    <text x="266" y="455" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0F172A" text-anchor="middle">阶段一 / 核心构想</text>
+    <text x="266" y="495" font-family="sans-serif" font-size="14" fill="#475569" text-anchor="middle">
+      <tspan x="266" dy="0">梳理行业现状与底层逻辑</tspan>
+      <tspan x="266" dy="22">找准核心痛点与种子客群</tspan>
+      <tspan x="266" dy="22">完成原型设计与初步跑通</tspan>
+    </text>
+    <!-- Mask to hide border overlap between triangle and rect -->
+    <polygon points="252,412.5 280,412.5 266,398" fill="#FFFFFF" stroke="none" />
+  </g>
+  
+  <!-- Step 2 Group (Highlighted / Active) -->
+  <g id="step-2">
+    <!-- Top Image Frame Circle -->
+    <circle cx="640" cy="280" r="86" fill="#EFF6FF" stroke="#3B82F6" stroke-width="2.5" />
+    <text x="640" y="285" font-family="sans-serif" font-size="14" fill="#2563EB" text-anchor="middle">IMAGE 02</text>
+    
+    <!-- Triangle pointer -->
+    <polygon points="640,396 656,412 624,412" fill="#0F172A" stroke="#0F172A" stroke-width="1.5" />
+    <!-- Callout Box -->
+    <rect x="489" y="412" width="302" height="180" rx="8" ry="8" fill="#0F172A" stroke="#0F172A" stroke-width="1.5" />
+    <!-- Content -->
+    <text x="640" y="455" font-family="sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">阶段二 / 试点运营</text>
+    <text x="640" y="495" font-family="sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">
+      <tspan x="640" dy="0">在单点高校展开饱和地推</tspan>
+      <tspan x="640" dy="22">验证用户留存与付费意愿</tspan>
+      <tspan x="640" dy="22">调整定价模型与服务体验</tspan>
+    </text>
+    <!-- Mask -->
+    <polygon points="626,412.5 654,412.5 640,398" fill="#0F172A" stroke="none" />
+  </g>
+  
+  <!-- Step 3 Group -->
+  <g id="step-3">
+    <!-- Top Image Frame Circle -->
+    <circle cx="1014" cy="280" r="86" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="2" />
+    <text x="1014" y="285" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">IMAGE 03</text>
+    
+    <!-- Triangle pointer -->
+    <polygon points="1014,396 1030,412 998,412" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <!-- Callout Box -->
+    <rect x="863" y="412" width="302" height="180" rx="8" ry="8" fill="#FFFFFF" stroke="#CBD5E1" stroke-width="1.5" />
+    <!-- Content -->
+    <text x="1014" y="455" font-family="sans-serif" font-size="20" font-weight="bold" fill="#0F172A" text-anchor="middle">阶段三 / 全面复制</text>
+    <text x="1014" y="495" font-family="sans-serif" font-size="14" fill="#475569" text-anchor="middle">
+      <tspan x="1014" dy="0">将运营标准向全省高校复制</tspan>
+      <tspan x="1014" dy="22">建立集中采购与配送机制</tspan>
+      <tspan x="1014" dy="22">引入数智云仓降本增效</tspan>
+    </text>
+    <!-- Mask -->
+    <polygon points="1000,412.5 1028,412.5 1014,398" fill="#FFFFFF" stroke="none" />
+  </g>
+</svg>

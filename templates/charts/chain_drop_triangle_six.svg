@@ -1,0 +1,157 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+
+  <!-- Page Title -->
+  <g id="page-title">
+    <text x="640" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="30" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>{{PAGE_TITLE}}</tspan>
+    </text>
+  </g>
+
+  <!-- Step Labels Above Chain -->
+  <g id="step-labels">
+    <text x="213" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="700" fill="#475569" text-anchor="middle"><tspan>STEP 1</tspan></text>
+    <text x="383" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="700" fill="#475569" text-anchor="middle"><tspan>STEP 2</tspan></text>
+    <text x="553" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="700" fill="#475569" text-anchor="middle"><tspan>STEP 3</tspan></text>
+    <text x="723" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="700" fill="#475569" text-anchor="middle"><tspan>STEP 4</tspan></text>
+    <text x="893" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="700" fill="#475569" text-anchor="middle"><tspan>STEP 5</tspan></text>
+    <text x="1063" y="150" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="700" fill="#475569" text-anchor="middle"><tspan>STEP 6</tspan></text>
+  </g>
+
+  <!-- Horizontal Chain Line -->
+  <g id="chain-line">
+    <line x1="90" y1="195" x2="1190" y2="195" stroke="#CBD5E1" stroke-width="2"/>
+    <!-- Left dot cap -->
+    <circle cx="90" cy="195" r="5" fill="#CBD5E1"/>
+    <!-- Right arrowhead -->
+    <polygon points="1195,192 1210,195 1195,198" fill="#CBD5E1"/>
+  </g>
+
+  <!-- Chain Node Circles (drawn over the line) -->
+  <g id="chain-nodes">
+    <circle cx="213" cy="195" r="9" fill="#0F172A" stroke="none"/>
+    <circle cx="383" cy="195" r="9" fill="#1E293B" stroke="none"/>
+    <circle cx="553" cy="195" r="9" fill="#0F172A" stroke="none"/>
+    <circle cx="723" cy="195" r="9" fill="#1E293B" stroke="none"/>
+    <circle cx="893" cy="195" r="9" fill="#0F172A" stroke="none"/>
+    <circle cx="1063" cy="195" r="9" fill="#1E293B" stroke="none"/>
+  </g>
+
+  <!-- Vertical Drop Connectors -->
+  <g id="drop-connectors">
+    <line x1="213" y1="204" x2="213" y2="302" stroke="#334155" stroke-width="2"/>
+    <line x1="383" y1="204" x2="383" y2="302" stroke="#334155" stroke-width="2"/>
+    <line x1="553" y1="204" x2="553" y2="302" stroke="#334155" stroke-width="2"/>
+    <line x1="723" y1="204" x2="723" y2="302" stroke="#334155" stroke-width="2"/>
+    <line x1="893" y1="204" x2="893" y2="302" stroke="#334155" stroke-width="2"/>
+    <line x1="1063" y1="204" x2="1063" y2="302" stroke="#334155" stroke-width="2"/>
+  </g>
+
+  <!-- Downward-Pointing Triangles (apex at y=302, base at y=392, half-width 44) -->
+  <g id="triangles">
+    <polygon points="213,302 257,392 169,392" fill="#0F172A"/>
+    <polygon points="383,302 427,392 339,392" fill="#1E293B"/>
+    <polygon points="553,302 597,392 509,392" fill="#0F172A"/>
+    <polygon points="723,302 767,392 679,392" fill="#1E293B"/>
+    <polygon points="893,302 937,392 849,392" fill="#0F172A"/>
+    <polygon points="1063,302 1107,392 1019,392" fill="#1E293B"/>
+  </g>
+
+  <!-- Icon Placeholders (centered at y=355 inside each triangle) -->
+
+  <!-- T1: plus cross in circle -->
+  <g id="icon-1">
+    <circle cx="213" cy="355" r="17" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <line x1="213" y1="342" x2="213" y2="368" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="200" y1="355" x2="226" y2="355" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- T2: three horizontal bars (menu) in circle -->
+  <g id="icon-2">
+    <circle cx="383" cy="355" r="17" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <line x1="371" y1="349" x2="395" y2="349" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="371" y1="355" x2="395" y2="355" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="371" y1="361" x2="395" y2="361" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- T3: asterisk/star in circle -->
+  <g id="icon-3">
+    <circle cx="553" cy="355" r="17" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <line x1="553" y1="342" x2="553" y2="368" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="541" y1="348" x2="565" y2="362" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="565" y1="348" x2="541" y2="362" stroke="#FFFFFF" stroke-width="1.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- T4: check mark in circle -->
+  <g id="icon-4">
+    <circle cx="723" cy="355" r="17" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <polyline points="712,355 720,363 735,344" fill="none" stroke="#FFFFFF" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- T5: three dots in circle -->
+  <g id="icon-5">
+    <circle cx="893" cy="355" r="17" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <circle cx="883" cy="355" r="3" fill="#FFFFFF"/>
+    <circle cx="893" cy="355" r="3" fill="#FFFFFF"/>
+    <circle cx="903" cy="355" r="3" fill="#FFFFFF"/>
+  </g>
+
+  <!-- T6: bar chart in circle -->
+  <g id="icon-6">
+    <circle cx="1063" cy="355" r="17" fill="none" stroke="#FFFFFF" stroke-width="1.5"/>
+    <line x1="1051" y1="367" x2="1051" y2="356" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="1058" y1="367" x2="1058" y2="350" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="1065" y1="367" x2="1065" y2="353" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="1072" y1="367" x2="1072" y2="346" stroke="#FFFFFF" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Labels Below Triangles -->
+
+  <!-- Step 1 (x=213) -->
+  <g id="label-1">
+    <text x="213" y="419" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" font-weight="600" fill="#0F172A" text-anchor="middle"><tspan>Item One Heading</tspan></text>
+    <text x="213" y="441" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#64748B" text-anchor="middle"><tspan>Brief description here.</tspan></text>
+    <text x="213" y="457" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#64748B" text-anchor="middle"><tspan>Additional detail line.</tspan></text>
+  </g>
+
+  <!-- Step 2 (x=383) -->
+  <g id="label-2">
+    <text x="383" y="419" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" font-weight="600" fill="#0F172A" text-anchor="middle"><tspan>Item Two Heading</tspan></text>
+    <text x="383" y="441" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#64748B" text-anchor="middle"><tspan>Brief description here.</tspan></text>
+    <text x="383" y="457" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#64748B" text-anchor="middle"><tspan>Additional detail line.</tspan></text>
+  </g>
+
+  <!-- Step 3 (x=553) -->
+  <g id="label-3">
+    <text x="553" y="419" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" font-weight="600" fill="#0F172A" text-anchor="middle"><tspan>Item Three Heading</tspan></text>
+    <text x="553" y="441" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#64748B" text-anchor="middle"><tspan>Brief description here.</tspan></text>
+    <text x="553" y="457" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#64748B" text-anchor="middle"><tspan>Additional detail line.</tspan></text>
+  </g>
+
+  <!-- Step 4 (x=723) -->
+  <g id="label-4">
+    <text x="723" y="419" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" font-weight="600" fill="#0F172A" text-anchor="middle"><tspan>Item Four Heading</tspan></text>
+    <text x="723" y="441" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#64748B" text-anchor="middle"><tspan>Brief description here.</tspan></text>
+    <text x="723" y="457" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#64748B" text-anchor="middle"><tspan>Additional detail line.</tspan></text>
+  </g>
+
+  <!-- Step 5 (x=893) -->
+  <g id="label-5">
+    <text x="893" y="419" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" font-weight="600" fill="#0F172A" text-anchor="middle"><tspan>Item Five Heading</tspan></text>
+    <text x="893" y="441" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#64748B" text-anchor="middle"><tspan>Brief description here.</tspan></text>
+    <text x="893" y="457" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#64748B" text-anchor="middle"><tspan>Additional detail line.</tspan></text>
+  </g>
+
+  <!-- Step 6 (x=1063) -->
+  <g id="label-6">
+    <text x="1063" y="419" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" font-weight="600" fill="#0F172A" text-anchor="middle"><tspan>Item Six Heading</tspan></text>
+    <text x="1063" y="441" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#64748B" text-anchor="middle"><tspan>Brief description here.</tspan></text>
+    <text x="1063" y="457" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" fill="#64748B" text-anchor="middle"><tspan>Additional detail line.</tspan></text>
+  </g>
+
+  <!-- Source note -->
+  <text x="60" y="698" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#CBD5E1">
+    <tspan>Source: Internal Report</tspan>
+  </text>
+</svg>

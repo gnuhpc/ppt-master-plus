@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+<rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+<!-- Page title -->
+<text id="page-title" x="640" y="68" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="32" fill="#232525" font-weight="bold">{{PAGE_TITLE}}</text>
+
+<!-- Central vertical spine line -->
+<line id="spine" x1="640" y1="108" x2="640" y2="652" stroke="#232525" stroke-width="3"/>
+
+<!-- Node 1 (y=220): D-shape bulges LEFT toward left panel; white circle on top -->
+<g id="node-1-d">
+  <path d="M 640 170 A 50 50 0 0 0 640 270 Z" fill="#232525"/>
+</g>
+<!-- Left panel 1: arrow-right pentagon pointing toward node 1 -->
+<g id="panel-left-1">
+  <polygon points="50,153 602,153 612,220 602,287 50,287" fill="#232525"/>
+  <text x="80" y="207" font-family="'微软雅黑', Arial, sans-serif" font-size="17" fill="#FFFFFF" font-weight="bold">{{BOX_TITLE_1}}</text>
+  <text x="80" y="230" font-family="'微软雅黑', Arial, sans-serif" font-size="13" fill="#D0D0D0">{{CONTENT_AREA_1}}</text>
+  <text x="80" y="250" font-family="'微软雅黑', Arial, sans-serif" font-size="13" fill="#D0D0D0">{{CONTENT_AREA_2}}</text>
+</g>
+<!-- Node 1 white circle (covers D-shape tip and panel tip; shows dark crescent on left) -->
+<circle id="circle-1" cx="640" cy="220" r="35" fill="#FFFFFF"/>
+<text id="label-1" x="640" y="228" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-size="18" fill="#232525" font-weight="bold">01</text>
+
+<!-- Node 2 (y=390): D-shape bulges RIGHT toward right panel -->
+<g id="node-2-d">
+  <path d="M 640 340 A 50 50 0 0 1 640 440 Z" fill="#232525"/>
+</g>
+<!-- Right panel 2: arrow-left pentagon pointing toward node 2 -->
+<g id="panel-right-2">
+  <polygon points="1230,323 678,323 668,390 678,457 1230,457" fill="#232525"/>
+  <text x="700" y="377" font-family="'微软雅黑', Arial, sans-serif" font-size="17" fill="#FFFFFF" font-weight="bold">{{BOX_TITLE_2}}</text>
+  <text x="700" y="400" font-family="'微软雅黑', Arial, sans-serif" font-size="13" fill="#D0D0D0">{{CONTENT_AREA_3}}</text>
+  <text x="700" y="420" font-family="'微软雅黑', Arial, sans-serif" font-size="13" fill="#D0D0D0">{{CONTENT_AREA_4}}</text>
+</g>
+<!-- Node 2 white circle -->
+<circle id="circle-2" cx="640" cy="390" r="35" fill="#FFFFFF"/>
+<text id="label-2" x="640" y="398" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-size="18" fill="#232525" font-weight="bold">02</text>
+
+<!-- Node 3 (y=560): D-shape bulges LEFT toward left panel -->
+<g id="node-3-d">
+  <path d="M 640 510 A 50 50 0 0 0 640 610 Z" fill="#232525"/>
+</g>
+<!-- Left panel 3: arrow-right pentagon pointing toward node 3 -->
+<g id="panel-left-3">
+  <polygon points="50,493 602,493 612,560 602,627 50,627" fill="#232525"/>
+  <text x="80" y="547" font-family="'微软雅黑', Arial, sans-serif" font-size="17" fill="#FFFFFF" font-weight="bold">{{BOX_TITLE_3}}</text>
+  <text x="80" y="570" font-family="'微软雅黑', Arial, sans-serif" font-size="13" fill="#D0D0D0">{{CONTENT_AREA_5}}</text>
+  <text x="80" y="590" font-family="'微软雅黑', Arial, sans-serif" font-size="13" fill="#D0D0D0">{{CONTENT_AREA_6}}</text>
+</g>
+<!-- Node 3 white circle -->
+<circle id="circle-3" cx="640" cy="560" r="35" fill="#FFFFFF"/>
+<text id="label-3" x="640" y="568" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-size="18" fill="#232525" font-weight="bold">03</text>
+</svg>

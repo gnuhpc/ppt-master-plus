@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#F8F8F8" />
+<g id="shape-23" data-name="图片 22" transform="translate(327.4 383.12) scale(-1 1) translate(-327.4 -383.12)">
+<image href="business_skyline.jpg" x="-35.16" y="23.12" width="725.13" height="720" preserveAspectRatio="none" />
+</g>
+<g id="shape-15" data-name="文本框 14">
+<rect x="645.9" y="129.62" width="46.31" height="38.78" fill="none" />
+<text x="655.5" y="154.82" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="24" fill="#262626"><tspan fill="#262626" font-size="24">01</tspan></text>
+</g>
+<g id="shape-16" data-name="TextBox 88">
+<rect x="725.13" y="128" width="229.42" height="42.01" fill="none" />
+<text x="734.73" y="155.47" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="26.67" fill="#2E2E2E" letter-spacing="8">{{TOC_ITEM_1_TITLE}}</text>
+</g>
+<g id="shape-17" data-name="TextBox 90">
+<rect x="725.13" y="234.55" width="229.42" height="42.01" fill="none" stroke-width="1" stroke="none" />
+<text x="734.73" y="262.02" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="26.67" fill="#2E2E2E" letter-spacing="8"><tspan fill="#2E2E2E" font-size="26.67" letter-spacing="8">项目运营计划</tspan></text>
+</g>
+<g id="shape-18" data-name="TextBox 92">
+<rect x="725.13" y="341.11" width="369.44" height="42.01" fill="none" stroke-width="1" stroke="none" />
+<text x="734.73" y="368.58" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="26.67" fill="#2E2E2E" letter-spacing="8"><tspan fill="#2E2E2E" font-size="26.67" letter-spacing="8">面临的问题和解决方案</tspan></text>
+</g>
+<g id="shape-19" data-name="TextBox 94">
+<rect x="725.13" y="447.66" width="229.42" height="42.01" fill="none" stroke-width="1" stroke="none" />
+<text x="734.73" y="475.13" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="26.67" fill="#2E2E2E" letter-spacing="8"><tspan fill="#2E2E2E" font-size="26.67" letter-spacing="8">项目发展规划</tspan></text>
+</g>
+<g id="shape-20" data-name="TextBox 96">
+<rect x="725.13" y="554.22" width="334.43" height="42.01" fill="none" stroke-width="1" stroke="none" />
+<text x="734.73" y="581.68" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="26.67" fill="#2E2E2E" letter-spacing="8"><tspan fill="#2E2E2E" font-size="26.67" letter-spacing="8">财务分析及融资计划</tspan></text>
+</g>
+<g id="shape-22" data-name="直接连接符 21">
+<line x1="720" y1="136" x2="720" y2="592" stroke-width="2" stroke="#F2F2F2" fill="#1A1F29" />
+</g>
+<g id="shape-24" data-name="文本框 23">
+<rect x="645.55" y="236.17" width="46.31" height="38.78" fill="none" />
+<text x="655.15" y="261.37" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="24" fill="#262626"><tspan fill="#262626" font-size="24">02</tspan></text>
+</g>
+<g id="shape-25" data-name="文本框 24">
+<rect x="648.47" y="342.72" width="46.31" height="38.78" fill="none" />
+<text x="658.07" y="367.92" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="24" fill="#262626"><tspan fill="#262626" font-size="24">03</tspan></text>
+</g>
+<g id="shape-27" data-name="文本框 26">
+<rect x="651.48" y="449.28" width="46.31" height="38.78" fill="none" />
+<text x="661.08" y="474.48" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="24" fill="#262626"><tspan fill="#262626" font-size="24">04</tspan></text>
+</g>
+<g id="shape-28" data-name="文本框 27">
+<rect x="653.02" y="555.83" width="46.31" height="38.78" fill="none" />
+<text x="662.62" y="581.03" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="24" fill="#262626"><tspan fill="#262626" font-size="24">05</tspan></text>
+</g>
+<g id="shape-21" data-name="文本框 20">
+<rect x="440" y="96" width="116.33" height="207.44" fill="none" />
+</g>
+<g id="shape-21-text" data-name="文本框 20 text">
+<text x="498.16" y="183.72" text-anchor="middle" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="80" fill="#1A1F2A" font-weight="bold" letter-spacing="4"><tspan fill="#1A1F2A" font-size="80" font-weight="bold" letter-spacing="4">目</tspan><tspan x="498.16" dy="84" fill="#1A1F2A" font-size="80" font-weight="bold" letter-spacing="4">录</tspan></text>
+</g></svg>

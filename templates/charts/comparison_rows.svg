@@ -1,0 +1,56 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#F8FAFC" />
+  
+  <!-- Row 1 -->
+  <g id="row-1">
+    <rect x="100" y="140" width="180" height="60" rx="30" ry="30" fill="#0F172A" />
+    <text x="190" y="176" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>对比一 / 空间跨度</tspan>
+    </text>
+    
+    <rect x="310" y="130" width="870" height="80" rx="8" ry="8" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+    <text x="340" y="176" font-family="-apple-system, sans-serif" font-size="16" fill="#334155">
+      <tspan>传统的学校公共洗衣房往往距离寝室大楼有较长的空间物理跨度，取送费时费力；而我们的服务足不出户即可在线取送。</tspan>
+    </text>
+  </g>
+  
+  <!-- Row 2 -->
+  <g id="row-2">
+    <rect x="100" y="270" width="180" height="60" rx="30" ry="30" fill="#0F172A" />
+    <text x="190" y="306" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>对比二 / 营业时间</tspan>
+    </text>
+    
+    <rect x="310" y="260" width="870" height="80" rx="8" ry="8" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+    <text x="340" y="306" font-family="-apple-system, sans-serif" font-size="16" fill="#334155">
+      <tspan>公共洗衣房的开放经营时间段是相对固定的，经常与课程冲突；我们的云端预约系统支持全天候下单预约，更加弹性自主。</tspan>
+    </text>
+  </g>
+  
+  <!-- Row 3 -->
+  <g id="row-3">
+    <rect x="100" y="400" width="180" height="60" rx="30" ry="30" fill="#0F172A" />
+    <text x="190" y="436" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>对比三 / 排队负荷</tspan>
+    </text>
+    
+    <rect x="310" y="390" width="870" height="80" rx="8" ry="8" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+    <text x="340" y="436" font-family="-apple-system, sans-serif" font-size="16" fill="#334155">
+      <tspan>每逢换季或周末，公共洗衣房设备负荷过载排队过长；我们备有充沛的分布式清洗仓位，能做到一小时快速完成清洗加烘干。</tspan>
+    </text>
+  </g>
+  
+  <!-- Row 4 -->
+  <g id="row-4">
+    <rect x="100" y="530" width="180" height="60" rx="30" ry="30" fill="#0F172A" />
+    <text x="190" y="566" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>对比四 / 价格体系</tspan>
+    </text>
+    
+    <rect x="310" y="520" width="870" height="80" rx="8" ry="8" fill="#F1F5F9" stroke="#E2E8F0" stroke-width="1" />
+    <text x="340" y="566" font-family="-apple-system, sans-serif" font-size="16" fill="#334155">
+      <tspan>传统店面干洗费用高昂，大学生群体的钱包难以长期支撑；我们推出面向宿舍整包计费的包月套餐包，价格低至五折优惠。</tspan>
+    </text>
+  </g>
+</svg>

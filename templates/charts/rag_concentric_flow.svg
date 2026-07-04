@@ -1,0 +1,69 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <!-- Tech Dark Background -->
+  <rect x="0" y="0" width="1280" height="720" fill="#0C1838" />
+  
+  <!-- Top-Right Accent Strips -->
+  <rect x="1080" y="30" width="120" height="3" fill="#9967F7" />
+  <rect x="1120" y="40" width="80" height="3" fill="#4EB5FF" />
+  
+  <!-- Slide Title -->
+  <text x="80" y="70" font-family="sans-serif" font-size="32" font-weight="bold" fill="#FFFFFF">{{PAGE_TITLE}}</text>
+  <text x="80" y="105" font-family="sans-serif" font-size="16" fill="#4EB5FF">{{PAGE_SUBTITLE}}</text>
+
+  <!-- RAG Concentric Flow Diagram -->
+  <g transform="translate(640, 400)">
+    <!-- Dotted Outer Ring (r=240) -->
+    <circle cx="0" cy="0" r="240" fill="none" stroke="#3C4778" stroke-width="2" stroke-dasharray="6,6" />
+    
+    <!-- Solid Inner Ring (r=160) -->
+    <circle cx="0" cy="0" r="160" fill="none" stroke="#4EB5FF" stroke-width="1.5" />
+    
+    <!-- Flow Arrows (curved paths along the ring) -->
+    <!-- Top-Right Curve -->
+    <path d="M 0 -160 A 160 160 0 0 1 160 0" fill="none" stroke="#04CF82" stroke-width="3" />
+    <!-- Bottom-Left Curve -->
+    <path d="M 0 160 A 160 160 0 0 1 -160 0" fill="none" stroke="#9967F7" stroke-width="3" />
+    
+    <!-- Central Core Hub (r=80) -->
+    <circle cx="0" cy="0" r="80" fill="#151C48" stroke="#04CF82" stroke-width="3" />
+    <text x="0" y="-10" font-family="sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">实时智能</text>
+    <text x="0" y="20" font-family="sans-serif" font-size="14" fill="#04CF82" text-anchor="middle">CONTEXT</text>
+    
+    <!-- Node 1: Top (CDC / Live Events) -->
+    <g transform="translate(0, -240)">
+      <circle cx="0" cy="0" r="45" fill="#1B2458" stroke="#3C4778" stroke-width="1.5" />
+      <!-- Small icon representation -->
+      <path d="M-10 -10 H10 V10 H-10 Z" fill="none" stroke="#04CF82" stroke-width="2" />
+      <text x="0" y="65" font-family="sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">{{NODE_1_TITLE}}</text>
+      <text x="0" y="85" font-family="sans-serif" font-size="12" fill="#DCD7E5" text-anchor="middle">{{NODE_1_DESC}}</text>
+    </g>
+    
+    <!-- Node 2: Right (Vector DB / Index) -->
+    <g transform="translate(240, 0)">
+      <circle cx="0" cy="0" r="45" fill="#1B2458" stroke="#3C4778" stroke-width="1.5" />
+      <!-- Cylindrical stack icon representation -->
+      <path d="M-12 -8 C-12 -12 12 -12 12 -8 M-12 -8 V8 C-12 12 12 12 12 8 V-8" fill="none" stroke="#4EB5FF" stroke-width="2" />
+      <text x="0" y="65" font-family="sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">{{NODE_2_TITLE}}</text>
+      <text x="0" y="85" font-family="sans-serif" font-size="12" fill="#DCD7E5" text-anchor="middle">{{NODE_2_DESC}}</text>
+    </g>
+    
+    <!-- Node 3: Bottom (LLM / Inference operator) -->
+    <g transform="translate(0, 240)">
+      <circle cx="0" cy="0" r="45" fill="#1B2458" stroke="#3C4778" stroke-width="1.5" />
+      <!-- Diamond/AI icon representation -->
+      <path d="M 0 -15 L 15 0 L 0 15 L -15 0 Z" fill="none" stroke="#9967F7" stroke-width="2" />
+      <text x="0" y="-75" font-family="sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">{{NODE_3_TITLE}}</text>
+      <text x="0" y="-55" font-family="sans-serif" font-size="12" fill="#DCD7E5" text-anchor="middle">{{NODE_3_DESC}}</text>
+    </g>
+    
+    <!-- Node 4: Left (RAG / Agent action) -->
+    <g transform="translate(-240, 0)">
+      <circle cx="0" cy="0" r="45" fill="#1B2458" stroke="#3C4778" stroke-width="1.5" />
+      <!-- Shield / Check icon representation -->
+      <path d="M-10 -12 L0 -6 L10 -12 V0 C10 8 0 14 0 14 C0 14 -10 8 -10 0 Z" fill="none" stroke="#F8DE4B" stroke-width="2" />
+      <text x="0" y="65" font-family="sans-serif" font-size="15" font-weight="bold" fill="#FFFFFF" text-anchor="middle">{{NODE_4_TITLE}}</text>
+      <text x="0" y="85" font-family="sans-serif" font-size="12" fill="#DCD7E5" text-anchor="middle">{{NODE_4_DESC}}</text>
+    </g>
+  </g>
+</svg>

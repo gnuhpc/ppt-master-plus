@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#F3F3F3" />
+<g id="shape-3" data-name="等腰三角形 2" transform="rotate(90 62.53 72.16)">
+<polygon points="62.53,49.31 89.04,95.01 36.02,95.01" stroke="none" fill="#0070C0" stroke-width="1" />
+</g>
+<g id="shape-22" data-name="Title 1">
+<rect x="107.66" y="50.91" width="223.62" height="39.84" fill="none" />
+<text x="107.66" y="82.91" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, &quot;Open Sans Light&quot;, sans-serif" font-size="32" fill="#404040">Vertical Organization Hierarchy</text>
+</g>
+<g id="shape-26" data-name="组合 25">
+<g id="shape-27" data-name="圆角矩形 26">
+<rect x="478" y="206.82" width="151.18" height="151.18" rx="25.2" ry="25.2" fill="#00759E" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-28" data-name="圆角矩形 27">
+<rect x="652" y="206.82" width="151.18" height="151.18" rx="25.2" ry="25.2" fill="#00759E" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-29" data-name="圆角矩形 28">
+<rect x="480" y="380.82" width="151.18" height="151.18" rx="25.2" ry="25.2" fill="#00759E" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-30" data-name="圆角矩形 29">
+<rect x="654" y="380.82" width="151.18" height="151.18" rx="25.2" ry="25.2" fill="#00759E" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-31" data-name="íṧliḋê">
+<rect x="822.23" y="229.82" width="280.23" height="35.54" fill="none" />
+<text x="831.83" y="252.92" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="21.33" fill="#00759E" font-weight="bold" letter-spacing="-1.33"><tspan fill="#00759E" font-size="21.33" font-weight="bold" letter-spacing="-1.33">小标题文本预设</tspan></text>
+</g>
+<g id="shape-32" data-name="iŝḻîḓé">
+<rect x="822.23" y="263.8" width="383.77" height="86.03" fill="none" />
+<text x="831.83" y="280.5" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="14" fill="#000000"><tspan fill="#000000" font-size="14">点击添加具体内容</tspan><tspan fill="#000000" font-size="14">说明</tspan><tspan fill="#000000" font-size="14">点击添加具体内容</tspan><tspan fill="#000000" font-size="14">说明</tspan><tspan fill="#000000" font-size="14">点击添加具体</tspan><tspan x="831.83" dy="21" fill="#000000" font-size="14">内容说明点击添加具体内容</tspan><tspan fill="#000000" font-size="14">说明</tspan><tspan fill="#000000" font-size="14">点击添加具体内容说明点击</tspan><tspan x="831.83" dy="21" fill="#000000" font-size="14">添加具体内容</tspan><tspan fill="#000000" font-size="14">说明</tspan></text>
+</g>
+<g id="shape-33" data-name="íṧliḋê">
+<rect x="822.23" y="401.82" width="280.23" height="35.54" fill="none" />
+<text x="831.83" y="424.92" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="21.33" fill="#00759E" font-weight="bold" letter-spacing="-1.33"><tspan fill="#00759E" font-size="21.33" font-weight="bold" letter-spacing="-1.33">小标题文本预设</tspan></text>
+</g>
+<g id="shape-34" data-name="iŝḻîḓé">
+<rect x="822.23" y="435.8" width="383.77" height="86.03" fill="none" />
+<text x="831.83" y="452.5" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="14" fill="#000000"><tspan fill="#000000" font-size="14">点击添加具体内容</tspan><tspan fill="#000000" font-size="14">说明</tspan><tspan fill="#000000" font-size="14">点击添加具体内容</tspan><tspan fill="#000000" font-size="14">说明</tspan><tspan fill="#000000" font-size="14">点击添加具体</tspan><tspan x="831.83" dy="21" fill="#000000" font-size="14">内容说明点击添加具体内容</tspan><tspan fill="#000000" font-size="14">说明</tspan><tspan fill="#000000" font-size="14">点击添加具体内容说明点击</tspan><tspan x="831.83" dy="21" fill="#000000" font-size="14">添加具体内容</tspan><tspan fill="#000000" font-size="14">说明</tspan></text>
+</g>
+<g id="shape-35" data-name="íṧliḋê">
+<rect x="172" y="227.82" width="280.23" height="35.54" fill="none" />
+<text x="442.63" y="250.92" text-anchor="end" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="21.33" fill="#00759E" font-weight="bold" letter-spacing="-1.33"><tspan fill="#00759E" font-size="21.33" font-weight="bold" letter-spacing="-1.33">小标题文本预设</tspan></text>
+</g>
+<g id="shape-36" data-name="iŝḻîḓé">
+<rect x="68.47" y="261.8" width="383.77" height="86.03" fill="none" />
+<text x="442.63" y="278.5" text-anchor="end" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="14" fill="#000000"><tspan fill="#000000" font-size="14">点击添加具体内容</tspan><tspan fill="#000000" font-size="14">说明</tspan><tspan fill="#000000" font-size="14">点击添加具体内容</tspan><tspan fill="#000000" font-size="14">说明</tspan><tspan fill="#000000" font-size="14">点击添加具体</tspan><tspan x="442.63" dy="21" fill="#000000" font-size="14">内容说明点击添加具体内容</tspan><tspan fill="#000000" font-size="14">说明</tspan><tspan fill="#000000" font-size="14">点击添加具体内容说明点击</tspan><tspan x="442.63" dy="21" fill="#000000" font-size="14">添加具体内容</tspan><tspan fill="#000000" font-size="14">说明</tspan></text>
+</g>
+<g id="shape-37" data-name="íṧliḋê">
+<rect x="172" y="399.82" width="280.23" height="35.54" fill="none" />
+<text x="442.63" y="422.92" text-anchor="end" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="21.33" fill="#00759E" font-weight="bold" letter-spacing="-1.33"><tspan fill="#00759E" font-size="21.33" font-weight="bold" letter-spacing="-1.33">小标题文本预设</tspan></text>
+</g>
+<g id="shape-38" data-name="iŝḻîḓé">
+<rect x="68.47" y="433.8" width="383.77" height="86.03" fill="none" />
+<text x="442.63" y="450.5" text-anchor="end" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="14" fill="#000000"><tspan fill="#000000" font-size="14">点击添加具体内容</tspan><tspan fill="#000000" font-size="14">说明</tspan><tspan fill="#000000" font-size="14">点击添加具体内容</tspan><tspan fill="#000000" font-size="14">说明</tspan><tspan fill="#000000" font-size="14">点击添加具体</tspan><tspan x="442.63" dy="21" fill="#000000" font-size="14">内容说明点击添加具体内容</tspan><tspan fill="#000000" font-size="14">说明</tspan><tspan fill="#000000" font-size="14">点击添加具体内容说明点击</tspan><tspan x="442.63" dy="21" fill="#000000" font-size="14">添加具体内容</tspan><tspan fill="#000000" font-size="14">说明</tspan></text>
+</g>
+<g id="shape-39" data-name="íṧliḋê">
+<rect x="484" y="257.87" width="140" height="38.78" fill="none" />
+<text x="554" y="283.26" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="24" fill="#FFFFFF" font-weight="bold" letter-spacing="-1.33"><tspan fill="#FFFFFF" font-size="24" font-weight="bold" letter-spacing="-1.33">关键词</tspan></text>
+</g>
+<g id="shape-40" data-name="íṧliḋê">
+<rect x="658" y="257.87" width="140" height="38.78" fill="none" />
+<text x="728" y="283.26" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="24" fill="#FFFFFF" font-weight="bold" letter-spacing="-1.33"><tspan fill="#FFFFFF" font-size="24" font-weight="bold" letter-spacing="-1.33">关键词</tspan></text>
+</g>
+<g id="shape-41" data-name="íṧliḋê">
+<rect x="488" y="437.87" width="140" height="38.78" fill="none" />
+<text x="558" y="463.26" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="24" fill="#FFFFFF" font-weight="bold" letter-spacing="-1.33"><tspan fill="#FFFFFF" font-size="24" font-weight="bold" letter-spacing="-1.33">关键词</tspan></text>
+</g>
+<g id="shape-42" data-name="íṧliḋê">
+<rect x="662" y="437.87" width="140" height="38.78" fill="none" />
+<text x="732" y="463.26" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="24" fill="#FFFFFF" font-weight="bold" letter-spacing="-1.33"><tspan fill="#FFFFFF" font-size="24" font-weight="bold" letter-spacing="-1.33">关键词</tspan></text>
+</g>
+<g id="shape-43" data-name="iŝḻîḓé">
+<rect x="63.23" y="567.8" width="1153.53" height="67.86" fill="none" />
+<text x="640" y="586.2" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="16" fill="#000000"><tspan fill="#000000" font-size="16">点击添加具体内容</tspan><tspan fill="#000000" font-size="16">说明</tspan><tspan fill="#000000" font-size="16">点击添加具体内容</tspan><tspan fill="#000000" font-size="16">说明</tspan><tspan fill="#000000" font-size="16">点击添加具体内容说明点击添加具体内容</tspan><tspan fill="#000000" font-size="16">说明</tspan><tspan fill="#000000" font-size="16">点击添加具体内容说明点击添加具体内容</tspan><tspan fill="#000000" font-size="16">说明</tspan><tspan fill="#000000" font-size="16">点击添加具体内容说明</tspan><tspan x="640" dy="24" fill="#000000" font-size="16">点击添加具体内容说明点击添加具体内容说明点击添加具体内容说明点击添加具体内容说明点击添加具体内容</tspan><tspan fill="#000000" font-size="16">说明点</tspan></text>
+</g>
+</g></svg>

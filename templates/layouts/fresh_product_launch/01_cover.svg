@@ -1,0 +1,91 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#F2F2F2" />
+<g id="scaled-wrapper" transform="scale(1.199625)"><g id="shape-11" data-name="组合 10">
+<g id="shape-34" data-name="图片 33">
+<svg x="0" y="427.21" width="1066.67" height="189.51" viewBox="0 0.00002 1 0.31584" preserveAspectRatio="none"><image href="fresh_green_leaves.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-15" data-name="图片 14">
+<svg x="1.3" y="-139.65" width="1066.67" height="600" viewBox="0 0.00002 1 0.99996" preserveAspectRatio="none"><image href="fresh_green_leaves.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+</g>
+<g id="shape-12" data-name="圆: 空心 11">
+<rect x="-194.95" y="178.48" width="650.49" height="650.49" fill="#D8DAD9" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-26" data-name="组合 25">
+<g id="shape-9" data-name="组合 8">
+<g id="shape-3" data-name="椭圆 2">
+<ellipse cx="258.46" cy="308.21" rx="71.17" ry="72.42" fill="none" stroke-width="0.333" stroke="#595959" />
+</g>
+<g id="shape-4" data-name="椭圆 3">
+<ellipse cx="368.41" cy="308.21" rx="71.17" ry="72.42" fill="none" stroke-width="0.333" stroke="#595959" />
+</g>
+<g id="shape-5" data-name="椭圆 4">
+<ellipse cx="478.36" cy="308.21" rx="71.17" ry="72.42" fill="none" stroke-width="0.333" stroke="#595959" />
+</g>
+<g id="shape-6" data-name="椭圆 5">
+<ellipse cx="588.31" cy="308.21" rx="71.17" ry="72.42" fill="none" stroke-width="0.333" stroke="#595959" />
+</g>
+<g id="shape-7" data-name="椭圆 6">
+<ellipse cx="698.26" cy="308.21" rx="71.17" ry="72.42" fill="none" stroke-width="0.333" stroke="#595959" />
+</g>
+<g id="shape-8" data-name="椭圆 7">
+<ellipse cx="808.2" cy="308.21" rx="71.17" ry="72.42" fill="none" stroke-width="0.333" stroke="#595959" />
+</g>
+</g>
+<g id="shape-10" data-name="文本框 9">
+<rect x="210.95" y="259.07" width="656.42" height="96.94" fill="none" />
+<text x="220.55" y="325.07" text-anchor="start" xml:space="preserve" font-family="&quot;三极能量黑 简体&quot;, sans-serif" font-size="72" fill="#000000" letter-spacing="8">{{TITLE}}</text>
+</g>
+</g>
+<g id="shape-36" data-name="圆: 空心 35">
+<rect x="782.18" y="-442.17" width="650.49" height="650.49" fill="#DDE2E5" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-21" data-name="矩形 20">
+<rect x="40.76" y="27.83" width="106.63" height="150.65" fill="none" />
+</g>
+<g id="shape-21-text" data-name="矩形 20 text">
+<text x="94.08" y="38.03" text-anchor="middle" xml:space="preserve" font-family="&quot;三极能量黑 简体&quot;, sans-serif" font-size="12" fill="#000000">...</text>
+</g>
+<g id="shape-24" data-name="文本框 23">
+<rect x="954.39" y="41.96" width="41.8" height="130.48" fill="none" />
+</g>
+<g id="shape-24-text" data-name="文本框 23 text">
+<text x="975.29" y="93.67" text-anchor="middle" xml:space="preserve" font-family="&quot;三极能量黑 简体&quot;, sans-serif" font-size="18.67" fill="#000000" letter-spacing="8"><tspan fill="#000000" font-size="18.67" letter-spacing="8">依</tspan><tspan x="975.29" dy="19.6" fill="#000000" font-size="18.67" letter-spacing="8">制</tspan><tspan x="975.29" dy="19.6" fill="#000000" font-size="18.67" letter-spacing="8">美</tspan></text>
+</g>
+<g id="shape-13" data-name="直接连接符 12" transform="translate(981.9 154.7) scale(1 -1) translate(-981.9 -154.7)">
+<line x1="946.4" y1="154.6" x2="1017.4" y2="154.8" fill="#3E4241" stroke="#3E4241" stroke-width="1" />
+</g>
+<g id="shape-29" data-name="直接连接符 28" transform="translate(987 132.2) scale(1 -1) translate(-987 -132.2)">
+<line x1="987" y1="101.6" x2="987" y2="162.8" fill="#3E4241" stroke="#3E4241" stroke-width="1" />
+</g>
+<g id="shape-18" data-name="组合 17">
+<g id="shape-28" data-name="组合 27">
+<g id="shape-25" data-name="直接连接符 24">
+<line x1="400.82" y1="495.69" x2="673.77" y2="495.69" stroke-width="0.333" stroke="#000000" fill="#3E4241" />
+</g>
+<g id="shape-27" data-name="文本框 26">
+<rect x="329.69" y="439.02" width="439.67" height="21.36" fill="none" />
+<text x="339.29" y="464.22" text-anchor="start" xml:space="preserve" font-family="&quot;三极能量黑 简体&quot;, sans-serif" font-size="24" fill="#000000" letter-spacing="4"><tspan fill="#000000" font-size="24" letter-spacing="4">产品发布</tspan><tspan fill="#000000" font-size="24" font-weight="bold" letter-spacing="4">\</tspan><tspan fill="#000000" font-size="24" letter-spacing="4">商务通用</tspan><tspan fill="#000000" font-size="24" font-weight="bold" letter-spacing="4">\</tspan><tspan fill="#000000" font-size="24" letter-spacing="4">工作总结</tspan></text>
+</g>
+</g>
+<g id="shape-17" data-name="组合 16">
+<g id="shape-16" data-name="椭圆 15">
+<ellipse cx="480.25" cy="547.85" rx="6.4" ry="6.4" stroke="none" fill="#3E4241" stroke-width="1" />
+</g>
+<g id="shape-30" data-name="椭圆 29">
+<ellipse cx="506.79" cy="547.85" rx="6.4" ry="6.4" stroke="none" fill="#3E4241" stroke-width="1" />
+</g>
+<g id="shape-31" data-name="椭圆 30">
+<ellipse cx="533.33" cy="547.85" rx="6.4" ry="6.4" stroke="none" fill="#3E4241" stroke-width="1" />
+</g>
+<g id="shape-32" data-name="椭圆 31">
+<ellipse cx="559.88" cy="547.85" rx="6.4" ry="6.4" stroke="none" fill="#3E4241" stroke-width="1" />
+</g>
+<g id="shape-33" data-name="椭圆 32">
+<ellipse cx="586.42" cy="547.85" rx="6.4" ry="6.4" stroke="none" fill="#3E4241" stroke-width="1" />
+</g>
+</g>
+</g>
+<g id="shape-2" data-name="pd-5b76789ef2b3b956">
+<image href="image2.png" x="185.37" y="-79.79" width="51.17" height="51.17" preserveAspectRatio="none" />
+</g></g></svg>

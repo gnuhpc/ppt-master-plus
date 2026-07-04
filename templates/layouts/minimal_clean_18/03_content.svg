@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><radialGradient id="bggrad1" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FBFBFB" /><stop offset="1" stop-color="#DCDDE1" /></radialGradient></defs><rect x="0" y="0" width="1280" height="720" fill="url(#bggrad1)" />
+<g id="shape-10" data-name="斜纹 9">
+<rect x="0" y="0" width="138.99" height="138.99" fill="#949AB2" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-13" data-name="组合 12">
+<g id="shape-11" data-name="文本框 10">
+<rect x="516.2" y="69.49" width="247.59" height="87.24" fill="none" />
+<text x="640" y="128.69" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪晓波折纸体简&quot;, sans-serif" font-size="64" fill="#203864"><tspan fill="#203864" font-size="64">输入标题</tspan></text>
+</g>
+<g id="shape-12" data-name="文本框 11">
+<rect x="517.64" y="144.36" width="260.05" height="35.54" fill="none" />
+<text x="647.66" y="167.3" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪文黑-45W&quot;, sans-serif" font-size="21.33" fill="#949AB2" letter-spacing="12"><tspan fill="#949AB2" font-size="21.33" letter-spacing="12">TITLE HERE</tspan></text>
+</g>
+</g>
+<g id="shape-14" data-name="文本框 13">
+<rect x="115.7" y="583.9" width="1048.6" height="79.7" fill="none" />
+<text x="640" y="609.1" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪文黑-45W&quot;, sans-serif" font-size="24" fill="#949AB2"><tspan fill="#949AB2" font-size="24">点击输入内容点击输入内容点击输入内容点击输入内容点击输入内容点击输入内容</tspan></text>
+<text x="640" y="637.9" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪文黑-45W&quot;, sans-serif" font-size="24" fill="#949AB2"><tspan fill="#949AB2" font-size="24">点击输入内容点击输入内容点击输入内容点击输入内容点击输入内容点击输入内容点击输入内容</tspan></text>
+</g><rect x="72" y="120" width="1136" height="540" fill="none" stroke="#7F7F7F" stroke-opacity="0.2" stroke-dasharray="4 4" /><text x="640" y="390" text-anchor="middle" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="18" fill="#7F7F7F">{{CONTENT_AREA}}</text><text x="640" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7F7F7F">{{PAGE_NUM}}</text></svg>

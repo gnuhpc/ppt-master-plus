@@ -1,0 +1,18 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<!-- Top-left photo placeholder -->
+<rect x="0" y="0" width="662.1" height="432.48" fill="#D0D0D0"/>
+<!-- Bottom-right photo placeholder -->
+<rect x="662.1" y="288" width="617.9" height="432" fill="#D0D0D0"/>
+<!-- Right column: upper two text items (CATEGORY_1, CATEGORY_2) -->
+<text x="783.7" y="100.52" text-anchor="start" font-family="&quot;Open Sans&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold">{{CATEGORY_1}}</text>
+<text x="783.7" y="113.88" text-anchor="start" font-family="&quot;等线&quot;, DengXian, sans-serif" font-size="13.33" fill="#808080">{{CONTENT_1}}</text>
+<text x="783.7" y="193.05" text-anchor="start" font-family="&quot;Open Sans&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold">{{CATEGORY_2}}</text>
+<text x="783.7" y="206.24" text-anchor="start" font-family="&quot;等线&quot;, DengXian, sans-serif" font-size="13.33" fill="#808080">{{CONTENT_2}}</text>
+<!-- Left column: lower two text items (CATEGORY_3, CATEGORY_4) -->
+<text x="133.37" y="529.45" text-anchor="start" font-family="&quot;Open Sans&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold">{{CATEGORY_3}}</text>
+<text x="133.37" y="543.53" text-anchor="start" font-family="&quot;等线&quot;, DengXian, sans-serif" font-size="13.33" fill="#808080">{{CONTENT_3}}</text>
+<text x="130.12" y="623.25" text-anchor="start" font-family="&quot;Open Sans&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold">{{CATEGORY_4}}</text>
+<text x="130.12" y="633.43" text-anchor="start" font-family="&quot;等线&quot;, DengXian, sans-serif" font-size="13.33" fill="#808080">{{CONTENT_4}}</text>
+</svg>

@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#0F172A" />
+  
+  <text x="120" y="100" font-family="sans-serif" font-size="24" font-weight="bold" fill="#3B82F6">{{PAGE_TITLE}}</text>
+  
+  <g transform="translate(240, 260)">
+    <text x="0" y="0" font-family="serif" font-size="160" font-weight="bold" fill="#3B82F6" opacity="0.3">“</text>
+    
+    <text x="100" y="40" font-family="sans-serif" font-size="42" font-style="italic" fill="#FFFFFF">
+      <tspan x="100" dy="0">Innovation distinguishes between</tspan>
+      <tspan x="100" dy="60">a leader and a follower.</tspan>
+    </text>
+    
+    <line x1="100" y1="160" x2="200" y2="160" stroke="#3B82F6" stroke-width="4" />
+    <text x="100" y="210" font-family="sans-serif" font-size="24" font-weight="bold" fill="#F8FAFC">Steve Jobs</text>
+    <text x="100" y="240" font-family="sans-serif" font-size="18" fill="#94A3B8">Co-founder, Apple Inc.</text>
+  </g>
+</svg>

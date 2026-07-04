@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-2" data-name="圆角矩形 1">
+<rect x="640" y="225.71" width="268.58" height="268.58" fill="#D9D9D9" fill-opacity="0.7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-3" data-name="文本框 2">
+<rect x="713.62" y="277.6" width="148.64" height="164.79" fill="none" />
+<text x="723.22" y="391.2" text-anchor="start" xml:space="preserve" font-family="&quot;思源宋体 CN Medium&quot;, sans-serif" font-size="128" fill="#44546A"><tspan fill="#44546A" font-size="128">极</tspan></text>
+</g>
+<g id="shape-4" data-name="文本框 3">
+<rect x="857.43" y="277.6" width="148.64" height="164.79" fill="none" />
+<text x="867.03" y="391.2" text-anchor="start" xml:space="preserve" font-family="&quot;思源宋体 CN Medium&quot;, sans-serif" font-size="128" fill="#44546A"><tspan fill="#44546A" font-size="128">简</tspan></text>
+</g>
+<g id="shape-5" data-name="文本框 4">
+<rect x="770.95" y="420.58" width="313.8" height="48.47" fill="none" />
+<text x="780.55" y="452.58" text-anchor="start" xml:space="preserve" font-family="&quot;思源宋体 CN Medium&quot;, sans-serif" font-size="32" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="32">MINI</tspan><tspan fill="#44546A" font-size="32">MAL</tspan><tspan fill="#44546A" font-size="32"> </tspan><tspan fill="#44546A" font-size="32">STYLE</tspan></text>
+</g>
+<g id="shape-6" data-name="燕尾形 5" transform="translate(1098.76 443.81) scale(-1 1) translate(-1098.76 -443.81)">
+<polygon points="1087.84,432.89 1098.76,432.89 1109.68,443.81 1098.76,454.73 1087.84,454.73 1098.76,443.81" fill="#44546A" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-9" data-name="直线连接符 8">
+<line x1="180.04" y1="363.51" x2="564.51" y2="363.51" stroke="#44546A" fill="#4472C4" stroke-width="1" />
+</g>
+<g id="shape-10" data-name="圆角矩形 9">
+<rect x="951.25" y="183.99" width="41.71" height="41.71" fill="#D9D9D9" fill-opacity="0.7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-11" data-name="圆角矩形 10">
+<rect x="1000.31" y="255.65" width="21.95" height="21.95" fill="#D9D9D9" fill-opacity="0.7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-13" data-name="直线连接符 12">
+<line x1="736.63" y1="443.81" x2="772.3" y2="443.81" stroke-width="4.667" stroke-linecap="round" stroke="#44546A" fill="#4472C4" />
+</g>
+<g id="shape-15" data-name="文本框 14">
+<rect x="232.77" y="320.5" width="343.2" height="38.67" fill="none" />
+<text x="566.37" y="345.7" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="24" fill="#44546A">{{CLOSING_MESSAGE}}</text>
+</g>
+<g id="shape-20" data-name="文本框 19">
+<rect x="234.8" y="371.41" width="341.18" height="41.87" fill="none" />
+<text x="566.37" y="398.87" text-anchor="end" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="26.67" fill="#44546A">{{THANK_YOU}}</text>
+</g>
+<g id="shape-22" data-name="圆角矩形 21">
+<rect x="656.78" y="522.01" width="21.95" height="21.95" fill="#D9D9D9" fill-opacity="0.7" stroke="none" stroke-width="1" />
+</g></svg>

@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <!-- Left dark side -->
+  <rect x="0" y="0" width="540" height="720" fill="#0F172A" />
+  <!-- Right light side -->
+  <rect x="540" y="0" width="740" height="720" fill="#F8FAFC" />
+
+  <!-- Left: Title + three items -->
+  <text x="60" y="160" font-family="sans-serif" font-size="42" font-weight="bold" fill="#FFFFFF">{{PAGE_TITLE}}</text>
+  <line x1="60" y1="185" x2="220" y2="185" stroke="#3B82F6" stroke-width="4" />
+  <text x="60" y="230" font-family="sans-serif" font-size="16" fill="#94A3B8">
+    <tspan x="60" dy="0">Supporting introduction text</tspan>
+    <tspan x="60" dy="24">for this slide. Keep it brief.</tspan>
+  </text>
+
+  <!-- Left stats or bullets -->
+  <g transform="translate(60, 330)">
+    <text x="0" y="0" font-family="sans-serif" font-size="52" font-weight="bold" fill="#3B82F6">01</text>
+    <text x="0" y="40" font-family="sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Left Point One</text>
+    <text x="0" y="65" font-family="sans-serif" font-size="14" fill="#64748B">Short detail line.</text>
+  </g>
+  <g transform="translate(60, 480)">
+    <text x="0" y="0" font-family="sans-serif" font-size="52" font-weight="bold" fill="#3B82F6">02</text>
+    <text x="0" y="40" font-family="sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF">Left Point Two</text>
+    <text x="0" y="65" font-family="sans-serif" font-size="14" fill="#64748B">Short detail line.</text>
+  </g>
+
+  <!-- Right: 4 cards in 2x2 grid -->
+  <g transform="translate(580, 80)">
+    <!-- Card 1 -->
+    <rect x="0" y="0" width="310" height="240" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="8" />
+    <text x="24" y="50" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1E293B">Feature Alpha</text>
+    <text x="24" y="85" font-family="sans-serif" font-size="14" fill="#64748B">
+      <tspan x="24" dy="0">Description of this feature.</tspan>
+      <tspan x="24" dy="20">Add more details here.</tspan>
+    </text>
+
+    <!-- Card 2 -->
+    <rect x="335" y="0" width="310" height="240" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="8" />
+    <text x="359" y="50" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1E293B">Feature Beta</text>
+    <text x="359" y="85" font-family="sans-serif" font-size="14" fill="#64748B">
+      <tspan x="359" dy="0">Description of this feature.</tspan>
+      <tspan x="359" dy="20">Add more details here.</tspan>
+    </text>
+
+    <!-- Card 3 -->
+    <rect x="0" y="260" width="310" height="240" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="8" />
+    <text x="24" y="310" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1E293B">Feature Gamma</text>
+    <text x="24" y="345" font-family="sans-serif" font-size="14" fill="#64748B">
+      <tspan x="24" dy="0">Description of this feature.</tspan>
+      <tspan x="24" dy="20">Add more details here.</tspan>
+    </text>
+
+    <!-- Card 4 -->
+    <rect x="335" y="260" width="310" height="240" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" rx="8" />
+    <text x="359" y="310" font-family="sans-serif" font-size="22" font-weight="bold" fill="#1E293B">Feature Delta</text>
+    <text x="359" y="345" font-family="sans-serif" font-size="14" fill="#64748B">
+      <tspan x="359" dy="0">Description of this feature.</tspan>
+      <tspan x="359" dy="20">Add more details here.</tspan>
+    </text>
+  </g>
+</svg>

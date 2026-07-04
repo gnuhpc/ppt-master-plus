@@ -1,8 +1,8 @@
-"""Shared OOXML read primitives for PPTX intake.
+"""Shared OOXML primitives for the template-fill pipeline.
 
 Read-side helpers only: namespaces and content-type constants, part /
 relationship resolution, EMU unit conversion, slide-shape discovery, and small
-JSON readers / writers.
+JSON readers / writers. Write-side package plumbing lives in ``package.py``.
 """
 
 from __future__ import annotations

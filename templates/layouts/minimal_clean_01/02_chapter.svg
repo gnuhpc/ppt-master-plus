@@ -1,0 +1,26 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-3" data-name="图片 2">
+<image href="chapter_decor.emf" x="257.91" y="162.2" width="337.29" height="393.99" preserveAspectRatio="none" />
+</g>
+<g id="shape-4" data-name="文本框 3">
+<rect x="403.2" y="299.72" width="90.83" height="61.39" fill="none" />
+<text x="412.8" y="340.79" text-anchor="start" xml:space="preserve" font-family="Calibri, +mn-cs, sans-serif" font-size="42.67" fill="#000000">Part</text>
+</g>
+<g id="shape-5" data-name="文本框 4">
+<rect x="471.85" y="348.88" width="52.04" height="48.47" fill="none" />
+<text x="481.45" y="380.88" text-anchor="start" xml:space="preserve" font-family="Calibri, +mn-cs, sans-serif" font-size="32" fill="#000000">{{CHAPTER_NUM}}</text>
+</g>
+<g id="shape-7" data-name="直接连接符 6" transform="translate(476.83 357.21) scale(-1 1) translate(-476.83 -357.21)">
+<line x1="448.61" y1="330.42" x2="505.06" y2="384" stroke="#808080" fill="#5B9BD5" stroke-width="1" />
+</g>
+<g id="shape-9" data-name="文本框 8">
+<rect x="601.59" y="274.57" width="234.8" height="74.32" fill="none" />
+<text x="611.19" y="324.7" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑 Light&quot;, +mn-cs, sans-serif" font-size="53.33" fill="#000000">{{CHAPTER_TITLE}}</text>
+</g>
+<g id="shape-10" data-name="文本框 9">
+<rect x="610.97" y="352.09" width="178.93" height="110.51" fill="none" />
+<text x="620.57" y="375.03" text-anchor="start" xml:space="preserve" font-family="&quot;Calibri Light&quot;, +mn-cs, sans-serif" font-size="21.33" fill="#000000">{{CHAPTER_DESC}}</text>
+<text x="620.57" y="402.76" text-anchor="start" xml:space="preserve" font-family="&quot;Calibri Light&quot;, +mn-cs, sans-serif" font-size="21.33" fill="#000000" />
+<text x="620.57" y="430.49" text-anchor="start" xml:space="preserve" font-family="&quot;Calibri Light&quot;, +mn-cs, sans-serif" font-size="21.33" fill="#000000" />
+</g></svg>

@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#0F172A" />
+
+  <!-- Giant background number (decorative) -->
+  <text x="640" y="540" font-family="sans-serif" font-size="480" font-weight="bold" fill="#FFFFFF" opacity="0.04" text-anchor="middle">02</text>
+
+  <!-- Accent line -->
+  <line x1="0" y1="360" x2="540" y2="360" stroke="#334155" stroke-width="1" />
+  <line x1="740" y1="360" x2="1280" y2="360" stroke="#334155" stroke-width="1" />
+
+  <!-- Section Number -->
+  <text x="640" y="330" font-family="sans-serif" font-size="80" font-weight="bold" fill="#3B82F6" text-anchor="middle">02</text>
+  <text x="640" y="420" font-family="sans-serif" font-size="40" font-weight="bold" fill="#FFFFFF" text-anchor="middle">{{PAGE_TITLE}}</text>
+  <text x="640" y="470" font-family="sans-serif" font-size="18" fill="#64748B" text-anchor="middle">Section Description / Subtitle Here</text>
+</svg>

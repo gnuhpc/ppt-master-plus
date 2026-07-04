@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+
+  <!-- Page Title -->
+  <g id="page-title">
+    <text x="640" y="55" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="30" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>{{PAGE_TITLE}}</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Ring 1 (cx=160, cy=340) ===== -->
+  <g id="ring-1">
+    <!-- Background track (full circle, light) -->
+    <circle cx="160" cy="340" r="90" fill="none" stroke="#E2E8F0" stroke-width="14"/>
+    <!-- Foreground arc: 270° clockwise from 12 o'clock (top) to 9 o'clock (left) -->
+    <path d="M 160,250 A 90,90 0 1,1 70,340" fill="none" stroke="#0F172A" stroke-width="14" stroke-linecap="round"/>
+    <!-- Center icon: plus cross in circle -->
+    <circle cx="160" cy="340" r="26" fill="none" stroke="#0F172A" stroke-width="1.5"/>
+    <line x1="160" y1="325" x2="160" y2="355" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="145" y1="340" x2="175" y2="340" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round"/>
+    <!-- Title and description -->
+    <text x="160" y="458" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Metric One Title</tspan>
+    </text>
+    <text x="160" y="480" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Supporting description here.</tspan>
+    </text>
+    <text x="160" y="498" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Additional detail line.</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Ring 2 (cx=480, cy=340) ===== -->
+  <g id="ring-2">
+    <circle cx="480" cy="340" r="90" fill="none" stroke="#E2E8F0" stroke-width="14"/>
+    <path d="M 480,250 A 90,90 0 1,1 390,340" fill="none" stroke="#1E293B" stroke-width="14" stroke-linecap="round"/>
+    <!-- Center icon: three horizontal bars in circle -->
+    <circle cx="480" cy="340" r="26" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+    <line x1="466" y1="334" x2="494" y2="334" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="466" y1="340" x2="494" y2="340" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="466" y1="346" x2="494" y2="346" stroke="#1E293B" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="480" y="458" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Metric Two Title</tspan>
+    </text>
+    <text x="480" y="480" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Supporting description here.</tspan>
+    </text>
+    <text x="480" y="498" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Additional detail line.</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Ring 3 (cx=800, cy=340) ===== -->
+  <g id="ring-3">
+    <circle cx="800" cy="340" r="90" fill="none" stroke="#E2E8F0" stroke-width="14"/>
+    <path d="M 800,250 A 90,90 0 1,1 710,340" fill="none" stroke="#0F172A" stroke-width="14" stroke-linecap="round"/>
+    <!-- Center icon: asterisk in circle -->
+    <circle cx="800" cy="340" r="26" fill="none" stroke="#0F172A" stroke-width="1.5"/>
+    <line x1="800" y1="325" x2="800" y2="355" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="787" y1="333" x2="813" y2="347" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round"/>
+    <line x1="813" y1="333" x2="787" y2="347" stroke="#0F172A" stroke-width="1.5" stroke-linecap="round"/>
+    <text x="800" y="458" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Metric Three Title</tspan>
+    </text>
+    <text x="800" y="480" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Supporting description here.</tspan>
+    </text>
+    <text x="800" y="498" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Additional detail line.</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Ring 4 (cx=1120, cy=340) ===== -->
+  <g id="ring-4">
+    <circle cx="1120" cy="340" r="90" fill="none" stroke="#E2E8F0" stroke-width="14"/>
+    <path d="M 1120,250 A 90,90 0 1,1 1030,340" fill="none" stroke="#1E293B" stroke-width="14" stroke-linecap="round"/>
+    <!-- Center icon: check mark in circle -->
+    <circle cx="1120" cy="340" r="26" fill="none" stroke="#1E293B" stroke-width="1.5"/>
+    <polyline points="1109,340 1117,348 1132,329" fill="none" stroke="#1E293B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="1120" y="458" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Metric Four Title</tspan>
+    </text>
+    <text x="1120" y="480" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Supporting description here.</tspan>
+    </text>
+    <text x="1120" y="498" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#64748B" text-anchor="middle">
+      <tspan>Additional detail line.</tspan>
+    </text>
+  </g>
+
+  <!-- Source note -->
+  <text x="60" y="698" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#CBD5E1">
+    <tspan>Source: Internal Report</tspan>
+  </text>
+</svg>

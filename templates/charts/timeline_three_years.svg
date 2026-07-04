@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  
+  <text x="640" y="140" font-family="sans-serif" font-size="36" font-weight="bold" fill="#333333" text-anchor="middle">{{PAGE_TITLE}}</text>
+  
+  <g transform="translate(140, 320)">
+    <!-- Connecting Line -->
+    <line x1="100" y1="0" x2="900" y2="0" stroke="#CBD5E1" stroke-width="4" />
+    
+    <!-- Year 1 -->
+    <g transform="translate(100, 0)">
+      <circle cx="0" cy="0" r="16" fill="#0F172A" />
+      <text x="0" y="-30" font-family="sans-serif" font-size="32" font-weight="bold" fill="#0F172A" text-anchor="middle">2022</text>
+      <text x="0" y="40" font-family="sans-serif" font-size="20" font-weight="bold" fill="#333333" text-anchor="middle">Phase One</text>
+      <text x="0" y="70" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+        <tspan x="0" dy="0">Description of milestones</tspan>
+        <tspan x="0" dy="20">achieved during this year.</tspan>
+      </text>
+    </g>
+    
+    <!-- Year 2 -->
+    <g transform="translate(500, 0)">
+      <circle cx="0" cy="0" r="16" fill="#3B82F6" />
+      <text x="0" y="-30" font-family="sans-serif" font-size="32" font-weight="bold" fill="#3B82F6" text-anchor="middle">2023</text>
+      <text x="0" y="40" font-family="sans-serif" font-size="20" font-weight="bold" fill="#333333" text-anchor="middle">Phase Two</text>
+      <text x="0" y="70" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+        <tspan x="0" dy="0">Description of milestones</tspan>
+        <tspan x="0" dy="20">achieved during this year.</tspan>
+      </text>
+    </g>
+    
+    <!-- Year 3 -->
+    <g transform="translate(900, 0)">
+      <circle cx="0" cy="0" r="16" fill="#0F172A" />
+      <text x="0" y="-30" font-family="sans-serif" font-size="32" font-weight="bold" fill="#0F172A" text-anchor="middle">2024</text>
+      <text x="0" y="40" font-family="sans-serif" font-size="20" font-weight="bold" fill="#333333" text-anchor="middle">Phase Three</text>
+      <text x="0" y="70" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+        <tspan x="0" dy="0">Description of milestones</tspan>
+        <tspan x="0" dy="20">achieved during this year.</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

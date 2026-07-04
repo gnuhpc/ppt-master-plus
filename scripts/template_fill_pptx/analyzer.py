@@ -1,4 +1,4 @@
-"""Analyze a PPTX as source facts for intake and beautify."""
+"""analyze: read a PPTX as a reusable slide library of text / table / chart slots."""
 
 from __future__ import annotations
 
@@ -217,9 +217,37 @@ def analyze_pptx(pptx_path: Path) -> dict[str, Any]:
             slides.append(slide)
 
     return {
-        "schema": "pptx_intake_slide_library.v1",
+        "schema": "template_fill_pptx_library.v1",
         "source_pptx": str(pptx_path),
         "slide_count": len(slides),
         "canvas_px": _canvas_px(pres_root),
         "slides": slides,
+        "plan_contract": {
+            "schema": "template_fill_pptx_plan.v1",
+            "slides": [
+                {
+                    "source_slide": 1,
+                    "purpose": "封面 / 章节 / 内容 / 结尾",
+                    "replacements": [
+                        {
+                            "slot_id": "s01_sh2",
+                            "text": "替换后的文字",
+                        }
+                    ],
+                    "table_edits": [
+                        {
+                            "table_id": "s01_tbl3",
+                            "cells": [{"row": 0, "col": 0, "text": "替换后的单元格"}],
+                        }
+                    ],
+                    "chart_edits": [
+                        {
+                            "chart_id": "s01_ch4",
+                            "categories": ["A", "B"],
+                            "series": [{"name": "系列1", "values": [1, 2]}],
+                        }
+                    ],
+                }
+            ],
+        },
     }

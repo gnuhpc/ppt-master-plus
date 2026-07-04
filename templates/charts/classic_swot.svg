@@ -1,0 +1,85 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#F8FAFC" />
+  
+  <!-- Crossed dashed dividers -->
+  <line x1="120" y1="360" x2="1160" y2="360" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4" />
+  <line x1="640" y1="80" x2="640" y2="640" stroke="#CBD5E1" stroke-width="2" stroke-dasharray="4 4" />
+  
+  <!-- Quadrant 1: Top-Left (Strengths) -->
+  <g id="quadrant-s">
+    <rect x="180" y="110" width="400" height="210" rx="8" ry="8" fill="#EFF6FF" stroke="#3B82F6" stroke-width="1.5" />
+    <text x="210" y="155" font-family="-apple-system, sans-serif" font-size="22" font-weight="bold" fill="#2563EB">
+      <tspan>STRENGTHS / 优势</tspan>
+    </text>
+    <text x="210" y="195" font-family="-apple-system, sans-serif" font-size="15" fill="#475569">
+      <tspan>• 核心技术积累与自主知识产权</tspan>
+    </text>
+    <text x="210" y="225" font-family="-apple-system, sans-serif" font-size="15" fill="#475569">
+      <tspan>• 资深的专家研发团队，快速敏捷开发能力</tspan>
+    </text>
+    <text x="210" y="255" font-family="-apple-system, sans-serif" font-size="15" fill="#475569">
+      <tspan>• 深度契合大学生群体核心痛点的场景化服务</tspan>
+    </text>
+  </g>
+  
+  <!-- Quadrant 2: Top-Right (Weaknesses) -->
+  <g id="quadrant-w">
+    <rect x="700" y="110" width="400" height="210" rx="8" ry="8" fill="#FFF1F2" stroke="#FB7185" stroke-width="1.5" />
+    <text x="730" y="155" font-family="-apple-system, sans-serif" font-size="22" font-weight="bold" fill="#E11D48">
+      <tspan>WEAKNESSES / 劣势</tspan>
+    </text>
+    <text x="730" y="195" font-family="-apple-system, sans-serif" font-size="15" fill="#475569">
+      <tspan>• 创业初期品牌知名度较低，用户信任成本高</tspan>
+    </text>
+    <text x="730" y="225" font-family="-apple-system, sans-serif" font-size="15" fill="#475569">
+      <tspan>• 线下固定资产初始投入较大，运营杠杆高</tspan>
+    </text>
+    <text x="730" y="255" font-family="-apple-system, sans-serif" font-size="15" fill="#475569">
+      <tspan>• 市场推广及地推活动较为依赖单一高校渠道</tspan>
+    </text>
+  </g>
+  
+  <!-- Quadrant 3: Bottom-Left (Opportunities) -->
+  <g id="quadrant-o">
+    <rect x="180" y="390" width="400" height="210" rx="8" ry="8" fill="#ECFDF5" stroke="#10B981" stroke-width="1.5" />
+    <text x="210" y="435" font-family="-apple-system, sans-serif" font-size="22" font-weight="bold" fill="#059669">
+      <tspan>OPPORTUNITIES / 机会</tspan>
+    </text>
+    <text x="210" y="475" font-family="-apple-system, sans-serif" font-size="15" fill="#475569">
+      <tspan>• 高校数智化校园建设政策支持与资金补贴</tspan>
+    </text>
+    <text x="210" y="505" font-family="-apple-system, sans-serif" font-size="15" fill="#475569">
+      <tspan>• 懒人经济与便利化生活方式在年轻群体的普及</tspan>
+    </text>
+    <text x="210" y="535" font-family="-apple-system, sans-serif" font-size="15" fill="#475569">
+      <tspan>• 核心区域内缺乏同类型的集约式清洁服务商</tspan>
+    </text>
+  </g>
+  
+  <!-- Quadrant 4: Bottom-Right (Threats) -->
+  <g id="quadrant-t">
+    <rect x="700" y="390" width="400" height="210" rx="8" ry="8" fill="#FFFBEB" stroke="#F59E0B" stroke-width="1.5" />
+    <text x="730" y="435" font-family="-apple-system, sans-serif" font-size="22" font-weight="bold" fill="#D97706">
+      <tspan>THREATS / 威胁</tspan>
+    </text>
+    <text x="730" y="475" font-family="-apple-system, sans-serif" font-size="15" fill="#475569">
+      <tspan>• 潜在巨头资金入局或低价恶意竞争打价格战</tspan>
+    </text>
+    <text x="730" y="505" font-family="-apple-system, sans-serif" font-size="15" fill="#475569">
+      <tspan>• 疫情等不可抗力导致的长期闭校停业风险</tspan>
+    </text>
+    <text x="730" y="535" font-family="-apple-system, sans-serif" font-size="15" fill="#475569">
+      <tspan>• 原材料及水电等刚性物理成本的持续上涨</tspan>
+    </text>
+  </g>
+  
+  <!-- Center Circular Badge -->
+  <circle cx="640" cy="360" r="70" fill="#0F172A" stroke="#FFFFFF" stroke-width="4" />
+  <text x="640" y="358" font-family="-apple-system, sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+    <tspan>SWOT</tspan>
+  </text>
+  <text x="640" y="382" font-family="-apple-system, sans-serif" font-size="14" fill="#94A3B8" text-anchor="middle">
+    <tspan>ANALYST</tspan>
+  </text>
+</svg>

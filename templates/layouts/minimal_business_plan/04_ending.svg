@@ -1,0 +1,38 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="ggrad1" x1="0" y1="0.5" x2="1" y2="0.5"><stop offset="0" stop-color="#FFFFFF" /><stop offset="1" stop-color="#FFFFFF" stop-opacity="0" /></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-142" data-name="图片 141" transform="rotate(347.69 1023.99 210.82)">
+<image href="image2.png" x="588.65" y="-149.18" width="870.68" height="720" preserveAspectRatio="none" />
+</g>
+<g id="shape-145" data-name="矩形 144">
+<rect x="0" y="0" width="1222" height="720" fill="url(#ggrad1)" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-123" data-name="矩形 122">
+<rect x="60.55" y="98.95" width="369.85" height="512.49" fill="#ECECEC" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-132" data-name="文本框 131">
+<rect x="112.56" y="329.17" width="591.98" height="69.59" fill="none" />
+<text x="122.16" y="365.7" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体&quot;, sans-serif" font-size="37.33" fill="#000000"><tspan fill="#000000" font-size="37.33">演示完毕 谢谢观看</tspan></text>
+</g>
+<g id="shape-134" data-name="文本框 133">
+<rect x="117.45" y="419.76" width="608.25" height="67.86" fill="none" />
+<text x="127.05" y="435.89" text-anchor="start" xml:space="preserve" font-family="&quot;方正黑体简体&quot;, sans-serif" font-size="13.33" fill="#808080">{{CLOSING_MESSAGE}}</text>
+<text x="127.05" y="451.89" text-anchor="start" xml:space="preserve" font-family="&quot;方正黑体简体&quot;, sans-serif" font-size="13.33" fill="#808080"><tspan fill="#808080" font-size="13.33"> </tspan><tspan fill="#808080" font-size="13.33">nibheuismod </tspan><tspan fill="#808080" font-size="13.33">tincidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad </tspan><tspan x="127.05" dy="16" fill="#808080" font-size="13.33">minim veniam, quis nostrud</tspan></text>
+</g>
+<g id="shape-139" data-name="矩形 138">
+<rect x="125.99" y="180.49" width="156.01" height="60.65" fill="#000000" stroke="#000000" stroke-width="1" />
+<text x="203.99" y="221.56" text-anchor="middle" xml:space="preserve" font-family="Impact, &quot;思源黑体&quot;, sans-serif" font-size="42.67" fill="#FFFFFF" letter-spacing="4"><tspan fill="#FFFFFF" font-size="42.67" letter-spacing="4">2023</tspan></text>
+</g>
+<g id="shape-143" data-name="矩形 142">
+<rect x="125.99" y="526.57" width="140.86" height="28.28" fill="#000000" stroke="#000000" stroke-width="1" />
+<text x="196.42" y="544.21" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体&quot;, sans-serif" font-size="14" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="14">XXXX</tspan></text>
+</g>
+<g id="shape-137" data-name="文本框 136">
+<rect x="111.04" y="248.56" width="569.1" height="103.82" fill="none" />
+<text x="120.64" y="303.23" text-anchor="start" xml:space="preserve" font-family="&quot;思源宋体 CN&quot;, sans-serif" font-size="58.67" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="58.67" font-weight="bold">THANK YOU</tspan></text>
+</g>
+<g id="shape-125" data-name="直接连接符 124">
+<line x1="125.99" y1="410.15" x2="177.36" y2="410.15" stroke-width="2" stroke="#0D0D0D" fill="#4F81BD" />
+</g>
+<g id="shape-138" data-name="图片 137">
+<image href="split_office.png" x="429.93" y="116.23" width="850.07" height="845.17" preserveAspectRatio="none" />
+</g></svg>

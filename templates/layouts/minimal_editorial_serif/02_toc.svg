@@ -1,0 +1,84 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><clipPath id="clip1" clipPathUnits="userSpaceOnUse"><polygon points="0,0 0,720 720,720" /></clipPath></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-7" data-name="直接连接符 6">
+<line x1="102.79" y1="-6.79" x2="837.82" y2="728.24" stroke-width="1" stroke="#D9D9D9" fill="#5B9BD5" />
+</g>
+<g id="shape-9" data-name="矩形 8">
+<rect x="3.74" y="28.95" width="613.82" height="81.59" fill="#FFFFFF" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-5" data-name="直角三角形 4">
+<image clip-path="url(#clip1)" href="editorial_triangle.jpg" x="0" y="0" width="720" height="720" preserveAspectRatio="none" />
+<polygon points="0,0 0,720 720,720" fill="none" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-11" data-name="Rectangle 70">
+<rect x="129.22" y="33.96" width="315.87" height="67.86" fill="none" stroke="none" />
+<text x="138.82" y="92.9" text-anchor="start" xml:space="preserve" font-family="&quot;Open Sans&quot;, sans-serif" font-size="48" fill="#262626" font-weight="bold">{{TITLE}}</text>
+</g>
+<g id="shape-20" data-name="Rectangle 70">
+<rect x="420.86" y="194.18" width="261.82" height="35.54" fill="none" stroke="none" />
+<text x="430.46" y="230.44" text-anchor="start" xml:space="preserve" font-family="&quot;Open Sans&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="21.33" font-weight="bold">PART 01</tspan></text>
+</g>
+<g id="shape-21" data-name="Rectangle 23">
+<rect x="420.86" y="234.86" width="352.97" height="42.01" fill="none" />
+<text x="430.46" y="250.99" text-anchor="start" xml:space="preserve" font-family="&quot;等线&quot;, sans-serif" font-size="13.33" fill="#A6A6A6">{{TOC_ITEM_1_TITLE}}</text>
+</g>
+<g id="shape-24" data-name="Rectangle 44">
+<rect x="519.23" y="312.54" width="220.26" height="35.54" fill="none" stroke="none" />
+<text x="528.83" y="348.81" text-anchor="start" xml:space="preserve" font-family="&quot;Open Sans&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="21.33" font-weight="bold">PART 02</tspan></text>
+</g>
+<g id="shape-25" data-name="Rectangle 45">
+<rect x="519.23" y="353.85" width="352.97" height="42.01" fill="none" />
+<text x="528.83" y="369.98" text-anchor="start" xml:space="preserve" font-family="&quot;等线&quot;, sans-serif" font-size="13.33" fill="#A6A6A6">{{TOC_ITEM_1_TITLE}}</text>
+</g>
+<g id="shape-28" data-name="Rectangle 44">
+<rect x="646.3" y="422.85" width="220.26" height="35.54" fill="none" stroke="none" />
+<text x="655.9" y="459.12" text-anchor="start" xml:space="preserve" font-family="&quot;Open Sans&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="21.33" font-weight="bold">PART 03</tspan></text>
+</g>
+<g id="shape-29" data-name="Rectangle 45">
+<rect x="646.3" y="464.16" width="352.97" height="42.01" fill="none" />
+<text x="655.9" y="480.29" text-anchor="start" xml:space="preserve" font-family="&quot;等线&quot;, sans-serif" font-size="13.33" fill="#A6A6A6">{{TOC_ITEM_1_TITLE}}</text>
+</g>
+<g id="shape-39" data-name="Rectangle 44">
+<rect x="760.38" y="544.6" width="220.26" height="35.54" fill="none" stroke="none" />
+<text x="769.98" y="580.87" text-anchor="start" xml:space="preserve" font-family="&quot;Open Sans&quot;, sans-serif" font-size="21.33" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="21.33" font-weight="bold">PART 04</tspan></text>
+</g>
+<g id="shape-40" data-name="Rectangle 45">
+<rect x="760.38" y="585.91" width="352.97" height="42.01" fill="none" />
+<text x="769.98" y="602.04" text-anchor="start" xml:space="preserve" font-family="&quot;等线&quot;, sans-serif" font-size="13.33" fill="#A6A6A6">{{TOC_ITEM_1_TITLE}}</text>
+</g>
+<g id="shape-2" data-name="组合 1">
+<g id="shape-43" data-name="椭圆 42">
+<ellipse cx="357.9" cy="237.57" rx="41.47" ry="41.47" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+</g>
+<g id="shape-14" data-name="Rectangle 22">
+<rect x="330.21" y="197.29" width="43.49" height="87.24" fill="none" stroke="none" />
+<text x="339.81" y="276.65" text-anchor="start" xml:space="preserve" font-family="&quot;Open Sans&quot;, sans-serif" font-size="64" fill="#262626"><tspan fill="#262626" font-size="64">1</tspan></text>
+</g>
+</g>
+<g id="shape-3" data-name="组合 2">
+<g id="shape-44" data-name="椭圆 43">
+<ellipse cx="463.98" cy="354.82" rx="41.47" ry="41.47" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+</g>
+<g id="shape-45" data-name="Rectangle 22">
+<rect x="436.29" y="314.54" width="43.49" height="87.24" fill="none" stroke="none" />
+<text x="445.89" y="393.9" text-anchor="start" xml:space="preserve" font-family="&quot;Open Sans&quot;, sans-serif" font-size="64" fill="#262626"><tspan fill="#262626" font-size="64">2</tspan></text>
+</g>
+</g>
+<g id="shape-4" data-name="组合 3">
+<g id="shape-46" data-name="椭圆 45">
+<ellipse cx="576.67" cy="472.24" rx="41.47" ry="41.47" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+</g>
+<g id="shape-47" data-name="Rectangle 22">
+<rect x="548.98" y="431.96" width="43.49" height="87.24" fill="none" stroke="none" />
+<text x="558.58" y="511.32" text-anchor="start" xml:space="preserve" font-family="&quot;Open Sans&quot;, sans-serif" font-size="64" fill="#262626"><tspan fill="#262626" font-size="64">3</tspan></text>
+</g>
+</g>
+<g id="shape-6" data-name="组合 5">
+<g id="shape-48" data-name="椭圆 47">
+<ellipse cx="698.02" cy="586.45" rx="41.47" ry="41.47" fill="#FFFFFF" stroke="#D9D9D9" stroke-width="1" />
+</g>
+<g id="shape-49" data-name="Rectangle 22">
+<rect x="670.34" y="546.17" width="43.49" height="87.24" fill="none" stroke="none" />
+<text x="679.94" y="625.53" text-anchor="start" xml:space="preserve" font-family="&quot;Open Sans&quot;, sans-serif" font-size="64" fill="#262626"><tspan fill="#262626" font-size="64">4</tspan></text>
+</g>
+</g></svg>

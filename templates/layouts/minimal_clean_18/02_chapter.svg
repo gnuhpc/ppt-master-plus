@@ -1,0 +1,33 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><radialGradient id="bggrad1" cx="0.5" cy="0.5" r="0.5"><stop offset="0" stop-color="#FBFBFB" /><stop offset="1" stop-color="#DCDDE1" /></radialGradient></defs><rect x="0" y="0" width="1280" height="720" fill="url(#bggrad1)" />
+<g id="shape-26" data-name="图片 25">
+<svg x="0" y="0" width="1280" height="720" viewBox="0.01217 0.22217 0.98783 0.55565" preserveAspectRatio="none"><image href="bg_minimal_art.jpg" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-27" data-name="文本框 26">
+<rect x="165.08" y="139.74" width="148.64" height="440.53" fill="none" />
+</g>
+<g id="shape-27-text" data-name="文本框 26 text">
+<text x="239.4" y="230.4" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪晓波折纸体简&quot;, sans-serif" font-size="106.67" fill="#203864">{{CHAPTER_NUM}}</text>
+</g>
+<g id="shape-3" data-name="组合 2">
+<g id="shape-29" data-name="文本框 28">
+<rect x="127.14" y="152.13" width="42.32" height="261.91" fill="none" />
+</g>
+<g id="shape-29-text" data-name="文本框 28 text">
+<text x="148.29" y="212.68" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪文黑-45W&quot;, sans-serif" font-size="16" fill="#949AB2"><tspan fill="#949AB2" font-size="16">C</tspan><tspan x="148.29" dy="16.8" fill="#949AB2" font-size="16">H</tspan><tspan x="148.29" dy="16.8" fill="#949AB2" font-size="16">A</tspan><tspan x="148.29" dy="16.8" fill="#949AB2" font-size="16">P</tspan><tspan x="148.29" dy="16.8" fill="#949AB2" font-size="16">T</tspan><tspan x="148.29" dy="16.8" fill="#949AB2" font-size="16">E</tspan><tspan x="148.29" dy="16.8" fill="#949AB2" font-size="16">R</tspan><tspan x="148.29" dy="16.8" fill="#949AB2" font-size="16">O</tspan><tspan x="148.29" dy="16.8" fill="#949AB2" font-size="16">N</tspan><tspan x="148.29" dy="16.8" fill="#949AB2" font-size="16">E</tspan></text>
+</g>
+<g id="shape-30" data-name="直接连接符 29">
+<line x1="127.14" y1="167.64" x2="127.14" y2="721.43" stroke-width="1.333" stroke="#949AB2" stroke-opacity="0.5" fill="#4472C4" />
+</g>
+</g>
+<g id="shape-2" data-name="组合 1">
+<g id="shape-28" data-name="文本框 27">
+<rect x="303.61" y="291.35" width="57.62" height="287.54" fill="none" />
+</g>
+<g id="shape-28-text" data-name="文本框 27 text">
+<text x="332.42" y="373.79" text-anchor="middle" xml:space="preserve" font-family="&quot;汉仪文黑-45W&quot;, sans-serif" font-size="26.67" fill="#949AB2" letter-spacing="8">{{CHAPTER_TITLE}}</text>
+</g>
+<g id="shape-31" data-name="直接连接符 30">
+<line x1="361.23" y1="0" x2="361.23" y2="557.37" stroke-width="1.333" stroke="#949AB2" stroke-opacity="0.5" fill="#4472C4" />
+</g>
+</g></svg>

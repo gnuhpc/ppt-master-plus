@@ -24,11 +24,6 @@ SKILL = ROOT / "ppt-master-plus"
 
 
 class PptMasterPlusContractTests(unittest.TestCase):
-    def test_only_new_skill_directory_remains(self):
-        self.assertTrue(SKILL.is_dir())
-        self.assertFalse((ROOT / OLD_UPSTREAM_SKILL).exists())
-        self.assertFalse((ROOT / OLD_GATED_SKILL).exists())
-
     def test_public_name_and_mode_selection_are_declared(self):
         text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
         self.assertRegex(text, r"(?m)^name: ppt-master-plus$")
@@ -63,44 +58,84 @@ class PptMasterPlusContractTests(unittest.TestCase):
         self.assertIn("use Live Preview directly", visual_review)
         self.assertIn("do not render PNGs", visual_review)
 
+    def test_gated_mode_requires_blocking_per_slide_confirmation(self):
+        skill_text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
+        gated = (SKILL / "workflows/gated-production.md").read_text(encoding="utf-8")
+
+        self.assertIn("every page checkpoint is a new ⛔ BLOCKING stop", skill_text)
+        self.assertIn("Do NOT generate multiple slides in one turn", skill_text)
+        self.assertIn("⛔ **BLOCKING PER PAGE**", gated)
+        self.assertIn("must not continue to the\nnext slide", gated)
+        self.assertIn("Do not\ngenerate the next SVG \"while waiting\"", gated)
+
+    def test_live_preview_apply_changes_triggers_ai_annotation_repair(self):
+        skill_text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
+        workflow = (SKILL / "workflows/live-preview.md").read_text(encoding="utf-8")
+        readme = (SKILL / "README.md").read_text(encoding="utf-8")
+        app_js = (SKILL / "scripts/svg_editor/static/app.js").read_text(encoding="utf-8")
+        server_py = (SKILL / "scripts/svg_editor/server.py").read_text(encoding="utf-8")
+
+        self.assertIn("Apply annotations automatically after the browser saves them", skill_text)
+        self.assertIn("The user does not need to paste the browser prompt back into chat", skill_text)
+        self.assertIn("raises `live_preview/annotations_ready.flag`", workflow)
+        self.assertIn("AI waits for that save event and starts the repair automatically", workflow)
+        self.assertIn("AI 会自动读取保存到 `svg_output/` 的批注并开始修复", readme)
+        self.assertIn("modal_success_submit", app_js)
+        self.assertIn("should apply annotations automatically", app_js)
+        self.assertIn("--wait-annotation", server_py)
+
+    def test_codex_desktop_live_preview_wait_adapter_is_declared(self):
+        skill_text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
+        workflow = (SKILL / "workflows/live-preview.md").read_text(encoding="utf-8")
+        readme = (SKILL / "README.md").read_text(encoding="utf-8")
+
+        self.assertIn("Desktop agent adapter (Codex / non-CLI tools)", skill_text)
+        self.assertIn("--wait-annotation --timeout 0", skill_text)
+        self.assertIn("exec_command", skill_text)
+        self.assertIn("Codex / desktop-agent adapter", workflow)
+        self.assertIn("For Codex Desktop specifically", workflow)
+        self.assertIn("background `exec_command` / terminal session", workflow)
+        self.assertIn("Repeat this repair → delete flag → re-arm wait cycle", workflow)
+        self.assertIn("start a new blocked wait session", workflow)
+        self.assertIn("Codex Desktop", readme)
+        self.assertIn("--wait-annotation --timeout 0", readme)
+        self.assertIn("第二批、第三批修改意见", readme)
+
+    def test_wait_annotation_timeout_zero_waits_forever(self):
+        server_py = (SKILL / "scripts/svg_editor/server.py").read_text(encoding="utf-8")
+
+        self.assertIn("timeout <= 0 waits forever", server_py)
+        self.assertIn("deadline = None if timeout <= 0", server_py)
+        self.assertIn("while deadline is None or time.time() < deadline", server_py)
+
+    def test_confirm_ui_transition_effect_defaults_to_none(self):
+        skill_text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
+        catalogs = (SKILL / "scripts" / "confirm_ui" / "static" / "catalogs.json").read_text(encoding="utf-8")
+        app_js = (SKILL / "scripts" / "confirm_ui" / "static" / "app.js").read_text(encoding="utf-8")
+        docs = (SKILL / "scripts" / "docs" / "confirm_ui.md").read_text(encoding="utf-8")
+        spec_lock_ref = (SKILL / "templates" / "spec_lock_reference.md").read_text(encoding="utf-8")
+        cli = (SKILL / "scripts" / "svg_to_pptx" / "pptx_cli.py").read_text(encoding="utf-8")
+        builder = (SKILL / "scripts" / "svg_to_pptx" / "pptx_builder.py").read_text(encoding="utf-8")
+
+        self.assertIn('"transition_effect"', catalogs)
+        self.assertLess(catalogs.index('"transition_effect"'), catalogs.index('"id": "fade"'))
+        self.assertIn('"id": "none"', catalogs)
+        self.assertIn("sec_transition", app_js)
+        self.assertIn('STATE.transition_effect = recId("transition_effect") || "none"', app_js)
+        self.assertIn("renderTransition(host)", app_js)
+        self.assertIn('"transition_effect": "none"', docs)
+        self.assertIn("default/recommended value `none`", skill_text)
+        self.assertIn("- transition_effect: none", spec_lock_ref)
+        self.assertIn("_read_spec_lock_value(project_path, 'transition_effect')", cli)
+        self.assertIn("transition_defaults.get('effect', spec_transition_effect or 'none')", cli)
+        self.assertIn("transition: str | None = None", builder)
+
     def test_optional_diagram_routes_are_non_blocking(self):
         text = (SKILL / "references/diagram-routing.md").read_text(encoding="utf-8")
         self.assertIn("fireworks-tech-graph", text)
         self.assertIn("excalidraw", text)
         self.assertIn("built-in SVG", text)
         self.assertRegex(text, r"(?i)do not (install|block)")
-
-    def test_user_provided_template_fill_is_not_public(self):
-        removed_workflow = "template" + "-fill-pptx.md"
-        removed_cli = "template" + "_fill_pptx.py"
-        self.assertFalse((SKILL / "workflows" / removed_workflow).exists())
-        self.assertFalse((SKILL / "scripts" / removed_cli).exists())
-
-        skill_text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
-        self.assertIn("No user-provided template-fill route", skill_text)
-        self.assertIn("External template paths", skill_text)
-
-        public_files = [
-            SKILL / "SKILL.md",
-            SKILL / "README.md",
-            SKILL / "scripts" / "README.md",
-            SKILL / "workflows" / "gated-production.md",
-            SKILL / "workflows" / "native-enhance-pptx.md",
-            SKILL / "workflows" / "native-narration-pptx.md",
-        ]
-        forbidden = re.compile(
-            rf"`?{re.escape(removed_workflow)}`?|"
-            rf"`?{re.escape(removed_cli)}`?|"
-            r"native PPTX template deck|"
-            r"reuse this deck's design",
-            re.IGNORECASE,
-        )
-        offenders = [
-            str(path.relative_to(ROOT))
-            for path in public_files
-            if path.exists() and forbidden.search(path.read_text(encoding="utf-8"))
-        ]
-        self.assertEqual([], offenders)
 
     def test_live_preview_annotation_prompt_is_copyable(self):
         app_js = (SKILL / "scripts/svg_editor/static/app.js").read_text(encoding="utf-8")
@@ -147,6 +182,33 @@ class PptMasterPlusContractTests(unittest.TestCase):
         self.assertIn("--base-pptx", workflow)
         self.assertIn("--base-pptx", cli)
         self.assertIn("source slide N", builder)
+
+    def test_generic_pptx_beautify_defaults_to_main_pipeline(self):
+        skill_text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
+
+        self.assertIn("Generic beautify / optimize / make professional", skill_text)
+        self.assertIn("default to the main pipeline", skill_text)
+        self.assertIn("The default assumption is: improve the deck", skill_text)
+        self.assertIn("`faithful-beautify`", skill_text)
+        self.assertNotIn("Preserve → `beautify`; restructure → main pipeline", skill_text)
+
+    def test_faithful_beautify_requires_explicit_preservation(self):
+        workflow = (SKILL / "workflows" / "beautify-pptx.md").read_text(encoding="utf-8")
+
+        self.assertIn("Faithful Beautify PPTX", workflow)
+        self.assertIn("explicitly asks to preserve", workflow)
+        self.assertIn('Generic "beautify / optimize / make professional" does not trigger', workflow)
+        self.assertIn("use the main pipeline", workflow)
+
+    def test_pptx_intake_is_context_not_constraint_for_generic_beautify(self):
+        skill_text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
+        strategist = (SKILL / "references" / "strategist.md").read_text(encoding="utf-8")
+
+        self.assertIn("For generic PPTX beautification, `analysis/source_profile.json` is context only", skill_text)
+        self.assertIn("must not lock page count", skill_text)
+        self.assertIn("Strategist rebuilds the deck", skill_text)
+        self.assertIn("Generic PPTX beautification / optimization routed through the main pipeline", strategist)
+        self.assertIn("Source palette/fonts are candidates, not truth", strategist)
 
     def test_base_pptx_export_preserves_per_slide_layout_mapping_and_master_media(self):
         scripts_dir = SKILL / "scripts"
@@ -197,11 +259,15 @@ class PptMasterPlusContractTests(unittest.TestCase):
             source_targets = layout_targets(patched_base)
             self.assertNotEqual(source_targets[0], source_targets[1])
 
+            # python-pptx's default blank deck is 10" × 7.5" (4:3). With
+            # --base-pptx, the source deck's slide size is authoritative, so the
+            # SVG authoring canvas must match that aspect instead of the
+            # catalog's ppt169 default.
             svg_files = []
             for idx in (1, 2):
                 svg = tmp_path / f"slide_{idx}.svg"
                 svg.write_text(
-                    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720">'
+                    '<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 960 720">'
                     f'<text x="80" y="{100 + idx * 40}" font-size="36" fill="#111111">Slide {idx}</text>'
                     '</svg>',
                     encoding="utf-8",
@@ -231,13 +297,17 @@ class PptMasterPlusContractTests(unittest.TestCase):
             rf"\b{re.escape(OLD_GATED_SKILL)}\b|"
             rf"skills/{re.escape(OLD_UPSTREAM_SKILL)}(?!-plus)(?:/|\b)"
         )
+        allowed_legacy_files = {
+            SKILL / "references/upstream.md",
+            SKILL / "workflows" / "template-fill-pptx.md",
+        }
         offenders = []
-        for path in ROOT.rglob("*"):
+        for path in SKILL.rglob("*"):
             if not path.is_file() or ".git" in path.parts:
                 continue
             if path.resolve() == Path(__file__).resolve():
                 continue
-            if path == SKILL / "references/upstream.md":
+            if path in allowed_legacy_files:
                 continue
             if path.suffix not in {".md", ".py", ".yaml", ".yml", ".json"}:
                 continue

@@ -787,7 +787,7 @@ def create_pptx_with_native_svg(
     output_path: Path,
     canvas_format: str | None = None,
     verbose: bool = True,
-    transition: str | None = 'fade',
+    transition: str | None = None,
     transition_duration: float = 0.5,
     auto_advance: float | None = None,
     use_compat_mode: bool = True,

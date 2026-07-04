@@ -16,6 +16,7 @@
 | Every distinct `<basename>` in `spec_lock.md page_layouts` | `templates/<basename>.svg` |
 | Every distinct chart name in `spec_lock.md page_charts` | `templates/charts/<chart_name>.svg` |
 | Chart types in `design_spec.md §VII` not covered above | `templates/charts/<chart_name>.svg` |
+| `visual_ref` chart names from `design_spec.md §VII` `no-template-match` pages | `templates/charts/<visual_ref>.svg` |
 
 **Default — read each template once; re-read only on the mid-deck exception below**:
 - Layout SVG already loaded in this batch
@@ -142,6 +143,33 @@ Before drawing each page, look up its entry in `page_rhythm` (key format `P<NN>`
 
 **Tag not found for current page** → emit `warning: spec_lock.md page_rhythm tag not found for P<NN> — falling back to dense` once per deck (aggregate; do not repeat per page), fall back to `dense`. Do not invent a tag.
 
+**Layout variety — anti-repetition rule**:
+
+The single most recognizable marker of AI-generated decks is uniform composition: the same 3-card grid on every content page, the same left-text / right-image split throughout, the same decorative panel stamped identically on every slide. Before drawing each page, recall the compositional structure used on the preceding 2–3 pages and choose a meaningfully different structure — unless one of the logical exceptions below applies.
+
+What counts as the **same layout** (avoid repeating these consecutively):
+- Same grid structure (e.g., 3-column card grid → 3-column card grid → 3-column card grid)
+- Same compositional split used 3+ times in a row (e.g., left-half text / right-half image × 4 pages)
+- Same accent / decorative motif in an identical position on every page (a shared header stripe is fine; identical sidebar panels page after page is not)
+- Same content-organization form across all content pages (bullets every page, or rounded card panels every page)
+
+What counts as **different** (any of these breaks the repetition):
+- Different column count or flow direction (2-col → full-width prose → 3-col → 1-col hero)
+- Switching between horizontal flow, vertical stack, and free-form placement
+- Replacing a card grid with a table, timeline, stepped flow, or text + rule structure
+- Moving the accent element (top bar → left sidebar → bottom divider → scattered icon grid)
+- Alternating "wide content + narrow sidebar" vs. "centered single column" vs. "full-bleed image + floating text"
+
+**Allowed exceptions — same structure may repeat when**:
+
+| Exception | Rule |
+|---|---|
+| Logical pairing | Two adjacent pages form a deliberate before/after, problem/solution, or Part 1 / Part 2 pair — matching structure reinforces the link |
+| Chapter grouping | Pages within the same chapter share a chapter-level visual motif (e.g., left accent stripe for all sub-pages of one section) |
+| Anchor pages | Cover, chapter openers, TOC, and ending share a structural framework with each other — they are not counted against content-page variety |
+| Template-locked | `page_layouts` assigns the same SVG basename to multiple consecutive pages — Executor must follow; layout variety for those pages was the Strategist's responsibility |
+| Data comparison series | Multi-chart or multi-table pages that the user must compare side-by-side share the same container geometry intentionally |
+
 **Per-page template lookup — `page_layouts` section**:
 
 Before drawing each page, look up its entry in `page_layouts` to decide which basename to inherit (the SVG itself was loaded in §1.0):
@@ -157,8 +185,58 @@ Do **not** invent a layout entry, and do **not** assume a template just because 
 Before drawing each page, look up its entry in `page_charts` to decide which chart structure applies (the SVG itself was loaded in §1.0):
 
 - Entry present (e.g., `P09: timeline_horizontal`) → adapt the corresponding chart SVG already in context. Apply project colors/typography/density; do not copy verbatim. Cross-reference `templates/charts/charts_index.json` for the chart's purpose summary if needed.
-- No entry for this page → either no chart on this page, or a chart that didn't match any catalog template (Strategist's `no-template-match` fallback). Design the visualization from scratch using `design_spec.md §VII` for guidance.
+- No entry for this page → either no chart on this page, or a chart that didn't match any catalog template (Strategist's `no-template-match` fallback). **`no-template-match` means the content shape didn't fit any template's structure — not that chart SVGs are off-limits.** The Strategist also recorded a `visual_ref` chart name in §VII; that SVG is already in context from §1.0. Draw from its visual vocabulary — mark geometry, decoration treatment, label placement, spatial rhythm — while designing the data structure freely. Do not inherit the template's data layout; do inherit its visual ambition. Design the visualization from scratch using `design_spec.md §VII` for data guidance and the `visual_ref` SVG for visual vocabulary.
 - Whole section absent → no chart pages in this deck.
+
+> **Free-design chart ambition rule** (applies whenever a chart is designed from scratch — no `page_charts` entry, `no-template-match` fallback, or no template directory at all):
+>
+> The single most recognizable failure mode of AI-generated charts is **solid color blocks** — flat rectangular bars, flat pie slices, flat line-on-white — with no visual ambition beyond filling the spec palette. Unless the user or `visual_style` explicitly calls for "simple" / "flat" / "minimal", every free-design chart must reach for a higher visual register. Techniques to draw from:
+>
+> | Chart type | Elevation techniques (pick what fits) |
+> |---|---|
+> | Bar / column | Gradient fill along the value axis (solid at base → lighter at tip); rounded bar tips (`rx`); thin accent hairline cap at the bar top in `accent` color; chamfered or angled bar ends; oversized value label floating above the bar |
+> | Horizontal bar | Leading dot or diamond mark at the bar end; stagger alternate rows with a subtle rule divider; use negative-space gap between bar and axis |
+> | Line / area | Stroke `stroke-width` ≥ 2.5px; duplicate the path at lower opacity + larger width for a soft glow; area fill as a gradient from `primary` at 0.55 opacity → `primary` at 0 at baseline; dot markers at each data point with a white inner ring |
+> | Scatter / bubble | Mix two marker shapes (circle + diamond) by category; vary opacity by density; add a subtle connecting path or convex hull outline for clusters |
+> | Pie / donut | Prefer donut; add a large center label (key stat or category count); use arc stroke rather than fill for a lighter look; offset the most important slice by 6–8px; inner callout lines with precise label placement |
+> | Timeline / roadmap | Custom node shapes (circle, hexagon, diamond) at milestones; connector lines with arrowheads or dashes; vertical color band behind active period |
+> | KPI / scorecard | Oversized hero number in `primary`; supporting micro-sparkline or progress arc; unit label in `annotation` style beside the number |
+> | Table / matrix | Alternating row fills at 0.06 opacity; header row in `primary` at full opacity with inverted text; cell heat-map shading for numeric columns |
+> | Radar / spider | Fill polygon at 0.18 opacity + stroke at full; grid rings in `body_text` at 0.12 opacity; axis labels with small colored dots |
+>
+> **Decoration budget**: add at most one structural embellishment (gradient, glow, shape variation) and one typographic embellishment (oversized label, inline annotation) per chart — do not layer every technique simultaneously, which reads as noise.
+>
+> **Solid flat color blocks are acceptable** only when: (a) the user explicitly requests "simple" or "flat", (b) `visual_style` is `swiss-minimal` / `brutalist` / `typographic` and the style's aesthetic is precision over decoration, or (c) the chart is a tight small-multiple where embellishment would be unreadable at the rendered size.
+
+> **Architecture and flow diagram semantic color rule** (applies to multi-lane pipelines, component architectures, and process flows — regardless of whether preserve_master is true or false):
+>
+> Color is a semantic medium in architecture diagrams, not decoration. Assign one color from `spec_lock.colors` per functional role and apply it consistently across that role's entire visual footprint on the page:
+>
+> | Color's functional scope | How to apply |
+> |---|---|
+> | Panel / lane border | `stroke="<role-color>"` — the primary semantic signal |
+> | Connector arrow | `stroke="<role-color>"` + matching `<marker>` arrowhead filled in the same color |
+> | Role heading label | `fill="<role-color>"` — the section title inherits its lane's color |
+> | Role icon | `stroke="<role-color>"` (for outline icons) |
+>
+> Role assignment example for a data pipeline: data-source = `secondary_accent`, processing = `primary`, storage = `accent`, output = `success`. An arrow from processing to storage uses the processing color arrowhead entering an accent-bordered storage panel. One color, one role, applied end-to-end — the audience reads the diagram without a legend.
+>
+> **Directional arrows are mandatory on flow diagrams**: every connector between architecture components must carry `marker-end` with a pointed arrowhead. A flow diagram without arrowheads is an adjacency diagram — the direction of data or control is the key information. Size arrowhead markers at ≥ 8×8 logical units; match arrow stroke and arrowhead fill to the source lane's semantic color.
+>
+> **Architecture panels must be semi-transparent**: lane boxes and component panels should use `fill="<secondary_bg>" fill-opacity="0.90–0.96"` rather than a solid opaque fill (e.g., `fill="#1F2937"`). The slight transparency integrates the panel with whatever background is behind it (master or slide-local) and signals a layered overlay rather than a canvas replacement. This rule applies even when preserve_master is false — transparent panels read as contained content, opaque ones read as background.
+
+> **Faithful beautify + `preserve_master=true` override**: these rules apply only when `spec_lock.md` explicitly sets `preserve_master: true`. Generic PPTX beautification through the main pipeline must not set this flag and should generate complete slide backgrounds and visual systems normally. When the flag is present, treat every chart page as **free design regardless of what `page_charts` says**. The preserved master already supplies visual scaffolding (background, palette context, chrome). Design the chart from scratch — choose geometry, mark type, axis layout, and decoration that best express the data and the deck's `visual_style`. `page_charts` entries and the catalog SVGs are optional reference for visualization *type* only; never copy a template's structural geometry. The goal is a custom, aesthetically considered chart, not a template fill. Data values from `design_spec.md §VII` are frozen.
+>
+> **Chart element background — transparent by default**: when `preserve_master=true`, every chart's plot area, container panel, and bounding box must default to `fill="none"` (SVG transparent). The master background shows through and the chart floats visually on top. Apply this to every chart sub-element: plot-area `<rect>`, legend box, chart card wrapper, grid background — all `fill="none"` unless a specific contrast need exists.
+>
+> **Conditional background — only when contrast demands it**: if the master's background color (read from `spec_lock.colors.background`) makes data marks or axis labels unreadable without contrast separation, a bounded local panel is permitted — but it must be:
+> - Filled with `spec_lock.colors.secondary_bg` at opacity ≤ 0.15, **or** `spec_lock.colors.background` at opacity ≤ 0.12 — never a solid opaque fill, never white, never a gray unrelated to the palette
+> - Sized only to the chart's own bounding box (no full-slide reach)
+> - Rounded corners (`rx="8"`) to read as a local element, not a page chrome
+>
+> **Axis lines and gridlines**: stroke with `spec_lock.colors.body_text` at opacity 0.15–0.20. Never solid black or a template's default gray.
+>
+> **Series colors**: draw from `spec_lock.colors` — `primary`, `accent`, `secondary_accent` as the first three series colors; derive additional series by adjusting opacity or lightness within the same palette. Never carry over a chart template's default series palette.
 
 ---
 
@@ -213,7 +291,24 @@ grep "chart-plot-area" <project_path>/svg_output/<current_page>.svg
 
 > All chart templates in `templates/charts/` include this marker as a reference. If you are drawing a chart and the marker is absent, you have a bug.
 - **Technical specs**: see [shared-standards.md](shared-standards.md) for SVG/PPT constraints
+- **Anti-Collision & Text Overflow Prevention**:
+  - **Single-line overflow**: Never let a long subtitle or description run off the right edge (x > 1200). Break it into multiple `<tspan>` lines automatically.
+  - **Card/Badge squeeze**: When placing text in fixed-width cards or node boxes, adjust the text size or use `<tspan>` wrapping to ensure the text fits within the shape boundaries.
+  - **Horizontal overlap**: Keep X-coordinates of adjacent labels or large metrics spaced appropriately so their bounds do not intersect.
+  - **Vertical obstruction**: Ensure adequate Y-padding between icons/badges and their text labels. Prevent edge/connector labels from overlapping the lines they label.
+  - **Table/Grid strictness**: For multi-column layouts, use exactly identical X-coordinates for elements in the same column to prevent jagged alignment and resulting collisions.
 - **Card containers — use the documented patterns**: when a content page needs section cards (4 quadrants, parallel aspects, capability blocks, info cards), use the patterns codified in [`templates/charts/CHART_STYLE_GUIDE.md`](../templates/charts/CHART_STYLE_GUIDE.md) §11 — half-rounded section tab (§11.1), nested card border without stroke (§11.2), card-grid skeletons (§11.3), diagonal dashed connector for cross-quadrant relationships (§11.5), ground-anchor ellipse as a non-filter depth marker (§11.6), bidirectional interaction arrows for paired protocols (§11.7). Do not reinvent the "tinted full-rounded rect + white cover-rect to hide the bottom corners" hack; it survives in older templates but breaks SVG→PPTX color editing. Reference templates: [`labeled_card.svg`](../templates/charts/labeled_card.svg), [`quadrant_text_bullets.svg`](../templates/charts/quadrant_text_bullets.svg), [`kpi_cards.svg`](../templates/charts/kpi_cards.svg), [`matrix_2x2.svg`](../templates/charts/matrix_2x2.svg), [`team_roster.svg`](../templates/charts/team_roster.svg), [`client_server_flow.svg`](../templates/charts/client_server_flow.svg).
+
+- **TOC / agenda page — avoid the three-equal-column card grid**: the default "3 identical boxes, each with a big number + title" is the weakest possible TOC design — equal visual weight on all items, no typographic energy, reads as a navigation widget rather than a designed spread. Use it only when the TOC items carry very different text lengths that genuinely need bounding. Preferred alternatives:
+
+  | Alternative | How it works |
+  |---|---|
+  | **Typographic list** | Large chapter number (72–88px) in `primary` on the left, chapter title in body size to the right, separated by a thin horizontal rule extending to a variable width; items stack with generous vertical rhythm; no card boxes at all |
+  | **Number-as-atmospheric-texture** | Enormous number (120–160px) rendered in `primary` at 0.06–0.10 opacity as background texture behind each item area; legible chapter title and sub-line float over it; no bounding rect needed |
+  | **Staggered horizontal flow** | Items placed at deliberately different vertical positions (e.g., top-third / mid / bottom-third) with a thin connecting horizontal line or dashed trail; chapter title + number only, no card border |
+  | **Left-rail numbered list** | A vertical colored rail on the left edge; chapter number at 60–72px to the left of the rail; title and one-line description to the right; items separated by a hairline rule or whitespace only |
+
+  When preserve_master is true, TOC items should float directly on the master — no outer wrapper card, no dark bounding rectangle. The master's dark background already makes light text readable.
 - **Reference — prefer semantic shapes over preset stacks (not a constraint)**: when a slide needs to express "ascending / converging / breaking through / stacking" — i.e., a relationship that goes beyond a generic arrow — prefer a single custom `<polygon>` or `<path>` that encodes the semantics geometrically, rather than stacking multiple preset arrows. A converging-tip path or a podium polygon reads faster than three arrows pointing at a label. Examples of this technique appear in many imported corporate decks; see `projects/01_template_import/svg_output/slide_01.svg` shape-158 for a reference (gradient-filled inward-pointing arrow). Do not codify these as templates — they are page-specific; the rule is just "consider polygon before stacking presets."
 - **Reference — visual depth through restraint (not a constraint)**: layered depth comes from rhythm (flat vs lifted, dense vs spacious), not from shadows everywhere. Shadow typically suits 2-3 genuinely floating elements per page (cards on photos, primary CTA, overlays); keep peer-grid cards, dividers, body containers flat. Reach for typography weight, spacing, accent bars, subtle tints **before** shadow. Full rules in shared-standards.md §6.
 
@@ -427,7 +522,13 @@ Auto-split `notes/total.md` into per-page files in `notes/`.
 
 **Post-processing & Export** (same canonical pipeline as [shared-standards.md §5](shared-standards.md)):
 
-**Beautify + `preserve_master=true` background rule**: source master/layout backgrounds and fixed chrome already come from the base PPTX. Generated SVG pages must not add a page-covering background: no `<g id="background">`, full-canvas `<rect>`, full-canvas `<image>`, page-wide overlay, background grid, watermark, duplicated logo/footer/header, or other master-like chrome. Author only slide-local redesigned content and bounded local panels. A live preview may look sparse because it does not show the preserved PowerPoint master; the exported PPTX is the source of truth for the background.
+**Faithful beautify + `preserve_master=true` background rule**: these rules apply only when `spec_lock.md` explicitly sets `preserve_master: true`. Generic PPTX beautification through the main pipeline must not set this flag and should generate complete slide backgrounds and visual systems normally. Source master/layout backgrounds and fixed chrome already come from the base PPTX. Generated SVG pages must not add a page-covering background: no `<g id="background">`, full-canvas `<rect>`, full-canvas `<image>`, page-wide overlay, background grid, watermark, duplicated logo/footer/header, or other master-like chrome. Author only slide-local redesigned content and bounded local panels. A live preview may look sparse because it does not show the preserved PowerPoint master; the exported PPTX is the source of truth for the background.
+
+**Full-canvas wrapper card ban**: a single `<rect>` spanning more than 80% of both canvas width AND canvas height simultaneously is a page-covering background regardless of its rounded corners (`rx`), stroke, or fill-opacity. This is the most common accidental violation — the Executor draws a large "card container" covering 85–95% of the canvas to hold all slide content, which is functionally a background. Do NOT draw one outer card that wraps everything; instead, place each content group (title band, diagram, callout panel, footer) as a directly-placed standalone element. When `spec_lock.colors.bg` is a dark color (HEX value implies near-black, e.g. `#0A0E17`, `#111827`, `#000000`, `#0D1117`), the preserved master already supplies dark contrast for light text — no large dark wrapper is needed for legibility.
+
+This rule extends to **chart-level elements**: chart plot-area backgrounds, chart panel wrappers, legend boxes, and any bounding rectangle around a visualization must also default to `fill="none"`. A conditional local panel with low-opacity `spec_lock.colors.secondary_bg` (≤ 0.15) is permitted when contrast demands it — see the chart override rule above for the exact conditions. Axis lines and gridlines use `spec_lock.colors.body_text` at opacity 0.15–0.20; series colors come from `spec_lock.colors`. No solid opaque white, gray, or off-palette fill anywhere inside a chart when `preserve_master=true`.
+
+This rule also extends to **content panels** — section cards, architecture lane boxes, feature panels, module wrappers, and any bounded container that organizes slide content: these must use `fill-opacity` in the range **0.85–0.96** on `secondary_bg` fills rather than a solid opaque value. A solid-filled content panel on a preserved master creates a hard opaque island that visually disconnects from the master's color field. With fill-opacity 0.9, the panel is still clearly present and readable but integrates with the master layer behind it. Exception: a panel used as a legibility bridge directly over a high-contrast image area (e.g., a dark label box over a photo) may be solid — but only if bounded tightly to its content, not covering the full slide or a large blank zone.
 
 ```bash
 # 1. Split speaker notes

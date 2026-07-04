@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+
+  <!-- Arrow marker for horizontal axis -->
+  <defs>
+    <marker id="axis-arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="8" markerHeight="8" orient="auto">
+      <path d="M 0 1 L 9 5 L 0 9 Z" fill="#0F172A"/>
+    </marker>
+    <marker id="bi-dot" viewBox="0 0 10 10" refX="5" refY="5" markerWidth="6" markerHeight="6" orient="auto-start-reverse">
+      <circle cx="5" cy="5" r="4" fill="#0F172A"/>
+    </marker>
+  </defs>
+
+  <!-- Page Title -->
+  <g id="page-title">
+    <text x="640" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="34" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>{{PAGE_TITLE}}</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Main horizontal timeline axis ===== -->
+  <g id="timeline-axis">
+    <line x1="100" y1="388" x2="1168" y2="388" stroke="#0F172A" stroke-width="2" marker-end="url(#axis-arrow)"/>
+  </g>
+
+  <!-- ===== Vertical double-headed connectors ===== -->
+  <!-- Steps 1 & 3 point downward to their offset circles -->
+  <g id="v-connectors-down">
+    <line x1="248" y1="412" x2="248" y2="503" stroke="#0F172A" stroke-width="1.5" marker-start="url(#bi-dot)" marker-end="url(#bi-dot)"/>
+    <line x1="756" y1="412" x2="756" y2="503" stroke="#0F172A" stroke-width="1.5" marker-start="url(#bi-dot)" marker-end="url(#bi-dot)"/>
+  </g>
+  <!-- Steps 2 & 4 point upward to their offset circles -->
+  <g id="v-connectors-up">
+    <line x1="500" y1="364" x2="500" y2="275" stroke="#0F172A" stroke-width="1.5" marker-start="url(#bi-dot)" marker-end="url(#bi-dot)"/>
+    <line x1="1004" y1="364" x2="1004" y2="275" stroke="#0F172A" stroke-width="1.5" marker-start="url(#bi-dot)" marker-end="url(#bi-dot)"/>
+  </g>
+
+  <!-- ===== Filled milestone circles ON the axis ===== -->
+  <g id="milestone-nodes">
+    <!-- Step 1 -->
+    <circle cx="248" cy="388" r="22" fill="#0F172A"/>
+    <text x="248" y="395" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>1</tspan>
+    </text>
+    <!-- Step 2 -->
+    <circle cx="500" cy="388" r="22" fill="#0F172A"/>
+    <text x="500" y="395" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>2</tspan>
+    </text>
+    <!-- Step 3 -->
+    <circle cx="756" cy="388" r="22" fill="#0F172A"/>
+    <text x="756" y="395" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>3</tspan>
+    </text>
+    <!-- Step 4 -->
+    <circle cx="1004" cy="388" r="22" fill="#0F172A"/>
+    <text x="1004" y="395" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>4</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Offset circles (stroke-only, icon placeholder) ===== -->
+  <!-- Steps 1 & 3 — BELOW axis -->
+  <g id="offset-circles-below">
+    <circle cx="248" cy="545" r="42" fill="none" stroke="#0F172A" stroke-width="3"/>
+    <!-- Icon placeholder: simple wifi-signal bars -->
+    <line x1="248" y1="538" x2="248" y2="552" stroke="#0F172A" stroke-width="3" stroke-linecap="round"/>
+    <path d="M235,534 Q248,520 261,534" fill="none" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
+    <path d="M227,527 Q248,508 269,527" fill="none" stroke="#0F172A" stroke-width="2" stroke-linecap="round"/>
+
+    <circle cx="756" cy="545" r="42" fill="none" stroke="#0F172A" stroke-width="3"/>
+    <!-- Icon placeholder: star / asterisk -->
+    <line x1="756" y1="528" x2="756" y2="562" stroke="#0F172A" stroke-width="3" stroke-linecap="round"/>
+    <line x1="739" y1="537" x2="773" y2="553" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
+    <line x1="773" y1="537" x2="739" y2="553" stroke="#0F172A" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+
+  <!-- Steps 2 & 4 — ABOVE axis -->
+  <g id="offset-circles-above">
+    <circle cx="500" cy="232" r="42" fill="none" stroke="#0F172A" stroke-width="3"/>
+    <!-- Icon placeholder: screen / monitor -->
+    <rect x="484" y="216" width="32" height="22" rx="2" fill="none" stroke="#0F172A" stroke-width="2.5"/>
+    <rect x="495" y="238" width="10" height="4" rx="1" fill="#0F172A"/>
+
+    <circle cx="1004" cy="232" r="42" fill="none" stroke="#0F172A" stroke-width="3"/>
+    <!-- Icon placeholder: gear -->
+    <circle cx="1004" cy="232" r="11" fill="none" stroke="#0F172A" stroke-width="2.5"/>
+    <circle cx="1004" cy="232" r="4" fill="none" stroke="#0F172A" stroke-width="2"/>
+    <rect x="1001" y="217" width="6" height="5" rx="1" fill="#0F172A"/>
+    <rect x="1001" y="242" width="6" height="5" rx="1" fill="#0F172A"/>
+    <rect x="986" y="229" width="5" height="6" rx="1" fill="#0F172A"/>
+    <rect x="1013" y="229" width="5" height="6" rx="1" fill="#0F172A"/>
+  </g>
+
+  <!-- ===== Step keyword labels beside axis ===== -->
+  <!-- Steps 1 & 3 (below): label appears above the axis line -->
+  <g id="keyword-labels">
+    <text x="248" y="360" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="600" fill="#3B82F6" text-anchor="middle">
+      <tspan>MILESTONE</tspan>
+    </text>
+    <text x="500" y="418" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="600" fill="#3B82F6" text-anchor="middle">
+      <tspan>MILESTONE</tspan>
+    </text>
+    <text x="756" y="360" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="600" fill="#3B82F6" text-anchor="middle">
+      <tspan>MILESTONE</tspan>
+    </text>
+    <text x="1004" y="418" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" font-weight="600" fill="#3B82F6" text-anchor="middle">
+      <tspan>MILESTONE</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Description text for each step ===== -->
+  <!-- Steps 1 & 3 descriptions: BELOW the offset circles -->
+  <g id="desc-below">
+    <text x="248" y="607" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Step One Title</tspan>
+    </text>
+    <text x="248" y="628" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>Brief description text here</tspan>
+    </text>
+    <text x="756" y="607" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Step Three Title</tspan>
+    </text>
+    <text x="756" y="628" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>Brief description text here</tspan>
+    </text>
+  </g>
+
+  <!-- Steps 2 & 4 descriptions: ABOVE the offset circles -->
+  <g id="desc-above">
+    <text x="500" y="167" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Step Two Title</tspan>
+    </text>
+    <text x="500" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>Brief description text here</tspan>
+    </text>
+    <text x="1004" y="167" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="16" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Step Four Title</tspan>
+    </text>
+    <text x="1004" y="188" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>Brief description text here</tspan>
+    </text>
+  </g>
+
+  <!-- Source note -->
+  <text x="60" y="698" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#CBD5E1">
+    <tspan>Source: Internal Report</tspan>
+  </text>
+</svg>

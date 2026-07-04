@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <text x="640" y="100" font-family="sans-serif" font-size="36" font-weight="bold" fill="#333333" text-anchor="middle">{{PAGE_TITLE}}</text>
+  
+  <g transform="translate(140, 250)">
+    <!-- Main line -->
+    <line x1="50" y1="50" x2="950" y2="50" stroke="#E2E8F0" stroke-width="8" stroke-linecap="round" />
+    
+    <!-- Q1 -->
+    <g transform="translate(150, 50)">
+      <circle cx="0" cy="0" r="16" fill="#3B82F6" stroke="#FFFFFF" stroke-width="4" />
+      <text x="0" y="-40" font-family="sans-serif" font-size="24" font-weight="bold" fill="#3B82F6" text-anchor="middle">Q1</text>
+      <text x="0" y="40" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1E293B" text-anchor="middle">Planning</text>
+      <text x="0" y="70" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Initial strategy</text>
+    </g>
+    
+    <!-- Q2 -->
+    <g transform="translate(383, 50)">
+      <circle cx="0" cy="0" r="16" fill="#10B981" stroke="#FFFFFF" stroke-width="4" />
+      <text x="0" y="-40" font-family="sans-serif" font-size="24" font-weight="bold" fill="#10B981" text-anchor="middle">Q2</text>
+      <text x="0" y="40" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1E293B" text-anchor="middle">Execution</text>
+      <text x="0" y="70" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Rollout phase</text>
+    </g>
+    
+    <!-- Q3 -->
+    <g transform="translate(616, 50)">
+      <circle cx="0" cy="0" r="16" fill="#F59E0B" stroke="#FFFFFF" stroke-width="4" />
+      <text x="0" y="-40" font-family="sans-serif" font-size="24" font-weight="bold" fill="#F59E0B" text-anchor="middle">Q3</text>
+      <text x="0" y="40" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1E293B" text-anchor="middle">Optimization</text>
+      <text x="0" y="70" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Refining operations</text>
+    </g>
+    
+    <!-- Q4 -->
+    <g transform="translate(850, 50)">
+      <circle cx="0" cy="0" r="16" fill="#EF4444" stroke="#FFFFFF" stroke-width="4" />
+      <text x="0" y="-40" font-family="sans-serif" font-size="24" font-weight="bold" fill="#EF4444" text-anchor="middle">Q4</text>
+      <text x="0" y="40" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1E293B" text-anchor="middle">Scale</text>
+      <text x="0" y="70" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Growth and expansion</text>
+    </g>
+  </g>
+</svg>

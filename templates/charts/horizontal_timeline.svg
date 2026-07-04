@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#F8FAFC" />
+  
+  <!-- Center Line -->
+  <line x1="120" y1="360" x2="1160" y2="360" stroke="#94A3B8" stroke-width="2" />
+  
+  <!-- Node 1: 2026 -->
+  <g id="node-1">
+    <line x1="260" y1="360" x2="260" y2="280" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="2 2" />
+    <circle cx="260" cy="360" r="10" fill="#3B82F6" stroke="#FFFFFF" stroke-width="2.5" />
+    
+    <rect x="160" y="160" width="200" height="100" rx="8" ry="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+    <text x="180" y="195" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#2563EB">
+      <tspan>2026 / 种子期</tspan>
+    </text>
+    <text x="180" y="225" font-family="-apple-system, sans-serif" font-size="13" fill="#64748B">
+      <tspan>种子团队组建，核心商业</tspan>
+      <tspan x="180" dy="18">模式在试点高校跑通闭环</tspan>
+    </text>
+  </g>
+  
+  <!-- Node 2: 2027 -->
+  <g id="node-2">
+    <line x1="500" y1="360" x2="500" y2="440" stroke="#10B981" stroke-width="1.5" stroke-dasharray="2 2" />
+    <circle cx="500" cy="360" r="10" fill="#10B981" stroke="#FFFFFF" stroke-width="2.5" />
+    
+    <rect x="400" y="460" width="200" height="100" rx="8" ry="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+    <text x="420" y="495" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#059669">
+      <tspan>2027 / 推广期</tspan>
+    </text>
+    <text x="420" y="525" font-family="-apple-system, sans-serif" font-size="13" fill="#64748B">
+      <tspan>启动跨校联盟推广，高校</tspan>
+      <tspan x="420" dy="18">网格拓展增至30+家校区</tspan>
+    </text>
+  </g>
+  
+  <!-- Node 3: 2028 -->
+  <g id="node-3">
+    <line x1="740" y1="360" x2="740" y2="280" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="2 2" />
+    <circle cx="740" cy="360" r="10" fill="#F59E0B" stroke="#FFFFFF" stroke-width="2.5" />
+    
+    <rect x="640" y="160" width="200" height="100" rx="8" ry="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+    <text x="660" y="195" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#D97706">
+      <tspan>2028 / 高速成长期</tspan>
+    </text>
+    <text x="660" y="225" font-family="-apple-system, sans-serif" font-size="13" fill="#64748B">
+      <tspan>自研智能云仓投产运营，</tspan>
+      <tspan x="660" dy="18">订单处理能力完成十倍爆发</tspan>
+    </text>
+  </g>
+  
+  <!-- Node 4: 2029 -->
+  <g id="node-4">
+    <line x1="980" y1="360" x2="980" y2="440" stroke="#8B5CF6" stroke-width="1.5" stroke-dasharray="2 2" />
+    <circle cx="980" cy="360" r="10" fill="#8B5CF6" stroke="#FFFFFF" stroke-width="2.5" />
+    
+    <rect x="880" y="460" width="200" height="100" rx="8" ry="8" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="1" />
+    <text x="900" y="495" font-family="-apple-system, sans-serif" font-size="18" font-weight="bold" fill="#7C3AED">
+      <tspan>2029 / 生态期</tspan>
+    </text>
+    <text x="900" y="525" font-family="-apple-system, sans-serif" font-size="13" fill="#64748B">
+      <tspan>跨界权益深度打通融合，</tspan>
+      <tspan x="900" dy="18">成就数智生活领先独角兽</tspan>
+    </text>
+  </g>
+</svg>

@@ -1,0 +1,27 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<!-- Simplified organic ending decoration (substitutes extracted vector art) -->
+<path d="M 640 80 C 720 80 760 155 640 210 C 520 155 560 80 640 80" fill="#F7B63E" opacity="0.4"/>
+<path d="M 640 340 C 720 340 760 265 640 210 C 520 265 560 340 640 210" fill="#FF3E3E" opacity="0.4"/>
+<path d="M 500 210 C 500 125 575 88 640 210 C 575 332 500 295 500 210" fill="#76AADB" opacity="0.4"/>
+<path d="M 780 210 C 780 125 705 88 640 210 C 705 332 780 295 780 210" fill="#70AD47" opacity="0.4"/>
+<circle cx="640" cy="210" r="20" fill="#FFFFFF"/>
+<!-- Small red organic accent (simplified flower) -->
+<path d="M 190.4 200.12 C 181.14 198.15 170.49 199.53 161.41 201.5 C 158.65 202.09 159.44 206.03 162.01 206.22 C 169.11 206.62 176.21 205.04 183.3 205.24 C 187.05 205.24 191 205.63 194.15 207.6 C 200.86 211.74 192.57 216.66 189.02 218.43 C 182.52 221.78 175.81 224.14 168.91 226.11 C 169.11 223.75 168.91 221.38 168.32 219.22 C 166.34 210.75 157.27 201.5 149.19 198.94 C 147.02 198.35 145.84 201.1 147.02 202.48 C 152.34 208.39 159.25 211.54 162.4 219.22 C 163.39 222.17 163.58 224.93 163.19 227.69 C 152.54 230.25 141.5 232.02 130.85 234.38 C 124.54 242.26 126.31 241.86 128.09 241.47 C 139.92 238.91 150.17 236.94 160.43 234.58 C 159.25 236.55 157.87 238.32 156.29 239.7 C 147.41 248.36 134.2 248.56 124.54 242.26" fill="#FF3E3E"/>
+<!-- Horizontal divider rule -->
+<line x1="304.78" y1="436.96" x2="1011.73" y2="436.96" stroke-width="3.667" stroke="#D9D9D9"/>
+<!-- Thank-you headline -->
+<text x="639.52" y="558.47" text-anchor="middle" font-family="&quot;微软雅黑&quot;, &quot;Microsoft YaHei&quot;, sans-serif" font-size="72" fill="#2E2E2E" font-weight="bold">{{THANK_YOU}}</text>
+<!-- Short rule between headline and attribution -->
+<line x1="594.64" y1="616.43" x2="670.23" y2="616.43" stroke-width="4" stroke-linecap="butt" stroke="#2E2E2E"/>
+<!-- Attribution left -->
+<text x="501.43" y="660.4" text-anchor="middle" font-family="&quot;幼圆&quot;, YouYuan, sans-serif" font-size="26.67" fill="#2E2E2E" font-weight="bold">{{CONTACT_INFO_LEFT}}</text>
+<!-- Attribution right -->
+<text x="774.96" y="660.4" text-anchor="middle" font-family="&quot;幼圆&quot;, YouYuan, sans-serif" font-size="26.67" fill="#2E2E2E" font-weight="bold">{{CONTACT_INFO_RIGHT}}</text>
+<!-- Sidebar circles (Yellow/Red/Blue/Green) -->
+<ellipse cx="-51.59" cy="215.59" rx="40.19" ry="40.19" fill="#F7B63E"/>
+<ellipse cx="-53.76" cy="295.6" rx="40.19" ry="40.19" fill="#FF3E3E"/>
+<ellipse cx="-53.76" cy="375.64" rx="40.19" ry="40.19" fill="#76AADB"/>
+<ellipse cx="-53.76" cy="455.32" rx="40.19" ry="40.19" fill="#70AD47"/>
+</svg>

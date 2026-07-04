@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  
+  <text x="640" y="120" font-family="sans-serif" font-size="36" font-weight="bold" fill="#1E293B" text-anchor="middle">{{PAGE_TITLE}}</text>
+  
+  <g transform="translate(340, 200)">
+    <!-- The Pyramid / Triangle -->
+    <polygon points="300,0 600,400 0,400" fill="#F1F5F9" stroke="#CBD5E1" stroke-width="2" />
+    
+    <!-- Top Level -->
+    <polygon points="300,0 450,200 150,200" fill="#0F172A" />
+    <text x="300" y="140" font-family="sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Vision</text>
+    
+    <!-- Bottom Left Level -->
+    <polygon points="150,200 300,400 0,400" fill="#3B82F6" />
+    <text x="150" y="340" font-family="sans-serif" font-size="28" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Strategy</text>
+    
+    <!-- Bottom Right Level -->
+    <polygon points="450,200 600,400 300,400" fill="#E2E8F0" />
+    <text x="450" y="340" font-family="sans-serif" font-size="28" font-weight="bold" fill="#0F172A" text-anchor="middle">Execution</text>
+  </g>
+  
+  <!-- Side descriptions -->
+  <g transform="translate(150, 240)">
+    <text x="0" y="0" font-family="sans-serif" font-size="20" font-weight="bold" fill="#333333">Top Down</text>
+    <text x="0" y="30" font-family="sans-serif" font-size="14" fill="#64748B">
+      <tspan x="0" dy="0">Strategic objectives flow</tspan>
+      <tspan x="0" dy="20">from the highest vision.</tspan>
+    </text>
+  </g>
+  
+  <g transform="translate(950, 480)">
+    <text x="0" y="0" font-family="sans-serif" font-size="20" font-weight="bold" fill="#333333">Foundation</text>
+    <text x="0" y="30" font-family="sans-serif" font-size="14" fill="#64748B">
+      <tspan x="0" dy="0">Solid execution and</tspan>
+      <tspan x="0" dy="20">clear strategies support.</tspan>
+    </text>
+  </g>
+</svg>

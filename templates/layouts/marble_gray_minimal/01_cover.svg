@@ -1,0 +1,29 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><image href="marble_bg.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+<g id="shape-4" data-name="图片 3">
+<image href="marble_overlay.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+</g>
+<g id="shape-2" data-name="矩形: 圆角 1">
+<rect x="182.26" y="217.04" width="915.48" height="329.21" rx="54.87" ry="54.87" fill="none" stroke-width="6" stroke="#C1A36C" />
+</g>
+<g id="shape-5" data-name="文本框 4">
+<rect x="299.41" y="252.17" width="681.19" height="130.87" fill="none" />
+<text x="309.01" y="341.97" text-anchor="start" xml:space="preserve" font-family="&quot;字魂59号-创粗黑&quot;, sans-serif" font-size="100" fill="#262626">{{TITLE}}</text>
+</g>
+<g id="shape-6" data-name="文本框 5">
+<rect x="466.09" y="396.79" width="347.83" height="48.47" fill="none" />
+<text x="475.69" y="428.79" text-anchor="start" xml:space="preserve" font-family="&quot;字魂58号-创中黑&quot;, &quot;等线&quot;, sans-serif" font-size="32" fill="#262626" font-weight="bold">{{SUBTITLE}}</text>
+</g>
+<g id="shape-7" data-name="文本框 6">
+<rect x="341.3" y="445.26" width="597.4" height="54.93" fill="none" />
+<text x="640" y="465.93" text-anchor="middle" xml:space="preserve" font-family="&quot;字魂58号-创中黑&quot;, sans-serif" font-size="18.67" fill="#262626">{{DATE}}</text>
+</g>
+<g id="shape-8" data-name="文本框 7">
+<rect x="553.74" y="96.48" width="172.52" height="74.32" fill="none" />
+<text x="563.34" y="146.61" text-anchor="start" xml:space="preserve" font-family="&quot;字魂59号-创粗黑&quot;, sans-serif" font-size="53.33" fill="#C1A36C"><tspan fill="#C1A36C" font-size="53.33">LOGO</tspan></text>
+</g>
+<g id="shape-9" data-name="文本框 8">
+<rect x="535.65" y="601.35" width="208.7" height="38.67" fill="none" />
+<text x="640" y="626.55" text-anchor="middle" xml:space="preserve" font-family="&quot;字魂58号-创中黑&quot;, &quot;等线&quot;, sans-serif" font-size="24" fill="#262626"><tspan fill="#262626" font-size="24">Design by </tspan></text>
+</g>
+</svg>

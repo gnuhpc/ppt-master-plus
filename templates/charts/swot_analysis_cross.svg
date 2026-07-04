@@ -1,0 +1,52 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#F8FAFC" />
+  
+  <text x="640" y="100" font-family="sans-serif" font-size="36" font-weight="bold" fill="#1E293B" text-anchor="middle">{{PAGE_TITLE}}</text>
+  
+  <g transform="translate(240, 180)">
+    <!-- Central Circle -->
+    <circle cx="400" cy="220" r="70" fill="#FFFFFF" stroke="#E2E8F0" stroke-width="4" />
+    <text x="400" y="228" font-family="sans-serif" font-size="28" font-weight="bold" fill="#0F172A" text-anchor="middle">SWOT</text>
+    
+    <!-- Top Left (Strengths) -->
+    <rect x="0" y="0" width="370" height="190" fill="#FFFFFF" stroke="#3B82F6" stroke-width="2" rx="8" />
+    <text x="30" y="45" font-family="sans-serif" font-size="24" font-weight="bold" fill="#3B82F6">S</text>
+    <text x="60" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#1E293B">STRENGTHS</text>
+    <text x="30" y="80" font-family="sans-serif" font-size="14" fill="#64748B">
+      <tspan x="30" dy="0">• Proprietary technology</tspan>
+      <tspan x="30" dy="24">• Strong brand recognition</tspan>
+      <tspan x="30" dy="24">• Experienced leadership team</tspan>
+    </text>
+    
+    <!-- Top Right (Weaknesses) -->
+    <rect x="430" y="0" width="370" height="190" fill="#FFFFFF" stroke="#F59E0B" stroke-width="2" rx="8" />
+    <text x="460" y="45" font-family="sans-serif" font-size="24" font-weight="bold" fill="#F59E0B">W</text>
+    <text x="495" y="45" font-family="sans-serif" font-size="20" font-weight="bold" fill="#1E293B">WEAKNESSES</text>
+    <text x="460" y="80" font-family="sans-serif" font-size="14" fill="#64748B">
+      <tspan x="460" dy="0">• Limited distribution channels</tspan>
+      <tspan x="460" dy="24">• High production costs</tspan>
+      <tspan x="460" dy="24">• Dependency on key suppliers</tspan>
+    </text>
+    
+    <!-- Bottom Left (Opportunities) -->
+    <rect x="0" y="250" width="370" height="190" fill="#FFFFFF" stroke="#10B981" stroke-width="2" rx="8" />
+    <text x="30" y="295" font-family="sans-serif" font-size="24" font-weight="bold" fill="#10B981">O</text>
+    <text x="60" y="295" font-family="sans-serif" font-size="20" font-weight="bold" fill="#1E293B">OPPORTUNITIES</text>
+    <text x="30" y="330" font-family="sans-serif" font-size="14" fill="#64748B">
+      <tspan x="30" dy="0">• Emerging overseas markets</tspan>
+      <tspan x="30" dy="24">• Favorable regulatory changes</tspan>
+      <tspan x="30" dy="24">• Untapped demographic segments</tspan>
+    </text>
+    
+    <!-- Bottom Right (Threats) -->
+    <rect x="430" y="250" width="370" height="190" fill="#FFFFFF" stroke="#EF4444" stroke-width="2" rx="8" />
+    <text x="460" y="295" font-family="sans-serif" font-size="24" font-weight="bold" fill="#EF4444">T</text>
+    <text x="490" y="295" font-family="sans-serif" font-size="20" font-weight="bold" fill="#1E293B">THREATS</text>
+    <text x="460" y="330" font-family="sans-serif" font-size="14" fill="#64748B">
+      <tspan x="460" dy="0">• Aggressive new competitors</tspan>
+      <tspan x="460" dy="24">• Economic downturn risks</tspan>
+      <tspan x="460" dy="24">• Rapid technological shifts</tspan>
+    </text>
+  </g>
+</svg>

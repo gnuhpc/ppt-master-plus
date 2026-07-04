@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-3" data-name="图片 2" transform="translate(282.66 399.77) scale(-1 1) translate(-282.66 -399.77)">
+<svg x="69.38" y="77.18" width="426.56" height="645.17" viewBox="0.06121 0 0.53198 1" preserveAspectRatio="none"><image href="flower_sketch.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-9" data-name="文本框 5">
+<rect x="567.07" y="429.43" width="448.67" height="48.5" fill="none" stroke="none" />
+<text x="576.67" y="461.43" text-anchor="start" xml:space="preserve" font-family="&quot;方正兰亭超细黑简体&quot;, sans-serif" font-size="32" fill="#222A34">{{CLOSING_MESSAGE}}</text>
+</g>
+<g id="shape-10" data-name="文本框 6">
+<rect x="663.23" y="318.99" width="256.35" height="80.78" fill="none" stroke="none" />
+<text x="672.83" y="373.66" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="58.67" fill="#222A34">{{THANK_YOU}}</text>
+</g>
+<g id="shape-11" data-name="直接连接符 6">
+<line x1="433.57" y1="419.45" x2="1149.24" y2="419.45" fill="none" stroke-width="1" stroke="#445469" stroke-linejoin="round" />
+</g></svg>

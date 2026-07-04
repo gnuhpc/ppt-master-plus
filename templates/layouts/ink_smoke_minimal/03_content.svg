@@ -1,0 +1,20 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="txtgrad1" x1="1.1022" y1="0.2808" x2="-0.1022" y2="0.7192"><stop offset="0.7" stop-color="#A6A6A6" /><stop offset="0.15" stop-color="#595959" /></linearGradient><linearGradient id="txtgrad2" x1="1.1022" y1="0.2808" x2="-0.1022" y2="0.7192"><stop offset="0.7" stop-color="#A6A6A6" /><stop offset="0.15" stop-color="#595959" /></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="layout-shape-7" data-name="Scene_01_合并文件">
+<image href="ink_smoke_overlay.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+</g>
+<g id="layout-shape-9" data-name="图片 8">
+<image href="ink_smoke_content.jpg" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+</g>
+<g id="shape-21" data-name="矩形 20">
+<rect x="140.04" y="62.02" width="388.65" height="53.73" fill="none" />
+<text x="149.64" y="94.02" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, &quot;等线&quot;, sans-serif" font-size="32" fill="url(#txtgrad2)" letter-spacing="8">{{PAGE_TITLE}}</text>
+</g>
+<g id="shape-23" data-name="Rectangle 43">
+<rect x="140.04" y="110.69" width="278.74" height="35.54" fill="none" />
+<text x="149.64" y="124.55" text-anchor="start" xml:space="preserve" font-family="Arial, sans-serif" font-size="10.67" fill="#BFBFBF"><tspan fill="#BFBFBF" font-size="10.67">Lorem ipsum dolor sit amet, consectetur </tspan><tspan x="149.64" dy="12.8" fill="#BFBFBF" font-size="10.67">adipiscing elit. Nulla imperdiet volutpat dui at </tspan><tspan x="149.64" dy="12.8" fill="#BFBFBF" font-size="10.67">fermentum.</tspan></text>
+</g>
+<g id="shape-24" data-name="矩形 23">
+<rect x="120.32" y="229.71" width="4.8" height="172.8" fill="#262626" stroke="none" stroke-width="1" />
+</g>
+<rect x="180" y="210" width="1020" height="440" fill="none" stroke="#7F7F7F" stroke-opacity="0.2" stroke-dasharray="4 4" /><text x="690" y="430" text-anchor="middle" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="18" fill="#7F7F7F">{{CONTENT_AREA}}</text><text x="690" y="690" text-anchor="middle" font-family="Arial, sans-serif" font-size="12" fill="#7F7F7F">{{PAGE_NUM}}</text></svg>

@@ -1,0 +1,75 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-5" data-name="图片 4" transform="rotate(90 640 360)">
+<image href="bg_peach_soft.jpg" x="280" y="-280" width="720" height="1280" preserveAspectRatio="none" />
+</g>
+<g id="shape-7" data-name="图片 6" transform="rotate(270 107.73 206.35) translate(107.73 206.35) scale(1 -1) translate(-107.73 -206.35)">
+<svg x="-98.61" y="98.61" width="412.69" height="215.47" viewBox="0.57833 0 0.42167 1" preserveAspectRatio="none"><image href="blossom_top.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-8" data-name="图片 7" transform="rotate(90 1172.27 206.35) translate(1172.27 206.35) scale(-1 -1) translate(-1172.27 -206.35)">
+<svg x="965.92" y="98.61" width="412.69" height="215.47" viewBox="0.57833 0 0.42167 1" preserveAspectRatio="none"><image href="blossom_top.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-14" data-name="图片 13">
+<svg x="42.49" y="480" width="165.51" height="268.56" viewBox="0.40564 0.06245 0.21434 0.29029" preserveAspectRatio="none"><image href="blossom_bottom.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-33" data-name="组合 32">
+<g id="shape-34" data-name="文本框 33">
+<rect x="467.8" y="102.69" width="148.64" height="260.64" fill="none" />
+</g>
+<g id="shape-34-text" data-name="文本框 33 text">
+<text x="542.11" y="211.68" text-anchor="middle" xml:space="preserve" font-family="&quot;海派腔调奶油简&quot;, sans-serif" font-size="106.67" fill="#404040" letter-spacing="-4">{{THANK_YOU}}</text>
+</g>
+<g id="shape-35" data-name="矩形 34">
+<rect x="520.35" y="378.02" width="72.7" height="243.68" fill="none" />
+</g>
+<g id="shape-35-text" data-name="矩形 34 text">
+<text x="556.71" y="390.49" text-anchor="middle" xml:space="preserve" font-family="Arial, sans-serif" font-size="14.67" fill="#404040"><tspan fill="#404040" font-size="14.67">L</tspan><tspan x="556.71" dy="15.4" fill="#404040" font-size="14.67">o</tspan><tspan x="556.71" dy="15.4" fill="#404040" font-size="14.67">r</tspan><tspan x="556.71" dy="15.4" fill="#404040" font-size="14.67">e</tspan><tspan x="556.71" dy="15.4" fill="#404040" font-size="14.67">m</tspan><tspan x="556.71" dy="15.4" fill="#404040" font-size="14.67">i</tspan><tspan x="556.71" dy="15.4" fill="#404040" font-size="14.67">p</tspan><tspan x="556.71" dy="15.4" fill="#404040" font-size="14.67">s</tspan><tspan x="556.71" dy="15.4" fill="#404040" font-size="14.67">u</tspan><tspan x="556.71" dy="15.4" fill="#404040" font-size="14.67">m</tspan><tspan x="556.71" dy="15.4" fill="#404040" font-size="14.67">d</tspan><tspan x="556.71" dy="15.4" fill="#404040" font-size="14.67">o</tspan><tspan x="556.71" dy="15.4" fill="#404040" font-size="14.67">l</tspan><tspan x="556.71" dy="15.4" fill="#404040" font-size="14.67">o</tspan><tspan x="556.71" dy="15.4" fill="#404040" font-size="14.67">r</tspan></text>
+</g>
+<g id="shape-36" data-name="直接连接符 35">
+<line x1="644.19" y1="175.48" x2="644.19" y2="438.86" stroke-width="2.667" stroke="#404040" fill="#63BD87" />
+</g>
+<g id="shape-37" data-name="文本框 36">
+<rect x="643.74" y="276.45" width="106.63" height="336.08" fill="none" />
+</g>
+<g id="shape-37-text" data-name="文本框 36 text">
+<text x="697.06" y="354.49" text-anchor="middle" xml:space="preserve" font-family="&quot;海派腔调奶油简&quot;, sans-serif" font-size="72" fill="#404040" letter-spacing="-4">{{CLOSING_MESSAGE}}</text>
+</g>
+<g id="shape-38" data-name="组合 37">
+<g id="shape-48" data-name="直接连接符 47" transform="translate(766.02 155.04) scale(1 -1) translate(-766.02 -155.04)">
+<line x1="719.03" y1="112.27" x2="813" y2="197.8" stroke-width="1.667" stroke="#404040" fill="#63BD87" />
+</g>
+<g id="shape-49" data-name="椭圆 48">
+<ellipse cx="713.79" cy="202.83" rx="7.26" ry="7.26" fill="none" stroke-width="1.667" stroke="#404040" />
+</g>
+<g id="shape-50" data-name="椭圆 49">
+<ellipse cx="772.82" cy="227.03" rx="7.26" ry="7.26" fill="none" stroke-width="1.667" stroke="#404040" />
+</g>
+</g>
+<g id="shape-39" data-name="文本框 38">
+<rect x="579.5" y="374.09" width="51.7" height="196.93" fill="none" />
+</g>
+<g id="shape-39-text" data-name="文本框 38 text">
+<text x="605.35" y="439.22" text-anchor="middle" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="26.67" fill="#404040" letter-spacing="8"><tspan fill="#404040" font-size="26.67" letter-spacing="8">工</tspan><tspan x="605.35" dy="28" fill="#404040" font-size="26.67" letter-spacing="8">作</tspan><tspan x="605.35" dy="28" fill="#404040" font-size="26.67" letter-spacing="8">总</tspan><tspan x="605.35" dy="28" fill="#404040" font-size="26.67" letter-spacing="8">结</tspan></text>
+</g>
+<g id="shape-40" data-name="组合 39">
+<g id="shape-41" data-name="组合 40">
+<g id="shape-45" data-name="直接连接符 44" transform="translate(468.13 392.53) scale(1 -1) translate(-468.13 -392.53)">
+<line x1="421.14" y1="349.76" x2="515.11" y2="435.29" stroke-width="1.667" stroke="#404040" fill="#63BD87" />
+</g>
+<g id="shape-46" data-name="椭圆 45">
+<ellipse cx="415.9" cy="440.32" rx="7.26" ry="7.26" fill="none" stroke-width="1.667" stroke="#404040" />
+</g>
+<g id="shape-47" data-name="椭圆 46">
+<ellipse cx="475.06" cy="315.72" rx="7.26" ry="7.26" fill="none" stroke-width="1.667" stroke="#404040" />
+</g>
+</g>
+<g id="shape-42" data-name="组合 41">
+<g id="shape-43" data-name="直接连接符 42" transform="translate(468.04 496.54) scale(1 -1) translate(-468.04 -496.54)">
+<line x1="426.97" y1="459.16" x2="509.12" y2="533.93" stroke-width="1.667" stroke="#404040" fill="#63BD87" />
+</g>
+<g id="shape-44" data-name="椭圆 43">
+<ellipse cx="422.38" cy="538.33" rx="6.35" ry="6.35" fill="none" stroke-width="1.667" stroke="#404040" />
+</g>
+</g>
+</g>
+</g></svg>

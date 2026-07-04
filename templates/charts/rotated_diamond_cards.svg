@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+<rect id="bg" width="1280" height="720" fill="#FFFFFF"/>
+<!-- Page title -->
+<text id="page-title" x="640" y="72" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="32" fill="#232525" font-weight="bold">{{PAGE_TITLE}}</text>
+
+<!-- Diamond 1 (center 302,340): 180x180 square rotated 45° becomes diamond, half-diagonal=127px -->
+<g id="diamond-1">
+  <rect x="212" y="250" width="180" height="180" fill="#232525" stroke="#FFFFFF" stroke-width="1.5" transform="rotate(44.66 302 340)"/>
+  <!-- Icon placeholder: outlined circle in upper diamond area -->
+  <circle cx="302" cy="307" r="18" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <!-- Sequence number -->
+  <text x="302" y="358" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-size="26" fill="#FFFFFF" font-weight="bold">01</text>
+</g>
+<text id="title-1" x="302" y="488" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="18" fill="#232525" font-weight="bold">{{BOX_TITLE_1}}</text>
+<text id="desc-1" x="302" y="512" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="13" fill="#595959">{{CONTENT_AREA_1}}</text>
+
+<!-- Diamond 2 (center 519,340) -->
+<g id="diamond-2">
+  <rect x="429" y="250" width="180" height="180" fill="#232525" stroke="#FFFFFF" stroke-width="1.5" transform="rotate(44.66 519 340)"/>
+  <circle cx="519" cy="307" r="18" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="519" y="358" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-size="26" fill="#FFFFFF" font-weight="bold">02</text>
+</g>
+<text id="title-2" x="519" y="488" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="18" fill="#232525" font-weight="bold">{{BOX_TITLE_2}}</text>
+<text id="desc-2" x="519" y="512" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="13" fill="#595959">{{CONTENT_AREA_2}}</text>
+
+<!-- Diamond 3 (center 746,340) -->
+<g id="diamond-3">
+  <rect x="656" y="250" width="180" height="180" fill="#232525" stroke="#FFFFFF" stroke-width="1.5" transform="rotate(44.66 746 340)"/>
+  <circle cx="746" cy="307" r="18" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="746" y="358" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-size="26" fill="#FFFFFF" font-weight="bold">03</text>
+</g>
+<text id="title-3" x="746" y="488" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="18" fill="#232525" font-weight="bold">{{BOX_TITLE_3}}</text>
+<text id="desc-3" x="746" y="512" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="13" fill="#595959">{{CONTENT_AREA_3}}</text>
+
+<!-- Diamond 4 (center 976,340) -->
+<g id="diamond-4">
+  <rect x="886" y="250" width="180" height="180" fill="#232525" stroke="#FFFFFF" stroke-width="1.5" transform="rotate(44.66 976 340)"/>
+  <circle cx="976" cy="307" r="18" fill="none" stroke="#FFFFFF" stroke-width="2"/>
+  <text x="976" y="358" text-anchor="middle" font-family="'Open Sans', Arial, sans-serif" font-size="26" fill="#FFFFFF" font-weight="bold">04</text>
+</g>
+<text id="title-4" x="976" y="488" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="18" fill="#232525" font-weight="bold">{{BOX_TITLE_4}}</text>
+<text id="desc-4" x="976" y="512" text-anchor="middle" font-family="'微软雅黑', Arial, sans-serif" font-size="13" fill="#595959">{{CONTENT_AREA_4}}</text>
+</svg>

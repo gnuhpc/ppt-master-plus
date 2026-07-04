@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#F8F8F8" />
+<g id="shape-19" data-name="图片 18">
+<image href="business_skyline.jpg" x="151.1" y="8" width="1128.9" height="752" preserveAspectRatio="none" />
+</g>
+<g id="shape-10" data-name="文本框 9">
+<rect x="87.9" y="67.24" width="373.98" height="22.62" fill="none" />
+<text x="97.5" y="81.1" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="10.67" fill="#FFFFFF" letter-spacing="4">{{CLOSING_MESSAGE}}</text>
+</g>
+<g id="shape-8" data-name="文本框 7">
+<rect x="89.87" y="141.99" width="440.8" height="87.24" fill="none" />
+<text x="99.47" y="201.19" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="64" fill="#083358" font-weight="bold" letter-spacing="40">{{THANK_YOU}}</text>
+</g>
+<g id="shape-18" data-name="文本框 17">
+<rect x="89.87" y="249.99" width="452.07" height="58.16" fill="none" />
+<text x="99.47" y="266.12" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, Calibri, sans-serif" font-size="13.33" fill="#083358"><tspan fill="#083358" font-size="13.33">Don't aim for success if you want it; just do what you love and </tspan><tspan x="99.47" dy="16" fill="#083358" font-size="13.33">believe in, and it will come naturally.</tspan></text>
+<text x="99.47" y="298.12" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="13.33" fill="#083358"><tspan fill="#083358" font-size="13.33"> </tspan></text>
+</g>
+<g id="shape-16" data-name="组合 15">
+<g id="shape-17" data-name="矩形 16" transform="translate(1185.99 140) scale(-1 1) translate(-1185.99 -140)">
+<rect x="1171.97" y="128" width="28.03" height="24" fill="#AF935C" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-20" data-name="矩形 19" transform="translate(1185.99 178.62) scale(-1 1) translate(-1185.99 -178.62)">
+<rect x="1171.97" y="166.62" width="28.03" height="24" fill="#AF935C" fill-opacity="0.75" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-21" data-name="矩形 20" transform="translate(1185.99 217.23) scale(-1 1) translate(-1185.99 -217.23)">
+<rect x="1171.97" y="205.23" width="28.03" height="24" fill="#AF935C" fill-opacity="0.45" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-22" data-name="组合 21" transform="translate(118.01 549.38) scale(1 -1) translate(-118.01 -549.38)">
+<g id="shape-23" data-name="矩形 22" transform="translate(118.01 510.76) scale(-1 1) translate(-118.01 -510.76)">
+<rect x="104" y="498.76" width="28.03" height="24" fill="#AF935C" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-24" data-name="矩形 23" transform="translate(118.01 549.38) scale(-1 1) translate(-118.01 -549.38)">
+<rect x="104" y="537.38" width="28.03" height="24" fill="#AF935C" fill-opacity="0.75" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-25" data-name="矩形 24" transform="translate(118.01 588) scale(-1 1) translate(-118.01 -588)">
+<rect x="104" y="576" width="28.03" height="24" fill="#AF935C" fill-opacity="0.45" stroke="none" stroke-width="1" />
+</g>
+</g>
+<g id="shape-29" data-name="文本框 28">
+<rect x="100.08" y="52.76" width="308.27" height="87.13" fill="none" />
+<text x="109.68" y="111.96" text-anchor="start" xml:space="preserve" font-family="&quot;Source Han Serif SC&quot;, sans-serif" font-size="64" fill="#083358" font-weight="bold" letter-spacing="40">{{DATE}}</text>
+</g></svg>

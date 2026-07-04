@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<!-- Simplified four-color organic cover motif (substitutes extracted mandala art) -->
+<path d="M 640 80 C 720 80 760 155 640 210 C 520 155 560 80 640 80" fill="#F7B63E" opacity="0.55"/>
+<path d="M 640 340 C 720 340 760 265 640 210 C 520 265 560 340 640 340" fill="#FF3E3E" opacity="0.55"/>
+<path d="M 500 210 C 500 125 575 88 640 210 C 575 332 500 295 500 210" fill="#76AADB" opacity="0.55"/>
+<path d="M 780 210 C 780 125 705 88 640 210 C 705 332 780 295 780 210" fill="#70AD47" opacity="0.55"/>
+<circle cx="640" cy="210" r="28" fill="#FFFFFF"/>
+<!-- Title -->
+<text x="640" y="430" text-anchor="middle" font-family="&quot;幼圆&quot;, YouYuan, sans-serif" font-size="64" fill="#404040" font-weight="bold">{{TITLE}}</text>
+<!-- Subtitle -->
+<text x="640" y="490" text-anchor="middle" font-family="&quot;方正静蕾简体&quot;, sans-serif" font-size="37.33" fill="#404040">{{SUBTITLE}}</text>
+<!-- Author and date -->
+<text x="640" y="555" text-anchor="middle" font-family="&quot;方正静蕾简体&quot;, sans-serif" font-size="24" fill="#808080">{{AUTHOR}}  |  {{DATE}}</text>
+</svg>

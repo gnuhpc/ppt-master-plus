@@ -1,0 +1,105 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-2" data-name="图片 1">
+<image href="cover_decor.emf" x="275.5" y="83.45" width="526.74" height="519.16" preserveAspectRatio="none" />
+</g>
+<g id="shape-3" data-name="文本框 2">
+<rect x="681.61" y="110.66" width="49.68" height="87.24" fill="none" />
+<text x="691.21" y="169.86" text-anchor="start" xml:space="preserve" font-family="&quot;华文宋体&quot;, +mn-cs, sans-serif" font-size="64" fill="#BFBFBF" font-weight="bold"><tspan fill="#BFBFBF" font-size="64" font-weight="bold">2</tspan></text>
+</g>
+<g id="shape-4" data-name="文本框 3">
+<rect x="720.68" y="168.43" width="34.53" height="48.47" fill="none" />
+<text x="730.28" y="200.43" text-anchor="start" xml:space="preserve" font-family="&quot;华文宋体&quot;, +mn-cs, sans-serif" font-size="32" fill="#BFBFBF" font-weight="bold"><tspan fill="#BFBFBF" font-size="32" font-weight="bold">0</tspan></text>
+</g>
+<g id="shape-5" data-name="文本框 4">
+<rect x="735.41" y="204.83" width="34.53" height="48.47" fill="none" />
+<text x="745.01" y="236.83" text-anchor="start" xml:space="preserve" font-family="&quot;华文宋体&quot;, +mn-cs, sans-serif" font-size="32" fill="#BFBFBF" font-weight="bold"><tspan fill="#BFBFBF" font-size="32" font-weight="bold">1</tspan></text>
+</g>
+<g id="shape-6" data-name="文本框 5">
+<rect x="770.28" y="210.74" width="57.42" height="106.63" fill="none" />
+<text x="779.88" y="283.54" text-anchor="start" xml:space="preserve" font-family="&quot;华文宋体&quot;, +mn-cs, sans-serif" font-size="80" fill="#BFBFBF" font-weight="bold"><tspan fill="#BFBFBF" font-size="80" font-weight="bold">8</tspan></text>
+</g>
+<g id="shape-7" data-name="AutoShape 34">
+<rect x="121.5" y="13.5" width="556.33" height="447" fill="none" stroke="none" />
+</g>
+<g id="shape-8" data-name="Freeform 36">
+<path d="M 255.81 451.6 C 255.81 451.6 81 438.83 131.31 271.96 C 181.62 105.09 286.51 6.33 402.48 14.85 C 518.45 23.36 622.48 67.63 666.82 220.03 C 711.17 372.43 619.92 432.87 499.69 451.6 C 379.46 470.33 255.81 451.6 255.81 451.6 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#EAEAEA" stroke-linejoin="miter" />
+</g>
+<g id="shape-9" data-name="Freeform 37">
+<path d="M 411.44 23.26 C 522.7 33.9 622.02 75.64 663.8 221.27 C 706 367.33 618.19 425.25 503.52 444.41 C 388 464 266.93 446.11 266.51 443.99 C 265.66 442.28 99.83 430.36 145.87 270.67 C 146.72 267.26 147.58 263.86 148.86 260.45 C 159.51 225.1 173.15 192.74 190.2 163.78 C 244.77 70.1 325.76 15.17 411.44 23.26 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#E8E8E8" stroke-linejoin="miter" />
+</g>
+<g id="shape-10" data-name="Freeform 38">
+<path d="M 420.42 31.79 C 526.99 44.14 621.63 83.74 660.85 222.97 C 700.5 362.2 616.52 417.55 506.96 437.56 C 396.54 458 278.03 440.97 276.75 436.71 C 275.9 433.3 118.17 421.81 159.94 269.38 C 161.22 265.97 161.65 262.57 162.5 259.59 C 172.73 225.52 185.52 194.02 203 165.06 C 255.86 76.5 336.44 22 420.42 31.79 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#E6E6E5" stroke-linejoin="miter" />
+</g>
+<g id="shape-11" data-name="Freeform 39">
+<path d="M 429.3 40.42 C 531.19 54.88 620.72 91.48 658.24 224.25 C 695.33 357.45 614.76 409.37 510.73 430.22 C 404.57 451.5 289.04 435.33 287.33 428.95 C 285.62 423.84 136.83 413.2 174.35 268.09 C 175.2 265.11 175.63 261.7 176.48 258.3 C 185.44 225.96 197.37 195.32 215.28 166.38 C 266.87 83.4 347.02 28.5 429.3 40.42 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#E4E4E3" stroke-linejoin="miter" />
+</g>
+<g id="shape-12" data-name="Freeform 40">
+<path d="M 438.28 48.79 C 535.49 64.97 620.34 99.46 655.3 225.9 C 689.83 352.35 613.09 401.74 514.6 423.03 C 413.12 445.17 300.13 429.84 297.57 421.75 C 295.87 414.94 155.17 404.72 188.85 266.78 C 189.7 263.8 189.7 260.39 190.56 257.41 C 198.66 226.33 209.74 196.53 228.08 167.58 C 277.96 90.09 357.69 35.17 438.28 48.79 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#E2E2E1" stroke-linejoin="miter" />
+</g>
+<g id="shape-13" data-name="Freeform 41">
+<path d="M 447.2 57.32 C 539.29 75.2 619.86 107.56 652.27 227.17 C 684.67 347.22 611.34 394.04 518.4 416.18 C 421.62 439.17 311.2 424.27 308.22 414.05 C 305.66 405.54 173.5 396.17 203.34 265.49 C 203.77 262.51 203.77 259.53 204.62 256.55 C 211.87 226.75 222.1 197.8 240.86 168.86 C 288.61 96.49 367.91 42 447.2 57.32 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#E0DFDF" stroke-linejoin="miter" />
+</g>
+<g id="shape-14" data-name="Freeform 42">
+<path d="M 456.21 65.95 C 543.6 85.1 619.48 115.75 649.33 228.96 C 679.17 342.18 609.68 386.44 521.86 409 C 429.78 432.83 322.35 419.21 318.94 406.87 C 315.96 396.66 192.33 387.72 217.49 264.29 C 218.34 261.73 218.34 258.33 218.76 255.35 C 224.73 227.26 234.54 199.17 253.72 170.65 C 299.33 102.98 378.63 48.5 456.21 65.95 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#DEDDDD" stroke-linejoin="miter" />
+</g>
+<g id="shape-15" data-name="Freeform 43">
+<path d="M 465.14 74.48 C 547.83 95.33 619.01 123.85 646.29 230.23 C 674 337.47 607.51 378.75 525.67 402.15 C 438.28 426.83 333 413.64 329.16 399.17 C 325.75 387.68 210.67 378.75 231.98 263 C 232.41 260.45 232.41 257.47 232.83 254.49 C 237.95 227.68 246.47 200.44 266.51 171.93 C 309.98 109.38 388.84 55.33 465.14 74.48 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#DCDBDB" stroke-linejoin="miter" />
+</g>
+<g id="shape-16" data-name="Freeform 44">
+<path d="M 474.06 82.95 C 551.63 105.08 618.12 131.9 643.69 231.93 C 668.83 332.39 605.76 371.55 529.47 394.96 C 446.36 420.5 344.07 408.16 339.81 391.98 C 335.98 378.36 229 370.27 246.47 261.73 C 246.9 259.17 246.47 256.19 246.9 253.64 C 251.16 228.1 258.83 201.71 279.29 173.19 C 320.21 115.73 399.48 61.67 474.06 82.95 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#DAD9D9" stroke-linejoin="miter" />
+</g>
+<g id="shape-17" data-name="Freeform 45">
+<path d="M 483.04 91.41 C 555.92 114.4 617.73 139.51 640.74 233.16 C 663.33 327.24 604.09 363.84 532.91 387.68 C 454.91 414.5 355.17 403.01 350.05 384.28 C 345.79 369.38 247.33 361.29 260.97 260.41 C 261.4 257.85 260.55 255.3 260.97 252.74 C 264.38 228.48 271.2 202.94 291.66 174.42 C 330.45 122.06 409.73 68 483.04 91.41 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#D8D7D7" stroke-linejoin="miter" />
+</g>
+<g id="shape-18" data-name="Freeform 46">
+<path d="M 492.03 99.53 C 560.25 123.79 617.4 147.62 637.86 234.87 C 658.33 322.11 602.47 356.15 536.8 380.84 C 463.03 408.5 366.23 397.44 360.69 377.01 C 356 359.98 265.17 352.32 274.97 259.12 C 275.4 257 274.55 254.02 274.97 251.46 C 277.11 229.33 283.08 204.23 304.4 175.71 C 340.22 128.05 419.96 74 492.03 99.53 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#D6D5D5" stroke-linejoin="miter" />
+</g>
+<g id="shape-19" data-name="Freeform 47">
+<path d="M 500.88 108 C 563.98 133.12 616.85 155.68 634.76 236.14 C 652.67 317.45 600.22 348.95 540.53 373.64 C 471.03 402.17 377.23 391.95 370.83 369.39 C 365.72 351.08 283 343.42 289.4 257.85 C 289.82 255.72 288.54 253.17 288.54 250.62 C 290.25 229.76 295.36 205.49 317.11 176.97 C 350.37 134.4 430.53 80.33 500.88 108 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#D4D3D3" stroke-linejoin="miter" />
+</g>
+<g id="shape-20" data-name="Freeform 48">
+<path d="M 509.94 116.56 C 568.36 142.53 616.54 163.81 631.89 237.88 C 647.67 312.38 598.63 341.75 544.48 366.87 C 479.24 396.67 388.41 386.88 381.59 362.19 C 376.05 341.75 301 334.51 303.98 256.61 C 303.98 254.48 302.71 251.93 302.71 249.8 C 303.56 230.22 307.82 206.81 330 178.71 C 360.27 140.4 440.86 86.33 509.94 116.56 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#D2D1D1" stroke-linejoin="miter" />
+</g>
+<g id="shape-21" data-name="Freeform 49">
+<path d="M 518.8 125.09 C 572.51 151.49 615.56 171.93 629.22 239.17 C 642 307.25 596.83 334.49 547.79 359.61 C 487.25 390.67 399.44 381.3 392.21 354.48 C 385.81 332.79 318.31 325.21 318.45 255.34 C 318.04 253.64 316.77 251.08 316.77 248.96 C 316.77 230.64 319.73 208.09 342.76 180.01 C 370.04 146.39 451.03 92.33 518.8 125.09 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#D0CFCF" stroke-linejoin="miter" />
+</g>
+<g id="shape-22" data-name="Freeform 50">
+<path d="M 527.85 133.57 C 576.87 159.96 615.69 179.98 626.33 240.82 C 637 302.12 594.79 327.21 551.73 352.31 C 495.87 384.67 410.57 375.72 402.47 347.21 C 396.07 323.4 338.14 320.93 332.55 254.01 C 332.11 252.32 330.86 249.77 330.86 247.65 C 329.98 231.04 327.43 205.08 355.59 181.24 C 373.91 148.06 461.76 97.83 527.85 133.57 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#CECDCD" stroke-linejoin="miter" />
+</g>
+<g id="shape-23" data-name="Freeform 51">
+<path d="M 536.74 142.06 C 581.08 168.9 614.78 187.63 623.29 242.11 C 631.83 297.44 593.02 320.41 555.52 345.54 C 503.92 379.17 421.61 370.23 413.1 339.58 C 405.85 314.46 356.09 309.66 347 252.75 C 346.59 251.04 344.89 248.92 344.89 246.79 C 343.17 231.46 339.33 205.92 367.91 182.5 C 384.12 154.42 471.95 103.33 536.74 142.06 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#CCCBCB" stroke-linejoin="miter" />
+</g>
+<g id="shape-24" data-name="Freeform 52">
+<path d="M 545.76 150.57 C 585.83 177.4 614.4 195.7 620.37 243.83 C 626.33 292.39 591.38 313.7 558.96 338.4 C 512.07 374.17 432.76 365.23 423.38 332.43 C 416.15 305.18 372.26 297.01 361.56 251.5 C 360.71 250.23 359.45 247.68 359.01 245.98 C 356.89 232.35 351.33 206.79 380.76 183.79 C 394.4 160.36 483.09 108.83 545.76 150.57 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#CAC9C9" stroke-linejoin="miter" />
+</g>
+<g id="shape-25" data-name="Freeform 53">
+<path d="M 554.63 159.06 C 590.03 185.88 613.92 203.77 617.32 245.08 C 621.17 287.24 590.03 307.25 562.76 331.11 C 520.52 369 443.77 359.62 433.96 324.72 C 425.86 296.18 385.92 288.49 375.96 250.19 C 375.11 248.92 373.41 246.79 372.97 245.08 C 369.98 232.74 363.17 207.6 393.46 185.47 C 404.11 166.31 493.66 113.5 554.63 159.06 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#C8C7C7" stroke-linejoin="miter" />
+</g>
+<g id="shape-26" data-name="Freeform 54">
+<path d="M 563.57 167.68 C 595.12 194.07 613.45 211.94 614.72 246.83 C 616 282.13 588.3 300.86 566.56 324.26 C 529.04 363.83 454.88 354.04 444.65 317.46 C 436.12 286.82 404.86 280.02 390.07 248.96 C 389.23 247.69 387.52 245.55 387.11 243.86 C 383.26 233.2 375.17 208.97 406.28 186.83 C 414.37 172.37 505.17 118.33 563.57 167.68 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#C6C5C5" stroke-linejoin="miter" />
+</g>
+<g id="shape-27" data-name="Freeform 55">
+<path d="M 572.6 176.2 C 599.88 202.59 612.67 220.06 611.81 248.15 C 610.52 277.52 587.52 294.54 570.48 317.09 C 538.5 359.67 466.02 349.02 454.95 309.87 C 446 277.95 419.12 271.6 404.64 247.72 C 403.79 246.87 401.67 244.74 400.81 243.04 C 396.98 233.67 387.17 209.83 419.14 188.13 C 424.26 178.76 516.76 123 572.6 176.2 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#C4C3C3" stroke-linejoin="miter" />
+</g>
+<g id="shape-28" data-name="Freeform 56">
+<path d="M 581.49 184.72 C 604.93 210.68 612.17 228.14 608.75 249.86 C 605.36 272.43 586.59 288.17 573.82 310.3 C 548.24 355 477.09 343.5 465.58 302.64 C 456.2 268.59 431.59 258.62 419.12 246.46 C 417.84 245.59 415.7 243.47 414.85 242.19 C 410.6 234.09 398.67 210.68 431.48 189.42 C 434.47 184.72 529.07 126.83 581.49 184.72 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#C2C1C1" stroke-linejoin="miter" />
+</g>
+<g id="shape-29" data-name="Freeform 57">
+<path d="M 444.18 190.67 C 444.18 190.67 542.23 130.67 590.41 193.22 C 631.33 246.41 593.82 261.31 577.62 303.01 C 559.29 350.67 487.66 337.9 475.73 294.92 C 465.92 259.6 444.18 253.65 433.52 245.13 C 432.24 244.28 429.68 242.16 428.83 240.88 C 423.72 234.5 410.5 211.52 444.18 190.67 Z" fill="none" stroke-width="0.5" stroke-linecap="butt" stroke="#C0BFBF" stroke-linejoin="miter" />
+</g>
+<g id="shape-30" data-name="Freeform 58">
+<path d="M 444.18 190.67 C 444.18 190.67 542.23 130.67 590.41 193.22 C 631.33 246.41 593.82 261.31 577.62 303.01 C 559.29 350.67 487.66 337.9 475.73 294.92 C 465.92 259.6 442.9 252.79 432.24 244.28 C 430.96 243.43 429.68 242.16 428.83 240.88 C 423.72 234.5 410.5 211.52 444.18 190.67 Z" fill="#040000" stroke="none" />
+</g>
+<g id="shape-32" data-name="文本框 31">
+<rect x="501.73" y="338.17" width="280.92" height="87.24" fill="none" />
+<text x="511.33" y="397.37" text-anchor="start" xml:space="preserve" font-family="&quot;华文宋体&quot;, +mn-cs, sans-serif" font-size="64" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="64" font-weight="bold">THANKS</tspan></text>
+</g>
+<g id="shape-33" data-name="矩形 32">
+<rect x="608.12" y="426.4" width="179.6" height="32.31" fill="none" />
+<text x="617.72" y="447.06" text-anchor="start" xml:space="preserve" font-family="&quot;华文宋体&quot;, +mn-cs, sans-serif" font-size="18.67" fill="#808080" font-style="italic"><tspan fill="#808080" font-size="18.67" font-style="italic">Report: </tspan><tspan fill="#808080" font-size="18.67" font-style="italic">RuiQi</tspan><tspan fill="#808080" font-size="18.67" font-style="italic"> Design</tspan></text>
+</g>
+<g id="shape-34" data-name="文本框 33">
+<rect x="482.05" y="207.98" width="90.74" height="61.39" fill="none" />
+<text x="527.42" y="249.04" text-anchor="middle" xml:space="preserve" font-family="&quot;Agency FB&quot;, +mn-cs, sans-serif" font-size="42.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="42.67">LOGO</tspan></text>
+</g></svg>

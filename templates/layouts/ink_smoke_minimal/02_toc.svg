@@ -1,0 +1,44 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><linearGradient id="txtgrad1" x1="1.1022" y1="0.2808" x2="-0.1022" y2="0.7192"><stop offset="0.7" stop-color="#A6A6A6" /><stop offset="0.15" stop-color="#595959" /></linearGradient><linearGradient id="txtgrad2" x1="1.1022" y1="0.2808" x2="-0.1022" y2="0.7192"><stop offset="0.7" stop-color="#A6A6A6" /><stop offset="0.15" stop-color="#595959" /></linearGradient><linearGradient id="txtgrad3" x1="1.1022" y1="0.2808" x2="-0.1022" y2="0.7192"><stop offset="0.7" stop-color="#A6A6A6" /><stop offset="0.15" stop-color="#595959" /></linearGradient><linearGradient id="txtgrad4" x1="1.1022" y1="0.2808" x2="-0.1022" y2="0.7192"><stop offset="0.7" stop-color="#A6A6A6" /><stop offset="0.15" stop-color="#595959" /></linearGradient><linearGradient id="txtgrad5" x1="1.1022" y1="0.2808" x2="-0.1022" y2="0.7192"><stop offset="0.7" stop-color="#A6A6A6" /><stop offset="0.15" stop-color="#595959" /></linearGradient><linearGradient id="txtgrad6" x1="1.1022" y1="0.2808" x2="-0.1022" y2="0.7192"><stop offset="0.7" stop-color="#A6A6A6" /><stop offset="0.15" stop-color="#595959" /></linearGradient><linearGradient id="txtgrad7" x1="1.1022" y1="0.2808" x2="-0.1022" y2="0.7192"><stop offset="0.7" stop-color="#A6A6A6" /><stop offset="0.15" stop-color="#595959" /></linearGradient><linearGradient id="txtgrad8" x1="1.1022" y1="0.2808" x2="-0.1022" y2="0.7192"><stop offset="0.7" stop-color="#A6A6A6" /><stop offset="0.15" stop-color="#595959" /></linearGradient><linearGradient id="txtgrad9" x1="1.1022" y1="0.2808" x2="-0.1022" y2="0.7192"><stop offset="0.7" stop-color="#A6A6A6" /><stop offset="0.15" stop-color="#595959" /></linearGradient></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="layout-shape-7" data-name="Scene_01_合并文件">
+<image href="ink_smoke_overlay.png" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+</g>
+<g id="layout-shape-9" data-name="图片 8">
+<image href="ink_smoke_toc.jpg" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+</g>
+<g id="shape-2" data-name="Title 1">
+<rect x="376.9" y="302.9" width="526.2" height="142.5" fill="none" />
+<text x="640" y="389.3" text-anchor="middle" xml:space="preserve" font-family="&quot;禹卫书法行书简体&quot;, &quot;Source Sans Pro&quot;, sans-serif" font-size="96" fill="url(#txtgrad1)"><tspan fill="url(#txtgrad1)" font-size="96">CONTENT</tspan></text>
+</g>
+<g id="shape-27" data-name="矩形 26">
+<rect x="143.52" y="534.33" width="68.51" height="119.33" fill="none" />
+<text x="177.77" y="607.13" text-anchor="middle" xml:space="preserve" font-family="&quot;文悦古典明朝体 (非商业使用) W5&quot;, &quot;等线&quot;, sans-serif" font-size="80" fill="url(#txtgrad2)"><tspan fill="url(#txtgrad2)" font-size="80">1</tspan></text>
+</g>
+<g id="shape-29" data-name="Rectangle 70">
+<rect x="198.81" y="574.71" width="128.15" height="61.39" fill="none" stroke="none" />
+<text x="208.41" y="610.98" text-anchor="start" xml:space="preserve" font-family="&quot;等线 Light&quot;, &quot;微软雅黑&quot;, &quot;Open Sans&quot;, sans-serif" font-size="21.33" fill="url(#txtgrad3)">{{TOC_ITEM_1_TITLE}}</text>
+</g>
+<g id="shape-31" data-name="矩形 30">
+<rect x="420.09" y="534.33" width="68.51" height="119.33" fill="none" />
+<text x="454.34" y="607.13" text-anchor="middle" xml:space="preserve" font-family="&quot;文悦古典明朝体 (非商业使用) W5&quot;, &quot;等线&quot;, sans-serif" font-size="80" fill="url(#txtgrad4)"><tspan fill="url(#txtgrad4)" font-size="80">2</tspan></text>
+</g>
+<g id="shape-33" data-name="Rectangle 70">
+<rect x="475.38" y="574.71" width="128.15" height="61.39" fill="none" stroke="none" />
+<text x="484.98" y="610.98" text-anchor="start" xml:space="preserve" font-family="&quot;等线 Light&quot;, &quot;微软雅黑&quot;, &quot;Open Sans&quot;, sans-serif" font-size="21.33" fill="url(#txtgrad5)">{{TOC_ITEM_2_TITLE}}</text>
+</g>
+<g id="shape-35" data-name="矩形 34">
+<rect x="696.66" y="534.33" width="68.51" height="119.33" fill="none" />
+<text x="730.91" y="607.13" text-anchor="middle" xml:space="preserve" font-family="&quot;文悦古典明朝体 (非商业使用) W5&quot;, &quot;等线&quot;, sans-serif" font-size="80" fill="url(#txtgrad6)"><tspan fill="url(#txtgrad6)" font-size="80">3</tspan></text>
+</g>
+<g id="shape-37" data-name="Rectangle 70">
+<rect x="751.95" y="574.71" width="128.15" height="61.39" fill="none" stroke="none" />
+<text x="761.55" y="610.98" text-anchor="start" xml:space="preserve" font-family="&quot;等线 Light&quot;, &quot;微软雅黑&quot;, &quot;Open Sans&quot;, sans-serif" font-size="21.33" fill="url(#txtgrad7)"><tspan fill="url(#txtgrad7)" font-size="21.33">项目和市场分析</tspan></text>
+</g>
+<g id="shape-39" data-name="矩形 38">
+<rect x="973.23" y="534.33" width="68.51" height="119.33" fill="none" />
+<text x="1007.48" y="607.13" text-anchor="middle" xml:space="preserve" font-family="&quot;文悦古典明朝体 (非商业使用) W5&quot;, &quot;等线&quot;, sans-serif" font-size="80" fill="url(#txtgrad8)"><tspan fill="url(#txtgrad8)" font-size="80">4</tspan></text>
+</g>
+<g id="shape-41" data-name="Rectangle 70">
+<rect x="1028.52" y="574.71" width="128.15" height="61.39" fill="none" stroke="none" />
+<text x="1038.12" y="610.98" text-anchor="start" xml:space="preserve" font-family="&quot;等线 Light&quot;, &quot;微软雅黑&quot;, &quot;Open Sans&quot;, sans-serif" font-size="21.33" fill="url(#txtgrad9)"><tspan fill="url(#txtgrad9)" font-size="21.33">项目和市场分析</tspan></text>
+</g></svg>

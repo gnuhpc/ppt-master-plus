@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+<rect width="1280" height="720" fill="#FFFFFF"/>
+<!-- Section frame -->
+<rect x="496.51" y="182.11" width="286.97" height="306.21" fill="none" stroke="#D9D9D9" stroke-width="1"/>
+<!-- Large section number -->
+<text x="537.63" y="350.24" text-anchor="start" font-family="&quot;Open Sans&quot;, sans-serif" font-size="184" fill="#000000" font-weight="bold">{{CHAPTER_NUM}}</text>
+<!-- L-corner guide lines -->
+<line x1="791.93" y1="325.14" x2="791.93" y2="497.62" stroke="#D9D9D9" stroke-width="1"/>
+<line x1="528.03" y1="497.62" x2="791.93" y2="497.62" stroke="#D9D9D9" stroke-width="1"/>
+<!-- Section title -->
+<text x="643.34" y="404.84" text-anchor="middle" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="18.67" fill="#262626" font-weight="bold">{{PAGE_TITLE}}</text>
+<!-- Section description -->
+<text x="648.17" y="442.47" text-anchor="middle" font-family="&quot;Open Sans&quot;, sans-serif" font-size="10.67" fill="#BFBFBF">{{CONTENT_AREA}}</text>
+</svg>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <text x="640" y="120" font-family="sans-serif" font-size="36" font-weight="bold" fill="#1E293B" text-anchor="middle">{{PAGE_TITLE}}</text>
+  
+  <g transform="translate(100, 320)">
+    <!-- Step 1 -->
+    <g transform="translate(0, 0)">
+      <polygon points="0,0 180,0 210,40 180,80 0,80" fill="#0F172A" />
+      <text x="100" y="46" font-family="sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Step 1</text>
+      <text x="100" y="130" font-family="sans-serif" font-size="16" font-weight="bold" fill="#0F172A" text-anchor="middle">Initiation</text>
+      <text x="100" y="160" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Project setup</text>
+    </g>
+    
+    <!-- Step 2 -->
+    <g transform="translate(215, 0)">
+      <polygon points="0,0 180,0 210,40 180,80 0,80 30,40" fill="#334155" />
+      <text x="110" y="46" font-family="sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Step 2</text>
+      <text x="110" y="130" font-family="sans-serif" font-size="16" font-weight="bold" fill="#334155" text-anchor="middle">Planning</text>
+      <text x="110" y="160" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Resource allocation</text>
+    </g>
+    
+    <!-- Step 3 -->
+    <g transform="translate(430, 0)">
+      <polygon points="0,0 180,0 210,40 180,80 0,80 30,40" fill="#475569" />
+      <text x="110" y="46" font-family="sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Step 3</text>
+      <text x="110" y="130" font-family="sans-serif" font-size="16" font-weight="bold" fill="#475569" text-anchor="middle">Execution</text>
+      <text x="110" y="160" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Active development</text>
+    </g>
+    
+    <!-- Step 4 -->
+    <g transform="translate(645, 0)">
+      <polygon points="0,0 180,0 210,40 180,80 0,80 30,40" fill="#64748B" />
+      <text x="110" y="46" font-family="sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Step 4</text>
+      <text x="110" y="130" font-family="sans-serif" font-size="16" font-weight="bold" fill="#64748B" text-anchor="middle">Monitoring</text>
+      <text x="110" y="160" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Quality assurance</text>
+    </g>
+    
+    <!-- Step 5 -->
+    <g transform="translate(860, 0)">
+      <polygon points="0,0 210,0 210,80 0,80 30,40" fill="#94A3B8" />
+      <text x="120" y="46" font-family="sans-serif" font-size="20" font-weight="bold" fill="#FFFFFF" text-anchor="middle">Step 5</text>
+      <text x="120" y="130" font-family="sans-serif" font-size="16" font-weight="bold" fill="#94A3B8" text-anchor="middle">Closure</text>
+      <text x="120" y="160" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Delivery and review</text>
+    </g>
+  </g>
+</svg>

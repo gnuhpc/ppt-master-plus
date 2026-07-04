@@ -23,17 +23,26 @@ def find_svg_files(
         (list_of_svg_files, actual_directory_name) tuple.
     """
     dir_map = {
-        'output': 'svg_output',
-        'final': 'svg_final',
+        'output': 'svg_output_zh',
+        'final': 'svg_final_zh',
     }
 
     dir_name = dir_map.get(source, source)
     svg_dir = project_path / dir_name
 
     if not svg_dir.exists():
-        print(f"  Warning: {dir_name} directory does not exist, trying svg_output")
-        dir_name = 'svg_output'
-        svg_dir = project_path / dir_name
+        # Try legacy names first
+        legacy_name = 'svg_output' if dir_name == 'svg_output_zh' else ('svg_final' if dir_name == 'svg_final_zh' else None)
+        if legacy_name and (project_path / legacy_name).exists():
+            dir_name = legacy_name
+            svg_dir = project_path / dir_name
+        else:
+            print(f"  Warning: {dir_name} directory does not exist, trying svg_output_zh")
+            dir_name = 'svg_output_zh'
+            svg_dir = project_path / dir_name
+            if not svg_dir.exists() and (project_path / 'svg_output').exists():
+                dir_name = 'svg_output'
+                svg_dir = project_path / dir_name
 
     if not svg_dir.exists():
         if project_path.is_dir():
@@ -48,6 +57,7 @@ def find_svg_files(
 def find_notes_files(
     project_path: Path,
     svg_files: list[Path] | None = None,
+    source: str = 'notes',
 ) -> dict[str, str]:
     """Find notes files and map them to SVG files.
 
@@ -58,11 +68,14 @@ def find_notes_files(
     Args:
         project_path: Project directory path.
         svg_files: SVG file list (for filename matching).
+        source: Custom notes directory name or path.
 
     Returns:
         Dict mapping SVG filename stem to notes content.
     """
-    notes_dir = project_path / 'notes'
+    notes_dir = Path(source)
+    if not notes_dir.is_absolute():
+        notes_dir = project_path / notes_dir
     notes: dict[str, str] = {}
 
     if not notes_dir.exists():

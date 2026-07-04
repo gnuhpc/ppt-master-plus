@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+
+  <!-- Page Title -->
+  <g id="page-title">
+    <text x="640" y="66" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="34" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>{{PAGE_TITLE}}</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Bracket Groups (U-shaped connectors, opening downward) ===== -->
+
+  <!-- Bracket 1: Pair A (circles 1–2), dashed -->
+  <g id="bracket-pair-a">
+    <path d="M 175 408 L 175 340 L 345 340 L 345 408" fill="none" stroke="#94A3B8" stroke-dasharray="4,4" stroke-width="1.5"/>
+    <text x="260" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Group Label A</tspan>
+    </text>
+    <text x="260" y="307" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#94A3B8" text-anchor="middle">
+      <tspan>PHASE 1</tspan>
+    </text>
+  </g>
+
+  <!-- Bracket 2: Pair B (circles 3–4), dashed -->
+  <g id="bracket-pair-b">
+    <path d="M 545 408 L 545 340 L 735 340 L 735 408" fill="none" stroke="#94A3B8" stroke-dasharray="4,4" stroke-width="1.5"/>
+    <text x="640" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Group Label B</tspan>
+    </text>
+    <text x="640" y="307" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#94A3B8" text-anchor="middle">
+      <tspan>PHASE 2</tspan>
+    </text>
+  </g>
+
+  <!-- Bracket 3: Pair C (circles 5–6), dashed -->
+  <g id="bracket-pair-c">
+    <path d="M 935 408 L 935 340 L 1105 340 L 1105 408" fill="none" stroke="#94A3B8" stroke-dasharray="4,4" stroke-width="1.5"/>
+    <text x="1020" y="325" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="18" font-weight="600" fill="#0F172A" text-anchor="middle">
+      <tspan>Group Label C</tspan>
+    </text>
+    <text x="1020" y="307" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="13" fill="#94A3B8" text-anchor="middle">
+      <tspan>PHASE 3</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Six Numbered Double-Ring Circles ===== -->
+  <!-- Circle centers: x = 175, 345, 545, 735, 935, 1105  cy = 510 -->
+  <!-- Outer radius: 75  Inner radius: 63 -->
+
+  <!-- Circle 1 — fill: #0F172A -->
+  <g id="circle-1">
+    <circle cx="175" cy="510" r="75" fill="#0F172A"/>
+    <circle cx="175" cy="510" r="63" fill="#FFFFFF"/>
+    <text x="175" y="534" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="76" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>1</tspan>
+    </text>
+  </g>
+
+  <!-- Circle 2 — fill: #334155 -->
+  <g id="circle-2">
+    <circle cx="345" cy="510" r="75" fill="#334155"/>
+    <circle cx="345" cy="510" r="63" fill="#FFFFFF"/>
+    <text x="345" y="534" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="76" font-weight="bold" fill="#334155" text-anchor="middle">
+      <tspan>2</tspan>
+    </text>
+  </g>
+
+  <!-- Circle 3 — fill: #0F172A -->
+  <g id="circle-3">
+    <circle cx="545" cy="510" r="75" fill="#0F172A"/>
+    <circle cx="545" cy="510" r="63" fill="#FFFFFF"/>
+    <text x="545" y="534" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="76" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>3</tspan>
+    </text>
+  </g>
+
+  <!-- Circle 4 — fill: #334155 -->
+  <g id="circle-4">
+    <circle cx="735" cy="510" r="75" fill="#334155"/>
+    <circle cx="735" cy="510" r="63" fill="#FFFFFF"/>
+    <text x="735" y="534" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="76" font-weight="bold" fill="#334155" text-anchor="middle">
+      <tspan>4</tspan>
+    </text>
+  </g>
+
+  <!-- Circle 5 — fill: #0F172A -->
+  <g id="circle-5">
+    <circle cx="935" cy="510" r="75" fill="#0F172A"/>
+    <circle cx="935" cy="510" r="63" fill="#FFFFFF"/>
+    <text x="935" y="534" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="76" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>5</tspan>
+    </text>
+  </g>
+
+  <!-- Circle 6 — fill: #334155 -->
+  <g id="circle-6">
+    <circle cx="1105" cy="510" r="75" fill="#334155"/>
+    <circle cx="1105" cy="510" r="63" fill="#FFFFFF"/>
+    <text x="1105" y="534" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="76" font-weight="bold" fill="#334155" text-anchor="middle">
+      <tspan>6</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Sub-labels below circles ===== -->
+  <g id="circle-sublabels">
+    <text x="175" y="608" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>Step label</tspan>
+    </text>
+    <text x="345" y="608" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>Step label</tspan>
+    </text>
+    <text x="545" y="608" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>Step label</tspan>
+    </text>
+    <text x="735" y="608" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>Step label</tspan>
+    </text>
+    <text x="935" y="608" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>Step label</tspan>
+    </text>
+    <text x="1105" y="608" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="14" fill="#64748B" text-anchor="middle">
+      <tspan>Step label</tspan>
+    </text>
+  </g>
+
+  <!-- Source note -->
+  <text x="60" y="698" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#CBD5E1">
+    <tspan>Source: Internal Report</tspan>
+  </text>
+</svg>

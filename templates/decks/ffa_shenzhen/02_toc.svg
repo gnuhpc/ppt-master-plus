@@ -1,0 +1,54 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <defs>
+    <linearGradient id="ggrad1" x1="0.5" y1="0" x2="0.5" y2="1">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity="0.08" />
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0.0" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Background -->
+  <rect x="0" y="0" width="1280" height="720" fill="#000000" />
+  <image href="content_bg.jpeg" x="0" y="0" width="1280" height="720" preserveAspectRatio="none" />
+  
+  <!-- Logo -->
+  <image href="logo.png" x="33.165" y="26.635" width="99.41" height="48.145" preserveAspectRatio="none" />
+
+  <!-- Page Title -->
+  <text x="640" y="116" text-anchor="middle" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="32" fill="#FFFFFF" font-weight="bold">Agenda 目录</text>
+
+  <!-- Glassmorphic Card -->
+  <rect x="99.5" y="180" width="1081" height="443" rx="8" fill="url(#ggrad1)" stroke="#FFFFFF" stroke-opacity="0.15" stroke-width="1" />
+
+  <!-- TOC Grid (2x2) -->
+  <!-- Item 1 -->
+  <g id="toc-item-1">
+    <text x="180" y="280" font-family="Space Grotesk, Arial, sans-serif" font-size="44" fill="#9966F7" font-weight="bold">01</text>
+    <text x="250" y="275" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="22" fill="#FFFFFF" font-weight="bold">{{TOC_ITEM_1_TITLE}}</text>
+    <text x="250" y="305" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" fill="#A0A0A0">{{TOC_ITEM_1_DESC}}</text>
+  </g>
+
+  <!-- Item 2 -->
+  <g id="toc-item-2">
+    <text x="680" y="280" font-family="Space Grotesk, Arial, sans-serif" font-size="44" fill="#4DB5FF" font-weight="bold">02</text>
+    <text x="750" y="275" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="22" fill="#FFFFFF" font-weight="bold">{{TOC_ITEM_2_TITLE}}</text>
+    <text x="750" y="305" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" fill="#A0A0A0">{{TOC_ITEM_2_DESC}}</text>
+  </g>
+
+  <!-- Item 3 -->
+  <g id="toc-item-3">
+    <text x="180" y="460" font-family="Space Grotesk, Arial, sans-serif" font-size="44" fill="#04CF82" font-weight="bold">03</text>
+    <text x="250" y="455" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="22" fill="#FFFFFF" font-weight="bold">{{TOC_ITEM_3_TITLE}}</text>
+    <text x="250" y="485" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" fill="#A0A0A0">{{TOC_ITEM_3_DESC}}</text>
+  </g>
+
+  <!-- Item 4 -->
+  <g id="toc-item-4">
+    <text x="680" y="460" font-family="Space Grotesk, Arial, sans-serif" font-size="44" fill="#F8DE4B" font-weight="bold">04</text>
+    <text x="750" y="455" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="22" fill="#FFFFFF" font-weight="bold">{{TOC_ITEM_4_TITLE}}</text>
+    <text x="750" y="485" font-family="Microsoft YaHei, PingFang SC, sans-serif" font-size="14" fill="#A0A0A0">{{TOC_ITEM_4_DESC}}</text>
+  </g>
+
+  <!-- Footer page num -->
+  <text x="640" y="690" text-anchor="middle" font-family="Space Grotesk, Arial, sans-serif" font-size="12" fill="#666666">{{PAGE_NUM}}</text>
+</svg>

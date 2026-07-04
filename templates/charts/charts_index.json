@@ -1,12 +1,14 @@
 {
   "meta": {
-    "total": 71,
+    "total": 131,
     "defaultViewBox": "0 0 1280 720",
-    "formats": ["ppt169"],
+    "formats": [
+      "ppt169"
+    ],
     "filePattern": "{key}.svg",
     "libraryPositioning": "Visualization template library covering charts, infographics, diagrams, and strategic frameworks. The `charts/` path is retained for backward compatibility. Templates are named by visual structure, not by business-model name — model-specific frameworks (SWOT, BCG, PEST, OKR, Porter's Five Forces, Value Chain, etc.) are matched via keywords in `summary`.",
-    "summaryGrammar": "Each chart's `summary` is a selection rule, not a description. Format: 'Pick for <content shape + scale>. Skip if <reason → alternative>'. Strategist matches every page's content shape against all 71 summaries; no category/keyword index — full-read is intentional.",
-    "updated": "2026-05-13"
+    "summaryGrammar": "Each chart's `summary` is a selection rule, not a description. Format: 'Pick for <content shape + scale>. Skip if <reason → alternative>'. Strategist matches every page's content shape against all 116 summaries; no category/keyword index — full-read is intentional.",
+    "updated": "2026-06-28"
   },
   "charts": {
     "area_chart": {
@@ -221,6 +223,186 @@
     },
     "labeled_card": {
       "summary": "Pick for 3-4 parallel aspects of one subject with per-aspect titles + short body (self-introduction, four-pillar overview, capability quadrant). Skip for plain feature lists (use icon_grid), sequential steps (use numbered_steps), or strategic quadrants (use quadrant_text_bullets / matrix_2x2)."
+    },
+    "classic_funnel": {
+      "summary": "Pick for 4-stage funnel conversion flow with a light layout style. Skip for dark themes (use funnel_chart)."
+    },
+    "classic_venn": {
+      "summary": "Pick for 3-set overlapping relation Venn diagram in light gray style. Skip for dark themes (use venn_diagram)."
+    },
+    "classic_target_rings": {
+      "summary": "Pick for concentric circle layers showing hierarchy from core focus to outer dimensions. Skip if pure Venn relations are desired (use classic_venn)."
+    },
+    "compass_process": {
+      "summary": "Pick for a lifecycle process laid out as a circular compass with cardinal markers. Skip for simple linear step process (use process_flow)."
+    },
+    "classic_org_chart": {
+      "summary": "Pick for a vertical tree hierarchy organization chart, ideal for team structures and role levels. Skip for horizontal flow (use process_flow)."
+    },
+    "classic_swot": {
+      "summary": "Pick for SWOT analysis with four quadrants (Strengths, Weaknesses, Opportunities, Threats) and a central badge. Skip for generic quadrants without central badges (use quadrant_text_bullets)."
+    },
+    "contrast_triangle": {
+      "summary": "Pick for comparing two opposite choices or states using left/right visual triangle stacks. Skip for simple list comparison (use comparison_rows)."
+    },
+    "comparison_rows": {
+      "summary": "Pick for listing multiple comparison points in horizontal rows, each having a distinct pill label. Skip for side-by-side table comparisons (use comparison_table)."
+    },
+    "circular_percentages": {
+      "summary": "Pick for displaying 4 distinct circular percentage gauges side-by-side. Skip if displaying simple numbers without progress gauges (use kpi_cards)."
+    },
+    "horizontal_steps": {
+      "summary": "Pick for a linear, horizontal 4-step process showing milestone sequence. Skip for cyclical compass loops (use compass_process)."
+    },
+    "horizontal_timeline": {
+      "summary": "Pick for a multi-node horizontal timeline showing milestone highlights by year. Skip for vertical roadmaps (use roadmap_vertical)."
+    },
+    "callout_stages": {
+      "summary": "Pick for a 3-step vertical callout timeline process, each stage has a top circular image frame and a callout speech box below it. Skip if the process has 4 stages or cyclical compass flow (use horizontal_steps / compass_process)."
+    },
+    "satellite_radial": {
+      "summary": "Pick for displaying 6 orbiting satellite nodes connected to a central hub circle (core principles, radial categories, central badge focus). Skip for linear milestones or steps (use process_flow)."
+    },
+    "four_concept_cards": {
+      "summary": "Pick for 4 parallel concepts or columns, each showing a circle icon badge at the top of a white card panel. Skip for simple text list quadrants (use quadrant_text_bullets)."
+    },
+    "four_step_timeline": {
+      "summary": "Pick for a 4-step horizontal timeline process, connected by a line, with circular nodes."
+    },
+    "five_pillar_cards": {
+      "summary": "Pick for a 5-item horizontal list/cards. Good for 5 pillars, 5 features, or 5 parallel concepts."
+    },
+    "four_item_grid": {
+      "summary": "Pick for a 4-item (2x2) grid layout. Good for 4 pillars, core values, or quadrants."
+    },
+    "six_step_timeline": {
+      "summary": "Pick for a 6-step horizontal timeline process, connected by a dashed line, with circular nodes."
+    },
+    "three_percentage_indicators": {
+      "summary": "Pick for displaying 3 key percentage metrics using circular progress indicators. Dark background."
+    },
+    "team_profile_three": {
+      "summary": "Pick for introducing 3 team members with their photo, role, and description."
+    },
+    "quote_slide": {
+      "summary": "Pick for a prominent quotation slide with a dark background."
+    },
+    "timeline_three_years": {
+      "summary": "Pick for a 3-year horizontal timeline with dates and text."
+    },
+    "four_large_stats": {
+      "summary": "Pick for highlighting 4 large numeric statistics or KPIs."
+    },
+    "swot_analysis_cross": {
+      "summary": "Pick for a SWOT analysis (Strengths, Weaknesses, Opportunities, Threats) in a 2x2 layout."
+    },
+    "triangle_contrast": {
+      "summary": "Pick for a 3-part pyramid/triangle relationship (e.g. Vision, Strategy, Execution)."
+    },
+    "four_quarters_timeline": {
+      "summary": "Pick for a horizontal timeline split into Q1, Q2, Q3, Q4 with distinct colors."
+    },
+    "two_column_comparison": {
+      "summary": "Pick for comparing two options (Option A vs Option B) side-by-side."
+    },
+    "hexagon_six_options": {
+      "summary": "Pick for 6 items radiating from a central core, like a hub and spoke or hexagon layout."
+    },
+    "simple_bar_chart": {
+      "summary": "Pick for a static stylistic bar chart visualization (4 columns)."
+    },
+    "two_large_percentages": {
+      "summary": "Pick for emphasizing two prominent large percentage statistics on a dark background."
+    },
+    "five_step_process": {
+      "summary": "Pick for a 5-step sequential process using connected chevron arrow shapes."
+    },
+    "three_icon_features": {
+      "summary": "Pick for 3 horizontal columns, each featuring a large icon placeholder on top."
+    },
+    "four_numbered_list_rows": {
+      "summary": "Pick for 4-row numbered list with oversized ghost numbers as background. Clean minimal style."
+    },
+    "four_phase_cards_vertical": {
+      "summary": "Pick for 4 vertical dark cards side-by-side, each with title area and content body divided by line. Good for lifecycle phases."
+    },
+    "three_photos_right_text": {
+      "summary": "Pick for a layout with 3 tall photo placeholders on the left and 3 title+text pairs on the right."
+    },
+    "diamond_center_two_sides": {
+      "summary": "Pick for a dark layout with a central diamond image shape and two side text panels. High visual impact."
+    },
+    "yes_no_checklist": {
+      "summary": "Pick for a 2-column checklist table with Yes/No indicators. Good for requirements or assessment slides."
+    },
+    "four_circles_connected": {
+      "summary": "Pick for 4 circles connected horizontally with lines, each with a label above and below. Good for 4 key concepts or roles."
+    },
+    "left_bar_content_rows": {
+      "summary": "Pick for a dark left sidebar with the title rotated, and 4 content rows with colored accent bars on the right side."
+    },
+    "section_divider_bold": {
+      "summary": "Pick for a section divider page with a giant ghost number, bold section number, and title on a dark background."
+    },
+    "triangle_cut_photo_right_title": {
+      "summary": "Pick for a layout with a large angled/triangular photo on the left and large title + description on the right."
+    },
+    "four_corner_radial_nodes": {
+      "summary": "Pick for 4 nodes placed in four corners, all connected to a central circle with concept or icon. Good for showing 4-attribute frameworks."
+    },
+    "dark_light_split_layout": {
+      "summary": "Pick for a half-dark (left) / half-light (right) layout. Left side has title and 2 numbered points; right side shows 4 content cards in a 2x2 grid."
+    },
+    "staircase_process": {
+      "summary": "Pick for a staircase/pyramid showing 5 progressive layers from top (narrow Vision) to bottom (wide Foundation). Excellent for hierarchical models."
+    },
+    "image_right_three_bullets": {
+      "summary": "Pick for a full-height image column on the right, and 3 bullet-point boxes on the left with title and descriptions."
+    },
+    "rotated_diamond_cards": {
+      "summary": "Pick for 4-item feature showcases or category overviews where bold rotated-diamond shapes create visual impact in a horizontal row. Skip if items need more than two lines of copy or if the palette requires light backgrounds inside the cards."
+    },
+    "vertical_node_bilateral_panels": {
+      "summary": "Pick for 3-section timelines or process flows where alternating left-right dark banner panels connect to a central spine via node circles. Skip if more than 3 sections are needed or if the content blocks require equal visual weight on both sides."
+    },
+    "tilted_callout_five": {
+      "summary": "Pick for 5 key points or list items using numbered dark circle nodes connected by short lines to slightly-tilted rounded-rect callout cards arranged in a staggered 3+2 row layout. Skip if items exceed 5 or if a uniform horizontal alignment without tilt is required."
+    },
+    "vertical_diamond_chain": {
+      "summary": "Pick for exactly 2 complementary nodes (capability vs. execution, problem vs. solution, location vs. configuration) where each node has 2 text panels on left and right sides connected by horizontal lines, and the two nodes are chained vertically. Skip for more than 2 nodes (use top_down_tree) or nodes without bilateral text panels (use diamond_center_two_sides)."
+    },
+    "grouped_numbered_circles": {
+      "summary": "Pick for 6 sequential steps or phases organized as 3 paired groups — each circle shows a large bold numeral, each pair is bracketed above with a group label. Skip for unpaired 6-step sequences (use six_step_timeline) or fewer steps (use numbered_steps or four_step_timeline)."
+    },
+    "bubble_constellation": {
+      "summary": "Pick for a 3-tier radial network showing one hero metric (large double-ring central hub), two secondary category metrics (medium double-ring hubs), and 8-12 satellite node items (small lettered circles) connected by directional lines — entity clusters, market segments, ecosystem maps. Skip for uniform radial layout without tiers (use satellite_radial) or for simple hub-and-spoke without satellites (use hub_spoke)."
+    },
+    "alternating_milestone_timeline": {
+      "summary": "Pick for a 4-step horizontal timeline where milestone nodes alternate above and below the axis — steps 1 & 3 branch downward with offset icon circles below, steps 2 & 4 branch upward with offset icon circles above, each pair linked by a double-headed connector arrow. Skip for uniform single-direction timelines (use four_step_timeline or horizontal_timeline) or for more than 4 steps (use six_step_timeline)."
+    },
+    "vertical_diamond_spine": {
+      "summary": "Pick for a 3-step sequential process, methodology, or approach where each stage needs a heading and 2-line description, displayed as numbered diamond nodes on a central vertical spine — strategy phases, project stages, 3-pillar framework. Skip for more than 3 steps (use numbered_steps or snake_flow) or for content requiring bilateral text panels on both sides of each node (use vertical_diamond_chain)."
+    },
+    "diamond_compass_cross": {
+      "summary": "Pick for exactly 4 items arranged as a compass cross (N/S/E/W diamond nodes with letter labels A/B/C/D) where each item's body text occupies one of the 4 diagonal corner panels — strategic frameworks, 4-pillar models, ABCD attribute matrices, cross-functional quadrants. Skip for items that fit a 2×2 rectangular grid (use quadrant_text_bullets) or for a single central diamond with two sides (use diamond_center_two_sides)."
+    },
+    "alternating_triangle_five": {
+      "summary": "Pick for exactly 5 parallel items displayed as interlocking alternating up/down triangles across the full width — 3 upward triangles (labels below) and 2 downward triangles filling the gaps (labels above) — complementary pairs, 5-force models, interleaved categories, feature showcases with visual contrast. Skip for fewer than 5 items (use icon_grid or feature_cards) or sequential steps (use process_flow or numbered_steps)."
+    },
+    "chain_drop_triangle_six": {
+      "summary": "Pick for exactly 6 sequential steps displayed as a horizontal chain line with circle nodes, each dropping a vertical connector to a downward-pointing filled triangle that acts as an icon container, with a step label above the chain and title+description below the triangle — communication flows, 6-phase processes, pipeline stages, workflow steps. Skip for fewer than 6 steps (use four_step_timeline or six_step_timeline) or for items that don't benefit from a visual icon container per step (use numbered_steps)."
+    },
+    "ring_stat_four": {
+      "summary": "Pick for exactly 4 parallel metrics, scores, or KPIs each displayed as a large circular ring badge (two-tone arc: dark foreground arc + light track) with a center icon and title+description below — customer satisfaction scores, brand health metrics, category ratings, survey results. Skip for more than 4 items (use kpi_dashboard or icon_grid), a single hero metric (use gauge_chart), items without a completion/status visual accent, or charts needing precise percentage proportions."
+    },
+    "code_text_split": {
+      "summary": "Pick for presenting technical code blocks (such as Flink SQL or Python API scripts) side-by-side with 2-3 business outcomes or operational action cards. Skip if showing plain non-technical side-by-side comparisons (use two_column_comparison or comparison_table)."
+    },
+    "left_accent_cards": {
+      "summary": "Pick for 3 parallel categories, principles, or architectural pillars where dark-mode cards with sharp vertical color-accent blocks on the left edge provide high visual weight and alignment. Skip if not using a dark theme or if columns are sequential steps (use horizontal_steps or process_flow)."
+    },
+    "rag_concentric_flow": {
+      "summary": "Pick for RAG (Retrieval-Augmented Generation), vector retrieval loop, or AI agent workflow consisting of a central real-time context hub and 4 orbiting nodes (such as Events, Vector Store, LLM, Agent) connected in a continuous feedback loop. Skip for simple timelines (use horizontal_timeline) or hierarchy structures (use top_down_tree)."
     }
   }
 }

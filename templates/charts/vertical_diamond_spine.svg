@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+
+  <!-- Page Title -->
+  <g id="page-title">
+    <text x="640" y="62" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="30" font-weight="bold" fill="#0F172A" text-anchor="middle">
+      <tspan>{{PAGE_TITLE}}</tspan>
+    </text>
+  </g>
+
+  <!-- Decorative large step numbers (very light, behind spine) -->
+  <g id="decorative-step-numbers">
+    <text x="165" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="96" font-weight="bold" fill="#F1F5F9" text-anchor="middle">
+      <tspan>01</tspan>
+    </text>
+    <text x="165" y="412" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="96" font-weight="bold" fill="#F1F5F9" text-anchor="middle">
+      <tspan>02</tspan>
+    </text>
+    <text x="165" y="592" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="96" font-weight="bold" fill="#F1F5F9" text-anchor="middle">
+      <tspan>03</tspan>
+    </text>
+  </g>
+
+  <!-- Vertical Spine -->
+  <g id="spine">
+    <line x1="320" y1="110" x2="320" y2="640" stroke="#CBD5E1" stroke-width="2"/>
+  </g>
+
+  <!-- ===== Diamond Node 1 (center y=200) ===== -->
+  <g id="diamond-1">
+    <polygon points="320,156 364,200 320,244 276,200" fill="#0F172A"/>
+    <text x="320" y="208" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>1</tspan>
+    </text>
+
+    <!-- Right text panel — Step 1 -->
+    <text x="400" y="178" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="start">
+      <tspan>STEP ONE</tspan>
+    </text>
+    <text x="400" y="206" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" font-weight="600" fill="#0F172A" text-anchor="start">
+      <tspan>First Stage Heading</tspan>
+    </text>
+    <text x="400" y="232" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" fill="#64748B" text-anchor="start">
+      <tspan>Brief supporting description line. Key insight for this step.</tspan>
+    </text>
+    <text x="400" y="252" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" fill="#64748B" text-anchor="start">
+      <tspan>Additional detail or metric shown on this row.</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Diamond Node 2 (center y=380) ===== -->
+  <g id="diamond-2">
+    <polygon points="320,336 364,380 320,424 276,380" fill="#1E293B"/>
+    <text x="320" y="388" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>2</tspan>
+    </text>
+
+    <!-- Right text panel — Step 2 -->
+    <text x="400" y="358" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="start">
+      <tspan>STEP TWO</tspan>
+    </text>
+    <text x="400" y="386" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" font-weight="600" fill="#0F172A" text-anchor="start">
+      <tspan>Second Stage Heading</tspan>
+    </text>
+    <text x="400" y="412" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" fill="#64748B" text-anchor="start">
+      <tspan>Brief supporting description line. Key insight for this step.</tspan>
+    </text>
+    <text x="400" y="432" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" fill="#64748B" text-anchor="start">
+      <tspan>Additional detail or metric shown on this row.</tspan>
+    </text>
+  </g>
+
+  <!-- ===== Diamond Node 3 (center y=560) ===== -->
+  <g id="diamond-3">
+    <polygon points="320,516 364,560 320,604 276,560" fill="#334155"/>
+    <text x="320" y="568" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" font-weight="bold" fill="#FFFFFF" text-anchor="middle">
+      <tspan>3</tspan>
+    </text>
+
+    <!-- Right text panel — Step 3 -->
+    <text x="400" y="538" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="12" font-weight="600" fill="#94A3B8" text-anchor="start">
+      <tspan>STEP THREE</tspan>
+    </text>
+    <text x="400" y="566" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="22" font-weight="600" fill="#0F172A" text-anchor="start">
+      <tspan>Third Stage Heading</tspan>
+    </text>
+    <text x="400" y="592" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" fill="#64748B" text-anchor="start">
+      <tspan>Brief supporting description line. Key insight for this step.</tspan>
+    </text>
+    <text x="400" y="612" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', 'PingFang SC', 'Microsoft YaHei', sans-serif" font-size="15" fill="#64748B" text-anchor="start">
+      <tspan>Additional detail or metric shown on this row.</tspan>
+    </text>
+  </g>
+
+  <!-- Source note -->
+  <text x="60" y="698" font-family="-apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif" font-size="13" fill="#CBD5E1">
+    <tspan>Source: Internal Report</tspan>
+  </text>
+</svg>

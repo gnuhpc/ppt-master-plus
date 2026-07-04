@@ -1,0 +1,83 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><filter id="fx1" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="5.33" flood-color="#000000" flood-opacity="0.3" /></filter><filter id="fx2" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="5.33" flood-color="#000000" flood-opacity="0.3" /></filter><filter id="fx3" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="5.33" flood-color="#000000" flood-opacity="0.3" /></filter><filter id="fx4" x="-25%" y="-25%" width="150%" height="150%"><feDropShadow dx="2.83" dy="2.83" stdDeviation="5.33" flood-color="#000000" flood-opacity="0.3" /></filter></defs><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-50" data-name="图片 49" transform="rotate(270 143.55 357.97)">
+<image href="split_office.png" x="-217.81" y="-38.49" width="722.7" height="792.92" preserveAspectRatio="none" />
+</g>
+<g id="shape-12" data-name="组合 11">
+<g id="shape-11" data-name="矩形 10">
+<rect x="782.39" y="142" width="71.06" height="71.06" fill="#0D0D0D" stroke="none" stroke-width="1" filter="url(#fx1)" />
+<text x="817.92" y="186.86" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN&quot;, sans-serif" font-size="37.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="37.33">01</tspan></text>
+</g>
+<g id="shape-57" data-name="文本框 56">
+<rect x="886.57" y="120.64" width="255.41" height="61.02" fill="none" />
+<text x="896.17" y="152.64" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体&quot;, sans-serif" font-size="32" fill="#000000" font-weight="bold">{{TOC_ITEM_1_TITLE}}</text>
+</g>
+<g id="shape-58" data-name="文本框 57">
+<rect x="888.57" y="176.59" width="285.99" height="46.87" fill="none" />
+<text x="898.17" y="192.73" text-anchor="start" xml:space="preserve" font-family="&quot;方正黑体简体&quot;, sans-serif" font-size="13.33" fill="#A6A6A6"><tspan fill="#A6A6A6" font-size="13.33">Lorem ipsum dolor sit amet, </tspan><tspan x="898.17" dy="16" fill="#A6A6A6" font-size="13.33">consectetuer dipiscing elit, sed </tspan><tspan fill="#A6A6A6" font-size="13.33">diam</tspan></text>
+</g>
+</g>
+<g id="shape-72" data-name="组合 71">
+<g id="shape-73" data-name="矩形 72">
+<rect x="782.39" y="276.5" width="71.06" height="71.06" fill="#0D0D0D" stroke="none" stroke-width="1" filter="url(#fx2)" />
+<text x="817.92" y="321.37" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN&quot;, sans-serif" font-size="37.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="37.33">02</tspan></text>
+</g>
+<g id="shape-74" data-name="文本框 73">
+<rect x="886.57" y="255.14" width="255.41" height="61.02" fill="none" />
+<text x="896.17" y="287.14" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体&quot;, sans-serif" font-size="32" fill="#000000" font-weight="bold">{{TOC_ITEM_2_TITLE}}</text>
+</g>
+<g id="shape-75" data-name="文本框 74">
+<rect x="888.57" y="311.1" width="285.99" height="46.87" fill="none" />
+<text x="898.17" y="327.23" text-anchor="start" xml:space="preserve" font-family="&quot;方正黑体简体&quot;, sans-serif" font-size="13.33" fill="#A6A6A6"><tspan fill="#A6A6A6" font-size="13.33">Lorem ipsum dolor sit amet, </tspan><tspan x="898.17" dy="16" fill="#A6A6A6" font-size="13.33">consectetuer dipiscing elit, sed </tspan><tspan fill="#A6A6A6" font-size="13.33">diam</tspan></text>
+</g>
+</g>
+<g id="shape-76" data-name="组合 75">
+<g id="shape-77" data-name="矩形 76">
+<rect x="782.39" y="411.01" width="71.06" height="71.06" fill="#0D0D0D" stroke="none" stroke-width="1" filter="url(#fx3)" />
+<text x="817.92" y="455.87" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN&quot;, sans-serif" font-size="37.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="37.33">03</tspan></text>
+</g>
+<g id="shape-78" data-name="文本框 77">
+<rect x="886.57" y="389.65" width="255.41" height="61.02" fill="none" />
+<text x="896.17" y="421.65" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体&quot;, sans-serif" font-size="32" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="32" font-weight="bold">市场分析</tspan></text>
+</g>
+<g id="shape-79" data-name="文本框 78">
+<rect x="888.57" y="445.6" width="285.99" height="46.87" fill="none" />
+<text x="898.17" y="461.73" text-anchor="start" xml:space="preserve" font-family="&quot;方正黑体简体&quot;, sans-serif" font-size="13.33" fill="#A6A6A6"><tspan fill="#A6A6A6" font-size="13.33">Lorem ipsum dolor sit amet, </tspan><tspan x="898.17" dy="16" fill="#A6A6A6" font-size="13.33">consectetuer dipiscing elit, sed </tspan><tspan fill="#A6A6A6" font-size="13.33">diam</tspan></text>
+</g>
+</g>
+<g id="shape-80" data-name="组合 79">
+<g id="shape-81" data-name="矩形 80">
+<rect x="782.39" y="545.51" width="71.06" height="71.06" fill="#0D0D0D" stroke="none" stroke-width="1" filter="url(#fx4)" />
+<text x="817.92" y="590.38" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN&quot;, sans-serif" font-size="37.33" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="37.33">04</tspan></text>
+</g>
+<g id="shape-82" data-name="文本框 81">
+<rect x="886.57" y="524.15" width="255.41" height="61.02" fill="none" />
+<text x="896.17" y="556.15" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体&quot;, sans-serif" font-size="32" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="32" font-weight="bold">财务规划</tspan></text>
+</g>
+<g id="shape-83" data-name="文本框 82">
+<rect x="888.57" y="580.1" width="285.99" height="46.87" fill="none" />
+<text x="898.17" y="596.24" text-anchor="start" xml:space="preserve" font-family="&quot;方正黑体简体&quot;, sans-serif" font-size="13.33" fill="#A6A6A6"><tspan fill="#A6A6A6" font-size="13.33">Lorem ipsum dolor sit amet, </tspan><tspan x="898.17" dy="16" fill="#A6A6A6" font-size="13.33">consectetuer dipiscing elit, sed </tspan><tspan fill="#A6A6A6" font-size="13.33">diam</tspan></text>
+</g>
+</g>
+<g id="shape-15" data-name="组合 14">
+<g id="shape-10" data-name="组合 9">
+<g id="shape-51" data-name="矩形 50">
+<rect x="467.64" y="196" width="27.13" height="354" fill="#ECECEC" fill-opacity="0.7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-52" data-name="文本框 51">
+<rect x="353.5" y="363.51" width="255.41" height="69.59" fill="none" />
+<text x="481.21" y="400.04" text-anchor="middle" xml:space="preserve" font-family="&quot;思源黑体&quot;, sans-serif" font-size="37.33" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="37.33" font-weight="bold">目 录</tspan></text>
+</g>
+<g id="shape-53" data-name="文本框 52">
+<rect x="271.62" y="272.12" width="419.18" height="69.59" fill="none" />
+<text x="481.21" y="308.65" text-anchor="middle" xml:space="preserve" font-family="&quot;思源宋体 CN&quot;, sans-serif" font-size="37.33" fill="#000000" font-weight="bold"><tspan fill="#000000" font-size="37.33" font-weight="bold">CONTENTS</tspan></text>
+</g>
+<g id="shape-54" data-name="文本框 53">
+<rect x="327.1" y="423.46" width="308.21" height="46.87" fill="none" />
+<text x="481.21" y="439.59" text-anchor="middle" xml:space="preserve" font-family="&quot;方正黑体简体&quot;, sans-serif" font-size="13.33" fill="#808080"><tspan fill="#808080" font-size="13.33">Lorem ipsum dolor sit amet, consectetuer </tspan><tspan x="481.21" dy="16" fill="#808080" font-size="13.33">dipiscing elit, sed </tspan><tspan fill="#808080" font-size="13.33">diam</tspan></text>
+</g>
+</g>
+<g id="shape-14" data-name="直接连接符 13">
+<line x1="467.64" y1="355.35" x2="494.77" y2="355.35" stroke-width="3" stroke="#0D0D0D" fill="#4F81BD" />
+</g>
+</g></svg>

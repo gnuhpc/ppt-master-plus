@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#F8FAFC" />
+  
+  <text x="640" y="140" font-family="sans-serif" font-size="36" font-weight="bold" fill="#1E293B" text-anchor="middle">{{PAGE_TITLE}}</text>
+  
+  <g transform="translate(140, 320)">
+    <!-- Stat 1 -->
+    <g transform="translate(0, 0)">
+      <text x="125" y="0" font-family="sans-serif" font-size="72" font-weight="bold" fill="#3B82F6" text-anchor="middle">98%</text>
+      <line x1="75" y1="30" x2="175" y2="30" stroke="#CBD5E1" stroke-width="2" />
+      <text x="125" y="70" font-family="sans-serif" font-size="20" font-weight="bold" fill="#334155" text-anchor="middle">Satisfaction Rate</text>
+      <text x="125" y="100" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Based on Q3 survey</text>
+    </g>
+    
+    <!-- Stat 2 -->
+    <g transform="translate(250, 0)">
+      <text x="125" y="0" font-family="sans-serif" font-size="72" font-weight="bold" fill="#0F172A" text-anchor="middle">2.5M</text>
+      <line x1="75" y1="30" x2="175" y2="30" stroke="#CBD5E1" stroke-width="2" />
+      <text x="125" y="70" font-family="sans-serif" font-size="20" font-weight="bold" fill="#334155" text-anchor="middle">Active Users</text>
+      <text x="125" y="100" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Monthly average</text>
+    </g>
+    
+    <!-- Stat 3 -->
+    <g transform="translate(500, 0)">
+      <text x="125" y="0" font-family="sans-serif" font-size="72" font-weight="bold" fill="#3B82F6" text-anchor="middle">120+</text>
+      <line x1="75" y1="30" x2="175" y2="30" stroke="#CBD5E1" stroke-width="2" />
+      <text x="125" y="70" font-family="sans-serif" font-size="20" font-weight="bold" fill="#334155" text-anchor="middle">New Partners</text>
+      <text x="125" y="100" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Global expansion</text>
+    </g>
+    
+    <!-- Stat 4 -->
+    <g transform="translate(750, 0)">
+      <text x="125" y="0" font-family="sans-serif" font-size="72" font-weight="bold" fill="#0F172A" text-anchor="middle">45%</text>
+      <line x1="75" y1="30" x2="175" y2="30" stroke="#CBD5E1" stroke-width="2" />
+      <text x="125" y="70" font-family="sans-serif" font-size="20" font-weight="bold" fill="#334155" text-anchor="middle">Revenue Growth</text>
+      <text x="125" y="100" font-family="sans-serif" font-size="14" fill="#64748B" text-anchor="middle">Year over year</text>
+    </g>
+  </g>
+</svg>

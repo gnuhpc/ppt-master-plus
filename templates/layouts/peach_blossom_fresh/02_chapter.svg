@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-5" data-name="图片 4" transform="rotate(90 640 360)">
+<image href="bg_peach_soft.jpg" x="280" y="-280" width="720" height="1280" preserveAspectRatio="none" />
+</g>
+<g id="shape-7" data-name="图片 6" transform="rotate(270 107.73 206.35) translate(107.73 206.35) scale(1 -1) translate(-107.73 -206.35)">
+<svg x="-98.61" y="98.61" width="412.69" height="215.47" viewBox="0.57833 0 0.42167 1" preserveAspectRatio="none"><image href="blossom_top.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-8" data-name="图片 7" transform="rotate(90 1172.27 206.35) translate(1172.27 206.35) scale(-1 -1) translate(-1172.27 -206.35)">
+<svg x="965.92" y="98.61" width="412.69" height="215.47" viewBox="0.57833 0 0.42167 1" preserveAspectRatio="none"><image href="blossom_top.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="shape-14" data-name="图片 13">
+<svg x="42.49" y="480" width="165.51" height="268.56" viewBox="0.40564 0.06245 0.21434 0.29029" preserveAspectRatio="none"><image href="blossom_bottom.png" x="0" y="0" width="1" height="1" preserveAspectRatio="none" /></svg>
+</g>
+<g id="chapter-title-group"><text x="640" y="320" text-anchor="middle" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="48" font-weight="bold" fill="#404040">PART {{CHAPTER_NUM}}</text><text x="640" y="400" text-anchor="middle" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="36" fill="#404040">{{CHAPTER_TITLE}}</text></g></svg>

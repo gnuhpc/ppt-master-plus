@@ -3,6 +3,10 @@
     "summary": "Anthropic brand identity — AI/LLM tech talks, developer conferences, technical training, product launches",
     "primary_color": "#D97757"
   },
+  "flink_ai_style": {
+    "summary": "Full-stack AI native stream computing presentation style, deep navy background with Flink green and purple accents.",
+    "primary_color": "#04CF82"
+  },
   "google": {
     "summary": "Google brand identity — multi-product corporate decks, developer events (Google I/O style), education and training in the Google ecosystem",
     "primary_color": "#4285F4"

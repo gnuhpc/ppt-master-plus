@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-4" data-name="文本框 3">
+<rect x="369.11" y="273.13" width="541.78" height="138.94" fill="none" />
+<text x="640" y="368.6" text-anchor="middle" xml:space="preserve" font-family="&quot;Open Sans&quot;, sans-serif" font-size="106.67" fill="#262626" letter-spacing="8">{{THANK_YOU}}</text>
+</g>
+<g id="shape-5" data-name="矩形 4">
+<rect x="347.15" y="249.13" width="585.7" height="186.94" fill="none" stroke="#D9D9D9" stroke-width="1" />
+</g>
+<g id="shape-2" data-name="组合 1">
+<g id="shape-7" data-name="直接连接符 6">
+<line x1="461.09" y1="97.17" x2="503.76" y2="97.17" stroke-width="2" fill="#000000" stroke="#000000" />
+</g>
+<g id="shape-9" data-name="直接连接符 8">
+<line x1="771.39" y1="97.17" x2="814.06" y2="97.17" stroke-width="2" fill="#000000" stroke="#000000" />
+</g>
+</g>
+<g id="shape-10" data-name="文本框 9">
+<rect x="487.27" y="82.62" width="305.45" height="29.08" fill="none" />
+<text x="640" y="101.02" text-anchor="middle" xml:space="preserve" font-family="&quot;Open Sans&quot;, sans-serif" font-size="16" fill="#000000" letter-spacing="4" />
+</g>
+<g id="shape-17" data-name="Rectangle 23">
+<rect x="412.46" y="459.38" width="455.08" height="35.54" fill="none" />
+<text x="640" y="473.25" text-anchor="middle" xml:space="preserve" font-family="&quot;Open Sans&quot;, sans-serif" font-size="10.67" fill="#BFBFBF">{{CLOSING_MESSAGE}}</text>
+</g>
+<g id="shape-18" data-name="组合 17">
+<g id="shape-19" data-name="椭圆 18">
+<ellipse cx="611.39" cy="664.73" rx="7.27" ry="7.27" fill="#262626" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-20" data-name="椭圆 19">
+<ellipse cx="640" cy="664.73" rx="7.27" ry="7.27" fill="#262626" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-21" data-name="椭圆 20">
+<ellipse cx="668.61" cy="664.73" rx="7.27" ry="7.27" fill="#262626" stroke="none" stroke-width="1" />
+</g>
+</g></svg>

@@ -455,6 +455,56 @@
       "label_en": "split"
     }
   ],
+  "transition_effect": [
+    {
+      "id": "none",
+      "label": "none",
+      "label_zh": "不需要转场",
+      "label_en": "none",
+      "desc_zh": "默认选择。幻灯片直接切换，不添加页面转场动画。",
+      "desc_en": "Default. Slides change directly with no page transition animation."
+    },
+    {
+      "id": "fade",
+      "label": "fade",
+      "label_zh": "淡入淡出",
+      "label_en": "fade",
+      "desc_zh": "克制的淡入淡出，适合大多数正式汇报。",
+      "desc_en": "A restrained fade that suits most formal decks."
+    },
+    {
+      "id": "push",
+      "label": "push",
+      "label_zh": "推入",
+      "label_en": "push",
+      "desc_zh": "页面横向推入，适合章节推进感更强的演示。",
+      "desc_en": "Pushes between slides; useful when you want a stronger sense of progression."
+    },
+    {
+      "id": "wipe",
+      "label": "wipe",
+      "label_zh": "擦除",
+      "label_en": "wipe",
+      "desc_zh": "用线性擦除过渡，适合流程或数据叙事。",
+      "desc_en": "A linear wipe transition suited to process or data narratives."
+    },
+    {
+      "id": "split",
+      "label": "split",
+      "label_zh": "分割",
+      "label_en": "split",
+      "desc_zh": "从中间分割展开，适合少量强调页。",
+      "desc_en": "Splits open from the center; best for occasional emphasis."
+    },
+    {
+      "id": "cover",
+      "label": "cover",
+      "label_zh": "覆盖",
+      "label_en": "cover",
+      "desc_zh": "下一页覆盖当前页，动感较强，谨慎使用。",
+      "desc_en": "The next slide covers the current one; more dynamic, use sparingly."
+    }
+  ],
   "delivery_purpose": [
     {
       "id": "text",

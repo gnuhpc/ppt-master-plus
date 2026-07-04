@@ -1,0 +1,70 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+<g id="shape-2" data-name="圆角矩形 1">
+<rect x="144.59" y="200.41" width="306.14" height="306.14" fill="#D9D9D9" fill-opacity="0.7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-3" data-name="圆角矩形 2">
+<rect x="144.59" y="500.22" width="41.71" height="41.71" fill="#D9D9D9" fill-opacity="0.7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-4" data-name="圆角矩形 3">
+<rect x="96.02" y="514.61" width="21.95" height="21.95" fill="#D9D9D9" fill-opacity="0.7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-8" data-name="圆角矩形 7">
+<rect x="450.28" y="252.87" width="21.95" height="21.95" fill="#D9D9D9" fill-opacity="0.7" stroke="none" stroke-width="1" />
+</g>
+<g id="shape-9" data-name="文本框 8">
+<rect x="194.47" y="285.76" width="188.77" height="106.63" fill="none" />
+<text x="204.07" y="358.56" text-anchor="start" xml:space="preserve" font-family="&quot;思源宋体 CN Medium&quot;, sans-serif" font-size="80" fill="#44546A"><tspan fill="#44546A" font-size="80">目录</tspan></text>
+</g>
+<g id="shape-11" data-name="文本框 10">
+<rect x="372.23" y="345.78" width="188.77" height="42.01" fill="none" />
+<text x="381.83" y="373.24" text-anchor="start" xml:space="preserve" font-family="&quot;思源宋体 CN Medium&quot;, sans-serif" font-size="26.67" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="26.67">CON</tspan><tspan fill="#44546A" font-size="26.67">TENTS</tspan></text>
+</g>
+<g id="shape-13" data-name="文本框 12">
+<rect x="684.47" y="154.6" width="82.67" height="74.32" fill="none" />
+<text x="694.07" y="204.73" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="53.33" fill="#D9D9D9"><tspan fill="#D9D9D9" font-size="53.33">01</tspan></text>
+</g>
+<g id="shape-14" data-name="文本框 13">
+<rect x="684.47" y="268.43" width="82.67" height="74.32" fill="none" />
+<text x="694.07" y="318.56" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="53.33" fill="#D9D9D9"><tspan fill="#D9D9D9" font-size="53.33">02</tspan></text>
+</g>
+<g id="shape-15" data-name="文本框 14">
+<rect x="684.47" y="382.26" width="82.67" height="74.32" fill="none" />
+<text x="694.07" y="432.39" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="53.33" fill="#D9D9D9"><tspan fill="#D9D9D9" font-size="53.33">03</tspan></text>
+</g>
+<g id="shape-16" data-name="文本框 15">
+<rect x="684.47" y="497.34" width="82.67" height="74.32" fill="none" />
+<text x="694.07" y="547.47" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="53.33" fill="#D9D9D9"><tspan fill="#D9D9D9" font-size="53.33">04</tspan></text>
+</g>
+<g id="shape-17" data-name="文本框 16">
+<rect x="768.38" y="159.79" width="245.58" height="48.47" fill="none" />
+<text x="777.98" y="191.79" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="32" fill="#44546A"><tspan fill="#44546A" font-size="32">下半年工作目标</tspan></text>
+</g>
+<g id="shape-18" data-name="文本框 17">
+<rect x="768.38" y="276.28" width="245.58" height="48.47" fill="none" />
+<text x="777.98" y="308.28" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="32" fill="#44546A"><tspan fill="#44546A" font-size="32">新产品研发方案</tspan></text>
+</g>
+<g id="shape-19" data-name="文本框 18">
+<rect x="768.38" y="390.43" width="245.58" height="48.47" fill="none" />
+<text x="777.98" y="422.43" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="32" fill="#44546A"><tspan fill="#44546A" font-size="32">消费者分析报告</tspan></text>
+</g>
+<g id="shape-20" data-name="文本框 19">
+<rect x="768.38" y="506.05" width="245.58" height="48.47" fill="none" />
+<text x="777.98" y="538.05" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="32" fill="#44546A"><tspan fill="#44546A" font-size="32">各部门沟通流程</tspan></text>
+</g>
+<g id="shape-21" data-name="文本框 20">
+<rect x="768.38" y="200.82" width="301.79" height="24.23" fill="none" />
+<text x="777.98" y="215.82" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="12" fill="#808080"><tspan fill="#808080" font-size="12">FILL IN THE TEXT OF THE DOCUMENT TITLE HERE</tspan></text>
+</g>
+<g id="shape-22" data-name="文本框 21">
+<rect x="768.38" y="316.93" width="301.79" height="24.23" fill="none" />
+<text x="777.98" y="331.93" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="12" fill="#808080"><tspan fill="#808080" font-size="12">FILL IN THE TEXT OF THE DOCUMENT TITLE HERE</tspan></text>
+</g>
+<g id="shape-23" data-name="文本框 22">
+<rect x="768.38" y="434.96" width="301.79" height="24.23" fill="none" />
+<text x="777.98" y="449.96" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="12" fill="#808080"><tspan fill="#808080" font-size="12">FILL IN THE TEXT OF THE DOCUMENT TITLE HERE</tspan></text>
+</g>
+<g id="shape-24" data-name="文本框 23">
+<rect x="768.38" y="548.67" width="301.79" height="24.23" fill="none" />
+<text x="777.98" y="563.67" text-anchor="start" xml:space="preserve" font-family="&quot;思源黑体 Medium&quot;, sans-serif" font-size="12" fill="#808080"><tspan fill="#808080" font-size="12">FILL IN THE TEXT OF THE DOCUMENT TITLE HERE</tspan></text>
+</g></svg>

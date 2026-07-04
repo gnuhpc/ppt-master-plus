@@ -110,7 +110,9 @@ def fetch_slide_text(server_url: str, page_name: str, timeout: float = 5.0) -> i
     """Probe that the server can return the slide. Returns content length.
     Used only for failure detection — the actual fetch happens inside the
     browser via fetch() so the response is parsed by JS, not Python."""
-    url = f"{server_url.rstrip('/')}/api/slide/{page_name}"
+    import urllib.parse
+    quoted_name = urllib.parse.quote(page_name)
+    url = f"{server_url.rstrip('/')}/api/slide/{quoted_name}"
     req = urllib.request.Request(url, headers={'Accept': 'application/json'})
     with urllib.request.urlopen(req, timeout=timeout) as resp:
         payload = json.loads(resp.read().decode('utf-8'))
@@ -134,7 +136,7 @@ def render_pages(server_url: str, pages: list[str], preview_dir: Path) -> list[d
 
     inject_js = """
 async (pageName) => {
-    const res = await fetch('/api/slide/' + pageName + '?_=' + Date.now());
+    const res = await fetch('/api/slide/' + encodeURIComponent(pageName) + '?_=' + Date.now());
     if (!res.ok) throw new Error('fetch /api/slide/' + pageName + ' returned ' + res.status);
     const data = await res.json();
     document.documentElement.innerHTML =

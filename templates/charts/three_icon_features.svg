@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <text x="640" y="120" font-family="sans-serif" font-size="36" font-weight="bold" fill="#1E293B" text-anchor="middle">{{PAGE_TITLE}}</text>
+  
+  <g transform="translate(140, 260)">
+    <!-- Feature 1 -->
+    <g transform="translate(0, 0)">
+      <circle cx="150" cy="50" r="50" fill="#DBEAFE" />
+      <text x="150" y="58" font-family="sans-serif" font-size="24" font-weight="bold" fill="#2563EB" text-anchor="middle">ICON</text>
+      
+      <text x="150" y="150" font-family="sans-serif" font-size="24" font-weight="bold" fill="#0F172A" text-anchor="middle">Feature One</text>
+      <text x="150" y="190" font-family="sans-serif" font-size="16" fill="#64748B" text-anchor="middle">
+        <tspan x="150" dy="0">Detailed text explaining</tspan>
+        <tspan x="150" dy="24">this specific feature.</tspan>
+      </text>
+    </g>
+    
+    <!-- Feature 2 -->
+    <g transform="translate(350, 0)">
+      <circle cx="150" cy="50" r="50" fill="#DBEAFE" />
+      <text x="150" y="58" font-family="sans-serif" font-size="24" font-weight="bold" fill="#2563EB" text-anchor="middle">ICON</text>
+      
+      <text x="150" y="150" font-family="sans-serif" font-size="24" font-weight="bold" fill="#0F172A" text-anchor="middle">Feature Two</text>
+      <text x="150" y="190" font-family="sans-serif" font-size="16" fill="#64748B" text-anchor="middle">
+        <tspan x="150" dy="0">Detailed text explaining</tspan>
+        <tspan x="150" dy="24">this specific feature.</tspan>
+      </text>
+    </g>
+    
+    <!-- Feature 3 -->
+    <g transform="translate(700, 0)">
+      <circle cx="150" cy="50" r="50" fill="#DBEAFE" />
+      <text x="150" y="58" font-family="sans-serif" font-size="24" font-weight="bold" fill="#2563EB" text-anchor="middle">ICON</text>
+      
+      <text x="150" y="150" font-family="sans-serif" font-size="24" font-weight="bold" fill="#0F172A" text-anchor="middle">Feature Three</text>
+      <text x="150" y="190" font-family="sans-serif" font-size="16" fill="#64748B" text-anchor="middle">
+        <tspan x="150" dy="0">Detailed text explaining</tspan>
+        <tspan x="150" dy="24">this specific feature.</tspan>
+      </text>
+    </g>
+  </g>
+</svg>

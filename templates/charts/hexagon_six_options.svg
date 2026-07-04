@@ -1,0 +1,60 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  <text x="640" y="80" font-family="sans-serif" font-size="36" font-weight="bold" fill="#1E293B" text-anchor="middle">{{PAGE_TITLE}}</text>
+  
+  <!-- Center elements -->
+  <g transform="translate(640, 360)">
+    <circle cx="0" cy="0" r="60" fill="#0F172A" />
+    <text x="0" y="8" font-family="sans-serif" font-size="24" font-weight="bold" fill="#FFFFFF" text-anchor="middle">CORE</text>
+    
+    <!-- 6 Nodes radially -->
+    <!-- Top -->
+    <g transform="translate(0, -180)">
+      <polygon points="0,-40 34.64,-20 34.64,20 0,40 -34.64,20 -34.64,-20" fill="#3B82F6" />
+      <text x="0" y="6" font-family="sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">01</text>
+      <text x="0" y="70" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1E293B" text-anchor="middle">Item One</text>
+    </g>
+    <line x1="0" y1="-60" x2="0" y2="-140" stroke="#CBD5E1" stroke-width="2" />
+    
+    <!-- Top Right -->
+    <g transform="translate(155.88, -90)">
+      <polygon points="0,-40 34.64,-20 34.64,20 0,40 -34.64,20 -34.64,-20" fill="#10B981" />
+      <text x="0" y="6" font-family="sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">02</text>
+      <text x="60" y="6" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1E293B" text-anchor="start">Item Two</text>
+    </g>
+    <line x1="51.96" y1="-30" x2="121.24" y2="-70" stroke="#CBD5E1" stroke-width="2" />
+    
+    <!-- Bottom Right -->
+    <g transform="translate(155.88, 90)">
+      <polygon points="0,-40 34.64,-20 34.64,20 0,40 -34.64,20 -34.64,-20" fill="#F59E0B" />
+      <text x="0" y="6" font-family="sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">03</text>
+      <text x="60" y="6" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1E293B" text-anchor="start">Item Three</text>
+    </g>
+    <line x1="51.96" y1="30" x2="121.24" y2="70" stroke="#CBD5E1" stroke-width="2" />
+    
+    <!-- Bottom -->
+    <g transform="translate(0, 180)">
+      <polygon points="0,-40 34.64,-20 34.64,20 0,40 -34.64,20 -34.64,-20" fill="#EF4444" />
+      <text x="0" y="6" font-family="sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">04</text>
+      <text x="0" y="70" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1E293B" text-anchor="middle">Item Four</text>
+    </g>
+    <line x1="0" y1="60" x2="0" y2="140" stroke="#CBD5E1" stroke-width="2" />
+    
+    <!-- Bottom Left -->
+    <g transform="translate(-155.88, 90)">
+      <polygon points="0,-40 34.64,-20 34.64,20 0,40 -34.64,20 -34.64,-20" fill="#8B5CF6" />
+      <text x="0" y="6" font-family="sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">05</text>
+      <text x="-60" y="6" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1E293B" text-anchor="end">Item Five</text>
+    </g>
+    <line x1="-51.96" y1="30" x2="-121.24" y2="70" stroke="#CBD5E1" stroke-width="2" />
+    
+    <!-- Top Left -->
+    <g transform="translate(-155.88, -90)">
+      <polygon points="0,-40 34.64,-20 34.64,20 0,40 -34.64,20 -34.64,-20" fill="#EC4899" />
+      <text x="0" y="6" font-family="sans-serif" font-size="18" font-weight="bold" fill="#FFFFFF" text-anchor="middle">06</text>
+      <text x="-60" y="6" font-family="sans-serif" font-size="18" font-weight="bold" fill="#1E293B" text-anchor="end">Item Six</text>
+    </g>
+    <line x1="-51.96" y1="-30" x2="-121.24" y2="-70" stroke="#CBD5E1" stroke-width="2" />
+  </g>
+</svg>

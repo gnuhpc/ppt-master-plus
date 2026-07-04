@@ -1,0 +1,118 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720"><defs><marker id="marrow1" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><circle cx="5" cy="5" r="4" fill="#0070C0" /></marker><marker id="marrow2" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><circle cx="5" cy="5" r="4" fill="#0070C0" /></marker><marker id="marrow3" viewBox="0 0 10 10" refX="0" refY="5" markerWidth="5" markerHeight="5" orient="auto-start-reverse" markerUnits="strokeWidth"><circle cx="5" cy="5" r="4" fill="#7F7F7F" /></marker><marker id="marrow4" viewBox="0 0 10 10" refX="10" refY="5" markerWidth="5" markerHeight="5" orient="auto" markerUnits="strokeWidth"><circle cx="5" cy="5" r="4" fill="#7F7F7F" /></marker></defs><rect x="0" y="0" width="1280" height="720" fill="#F3F3F3" />
+<g id="shape-3" data-name="等腰三角形 2" transform="rotate(90 62.53 72.16)">
+<polygon points="62.53,49.31 89.04,95.01 36.02,95.01" stroke="none" fill="#0070C0" stroke-width="1" />
+</g>
+<g id="shape-22" data-name="Title 1">
+<rect x="107.66" y="50.91" width="223.62" height="39.84" fill="none" />
+<text x="107.66" y="82.91" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, &quot;Open Sans Light&quot;, sans-serif" font-size="32" fill="#404040">{{PAGE_TITLE}}</text>
+</g>
+<g id="shape-4" data-name="2a3a6766-90ff-4dc9-b46d-9cca8353303c">
+<g id="shape-5" data-name="ïşḻïďê-Freeform: Shape 3">
+<path d="M 616.24 521.88 C 611.97 521.88 608.64 525.43 608.64 529.69 C 608.64 533.96 616.24 581.33 616.24 581.33 C 616.24 581.33 624.08 533.96 624.08 529.69 C 624.08 525.43 620.52 521.88 616.24 521.88" fill="#0070C0" stroke="none" />
+</g>
+<g id="shape-6" data-name="ïşḻïďê-Freeform: Shape 4">
+<path d="M 639.92 568.76 C 635.68 568.76 632.15 572.31 632.15 576.57 C 632.15 580.84 639.92 628.21 639.92 628.21 C 639.92 628.21 647.46 580.84 647.46 576.57 C 647.46 572.31 644.16 568.76 639.92 568.76" fill="#0070C0" stroke="none" />
+</g>
+<g id="shape-7" data-name="ïşḻïďê-Freeform: Shape 5">
+<path d="M 664.59 529.67 C 660.32 529.67 656.75 532.98 656.75 537.24 C 656.75 541.5 664.59 588.85 664.59 588.85 C 664.59 588.85 672.2 541.5 672.2 537.24 C 672.2 532.98 668.87 529.67 664.59 529.67" fill="#0070C0" stroke="none" />
+</g>
+<g id="shape-8" data-name="Group 6">
+<g id="shape-21" data-name="ïşḻïďê-Rectangle 7">
+<rect x="609.6" y="497.27" width="61.1" height="20.37" fill="#BFBFBF" stroke="none" />
+</g>
+<g id="shape-23" data-name="ïşḻïďê-Freeform: Shape 9">
+<path d="M 640.14 490.15 C 685.69 490.15 724.36 518.32 740.01 558.1 C 744.76 546.26 747.37 533 747.37 519.27 C 747.37 460.32 699.45 412.26 640.14 412.26 C 581.08 412.26 532.92 460.32 532.92 519.27 C 532.92 533 535.53 546.26 540.27 558.1 C 555.93 518.32 594.6 490.15 640.14 490.15 Z" fill="#0070C0" stroke="none" />
+</g>
+<g id="shape-24" data-name="ïşḻïďê-Freeform: Shape 11">
+<path d="M 640.14 504.16 C 653.44 504.16 666.02 506.06 677.88 509.85 C 695.68 474.08 706.37 427.9 706.37 377.45 C 706.37 297.39 679.54 227.99 640.14 194.12 C 600.74 227.99 573.92 297.39 573.92 377.45 C 573.92 427.9 584.6 474.08 602.41 509.85 C 614.27 506.06 626.85 504.16 640.14 504.16 Z" fill="#7F7F7F" stroke="none" />
+</g>
+<g id="shape-25" data-name="ïşḻïďê-Freeform: Shape 15">
+<path d="M 640.14 405.12 C 631.57 419.32 625.86 448.2 625.86 481.34 C 625.86 514.71 631.57 543.59 640.14 557.79 C 648.71 543.59 654.43 514.71 654.43 481.34 C 654.43 448.2 648.71 419.32 640.14 405.12 Z" fill="#0070C0" stroke="none" />
+</g>
+<g id="shape-26" data-name="ïşḻïďê-Oval 17">
+<ellipse cx="640.14" cy="340.37" rx="37.24" ry="37.04" fill="#0070C0" stroke="none" />
+</g>
+<g id="shape-27" data-name="ïşḻïďê-Oval 18">
+<ellipse cx="640.14" cy="340.5" rx="25.9" ry="25.83" fill="#FFFFFF" stroke="none" />
+</g>
+</g>
+<g id="shape-9" data-name="ïşḻïďê-Straight Connector 21">
+<line x1="662.9" y1="339.67" x2="817.13" y2="339.67" stroke="#0070C0" marker-end="url(#marrow1)" fill="#0070C0" stroke-width="1" />
+</g>
+<g id="shape-10" data-name="Group 22">
+<g id="shape-19" data-name="ïṧḷïḓê-Straight Connector 23">
+<line x1="706.37" y1="498.27" x2="815.91" y2="498.27" stroke="#0070C0" fill="#0070C0" stroke-width="1" />
+</g>
+<g id="shape-20" data-name="ïṧḷïḓê-Straight Connector 24">
+<line x1="817.13" y1="498.27" x2="817.13" y2="543.14" stroke="#0070C0" marker-end="url(#marrow2)" fill="#0070C0" stroke-width="1" />
+</g>
+</g>
+<g id="shape-11" data-name="ïṧḷïḓê-Straight Connector 25">
+<line x1="461.05" y1="437.63" x2="602.9" y2="437.63" stroke="#7F7F7F" marker-start="url(#marrow3)" fill="#0070C0" stroke-width="1" />
+</g>
+<g id="shape-12" data-name="Group 26" transform="translate(546 263.11) scale(-1 1) translate(-546 -263.11)">
+<g id="shape-17" data-name="ïṧḷïḓê-Straight Connector 27">
+<line x1="459.24" y1="240.68" x2="632.76" y2="240.68" stroke="#7F7F7F" fill="#0070C0" stroke-width="1" />
+</g>
+<g id="shape-18" data-name="ïṧḷïḓê-Straight Connector 28">
+<line x1="632.76" y1="240.68" x2="632.76" y2="285.55" stroke="#7F7F7F" marker-end="url(#marrow4)" fill="#0070C0" stroke-width="1" />
+</g>
+</g>
+<g id="shape-13" data-name="ïṧḷïḓê-Oval 29">
+<ellipse cx="861.33" cy="341.35" rx="26.67" ry="26.67" fill="#0070C0" stroke-width="3" stroke="#40AFFF" />
+<text x="861.33" y="347.35" text-anchor="middle" xml:space="preserve" font-family="Impact, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">02</tspan></text>
+</g>
+<g id="shape-14" data-name="ïṧḷïḓê-Oval 32">
+<ellipse cx="825.98" cy="566.55" rx="26.67" ry="26.67" fill="#0070C0" stroke-width="3" stroke="#40AFFF" />
+<text x="825.98" y="572.55" text-anchor="middle" xml:space="preserve" font-family="Impact, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">04</tspan></text>
+</g>
+<g id="shape-15" data-name="ïṧḷïḓê-Oval 35">
+<ellipse cx="466.51" cy="298.37" rx="26.67" ry="26.67" fill="#7F7F7F" stroke-width="3" stroke="#B2B2B2" />
+<text x="466.51" y="304.37" text-anchor="middle" xml:space="preserve" font-family="Impact, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">01</tspan></text>
+</g>
+<g id="shape-16" data-name="ïṧḷïḓê-Oval 38">
+<ellipse cx="408.01" cy="441.31" rx="26.67" ry="26.67" fill="#7F7F7F" stroke-width="3" stroke="#B2B2B2" />
+<text x="408.01" y="447.31" text-anchor="middle" xml:space="preserve" font-family="Impact, sans-serif" font-size="24" fill="#FFFFFF"><tspan fill="#FFFFFF" font-size="24">03</tspan></text>
+</g>
+</g>
+<g id="shape-28" data-name="组合 27">
+<g id="shape-29" data-name="矩形 28">
+<rect x="98.83" y="237.68" width="317.78" height="56.22" fill="none" />
+<text x="108.43" y="256.08" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="16" fill="#262626"><tspan fill="#262626" font-size="16">用户可以在投影仪或者计算机上进行演示</tspan><tspan x="108.43" dy="19.2" fill="#262626" font-size="16">也可以将演示文稿打印出来制作成</tspan><tspan fill="#262626" font-size="16">胶片</tspan></text>
+</g>
+<g id="shape-30" data-name="矩形 29">
+<rect x="98.83" y="196.46" width="215.28" height="45.18" fill="none" />
+<text x="108.43" y="223.92" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="26.67" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="26.67" font-weight="bold">标题文字添加</tspan></text>
+</g>
+</g>
+<g id="shape-31" data-name="组合 30">
+<g id="shape-32" data-name="矩形 31">
+<rect x="98.83" y="508.68" width="317.78" height="56.22" fill="none" />
+<text x="108.43" y="527.08" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="16" fill="#262626"><tspan fill="#262626" font-size="16">用户可以在投影仪或者计算机上进行演示</tspan><tspan x="108.43" dy="19.2" fill="#262626" font-size="16">也可以将演示文稿打印出来制作成</tspan><tspan fill="#262626" font-size="16">胶片</tspan></text>
+</g>
+<g id="shape-33" data-name="矩形 32">
+<rect x="98.83" y="467.46" width="215.28" height="45.18" fill="none" />
+<text x="108.43" y="494.92" text-anchor="start" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="26.67" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="26.67" font-weight="bold">标题文字添加</tspan></text>
+</g>
+</g>
+<g id="shape-34" data-name="组合 33">
+<g id="shape-35" data-name="矩形 34">
+<rect x="863.38" y="237.68" width="317.78" height="56.22" fill="none" />
+<text x="1171.57" y="256.08" text-anchor="end" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="16" fill="#262626"><tspan fill="#262626" font-size="16">用户可以在投影仪或者计算机上进行演示</tspan><tspan x="1171.57" dy="19.2" fill="#262626" font-size="16">也可以将演示文稿打印出来制作成</tspan><tspan fill="#262626" font-size="16">胶片</tspan></text>
+</g>
+<g id="shape-36" data-name="矩形 35">
+<rect x="965.89" y="196.46" width="215.28" height="45.18" fill="none" />
+<text x="1171.57" y="223.92" text-anchor="end" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="26.67" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="26.67" font-weight="bold">标题文字添加</tspan></text>
+</g>
+</g>
+<g id="shape-37" data-name="组合 36">
+<g id="shape-38" data-name="矩形 37">
+<rect x="863.38" y="508.68" width="317.78" height="56.22" fill="none" />
+<text x="1171.57" y="527.08" text-anchor="end" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="16" fill="#262626"><tspan fill="#262626" font-size="16">用户可以在投影仪或者计算机上进行演示</tspan><tspan x="1171.57" dy="19.2" fill="#262626" font-size="16">也可以将演示文稿打印出来制作成</tspan><tspan fill="#262626" font-size="16">胶片</tspan></text>
+</g>
+<g id="shape-39" data-name="矩形 38">
+<rect x="965.89" y="467.46" width="215.28" height="45.18" fill="none" />
+<text x="1171.57" y="494.92" text-anchor="end" xml:space="preserve" font-family="&quot;微软雅黑&quot;, sans-serif" font-size="26.67" fill="#262626" font-weight="bold"><tspan fill="#262626" font-size="26.67" font-weight="bold">标题文字添加</tspan></text>
+</g>
+</g></svg>
