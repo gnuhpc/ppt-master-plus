@@ -1295,3 +1295,322 @@ input.prop-edit-multi-geo {
     clip: rect(0 0 0 0);
     white-space: nowrap;
 }
+
+/* ======================== FULLSCREEN PLAYBACK ======================== */
+#fullscreen-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: #09090e;
+    z-index: 10000;
+    display: flex;
+    flex-direction: column;
+    align-items: stretch;
+    justify-content: stretch;
+    box-sizing: border-box;
+}
+
+#fullscreen-top {
+    height: var(--fs-top-height, 75vh);
+    min-height: 0;
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #0f0f1d;
+    padding: 32px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+#fullscreen-svg-container {
+    background: #ffffff;
+    border-radius: 6px;
+    box-shadow: 0 12px 48px rgba(0, 0, 0, 0.7);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    max-height: 100%;
+    width: 100%;
+    height: auto;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+
+#fullscreen-svg-container svg {
+    display: block;
+    width: 100% !important;
+    height: 100% !important;
+}
+
+#fullscreen-splitter {
+    height: 8px;
+    background: #2a2a4a;
+    cursor: row-resize;
+    position: relative;
+    user-select: none;
+    flex-shrink: 0;
+    transition: background 0.15s;
+}
+
+#fullscreen-splitter:hover,
+#fullscreen-splitter.dragging {
+    background: #f5c542;
+}
+
+#fullscreen-splitter::after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 40px;
+    height: 4px;
+    background: rgba(255, 255, 255, 0.3);
+    border-radius: 2px;
+}
+
+#fullscreen-bottom {
+    flex: 1; /* Automatically takes remaining height */
+    min-height: 0;
+    background: #131324;
+    border-top: 1px solid #2a2a4a;
+    padding: 24px 48px;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: column;
+}
+
+#fullscreen-notes-container {
+    flex: 1;
+    overflow-y: auto;
+    color: #e2e2ec;
+    font-size: 20px;
+    line-height: 1.8;
+    white-space: pre-wrap;
+    word-break: break-word;
+}
+
+#fullscreen-notes-container::-webkit-scrollbar {
+    width: 6px;
+}
+#fullscreen-notes-container::-webkit-scrollbar-track {
+    background: transparent;
+}
+#fullscreen-notes-container::-webkit-scrollbar-thumb {
+    background: #3a3a5a;
+    border-radius: 3px;
+}
+
+#fullscreen-controls {
+    position: absolute;
+    top: 24px;
+    right: 24px;
+    background: rgba(22, 22, 42, 0.85);
+    border: 1px solid #3a3a5a;
+    border-radius: 24px;
+    padding: 6px 16px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+    z-index: 10010;
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    
+    /* Auto fading setup */
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.4s ease, transform 0.4s ease;
+    transform: translateY(-5px);
+}
+
+#fullscreen-controls.visible {
+    opacity: 1;
+    pointer-events: auto;
+    transform: translateY(0);
+}
+
+.fs-nav-btn {
+    min-width: 32px;
+    height: 32px;
+    border-radius: 50%;
+    border: 1px solid #4a4a6a;
+    background: #20203a;
+    color: #e2e2ec;
+    font-size: 18px;
+    font-weight: bold;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    line-height: 1;
+}
+
+.fs-nav-btn:hover:not(:disabled) {
+    background: #f5c542;
+    color: #0c0c14;
+    border-color: #f5c542;
+}
+
+.fs-nav-btn:disabled {
+    opacity: 0.3;
+    cursor: not-allowed;
+}
+
+#fs-btn-exit {
+    font-size: 20px;
+    margin-left: 4px;
+}
+
+#fs-nav-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #e2e2ec;
+    font-size: 14px;
+    user-select: none;
+}
+
+#fs-nav-counter {
+    font-weight: 600;
+    color: #f5c542;
+}
+
+#fs-nav-name {
+    color: #a0a0c0;
+    max-width: 150px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* ======================== ASTRYX THEMES ======================== */
+.theme-select,
+.fs-theme-select {
+    padding: 2px 6px;
+    font-size: 12px;
+    background: #1d1d35;
+    color: #c0c0d8;
+    border: 1px solid #3a3a5a;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: border-color 0.15s, color 0.15s;
+    height: 28px;
+    box-sizing: border-box;
+}
+
+.theme-select:hover,
+.fs-theme-select:hover {
+    border-color: #5a5a7a;
+    color: #ffffff;
+}
+
+.fs-theme-select {
+    background: rgba(32, 32, 58, 0.9);
+    border-color: #4a4a6a;
+    height: 32px;
+}
+
+/* Theme variables on slide wrappers */
+#svg-content,
+#fullscreen-svg-container {
+    /* Default fallback variables matching detected slide colors */
+    --color-brand-primary: var(--color-brand-primary-default, #af935c);
+    --color-brand-secondary: var(--color-brand-secondary-default, #1a1f29);
+    --color-bg-slide: var(--color-bg-slide-default, #f8f8f8);
+    --color-card-bg: var(--color-card-bg-default, #ffffff);
+    --color-border: var(--color-border-default, #e2e8f0);
+}
+
+/* Matcha theme variables */
+#svg-content.astryx-theme-matcha,
+#fullscreen-svg-container.astryx-theme-matcha {
+    --color-brand-primary: #15803d;
+    --color-brand-secondary: #166534;
+    --color-bg-slide: #f0fdf4;
+    --color-border: #dcfce7;
+}
+
+/* Neutral theme variables */
+#svg-content.astryx-theme-neutral,
+#fullscreen-svg-container.astryx-theme-neutral {
+    --color-brand-primary: #2563eb;
+    --color-brand-secondary: #1e3a8a;
+    --color-bg-slide: #ffffff;
+    --color-border: #e2e8f0;
+}
+
+/* Chocolate theme variables */
+#svg-content.astryx-theme-chocolate,
+#fullscreen-svg-container.astryx-theme-chocolate {
+    --color-brand-primary: #b45309;
+    --color-brand-secondary: #78350f;
+    --color-bg-slide: #fffbeb;
+    --color-border: #fef3c7;
+}
+
+/* Gothic theme variables */
+#svg-content.astryx-theme-gothic,
+#fullscreen-svg-container.astryx-theme-gothic {
+    --color-brand-primary: #dc2626;
+    --color-brand-secondary: #ef4444;
+    --color-bg-slide: #0f172a;
+    --color-border: #334155;
+}
+
+#fullscreen-notes-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 8px 16px;
+    background: #111124;
+    border-bottom: 1px solid #22223a;
+    user-select: none;
+    flex-shrink: 0;
+}
+
+.fs-notes-title {
+    color: #a0a0c0;
+    font-size: 13px;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.fs-notes-actions {
+    display: flex;
+    gap: 8px;
+}
+
+.fs-layout-btn {
+    height: 32px;
+    padding: 0 12px;
+    border-radius: 16px;
+    border: 1px solid #4a4a6a;
+    background: #20203a;
+    color: #e2e2ec;
+    font-size: 11px;
+    font-weight: 600;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    transition: background 0.15s, color 0.15s, border-color 0.15s;
+    user-select: none;
+    line-height: 1;
+}
+
+.fs-layout-btn:hover {
+    background: #2a2a4f;
+    color: #ffffff;
+    border-color: #5a5a7a;
+}
+
+
+

@@ -27,6 +27,10 @@
                 </div>
                 <button id="nav-next" class="nav-btn" type="button" data-i18n-title="nav_next">&rsaquo;</button>
                 <button id="nav-last" class="nav-btn" type="button" data-i18n-title="nav_last">&raquo;</button>
+                <button id="nav-play" class="nav-btn" type="button" data-i18n-title="nav_play" title="Play (Full Screen)">▶</button>
+                <select id="astryx-theme-select" class="theme-select" title="Switch Theme">
+                    <option value="astryx-theme-default">Default Theme</option>
+                </select>
             </div>
             <div id="svg-container">
                 <div id="rubber-band-overlay"></div>
@@ -84,6 +88,33 @@
             <div id="popover-chips" class="popover-chips"></div>
             <textarea id="popover-text"></textarea>
             <button id="popover-submit" type="button" data-i18n="btn_add_annotation">Add annotation</button>
+        </div>
+    </div>
+    <div id="fullscreen-overlay" style="display: none; outline: none;" tabindex="-1">
+        <div id="fullscreen-top">
+            <div id="fullscreen-svg-container"></div>
+        </div>
+        <div id="fullscreen-splitter"></div>
+        <div id="fullscreen-bottom">
+            <div id="fullscreen-notes-header">
+                <span class="fs-notes-title">演讲稿</span>
+            </div>
+            <div id="fullscreen-notes-container">
+                <div id="fullscreen-notes-content"></div>
+            </div>
+        </div>
+        <div id="fullscreen-controls">
+            <button id="fs-nav-prev" class="fs-nav-btn" type="button">&lsaquo;</button>
+            <div id="fs-nav-label">
+                <span id="fs-nav-counter">— / —</span>
+                <span id="fs-nav-name"></span>
+            </div>
+            <button id="fs-nav-next" class="fs-nav-btn" type="button">&rsaquo;</button>
+            <button id="fs-layout-toggle-btn" class="fs-layout-btn" type="button" title="切换视图布局">🎬📄 分屏</button>
+            <button id="fs-btn-exit" class="fs-nav-btn" type="button" data-i18n-title="btn_exit_fs">&times;</button>
+            <select id="fs-theme-select" class="fs-theme-select" title="Switch Theme">
+                <option value="astryx-theme-default">Default Theme</option>
+            </select>
         </div>
     </div>
     <script src="/static/app.js"></script>

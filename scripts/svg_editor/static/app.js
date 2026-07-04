@@ -69,6 +69,8 @@
             nav_prev: "Previous slide (←)",
             nav_next: "Next slide (→)",
             nav_last: "Last slide (End)",
+            nav_play: "Play (Full Screen)",
+            btn_exit_fs: "Exit Full Screen",
             nav_counter: "{current} / {total}",
             nav_empty: "— / —",
             btn_notes_title: "Speaker notes",
@@ -150,6 +152,8 @@
             nav_prev: "上一页 (←)",
             nav_next: "下一页 (→)",
             nav_last: "末页 (End)",
+            nav_play: "全屏播放",
+            btn_exit_fs: "退出全屏",
             nav_counter: "{current} / {total}",
             nav_empty: "— / —",
             btn_notes_title: "演讲稿",
@@ -278,6 +282,21 @@
     var btnNotesSave      = document.getElementById("btn-notes-save");
     var notesContentEl    = document.getElementById("notes-content");
 
+    var navPlayBtn        = document.getElementById("nav-play");
+    var fullscreenOverlay = document.getElementById("fullscreen-overlay");
+    var fsNavPrev         = document.getElementById("fs-nav-prev");
+    var fsNavNext         = document.getElementById("fs-nav-next");
+    var fsBtnExit         = document.getElementById("fs-btn-exit");
+    var fsNavCounter      = document.getElementById("fs-nav-counter");
+    var fsNavName         = document.getElementById("fs-nav-name");
+    var fsSvgContainer    = document.getElementById("fullscreen-svg-container");
+    var fsNotesContent    = document.getElementById("fullscreen-notes-content");
+    var themeSelect       = document.getElementById("astryx-theme-select");
+    var fsThemeSelect     = document.getElementById("fs-theme-select");
+    var fsControlsEl      = document.getElementById("fullscreen-controls");
+    
+    var fsLayoutToggleBtn = document.getElementById("fs-layout-toggle-btn");
+
     var popoverOverlay    = document.getElementById("annotation-popover-overlay");
     var popoverTitle      = document.getElementById("popover-title");
     var popoverClose      = document.getElementById("popover-close");
@@ -295,6 +314,9 @@
     var slidePollTimer    = null;
     var pendingModalAction = "submit";
     var slideMtimes       = {};     // {name: mtime} — last-seen mtime for each slide
+    var notesMtimes       = {};     // {name: notes_mtime} — last-seen notes mtime for each slide
+    var activeTheme       = "astryx-theme-default";
+    var currentRawSvgContent = "";
     var reloadBannerEl    = null;   // singleton banner element shown when currentSlide mtime drifts
     var editStackCount    = {};     // {name: staged edit count} — mirrors backend PENDING_EDITS
     var savedHintShown    = false;  // show the "staged edit" hint once per session
@@ -302,6 +324,7 @@
     var notesMode         = false;  // false=slides tab, true=notes tab
     var notesDirty        = false;  // unsaved notes changes
     var _notesLoadedText  = "";     // last-loaded notes text for dirty detection
+    var isFullscreenMode  = false;
     var _popoverTargetIds = [];
     var _popoverSelectedChips = new Set();
     var _popoverIsPage    = false;
@@ -412,13 +435,20 @@
     function updateNavLabel() {
         if (!navCounterEl) return;
         var total = slideNames.length;
+        var counterText = "";
         if (total === 0 || !currentSlide) {
-            navCounterEl.textContent = t("nav_empty");
+            counterText = t("nav_empty");
+            navCounterEl.textContent = counterText;
             if (navNameEl) navNameEl.textContent = "";
+            if (fsNavCounter) fsNavCounter.textContent = counterText;
+            if (fsNavName) fsNavName.textContent = "";
         } else {
             var idx = currentSlideIndex();
-            navCounterEl.textContent = t("nav_counter", { current: idx + 1, total: total });
+            counterText = t("nav_counter", { current: idx + 1, total: total });
+            navCounterEl.textContent = counterText;
             if (navNameEl) navNameEl.textContent = currentSlide;
+            if (fsNavCounter) fsNavCounter.textContent = counterText;
+            if (fsNavName) fsNavName.textContent = currentSlide;
         }
         var idx2 = currentSlideIndex();
         var hasCurrent = idx2 >= 0;
@@ -426,6 +456,9 @@
         if (navPrevBtn)  navPrevBtn.disabled  = !hasCurrent || idx2 <= 0;
         if (navNextBtn)  navNextBtn.disabled  = !hasCurrent || idx2 >= total - 1;
         if (navLastBtn)  navLastBtn.disabled  = !hasCurrent || idx2 >= total - 1;
+
+        if (fsNavPrev) fsNavPrev.disabled = !hasCurrent || idx2 <= 0;
+        if (fsNavNext) fsNavNext.disabled = !hasCurrent || idx2 >= total - 1;
     }
 
     // ================================================================
@@ -459,6 +492,7 @@
 
                 var currentExists = false;
                 var currentMtimeChanged = false;
+                var currentNotesMtimeChanged = false;
                 slides.forEach(function (s) {
                     if (s.name === currentSlide) {
                         currentExists = true;
@@ -467,11 +501,22 @@
                         if (lastSeen !== undefined && s.mtime && s.mtime !== lastSeen) {
                             currentMtimeChanged = true;
                         }
+                        var lastNotesSeen = notesMtimes[s.name];
+                        if (lastNotesSeen !== undefined && s.notes_mtime && s.notes_mtime !== lastNotesSeen) {
+                            currentNotesMtimeChanged = true;
+                        }
+                        if (s.mtime !== undefined && lastSeen === undefined) {
+                            slideMtimes[s.name] = s.mtime;
+                        }
+                        if (s.notes_mtime !== undefined && lastNotesSeen === undefined) {
+                            notesMtimes[s.name] = s.notes_mtime;
+                        }
                     }
                     // Track every slide's mtime for the next poll (only update non-current here;
                     // currentSlide's mtime is updated by selectSlide so we can detect drift).
-                    if (s.name !== currentSlide && s.mtime !== undefined) {
-                        slideMtimes[s.name] = s.mtime;
+                    if (s.name !== currentSlide) {
+                        if (s.mtime !== undefined) slideMtimes[s.name] = s.mtime;
+                        if (s.notes_mtime !== undefined) notesMtimes[s.name] = s.notes_mtime;
                     }
 
                     var item = document.createElement("div");
@@ -503,7 +548,16 @@
                 if (!currentSlide || !currentExists) {
                     selectSlide(slides[0].name);
                 } else if (currentMtimeChanged) {
-                    showReloadBanner(currentSlide);
+                    var item = slideListEl.querySelector('.slide-item[data-name="' + cssAttr(currentSlide) + '"]');
+                    selectSlide(currentSlide, item || undefined);
+                } else if (currentNotesMtimeChanged) {
+                    var matching = slides.find(function(x) { return x.name === currentSlide; });
+                    if (matching && matching.notes_mtime !== undefined) {
+                        notesMtimes[currentSlide] = matching.notes_mtime;
+                    }
+                    if (document.activeElement !== notesContentEl) {
+                        loadCurrentNotes();
+                    }
                 }
                 updateNavLabel();
             })
@@ -530,7 +584,7 @@
         selectedElementIds.clear();
         slideAnnotations = {};
         updateNavLabel();
-        if (notesMode) loadCurrentNotes();
+        if (notesMode || isFullscreenMode) loadCurrentNotes();
 
         // Reset right panel and rubber band
         cancelRubberBand();
@@ -558,9 +612,8 @@
                     return;
                 }
                 // Render SVG
-                svgPlaceholder.style.display = "none";
-                svgContent.style.display = "block";
-                svgContent.innerHTML = sanitizeSvg(data.content);
+                currentRawSvgContent = data.content;
+                renderCurrentSlideWithTheme();
 
                 // Empty-canvas guard: surface a clear error if the SVG parsed
                 // to nothing renderable (issue #115's silent-blank scenario).
@@ -1313,6 +1366,22 @@
     // ================================================================
     function initKeyboardShortcuts() {
         document.addEventListener("keydown", function (e) {
+            if (isFullscreenMode) {
+                if (e.key === "ArrowRight" || e.key === "PageDown" || e.key === " " || e.key === "Enter") {
+                    e.preventDefault();
+                    gotoSlideIndex(currentSlideIndex() + 1);
+                    return;
+                } else if (e.key === "ArrowLeft" || e.key === "PageUp" || e.key === "Backspace") {
+                    e.preventDefault();
+                    gotoSlideIndex(currentSlideIndex() - 1);
+                    return;
+                } else if (e.key === "Escape") {
+                    e.preventDefault();
+                    exitFullscreen();
+                    return;
+                }
+            }
+
             // Ctrl+Z / Cmd+Z: drop the last staged edit. Let inputs/selects handle
             // their own native undo when focused.
             if ((e.ctrlKey || e.metaKey) && (e.key === "z" || e.key === "Z")) {
@@ -1422,6 +1491,11 @@
         if (navNextBtn)  navNextBtn.addEventListener("click", function ()  { gotoSlideIndex(currentSlideIndex() + 1); });
         if (navLastBtn)  navLastBtn.addEventListener("click", function ()  { gotoSlideIndex(slideNames.length - 1); });
 
+        if (navPlayBtn)  navPlayBtn.addEventListener("click", enterFullscreen);
+        if (fsNavPrev)   fsNavPrev.addEventListener("click", function () { gotoSlideIndex(currentSlideIndex() - 1); });
+        if (fsNavNext)   fsNavNext.addEventListener("click", function () { gotoSlideIndex(currentSlideIndex() + 1); });
+        if (fsBtnExit)   fsBtnExit.addEventListener("click", exitFullscreen);
+
         if (slideListEl) {
             slideListEl.setAttribute("tabindex", "0");
             slideListEl.addEventListener("keydown", function (e) {
@@ -1450,12 +1524,14 @@
             notesContentEl.placeholder = t("notes_none");
             _notesLoadedText = "";
             setNotesDirty(false);
+            if (fsNotesContent) fsNotesContent.textContent = t("notes_none");
             return;
         }
         notesContentEl.placeholder = t("notes_loading");
         notesContentEl.value = "";
         _notesLoadedText = "";
         setNotesDirty(false);
+        if (fsNotesContent) fsNotesContent.textContent = t("notes_loading");
         fetch("/api/slide/" + encodeURIComponent(currentSlide) + "/notes")
             .then(function (r) { return r.json(); })
             .then(function (data) {
@@ -1465,12 +1541,14 @@
                 notesContentEl.placeholder = t("notes_none");
                 _notesLoadedText = text;
                 setNotesDirty(false);
+                if (fsNotesContent) fsNotesContent.textContent = text || t("notes_none");
             })
             .catch(function () {
                 if (notesContentEl) {
                     notesContentEl.value = "";
                     notesContentEl.placeholder = t("notes_none");
                 }
+                if (fsNotesContent) fsNotesContent.textContent = t("notes_none");
             });
     }
 
@@ -1483,8 +1561,11 @@
             body: JSON.stringify({ notes: text })
         })
         .then(function (r) { return r.json(); })
-        .then(function () {
+        .then(function (data) {
             _notesLoadedText = text;
+            if (data && data.notes_mtime !== undefined) {
+                notesMtimes[currentSlide] = data.notes_mtime;
+            }
             if (!silent && btnNotesSave) {
                 var orig = btnNotesSave.textContent;
                 btnNotesSave.textContent = "✓";
@@ -2958,5 +3039,487 @@
     initSlideNav();
     initNotes();
     initAnnotationPopover();
+    initFullscreenSplitter();
+    
+    var fsLayoutMode = "split";
+    function setFullscreenLayout(mode) {
+        fsLayoutMode = mode;
+        var fsTop = document.getElementById("fullscreen-top");
+        var fsBottom = document.getElementById("fullscreen-bottom");
+        var fsSplitter = document.getElementById("fullscreen-splitter");
+        
+        if (mode === "notes-only") {
+            if (fsTop) fsTop.style.display = "none";
+            if (fsSplitter) fsSplitter.style.display = "none";
+            if (fsBottom) {
+                fsBottom.style.display = "flex";
+                fsBottom.style.height = "100vh";
+            }
+            if (fsLayoutToggleBtn) {
+                fsLayoutToggleBtn.textContent = "📄 仅讲稿";
+                fsLayoutToggleBtn.title = "当前：仅讲稿。点击切换为分屏模式";
+            }
+        } else if (mode === "slide-only") {
+            if (fsBottom) fsBottom.style.display = "none";
+            if (fsSplitter) fsSplitter.style.display = "none";
+            if (fsTop) {
+                fsTop.style.display = "flex";
+                fsTop.style.height = "100vh";
+                fsTop.style.padding = "0";
+            }
+            if (fsLayoutToggleBtn) {
+                fsLayoutToggleBtn.textContent = "🎬 仅片子";
+                fsLayoutToggleBtn.title = "当前：仅片子。点击切换为仅讲稿模式";
+            }
+        } else { // "split"
+            if (fsTop) {
+                fsTop.style.display = "flex";
+                fsTop.style.height = "";
+                fsTop.style.padding = "";
+            }
+            if (fsSplitter) fsSplitter.style.display = "flex";
+            if (fsBottom) {
+                fsBottom.style.display = "flex";
+                fsBottom.style.height = "";
+            }
+            if (fsLayoutToggleBtn) {
+                fsLayoutToggleBtn.textContent = "🎬📄 分屏";
+                fsLayoutToggleBtn.title = "当前：分屏模式。点击切换为仅片子模式";
+            }
+        }
+    }
+
+    function initFullscreenLayoutControls() {
+        if (fsLayoutToggleBtn) {
+            fsLayoutToggleBtn.addEventListener("click", function () {
+                var nextMode = "split";
+                if (fsLayoutMode === "split") {
+                    nextMode = "slide-only";
+                } else if (fsLayoutMode === "slide-only") {
+                    nextMode = "notes-only";
+                } else if (fsLayoutMode === "notes-only") {
+                    nextMode = "split";
+                }
+                setFullscreenLayout(nextMode);
+            });
+        }
+    }
+    
+    var fsControlsTimer = null;
+    var isHoveringControls = false;
+
+    function showFullscreenControls() {
+        if (fsControlsEl) {
+            fsControlsEl.classList.add("visible");
+        }
+        if (fsControlsTimer) {
+            clearTimeout(fsControlsTimer);
+            fsControlsTimer = null;
+        }
+    }
+
+    function resetHideControlsTimer() {
+        if (fsControlsTimer) {
+            clearTimeout(fsControlsTimer);
+        }
+        fsControlsTimer = setTimeout(function () {
+            if (fsControlsEl && !isHoveringControls) {
+                fsControlsEl.classList.remove("visible");
+            }
+        }, 3000);
+    }
+
+    function initFullscreenControlsFade() {
+        if (fullscreenOverlay) {
+            fullscreenOverlay.addEventListener("mousemove", function () {
+                showFullscreenControls();
+                resetHideControlsTimer();
+            });
+        }
+        if (fsControlsEl) {
+            fsControlsEl.addEventListener("mouseenter", function () {
+                isHoveringControls = true;
+                showFullscreenControls();
+            });
+            fsControlsEl.addEventListener("mouseleave", function () {
+                isHoveringControls = false;
+                resetHideControlsTimer();
+            });
+        }
+    }
+
+    initFullscreenLayoutControls();
+    initFullscreenControlsFade();
+
+    function enterFullscreen() {
+        isFullscreenMode = true;
+        syncFullscreenSvg();
+        loadCurrentNotes();
+        updateNavLabel();
+        showFullscreenControls();
+        resetHideControlsTimer();
+        if (fullscreenOverlay) {
+            fullscreenOverlay.style.display = "flex";
+            fullscreenOverlay.focus();
+            setTimeout(function () {
+                if (fullscreenOverlay) fullscreenOverlay.focus();
+            }, 50);
+            if (fullscreenOverlay.requestFullscreen) {
+                fullscreenOverlay.requestFullscreen().then(function() {
+                    if (fullscreenOverlay) fullscreenOverlay.focus();
+                }).catch(function(err) {
+                    console.warn("Fullscreen error:", err.message);
+                });
+            } else if (fullscreenOverlay.webkitRequestFullscreen) {
+                fullscreenOverlay.webkitRequestFullscreen();
+            } else if (fullscreenOverlay.msRequestFullscreen) {
+                fullscreenOverlay.msRequestFullscreen();
+            }
+        }
+    }
+
+    function exitFullscreen() {
+        isFullscreenMode = false;
+        setFullscreenLayout("split");
+        if (fsControlsTimer) {
+            clearTimeout(fsControlsTimer);
+            fsControlsTimer = null;
+        }
+        if (fsControlsEl) {
+            fsControlsEl.classList.remove("visible");
+        }
+        if (fullscreenOverlay) {
+            fullscreenOverlay.style.display = "none";
+        }
+        if (document.fullscreenElement || document.webkitFullscreenElement || document.msFullscreenElement) {
+            if (document.exitFullscreen) {
+                document.exitFullscreen();
+            } else if (document.webkitExitFullscreen) {
+                document.webkitExitFullscreen();
+            } else if (document.msExitFullscreen) {
+                document.msExitFullscreen();
+            }
+        }
+    }
+
+    function onFullscreenChange() {
+        var fsEl = document.fullscreenElement || document.webkitFullscreenElement || document.mozFullScreenElement || document.msFullscreenElement;
+        if (!fsEl && isFullscreenMode) {
+            exitFullscreen();
+        }
+    }
+
+    document.addEventListener("fullscreenchange", onFullscreenChange);
+    document.addEventListener("webkitfullscreenchange", onFullscreenChange);
+    document.addEventListener("mozfullscreenchange", onFullscreenChange);
+    document.addEventListener("MSFullscreenChange", onFullscreenChange);
+
+    function syncFullscreenSvg() {
+        if (!fsSvgContainer || !svgContent) return;
+        fsSvgContainer.innerHTML = svgContent.innerHTML;
+        if (activeTheme !== "astryx-theme-default") {
+            makeSvgThemeable(fsSvgContainer);
+        }
+        var svg = fsSvgContainer.querySelector("svg");
+        if (svg) {
+            var w = parseFloat(svg.getAttribute("width")) || 960;
+            var h = parseFloat(svg.getAttribute("height")) || 540;
+            if (svg.getAttribute("viewBox")) {
+                var vb = svg.getAttribute("viewBox").split(/\s+/);
+                if (vb.length === 4) {
+                    w = parseFloat(vb[2]) || w;
+                    h = parseFloat(vb[3]) || h;
+                }
+            }
+            var ratio = w / h;
+            fsSvgContainer.style.aspectRatio = ratio ? String(ratio) : "auto";
+        } else {
+            fsSvgContainer.style.aspectRatio = "auto";
+        }
+    }
+
+    var isDraggingSplitter = false;
+    function initFullscreenSplitter() {
+        var fsSplitter = document.getElementById("fullscreen-splitter");
+        if (fsSplitter) {
+            fsSplitter.addEventListener("mousedown", startSplitterDrag);
+            fsSplitter.addEventListener("touchstart", startSplitterDrag, { passive: true });
+        }
+    }
+
+    function startSplitterDrag(e) {
+        isDraggingSplitter = true;
+        var fsSplitter = document.getElementById("fullscreen-splitter");
+        if (fsSplitter) fsSplitter.classList.add("dragging");
+        
+        document.addEventListener("mousemove", onSplitterDrag);
+        document.addEventListener("mouseup", stopSplitterDrag);
+        document.addEventListener("touchmove", onSplitterDrag, { passive: false });
+        document.addEventListener("touchend", stopSplitterDrag);
+    }
+
+    function onSplitterDrag(e) {
+        if (!isDraggingSplitter) return;
+        var clientY = e.touches ? e.touches[0].clientY : e.clientY;
+        var totalHeight = window.innerHeight;
+        
+        var topPercentage = (clientY / totalHeight) * 100;
+        if (topPercentage < 20) topPercentage = 20;
+        if (topPercentage > 85) topPercentage = 85;
+        
+        if (fullscreenOverlay) {
+            fullscreenOverlay.style.setProperty("--fs-top-height", topPercentage + "vh");
+        }
+        if (e.cancelable) e.preventDefault();
+    }
+
+    function stopSplitterDrag() {
+        if (!isDraggingSplitter) return;
+        isDraggingSplitter = false;
+        var fsSplitter = document.getElementById("fullscreen-splitter");
+        if (fsSplitter) fsSplitter.classList.remove("dragging");
+        
+        document.removeEventListener("mousemove", onSplitterDrag);
+        document.removeEventListener("mouseup", stopSplitterDrag);
+        document.removeEventListener("touchmove", onSplitterDrag);
+        document.removeEventListener("touchend", stopSplitterDrag);
+    }
+
+    function getLuminance(hex) {
+        if (!hex || hex.indexOf('#') !== 0) return 1;
+        var c = hex.substring(1);
+        if (c.length === 3) {
+            c = c[0] + c[0] + c[1] + c[1] + c[2] + c[2];
+        }
+        if (c.length !== 6) return 1;
+        var r = parseInt(c.substring(0, 2), 16) / 255;
+        var g = parseInt(c.substring(2, 4), 16) / 255;
+        var b = parseInt(c.substring(4, 6), 16) / 255;
+        return 0.2126 * r + 0.7152 * g + 0.0722 * b;
+    }
+
+    function makeSvgThemeable(container) {
+        var svg = container.querySelector("svg");
+        if (!svg) return;
+        
+        // Step 1: Detect background color
+        var canvasWidth = parseFloat(svg.getAttribute("width")) || 1280;
+        var canvasHeight = parseFloat(svg.getAttribute("height")) || 720;
+        var bgColor = null;
+        var bgRect = svg.querySelector("rect");
+        if (bgRect) {
+            var w = parseFloat(bgRect.getAttribute("width"));
+            var h = parseFloat(bgRect.getAttribute("height"));
+            if (w >= canvasWidth * 0.9 && h >= canvasHeight * 0.9) {
+                var fill = bgRect.getAttribute("fill");
+                if (fill && fill !== "none") bgColor = fill.toLowerCase().trim();
+            }
+        }
+        if (!bgColor) bgColor = "#f8f8f8";
+        
+        var isBgLight = getLuminance(bgColor) >= 0.5;
+        
+        // Step 2: Establish the base color map
+        var colorMap = {
+            "#ffffff": "var(--color-card-bg)",
+            "#1a1f29": "var(--color-brand-secondary)",
+            "#1a1f2a": "var(--color-brand-secondary)",
+            "#404040": "var(--color-brand-secondary)",
+            "#383737": "var(--color-brand-secondary)",
+            "#af935c": "var(--color-brand-primary)",
+            "#f8f8f8": "var(--color-bg-slide)",
+            "#f2f2f2": "var(--color-border)",
+            "#e2e2e2": "var(--color-border)",
+            "#cccccc": "var(--color-border)"
+        };
+        
+        if (bgColor && !colorMap[bgColor]) {
+            colorMap[bgColor] = "var(--color-bg-slide)";
+            container.style.setProperty("--color-bg-slide-default", bgColor);
+        }
+        
+        // Step 3: Scan other elements' colors
+        svg.querySelectorAll("*").forEach(function (el) {
+            var attrs = ["fill", "stroke"];
+            attrs.forEach(function (attr) {
+                var val = el.getAttribute(attr);
+                if (val && val !== "none" && val !== "currentColor" && val !== "inherit" && val.indexOf("#") === 0) {
+                    var color = val.toLowerCase().trim();
+                    if (!colorMap[color]) {
+                        var lum = getLuminance(color);
+                        if (isBgLight) {
+                            if (lum < 0.45) {
+                                // Dark elements in a light slide -> map to text/brand-secondary
+                                colorMap[color] = "var(--color-brand-secondary)";
+                            } else if (lum >= 0.45 && lum < 0.75 && color !== "#ffffff") {
+                                // Light accent elements -> map to brand-primary
+                                colorMap[color] = "var(--color-brand-primary)";
+                            } else if (lum >= 0.75 && color !== "#ffffff") {
+                                // Very light elements (borders/dividers) -> map to border
+                                colorMap[color] = "var(--color-border)";
+                            }
+                        } else {
+                            if (lum >= 0.55) {
+                                // Light elements in a dark slide -> map to text/brand-secondary
+                                colorMap[color] = "var(--color-brand-secondary)";
+                            } else if (lum < 0.55 && lum > 0.25 && color !== bgColor) {
+                                // Dark accents -> map to brand-primary
+                                colorMap[color] = "var(--color-brand-primary)";
+                            } else if (lum <= 0.25 && color !== bgColor) {
+                                // Very dark borders/dividers -> map to border
+                                colorMap[color] = "var(--color-border)";
+                            }
+                        }
+                    }
+                }
+            });
+        });
+        
+        // Step 4: Map elements to CSS variables
+        svg.querySelectorAll("*").forEach(function (el) {
+            var fill = el.getAttribute("fill");
+            if (fill) {
+                var lf = fill.toLowerCase().trim();
+                if (colorMap[lf]) {
+                    el.setAttribute("fill", colorMap[lf]);
+                    el.style.fill = colorMap[lf];
+                }
+            }
+            var stroke = el.getAttribute("stroke");
+            if (stroke) {
+                var ls = stroke.toLowerCase().trim();
+                if (colorMap[ls]) {
+                    el.setAttribute("stroke", colorMap[ls]);
+                    el.style.stroke = colorMap[ls];
+                }
+            }
+        });
+    }
+
+    function renderCurrentSlideWithTheme() {
+        if (!currentRawSvgContent) return;
+        
+        svgPlaceholder.style.display = "none";
+        svgContent.style.display = "block";
+        
+        if (activeTheme === "astryx-theme-default") {
+            svgContent.innerHTML = sanitizeSvg(currentRawSvgContent);
+            if (svgContent) {
+                svgContent.style.removeProperty("--color-brand-primary");
+                svgContent.style.removeProperty("--color-brand-secondary");
+                svgContent.style.removeProperty("--color-bg-slide");
+                svgContent.style.removeProperty("--color-card-bg");
+                svgContent.style.removeProperty("--color-border");
+            }
+            if (fsSvgContainer) {
+                fsSvgContainer.style.removeProperty("--color-brand-primary");
+                fsSvgContainer.style.removeProperty("--color-brand-secondary");
+                fsSvgContainer.style.removeProperty("--color-bg-slide");
+                fsSvgContainer.style.removeProperty("--color-card-bg");
+                fsSvgContainer.style.removeProperty("--color-border");
+            }
+        } else {
+            svgContent.innerHTML = sanitizeSvg(currentRawSvgContent);
+            makeSvgThemeable(svgContent);
+        }
+        
+        syncFullscreenSvg();
+    }
+
+    var availableThemes = {};
+    function applyTheme(themeKey) {
+        activeTheme = themeKey;
+        
+        var theme = availableThemes[themeKey];
+        if (theme) {
+            var isDark = getLuminance(theme.bg) < 0.5;
+            var textSecondaryColor = isDark ? "#ffffff" : theme.secondary;
+            var cardBgColor = isDark ? "#1e293b" : "#ffffff";
+            var borderColor = isDark ? "#334155" : "#e2e8f0";
+            
+            // Adjust primary accent for visibility on dark backgrounds
+            var primaryColor = theme.primary;
+            if (isDark && getLuminance(primaryColor) < 0.35) {
+                primaryColor = "#f87171"; // soft light red/accent color fallback
+            }
+            
+            if (svgContent) {
+                svgContent.style.setProperty("--color-brand-primary", primaryColor);
+                svgContent.style.setProperty("--color-brand-secondary", textSecondaryColor);
+                svgContent.style.setProperty("--color-bg-slide", theme.bg);
+                svgContent.style.setProperty("--color-card-bg", cardBgColor);
+                svgContent.style.setProperty("--color-border", borderColor);
+            }
+            if (fsSvgContainer) {
+                fsSvgContainer.style.setProperty("--color-brand-primary", primaryColor);
+                fsSvgContainer.style.setProperty("--color-brand-secondary", textSecondaryColor);
+                fsSvgContainer.style.setProperty("--color-bg-slide", theme.bg);
+                fsSvgContainer.style.setProperty("--color-card-bg", cardBgColor);
+                fsSvgContainer.style.setProperty("--color-border", borderColor);
+            }
+        } else {
+            if (svgContent) {
+                svgContent.style.removeProperty("--color-brand-primary");
+                svgContent.style.removeProperty("--color-brand-secondary");
+                svgContent.style.removeProperty("--color-bg-slide");
+                svgContent.style.removeProperty("--color-card-bg");
+                svgContent.style.removeProperty("--color-border");
+            }
+            if (fsSvgContainer) {
+                fsSvgContainer.style.removeProperty("--color-brand-primary");
+                fsSvgContainer.style.removeProperty("--color-brand-secondary");
+                fsSvgContainer.style.removeProperty("--color-bg-slide");
+                fsSvgContainer.style.removeProperty("--color-card-bg");
+                fsSvgContainer.style.removeProperty("--color-border");
+            }
+        }
+        
+        if (themeSelect) themeSelect.value = themeKey;
+        if (fsThemeSelect) fsThemeSelect.value = themeKey;
+        
+        renderCurrentSlideWithTheme();
+    }
+
+    function initThemeSelectors() {
+        fetch("/api/themes")
+            .then(function (res) { return res.json(); })
+            .then(function (data) {
+                availableThemes = data;
+                
+                var selects = [themeSelect, fsThemeSelect];
+                selects.forEach(function (sel) {
+                    if (!sel) return;
+                    sel.innerHTML = '<option value="astryx-theme-default">Default Theme</option>';
+                    
+                    var sortedKeys = Object.keys(data).sort(function (a, b) {
+                        return data[a].name.localeCompare(data[b].name);
+                    });
+                    
+                    sortedKeys.forEach(function (key) {
+                        var opt = document.createElement("option");
+                        opt.value = key;
+                        opt.textContent = data[key].name;
+                        sel.appendChild(opt);
+                    });
+                });
+            })
+            .catch(function (err) {
+                console.error("Failed to load themes:", err);
+            });
+
+        if (themeSelect) {
+            themeSelect.addEventListener("change", function () {
+                applyTheme(themeSelect.value);
+            });
+        }
+        if (fsThemeSelect) {
+            fsThemeSelect.addEventListener("change", function () {
+                applyTheme(fsThemeSelect.value);
+            });
+        }
+    }
+
+    initThemeSelectors();
+
     if (btnUndo) btnUndo.addEventListener("click", runUndo);
 })();

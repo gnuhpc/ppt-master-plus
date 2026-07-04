@@ -497,6 +497,15 @@ def create_app(
             mem_count = len(annotations.get(svg_file.name, {}))
             annotation_count = max(disk_count, mem_count)
 
+            stem = svg_file.name.rsplit('.', 1)[0] if '.' in svg_file.name else svg_file.name
+            notes_file = project_path / 'notes' / (stem + '.md')
+            notes_mtime = 0.0
+            if notes_file.is_file():
+                try:
+                    notes_mtime = notes_file.stat().st_mtime
+                except OSError:
+                    pass
+
             slides.append({
                 'name': svg_file.name,
                 'annotated': annotation_count > 0,
@@ -504,9 +513,67 @@ def create_app(
                 'ok': ok,
                 'error': error_msg,
                 'mtime': mtime,
+                'notes_mtime': notes_mtime,
             })
 
         return jsonify({'slides': slides})
+
+    @app.route('/api/themes')
+    def get_themes():
+        layouts_dir = Path(__file__).resolve().parent.parent.parent / 'templates' / 'layouts'
+        themes = {}
+        if layouts_dir.is_dir():
+            for d in layouts_dir.iterdir():
+                if d.is_dir() and not d.name.startswith('.'):
+                    svg_files = list(d.glob('*.svg'))
+                    if not svg_files:
+                        continue
+                    
+                    import re
+                    from collections import Counter
+                    hex_pattern = re.compile(r'#(?:[0-9a-fA-F]{3,4}){1,2}\b')
+                    
+                    fills = []
+                    bg_color = None
+                    
+                    for f in svg_files:
+                        try:
+                            content = f.read_text(encoding='utf-8')
+                        except OSError:
+                            continue
+                        
+                        matches = hex_pattern.findall(content)
+                        for m in matches:
+                            color = m.lower()
+                            if len(color) == 4:
+                                color = '#' + color[1]*2 + color[2]*2 + color[3]*2
+                            fills.append(color)
+                        
+                        if not bg_color:
+                            bg_match = re.search(r'<rect\s+[^>]*fill=["\'](#[0-9a-fA-F]+)["\']', content)
+                            if bg_match:
+                                bg_color = bg_match.group(1).lower()
+                    
+                    if not fills:
+                        continue
+                    
+                    exclude = {bg_color, '#ffffff', '#000000', '#fff', '#000'}
+                    counts = Counter(c for c in fills if c not in exclude)
+                    most_common = counts.most_common(2)
+                    
+                    primary = most_common[0][0] if len(most_common) > 0 else '#af935c'
+                    secondary = most_common[1][0] if len(most_common) > 1 else '#1a1f29'
+                    if not bg_color:
+                        bg_color = '#f8f8f8'
+                        
+                    pretty_name = d.name.replace('_', ' ').title()
+                    themes[d.name] = {
+                        'name': pretty_name,
+                        'bg': bg_color,
+                        'primary': primary,
+                        'secondary': secondary
+                    }
+        return jsonify(themes)
 
     def _safe_svg_path(name: str):
         """Validate slide name and return safe path. Returns None if invalid.
@@ -619,7 +686,11 @@ def create_app(
         notes_dir.mkdir(parents=True, exist_ok=True)
         notes_file = notes_dir / (stem + '.md')
         notes_file.write_text(text, encoding='utf-8')
-        return jsonify({'status': 'ok'})
+        try:
+            notes_mtime = notes_file.stat().st_mtime
+        except OSError:
+            notes_mtime = 0.0
+        return jsonify({'status': 'ok', 'notes_mtime': notes_mtime})
 
     @app.route('/api/slide/<name>/annotate', methods=['POST'])
     def post_annotate(name: str):
