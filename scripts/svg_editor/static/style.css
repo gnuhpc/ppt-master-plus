@@ -1378,7 +1378,7 @@ input.prop-edit-multi-geo {
     min-height: 0;
     background: #131324;
     border-top: 1px solid #2a2a4a;
-    padding: 24px 48px;
+    padding: 0px 48px 24px 48px;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -1392,6 +1392,13 @@ input.prop-edit-multi-geo {
     line-height: 1.8;
     white-space: pre-wrap;
     word-break: break-word;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+#fullscreen-notes-content {
+    margin: 0 !important;
+    padding: 0 !important;
 }
 
 #fullscreen-notes-container::-webkit-scrollbar {
