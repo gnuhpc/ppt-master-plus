@@ -1564,28 +1564,7 @@ input.prop-edit-multi-geo {
     --color-border: #334155;
 }
 
-#fullscreen-notes-header {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 8px 16px;
-    background: #111124;
-    border-bottom: 1px solid #22223a;
-    user-select: none;
-    flex-shrink: 0;
-}
 
-.fs-notes-title {
-    color: #a0a0c0;
-    font-size: 13px;
-    font-weight: 600;
-    letter-spacing: 0.5px;
-}
-
-.fs-notes-actions {
-    display: flex;
-    gap: 8px;
-}
 
 .fs-layout-btn {
     height: 32px;
