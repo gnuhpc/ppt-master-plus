@@ -1,0 +1,20 @@
+{
+  "name": "neumorphism",
+  "display_name": "轻拟态风 (Neumorphism)",
+  "description": "Soft shadows, subtle highlights, embossed card feel for clean corporate & product decks.",
+  "colors": {
+    "primary": "#1E293B",
+    "secondary": "#64748B",
+    "accent": "#3B82F6",
+    "background": "#F0F3F8",
+    "card_bg": "#F0F3F8",
+    "border": "#E2E8F0",
+    "shadow_light": "#FFFFFF",
+    "shadow_dark": "#D1D9E6"
+  },
+  "fonts": {
+    "cjk": "PingFang SC, Microsoft YaHei, SimHei, sans-serif",
+    "latin": "Inter, System-UI, sans-serif"
+  },
+  "visual_style": "neumorphism"
+}

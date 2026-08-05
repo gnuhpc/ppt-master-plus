@@ -1,0 +1,19 @@
+{
+  "name": "code_terminal",
+  "display_name": "深浅代码 (Code Terminal)",
+  "description": "Developer terminal style with monospace fonts, syntax highlights, and slate dark cards.",
+  "colors": {
+    "primary": "#E2E8F0",
+    "secondary": "#94A3B8",
+    "accent": "#22C55E",
+    "accent_secondary": "#38BDF8",
+    "background": "#0F172A",
+    "card_bg": "#1E293B",
+    "border": "#334155"
+  },
+  "fonts": {
+    "cjk": "PingFang SC, Microsoft YaHei, SimHei, sans-serif",
+    "latin": "Consolas, Monaco, Fira Code, monospace"
+  },
+  "visual_style": "code_terminal"
+}

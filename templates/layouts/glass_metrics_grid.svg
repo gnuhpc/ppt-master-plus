@@ -1,0 +1,40 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-control-items="4" data-control-variant="kpi">
+  <rect width="1280" height="720" fill="#F1F5F9"/>
+  <circle cx="200" cy="150" r="180" fill="#6366F1" opacity="0.2" filter="blur(40px)"/>
+  <circle cx="1080" cy="550" r="220" fill="#EC4899" opacity="0.2" filter="blur(50px)"/>
+
+  <text x="80" y="80" font-family="PingFang SC, sans-serif" font-size="32" font-weight="bold" fill="#0F172A">玻璃糖果 KPI 成果看板</text>
+  <text x="80" y="115" font-family="Inter, sans-serif" font-size="16" fill="#475569">Glassmorphism Metrics Dashboard</text>
+
+  <!-- Metric 1 -->
+  <g id="card-1" data-control-index="1">
+    <rect x="80" y="160" width="260" height="460" rx="20" fill="#FFFFFF" fill-opacity="0.75" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="1.5"/>
+    <text x="110" y="240" font-family="Inter, sans-serif" font-size="44" font-weight="bold" fill="#6366F1">99.99%</text>
+    <text x="110" y="280" font-family="PingFang SC, sans-serif" font-size="18" font-weight="bold" fill="#0F172A">系统可用性</text>
+    <text x="110" y="315" font-family="PingFang SC, sans-serif" font-size="14" fill="#475569">年度 SLA 无中断运行时间。</text>
+  </g>
+
+  <!-- Metric 2 -->
+  <g id="card-2" data-control-index="2">
+    <rect x="373" y="160" width="260" height="460" rx="20" fill="#FFFFFF" fill-opacity="0.75" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="1.5"/>
+    <text x="403" y="240" font-family="Inter, sans-serif" font-size="44" font-weight="bold" fill="#EC4899">3.2x</text>
+    <text x="403" y="280" font-family="PingFang SC, sans-serif" font-size="18" font-weight="bold" fill="#0F172A">人效提升比</text>
+    <text x="403" y="315" font-family="PingFang SC, sans-serif" font-size="14" fill="#475569">智能体辅助研发效率倍增。</text>
+  </g>
+
+  <!-- Metric 3 -->
+  <g id="card-3" data-control-index="3">
+    <rect x="666" y="160" width="260" height="460" rx="20" fill="#FFFFFF" fill-opacity="0.75" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="1.5"/>
+    <text x="696" y="240" font-family="Inter, sans-serif" font-size="44" font-weight="bold" fill="#6366F1">&lt;15ms</text>
+    <text x="696" y="280" font-family="PingFang SC, sans-serif" font-size="18" font-weight="bold" fill="#0F172A">平均延迟</text>
+    <text x="696" y="315" font-family="PingFang SC, sans-serif" font-size="14" fill="#475569">极速响应与全网并发。</text>
+  </g>
+
+  <!-- Metric 4 -->
+  <g id="card-4" data-control-index="4">
+    <rect x="959" y="160" width="260" height="460" rx="20" fill="#FFFFFF" fill-opacity="0.75" stroke="#FFFFFF" stroke-opacity="0.9" stroke-width="1.5"/>
+    <text x="989" y="240" font-family="Inter, sans-serif" font-size="44" font-weight="bold" fill="#EC4899">100M+</text>
+    <text x="989" y="280" font-family="PingFang SC, sans-serif" font-size="18" font-weight="bold" fill="#0F172A">服务用户量</text>
+    <text x="989" y="315" font-family="PingFang SC, sans-serif" font-size="14" fill="#475569">覆盖全球多终端用户。</text>
+  </g>
+</svg>

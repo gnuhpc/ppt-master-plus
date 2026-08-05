@@ -1,0 +1,19 @@
+{
+  "name": "spectrum_chart",
+  "display_name": "色谱图表 (Spectrum Chart)",
+  "description": "High contrast data-dense style for management consulting and analytics reports.",
+  "colors": {
+    "primary": "#0F172A",
+    "secondary": "#475569",
+    "accent": "#1E3A8A",
+    "accent_secondary": "#0D9488",
+    "background": "#FFFFFF",
+    "card_bg": "#F8FAFC",
+    "border": "#E2E8F0"
+  },
+  "fonts": {
+    "cjk": "PingFang SC, Microsoft YaHei, SimHei, sans-serif",
+    "latin": "Arial, Helvetica Neue, sans-serif"
+  },
+  "visual_style": "spectrum_chart"
+}

@@ -1,0 +1,19 @@
+{
+  "name": "neon_tech",
+  "display_name": "炫光紫绿 (Neon Tech)",
+  "description": "Dark tech canvas with vibrant neon purple and green glow accents.",
+  "colors": {
+    "primary": "#F8FAFC",
+    "secondary": "#94A3B8",
+    "accent": "#9333EA",
+    "accent_secondary": "#10B981",
+    "background": "#0B0F19",
+    "card_bg": "#151C2C",
+    "border": "#2E3B52"
+  },
+  "fonts": {
+    "cjk": "PingFang SC, Microsoft YaHei, sans-serif",
+    "latin": "Inter, Roboto, sans-serif"
+  },
+  "visual_style": "neon_tech"
+}

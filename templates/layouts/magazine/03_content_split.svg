@@ -1,0 +1,41 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect x="0" y="0" width="1280" height="720" fill="#FAF6F0" />
+  
+  <!-- Header Chrome -->
+  <g id="header-chrome">
+    <text x="80" y="60" font-family="'JetBrains Mono', monospace" font-size="14" fill="#A3A3A3" letter-spacing="1">{{KICKER}}</text>
+    <line x1="80" y1="80" x2="1200" y2="80" stroke="#BFBFBF" stroke-width="1" />
+  </g>
+
+  <!-- Page Title -->
+  <g id="title-block">
+    <rect x="80" y="110" width="1120" height="80" fill="none" />
+    <text x="80" y="160" font-family="'Playfair Display', 'Noto Serif SC', serif" font-weight="700" font-size="44" fill="#262626">{{PAGE_TITLE}}</text>
+  </g>
+
+  <!-- Column Divider line -->
+  <line x1="640" y1="210" x2="640" y2="600" stroke="#D9D9D9" stroke-dasharray="4 4" stroke-width="1.5" />
+
+  <!-- Left Column: Content Area 1 -->
+  <g id="left-column">
+    <rect x="80" y="210" width="510" height="400" fill="none" />
+    <!-- Placeholder for text, in actual generation the Executor will populate this -->
+    <text x="80" y="250" font-family="'Inter', sans-serif" font-size="18" fill="#262626" line-height="1.6">{{CONTENT_LEFT}}</text>
+  </g>
+
+  <!-- Right Column: Content Area 2 -->
+  <g id="right-column">
+    <rect x="690" y="210" width="510" height="400" fill="none" />
+    <!-- Placeholder for text or image -->
+    <text x="690" y="250" font-family="'Inter', sans-serif" font-size="18" fill="#262626" line-height="1.6">{{CONTENT_RIGHT}}</text>
+  </g>
+
+  <!-- Footer -->
+  <g id="footer-block">
+    <line x1="80" y1="640" x2="1200" y2="640" stroke="#BFBFBF" stroke-width="1" />
+    <text x="80" y="670" font-family="'JetBrains Mono', monospace" font-size="12" fill="#A3A3A3">EDITORIAL MEMO // ARTICLE SHIFT</text>
+    <text x="1200" y="670" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="12" fill="#262626">PAGE // 03</text>
+  </g>
+</svg>

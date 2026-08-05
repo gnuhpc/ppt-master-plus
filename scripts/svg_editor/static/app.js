@@ -567,6 +567,80 @@
             });
     }
 
+    function loadSlideControls(name) {
+        var paramBox = document.getElementById("param-controls");
+        var paramBody = document.getElementById("param-controls-body");
+        if (!paramBox || !paramBody) return;
+
+        fetch("/api/slide/" + encodeURIComponent(name) + "/controls")
+            .then(function (res) { return res.json(); })
+            .then(function (data) {
+                if (data.status === "ok" && data.controls && Object.keys(data.controls).length > 0) {
+                    paramBody.innerHTML = "";
+                    paramBox.style.display = "block";
+                    Object.keys(data.controls).forEach(function (key) {
+                        var val = data.controls[key];
+                        var row = document.createElement("div");
+                        row.style.marginBottom = "6px";
+                        row.style.fontSize = "13px";
+                        row.style.display = "flex";
+                        row.style.alignItems = "center";
+                        row.style.justifyContent = "space-between";
+
+                        var label = document.createElement("span");
+                        label.textContent = key + ": ";
+                        row.appendChild(label);
+
+                        if (key === "items") {
+                            var slider = document.createElement("input");
+                            slider.type = "range";
+                            slider.min = "1";
+                            slider.max = "6";
+                            slider.value = val;
+                            slider.style.width = "100px";
+                            var valSpan = document.createElement("span");
+                            valSpan.textContent = val;
+                            valSpan.style.marginLeft = "4px";
+
+                            slider.addEventListener("change", function () {
+                                valSpan.textContent = slider.value;
+                                fetch("/api/slide/" + encodeURIComponent(name) + "/param-update", {
+                                    method: "POST",
+                                    headers: { "Content-Type": "application/json" },
+                                    body: JSON.stringify({ key: key, value: slider.value })
+                                }).then(function () {
+                                    selectSlide(name);
+                                });
+                            });
+                            row.appendChild(slider);
+                            row.appendChild(valSpan);
+                        } else {
+                            var input = document.createElement("input");
+                            input.type = "text";
+                            input.value = val;
+                            input.style.width = "100px";
+                            input.addEventListener("change", function () {
+                                fetch("/api/slide/" + encodeURIComponent(name) + "/param-update", {
+                                    method: "POST",
+                                    headers: { "Content-Type": "application/json" },
+                                    body: JSON.stringify({ key: key, value: input.value })
+                                }).then(function () {
+                                    selectSlide(name);
+                                });
+                            });
+                            row.appendChild(input);
+                        }
+                        paramBody.appendChild(row);
+                    });
+                } else {
+                    paramBox.style.display = "none";
+                }
+            })
+            .catch(function () {
+                if (paramBox) paramBox.style.display = "none";
+            });
+    }
+
     // ================================================================
     //  2.  selectSlide  -- GET /api/slide/{name}
     // ================================================================
@@ -596,6 +670,8 @@
         // Remove any stale spec-violation banner from a previous load.
         var oldSpecBanner = document.getElementById("spec-banner");
         if (oldSpecBanner) oldSpecBanner.remove();
+
+        loadSlideControls(name);
 
         fetch("/api/slide/" + encodeURIComponent(name))
             .then(function (res) { return res.json(); })
@@ -1907,6 +1983,7 @@
         modalCancel.style.display = "";
         modalOverlay.style.display = "flex";
     });
+
 
     modalConfirm.addEventListener("click", function () {
         if (pendingModalAction === "exit") {

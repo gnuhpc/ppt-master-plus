@@ -1,0 +1,30 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect x="0" y="0" width="1280" height="720" fill="#FAF6F0" />
+  
+  <!-- Left Side Full-Height Image Split or Accent Panel -->
+  <rect x="0" y="0" width="460" height="720" fill="#E8E2D9" />
+  <!-- Thin divider hairline -->
+  <line x1="460" y1="0" x2="460" y2="720" stroke="#262626" stroke-width="1.5" />
+  
+  <!-- Chapter Num -->
+  <g id="chapter-num-block">
+    <rect x="520" y="160" width="660" height="80" fill="none" />
+    <text x="540" y="220" font-family="'JetBrains Mono', monospace" font-weight="400" font-size="48" fill="#5C5C5C">{{CHAPTER_NUM}}</text>
+  </g>
+  
+  <!-- Divider -->
+  <line x1="540" y1="260" x2="700" y2="260" stroke="#262626" stroke-width="2" />
+
+  <!-- Chapter Title -->
+  <g id="chapter-title-block">
+    <rect x="520" y="300" width="660" height="260" fill="none" />
+    <text x="540" y="360" font-family="'Playfair Display', 'Noto Serif SC', serif" font-weight="700" font-size="64" fill="#262626">{{CHAPTER_TITLE}}</text>
+  </g>
+
+  <!-- Small Footer Metadata -->
+  <g id="metadata-block">
+    <text x="540" y="640" font-family="'Inter', sans-serif" font-size="14" fill="#A3A3A3" letter-spacing="1">ISSUE NOTE // MAIN OUTLINE</text>
+  </g>
+</svg>

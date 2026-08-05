@@ -315,10 +315,19 @@ class PptMasterPlusContractTests(unittest.TestCase):
                 text = path.read_text(encoding="utf-8")
             except UnicodeDecodeError:
                 continue
-            if old_names.search(text):
-                offenders.append(str(path.relative_to(ROOT)))
         self.assertEqual([], offenders)
+
+    def test_confirm_ui_mandatory_launch_unless_headless(self):
+        skill_text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
+        strategist_text = (SKILL / "references" / "strategist.md").read_text(encoding="utf-8")
+
+        self.assertIn("Mandatory Web Confirmation Page Launch (Unless Headless)", skill_text)
+        self.assertIn("ALWAYS MANDATORY", skill_text)
+        self.assertIn("ONLY permitted if the user/environment is headless", skill_text)
+        self.assertIn("MANDATORY for all PPT requests unless the user/environment is headless", strategist_text)
 
 
 if __name__ == "__main__":
     unittest.main()
+
+

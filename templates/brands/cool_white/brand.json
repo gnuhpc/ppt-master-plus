@@ -1,0 +1,18 @@
+{
+  "name": "cool_white",
+  "display_name": "冷白调研 (Cool White)",
+  "description": "Clean whitepaper report layout with elegant thin borders and deep blue typography.",
+  "colors": {
+    "primary": "#1E293B",
+    "secondary": "#64748B",
+    "accent": "#1E40AF",
+    "background": "#F8FAFC",
+    "card_bg": "#FFFFFF",
+    "border": "#CBD5E1"
+  },
+  "fonts": {
+    "cjk": "Songti SC, STSong, PingFang SC, sans-serif",
+    "latin": "Georgia, Times New Roman, serif"
+  },
+  "visual_style": "cool_white"
+}

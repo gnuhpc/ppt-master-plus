@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  
+  <!-- Header Chrome -->
+  <g id="header-chrome" fill="#A3A3A3" font-family="'Inter', sans-serif">
+    <text x="80" y="60" font-weight="600" font-size="14" letter-spacing="1">PROCESS // S11</text>
+    <line x1="80" y1="80" x2="1200" y2="80" stroke="#E0E0E0" stroke-width="1" />
+  </g>
+
+  <!-- Page Title -->
+  <g id="title-block">
+    <text x="80" y="140" font-family="'Inter', sans-serif" font-weight="200" font-size="44" fill="#0A0A0A">{{PAGE_TITLE}}</text>
+  </g>
+
+  <!-- Horizontal Timeline Axis Line -->
+  <line x1="80" y1="260" x2="1200" y2="260" stroke="#E0E0E0" stroke-width="1.5" />
+  <!-- Highlight segment in accent -->
+  <line x1="80" y1="260" x2="640" y2="260" stroke="#0020C2" stroke-width="2" />
+
+  <!-- Step 1 -->
+  <g id="step-1">
+    <circle cx="180" cy="260" r="6" fill="#0020C2" />
+    <text x="180" y="230" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="18" fill="#0020C2">{{STEP_1}}</text>
+    <rect x="180" y="300" width="280" height="280" fill="none" />
+    <text x="180" y="325" font-family="'Inter', sans-serif" font-weight="300" font-size="18" fill="#4B4B4B" line-height="1.5">{{STEP_1_BODY}}</text>
+  </g>
+
+  <!-- Step 2 -->
+  <g id="step-2">
+    <circle cx="640" cy="260" r="6" fill="#0020C2" />
+    <text x="640" y="230" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="18" fill="#0020C2">{{STEP_2}}</text>
+    <rect x="640" y="300" width="280" height="280" fill="none" />
+    <text x="640" y="325" font-family="'Inter', sans-serif" font-weight="300" font-size="18" fill="#4B4B4B" line-height="1.5">{{STEP_2_BODY}}</text>
+  </g>
+
+  <!-- Step 3 -->
+  <g id="step-3">
+    <circle cx="1100" cy="260" r="6" fill="#A3A3A3" />
+    <text x="1100" y="230" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="18" fill="#A3A3A3">{{STEP_3}}</text>
+    <rect x="1100" y="300" width="100" height="280" fill="none" />
+    <text x="1100" y="325" font-family="'Inter', sans-serif" font-weight="300" font-size="18" fill="#4B4B4B" line-height="1.5">{{STEP_3_BODY}}</text>
+  </g>
+
+  <!-- Footer -->
+  <g id="footer-block">
+    <line x1="80" y1="640" x2="1200" y2="640" stroke="#E0E0E0" stroke-width="1" />
+    <text x="80" y="670" font-family="'JetBrains Mono', monospace" font-size="12" fill="#A3A3A3">SWISS SEQUENCE SYSTEM</text>
+  </g>
+</svg>

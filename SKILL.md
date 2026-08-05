@@ -75,6 +75,8 @@ slide may benefit from a formal technical diagram or an Excalidraw-style sketch.
 | `${SKILL_DIR}/scripts/native_enhance_pptx.py` | Existing PPTX enhancement project init / validation / direct OOXML patch export |
 | `${SKILL_DIR}/scripts/native_narration_pptx.py` | Backward-compatible entrypoint for existing PPTX notes / narration enhancement |
 | `${SKILL_DIR}/scripts/update_spec.py` | Propagate a `spec_lock.md` color / font_family change across all generated SVGs |
+| `${SKILL_DIR}/scripts/export_video.py` | Export slide SVGs with Speaker Notes TTS audio narration into an MP4 video presentation |
+| `${SKILL_DIR}/scripts/critic_audit.py` | Run independent adversarial Critic audit (WCAG contrast, Claim Ledger, Footer Band Protection, Placeholders) |
 
 For complete tool documentation, see `${SKILL_DIR}/scripts/README.md`.
 
@@ -85,8 +87,8 @@ For complete tool documentation, see `${SKILL_DIR}/scripts/README.md`.
 | Index | Path | Purpose |
 |-------|------|---------|
 | Layout templates | `${SKILL_DIR}/templates/layouts/layouts_index.json` | Query available page layout templates |
-| Brand presets | `${SKILL_DIR}/templates/brands/brands_index.json` | Query available brand identity presets (color / typography / logo / voice) |
-| Visualization templates | `${SKILL_DIR}/templates/charts/charts_index.json` | Query available visualization SVG templates (charts, infographics, diagrams, frameworks) |
+| Brand presets | `${SKILL_DIR}/templates/brands/brands_index.json` | Query available brand identity presets (color / typography / logo / voice, includes `swiss_grid`) |
+| Visualization templates | `${SKILL_DIR}/templates/charts/charts_index.json` | Query available visualization SVG templates (charts, infographics, diagrams, frameworks, includes `diagram_shell` and `code_diff`) |
 | Icon library | `${SKILL_DIR}/templates/icons/` | See `${SKILL_DIR}/templates/icons/README.md`; search icons on demand with `ls templates/icons/<library>/ \| grep <keyword>` |
 
 ## Standalone Workflows
@@ -94,6 +96,7 @@ For complete tool documentation, see `${SKILL_DIR}/scripts/README.md`.
 | Workflow | Path | Purpose |
 |----------|------|---------|
 | `gated-production` | `workflows/gated-production.md` | Per-slide confirmed refinement gates — activated automatically when `generation_mode: "gated"` is confirmed in Confirm UI; every generated page stops for user review before the next page |
+| `reconstruct-image-pptx` | `workflows/reconstruct-image-pptx.md` | Reconstruct image slides, PDF screenshots, or AI poster slides into 100% native editable PPTX textframes & shapes |
 | `topic-research` | `workflows/topic-research.md` | Pre-pipeline — gather web sources when the user supplies only a topic with no source files |
 | `faithful-beautify` | `workflows/beautify-pptx.md` | Explicit source-faithful re-layout for existing PPTX decks — preserve page count/order/wording and optionally source master/layouts. Not the default for generic "beautify". |
 | `create-template` | `workflows/create-template.md` | Standalone layout template creation workflow |
@@ -105,6 +108,8 @@ For complete tool documentation, see `${SKILL_DIR}/scripts/README.md`.
 | `native-narration-pptx` | `workflows/native-narration-pptx.md` | Compatibility reference for the notes / narration subset of `native-enhance-pptx` |
 | `live-preview` | `workflows/live-preview.md` | Browser-based live preview — auto-started during generation and re-enterable any time the user mentions "live preview", "preview", "看效果", or wants to click/select a slide element |
 | `visual-review` | `workflows/visual-review.md` | Per-page rubric-based visual self-check — run only when the user explicitly asks for a visual re-pass on the generated SVGs (between Executor and post-processing). Opt-in only; never invoked by the main pipeline. |
+| `humanize-ppt-bridge` | `workflows/humanize-ppt-bridge.md` | Handoff bridge for Briefs, AST outlines, and Speaker Intents produced by humanize-ppt (LearnPrompt/humanize-ppt) |
+
 
 ### PPTX Route Boundary
 
@@ -403,7 +408,7 @@ When the confirmed `image_usage` is not `ai` (and the plan has no AI part), do *
 
 Reconcile **without a new blocking wait** — fold the coherent values into `design_spec.md` / `spec_lock.md` and state the adjustment in the §8 next-step handoff (e.g. "you switched to `dark-tech`; the light palette you had left no longer fit, so background / accent were re-derived — tell me if you wanted the original"). Canvas is the explicit exception: font sizes are deliberately **not** rescaled on a canvas change (see strategist §g).
 
-**Opt-out**: if the user has said they don't want the page (e.g. "不要网页" / "just confirm in chat" / "纯聊天确认"), skip the launch entirely (step 2) and present the Eight Confirmations in chat as before — steps 1, 3, 4 still apply (recommendations summary in chat; wait; take chat values).
+**Mandatory Web Confirmation Page Launch (Unless Headless)**: When a user initiates a PPT generation request, launching / popping up the web confirmation page (Confirm UI) is **ALWAYS MANDATORY** — skipping the web confirmation page launch is ONLY permitted if the user/environment is headless (`headless` / CLI environment with no GUI). Chat-only confirmation is strictly a fallback for headless environments or launch execution failures.
 
 The page is a **confirmation surface only** — Strategist still authors every recommendation; the page never generates content.
 

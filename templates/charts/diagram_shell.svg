@@ -1,0 +1,37 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <!-- Grid Pattern for Technical Background -->
+    <pattern id="tech_grid" width="40" height="40" patternUnits="userSpaceOnUse" data-pptx-pattern="smGrid">
+      <rect width="40" height="40" fill="#0F172A"/>
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="1"/>
+    </pattern>
+  </defs>
+
+  <!-- Container Box -->
+  <rect x="40" y="40" width="1200" height="640" rx="12" fill="url(#tech_grid)" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Header Bar -->
+  <path d="M 40 52 A 12 12 0 0 1 52 40 L 1228 40 A 12 12 0 0 1 1240 52 L 1240 88 L 40 88 Z" fill="#1E293B"/>
+  <circle cx="70" cy="64" r="6" fill="#EF4444"/>
+  <circle cx="90" cy="64" r="6" fill="#F59E0B"/>
+  <circle cx="110" cy="64" r="6" fill="#10B981"/>
+  <text x="135" y="69" fill="#F8FAFC" font-size="16" font-weight="bold" font-family="Consolas, 'Courier New', monospace">{{DIAGRAM_TITLE}}</text>
+
+  <!-- Control Buttons (Zoom / Pan / Reset / Expand) -->
+  <g transform="translate(1080, 52)" id="ctrl_group">
+    <rect x="0" y="0" width="28" height="24" fill="#334155" rx="4"/>
+    <text x="14" y="16" fill="#F8FAFC" font-size="12" font-weight="bold" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">+</text>
+    
+    <rect x="34" y="0" width="28" height="24" fill="#334155" rx="4"/>
+    <text x="48" y="16" fill="#F8FAFC" font-size="12" font-weight="bold" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">-</text>
+
+    <rect x="68" y="0" width="44" height="24" fill="#334155" rx="4"/>
+    <text x="90" y="16" fill="#F8FAFC" font-size="12" font-weight="bold" text-anchor="middle" font-family="Consolas, 'Courier New', monospace">Reset</text>
+  </g>
+
+  <!-- Diagram Canvas Area -->
+  <g transform="translate(60, 108)" id="diagram_viewport">
+    <!-- Embedded Diagram Content / Cards / Mermaid SVG nodes land here -->
+    {{DIAGRAM_CONTENT}}
+  </g>
+</svg>

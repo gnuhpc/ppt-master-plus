@@ -1,0 +1,18 @@
+{
+  "name": "dark_graph",
+  "display_name": "深色图谱 (Dark Graph)",
+  "description": "Charcoal dark mode with cyan network node highlights.",
+  "colors": {
+    "primary": "#F8FAFC",
+    "secondary": "#94A3B8",
+    "accent": "#06B6D4",
+    "background": "#111827",
+    "card_bg": "#1F2937",
+    "border": "#374151"
+  },
+  "fonts": {
+    "cjk": "PingFang SC, Microsoft YaHei, sans-serif",
+    "latin": "Inter, System-UI, sans-serif"
+  },
+  "visual_style": "dark_graph"
+}

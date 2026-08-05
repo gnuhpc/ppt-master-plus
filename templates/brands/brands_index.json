@@ -10,5 +10,34 @@
   "google": {
     "summary": "Google brand identity — multi-product corporate decks, developer events (Google I/O style), education and training in the Google ecosystem",
     "primary_color": "#4285F4"
+  },
+  "magazine": {
+    "summary": "Magazine & E-Ink style - warm tones, serif/sans-serif typography contrast, literary layouts.",
+    "primary_color": "#262626"
+  },
+  "swiss_style": {
+    "summary": "Swiss Internationalism style - Klein Blue high contrast accent, strict grid locking, typography weight contrasts.",
+    "primary_color": "#0020C2"
+  },
+  "notion": {
+    "summary": "Notion brand identity - warm paper tones, serif headings, outline card grids, minimalist Knowledge Management aesthetic.",
+    "primary_color": "#37352F"
+  },
+  "linear": {
+    "summary": "Linear brand identity - ultra-minimalist developer aesthetic, deep dark canvas, neon purple micro-glows, precision spacing.",
+    "primary_color": "#5E6AD2"
+  },
+  "stripe": {
+    "summary": "Stripe brand identity - elegant diagonal color mesh gradients, clean light/dark interfaces, Indigo primary, premium commercial aesthetic.",
+    "primary_color": "#635BFF"
+  },
+  "apple": {
+    "summary": "Apple brand identity - extreme whitespace, cinematic product layouts, San Francisco style typography, clean and premium minimalism.",
+    "primary_color": "#000000"
+  },
+  "swiss_grid": {
+    "summary": "Swiss Graphic Design Grid System — high contrast crimson red/navy, 3-tier font size hierarchy, >35% whitespace discipline.",
+    "primary_color": "#E63946"
   }
 }
+

@@ -1,0 +1,19 @@
+{
+  "name": "energy_growth",
+  "display_name": "高能增长 (High Energy Growth)",
+  "description": "High impact startup BP layout with vibrant orange and cyan growth indicators.",
+  "colors": {
+    "primary": "#F8FAFC",
+    "secondary": "#94A3B8",
+    "accent": "#F97316",
+    "accent_secondary": "#06B6D4",
+    "background": "#0D1117",
+    "card_bg": "#161B22",
+    "border": "#30363D"
+  },
+  "fonts": {
+    "cjk": "PingFang SC, Microsoft YaHei, SimHei, sans-serif",
+    "latin": "Impact, Inter, sans-serif"
+  },
+  "visual_style": "energy_growth"
+}

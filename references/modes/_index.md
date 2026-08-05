@@ -17,8 +17,9 @@ Each mode has its own file with: narrative skeleton, page-structure tendencies, 
 | [`instructional`](./instructional.md) | Concept decomposition; step-by-step; parallel exposition | Training, tutorials, explainers, knowledge sharing |
 | [`showcase`](./showcase.md) | Visual-led impact; big imagery / numbers; emotional rhythm | Launches, brand reveals, event / promo decks |
 | [`briefing`](./briefing.md) | Neutral, complete, scannable; topic titles, even weight, no thesis | Status updates, reference decks, catalogs, meeting packs, FAQs |
+| [`academic`](./academic.md) | Reading-first, high density, evidence-driven; Math/KaTeX equations, bbox figures, resolved citations | Lab meetings, journal clubs, PhD thesis defense, conference talks |
 
-> The five partition presentation *intent*, not aesthetics: persuade (`pyramid`) · tell a story (`narrative`) · teach (`instructional`) · impress (`showcase`) · simply inform (`briefing`).
+> The six partition presentation *intent*, not aesthetics: persuade (`pyramid`) · tell a story (`narrative`) · teach (`instructional`) · impress (`showcase`) · simply inform (`briefing`) · academic research (`academic`).
 >
 > **A mode is a lens, not a mandate over the user's own structure.** When the user brings their own outline, it is authoritative: transcribe it into `design_spec.md §IX` as given — page order and titles preserved — and let the mode govern only voice / register and page-internal treatment. A mode never reorders a user's pages or rewrites their given titles (mode is Reference-strength; a user-authored outline is exactly the override). When the user gives no structure, the mode does the structural lifting. To lay an outline out with the least reshaping, `briefing` imposes the lightest skeleton.
 
@@ -33,6 +34,7 @@ Each mode has its own file with: narrative skeleton, page-structure tendencies, 
 | Course / onboarding / how-to / science explainer | `instructional` | `pyramid` |
 | Product launch / brand reveal / event opener / keynote / 发布会 / TED | `showcase` | `narrative` |
 | Status update / reference / catalog / FAQ / meeting pack / 周报 / 参考 | `briefing` | `pyramid` |
+| Research paper / Literature / Thesis defense / 学术组会 / 论文汇报 | `academic` | `instructional` |
 
 > No single signal dominates — read the deck's actual purpose from `c. Key Information`. When two modes fit, follow the **primary** intent of the body pages, not the cover. A data review legitimately runs almost entirely `pyramid`; do not force variety.
 

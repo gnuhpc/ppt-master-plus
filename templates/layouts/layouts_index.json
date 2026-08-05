@@ -1,4 +1,34 @@
 {
+  "neumorphic_cards": {
+    "summary": "Neumorphic 4-column soft shadow card layout for feature matrices and core capabilities.",
+    "canvas_format": "ppt169",
+    "page_count": 1,
+    "page_types": ["content"]
+  },
+  "black_gold_comparison": {
+    "summary": "Luxury dark gold 2-column split comparison for strategic positioning.",
+    "canvas_format": "ppt169",
+    "page_count": 1,
+    "page_types": ["content"]
+  },
+  "glass_metrics_grid": {
+    "summary": "Glassmorphism 4-KPI dashboard with translucent cards and gradient glow.",
+    "canvas_format": "ppt169",
+    "page_count": 1,
+    "page_types": ["content"]
+  },
+  "code_architecture_flow": {
+    "summary": "Terminal-style 3-step execution pipeline for developer architecture docs.",
+    "canvas_format": "ppt169",
+    "page_count": 1,
+    "page_types": ["content"]
+  },
+  "double_diamond_process": {
+    "summary": "Double diamond (Discover, Define, Develop, Deliver) design thinking framework.",
+    "canvas_format": "ppt169",
+    "page_count": 1,
+    "page_types": ["content"]
+  },
   "academic_defense": {
     "summary": "Thesis defense, academic presentations, research progress reports, grant applications.",
     "canvas_format": "ppt169",
@@ -286,6 +316,30 @@
       "content",
       "content",
       "ending"
+    ]
+  },
+  "magazine": {
+    "summary": "Magazine & E-Ink layout templates - warm tones, serif titles, split layouts, structured margins.",
+    "canvas_format": "ppt169",
+    "page_count": 4,
+    "page_types": [
+      "cover",
+      "chapter",
+      "content_split",
+      "ending"
+    ]
+  },
+  "swiss_style": {
+    "summary": "Swiss Internationalism layout templates - strict modular grid structures, including S01 Cover, S02 Vertical Timeline, S06 KPI Tower, S08 Compare Grid, S11 Horizontal Timeline, S22 Image Hero.",
+    "canvas_format": "ppt169",
+    "page_count": 6,
+    "page_types": [
+      "S01_cover",
+      "S02_vertical_timeline",
+      "S06_kpi_tower",
+      "S08_duo_compare",
+      "S11_horizontal_timeline",
+      "S22_image_hero"
     ]
   }
 }

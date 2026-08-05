@@ -1,0 +1,36 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect x="0" y="0" width="1280" height="720" fill="#FAF6F0" />
+  
+  <!-- Outer Editorial Frame -->
+  <rect x="80" y="80" width="1120" height="560" fill="none" stroke="#262626" stroke-width="1.5" />
+  
+  <!-- Date / Category (Kicker style) -->
+  <g id="date-block">
+    <rect x="100" y="110" width="1080" height="40" fill="none" />
+    <text x="640" y="135" text-anchor="middle" font-family="'JetBrains Mono', monospace" font-size="14" fill="#5C5C5C" letter-spacing="4">{{DATE}}</text>
+  </g>
+
+  <!-- Title -->
+  <g id="title-block">
+    <rect x="150" y="240" width="980" height="200" fill="none" />
+    <text x="640" y="340" text-anchor="middle" font-family="'Playfair Display', 'Noto Serif SC', serif" font-weight="700" font-size="80" fill="#262626" letter-spacing="2">{{TITLE}}</text>
+  </g>
+
+  <!-- Divider Rule -->
+  <line x1="440" y1="400" x2="840" y2="400" stroke="#5C5C5C" stroke-width="1" />
+
+  <!-- Subtitle -->
+  <g id="subtitle-block">
+    <rect x="200" y="440" width="880" height="80" fill="none" />
+    <text x="640" y="480" text-anchor="middle" font-family="'Inter', sans-serif" font-weight="300" font-size="20" fill="#5C5C5C">{{SUBTITLE}}</text>
+  </g>
+
+  <!-- Three-Dot Footer Signature -->
+  <g id="dots-footer">
+    <circle cx="612" cy="590" r="5" fill="#262626" />
+    <circle cx="640" cy="590" r="5" fill="#262626" />
+    <circle cx="668" cy="590" r="5" fill="#262626" />
+  </g>
+</svg>

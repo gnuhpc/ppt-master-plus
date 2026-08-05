@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-control-items="2" data-control-variant="split">
+  <rect width="1280" height="720" fill="#050505"/>
+  <text x="80" y="80" font-family="PingFang SC, sans-serif" font-size="32" font-weight="bold" fill="#D4AF37">黑金双向对比矩阵</text>
+  <text x="80" y="115" font-family="Inter, sans-serif" font-size="16" fill="#A1A1AA">Black &amp; Gold Strategic Split Comparison</text>
+
+  <!-- Left Side -->
+  <g id="card-1" data-control-index="1">
+    <rect x="80" y="160" width="530" height="460" rx="16" fill="#121212" stroke="#27272A" stroke-width="1.5"/>
+    <rect x="120" y="200" width="120" height="32" rx="6" fill="#D4AF37" opacity="0.2"/>
+    <text x="180" y="222" font-family="PingFang SC, sans-serif" font-size="14" font-weight="bold" fill="#D4AF37" text-anchor="middle">传统模式</text>
+    <text x="120" y="280" font-family="PingFang SC, sans-serif" font-size="24" font-weight="bold" fill="#F8FAFC">集中式单体架构</text>
+    <text x="120" y="325" font-family="PingFang SC, sans-serif" font-size="15" fill="#A1A1AA">资源弹性差，无法满足高并发场景。</text>
+  </g>
+
+  <!-- Right Side -->
+  <g id="card-2" data-control-index="2">
+    <rect x="670" y="160" width="530" height="460" rx="16" fill="#18181B" stroke="#D4AF37" stroke-width="2"/>
+    <rect x="710" y="200" width="120" height="32" rx="6" fill="#D4AF37"/>
+    <text x="770" y="222" font-family="PingFang SC, sans-serif" font-size="14" font-weight="bold" fill="#050505" text-anchor="middle">黑金新架构</text>
+    <text x="710" y="280" font-family="PingFang SC, sans-serif" font-size="24" font-weight="bold" fill="#F8FAFC">分布式云原生矩阵</text>
+    <text x="710" y="325" font-family="PingFang SC, sans-serif" font-size="15" fill="#A1A1AA">极致弹性伸缩，安全可信保障。</text>
+  </g>
+</svg>

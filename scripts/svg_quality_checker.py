@@ -285,6 +285,9 @@ class SVGQualityChecker:
                 # 8b. Check <pattern> elements declare a PPTX preset.
                 self._check_pattern_fills(content, result)
 
+                # 8c. Check for unhandled text overfill and placeholder tags.
+                self._check_text_volume_overflow(content, result)
+
                 # 9. Check spec_lock drift (colors / font-family / font-size).
                 #    Templates do not ship a spec_lock.md, so skip in template
                 #    mode to avoid noise.
@@ -295,6 +298,9 @@ class SVGQualityChecker:
                 #    image_sources.json; skip in template mode.
                 if not self.template_mode:
                     self._check_sourced_image_attribution(content, svg_path, result)
+
+                # 11. Check WCAG 2.1 contrast ratio between text fill and background (Swiss Grid rule)
+                self._check_wcag_contrast(content, result)
 
             # Determine pass/fail
             result['passed'] = len(result['errors']) == 0
@@ -776,6 +782,62 @@ class SVGQualityChecker:
                     "ltUpDiag / dkUpDiag / cross / diagCross / weave / plaid / "
                     "horzBrick (others); full enum in svg_quality_checker.py "
                     "_OOXML_PATTERN_PRESETS."
+                )
+
+    def _check_text_volume_overflow(self, content: str, result: Dict):
+        """Check for text elements with abnormally high character counts or unreplaced placeholders."""
+        try:
+            root = ET.fromstring(content)
+        except ET.ParseError:
+            return
+
+        for elem in root.iter():
+            tag = elem.tag.split('}')[-1] if '}' in elem.tag else elem.tag
+            if tag == 'text':
+                full_text = "".join(elem.itertext()).strip()
+                tspans = [child for child in elem if (child.tag.split('}')[-1] if '}' in child.tag else child.tag) == 'tspan']
+                if len(full_text) > 120 and len(tspans) <= 1:
+                    result['warnings'].append(
+                        f"Text element contains {len(full_text)} chars on a single line without <tspan> breaks; potential canvas overflow."
+                    )
+                for raw_word in ('TODO', 'TBD', 'SLIDES_HERE', '[必填]', 'lorem ipsum'):
+                    if raw_word.lower() in full_text.lower():
+                        result['warnings'].append(
+                            f"Text element contains unreplaced placeholder tag: '{raw_word}'."
+                        )
+
+    def _relative_luminance(self, hex_color: str) -> float:
+        """Calculate WCAG 2.1 relative luminance for a HEX color."""
+        hex_color = hex_color.lstrip('#')
+        if len(hex_color) == 3:
+            hex_color = ''.join([c * 2 for c in hex_color])
+        if len(hex_color) != 6:
+            return 0.5
+        try:
+            r, g, b = [int(hex_color[i:i+2], 16) / 255.0 for i in (0, 2, 4)]
+        except ValueError:
+            return 0.5
+        def srgb_adj(c):
+            return c / 12.92 if c <= 0.04045 else ((c + 0.055) / 1.055) ** 2.4
+        return 0.2126 * srgb_adj(r) + 0.7152 * srgb_adj(g) + 0.0722 * srgb_adj(b)
+
+    def _check_wcag_contrast(self, content: str, result: Dict):
+        """Check WCAG 2.1 contrast ratio between text fill and background color (Swiss Grid rule)."""
+        bg_match = re.search(r'<(?:rect|path|g)[^>]*fill=["\'](#[0-9A-Fa-f]{6})["\'][^>]*id=["\'](?:bg|background|canvas_bg)', content, re.IGNORECASE)
+        if not bg_match:
+            bg_match = re.search(r'<rect[^>]*width=["\'](?:100%|1920|1280|960)["\'][^>]*fill=["\'](#[0-9A-Fa-f]{6})["\']', content, re.IGNORECASE)
+        bg_color = bg_match.group(1) if bg_match else None
+        if not bg_color:
+            return
+        text_fills = set(re.findall(r'<text[^>]*fill=["\'](#[0-9A-Fa-f]{6})["\']', content, re.IGNORECASE))
+        l_bg = self._relative_luminance(bg_color)
+        for text_color in text_fills:
+            l_text = self._relative_luminance(text_color)
+            l1, l2 = max(l_bg, l_text), min(l_bg, l_text)
+            ratio = (l1 + 0.05) / (l2 + 0.05)
+            if ratio < 4.5:
+                result['warnings'].append(
+                    f"Low WCAG contrast ratio ({ratio:.2f}:1) between text fill {text_color} and background {bg_color} (expected >= 4.5:1 per Swiss Grid rule)."
                 )
 
     def _get_spec_lock(self, svg_path: Path):

@@ -974,6 +974,142 @@ def create_app(
             'annotation_files': annotation_files,
         })
 
+    @app.route('/api/export-pptx', methods=['GET', 'POST'])
+    def export_pptx():
+        """Export project SVGs to editable PPTX by running svg_to_pptx.py."""
+        output_pptx = project_path / f"{project_path.name}.pptx"
+        script_path = _ROOT_SCRIPTS_DIR / 'svg_to_pptx.py'
+        cmd = [sys.executable, str(script_path), str(project_path), '-o', str(output_pptx)]
+
+        try:
+            res = subprocess.run(cmd, capture_output=True, text=True, check=True)
+            logger.info("PPTX export success: %s", output_pptx)
+            return jsonify({
+                'status': 'ok',
+                'file_name': output_pptx.name,
+                'download_url': '/api/export-pptx-download',
+                'message': 'PPTX exported successfully'
+            })
+        except subprocess.CalledProcessError as exc:
+            logger.error("PPTX export failed: %s", exc.stderr)
+            return jsonify({
+                'status': 'error',
+                'error': f'Export failed: {exc.stderr or exc.stdout}'
+            }), 500
+
+    @app.route('/api/export-pptx-download', methods=['GET'])
+    def export_pptx_download():
+        """Send exported PPTX file for download."""
+        output_pptx = project_path / f"{project_path.name}.pptx"
+        if not output_pptx.exists():
+            return jsonify({'error': 'PPTX file not found. Run export first.'}), 404
+        return send_from_directory(
+            directory=str(project_path),
+            path=output_pptx.name,
+            as_attachment=True
+        )
+
+    @app.route('/api/slide/<name>/replace-image', methods=['POST'])
+    def replace_image(name: str):
+        """Replace target <image> href in slide SVG."""
+        svg_file = _safe_svg_path(name)
+        if svg_file is None or not svg_file.exists():
+            return jsonify({'error': 'Slide SVG not found'}), 404
+
+        data = request.get_json(silent=True) or {}
+        image_id = data.get('image_id')
+        new_href = data.get('new_href')
+
+        if not image_id or not new_href:
+            return jsonify({'error': 'Missing image_id or new_href'}), 400
+
+        try:
+            tree = ET.parse(str(svg_file))
+            root = tree.getroot()
+            target_elem = None
+            for elem in root.iter():
+                if elem.attrib.get('id') == image_id or elem.attrib.get('data-temp-id') == image_id:
+                    target_elem = elem
+                    break
+
+            if target_elem is None:
+                return jsonify({'error': f'Image element {image_id} not found'}), 404
+
+            # Update href or xlink:href
+            if '{http://www.w3.org/1999/xlink}href' in target_elem.attrib:
+                target_elem.attrib['{http://www.w3.org/1999/xlink}href'] = new_href
+            else:
+                target_elem.attrib['href'] = new_href
+
+            tree.write(str(svg_file), encoding='UTF-8', xml_declaration=True)
+            return jsonify({'status': 'ok', 'message': f'Image {image_id} updated'})
+        except Exception as e:
+            return jsonify({'error': str(e)}), 500
+
+    @app.route('/api/slide/<name>/controls', methods=['GET'])
+    def get_slide_controls(name: str):
+        """Read data-control-* attributes from the root or sub-elements of slide SVG."""
+        svg_file = _safe_svg_path(name)
+        if svg_file is None or not svg_file.exists():
+            return jsonify({'error': 'Slide SVG not found'}), 404
+
+        try:
+            tree = ET.parse(str(svg_file))
+            root = tree.getroot()
+            controls = {}
+            for k, v in root.attrib.items():
+                if k.startswith('data-control-'):
+                    controls[k.replace('data-control-', '')] = v
+
+            card_count = 0
+            for elem in root.iter():
+                if elem.attrib.get('id', '').startswith('card-') or elem.attrib.get('data-control-index'):
+                    card_count += 1
+            if card_count > 0 and 'items' not in controls:
+                controls['items'] = str(card_count)
+
+            return jsonify({'status': 'ok', 'slide': name, 'controls': controls})
+        except Exception as e:
+            return jsonify({'error': str(e)}), 500
+
+    @app.route('/api/slide/<name>/param-update', methods=['POST'])
+    def update_slide_param(name: str):
+        """Dynamically update control parameters on SVG elements."""
+        svg_file = _safe_svg_path(name)
+        if svg_file is None or not svg_file.exists():
+            return jsonify({'error': 'Slide SVG not found'}), 404
+
+        data = request.get_json(silent=True) or {}
+        param_key = data.get('key')
+        param_value = data.get('value')
+
+        if not param_key:
+            return jsonify({'error': 'Missing param key'}), 400
+
+        try:
+            tree = ET.parse(str(svg_file))
+            root = tree.getroot()
+            root.attrib[f'data-control-{param_key}'] = str(param_value)
+
+            if param_key == 'items':
+                try:
+                    target_count = int(param_value)
+                    for elem in root.iter():
+                        idx_attr = elem.attrib.get('data-control-index') or (elem.attrib.get('id', '').replace('card-', '') if elem.attrib.get('id', '').startswith('card-') else None)
+                        if idx_attr and idx_attr.isdigit():
+                            card_idx = int(idx_attr)
+                            if card_idx > target_count:
+                                elem.attrib['display'] = 'none'
+                            else:
+                                elem.attrib.pop('display', None)
+                except ValueError:
+                    pass
+
+            tree.write(str(svg_file), encoding='UTF-8', xml_declaration=True)
+            return jsonify({'status': 'ok', 'message': f'Param {param_key} updated to {param_value}'})
+        except Exception as e:
+            return jsonify({'error': str(e)}), 500
+
     return app
 
 

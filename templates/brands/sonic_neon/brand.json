@@ -1,0 +1,19 @@
+{
+  "name": "sonic_neon",
+  "display_name": "声波霓虹 (Sonic Neon)",
+  "description": "Cyberpunk event & trend brand deck with violet and hot pink neon accents.",
+  "colors": {
+    "primary": "#FAFAFA",
+    "secondary": "#A1A1AA",
+    "accent": "#7C3AED",
+    "accent_secondary": "#EC4899",
+    "background": "#09090B",
+    "card_bg": "#18181B",
+    "border": "#27272A"
+  },
+  "fonts": {
+    "cjk": "PingFang SC, Microsoft YaHei, sans-serif",
+    "latin": "Inter, Roboto, sans-serif"
+  },
+  "visual_style": "sonic_neon"
+}

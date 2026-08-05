@@ -1,0 +1,21 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-control-items="4" data-control-variant="framework">
+  <rect width="1280" height="720" fill="#F8FAFC"/>
+  <text x="80" y="80" font-family="PingFang SC, sans-serif" font-size="32" font-weight="bold" fill="#1E293B">双钻设计思考模型 (Double Diamond)</text>
+  <text x="80" y="115" font-family="Inter, sans-serif" font-size="16" fill="#64748B">Discover - Define - Develop - Deliver Framework</text>
+
+  <!-- Diamond 1: Discover & Define -->
+  <polygon points="120,380 340,200 560,380 340,560" fill="none" stroke="#3B82F6" stroke-width="3" opacity="0.8"/>
+  <line x1="340" y1="200" x2="340" y2="560" stroke="#3B82F6" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="230" y="375" font-family="PingFang SC, sans-serif" font-size="18" font-weight="bold" fill="#1E293B">1. 发散探索</text>
+  <text x="230" y="405" font-family="Inter, sans-serif" font-size="14" fill="#64748B">Discover</text>
+  <text x="450" y="375" font-family="PingFang SC, sans-serif" font-size="18" font-weight="bold" fill="#1E293B">2. 收敛定义</text>
+  <text x="450" y="405" font-family="Inter, sans-serif" font-size="14" fill="#64748B">Define</text>
+
+  <!-- Diamond 2: Develop & Deliver -->
+  <polygon points="620,380 840,200 1060,380 840,560" fill="none" stroke="#10B981" stroke-width="3" opacity="0.8"/>
+  <line x1="840" y1="200" x2="840" y2="560" stroke="#10B981" stroke-width="1.5" stroke-dasharray="4,4"/>
+  <text x="730" y="375" font-family="PingFang SC, sans-serif" font-size="18" font-weight="bold" fill="#1E293B">3. 方案构想</text>
+  <text x="730" y="405" font-family="Inter, sans-serif" font-size="14" fill="#64748B">Develop</text>
+  <text x="950" y="375" font-family="PingFang SC, sans-serif" font-size="18" font-weight="bold" fill="#1E293B">4. 落地交付</text>
+  <text x="950" y="405" font-family="Inter, sans-serif" font-size="14" fill="#64748B">Deliver</text>
+</svg>

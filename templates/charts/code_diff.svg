@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720">
+  <defs>
+    <!-- Background Header -->
+  </defs>
+
+  <!-- Code Frame Box -->
+  <rect x="40" y="40" width="1200" height="640" rx="10" fill="#0F172A" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Header Bar -->
+  <path d="M 40 50 A 10 10 0 0 1 50 40 L 1230 40 A 10 10 0 0 1 1240 50 L 1240 84 L 40 84 Z" fill="#1E293B"/>
+  <circle cx="70" cy="62" r="6" fill="#EF4444"/>
+  <circle cx="90" cy="62" r="6" fill="#F59E0B"/>
+  <circle cx="110" cy="62" r="6" fill="#10B981"/>
+  <text x="135" y="67" font-family="Consolas, 'Courier New', monospace" font-size="16" fill="#F8FAFC" font-weight="bold">{{DIFF_TITLE}}</text>
+
+  <!-- Diff Lines Container -->
+  <g transform="translate(40, 95)" font-family="Consolas, 'Courier New', monospace" font-size="16" id="diff_container">
+    <!-- Line 1: Plain -->
+    <text x="40" y="30" fill="#64748B" font-size="14" text-anchor="end">1</text>
+    <text x="70" y="30" fill="#CBD5E1">class OrderService {</text>
+
+    <!-- Line 2: Removed -->
+    <rect x="2" y="45" width="1196" height="32" fill="#451A1A"/>
+    <text x="40" y="67" fill="#64748B" font-size="14" text-anchor="end">2</text>
+    <text x="70" y="67" fill="#F87171">-   public processOrder(orderId: string): void {</text>
+
+    <!-- Line 3: Added -->
+    <rect x="2" y="80" width="1196" height="32" fill="#143A27"/>
+    <text x="40" y="102" fill="#64748B" font-size="14" text-anchor="end">2</text>
+    <text x="70" y="102" fill="#4ADE80">+   public async processOrderAsync(orderId: string): Promise&lt;Result&gt; {</text>
+
+    <!-- Line 4: Added -->
+    <rect x="2" y="115" width="1196" height="32" fill="#143A27"/>
+    <text x="40" y="137" fill="#64748B" font-size="14" text-anchor="end">3</text>
+    <text x="70" y="137" fill="#4ADE80">+       await this.circuitBreaker.execute(() =&gt; this.checkout(orderId));</text>
+
+    <!-- Line 5: Plain -->
+    <text x="40" y="172" fill="#64748B" font-size="14" text-anchor="end">4</text>
+    <text x="70" y="172" fill="#CBD5E1">    }</text>
+
+    <!-- Line 6: Plain -->
+    <text x="40" y="207" fill="#64748B" font-size="14" text-anchor="end">5</text>
+    <text x="70" y="207" fill="#CBD5E1">}</text>
+  </g>
+</svg>

@@ -1,0 +1,47 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  
+  <!-- S22 Top Hero Image Slot (21:9 ratio: 1120x480 width and height inside top bounds) -->
+  <!-- We define a rect as the frame and an <image> element inside it -->
+  <!-- Absolute coordinates: x="80", y="80", width="1120", height="300" -->
+  <rect x="80" y="80" width="1120" height="300" fill="#EAEAEA" />
+  <image href="{{IMAGE_PATH}}" x="80" y="80" width="1120" height="300" preserveAspectRatio="xMidYMid slice" data-image-slot="s22-hero-21x9" />
+  
+  <!-- Slide Title overlay or alignment -->
+  <g id="title-block">
+    <!-- Top-left overlay background inside the image -->
+    <rect x="110" y="240" width="460" height="110" fill="#FFFFFF" opacity="0.95" />
+    <text x="130" y="295" font-family="'Inter', sans-serif" font-weight="200" font-size="36" fill="#0A0A0A">{{PAGE_TITLE}}</text>
+  </g>
+
+  <!-- Bottom Columns (snapping to grid) -->
+  <!-- Col 1: Hero Metric 1 -->
+  <g id="metric-1">
+    <rect x="80" y="410" width="340" height="190" fill="#F5F5F5" />
+    <line x1="80" y1="410" x2="420" y2="410" stroke="#0020C2" stroke-width="2" />
+    <text x="110" y="475" font-family="'JetBrains Mono', monospace" font-weight="300" font-size="44" fill="#0020C2">{{VAL_1}}</text>
+    <text x="110" y="535" font-family="'Inter', sans-serif" font-weight="500" font-size="16" fill="#4B4B4B">{{LABEL_1}}</text>
+  </g>
+
+  <!-- Col 2: Hero Metric 2 -->
+  <g id="metric-2">
+    <rect x="470" y="410" width="340" height="190" fill="#F5F5F5" />
+    <line x1="470" y1="410" x2="810" y2="410" stroke="#0020C2" stroke-width="2" />
+    <text x="500" y="475" font-family="'JetBrains Mono', monospace" font-weight="300" font-size="44" fill="#0A0A0A">{{VAL_2}}</text>
+    <text x="500" y="535" font-family="'Inter', sans-serif" font-weight="500" font-size="16" fill="#4B4B4B">{{LABEL_2}}</text>
+  </g>
+
+  <!-- Col 3: Side Text / Hero Description -->
+  <g id="desc-column">
+    <rect x="860" y="410" width="340" height="190" fill="none" />
+    <text x="860" y="440" font-family="'Inter', sans-serif" font-weight="300" font-size="16" fill="#4B4B4B" line-height="1.5">{{HERO_DESC}}</text>
+  </g>
+
+  <!-- Footer -->
+  <g id="footer-block">
+    <line x1="80" y1="640" x2="1200" y2="640" stroke="#E0E0E0" stroke-width="1" />
+    <text x="80" y="670" font-family="'JetBrains Mono', monospace" font-size="12" fill="#A3A3A3">CASE FACT // EVIDENCE S22</text>
+  </g>
+</svg>

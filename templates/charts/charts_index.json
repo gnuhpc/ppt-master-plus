@@ -11,6 +11,12 @@
     "updated": "2026-06-28"
   },
   "charts": {
+    "diagram_shell": {
+      "summary": "Pick for 15+ node complex architectures, technical flowcharts, and system container diagrams requiring zoom/pan/reset interactive controls. Skip for simple 3-5 step linear flows (use process_flow)."
+    },
+    "code_diff": {
+      "summary": "Pick for technical code reviews, API refactoring comparisons, and code change diffs showing added (+ green) and removed (- red) lines. Skip for generic architecture (use diagram_shell)."
+    },
     "area_chart": {
       "summary": "Pick for 1-2 cumulative trend series emphasizing volume over time. Skip for >=3 series (use stacked_area_chart) or pure direction without volume (use line_chart)."
     },

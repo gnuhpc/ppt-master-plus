@@ -1,0 +1,18 @@
+{
+  "name": "black_gold",
+  "display_name": "黑金实验 (Black Gold Lab)",
+  "description": "Pure black background with matte gold accents for luxury brand proposals.",
+  "colors": {
+    "primary": "#F8FAFC",
+    "secondary": "#A1A1AA",
+    "accent": "#D4AF37",
+    "background": "#050505",
+    "card_bg": "#121212",
+    "border": "#27272A"
+  },
+  "fonts": {
+    "cjk": "PingFang SC, Microsoft YaHei, SimHei, sans-serif",
+    "latin": "Cinzel, Cormorant Garamond, Georgia, serif"
+  },
+  "visual_style": "black_gold"
+}

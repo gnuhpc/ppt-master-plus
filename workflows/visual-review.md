@@ -14,7 +14,14 @@ description: Per-page rubric-based visual self-review via parallel subagents. Ru
 
 This is an **optional auxiliary loop**, opt-in only. The main pipeline (SKILL.md Step 1–7) does not invoke it; trigger only when the user explicitly asks for a visual re-pass on the generated SVGs before export.
 
+> **Independent Critic Posture (借鉴 slide-maker/critic.md)**:
+> 充当最苛刻的高级 presentation critic（立足于演说交付视角）：
+> 1. **像素实测优先**：审稿必须基于已渲染的 `slideNN.png` 真实像素，检查排版挤压、错位、溢出、图标拉伸、字号过小或低对比度（WCAG < 4.5:1）。
+> 2. **数据完整性 (Claim Ledger)**：比对 `design_spec.md §I` 中的 `claim_ledger` 数据账本，核实 PPT 中的数字与图表基准是否与源文档严格匹配，严禁无来源的凭空造数。
+> 3. **动画节奏 (Motion Manifest)**：校验 click-build 显现动画是否自然流畅（只在 bullets/steps/diagrams 逐步展开，避免为动而动，严禁首帧泄漏结论）。
+
 **Token cost**: each batch subagent re-reads the rubric + `design_spec.md` + `spec_lock.md` and processes K SVG+PNG pairs. For a 20-page deck with K=5, expect on the order of 100–150K additional input tokens on top of the main generation run.
+
 
 ## When to Run
 

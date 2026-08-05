@@ -1,0 +1,49 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <!-- Background -->
+  <rect x="0" y="0" width="1280" height="720" fill="#FFFFFF" />
+  
+  <!-- Header Chrome -->
+  <g id="header-chrome" fill="#A3A3A3" font-family="'Inter', sans-serif">
+    <text x="80" y="60" font-weight="600" font-size="14" letter-spacing="1">CHRONOLOGY // S02</text>
+    <line x1="80" y1="80" x2="1200" y2="80" stroke="#E0E0E0" stroke-width="1" />
+  </g>
+
+  <!-- Page Title -->
+  <g id="title-block">
+    <text x="80" y="140" font-family="'Inter', sans-serif" font-weight="200" font-size="44" fill="#0A0A0A">{{PAGE_TITLE}}</text>
+  </g>
+
+  <!-- Timeline Axis Line -->
+  <line x1="180" y1="200" x2="180" y2="600" stroke="#0020C2" stroke-width="1.5" stroke-dasharray="4 4" />
+
+  <!-- Node 1 -->
+  <g id="node-1">
+    <circle cx="180" cy="250" r="6" fill="#0020C2" />
+    <text x="80" y="255" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="18" fill="#0A0A0A">{{YEAR_1}}</text>
+    <rect x="220" y="225" width="900" height="60" fill="none" />
+    <text x="220" y="250" font-family="'Inter', sans-serif" font-weight="300" font-size="18" fill="#4B4B4B">{{DESC_1}}</text>
+  </g>
+
+  <!-- Node 2 -->
+  <g id="node-2">
+    <circle cx="180" cy="380" r="6" fill="#0020C2" />
+    <text x="80" y="385" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="18" fill="#0A0A0A">{{YEAR_2}}</text>
+    <rect x="220" y="355" width="900" height="60" fill="none" />
+    <text x="220" y="380" font-family="'Inter', sans-serif" font-weight="300" font-size="18" fill="#4B4B4B">{{DESC_2}}</text>
+  </g>
+
+  <!-- Node 3 -->
+  <g id="node-3">
+    <circle cx="180" cy="510" r="6" fill="#0020C2" />
+    <text x="80" y="515" font-family="'JetBrains Mono', monospace" font-weight="600" font-size="18" fill="#0A0A0A">{{YEAR_3}}</text>
+    <rect x="220" y="485" width="900" height="60" fill="none" />
+    <text x="220" y="510" font-family="'Inter', sans-serif" font-weight="300" font-size="18" fill="#4B4B4B">{{DESC_3}}</text>
+  </g>
+
+  <!-- Footer -->
+  <g id="footer-block">
+    <line x1="80" y1="640" x2="1200" y2="640" stroke="#E0E0E0" stroke-width="1" />
+    <text x="80" y="670" font-family="'JetBrains Mono', monospace" font-size="12" fill="#A3A3A3">SWISS TIMELINE SYSTEM</text>
+  </g>
+</svg>

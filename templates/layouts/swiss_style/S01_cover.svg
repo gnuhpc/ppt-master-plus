@@ -1,0 +1,42 @@
+<?xml version='1.0' encoding='utf-8'?>
+<svg xmlns="http://www.w3.org/2000/svg" version="1.1" width="1280" height="720" viewBox="0 0 1280 720">
+  <!-- Background (Klein Blue) -->
+  <rect x="0" y="0" width="1280" height="720" fill="#0020C2" />
+  
+  <!-- Static ASCII Character Field (Low Opacity Vector Pattern) -->
+  <g id="ascii-matrix" fill="rgba(255, 255, 255, 0.08)" font-family="'JetBrains Mono', monospace" font-size="10" xml:space="preserve">
+    <!-- Row 1 -->
+    <text x="100" y="100">x</text><text x="300" y="100">+</text><text x="500" y="100">/</text><text x="700" y="100">\</text><text x="900" y="100">|</text><text x="1100" y="100">-</text>
+    <!-- Row 2 -->
+    <text x="200" y="200">o</text><text x="400" y="200">|</text><text x="600" y="200">-</text><text x="800" y="200">x</text><text x="1000" y="200">+</text><text x="1200" y="200">/</text>
+    <!-- Row 3 -->
+    <text x="100" y="300">/</text><text x="300" y="300">\</text><text x="500" y="300">|</text><text x="700" y="300">-</text><text x="900" y="300">x</text><text x="1100" y="300">+</text>
+    <!-- Row 4 -->
+    <text x="200" y="400">+</text><text x="400" y="400">/</text><text x="600" y="400">\</text><text x="800" y="400">|</text><text x="1000" y="400">-</text><text x="1200" y="400">o</text>
+    <!-- Row 5 -->
+    <text x="100" y="500">-</text><text x="300" y="500">x</text><text x="500" y="500">+</text><text x="700" y="500">/</text><text x="900" y="500">\</text><text x="1100" y="500">|</text>
+    <!-- Row 6 -->
+    <text x="200" y="600">|</text><text x="400" y="600">-</text><text x="600" y="600">o</text><text x="800" y="600">+</text><text x="1000" y="600">/</text><text x="1200" y="600">\</text>
+  </g>
+
+  <!-- Left Header Chrome -->
+  <g id="header-chrome" fill="rgba(255, 255, 255, 0.7)" font-family="'Inter', sans-serif">
+    <text x="80" y="70" font-weight="600" font-size="14" letter-spacing="1">{{CATEGORY}}</text>
+    <text x="1200" y="70" text-anchor="end" font-family="'JetBrains Mono', monospace" font-size="14">SS · {{DATE}}</text>
+  </g>
+
+  <!-- Title (ExtraLight 200, White) -->
+  <g id="title-block">
+    <rect x="80" y="160" width="1120" height="280" fill="none" />
+    <text x="80" y="270" font-family="'Inter', 'Helvetica Neue', sans-serif" font-weight="200" font-size="88" fill="#FFFFFF" line-height="0.9" letter-spacing="-0.03em">{{TITLE}}</text>
+  </g>
+
+  <!-- Divider line -->
+  <line x1="80" y1="480" x2="380" y2="480" stroke="rgba(255, 255, 255, 0.3)" stroke-width="1.5" />
+
+  <!-- Subtitle -->
+  <g id="subtitle-block">
+    <rect x="80" y="520" width="1120" height="120" fill="none" />
+    <text x="80" y="550" font-family="'Inter', sans-serif" font-weight="300" font-size="20" fill="rgba(255, 255, 255, 0.9)" line-height="1.5">{{SUBTITLE}}</text>
+  </g>
+</svg>

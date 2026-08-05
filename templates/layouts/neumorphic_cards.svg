@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1280 720" width="1280" height="720" data-control-items="4" data-control-variant="grid">
+  <defs>
+    <filter id="neumorphic-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="8" dy="8" stdDeviation="12" flood-color="#D1D9E6" flood-opacity="0.8"/>
+      <feDropShadow dx="-8" dy="-8" stdDeviation="12" flood-color="#FFFFFF" flood-opacity="0.9"/>
+    </filter>
+  </defs>
+  <rect width="1280" height="720" fill="#F0F3F8"/>
+  <!-- Header -->
+  <text x="80" y="80" font-family="PingFang SC, sans-serif" font-size="32" font-weight="bold" fill="#1E293B">轻拟态核心能力矩阵</text>
+  <text x="80" y="115" font-family="Inter, sans-serif" font-size="16" fill="#64748B">Neumorphic 4-Column Feature Cards Matrix</text>
+
+  <!-- Card 1 -->
+  <g id="card-1" data-control-index="1">
+    <rect x="80" y="160" width="260" height="460" rx="20" fill="#F0F3F8" filter="url(#neumorphic-shadow)"/>
+    <circle cx="130" cy="220" r="30" fill="#3B82F6" opacity="0.15"/>
+    <text x="130" y="228" font-family="Inter, sans-serif" font-size="22" font-weight="bold" fill="#3B82F6" text-anchor="middle">01</text>
+    <text x="110" y="290" font-family="PingFang SC, sans-serif" font-size="20" font-weight="bold" fill="#1E293B">智能感知</text>
+    <text x="110" y="325" font-family="PingFang SC, sans-serif" font-size="14" fill="#64748B">实时多端数据汇聚与多维环境全景感知能力。</text>
+  </g>
+
+  <!-- Card 2 -->
+  <g id="card-2" data-control-index="2">
+    <rect x="373" y="160" width="260" height="460" rx="20" fill="#F0F3F8" filter="url(#neumorphic-shadow)"/>
+    <circle cx="423" cy="220" r="30" fill="#3B82F6" opacity="0.15"/>
+    <text x="423" y="228" font-family="Inter, sans-serif" font-size="22" font-weight="bold" fill="#3B82F6" text-anchor="middle">02</text>
+    <text x="403" y="290" font-family="PingFang SC, sans-serif" font-size="20" font-weight="bold" fill="#1E293B">精准决策</text>
+    <text x="403" y="325" font-family="PingFang SC, sans-serif" font-size="14" fill="#64748B">基于大模型推理与策略树的高效决策生成。</text>
+  </g>
+
+  <!-- Card 3 -->
+  <g id="card-3" data-control-index="3">
+    <rect x="666" y="160" width="260" height="460" rx="20" fill="#F0F3F8" filter="url(#neumorphic-shadow)"/>
+    <circle cx="716" cy="220" r="30" fill="#3B82F6" opacity="0.15"/>
+    <text x="716" y="228" font-family="Inter, sans-serif" font-size="22" font-weight="bold" fill="#3B82F6" text-anchor="middle">03</text>
+    <text x="696" y="290" font-family="PingFang SC, sans-serif" font-size="20" font-weight="bold" fill="#1E293B">敏捷执行</text>
+    <text x="696" y="325" font-family="PingFang SC, sans-serif" font-size="14" fill="#64748B">自动化工具链联动与秒级闭环响应。</text>
+  </g>
+
+  <!-- Card 4 -->
+  <g id="card-4" data-control-index="4">
+    <rect x="959" y="160" width="260" height="460" rx="20" fill="#F0F3F8" filter="url(#neumorphic-shadow)"/>
+    <circle cx="1009" cy="220" r="30" fill="#3B82F6" opacity="0.15"/>
+    <text x="1009" y="228" font-family="Inter, sans-serif" font-size="22" font-weight="bold" fill="#3B82F6" text-anchor="middle">04</text>
+    <text x="989" y="290" font-family="PingFang SC, sans-serif" font-size="20" font-weight="bold" fill="#1E293B">持续演进</text>
+    <text x="989" y="325" font-family="PingFang SC, sans-serif" font-size="14" fill="#64748B">自我进化机制与多端资产经验沉淀。</text>
+  </g>
+</svg>

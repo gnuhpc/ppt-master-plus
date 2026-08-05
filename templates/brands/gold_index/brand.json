@@ -1,0 +1,18 @@
+{
+  "name": "gold_index",
+  "display_name": "金色指数 (Gold Index)",
+  "description": "Financial market index style with slate charcoal cards and champagne gold indicators.",
+  "colors": {
+    "primary": "#F8FAFC",
+    "secondary": "#94A3B8",
+    "accent": "#EAB308",
+    "background": "#0F172A",
+    "card_bg": "#1E293B",
+    "border": "#334155"
+  },
+  "fonts": {
+    "cjk": "PingFang SC, Microsoft YaHei, sans-serif",
+    "latin": "Trebuchet MS, Arial, sans-serif"
+  },
+  "visual_style": "gold_index"
+}

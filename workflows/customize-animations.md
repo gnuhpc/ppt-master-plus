@@ -245,7 +245,10 @@ Run sequentially:
 
 ```bash
 python3 skills/ppt-master-plus/scripts/animation_config.py validate <project_path>
+python3 skills/ppt-master-plus/scripts/animation_quality_auditor.py <project_path>
 ```
+
+**Craft Review Rule**: When providing any manual or automated motion feedback, ALWAYS format review findings in a `Before | After | Why` markdown table per [`references/design-engineering-craft.md`](../references/design-engineering-craft.md).
 
 ```bash
 python3 skills/ppt-master-plus/scripts/svg_to_pptx.py <project_path>

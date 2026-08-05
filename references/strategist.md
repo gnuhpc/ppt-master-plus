@@ -37,7 +37,7 @@ The realization items are anchored by Tier 1 — `visual_style` governs `e` / `f
 >
 > **One opt-in exception**: present the spec-refinement line alongside the split-mode note (SKILL.md Step 4). It is OFF by default — the above discipline holds unchanged. Only when the user *explicitly* asks to refine the spec do you hand off to the [refine-spec](../workflows/refine-spec.md) workflow, which produces the full spec first and stops for user review/revision of any part before generation. Never enter it unprompted.
 
-> **Default presentation surface — Confirm UI.** Deliver the bundled package through the interactive page: write your recommendations to `<project>/confirm_ui/recommendations.json`, then launch per [SKILL.md Step 4](../SKILL.md). You still author everything — enumerable fields name a recommended `id`; generative fields (color `palette`, CJK + Latin typography, generated-image style) each carry **≥3 distinct candidates**, and the deck's **visual style** (§d Layer 2) carries a **≥3-style personality spectrum** (`visual_style_spectrum`, safe / shifted / bold) — creative recommendations always offer real choice, never a single silent option, same hard rule and thinking as h.5. Honest-shortfall exception (mirrors h.5): if the constraints genuinely cannot yield 3 non-conflicting options, present the smaller set and say why — never pad with duplicates or known-conflicting fillers. **Always also print the recommendations + URL in chat** as the always-valid fallback. On confirm, read `<project>/confirm_ui/result.json` (`generation_mode: "split"` / `refine_spec: true` are explicit user choices). Skip the page if the user wants chat-only. Full launch flow, field rules, and JSON schema live in [SKILL.md Step 4](../SKILL.md) + [`scripts/docs/confirm_ui.md`](../scripts/docs/confirm_ui.md) — don't restate them here. The page is a confirmation surface only.
+> **Default presentation surface — Confirm UI.** Deliver the bundled package through the interactive page: write your recommendations to `<project>/confirm_ui/recommendations.json`, then launch per [SKILL.md Step 4](../SKILL.md). You still author everything — enumerable fields name a recommended `id`; generative fields (color `palette`, CJK + Latin typography, generated-image style) each carry **≥3 distinct candidates**, and the deck's **visual style** (§d Layer 2) carries a **≥3-style personality spectrum** (`visual_style_spectrum`, safe / shifted / bold) — creative recommendations always offer real choice, never a single silent option, same hard rule and thinking as h.5. Honest-shortfall exception (mirrors h.5): if the constraints genuinely cannot yield 3 non-conflicting options, present the smaller set and say why — never pad with duplicates or known-conflicting fillers. **Always also print the recommendations + URL in chat** as the always-valid fallback. On confirm, read `<project>/confirm_ui/result.json` (`generation_mode: "split"` / `refine_spec: true` are explicit user choices). Launching the web confirmation page is MANDATORY for all PPT requests unless the user/environment is headless. Full launch flow, field rules, and JSON schema live in [SKILL.md Step 4](../SKILL.md) + [`scripts/docs/confirm_ui.md`](../scripts/docs/confirm_ui.md) — don't restate them here. The page is a confirmation surface only.
 
 ### a. Canvas Format Confirmation
 
@@ -50,6 +50,55 @@ Recommend format based on scenario (see [`canvas-formats.md`](canvas-formats.md)
 ### c. Key Information Confirmation
 
 Confirm target audience, usage occasion, and core message; provide initial assessment based on document nature.
+
+**Audience-State-Transfer (AST) Analysis**: 
+Every deck must act as an audience state-transfer artifact. Before writing the slide plan, the Strategist must analyze:
+1. **Audience Starting State (听众初始状态)**: What the audience currently knows, believes, or resists regarding the topic.
+2. **Audience Desired State (听众预期状态)**: The target state of alignment, understanding, or decision-making.
+3. **Core Tension (核心冲突/阻碍张力)**: The key friction or barrier blocking this transition.
+4. **Transfer Path (转移路径)**: How the slide sequence systematically shifts the audience through the `ROLE_ARC` (Hook → Context → Tension → Method → Proof → Takeaway).
+Record these 4 components inside `design_spec.md §I` under "Content Strategy & AST Map".
+
+**判断句标题法（Title Narrative Guide）**:
+每页幻灯片的标题是其最显眼的视觉和叙事引导线。必须遵循以下强硬契约：
+1. **是判断句，非描述标签**：标题必须是在下决断、作判断或说明因果，禁止泛泛开话题。
+   - ❌ *传统 CDP/MA 的主要瓶颈*
+   - ✅ *系统越建越重，根因是三层能力没有打通*
+2. **两行字数限制**：标题最多不能超过 2 行（30 字以内）。如果超长说明一页想讲的太多，应当强制执行“拆页”。
+3. **3秒测试**：标题即使脱离幻灯片正文和图表，读者在 3 秒内也必须完全看懂其核心推导结论。
+4. **无内部泄露**：标题主语必须是业务问题或用户价值，禁止使用“这一页”、“回答顾虑”等本页任务性术语。
+
+**麦肯锡高信息密度排版契约 (McKinsey High-Density Rules)**:
+1. **一页只服务一个观点 (One Slide, One Core Point)**：严禁将市场规模、竞品、客户画像和行动方案混合在一页。每页规划前问一句：“读者看完这页，必须记住哪一条结论？”，强行剔除次要干扰项。
+2. **【关键词 + 短句】标签化表达**：正文列表与卡片全部采用 `【粗体标签】短句说明` 结构（如 `【流程优化】交付周期缩短 30%`），严禁长段文字无差别堆砌。
+3. **数据来源与截至日期**：高密度图表或 KPI 页面底部必须标注数据来源与截至时间（如 `数据来源：XXX研究报告 (截至 2026 Q2)`）。
+
+**数据追溯与零编造账本 (Claim Ledger & Zero Data Fabrication)**:
+1. **严格数据溯源**：每一个出现在幻灯片、图表或 KPI Card 中的数字、百分比、金额、对比基准，必须能够在源文档（Source Document）中找到准确出处。
+
+2. **严禁凭空拟造**：对于源文档未提及的数据，严禁 AI 凭空填充“假数据”（例如自行捏造 85% 满意度、3.5x 提升等）。如需展示图表结构且源数据缺失，必须明确标注为“[预估值/需填充]”或提示用户。
+3. **数据账本记录**：在 `design_spec.md §I` 中保存 `claim_ledger` 映射列表（形式为：`[页码/指标]: 源文档片段及对应数值`），便于后续 Critic 质检与用户核对。
+
+
+**信息密度曲线与“呼吸感”控制（Pacing & Rhythm Guide）**:
+为保证读者的认知体验与注意力呼吸感，大纲的密度必须进行节奏交替控制：
+1. **严禁连续 3 页高密度排版**：如果连续两页出现了结构复杂、信息量大（如三栏诊断、系统架构、多卡片流程图、详细对比表）的内容，在第 3 页前**必须**强行插入一页低密度的“呼吸页”（如超大数字 KPI 卡片、大字观点/引言、单焦点视觉图），进行视觉与注意力的缓冲。
+2. **视觉重页与结构重页交替**：大图、大字等强视觉主角页（视觉重）应与卡片流程图等页面（结构重）交替排列。
+3. **一页一过渡逻辑**：大纲的每页元数据中，必须说明本页到下一页的过渡逻辑：`transition_logic`（“看完这一页，受众会想问什么？下一页怎么接住？”）。
+
+**商业说服力打分卡（Commercial Scorecard）**:
+正式进入渲染前，必须对策划大纲进行商业说服力自检打分。每个维度使用 `1-5` 分：
+1. `audience_fit`：是否精准定位具体决策者的痛点与认知背景。
+2. `buying_reason_clarity`：前五页是否已经立住“为什么现在需要买/动”。
+3. `proof_strength`：最强证据是否前置，案例或数据能否独立支撑核心论点。
+4. `objection_coverage`：关键顾虑（落地难度、安全保障等）是否被正面回答。
+5. `narrative_flow`：叙事是否顺畅，是否从冲突（Tension）向解决（Resolution）自然过渡。
+6. `commercial_ask`：最终 CTA 动作是否明确、可执行。
+自检评分标准：
+- `overall_score >= 4.0`：可进入渲染生成；
+- `3.3 <= overall_score < 4.0`：基本合格，但需针对低于 3 分的弱点页进行重构；
+- `overall_score < 3.3`：打回 `deck_brief.md` 重做，禁止进入渲染。
+在 `design_spec.md §I` 尾部输出自检评分详情与建议。
 
 **Delivery purpose** (PPT only) is confirmed here, beside audience, as part of the key information — the deck's consumption mode: `text` (read-close) / `balanced` (business, default) / `presentation`. It is a Tier-1 anchor: it sets the §g body size to one fixed value per purpose, plus the type character, page density, and the §b page-count recommendation (the size and page count re-derived in Tier 2). Recommend one (`recommend.delivery_purpose`, default `balanced`) and let the user confirm. The fixed body value per purpose lives in §g; the density / treatment side lives in §6.1 — here it is surfaced as a key-information choice, not a separate typography step.
 
@@ -88,9 +137,32 @@ Write the locked value to `spec_lock.md` `- mode:` and record the rationale in `
 
 The deck's **visual aesthetic** — shape language, decoration density, whitespace rhythm, typographic character, texture. Anchors the downstream confirmations e (Color), f (Icon), g (Typography), h (Image). Lock one preset from the catalog, or `custom`.
 
+##### 🌟 High-Star Skills Synthesis Rules (Swiss Grid, Hybrid Layout, & Technical Aesthetics)
+When formulating the visual strategy, Strategist MUST enforce the following synthesis rules:
+
+1. **Swiss Style Layout Grid (guizang-ppt-skill)**:
+   - **3-Tier Font Hierarchy**: Hero 64px, Title 36px, Body 18px (or proportional ratio 3.5x / 2.0x / 1.0x).
+   - **Whitespace Discipline**: Minimum 35% empty/breathing space per slide. Avoid generic edge-to-edge card clutter.
+   - **High-Contrast Palette**: Strong primary against clean background (e.g., Swiss Red/Black `#E63946 / #1D3557 / #F1FAEE`).
+
+2. **Complex 15+ Node Hybrid Layout Rule (visual-explainer)**:
+   - **Hybrid Pattern**: When an architecture, system diagram, or process flow contains 15+ nodes, Strategist MUST NOT force all elements into a single dense flowchart. Instead, specify a **Hybrid Layout**: a small Mermaid overview diagram on the left/top + CSS/SVG detail cards on the right/bottom.
+   - **Interactive Container (`diagram-shell`)**: Require an interactive `diagram-shell` for flowcharts/pipelines with zoom/pan/reset controls.
+
+3. **Curated Technical Typography & Color Directions (visual-explainer & frontend-slides)**:
+   - **Forbidden Generic Defaults**: Avoid plain Inter/Roboto without accent pairing; avoid unprompted neon cyan/magenta/fuchsia gradients.
+   - **Curated Font Pairings**: `Instrument Serif + JetBrains Mono` (Editorial Tech), `Bricolage Grotesque + Fragment Mono` (Modern Engineering), `IBM Plex Sans + IBM Plex Mono` (Enterprise Tech).
+   - **Curated Palettes**: `Terracotta + Sage` (`#C86D51 / #8BA888`), `Teal + Slate` (`#2A7B88 / #4A5568`), `Amber + Emerald` (`#D97706 / #059669`).
+
 **Source**:
 - User named a style (chat / template / beautify) → it is truth: map to the closest preset (or `custom` with a `visual_style_behavior` paragraph) and lock directly. **Skip the spectrum below** — do not re-offer choice they already made.
 - No user description → **present a personality spectrum, not one safe pick** (this is the lever against "every deck looks the same" — the visual style is what most determines a deck's character, so it gets real choice, same hard rule and thinking as h.5). Author **≥3 distinct styles** from the index's auto-selection table spanning *safe* (the industry-norm recommendation) → *shifted* (an alternate one tick more expressive) → *bold* (a characterful style that challenges the default — `brutalist` / `zine` / `memphis` / `ink-wash` / `vintage-poster` etc., whenever the content can carry it). Give each a one-line **temperament tag + real-world analogy** (like h.5's "like an Economist feature"). Write the three to `recommendations.json` `visual_style_spectrum` (each `{id, tag_zh/en, note_zh/en}`) **and present the same three in chat** as the always-valid fallback; set `recommend.visual_style` to the *safe* pick as the pre-selected default. The user may pick any of the three, a style outside them, or Custom. Honest-shortfall exception (mirrors h.5): if the content genuinely supports fewer than 3 non-gimmicky directions, present the smaller set and say why — never pad with a style that fights the content.
+
+**Style Gallery Cover Preview (风格画廊封面预选)**:
+To optimize visual style alignment and lower generation costs, the Strategist supports a cover-only preview gate. If the user wants to compare aesthetics before committing, the Strategist:
+1. Recommends at least 3 distinct visual styles from the spectrum.
+2. Instructs the renderer to generate **only the cover slide** (S01_cover) for each candidate style, placing them side-by-side or listing them as individual previews.
+3. Pauses for the user to confirm the visual direction via an explicit selection before proceeding to outline planning and full deck rendering.
 
 **Forbidden — a non-catalog name as `visual_style`**: the value MUST be an `id` from the visual-styles catalog (or genuine `custom` prose). A name that is **not** in that catalog is not a visual style — most often it is an image-rendering name from the `_index` "Paired rendering" column (`flat`, `vector-illustration`, `digital-dashboard`, `3d-isometric`, `corporate-photo`, …), which names the §h *illustration* family, not the deck's layout aesthetic. Do not borrow it. (Names that are intentionally **both** a style and its paired rendering — `glassmorphism`, `blueprint`, `editorial`, `dark-tech` — are valid styles because they *are* in the catalog.) Generic baseline words — `flat` / flat-design / 扁平 / modern / clean / simple / minimal — are **not** custom-worthy either: the whole system is flat by default (shadows discouraged), so map them to the closest preset (flat + grid → `swiss-minimal`; flat + rounded → `soft-rounded`; flat + dense → `brutalist`). Reserve `custom` for an aesthetic no preset covers.
 
@@ -635,8 +707,17 @@ Side-by-side only: container ratio must match image ratio. Hero / atmosphere / a
 
 The catalog covers **both data charts and structural information designs**. A "match" is not limited to numeric pages — any page whose content shape matches a `Pick for ...` clause is a candidate:
 
-- **Data-type pages**: comparisons, trends, proportions, KPIs, financials, rankings, distributions, conversion funnels
-- **Structural-type pages**: team rosters, agendas, principles & values, methodology phases, customer journey, capability maps, OKR cascades, roadmaps, strategic frameworks (SWOT / BCG / PEST / Porter's Five Forces / Value Chain — matched via `quadrant_text_bullets`, `quadrant_bubble_scatter`, `vertical_pillars`, `hub_inward_arrows`, `chevron_chain_with_tail` respectively)
+- **Data-type pages**: comparisons, trends, proportions, KPIs, financials, rankings, distributions, conversion funnels (`funnel_chart`), flow distributions (`sankey_chart`), multi-axis evaluations (`radar_chart`), project schedules (`gantt_chart`), cumulative contributions (`waterfall_chart`), spatial heatmaps (`heatmap`).
+- **Structural-type pages & Strategic Frameworks**: team rosters, agendas, principles & values, methodology phases, customer journey, capability maps, OKR cascades, roadmaps; and 20+ explicit business analysis models:
+  - **SWOT Analysis** $\rightarrow$ `quadrant_text_bullets` / `quadrant_bubble_scatter`
+  - **BCG Matrix** $\rightarrow$ `quadrant_bubble_scatter`
+  - **PEST / PESTEL** $\rightarrow$ `quadrant_text_bullets` / `four_pillars`
+  - **Porter's Five Forces** $\rightarrow$ `hub_inward_arrows` / `center_surround`
+  - **Value Chain / Chevron Workflow** $\rightarrow$ `chevron_chain_with_tail` / `process_flow`
+  - **Double Diamond Model** $\rightarrow$ `double_diamond_process` / `divergent_convergent_shapes`
+  - **Business Model Canvas** $\rightarrow$ `grid_layout_cards` / `canvas_block_matrix`
+  - **Funnel / Conversion Pipe** $\rightarrow$ `funnel_chart`
+  - **Radar / Capability Multi-axis** $\rightarrow$ `radar_chart`
 
 The most common Strategist failure mode is missing the structural half — treating "chart" as "numeric chart only" and leaving team / agenda / principles / journey pages as text-only when a template would fit. Read the catalog with both lenses.
 
@@ -686,10 +767,23 @@ The most common Strategist failure mode is missing the structural half — treat
 
 Confirmation `d` locks two independent catalog items:
 
-- **Mode** — narrative skeleton: [`modes/_index.md`](./modes/_index.md) → `pyramid` / `narrative` / `instructional` / `showcase` / `briefing`.
-- **Visual style** — aesthetic: [`visual-styles/_index.md`](./visual-styles/_index.md) → presets + `custom`.
-
 Read the relevant `_index.md` at confirmation `d` (Layer 1 / Layer 2) for its catalog table and auto-selection. Executor loads the locked mode + visual-style files at generation (see SKILL Step 6).
+
+### 12 Integrated Theme Presets (`templates/brands/`)
+| Preset Name | Key Style | Primary | Background | Trigger Keywords / Scenarios |
+| ----------- | --------- | ------- | ---------- | ---------------------------- |
+| `neumorphism` | 轻拟态风 | `#1E293B` | `#F0F3F8` | 柔和微阴影、浮雕凸起、产品微浮动卡片 |
+| `neon_tech` | 炫光紫绿 | `#F8FAFC` | `#0B0F19` | 暗黑背景、紫绿发光线条、AI/前沿科技发布 |
+| `code_terminal` | 深浅代码 | `#E2E8F0` | `#0F172A` | 等宽字体、暗色终端框、技术架构与代码文档 |
+| `glassmorphism` | 玻璃糖果 | `#0F172A` | `#F1F5F9` | 毛玻璃半透明卡片、渐变绚丽、年轻消费品牌 |
+| `spectrum_chart` | 色谱图表 | `#0F172A` | `#FFFFFF` | 高对比数据图表、咨询公司严谨分析 |
+| `dark_graph` | 深色图谱 | `#F8FAFC` | `#111827` | 黑色背景、青色网格节点、战略与投资节点 |
+| `cool_white` | 冷白调研 | `#1E293B` | `#F8FAFC` | 白皮书印品感、细线框、学术与深度报告 |
+| `black_gold` | 黑金实验 | `#F8FAFC` | `#050505` | 纯黑+哑光金、奢华尊贵、高阶商业提案 |
+| `dark_blue_mag` | 深蓝杂志 | `#F1F5F9` | `#0A192F` | 深蓝排版、衬线标题、杂志叙事与故事性汇报 |
+| `gold_index` | 金色指数 | `#F8FAFC` | `#0F172A` | 板岩灰卡片、香槟金指标、金融财报复盘 |
+| `energy_growth` | 高能增长 | `#F8FAFC` | `#0D1117` | 橙青大对比、大字号、创业 BP 与增长汇报 |
+| `sonic_neon` | 声波霓虹 | `#FAFAFA` | `#09090B` | 赛博紫粉、潮牌活动与娱乐趋势发布 |
 
 ---
 

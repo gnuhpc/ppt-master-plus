@@ -1,0 +1,19 @@
+{
+  "name": "glassmorphism",
+  "display_name": "玻璃糖果 (Glassmorphism)",
+  "description": "Translucent glass effect cards with vibrant indigo to pink gradient tones.",
+  "colors": {
+    "primary": "#0F172A",
+    "secondary": "#475569",
+    "accent": "#6366F1",
+    "accent_secondary": "#EC4899",
+    "background": "#F1F5F9",
+    "card_bg": "rgba(255, 255, 255, 0.7)",
+    "border": "rgba(255, 255, 255, 0.8)"
+  },
+  "fonts": {
+    "cjk": "PingFang SC, Microsoft YaHei, sans-serif",
+    "latin": "Inter, System-UI, sans-serif"
+  },
+  "visual_style": "glassmorphism"
+}

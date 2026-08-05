@@ -11,6 +11,10 @@ PPT Master's exported PPTX supports **page transitions** (slide-to-slide) and **
 
 To regenerate a deck with different settings, rerun `svg_to_pptx.py` against the same `svg_output/` (or `svg_final/`) — no need to rerun the LLM. To turn per-element animation on for the whole deck, pass `-a auto`.
 
+## Design Engineering & Craft Philosophy
+
+For design engineering guidelines on motion craft, easing choices, sub-300ms UI pacing recommendations, and natural language animation vocabulary mapping, see [`references/design-engineering-craft.md`](design-engineering-craft.md). Run standalone craft audit check via `python3 scripts/animation_quality_auditor.py <project>`.
+
 ## Custom Object-Level Animation
 
 Per-element animation is off by default. To enable it deck-wide, pass `-a auto` at export (no config needed). When a deck instead needs specific object timing — for example title first, chart second, annotation last — use the optional `animations.json` sidecar. The SVG remains static visual source; the sidecar only controls PPTX export behavior.

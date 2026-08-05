@@ -43,14 +43,19 @@ The subagent reads inputs 2–4 **once** at the start of its turn, then iterates
 | H8 | Image rendering broken | `<image>` empty / broken-image / severe distortion | fix `href`, adjust `preserveAspectRatio`, add `no-crop` if face/data is cropped |
 | H9 | Missing key element | element required by `design_spec §IX` outline is absent from rendered slide | recreate from spec |
 | H10| Cross-page Text Inconsistency | Font sizes for similar semantic elements (e.g., body text, list items, headers) vary drastically between adjacent or similar pages. | Normalize font sizes across pages to match the primary visual style, ensuring text is neither overly small nor overly large, followed by strict visual review for overlap/overflow. |
+| H11| Placeholder Residue | Page contains raw placeholder markers or unfinished content template indicators (e.g., `[必填]`, `SLIDES_HERE`, `TODO`, `TBD`, `lorem ipsum`). | Replace placeholder tags with actual context-grounded content, or remove the placeholders entirely. |
+| H12| Unpresentable / Look-only Slide | Slide is cluttered with dense paragraph text blocking delivery rhythm, or lacks a clear assertion title / structured evidence pair. | Simplify visual body content, increase white-space breathing room, and move verbose explanations/lists to speaker notes. |
+| H13| Notes Discrepancy & Drift | Speaker notes are missing, empty, or drift away/differ semantically from the slide's state-transfer goal. | Rewrite/align speaker notes to strictly match the slide's assertion title and intended audience transfer path. |
+| H14| Internal Leakage Detector | Page title, body copy, card labels, or annotations contain internal execution terminology or presentation staging notes (e.g., "这一页", "本页", "proof beat", "hero page", "objection handling", "CTA", "objection", "Tension", "Resolution"). | Rewrite the content to strictly reflect client-facing business facts and value judgements instead of internal staging terms. |
 
 Detection order (run sequentially, do not parallelize within a single subagent):
 
 ```
-H1 → H2 → H7  (structure)
-H3 → H6      (collisions)
-H4           (readability)
-H8 → H9      (content)
+H1 → H2 → H7              (structure)
+H3 → H6                  (collisions)
+H4                       (readability)
+H8 → H9                  (content)
+H11 → H12 → H13 → H14    (presentation & integrity checks)
 ```
 
 ### §1.1 Brand-token contrast escalation

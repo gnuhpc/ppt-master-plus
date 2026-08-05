@@ -222,7 +222,26 @@ Post-processing
 
 ## 更新记录
 
-### 最近更新 (2026-07)
+### 最近更新 (2026-08)
+
+- **TTS 语音朗读与视频导出工作流 (`export_video.py`)**
+  - 新增 `export_video.py` 脚本，支持将幻灯片 SVG 与演讲稿 (Speaker Notes) TTS 语音合成结合，一键导出为带音频朗读的 MP4 视频演示文稿。
+- **独立对抗性 Critic 质检工具 (`critic_audit.py`)**
+  - 新增对抗性质检审查脚本，支持 WCAG 无障碍色彩对比度、Claims Ledger 断言核对、Footer Band 页脚防遮挡校验及 Placeholder 审查。
+- **动画质量审计与质检工具 (`animation_quality_auditor.py`)**
+  - 提供独立的动画节奏、效果及元素层级质量审计功能。
+- **品牌预设、可视化图表与 Layout 骨架库全面扩容**
+  - **品牌预设扩充**：新增 `swiss_grid`、`apple`、`black_gold`、`code_terminal`、`cool_white`、`dark_blue_mag`、`dark_graph`、`energy_growth`、`glassmorphism`、`gold_index`、`linear`、`magazine`、`neon_tech`、`neumorphism`、`notion`、`sonic_neon`、`spectrum_chart`、`stripe`、`swiss_style` 等多款精美品牌预设。
+  - **图表 SVG 模板扩充**：新增 `diagram_shell.svg`、`code_diff.svg` 等可视化图表/架构 SVG 模板。
+  - **Layout 布局模板扩充**：新增 `black_gold_comparison.svg`、`code_architecture_flow.svg`、`double_diamond_process.svg`、`glass_metrics_grid.svg`、`neumorphic_cards.svg` 等 Layout 布局模板。
+- **新增重构与桥接工作流**
+  - **图片/PDF 截图重构 (`reconstruct-image-pptx.md`)**：支持将图片、PDF 截图、AI 海报重构为 100% 原生可编辑 PPTX 矢量文本框与形状。
+  - **Humanize PPT 桥接 (`humanize-ppt-bridge.md`)**：对接 humanize-ppt 生成的 Brief、AST 提纲与 Speaker Intent。
+- **Web 确认页 (Confirm UI) 启动契约硬性规范**
+  - 明确规定用户发起 PPT 生成请求时必须强弹 Confirm UI，仅在 Pure Headless / CLI 终端无 GUI 环境下才允许降级为 Chat 纯文本确认。
+
+### 2026-07
+
 
 - **实时演讲稿自动检测与同步**
   - 在编辑和播放模式下增加对磁盘讲稿文件 `notes_mtime` 修改时间的定时轮询检测，当讲稿被上游 AI Agent 重新修润并覆写时，浏览器会自动实时载入最新讲稿，无需手动点击或刷新。
