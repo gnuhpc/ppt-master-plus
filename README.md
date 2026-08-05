@@ -224,21 +224,27 @@ Post-processing
 
 ### 最近更新 (2026-08)
 
-- **TTS 语音朗读与视频导出工作流 (`export_video.py`)**
-  - 新增 `export_video.py` 脚本，支持将幻灯片 SVG 与演讲稿 (Speaker Notes) TTS 语音合成结合，一键导出为带音频朗读的 MP4 视频演示文稿。
+- **TTS 语音朗读与视频演示导出 (`export_video.py`)**
+  - 新增 `export_video.py` 自动化导出工具，结合幻灯片 SVG 渲染与演讲稿 (Speaker Notes) TTS 语音合成，一键生成带高品质配音朗读的 MP4 视频演示文稿。
 - **独立对抗性 Critic 质检工具 (`critic_audit.py`)**
-  - 新增对抗性质检审查脚本，支持 WCAG 无障碍色彩对比度、Claims Ledger 断言核对、Footer Band 页脚防遮挡校验及 Placeholder 审查。
-- **动画质量审计与质检工具 (`animation_quality_auditor.py`)**
-  - 提供独立的动画节奏、效果及元素层级质量审计功能。
-- **品牌预设、可视化图表与 Layout 骨架库全面扩容**
-  - **品牌预设扩充**：新增 `swiss_grid`、`apple`、`black_gold`、`code_terminal`、`cool_white`、`dark_blue_mag`、`dark_graph`、`energy_growth`、`glassmorphism`、`gold_index`、`linear`、`magazine`、`neon_tech`、`neumorphism`、`notion`、`sonic_neon`、`spectrum_chart`、`stripe`、`swiss_style` 等多款精美品牌预设。
-  - **图表 SVG 模板扩充**：新增 `diagram_shell.svg`、`code_diff.svg` 等可视化图表/架构 SVG 模板。
-  - **Layout 布局模板扩充**：新增 `black_gold_comparison.svg`、`code_architecture_flow.svg`、`double_diamond_process.svg`、`glass_metrics_grid.svg`、`neumorphic_cards.svg` 等 Layout 布局模板。
-- **新增重构与桥接工作流**
-  - **图片/PDF 截图重构 (`reconstruct-image-pptx.md`)**：支持将图片、PDF 截图、AI 海报重构为 100% 原生可编辑 PPTX 矢量文本框与形状。
-  - **Humanize PPT 桥接 (`humanize-ppt-bridge.md`)**：对接 humanize-ppt 生成的 Brief、AST 提纲与 Speaker Intent。
-- **Web 确认页 (Confirm UI) 启动契约硬性规范**
-  - 明确规定用户发起 PPT 生成请求时必须强弹 Confirm UI，仅在 Pure Headless / CLI 终端无 GUI 环境下才允许降级为 Chat 纯文本确认。
+  - 新增对抗性质检审查脚本 `critic_audit.py`，包含四大判定硬性标准：WCAG 无障碍色彩对比度校验、Claims Ledger 事实断言核对、Footer Band 页脚 48px 防遮挡保护区校验及未替换占位符（Placeholder）审查。
+- **动画质量审计与节奏质检 (`animation_quality_auditor.py`)**
+  - 提供独立的动画节奏、效果、持续时间及元素层级质量审计工具，提升入场与转场动画的视觉流畅度。
+- **品牌预设、架构图模板与 Layout 骨架库全面扩展**
+  - **品牌预设扩充**：新增 `swiss_grid`、`apple`、`black_gold`、`code_terminal`、`cool_white`、`dark_blue_mag`、`dark_graph`、`energy_growth`、`glassmorphism`、`gold_index`、`linear`、`magazine`、`neon_tech`、`neumorphism`、`notion`、`sonic_neon`、`spectrum_chart`、`stripe`、`swiss_style` 等 20+ 款高保真品牌与排版预设。
+  - **图表与架构 SVG 模板**：新增 `diagram_shell.svg`、`code_diff.svg` 等代码比对与架构图表达组件。
+  - **Layout 布局模板**：新增 `black_gold_comparison.svg`、`code_architecture_flow.svg`、`double_diamond_process.svg`、`glass_metrics_grid.svg`、`neumorphic_cards.svg` 及 `swiss_style` / `magazine` 完整套图布局。
+- **视觉排版与专业设计规范文档库 (`references/`)**
+  - **设计工程规范 (`design-engineering-craft.md`)**：制定现代 UI/PPT 视觉工程标准，包含网格系统、留白比例、视知觉层级与文字防拥挤规范。
+  - **学术答辩模式 (`academic.md`)**：新增学术开题/毕业答辩专用模式规范与结构模板。
+  - **界面截图包装规范 (`screenshot-framing.md`)**：提供产品 UI 截图阴影、外壳包装、设备框选与高亮聚焦的标准指导。
+  - **风格规范补全 (`swiss_style.md`, `magazine.md`)**：补充瑞士平面设计风（International Typographic Style）与高品质杂志风（Editorial Magazine）专项指导。
+- **新增重构与桥接工作流 (`workflows/`)**
+  - **图片/PDF 截图重构 (`reconstruct-image-pptx.md`)**：支持将图片、PDF 截图、AI 海报一键重构为 100% 原生可编辑 PPTX 矢量文本框与形状。
+  - **Humanize PPT 桥接 (`humanize-ppt-bridge.md`)**：无缝对接 humanize-ppt 产出的结构化 Outline、Brief、AST 提纲与 Speaker Intent。
+- **Web 确认页 (Confirm UI) 启动契约规范**
+  - 在 `SKILL.md` 中强化规定：用户发起生成请求时必须强弹 Confirm UI，仅在 Pure Headless / CLI 终端无 GUI 环境下才允许降级为 Chat 纯文本确认。
+
 
 ### 2026-07
 
