@@ -520,11 +520,82 @@ def create_app(
 
     @app.route('/api/themes')
     def get_themes():
+        # Built-in curated themes for immediate, high-quality presentation switching
+        themes = {
+            'swiss_grid': {
+                'name': 'Swiss Grid (Crimson / Navy)',
+                'bg': '#f1faee',
+                'primary': '#e63946',
+                'secondary': '#1d3557'
+            },
+            'linear_dark': {
+                'name': 'Linear (Midnight Dark)',
+                'bg': '#0f1015',
+                'primary': '#5e6ad2',
+                'secondary': '#f7f8f8'
+            },
+            'notion_paper': {
+                'name': 'Notion (Warm Paper)',
+                'bg': '#f7f6f3',
+                'primary': '#37352f',
+                'secondary': '#2f2d2a'
+            },
+            'stripe_indigo': {
+                'name': 'Stripe (Deep Indigo)',
+                'bg': '#0a2540',
+                'primary': '#635bff',
+                'secondary': '#ffffff'
+            },
+            'apple_minimal': {
+                'name': 'Apple (Minimal Light)',
+                'bg': '#f5f5f7',
+                'primary': '#000000',
+                'secondary': '#1d1d1f'
+            },
+            'cyberpunk_neon': {
+                'name': 'Cyberpunk (Neon Dark)',
+                'bg': '#090d16',
+                'primary': '#00f0ff',
+                'secondary': '#ff0055'
+            },
+            'emerald_forest': {
+                'name': 'Emerald Forest (Deep Green)',
+                'bg': '#062016',
+                'primary': '#10b981',
+                'secondary': '#ecfdf5'
+            },
+            'anthropic_warm': {
+                'name': 'Anthropic (Terracotta Warm)',
+                'bg': '#fbf7f0',
+                'primary': '#d97757',
+                'secondary': '#1a1a1a'
+            }
+        }
+
+        # Load themes from templates/brands/brands_index.json if present
+        brands_json = Path(__file__).resolve().parent.parent.parent / 'templates' / 'brands' / 'brands_index.json'
+        if brands_json.is_file():
+            try:
+                import json
+                brands_data = json.loads(brands_json.read_text(encoding='utf-8'))
+                for b_key, b_val in brands_data.items():
+                    if b_key not in themes:
+                        pretty = b_key.replace('_', ' ').title()
+                        p_col = b_val.get('primary_color', '#4285f4')
+                        themes[b_key] = {
+                            'name': f"Brand: {pretty}",
+                            'bg': '#f8fafc',
+                            'primary': p_col,
+                            'secondary': '#1e293b'
+                        }
+            except Exception:
+                pass
+
+        # Dynamically scan layout templates
         layouts_dir = Path(__file__).resolve().parent.parent.parent / 'templates' / 'layouts'
-        themes = {}
         if layouts_dir.is_dir():
             for d in layouts_dir.iterdir():
-                if d.is_dir() and not d.name.startswith('.'):
+                if d.is_dir() and not d.name.startswith('.') and d.name not in themes:
                     svg_files = list(d.glob('*.svg'))
                     if not svg_files:
                         continue
@@ -574,6 +645,7 @@ def create_app(
                         'secondary': secondary
                     }
         return jsonify(themes)
+
 
     def _safe_svg_path(name: str):
         """Validate slide name and return safe path. Returns None if invalid.

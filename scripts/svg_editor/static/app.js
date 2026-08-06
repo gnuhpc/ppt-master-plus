@@ -291,8 +291,10 @@
     var fsNavName         = document.getElementById("fs-nav-name");
     var fsSvgContainer    = document.getElementById("fullscreen-svg-container");
     var fsNotesContent    = document.getElementById("fullscreen-notes-content");
+    var fsNotesEditor     = document.getElementById("fullscreen-notes-editor");
     var themeSelect       = document.getElementById("astryx-theme-select");
     var fsThemeSelect     = document.getElementById("fs-theme-select");
+
     var fsControlsEl      = document.getElementById("fullscreen-controls");
     
     var fsLayoutToggleBtn = document.getElementById("fs-layout-toggle-btn");
@@ -1442,21 +1444,46 @@
     // ================================================================
     function initKeyboardShortcuts() {
         document.addEventListener("keydown", function (e) {
-            if (isFullscreenMode) {
-                if (e.key === "ArrowRight" || e.key === "PageDown" || e.key === " " || e.key === "Enter") {
-                    e.preventDefault();
-                    gotoSlideIndex(currentSlideIndex() + 1);
-                    return;
-                } else if (e.key === "ArrowLeft" || e.key === "PageUp" || e.key === "Backspace") {
-                    e.preventDefault();
-                    gotoSlideIndex(currentSlideIndex() - 1);
-                    return;
-                } else if (e.key === "Escape") {
-                    e.preventDefault();
+            var activeEl = document.activeElement;
+            var isTyping = activeEl && (activeEl === annotationText || activeEl === fsNotesEditor ||
+                            activeEl.tagName === "INPUT" || activeEl.tagName === "TEXTAREA" || activeEl.tagName === "SELECT");
+
+            // F5 or F key (when not typing) toggles fullscreen
+            if (!isTyping && (e.key === "F5" || e.key === "f" || e.key === "F")) {
+                e.preventDefault();
+                if (isFullscreenMode) {
                     exitFullscreen();
-                    return;
+                } else {
+                    enterFullscreen();
+                }
+                return;
+            }
+
+            if (isFullscreenMode) {
+                // If focus is inside fsNotesEditor, only handle Escape or PageUp/PageDown with Ctrl
+                if (activeEl === fsNotesEditor) {
+                    if (e.key === "Escape") {
+                        e.preventDefault();
+                        exitFullscreen();
+                        return;
+                    }
+                } else {
+                    if (e.key === "ArrowRight" || e.key === "PageDown" || e.key === " " || e.key === "Enter") {
+                        e.preventDefault();
+                        gotoSlideIndex(currentSlideIndex() + 1);
+                        return;
+                    } else if (e.key === "ArrowLeft" || e.key === "PageUp" || e.key === "Backspace") {
+                        e.preventDefault();
+                        gotoSlideIndex(currentSlideIndex() - 1);
+                        return;
+                    } else if (e.key === "Escape") {
+                        e.preventDefault();
+                        exitFullscreen();
+                        return;
+                    }
                 }
             }
+
 
             // Ctrl+Z / Cmd+Z: drop the last staged edit. Let inputs/selects handle
             // their own native undo when focused.
@@ -1515,15 +1542,27 @@
                 clearSelection();
             }
 
-            // Tab: open annotation popover for current selection
-            if (e.key === "Tab" && selectedElementIds.size > 0) {
+            // N key (when not typing): toggle speaker notes tab
+            if (!isTyping && (e.key === "n" || e.key === "N")) {
+                e.preventDefault();
+                switchTab(notesMode ? "slides" : "notes");
+                return;
+            }
+
+            // Tab: open annotation popover for current selection or whole page
+            if (e.key === "Tab") {
                 if (popoverOverlay && popoverOverlay.style.display !== "none") return;
                 var ae = document.activeElement;
                 if (ae && (ae.tagName === "INPUT" || ae.tagName === "TEXTAREA" || ae.tagName === "SELECT")) return;
                 e.preventDefault();
-                showAnnotationPopover(Array.from(selectedElementIds), false);
+                if (selectedElementIds.size > 0) {
+                    showAnnotationPopover(Array.from(selectedElementIds), false);
+                } else if (currentSlide) {
+                    showAnnotationPopover(["__page__"], true);
+                }
                 return;
             }
+
 
             // Slide navigation: ArrowLeft/Right + Home/End (skip while typing)
             var _ae = document.activeElement;
@@ -1594,27 +1633,44 @@
     }
 
     function loadCurrentNotes() {
-        if (!notesContentEl) return;
+        if (!notesContentEl && !fsNotesEditor) return;
         if (!currentSlide) {
-            notesContentEl.value = "";
-            notesContentEl.placeholder = t("notes_none");
+            if (notesContentEl) {
+                notesContentEl.value = "";
+                notesContentEl.placeholder = t("notes_none");
+            }
+            if (fsNotesEditor) {
+                fsNotesEditor.value = "";
+                fsNotesEditor.placeholder = t("notes_none");
+            }
             _notesLoadedText = "";
             setNotesDirty(false);
             if (fsNotesContent) fsNotesContent.textContent = t("notes_none");
             return;
         }
-        notesContentEl.placeholder = t("notes_loading");
-        notesContentEl.value = "";
+        if (notesContentEl) {
+            notesContentEl.placeholder = t("notes_loading");
+            notesContentEl.value = "";
+        }
+        if (fsNotesEditor) {
+            fsNotesEditor.placeholder = t("notes_loading");
+            fsNotesEditor.value = "";
+        }
         _notesLoadedText = "";
         setNotesDirty(false);
         if (fsNotesContent) fsNotesContent.textContent = t("notes_loading");
         fetch("/api/slide/" + encodeURIComponent(currentSlide) + "/notes")
             .then(function (r) { return r.json(); })
             .then(function (data) {
-                if (!notesContentEl) return;
                 var text = (data.notes || "").trim();
-                notesContentEl.value = text;
-                notesContentEl.placeholder = t("notes_none");
+                if (notesContentEl) {
+                    notesContentEl.value = text;
+                    notesContentEl.placeholder = t("notes_none");
+                }
+                if (fsNotesEditor) {
+                    fsNotesEditor.value = text;
+                    fsNotesEditor.placeholder = t("notes_none");
+                }
                 _notesLoadedText = text;
                 setNotesDirty(false);
                 if (fsNotesContent) fsNotesContent.textContent = text || t("notes_none");
@@ -1624,13 +1680,17 @@
                     notesContentEl.value = "";
                     notesContentEl.placeholder = t("notes_none");
                 }
+                if (fsNotesEditor) {
+                    fsNotesEditor.value = "";
+                    fsNotesEditor.placeholder = t("notes_none");
+                }
                 if (fsNotesContent) fsNotesContent.textContent = t("notes_none");
             });
     }
 
     function saveCurrentNotes(silent) {
-        if (!currentSlide || !notesContentEl) return Promise.resolve();
-        var text = notesContentEl.value;
+        if (!currentSlide) return Promise.resolve();
+        var text = notesContentEl ? notesContentEl.value : (fsNotesEditor ? fsNotesEditor.value : "");
         return fetch("/api/slide/" + encodeURIComponent(currentSlide) + "/notes", {
             method: "POST",
             headers: { "Content-Type": "application/json" },
@@ -1682,7 +1742,17 @@
         }
         if (notesContentEl) {
             notesContentEl.addEventListener("input", function () {
+                if (fsNotesEditor) fsNotesEditor.value = notesContentEl.value;
                 setNotesDirty(notesContentEl.value !== _notesLoadedText);
+            });
+        }
+        if (fsNotesEditor) {
+            fsNotesEditor.addEventListener("input", function () {
+                if (notesContentEl) notesContentEl.value = fsNotesEditor.value;
+                setNotesDirty(fsNotesEditor.value !== _notesLoadedText);
+            });
+            fsNotesEditor.addEventListener("blur", function () {
+                if (notesDirty) saveCurrentNotes(true);
             });
         }
         if (btnNotesSave) {
@@ -1691,6 +1761,7 @@
             });
         }
     }
+
 
     // ================================================================
     //  Annotation popover
@@ -3506,8 +3577,14 @@
     var availableThemes = {};
     function applyTheme(themeKey) {
         activeTheme = themeKey;
+        try {
+            window.localStorage.setItem("ppt_theme", themeKey);
+        } catch (e) { /* ignore */ }
         
         var theme = availableThemes[themeKey];
+        var fsTop = document.getElementById("fullscreen-top");
+        var svgBox = document.getElementById("svg-container");
+
         if (theme) {
             var isDark = getLuminance(theme.bg) < 0.5;
             var textSecondaryColor = isDark ? "#ffffff" : theme.secondary;
@@ -3520,35 +3597,25 @@
                 primaryColor = "#f87171"; // soft light red/accent color fallback
             }
             
-            if (svgContent) {
-                svgContent.style.setProperty("--color-brand-primary", primaryColor);
-                svgContent.style.setProperty("--color-brand-secondary", textSecondaryColor);
-                svgContent.style.setProperty("--color-bg-slide", theme.bg);
-                svgContent.style.setProperty("--color-card-bg", cardBgColor);
-                svgContent.style.setProperty("--color-border", borderColor);
-            }
-            if (fsSvgContainer) {
-                fsSvgContainer.style.setProperty("--color-brand-primary", primaryColor);
-                fsSvgContainer.style.setProperty("--color-brand-secondary", textSecondaryColor);
-                fsSvgContainer.style.setProperty("--color-bg-slide", theme.bg);
-                fsSvgContainer.style.setProperty("--color-card-bg", cardBgColor);
-                fsSvgContainer.style.setProperty("--color-border", borderColor);
-            }
+            [svgContent, fsSvgContainer, svgBox, fsTop].forEach(function(target) {
+                if (target) {
+                    target.style.setProperty("--color-brand-primary", primaryColor);
+                    target.style.setProperty("--color-brand-secondary", textSecondaryColor);
+                    target.style.setProperty("--color-bg-slide", theme.bg);
+                    target.style.setProperty("--color-card-bg", cardBgColor);
+                    target.style.setProperty("--color-border", borderColor);
+                }
+            });
         } else {
-            if (svgContent) {
-                svgContent.style.removeProperty("--color-brand-primary");
-                svgContent.style.removeProperty("--color-brand-secondary");
-                svgContent.style.removeProperty("--color-bg-slide");
-                svgContent.style.removeProperty("--color-card-bg");
-                svgContent.style.removeProperty("--color-border");
-            }
-            if (fsSvgContainer) {
-                fsSvgContainer.style.removeProperty("--color-brand-primary");
-                fsSvgContainer.style.removeProperty("--color-brand-secondary");
-                fsSvgContainer.style.removeProperty("--color-bg-slide");
-                fsSvgContainer.style.removeProperty("--color-card-bg");
-                fsSvgContainer.style.removeProperty("--color-border");
-            }
+            [svgContent, fsSvgContainer, svgBox, fsTop].forEach(function(target) {
+                if (target) {
+                    target.style.removeProperty("--color-brand-primary");
+                    target.style.removeProperty("--color-brand-secondary");
+                    target.style.removeProperty("--color-bg-slide");
+                    target.style.removeProperty("--color-card-bg");
+                    target.style.removeProperty("--color-border");
+                }
+            });
         }
         
         if (themeSelect) themeSelect.value = themeKey;
@@ -3566,7 +3633,7 @@
                 var selects = [themeSelect, fsThemeSelect];
                 selects.forEach(function (sel) {
                     if (!sel) return;
-                    sel.innerHTML = '<option value="astryx-theme-default">Default Theme</option>';
+                    sel.innerHTML = '<option value="astryx-theme-default">Default Theme (Original)</option>';
                     
                     var sortedKeys = Object.keys(data).sort(function (a, b) {
                         return data[a].name.localeCompare(data[b].name);
@@ -3579,6 +3646,14 @@
                         sel.appendChild(opt);
                     });
                 });
+
+                // Restore saved theme preference if present
+                try {
+                    var savedTheme = window.localStorage.getItem("ppt_theme");
+                    if (savedTheme && (savedTheme === "astryx-theme-default" || data[savedTheme])) {
+                        applyTheme(savedTheme);
+                    }
+                } catch (e) { /* ignore */ }
             })
             .catch(function (err) {
                 console.error("Failed to load themes:", err);
@@ -3595,6 +3670,7 @@
             });
         }
     }
+
 
     initThemeSelectors();
 

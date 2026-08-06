@@ -224,6 +224,10 @@ Post-processing
 
 ### 最近更新 (2026-08)
 
+- **Live Preview 主题持久化与演示者模式讲稿实时编辑**
+  - **主题选择与品牌动态挂载**：SVG Editor / Live Preview 主题库新增 8 款精选预设主题（`swiss_grid` 瑞士网格, `linear_dark` 暗夜极简, `notion_paper` 温润纸感, `stripe_indigo` 经典深蓝, `apple_minimal` 极简白, `cyberpunk_neon` 赛博朋克, `emerald_forest` 翡翠深绿, `anthropic_warm` 陶土暖色），并支持动态扫描与挂载品牌库 `brands_index.json` 主题。
+  - **主题偏好记忆与全屏自适应**：基于 `localStorage` (`ppt_theme`) 实现主题配置自动恢复与持久化，换肤 CSS 变量作用域自适应覆盖主视图、演示屏顶部容器与全屏展示框。
+  - **演示者模式讲稿实时编辑**：全屏演示/彩排模式下，讲稿面板升级为实时交互编辑器（`fullscreen-notes-editor`），演讲者可直接在全屏模式下微调修改演讲稿内容。
 - **TTS 语音朗读与视频演示导出 (`export_video.py`)**
   - 新增 `export_video.py` 自动化导出工具，结合幻灯片 SVG 渲染与演讲稿 (Speaker Notes) TTS 语音合成，一键生成带高品质配音朗读的 MP4 视频演示文稿。
 - **独立对抗性 Critic 质检工具 (`critic_audit.py`)**
