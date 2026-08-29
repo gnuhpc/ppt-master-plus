@@ -337,7 +337,7 @@ class ProjectManager:
                     "- `icons/`: project icon set — selected library icons copied in (via icon_sync.py) plus any custom icons you add; embedded from here at export\n"
                     "- `notes/`: speaker notes\n"
                     "- `templates/`: project templates\n"
-                    "- `template/`: read-only design skeleton for Create PPTX from Template\n"
+                    "- `template/`: read-only Brand source for Import Brand PPTX\n"
                     "- `live_preview/`: browser preview runtime files and history (lock.json, server.log, edits.jsonl, annotations.jsonl)\n"
                     "- `sources/`: source materials and normalized markdown\n"
                     "- `analysis/`: machine-extracted intermediate analysis (PPTX intake, image_analysis.csv) — the pipeline's canonical must-read source/asset facts\n"

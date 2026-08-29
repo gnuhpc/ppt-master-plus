@@ -11,7 +11,7 @@ template-authoring tools are never presented as peer workflows.
 |---|---|---|---|
 | Create or redesign visible pages from content | Generate PPTX | `svg_generate` | `faithful_beautify`, `image_to_pptx`, or null |
 | Preserve and locally modify the supplied deck itself | Edit Native PPTX | `edit_native` | null |
-| Explicitly import a user-provided `.pptx` file as the brand reference for a new deck | Create PPTX from Template | `svg_generate` | `imported_brand` |
+| Explicitly import a user-provided `.pptx` file as the brand reference for a new deck | Import Brand PPTX | `svg_generate` | `imported_brand` |
 
 When an existing PPTX could be either the deliverable or a design skeleton, ask
 only: “这份 PPTX 是要保留现有内容继续修改，还是仅作为模板，用新内容生成一份新的 PPTX？”

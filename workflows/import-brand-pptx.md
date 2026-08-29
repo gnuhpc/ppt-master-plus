@@ -2,7 +2,7 @@
 description: Import an explicitly user-provided PPTX file as a read-only Brand reference, then generate a new deck from separate content.
 ---
 
-# Create PPTX from Template
+# Import Brand PPTX
 
 This workflow begins by importing a `.pptx` file explicitly provided by the
 user. Every such import is classified as a project-local **Brand**, not a Deck:

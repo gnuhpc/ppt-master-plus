@@ -187,7 +187,7 @@ class PptMasterPlusContractTests(unittest.TestCase):
         skill_text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
         routing = (SKILL / "workflows" / "routing.md").read_text(encoding="utf-8")
 
-        for route in ("Generate PPTX", "Edit Native PPTX", "Create PPTX from Template"):
+        for route in ("Generate PPTX", "Edit Native PPTX", "Import Brand PPTX"):
             self.assertIn(route, skill_text)
             self.assertIn(route, routing)
         self.assertIn("create_pptx_from_template", routing)

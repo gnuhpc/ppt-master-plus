@@ -6,7 +6,7 @@ description: Generate a new layout or deck template based on existing project fi
 
 > **PPTX import boundary:** this internal workflow does not turn a user-provided
 > `.pptx` into a Deck. Such a file is handled as a Brand import by the public
-> `Create PPTX from Template` route (or by `create-brand.md` for an explicitly
+> `Import Brand PPTX` route (or by `create-brand.md` for an explicitly
 > requested reusable Brand). Deck assets here must be authored from a confirmed
 > internal brief, not copied from imported PPTX pages.
 

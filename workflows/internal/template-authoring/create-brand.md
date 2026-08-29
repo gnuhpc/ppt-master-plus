@@ -12,7 +12,7 @@ This workflow edits the global brand library, not any specific `projects/<x>/`. 
 
 > **PPTX import rule:** an explicitly user-provided `.pptx` always materializes
 > as a Brand. It must never be imported as a Deck page roster. For a one-off new
-> presentation, use the public `Create PPTX from Template` route; create a
+> presentation, use the public `Import Brand PPTX` route; create a
 > reusable Brand package only when the user explicitly requests library upkeep.
 
 ## When to Run

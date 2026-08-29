@@ -8,7 +8,7 @@
 
 用户只需选择三类目标：重新生成/设计页面走 **Generate PPTX**；保留现有
 演示文稿并局部修改走 **Edit Native PPTX**；显式导入用户给定的 `.pptx`
-文件作为品牌参考、再用另一组内容生成新文件走 **Create PPTX from Template**。详细判定见
+文件作为品牌参考、再用另一组内容生成新文件走 **Import Brand PPTX**。详细判定见
 [`workflows/routing.md`](workflows/routing.md)。
 
 ## 安装
@@ -172,7 +172,7 @@
 | 保留原页数、页序、每页文字和数据，只优化版式、层级、留白和视觉一致性 | 支持 | `faithful-beautify` |
 | 把 PPTX 当作资料来源，重新组织故事、拆分/合并页面、调整页数或重排结构 | 支持 | 主生产流程 |
 | 对成品 PPTX 追加讲稿、音频、自动播放、转场等，不改变可见内容和布局 | 支持 | `Edit Native PPTX` |
-| 用户显式给定一个 `.pptx` 文件作为品牌参考，再填入另一批新内容 | 支持 | `Create PPTX from Template`：先只读导入为 Brand，模板与内容分离，在锁定品牌身份下生成新的 PPTX |
+| 用户显式给定一个 `.pptx` 文件作为品牌参考，再填入另一批新内容 | 支持 | `Import Brand PPTX`：先只读导入为 Brand，模板与内容分离，在锁定品牌身份下生成新的 PPTX |
 
 模板路线不把示例文字当内容，也不只依赖 PowerPoint placeholder。系统会提取
 规范页、普通文本框/形状/图片/组合中的品牌身份线索；无法安全识别的内容不会
@@ -186,7 +186,7 @@
 
 ### 从用户 PPTX 导入模板
 
-`Create PPTX from Template` 的模板来源必须是用户明确提供的 `.pptx` 文件，先导入
+`Import Brand PPTX` 的来源必须是用户明确提供的 `.pptx` 文件，先导入
 项目并只读保存，再进行品牌身份和资产分析：
 
 ```bash
@@ -216,7 +216,7 @@ Skill 内置可视化目录提供。
 | Table / Sound | 6 / 186 | **6 / 186** | 原生表格与音视频工作流按需启用 |
 | 图标库（SVG 数量） | 12,027 个 | 12,027 个（同） | chunk-filled / phosphor-duotone / simple-icons / tabler-filled / tabler-outline 五套 |
 
-这些内置资产不是单纯的静态素材库。Generate 只在用户明确选择内部模板路径时使用；用户显式给定的 `.pptx` 文件则由独立的 Create PPTX from Template 路线先只读导入为项目级 Brand，再以生成引擎创建新页面，不注册为公共 Deck 或可复用页面资产。
+这些内置资产不是单纯的静态素材库。Generate 只在用户明确选择内部模板路径时使用；用户显式给定的 `.pptx` 文件则由独立的 Import Brand PPTX 路线先只读导入为项目级 Brand，再以生成引擎创建新页面，不注册为公共 Deck 或可复用页面资产。
 
 ## 基本架构
 

@@ -399,7 +399,7 @@ class UnifiedCapabilityContractTests(unittest.TestCase):
 
     def test_public_workflow_surface_has_only_three_routes(self):
         workflows = SKILL / "workflows"
-        for route in ("generate-pptx.md", "edit-native-pptx.md", "create-pptx-from-template.md"):
+        for route in ("generate-pptx.md", "edit-native-pptx.md", "import-brand-pptx.md"):
             self.assertTrue((workflows / route).is_file(), route)
         for removed in (
             "native-enhance-pptx.md",
@@ -413,7 +413,7 @@ class UnifiedCapabilityContractTests(unittest.TestCase):
         self.assertTrue((workflows / "profiles" / "faithful-beautify.md").is_file())
         self.assertTrue((workflows / "internal" / "template-authoring" / "create-brand.md").is_file())
         routing = (workflows / "routing.md").read_text(encoding="utf-8")
-        template_route = (workflows / "create-pptx-from-template.md").read_text(
+        template_route = (workflows / "import-brand-pptx.md").read_text(
             encoding="utf-8"
         )
         self.assertIn("visualization_style_source: skill_builtin", routing)

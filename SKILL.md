@@ -21,9 +21,9 @@ Read [`workflows/routing.md`](workflows/routing.md) first and select exactly one
 
 1. [`Generate PPTX`](workflows/generate-pptx.md) — generate or redesign visible pages.
 2. [`Edit Native PPTX`](workflows/edit-native-pptx.md) — preserve the supplied deck and modify it.
-3. [`Create PPTX from Template`](workflows/create-pptx-from-template.md) — import an explicitly user-provided `.pptx` file as a Brand reference for new content.
+3. [`Import Brand PPTX`](workflows/import-brand-pptx.md) — import an explicitly user-provided `.pptx` file as a Brand reference for new content.
 
-For Create PPTX from Template, chart, table, infographic, and diagram styling
+For Import Brand PPTX, chart, table, infographic, and diagram styling
 always comes from the Skill's built-in visualization catalogs. The import is
 always a Brand: it contributes locked identity tokens and reusable brand assets,
 never source-page topology, object geometry, visualization-example styling, or
@@ -234,7 +234,7 @@ Multi-deck: several PPTX files may be imported into one main-pipeline project �
 There is no slug matching, no name lookup, no fuzzy resolution. A name without a path does not trigger — the user must give an internal bundled-template path the AI can `cd` into.
 
 > An external/uploaded PPTX used as a design skeleton does not enter Generate
-> Step 3; route it to [`Create PPTX from Template`](workflows/create-pptx-from-template.md).
+> Step 3; route it to [`Import Brand PPTX`](workflows/import-brand-pptx.md).
 > Other arbitrary external template directories are not accepted by this Generate step.
 
 > Style descriptions ("麦肯锡风格" / "Keynote 风" / "极简风" / etc.) never trigger Step 3. They flow into Strategist's Eight Confirmations as a style brief (color / typography / tone in confirmations e–g).

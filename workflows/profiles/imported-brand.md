@@ -4,7 +4,7 @@ description: Use a read-only user-provided PPTX as an identity-only Brand refere
 
 # Imported Brand Profile
 
-Use this profile only for `Create PPTX from Template`. The supplied `.pptx` is
+Use this profile only for `Import Brand PPTX`. The supplied `.pptx` is
 imported read-only and classified as `template_kind: brand`.
 
 It contributes only brand identity: canvas, palette, typography, logos, icons,
