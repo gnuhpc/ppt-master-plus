@@ -2,7 +2,7 @@
 
 ![PPT Master Plus 扁平手绘宣传图](assets/ppt-master-plus-cover.png)
 
-`ppt-master-plus` 是一个面向高质量、可编辑 PPTX 生产的通用 AI agent skill。它以 [`ppt-master`](https://github.com/hugohe3/ppt-master) 的 SVG→PPTX 方法论和制作链路为底座，在本仓库中补强 PPTX intake、保真美化、原生增强与 Confirm UI 能力，并新增传统行业模板、分阶段审核和软依赖绘图路由。
+`ppt-master-plus` 是一个面向高质量、可编辑 PPTX 生产的通用 AI agent skill。它以 [`ppt-master`](https://github.com/hugohe3/ppt-master) 的 SVG→PPTX 方法论和制作链路为底座，在本仓库中补强 PPTX intake、保真美化、原生编辑、Confirm UI、可复用设计资产和软依赖绘图路由。
 
 它的目标不是”快速吐几页幻灯片”，而是把资料理解、叙事组织、视觉规范、逐页制作、讲稿质检和最终导出串成一条可控的生产线。
 
@@ -66,6 +66,53 @@
 | Codex | `gpt5.5` / `medium` | 叙事重构、设计确认、逐页 SVG 制作和质量检查的均衡配置 |
 
 首选 `GLM 5.3`；环境或版本约束下可使用 `GLM 5.2`。也可以按任务阶段切换：Antigravity CLI 处理资料量大、连续生产压力高的项目；Codex 处理需要精修判断、文件修订和质量检查的项目。
+
+## 基本概念与内置内容
+
+### 先区分路线、模板和资源
+
+**Route（路线）** 是一次任务的交付方式；**Template（模板）** 是一类可复用设计参考的总称；**Resource（资源）** 是可在页面中选用的图表、表格、图标或音效。它们不是同一层概念。
+
+| 概念 | 作用 | 当前内置 / 可用内容 |
+|---|---|---|
+| **Generate PPTX** | 从内容新建或重新设计页面 | 固定 Step 1–7、两层 Confirm UI、`gated` / `continuous` / `split` 三种生产模式、逐页 Live Preview。 |
+| **Edit Native PPTX** | 保留原 PPTX 的母版、版式和对象结构，做局部修改 | `page_plan`、`content_edit`、`notes`、`narration`、`transitions`、`animations`、`visible_content_locked` 七个模块。 |
+| **Import Brand PPTX** | 将用户明确提供的 PPTX 只读导入为项目级 Brand，并以新内容生成新的 PPTX | `imported_brand` Profile；抽取身份令牌与资产，不复制原页面、母版、对象几何或示例内容。 |
+
+### Template 是总称，不是第五种资产
+
+内置 Template 资产有四种 `kind`。它们可单独使用；用户显式给出不同 kind 的内部目录时，系统可按“身份、结构、意图”三个段落合成。
+
+| `kind` | 解决的问题 | 不负责什么 | 当前内置 |
+|---|---|---|---:|
+| **Brand** | 统一品牌身份：颜色、字体、Logo、Icon、背景资产、语气 | 不锁定页面结构或 SVG 页面原型 | **37** 套 |
+| **Style** | 统一表达方法：叙事方式、证据纪律、信息密度、视觉默认值 | 不锁定品牌身份、页数、页序、几何或 SVG 原型 | **12** 套 |
+| **Layout** | 统一结构：画布、网格、页面类型、SVG 页面骨架 | 不携带机构 Logo 或官方品牌身份 | **37** 套 |
+| **Deck** | 已验证的完整页面体系：身份 + 结构 + 适用场景/设计意图 | 不等同于用户上传的 PPTX；机构、学校、活动身份不应归入此类 | **21** 套 |
+
+`Import Brand PPTX` 中的“PPTX”是用户提供的参考文件，不会被注册为公共 Template，也不会成为 Deck。所有用户导入 PPTX 一律以 `kind: brand` 使用。
+
+### 其他工作流概念
+
+| 概念 | 含义 | 当前内置 |
+|---|---|---|
+| **Engine（引擎）** | 实际制作路径 | `svg_generate`（新页面生成）与 `edit_native`（原生 round-trip 编辑）。 |
+| **Profile（配置）** | 某条路线的专用策略，不是独立用户入口 | `faithful_beautify`、`image_to_pptx`、`imported_brand`。 |
+| **Stage（阶段）** | 按需插入主流程的能力 | Topic Research、Refine Spec、Resume Execute、Live Preview、Visual Review、Chart Verification、Customize Animations、Generate Audio。 |
+| **Module（模块）** | Edit Native PPTX 中可组合启用的编辑能力 | 页面管理、内容替换、备注、旁白、转场、动画、可见内容锁定。 |
+| **`design_spec.md` / `spec_lock.md`** | 前者说明设计与叙事，后者是每页执行前必须重读的机器可执行约束 | 每个 Generate 项目都会生成；它们不是模板资产本身。 |
+
+### 内置资源库
+
+| 资源 | 数量 | 用法边界 |
+|---|---:|---|
+| 图表 / 信息图 / 图解 / 框架 SVG | **139** | 按语义从内置目录选型；用户导入 PPTX 的示例图例、表格皮肤和图表样式不继承。 |
+| 原生表格结构 | **6** | 仅在需要稳定行列结构或原生表格语义时启用。 |
+| 图标 | **12,027** 个，5 个库 | `chunk-filled`、`phosphor-duotone`、`simple-icons`、`tabler-filled`、`tabler-outline`。 |
+| 音效 | **186** 个 | 仅在用户明确要求动画或视频工作流时启用。 |
+| 外部绘图路由 | 6 类可选伴侣 skill | Fireworks、Excalidraw、Mermaid、PlantUML、draw.io、tldraw；缺失时回退内置 SVG。 |
+
+在 Generate 的 Step 3 中，内部 Template 资产只会在用户明确提供仓库内目录路径时使用；仅说名称或风格不会触发自动匹配。完整的融合规则见 [`references/templates-architecture.md`](references/templates-architecture.md)。
 
 ## 主要功能
 
@@ -131,6 +178,23 @@
 1. 明确要求保留原有的页数、页序、每页文字和数据值。
 2. 配合 Confirm UI 网页端确认是否保留原 PPT 各页面的母版与版式。
 3. 预览并核对 1:1 重新版面排布后的 SVG 效果，确认后导出原生可编辑 PPTX。
+
+### 4. 从用户 PPTX 导入 Brand 并生成新 PPTX
+
+适合用户给出一份 PPTX，希望沿用其品牌身份，但用另一组内容重新生成页面。该 PPTX 不会被当作可复制页面模板：系统只读分析其颜色、字体、Logo、Icon、背景资产与视觉语气；图表、表格和页面结构重新规划。
+
+典型输入动作：
+
+```text
+使用 ppt-master-plus，Import Brand PPTX：/path/to/brand-reference.pptx；
+基于 /path/to/new-content.md 做一份面向客户的 10 页方案汇报。
+```
+
+用户核心动作流程：
+
+1. 同时提供明确的 PPTX 文件和新内容材料。
+2. 确认受众、核心信息、页数/页面计划与生产模式；品牌身份默认锁定。
+3. 在 Live Preview 中按 `gated` 或 `continuous` 审阅新生成页面；输出不会改写源 PPTX。
 
 ## 浏览器确认、预览与反馈
 
@@ -201,18 +265,18 @@ python3 scripts/project_manager.py import-template <project_path> /path/to/user-
 生成时，导入 Brand 负责身份令牌和资产，页面版式自由规划，图表/表格/信息图样式仍由
 Skill 内置可视化目录提供。
 
-## 模板与图例丰富度
+## 与 ppt-master 的模板与资源对比
 
-模板资产覆盖”整套风格模板、页面结构、图表图例、图标库”四层。以下为与 `ppt-master` 的逐项对比：
+这里的“模板”是 Brand、Style、Layout、Deck 四类设计参考的总称；图表、表格、图标和音效属于资源库。以下是可复用资产的逐项对比：
 
 | 资产类型 | `ppt-master` | `ppt-master-plus` | 说明 |
 |---|---:|---:|---|
-| Deck 模板 | 2 套 | **21 套** | 仅品牌无关、可跨客户复用的页面体系；用户导入 PPTX 不会进入此类 |
+| Deck | 2 套 | **21 套** | 仅品牌无关、可跨客户复用的页面体系；用户导入 PPTX 不会进入此类 |
 | 其中：传统行业模板 | — | **21 套** | `ppt-master-plus` 专有，适合中文商业场景、课件、述职、答辩、项目架构等 |
 | 图表 / 信息图 SVG | 33 个 | **139 个** | 合并索引与文件，ID 冲突保留 Plus |
 | Layout 骨架 | 7 组 | **37 组** | legacy flat 与 structured workspace 并存 |
-| Brand preset | 20 套 | **37 套** | 包含 `apsara_yunqi_26_light`、`ffa_shenzhen`、机构/学校身份预设并保护 `flink_ai_style` |
-| Style preset | 12 套 | **12 套** | 显式 Style workspace 才启用 |
+| Brand | 20 套 | **37 套** | 包含 `apsara_yunqi_26_light`、`ffa_shenzhen`、机构/学校身份预设并保护 `flink_ai_style` |
+| Style | 12 套 | **12 套** | 仅在显式 Style 路径被提供时启用 |
 | Table / Sound | 6 / 186 | **6 / 186** | 原生表格与音视频工作流按需启用 |
 | 图标库（SVG 数量） | 12,027 个 | 12,027 个（同） | chunk-filled / phosphor-duotone / simple-icons / tabler-filled / tabler-outline 五套 |
 
@@ -279,8 +343,8 @@ Post-processing
   - **界面截图包装规范 (`screenshot-framing.md`)**：提供产品 UI 截图阴影、外壳包装、设备框选与高亮聚焦的标准指导。
   - **风格规范补全 (`swiss_style.md`, `magazine.md`)**：补充瑞士平面设计风（International Typographic Style）与高品质杂志风（Editorial Magazine）专项指导。
 - **新增重构与桥接工作流 (`workflows/`)**
-  - **图片/PDF 截图重构 (`reconstruct-image-pptx.md`)**：支持将图片、PDF 截图、AI 海报一键重构为 100% 原生可编辑 PPTX 矢量文本框与形状。
-  - **Humanize PPT 桥接 (`humanize-ppt-bridge.md`)**：无缝对接 humanize-ppt 产出的结构化 Outline、Brief、AST 提纲与 Speaker Intent。
+  - **图片/PDF 截图重构 ([`image-to-pptx.md`](workflows/profiles/image-to-pptx.md))**：支持将图片、PDF 截图、AI 海报重构为原生可编辑 PPTX 矢量文本框与形状。
+  - **Humanize PPT 桥接 ([`humanize-ppt-bridge.md`](workflows/adapters/humanize-ppt-bridge.md))**：对接 humanize-ppt 产出的结构化 Outline、Brief、AST 提纲与 Speaker Intent。
 - **Web 确认页 (Confirm UI) 启动契约规范**
   - 在 `SKILL.md` 中强化规定：用户发起生成请求时必须强弹 Confirm UI，仅在 Pure Headless / CLI 终端无 GUI 环境下才允许降级为 Chat 纯文本确认。
 

@@ -330,7 +330,7 @@ When fusion happens (any multi-path case), the resulting `<project>/templates/de
 
 ```markdown
 > **Fused from:**
-> - deck: `templates/decks/招商银行/` （base）
+> - deck: `templates/decks/传统行业_商业汇报全场景/` （base）
 > - brand: `templates/brands/anthropic/` （identity override）
 > - layout: `templates/layouts/academic_defense/` （structure override）
 > - conflicts resolved: Color Scheme from anthropic（user picked a）

@@ -1,20 +1,21 @@
-# 模板架构：Brand / Layout / Deck 三分类
+# 模板架构：Brand / Style / Layout / Deck 四分类
 
-> 本文是**架构对齐文档**，定义"模板"在数据模型层面的三种身份、各自的 `design_spec.md` 字段集、以及多路径合成与冲突解决规则。面向贡献者与 AI 工作流，回答"一个模板目录里应该写什么、不写什么；多个模板同时给时怎么合成"。
+> 本文是**架构对齐文档**，定义“Template”在数据模型层面的四种资产 `kind`、各自的 `design_spec.md` 字段集，以及多路径合成与冲突解决规则。面向贡献者与 AI 工作流，回答“一个模板目录里应该写什么、不写什么；多个模板同时给时怎么合成”。
 >
 > 用户视角的用法（怎么触发、怎么选）见 [`templates/README.md`](../templates/README.md)；本文不重复。
 
 ---
 
-## 一、三分类
+## 一、四分类
 
 | 分类 | 物理目录 | 写什么 | 不写什么 | 出处工作流 |
 |---|---|---|---|---|
 | **Brand** | `templates/brands/<id>/` | 仅身份段：color / typography / logo / voice / icon style | 不写 canvas、page structure、SVG roster | `workflows/internal/template-authoring/create-brand.md` |
+| **Style** | `templates/styles/<id>/` | 表达方法与默认值：叙事、证据纪律、信息密度、视觉默认值 | 不写身份段、画布、页序或 SVG roster | 内部维护；只在用户显式给出 Style 路径时使用 |
 | **Layout** | `templates/layouts/<id>/` | 仅结构段：canvas / page structure / page types / SVG roster | 不写品牌身份（无 logo、无品牌色硬约束） | `workflows/internal/template-authoring/create-template.md`（layout 分支）|
-| **Deck** | `templates/decks/<id>/` | 全段：身份段 + 结构段 + 中间段（template overview） | —— | `workflows/internal/template-authoring/create-template.md`（deck 分支，默认）|
+| **Deck** | `templates/decks/<id>/` | 全段：身份段 + 结构段 + 中间段（template overview） | 不接收用户上传 PPTX 的直接导入 | 内部维护的完整页面体系 |
 
-三者是**三种并列的 reference bundle**，物理目录与 frontmatter `kind` 字段双向对齐：
+四者是**四种并列的 reference bundle**，物理目录与 frontmatter `kind` 字段双向对齐：
 
 ```yaml
 # templates/brands/anthropic/design_spec.md
@@ -29,7 +30,13 @@ kind: layout
 ...
 ---
 
-# templates/decks/招商银行/design_spec.md
+# templates/styles/consulting/design_spec.md
+---
+kind: style
+...
+---
+
+# templates/decks/传统行业_商业汇报全场景/design_spec.md
 ---
 kind: deck
 ...
@@ -48,9 +55,9 @@ kind: deck
 
 ### 为什么需要 Deck 这一类
 
-Deck 是一份现存 PPT 的"复刻全息"——SVG 几何为该套配色和字体画的，身份与结构在原 PPT 里已经实战搭配。它的价值是「已验证的整体感」，是 layout + brand 自由拼合未必能达到的成品。
+Deck 是一个内部维护的完整页面体系——SVG 几何、身份与结构已经作为一个整体经过设计。它的价值是“已验证的整体感”，是 layout + brand 自由拼合未必能达到的成品。
 
-但 Deck **不是"不可篡改的复刻"**——它是"作为默认底图的复刻，可被显式 brand / layout 覆盖"。这给了用户最大自由度：默认拿到一份完整方案，需要时显式换身份或换结构。
+但 Deck **不是不可篡改的复刻**——它是可被显式 Brand / Layout 覆盖的完整基线。用户上传的 PPTX 不会创建 Deck；它一律走 Import Brand PPTX，按 Brand 使用。
 
 ---
 
@@ -145,7 +152,7 @@ primary_color: "<HEX>"
 
 ---
 
-## 三、三套 index 文件
+## 三、四套 index 文件
 
 每个 index 跟物理目录一一对应，字段按需精简（参照 [[project-charts-index-full-read-intentional]] 的"meta + summary"模式，但保留对 Strategist 选型有用的结构化元数据）。
 
@@ -162,6 +169,18 @@ primary_color: "<HEX>"
 
 - 保留 `primary_color` —— Strategist 选 brand 时第一眼就要知道主色
 - 去掉 keywords —— summary 自带英文等价词，AI 用自然语言匹配（沿用 charts 经验）
+
+### `templates/styles/styles_index.json`
+
+```json
+{
+  "<style_id>": {
+    "summary": "Reusable communication and visual-default method"
+  }
+}
+```
+
+- Style 只提供方法和默认值；不会取得身份段或结构段的所有权
 
 ### `templates/layouts/layouts_index.json`
 
@@ -207,8 +226,10 @@ primary_color: "<HEX>"
 |---|---|
 | 无 | 跳过 Step 3，走自由设计 |
 | 只 brand | 复制 brand 全部，结构走自由设计 |
+| 只 style | 复制 Style 方法与默认值；身份与结构走自由设计 |
 | 只 layout | 复制 layout 全部，身份走自由设计（Strategist 八项确认 e/f/g 决策） |
 | 只 deck | 复制 deck 全部 |
+| style + 任意其他 kind | Style 作为方法/默认值输入；不覆盖身份、结构或中间段 |
 | brand + layout | brand 提供身份段 + layout 提供结构段，沿用 SKILL.md 现有 fusion 表 |
 | brand + deck | brand 段级覆盖 deck 的身份段，结构段与中间段从 deck 拿 |
 | layout + deck | layout 段级覆盖 deck 的结构段，身份段与中间段从 deck 拿 |
@@ -237,8 +258,8 @@ AI: 你给了两个 brand，检测到段级冲突：
 
 - 默认无隐式顺序，所有冲突都问
 - 仅在用户选 (c) 才进入逐段问答；不做字段级冲突解决
-- `layout × 2`、`deck × 2`、`brand × 2` 同处理
-- 三类各最多两份（再多让用户先在 chat 里收敛）
+- `layout × 2`、`deck × 2`、`brand × 2`、`style × 2` 同处理
+- 四类各最多两份（再多让用户先在 chat 里收敛）
 
 ### Provenance 记录
 
@@ -246,9 +267,10 @@ AI: 你给了两个 brand，检测到段级冲突：
 
 ```markdown
 > **Fused from:**
-> - deck: `templates/decks/招商银行/` （base）
+> - deck: `templates/decks/传统行业_商业汇报全场景/` （base）
 > - brand: `templates/brands/anthropic/` （identity 段覆盖）
 > - layout: `templates/layouts/academic_defense/` （structure 段覆盖）
+> - style: `templates/styles/consulting/` （method/default input）
 > - conflicts resolved: Color Scheme from anthropic（用户选 a）
 ```
 
@@ -263,6 +285,7 @@ AI: 你给了两个 brand，检测到段级冲突：
 | 用户路径指向 | Step 3 行为（按 kind 分支）|
 |---|---|
 | `kind: brand` | design_spec + 非图片资产 → `<project>/templates/`；logo / 插画 / 图标**位图** → `<project>/images/` |
+| `kind: style` | Style spec → `<project>/templates/`；作为叙事、证据与视觉默认值输入，不复制页面 SVG |
 | `kind: layout` | design_spec + SVG roster → `<project>/templates/`；**位图**资产 → `<project>/images/` |
 | `kind: deck` | design_spec + 模板 SVG → `<project>/templates/`；logo / 背景 / 其它**位图** → `<project>/images/` |
 | 多路径 | 按上表合成单份 `design_spec.md`；SVG 进 `templates/`、位图进 `images/` 合并复制 |
@@ -281,9 +304,9 @@ Deck 路径下用户已经拿到完整方案，八项确认收窄到"目标受�
 | 工作流 | 产出 |
 |---|---|
 | `workflows/internal/template-authoring/create-brand.md` | brand 目录（identity-only），从品牌资产逆向提取 |
-| `workflows/internal/template-authoring/create-template.md` | layout 或 deck 目录，内部按 kind 分支：默认走 deck（用户给了一份现存 PPT，提取完整身份 + 结构）；用户明说"只要结构 / 丢掉品牌色"时走 layout |
+| `workflows/internal/template-authoring/create-template.md` | 由已确认的内部设计 brief 创建 layout 或 deck；用户提供 PPTX 时不进入此流程，而是走 Import Brand PPTX |
 
-产出后 frontmatter `kind` 字段决定文件落到 `templates/brands/` / `templates/layouts/` / `templates/decks/`。
+产出后 frontmatter `kind` 字段决定文件落到 `templates/brands/` / `templates/styles/` / `templates/layouts/` / `templates/decks/`。
 
 ---
 
