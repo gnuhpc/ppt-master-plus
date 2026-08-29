@@ -108,15 +108,43 @@
     "primary_color": "#FF6900"
   },
   "中国电信": {
-    "summary": "China Telecom brand identity for digital infrastructure, government-enterprise solutions, transformation planning, and corporate reporting",
-    "primary_color": "#004EA2"
+    "summary": "China Telecom identity for digital infrastructure, government-enterprise solutions, transformation planning, and corporate reporting",
+    "primary_color": "#C00000"
   },
   "中国电建": {
     "summary": "POWERCHINA brand identity for engineering project reports, technical proposals, business negotiations, and corporate promotion",
     "primary_color": "#004EA1"
   },
+  "中国电建_常规": {
+    "summary": "POWERCHINA standard identity for engineering project reports and technical proposals",
+    "primary_color": "#00418D"
+  },
+  "中国电建_现代": {
+    "summary": "POWERCHINA modern identity for major projects, international promotion, and technology showcases",
+    "primary_color": "#00418D"
+  },
   "中汽研": {
     "summary": "CATARC brand identity for product certification, evaluation reports, automotive technology promotion, and business visits",
     "primary_color": "#004098"
+  },
+  "中汽研_商务": {
+    "summary": "CATARC business identity for product certification, technology promotion, and executive reporting",
+    "primary_color": "#003366"
+  },
+  "中汽研_常规": {
+    "summary": "CATARC standard identity for certification, evaluation, and business visits",
+    "primary_color": "#004098"
+  },
+  "中汽研_现代": {
+    "summary": "CATARC modern identity for forward-looking technology showcases and strategic releases",
+    "primary_color": "#001529"
+  },
+  "招商银行": {
+    "summary": "China Merchants Bank transaction-banking identity for product, sales, and branch-training presentations",
+    "primary_color": "#C8152D"
+  },
+  "重庆大学": {
+    "summary": "Chongqing University identity for academic defense, research reports, teaching, and scholarly exchange",
+    "primary_color": "#006BB7"
   }
 }

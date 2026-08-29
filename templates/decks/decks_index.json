@@ -1,46 +1,4 @@
 {
-  "中国电信": {
-    "summary": "China Telecom related briefings, 政企数字化方案, 转型规划, 内部汇报.",
-    "canvas_format": "ppt169",
-    "page_count": 5,
-    "primary_color": "#C00000"
-  },
-  "中汽研": {
-    "summary": "中汽研认证展示、评测汇报与技术交流，用于建立可信理解并推进评审或合作；采用专业的深蓝工程视觉。",
-    "canvas_format": "ppt169",
-    "page_count": 5,
-    "primary_color": "#004098"
-  },
-  "中国电建_常规": {
-    "summary": "Engineering project reports, technical proposal presentations, business negotiations, corporate promotion, annual summaries.",
-    "canvas_format": "ppt169",
-    "page_count": 5,
-    "primary_color": "#00418D"
-  },
-  "中国电建_现代": {
-    "summary": "Major engineering reports, international market promotion, technology achievement showcases, high-end business negotiations.",
-    "canvas_format": "ppt169",
-    "page_count": 5,
-    "primary_color": "#00418D"
-  },
-  "中汽研_商务": {
-    "summary": "Product certification display, evaluation presentations, technology promotion, high-end business reporting.",
-    "canvas_format": "ppt169",
-    "page_count": 5,
-    "primary_color": "#003366"
-  },
-  "中汽研_常规": {
-    "summary": "Product certification display, evaluation presentations, technology promotion, business visits.",
-    "canvas_format": "ppt169",
-    "page_count": 5,
-    "primary_color": "#004098"
-  },
-  "中汽研_现代": {
-    "summary": "Forward-looking technology showcases, strategic releases, high-end business reporting.",
-    "canvas_format": "ppt169",
-    "page_count": 5,
-    "primary_color": "#001529"
-  },
   "传统行业_业务运营与看板": {
     "summary": "适用于传统行业（蓝色互联网运营）。深蓝 + 浅蓝的运营汇报合辑，52 页**纯运营场景模板**（私域 / 用户 / 产品生命周期 / 营销活动 / 数据看板 / 项目管理 / 全域增长），适合互联网运营经理 / 增长黑客 / 电商团队。",
     "canvas_format": "ppt169",

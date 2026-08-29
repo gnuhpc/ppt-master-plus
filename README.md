@@ -41,10 +41,10 @@
 | **PPTX intake / source profile** | PPTX 可经 `ppt_to_md.py` 提取为 Markdown 后作为普通资料进入主流程。 | `import-sources` 会额外运行 `pptx_intake.py`，生成 `analysis/source_profile.json`、`<stem>.identity.json`、`<stem>.slide_library.json`，把画布、主题、几何、表格和图表事实提供给 Strategist 作上下文。 |
 | **美化入口路由** | 既有 PPTX 作为资料输入主生产流程，Strategist 可自由重构叙事、页数、页序和视觉系统；不单独区分“保留原稿”的美化契约。 | 路由边界更清晰：重新设计 → Generate PPTX；保留原生设计并局部修改 → [`Edit Native PPTX`](workflows/edit-native-pptx.md)；显式 1:1 重排 → [`faithful-beautify`](workflows/profiles/faithful-beautify.md)。 |
 | **保真美化（Faithful Beautify）** | 不提供独立 1:1 保真美化路线；若输入 PPTX，仍按资料重建，不把原页数、页序、逐页文字或母版当作锁定契约。 | 专属工作流 [`beautify-pptx.md`](workflows/profiles/faithful-beautify.md)：<br>• **画布原尺寸**：`beautify_identity.py` 从 PPTX `p:sldSz` 读取精确像素尺寸，不强制归一化到 1280×720<br>• **内容冻结契约**：`pptx_intake.py` + `beautify_inventory.py` 生成逐页台账（文字/图表数据/表格/图片），文字逐字冻结，数据值锁定，严格 1:1 页数映射<br>• **源身份提取**：`analysis/<stem>.identity.json` 含主题调色板、实际观察字体/字号；Confirm UI 以源 PPT 风格预填，用户可确认或覆盖<br>• **`preserve_master`**：OOXML 级逐页保留，源第 N 页的 slideLayout/master 映射到输出第 N 页，主版式背景/Logo/页脚等 PPT 原生元素由母版承载<br>• **输出验证**：对导出 PPTX 重跑 `ppt_to_md.py`，逐页核对文字保真度和页数 |
-| **Deck 模板** | 当前索引 2 套。 | **30 套**：保留 Plus 原有中文行业模板，并并入 Master 缺失项；配 3 套专属版式规范指导文件（[`executor-general.md`](references/executor-general.md)、[`executor-consultant.md`](references/executor-consultant.md)、[`executor-consultant-top.md`](references/executor-consultant-top.md)）。用户导入的 PPTX 一律不注册为 Deck。 |
+| **Deck 模板** | 当前索引 2 套。 | **21 套**：仅保留品牌无关、可跨客户复用的中文行业页面体系；配 3 套专属版式规范指导文件（[`executor-general.md`](references/executor-general.md)、[`executor-consultant.md`](references/executor-consultant.md)、[`executor-consultant-top.md`](references/executor-consultant-top.md)）。机构、学校与活动身份均归入 Brand。 |
 | **图表 / 信息图 SVG** | 当前索引 33 个。 | **139 个**，冲突项以 Plus 资产为准。 |
 | **Layout 骨架** | 当前索引 7 组。 | **37 组**，同时保留 legacy flat 与新增 structured workspace。 |
-| **Brand / Style preset** | 20 套 Brand、12 套 Style。 | **30 套 Brand、12 套 Style**；包括 `apsara_yunqi_26_light`、`ffa_shenzhen` 与 `flink_ai_style`。 |
+| **Brand / Style preset** | 20 套 Brand、12 套 Style。 | **37 套 Brand、12 套 Style**；包括 `apsara_yunqi_26_light`、`ffa_shenzhen`、中国电信、中汽研、中国电建、招商银行、重庆大学与 `flink_ai_style`。 |
 | **Table / Sound** | 6 个 Table、186 个 Sound。 | 同步并入 **6 个 Table、186 个 Sound**，仅在显式原生对象或音视频工作流中启用。 |
 | **图标库** | 12,027 个 SVG，含 chunk-filled / phosphor-duotone / simple-icons / tabler-filled / tabler-outline 五套图标库。 | 同款 5 套图标库、同等规模（12,027 个）；图标检索和复制流程相同。 |
 | **外部绘图路由** | 主要依靠内置 SVG、图表模板和图标库完成图解表达。 | **软依赖绘图路由器**：可按场景分流到 `fireworks-tech-graph`、`excalidraw`（手绘风格可编辑源文件）、`Mermaid`、`PlantUML`、`draw.io` 或 `tldraw`；环境缺失时自动降级回内置 SVG，绝不阻塞主流程。 |
@@ -207,11 +207,11 @@ Skill 内置可视化目录提供。
 
 | 资产类型 | `ppt-master` | `ppt-master-plus` | 说明 |
 |---|---:|---:|---|
-| Deck 模板 | 2 套 | **30 套** | Plus 既有模板优先，并入 Master 缺失项；用户导入 PPTX 不会进入此类 |
+| Deck 模板 | 2 套 | **21 套** | 仅品牌无关、可跨客户复用的页面体系；用户导入 PPTX 不会进入此类 |
 | 其中：传统行业模板 | — | **21 套** | `ppt-master-plus` 专有，适合中文商业场景、课件、述职、答辩、项目架构等 |
 | 图表 / 信息图 SVG | 33 个 | **139 个** | 合并索引与文件，ID 冲突保留 Plus |
 | Layout 骨架 | 7 组 | **37 组** | legacy flat 与 structured workspace 并存 |
-| Brand preset | 20 套 | **30 套** | 包含 `apsara_yunqi_26_light`、`ffa_shenzhen` 并保护 `flink_ai_style` |
+| Brand preset | 20 套 | **37 套** | 包含 `apsara_yunqi_26_light`、`ffa_shenzhen`、机构/学校身份预设并保护 `flink_ai_style` |
 | Style preset | 12 套 | **12 套** | 显式 Style workspace 才启用 |
 | Table / Sound | 6 / 186 | **6 / 186** | 原生表格与音视频工作流按需启用 |
 | 图标库（SVG 数量） | 12,027 个 | 12,027 个（同） | chunk-filled / phosphor-duotone / simple-icons / tabler-filled / tabler-outline 五套 |
@@ -303,7 +303,7 @@ Post-processing
 - **原生 PPTX 编辑能力收敛**
   - 保留原文件的局部修改、讲稿、旁白、转场和动画统一进入 `Edit Native PPTX`；用户提供的 PPTX 若用于新内容生成，则只导入为 Brand，而不再作为原生 Deck 填充骨架。
 - **模板与图表资产库大幅扩容**
-  - **模版扩充**：新增 21 套传统行业模版，使 Deck 模版总数从 8 套扩增至 **30 套**，覆盖商业汇报、竞聘述职、学术答辩等全场景；`ffa_shenzhen` 作为 Brand 身份预设维护。
+  - **模版扩充**：新增 21 套传统行业页面体系；原先按 Deck 管理的机构、学校和活动资产已统一收敛为 Brand 身份预设。
   - **图表扩充**：新增 60 个 SVG 图表/信息图，使图表总数扩充至 **131 个**，涵盖更多行业可视化场景。
   - **Layout 骨架扩充**：新增 16 组 Layout 骨架，使骨架总数从 7 组扩充至 **23 组**，包含极简商务、编辑性衬线、水彩多彩、产品发布等风格。
   - **新增品牌预设**：增加 `flink_ai_style` 品牌风格预设。
@@ -323,7 +323,7 @@ Post-processing
 
 ## 致敬 ppt-master
 
-`ppt-master-plus` 继承并致敬 [`ppt-master`](https://github.com/hugohe3/ppt-master)：它保留了原有 skill 对”原生可编辑 PPTX””高质量 SVG 页面””模板驱动制作”和”中文汇报场景”的执着，同时在此基础上把 Deck 模板从 8 套扩充到 30 套（新增 21 套传统行业模板）、图表 SVG 从 71 个扩充到 131 个、Layout 骨架从 7 组扩充到 23 组，并新增了讲稿质检能力和更严格的生产流程。
+`ppt-master-plus` 继承并致敬 [`ppt-master`](https://github.com/hugohe3/ppt-master)：它保留了原有 skill 对”原生可编辑 PPTX””高质量 SVG 页面””模板驱动制作”和”中文汇报场景”的执着，同时在此基础上保留 21 套品牌无关的 Deck 页面体系、扩充品牌身份预设、图表 SVG 与 Layout 骨架，并新增了讲稿质检能力和更严格的生产流程。
 
 这个 `plus` 不是推翻，而是延展：在 [`ppt-master`](https://github.com/hugohe3/ppt-master) 的地基上，把新的 intake / beautify / enhance 工具链、分阶段审核、PPTX 原生增强、软依赖绘图路由和更严格的生产纪律合并到一条更完整的工作流里。
 
