@@ -530,5 +530,15 @@
       "desc_zh": "投影、远距离扫一眼、内容稀疏（keynote、发布、课堂）。正文 32px。",
       "desc_en": "Projected, glanced from the back, sparse (keynote, launch, classroom). Body 32px."
     }
+  ],
+  "brands": [
+    {
+      "id": "none",
+      "label": "Free design",
+      "label_zh": "自由设计",
+      "label_en": "Free design",
+      "desc_zh": "不使用品牌预设，按内容自由设计配色与字体。",
+      "desc_en": "No brand preset; design color and typography freely from the content."
+    }
   ]
 }

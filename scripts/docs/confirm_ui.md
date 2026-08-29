@@ -31,17 +31,17 @@ pip install flask
 
 ## Two kinds of field
 
-- **Enumerable + custom** — canvas / mode / visual_style / icons / image usage. The page lists common options from `static/catalogs.json`, badges the AI's recommendation, and still offers a Custom box for edge cases (custom canvas size, bespoke narrative mode, mixed image plan, self-provided icon system, etc.). `visual_style` additionally honors an optional `visual_style_spectrum` that badges a 3-pick personality spectrum (safe / shifted / bold, each with a temperament tag + analogy) in place of the single recommendation — see the schema below.
+- **Enumerable + custom** — canvas / brand / mode / visual_style / icons / image usage. The page lists common options from `static/catalogs.json`, badges the AI's recommendation, and still offers a Custom box for edge cases (custom canvas size, bespoke narrative mode, mixed image plan, self-provided icon system, etc.). `visual_style` additionally honors an optional `visual_style_spectrum` that badges a 3-pick personality spectrum (safe / shifted / bold, each with a temperament tag + analogy) in place of the single recommendation — see the schema below.
 - **Closed enumerable** — formula policy / generation mode / transition effect / refine spec, plus AI source only when image usage may include `ai`. These have no Custom box; out-of-catalog values snap back to the recommended option. Use pipeline vocabulary: icon ids are actual library ids such as `tabler-outline`, or `emoji` for system emoji; image usage labels mirror Strategist terminology: `ai` = AI-generated, `web` = Web-sourced, `provided` = User-provided, `placeholder` = Placeholder, `none` = No images. Use custom prose only when several sources are mixed.
 - **Generative (open)** — color, typography, generated-image style. No finite catalog; the AI authors **≥3 candidates** the page renders as cards (never a single option — creative fields must offer real choice; fewer than 3 only on the honest-shortfall exception). `page_count`, `audience`, and `content_divergence` are free inputs (`content_divergence` is a free-text intent shown under audience in §c, not a fixed-option field).
 
-**Custom box** appears only on fields whose universe is genuinely open — `canvas`, `mode`, `visual_style`, `icons`, and `image_usage`. Fully closed sets — `image_ai_path`, `formula_policy`, `generation_mode`, `transition_effect`, `refine_spec` — have **no** Custom box; an out-of-catalog value there is snapped back to the recommended option.
+**Custom box** appears only on fields whose universe is genuinely open — `canvas`, `brand`, `mode`, `visual_style`, `icons`, and `image_usage`. Fully closed sets — `image_ai_path`, `formula_policy`, `generation_mode`, `transition_effect`, `refine_spec` — have **no** Custom box; an out-of-catalog value there is snapped back to the recommended option.
 
 `image_ai_path` is conditional: the page shows it and writes it to `result.json` only when `image_usage` is `ai` or a custom image plan that may include AI. Web-sourced / User-provided / Placeholder / No images paths do not carry an AI backend choice.
 
 ## Catalogs — `static/catalogs.json` (the finite option universe)
 
-The front-end loads `/api/catalogs` (served by the confirm server) and falls back to the static `/static/catalogs.json` if that route is unavailable. `/api/catalogs` returns the static file **with the `canvas` list synced live from `config.py CANVAS_FORMATS`** — the set of formats and their `dim` come from config (single source of truth, zero drift), while bilingual labels / use text stay in catalogs.json (a plain fallback label is synthesized for any new id config adds). Keys: `canvas`, `modes`, `visual_styles` (grouped), `icons`, `image_usage`, `image_ai_path`, `formula_policy`, `generation_mode`, `transition_effect`, `delivery_purpose`. Each entry is `{ "id", "label", "label_zh", "label_en", ... }`; descriptions use `desc_zh` / `desc_en`, and `visual_styles` groups use `group_zh` / `group_en`. The front-end falls back to legacy `label` / `desc` / `group`, so old catalogs still load, but new user-facing catalog text must be bilingual. English labels should mirror canonical reference names (`pyramid`, `swiss-minimal`, `Path A`, `mixed`, etc.); Chinese labels should be translated for users. Descriptions render inline after the option title, not as a separate selected-option line. `visual_styles` is `[{ "group", "group_zh", "group_en", "items": [...] }]`. For `canvas` you only need to maintain the bilingual labels in catalogs.json; the format set and dimensions are authoritative in `config.py CANVAS_FORMATS`.
+The front-end loads `/api/catalogs` (served by the confirm server) and falls back to the static `/static/catalogs.json` if that route is unavailable. `/api/catalogs` returns the static file **with the `canvas` list synced live from `config.py CANVAS_FORMATS`** — the set of formats and their `dim` come from config (single source of truth, zero drift), while bilingual labels / use text stay in catalogs.json (a plain fallback label is synthesized for any new id config adds). Keys: `canvas`, `brands`, `modes`, `visual_styles` (grouped), `icons`, `image_usage`, `image_ai_path`, `formula_policy`, `generation_mode`, `transition_effect`, `delivery_purpose`. Each entry is `{ "id", "label", "label_zh", "label_en", ... }`; descriptions use `desc_zh` / `desc_en`, and `visual_styles` groups use `group_zh` / `group_en`. The front-end falls back to legacy `label` / `desc` / `group`, so old catalogs still load, but new user-facing catalog text must be bilingual. English labels should mirror canonical reference names (`pyramid`, `swiss-minimal`, `Path A`, `mixed`, etc.); Chinese labels should be translated for users. Descriptions render inline after the option title, not as a separate selected-option line. `visual_styles` is `[{ "group", "group_zh", "group_en", "items": [...] }]`. For `canvas` you only need to maintain the bilingual labels in catalogs.json; the format set and dimensions are authoritative in `config.py CANVAS_FORMATS`.
 
 ## Round-trip data contract
 
@@ -53,11 +53,11 @@ The page runs as a **two-tier wizard in one browser session**. `recommendations.
 
 | `tier` | Page renders | Button | On submit |
 |---|---|---|---|
-| `1` | anchors — canvas, audience + `content_divergence` + `delivery_purpose` *(PPT only — omitted on non-PPT canvases, not written to the result)* (all in the §c key-info area), mode + visual_style | **Next** | writes `result.json` `{ stage: "tier1", status: "tier1-confirmed", <anchors> }`; the page does **not** close — it shows a "deriving…" state and polls `GET /api/recommendations` |
+| `1` | anchors — canvas, **brand** *(optional — `"none"` = free design)*, audience + `content_divergence` + `delivery_purpose` *(PPT only — omitted on non-PPT canvases, not written to the result)* (all in the §c key-info area), mode + visual_style | **Next** | writes `result.json` `{ stage: "tier1", status: "tier1-confirmed", <anchors> }`; the page does **not** close — it shows a "deriving…" state and polls `GET /api/recommendations` |
 | `2` | realization — page count, color, typography, icons, formula, image usage + strategy, generation mode, transition effect, refine spec | **Confirm** | writes `result.json` `{ stage: "final", status: "confirmed", <all fields> }`, then shuts the page down |
 | *(absent)* | legacy single-pass — every section on one page | **Confirm** | single final write (`status: "confirmed"`) — backward-compatible |
 
-The AI launches Tier 1 (`--daemon --wait`), reads the tier-1 result, **re-derives** the realization candidates from the user's actual anchors, overwrites `recommendations.json` with `"tier": 2` (realization fields only — it need not echo the anchors), and re-attaches with `--wait-only`. The page preserves the user's Tier 1 selections across the transition (single JS session). `GET /api/recommendations` is served `no-store` so the poll sees the tier-2 overwrite, and when `tier == 2` the server **folds the confirmed anchors from `result.json` back into the payload** (`recommend.canvas` / `mode` / `visual_style` / `delivery_purpose`, plus `audience` / `content_divergence` values) — so a **page refresh / reopen on Tier 2 re-initializes the anchors from the user's choices** instead of catalog defaults, even though those sections are not rendered on the Tier-2 page.
+The AI launches Tier 1 (`--daemon --wait`), reads the tier-1 result, **re-derives** the realization candidates from the user's actual anchors (including the brand's color / typography / icon style when a brand is selected), overwrites `recommendations.json` with `"tier": 2` (realization fields only — it need not echo the anchors), and re-attaches with `--wait-only`. The page preserves the user's Tier 1 selections across the transition (single JS session). `GET /api/recommendations` is served `no-store` so the poll sees the tier-2 overwrite, and when `tier == 2` the server **folds the confirmed anchors from `result.json` back into the payload** (`recommend.canvas` / `brand` / `mode` / `visual_style` / `delivery_purpose`, plus `audience` / `content_divergence` values) — so a **page refresh / reopen on Tier 2 re-initializes the anchors from the user's choices** instead of catalog defaults, even though those sections are not rendered on the Tier-2 page.
 
 ### Input — `recommendations.json` (written by Strategist before launch)
 
@@ -66,6 +66,7 @@ The AI launches Tier 1 (`--daemon --wait`), reads the tier-1 result, **re-derive
   "lang": "zh",
   "recommend": {
     "canvas": "ppt169",
+    "brand": "none",
     "mode": "pyramid",
     "visual_style": "swiss-minimal",
     "icons": "tabler-outline",
@@ -148,6 +149,7 @@ The AI launches Tier 1 (`--daemon --wait`), reads the tier-1 result, **re-derive
 ```json
 {
   "canvas": "ppt169",
+  "brand": "apsara_yunqi_26_light",
   "page_count": "12-15",
   "audience": "...",
   "content_divergence": "freely restructure and expand within the source",

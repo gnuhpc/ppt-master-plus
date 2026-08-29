@@ -1,6 +1,6 @@
 # PPT Master Plus Toolset
 
-This directory contains user-facing scripts for conversion, project setup, PPTX intake, SVG processing, export, recorded narration, and image generation.
+This directory contains user-facing scripts for conversion, project setup, PPTX intake, SVG processing, native round-trip editing, export, recorded narration, and image generation. Every public entrypoint uses the same integrated PPT Master 5.1 engine.
 
 ## Directory Layout
 
@@ -35,11 +35,19 @@ python3 scripts/svg_to_pptx.py <project_path>
 | Area | Primary scripts | Documentation |
 |------|-----------------|---------------|
 | Conversion | `source_to_md/pdf_to_md.py`, `source_to_md/doc_to_md.py`, `source_to_md/excel_to_md.py`, `source_to_md/ppt_to_md.py`, `source_to_md/web_to_md.py`, `pptx_intake.py` | [docs/conversion.md](./docs/conversion.md) |
-| Project management | `project_manager.py`, `batch_validate.py`, `generate_examples_index.py`, `error_helper.py`, `pptx_template_import.py`, `native_enhance_pptx.py` | [docs/project.md](./docs/project.md) |
+| Project management | `project_manager.py`, `batch_validate.py`, `generate_examples_index.py`, `error_helper.py`, `pptx_template_import.py` | [docs/project.md](./docs/project.md) |
+| Native round-trip | `pptx_to_svg.py`, `svg_authoring_view.py`, `native_preview.py`, `svg_to_pptx.py --roundtrip` | [../workflows/edit-native-pptx.md](../workflows/edit-native-pptx.md) |
 | SVG pipeline | `finalize_svg.py`, `svg_to_pptx.py`, `total_md_split.py`, `svg_quality_checker.py`, `extract_svg_assets.py`, `animation_config.py`, `notes_to_audio.py` | [docs/svg-pipeline.md](./docs/svg-pipeline.md) |
 | Spec maintenance | `update_spec.py` | [docs/update_spec.md](./docs/update_spec.md) |
 | Image tools | `image_gen.py`, `latex_render.py`, `analyze_images.py`, `gemini_watermark_remover.py` | [docs/image.md](./docs/image.md) |
 | Troubleshooting | validation, preview, export, dependency issues | [docs/troubleshooting.md](./docs/troubleshooting.md) |
+
+The optional unified converter is `source_to_md.py`. Advanced native-object,
+structured-layout, round-trip, postflight, preset-shape, boolean-shape, sound,
+and video utilities are indexed in
+[`ppt-master-capability-overlay.md`](../references/ppt-master-capability-overlay.md).
+They do not replace Confirm UI or Live Preview, and `--quick-generate` is not a
+supported Plus mode.
 
 ## High-Frequency Commands
 
@@ -61,21 +69,20 @@ python3 scripts/project_manager.py import-sources <project_path> <source_files..
 python3 scripts/project_manager.py validate <project_path>
 ```
 
-Template source import:
+PPTX design-template import:
 
 ```bash
-python3 scripts/pptx_template_import.py <template.pptx>
-python3 scripts/pptx_template_import.py <template.pptx> --manifest-only
-python3 scripts/pptx_template_import.py <template.pptx> --inheritance-mode both
+python3 scripts/project_manager.py import-template <project_path> <template.pptx>
+python3 scripts/pptx_intake.py <template.pptx> -o <analysis_dir> --intent template
 ```
 
-Native existing-PPTX enhancement (direct PPTX, no SVG conversion):
+Native round-trip edit or template fill:
 
 ```bash
-python3 scripts/native_enhance_pptx.py init <source.pptx> --name <project_slug>
-python3 scripts/native_enhance_pptx.py plan <project_path>
-python3 scripts/native_enhance_pptx.py validate <project_path>
-python3 scripts/native_enhance_pptx.py apply <project_path>
+python3 scripts/pptx_to_svg.py <source.pptx> -o <project_path> --inheritance-mode both --roundtrip
+python3 scripts/native_preview.py prepare <project_path>
+python3 scripts/svg_quality_checker.py <project_path> --roundtrip
+python3 scripts/svg_to_pptx.py <project_path> --roundtrip
 ```
 
 Post-processing and export:

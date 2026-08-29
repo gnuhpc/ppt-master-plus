@@ -1,15 +1,21 @@
 {
-  "ffa_shenzhen": {
-    "summary": "Flink Forward Asia (FFA) Shenzhen Forum tech presentation style.",
-    "canvas_format": "ppt169",
-    "page_count": 5,
-    "primary_color": "#9966F7"
-  },
   "中国电信": {
     "summary": "China Telecom related briefings, 政企数字化方案, 转型规划, 内部汇报.",
     "canvas_format": "ppt169",
     "page_count": 5,
     "primary_color": "#C00000"
+  },
+  "中汽研": {
+    "summary": "中汽研认证展示、评测汇报与技术交流，用于建立可信理解并推进评审或合作；采用专业的深蓝工程视觉。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "primary_color": "#004098"
+  },
+  "ffa_shenzhen": {
+    "summary": "Flink Forward Asia (FFA) Shenzhen Forum tech presentation style.",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "primary_color": "#9966F7"
   },
   "中国电建_常规": {
     "summary": "Engineering project reports, technical proposal presentations, business negotiations, corporate promotion, annual summaries.",

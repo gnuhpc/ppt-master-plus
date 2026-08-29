@@ -1,17 +1,13 @@
 #!/usr/bin/env python3
-"""PPT Master - SVG to PPTX Tool (thin wrapper).
+"""PPT Master Plus unified SVG-to-PPTX entrypoint."""
 
-Delegates to the svg_to_pptx package. Kept for CLI backward compatibility:
-    python3 scripts/svg_to_pptx.py <project_path> -s final
-"""
-
+import runpy
 import sys
 from pathlib import Path
 
-# Ensure the scripts directory is on sys.path so the package can be found
-sys.path.insert(0, str(Path(__file__).resolve().parent))
+if "--quick-generate" in sys.argv[1:]:
+    raise SystemExit("PPT Master Plus does not expose Quick Generate.")
 
-from svg_to_pptx import main
-
-if __name__ == '__main__':
-    main()
+_CORE = Path(__file__).resolve().parents[1] / "vendor" / "ppt-master" / "scripts"
+sys.path.insert(0, str(_CORE))
+runpy.run_path(str(_CORE / "svg_to_pptx.py"), run_name="__main__")

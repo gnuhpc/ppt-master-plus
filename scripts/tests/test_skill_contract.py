@@ -49,7 +49,7 @@ class PptMasterPlusContractTests(unittest.TestCase):
     def test_gated_per_slide_approval_uses_live_preview_not_png_model_review(self):
         gated = (SKILL / "workflows/gated-production.md").read_text(encoding="utf-8")
         skill_text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
-        visual_review = (SKILL / "workflows/visual-review.md").read_text(encoding="utf-8")
+        visual_review = (SKILL / "workflows/stages/visual-review.md").read_text(encoding="utf-8")
 
         self.assertIn("per-slide style confirmation uses Live Preview directly", gated)
         self.assertIn("Do not render a PNG/screenshot", gated)
@@ -162,7 +162,7 @@ class PptMasterPlusContractTests(unittest.TestCase):
     def test_destructive_upstream_updater_is_removed(self):
         self.assertFalse((SKILL / "scripts/update_repo.py").exists())
         provenance = (SKILL / "references/upstream.md").read_text(encoding="utf-8")
-        self.assertIn("12f74bf11086f6b751bd9689f6642aa7c79d6f3c", provenance)
+        self.assertIn("d6bcaf96b7946667f4a8871b0688b903181db527", provenance)
         self.assertRegex(provenance, r"(?i)manual")
 
     def test_agent_metadata_uses_new_skill_name(self):
@@ -171,7 +171,7 @@ class PptMasterPlusContractTests(unittest.TestCase):
         self.assertIn("$ppt-master-plus", text)
 
     def test_beautify_preserve_master_contract_is_declared(self):
-        workflow = (SKILL / "workflows" / "beautify-pptx.md").read_text(encoding="utf-8")
+        workflow = (SKILL / "workflows" / "profiles" / "faithful-beautify.md").read_text(encoding="utf-8")
         confirm_docs = (SKILL / "scripts" / "docs" / "confirm_ui.md").read_text(encoding="utf-8")
         app_js = (SKILL / "scripts" / "confirm_ui" / "static" / "app.js").read_text(encoding="utf-8")
         cli = (SKILL / "scripts" / "svg_to_pptx" / "pptx_cli.py").read_text(encoding="utf-8")
@@ -183,17 +183,23 @@ class PptMasterPlusContractTests(unittest.TestCase):
         self.assertIn("--base-pptx", cli)
         self.assertIn("source slide N", builder)
 
-    def test_generic_pptx_beautify_defaults_to_main_pipeline(self):
+    def test_three_public_routes_are_declared(self):
         skill_text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
+        routing = (SKILL / "workflows" / "routing.md").read_text(encoding="utf-8")
 
-        self.assertIn("Generic beautify / optimize / make professional", skill_text)
-        self.assertIn("default to the main pipeline", skill_text)
-        self.assertIn("The default assumption is: improve the deck", skill_text)
-        self.assertIn("`faithful-beautify`", skill_text)
-        self.assertNotIn("Preserve → `beautify`; restructure → main pipeline", skill_text)
+        for route in ("Generate PPTX", "Edit Native PPTX", "Create PPTX from Template"):
+            self.assertIn(route, skill_text)
+            self.assertIn(route, routing)
+        self.assertIn("create_pptx_from_template", routing)
+        self.assertIn("template_fill", routing)
+        self.assertIn("native_adaptive", routing)
+        self.assertIn(
+            "这份 PPTX 是要保留现有内容继续修改，还是仅作为模板，用新内容生成一份新的 PPTX？",
+            routing,
+        )
 
     def test_faithful_beautify_requires_explicit_preservation(self):
-        workflow = (SKILL / "workflows" / "beautify-pptx.md").read_text(encoding="utf-8")
+        workflow = (SKILL / "workflows" / "profiles" / "faithful-beautify.md").read_text(encoding="utf-8")
 
         self.assertIn("Faithful Beautify PPTX", workflow)
         self.assertIn("explicitly asks to preserve", workflow)
@@ -299,7 +305,6 @@ class PptMasterPlusContractTests(unittest.TestCase):
         )
         allowed_legacy_files = {
             SKILL / "references/upstream.md",
-            SKILL / "workflows" / "template-fill-pptx.md",
         }
         offenders = []
         for path in SKILL.rglob("*"):
@@ -329,5 +334,3 @@ class PptMasterPlusContractTests(unittest.TestCase):
 
 if __name__ == "__main__":
     unittest.main()
-
-

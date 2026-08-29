@@ -66,7 +66,7 @@ Templates use `{{PLACEHOLDER}}` to mark replaceable content. New layouts should 
 
 ## Creating a new layout
 
-1. Run [`workflows/create-template.md`](../../workflows/create-template.md) (default produces a deck; explicit "structure only / no identity" option produces a layout)
+1. Run [`workflows/internal/template-authoring/create-template.md`](../../workflows/internal/template-authoring/create-template.md) (default produces a deck; explicit "structure only / no identity" option produces a layout)
 2. Resulting directory lands under `templates/layouts/<id>/`
 3. Validate: `python3 skills/ppt-master-plus/scripts/svg_quality_checker.py templates/layouts/<id> --template-mode --format ppt169`
 4. Register: `python3 skills/ppt-master-plus/scripts/register_template.py <id> --kind layout`

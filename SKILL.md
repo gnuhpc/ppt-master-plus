@@ -1,20 +1,42 @@
 ---
 name: ppt-master-plus
 description: >
-  Create, restructure, beautify, and enhance editable PowerPoint decks
-  from PDF, DOCX, XLSX, PPTX, URLs, Markdown, or pasted content through a
-  multi-role SVG-to-PPTX workflow. Supports mandatory startup selection between
-  per-slide confirmed refinement and fully automatic one-pass production, live preview,
-  speaker-note validation, native PPTX enhancement, templates, animations, and
-  optional technical or hand-drawn diagram companions. Use when the user asks
-  to create, revise, beautify, or narrate a PPT/PPTX/presentation, says
-  "生成PPT", "做PPT", or mentions "ppt-master-plus".
+  Generate or redesign editable presentations, preserve and edit an existing
+  native PPTX, or create a new PPTX from a user-supplied PPTX design template.
+  Supports the Plus Step 1–7 confirmation workflow, native round-trip editing,
+  template-aware page planning, Live Preview, notes, narration, motion, and
+  quality validation. Use when the user asks to create, edit, beautify, fill,
+  or narrate a PPT/PPTX/presentation, says "生成PPT" or "做PPT", or mentions
+  "ppt-master-plus".
 ---
 
 # PPT Master Plus
 
 > Produce editable presentations with a choice of per-slide confirmed refinement
 > or fully automatic one-pass execution, backed by the PPT Master SVG/PPTX toolchain.
+
+## Three Public Routes
+
+Read [`workflows/routing.md`](workflows/routing.md) first and select exactly one:
+
+1. [`Generate PPTX`](workflows/generate-pptx.md) — generate or redesign visible pages.
+2. [`Edit Native PPTX`](workflows/edit-native-pptx.md) — preserve the supplied deck and modify it.
+3. [`Create PPTX from Template`](workflows/create-pptx-from-template.md) — import an explicitly user-provided `.pptx` file as the design template for new content.
+
+For Create PPTX from Template, chart, table, infographic, and diagram styling
+always comes from the Skill's built-in visualization catalogs. The template
+contributes slot geometry and locked deck tokens, never visualization-example
+styling or sample data.
+
+This route starts only from a `.pptx` file path explicitly supplied by the user.
+Import that file read-only with `project_manager.py import-template`; do not
+resolve a bare template name, choose an internal Brand/Style/Layout/Deck asset,
+or register the imported PPTX as a reusable Skill template.
+
+The Step 1–7 procedure below is the frozen Generate implementation. The template
+route adapts the same governance checkpoints but executes through native
+round-trip; the native-edit route owns its own plan confirmation. SVG hand-writing
+rules apply only to Generate.
 
 **Production modes**: **逐页确定精修** (`gated`) means every slide stops in Live Preview for user confirmation before the next slide; **全自动一次性生成** (`continuous`) means the deck proceeds continuously after the required design confirmation.
 
@@ -52,6 +74,14 @@ Optional diagram companions are soft dependencies. Read
 [`references/diagram-routing.md`](references/diagram-routing.md) only when a
 slide may benefit from a formal technical diagram or an Excalidraw-style sketch.
 
+PPT Master 5.1 capabilities are provided by the unified engine. Read
+[`references/ppt-master-capability-overlay.md`](references/ppt-master-capability-overlay.md)
+only when the request or project needs native charts/tables/formulas/hyperlinks,
+structured Master/Layout output, layered round-trip import, advanced effects,
+or advanced motion/video. These capabilities never replace this file's Step 1–7
+sequence, Eight Confirmations, `gated` / `continuous` behavior, Confirm UI, or
+Live Preview. `--quick-generate` is unsupported in PPT Master Plus.
+
 ## Main Pipeline Scripts
 
 | Script | Purpose |
@@ -60,7 +90,7 @@ slide may benefit from a formal technical diagram or an Excalidraw-style sketch.
 | `${SKILL_DIR}/scripts/source_to_md/doc_to_md.py` | Documents to Markdown — native Python for DOCX/HTML/EPUB/IPYNB, pandoc fallback for legacy formats (.doc/.odt/.rtf/.tex/.rst/.org/.typ) |
 | `${SKILL_DIR}/scripts/source_to_md/excel_to_md.py` | Excel workbooks to Markdown — supports .xlsx/.xlsm; legacy .xls should be resaved as .xlsx |
 | `${SKILL_DIR}/scripts/source_to_md/ppt_to_md.py` | PowerPoint to Markdown |
-| `${SKILL_DIR}/scripts/pptx_intake.py` | Standard PPTX intake enrichment — canvas / identity / slide geometry / tables / native chart data |
+| `${SKILL_DIR}/scripts/pptx_intake.py` | PPTX intake; `--intent template` adds template manifest, tokens, archetypes, assets, and previews |
 | `${SKILL_DIR}/scripts/source_to_md/web_to_md.py` | Web page to Markdown (supports WeChat via `curl_cffi`) |
 | `${SKILL_DIR}/scripts/project_manager.py` | Project init / validate / manage |
 | `${SKILL_DIR}/scripts/icon_sync.py` | Copy chosen library icons into `<project>/icons/` at selection time; missing names reported + non-zero (re-pick gate) |
@@ -71,9 +101,10 @@ slide may benefit from a formal technical diagram or an Excalidraw-style sketch.
 | `${SKILL_DIR}/scripts/check_speaker_notes.py` | Speaker-note coverage and delivery-quality check |
 | `${SKILL_DIR}/scripts/total_md_split.py` | Speaker notes splitting |
 | `${SKILL_DIR}/scripts/finalize_svg.py` | SVG post-processing (unified entry) |
+| `${SKILL_DIR}/scripts/pptx_to_svg.py` | Native source-preserving round-trip import |
+| `${SKILL_DIR}/scripts/svg_authoring_view.py` | Refresh/adopt objects in the native authoring view |
+| `${SKILL_DIR}/scripts/native_preview.py` | Connect native authoring pages to the frozen Live Preview UI |
 | `${SKILL_DIR}/scripts/svg_to_pptx.py` | Export to PPTX |
-| `${SKILL_DIR}/scripts/native_enhance_pptx.py` | Existing PPTX enhancement project init / validation / direct OOXML patch export |
-| `${SKILL_DIR}/scripts/native_narration_pptx.py` | Backward-compatible entrypoint for existing PPTX notes / narration enhancement |
 | `${SKILL_DIR}/scripts/update_spec.py` | Propagate a `spec_lock.md` color / font_family change across all generated SVGs |
 | `${SKILL_DIR}/scripts/export_video.py` | Export slide SVGs with Speaker Notes TTS audio narration into an MP4 video presentation |
 | `${SKILL_DIR}/scripts/critic_audit.py` | Run independent adversarial Critic audit (WCAG contrast, Claim Ledger, Footer Band Protection, Placeholders) |
@@ -89,43 +120,24 @@ For complete tool documentation, see `${SKILL_DIR}/scripts/README.md`.
 | Layout templates | `${SKILL_DIR}/templates/layouts/layouts_index.json` | Query available page layout templates |
 | Brand presets | `${SKILL_DIR}/templates/brands/brands_index.json` | Query available brand identity presets (color / typography / logo / voice, includes `swiss_grid`) |
 | Visualization templates | `${SKILL_DIR}/templates/charts/charts_index.json` | Query available visualization SVG templates (charts, infographics, diagrams, frameworks, includes `diagram_shell` and `code_diff`) |
+| Communication styles | `${SKILL_DIR}/templates/styles/styles_index.json` | Query reusable method/design-default workspaces only after an explicit Style path is supplied |
+| Native table templates | `${SKILL_DIR}/templates/tables/tables_index.json` | Query stable row/column table structures when the page requires one |
+| Motion sounds | `${SKILL_DIR}/templates/sounds/sounds_index.json` | Query licensed sounds only inside an explicitly requested animation/video workflow |
 | Icon library | `${SKILL_DIR}/templates/icons/` | See `${SKILL_DIR}/templates/icons/README.md`; search icons on demand with `ls templates/icons/<library>/ \| grep <keyword>` |
 
-## Standalone Workflows
+## Profiles, Stages, Modules, and Internal Tools
 
-| Workflow | Path | Purpose |
-|----------|------|---------|
-| `gated-production` | `workflows/gated-production.md` | Per-slide confirmed refinement gates — activated automatically when `generation_mode: "gated"` is confirmed in Confirm UI; every generated page stops for user review before the next page |
-| `reconstruct-image-pptx` | `workflows/reconstruct-image-pptx.md` | Reconstruct image slides, PDF screenshots, or AI poster slides into 100% native editable PPTX textframes & shapes |
-| `topic-research` | `workflows/topic-research.md` | Pre-pipeline — gather web sources when the user supplies only a topic with no source files |
-| `faithful-beautify` | `workflows/beautify-pptx.md` | Explicit source-faithful re-layout for existing PPTX decks — preserve page count/order/wording and optionally source master/layouts. Not the default for generic "beautify". |
-| `create-template` | `workflows/create-template.md` | Standalone layout template creation workflow |
-| `create-brand` | `workflows/create-brand.md` | Standalone brand-only template creation (identity preset; no SVG page roster) |
-| `resume-execute` | `workflows/resume-execute.md` | Phase B entry — resume execution in a fresh chat after Phase A (Step 1–5) completed in another session (split mode) |
-| `verify-charts` | `workflows/verify-charts.md` | Chart coordinate calibration — run after SVG generation if the deck contains data charts |
-| `customize-animations` | `workflows/customize-animations.md` | Object-level PPTX animation customization — run only when the user explicitly asks to tune animation order/effects/timing |
-| `native-enhance-pptx` | `workflows/native-enhance-pptx.md` | Existing PPTX native enhancement — optimize a finished deck by appending notes / audio / auto-advance / page transitions without changing existing content or layout |
-| `native-narration-pptx` | `workflows/native-narration-pptx.md` | Compatibility reference for the notes / narration subset of `native-enhance-pptx` |
-| `live-preview` | `workflows/live-preview.md` | Browser-based live preview — auto-started during generation and re-enterable any time the user mentions "live preview", "preview", "看效果", or wants to click/select a slide element |
-| `visual-review` | `workflows/visual-review.md` | Per-page rubric-based visual self-check — run only when the user explicitly asks for a visual re-pass on the generated SVGs (between Executor and post-processing). Opt-in only; never invoked by the main pipeline. |
-| `humanize-ppt-bridge` | `workflows/humanize-ppt-bridge.md` | Handoff bridge for Briefs, AST outlines, and Speaker Intents produced by humanize-ppt (LearnPrompt/humanize-ppt) |
+| Class | Entries |
+|---|---|
+| Generate Profiles | `profiles/faithful-beautify.md`, `profiles/image-to-pptx.md` |
+| Source Adapter | `adapters/humanize-ppt-bridge.md` |
+| Stages | topic research, refine spec, resume execute, Live Preview, visual review, chart verification, animations, audio |
+| Edit Native modules | `page_plan`, `content_edit`, `notes`, `narration`, `transitions`, `animations`, `visible_content_locked` |
+| Internal maintenance | `internal/template-authoring/` for Brand, Style, Layout, and Deck assets |
 
-
-### PPTX Route Boundary
-
-When the user provides an existing `.pptx`, route by the role of the source deck:
-
-| User intent | Route | Contract |
-|---|---|---|
-| Generic beautify / optimize / make professional, no explicit preservation constraints | Main pipeline | Treat PPTX as source material via `ppt_to_md` + `pptx_intake`; Strategist may re-architect page count, order, titles, structure, rhythm, and visual system |
-| Explicitly preserve page count/order/wording and only improve layout/spacing | `faithful-beautify` | Strict 1:1 source slide mapping; text/data values frozen; source identity may be inherited after confirmation |
-| Keep original master/layout/chrome or paste elements back into the source deck | `faithful-beautify` with `preserve_master` | Output slide N preserves source slide N layout/master mapping |
-| Harvest the deck as a reusable future template | `create-template` | Build a template package, not a one-off generated deck |
-| Keep the finished deck visually stable and append native optimizations | `native-enhance-pptx` | Patch enhancement metadata/media directly in OOXML; no SVG generation |
-
-Ambiguous requests such as "make this PPT more professional", "美化这份 PPT", or "optimize this deck" default to the main pipeline. Ask a clarification question only when the user mentions preservation but not enough to know which invariant matters. The default assumption is: improve the deck, not preserve the source author's slide breakdown.
-
-**No user-provided template-fill route**: do not accept an arbitrary user-supplied PPTX as a native template to fill with new content. If the user asks to "use this template", "fill this deck", or "replace this template with new material", clarify that `ppt-master-plus` no longer supports user-provided template filling. Offer either (a) treat the PPTX as source material and restructure it through the main pipeline, (b) run faithful beautify when they need to preserve existing content/page mapping, or (c) create/register a reusable internal template package through `create-template`.
+These are not additional public workflows. `gated-production.md` is a Generate
+execution mode. Old native-enhance, native-narration, and template-fill entrypoints
+do not exist in this breaking version.
 
 ---
 
@@ -135,7 +147,7 @@ Ambiguous requests such as "make this PPT more professional", "美化这份 PPT"
 
 🚧 **GATE**: User has provided source material (PDF / DOCX / EPUB / URL / Markdown file / text description / conversation content — any form is acceptable).
 
-> **No source content?** When the user supplies only a topic name or requirements without any file or substantive description, run the [`topic-research`](workflows/topic-research.md) workflow first, then return here with its products as input.
+> **No source content?** When the user supplies only a topic name or requirements without any file or substantive description, run the [`topic-research`](workflows/stages/topic-research.md) workflow first, then return here with its products as input.
 
 When the user provides non-Markdown content, convert immediately:
 
@@ -210,16 +222,18 @@ Multi-deck: several PPTX files may be imported into one main-pipeline project �
 
 **Default — free design.** Proceed directly to Step 4. Do NOT query any `*_index.json` unless triggered. Do NOT ask the user. Do NOT proactively suggest, hint at, or fuzzy-match any template based on content, slug-like words, or vague style descriptions.
 
-**Template flow triggers ONLY on explicit internal template directory paths** supplied by the user in their initial message. The path must resolve under `${SKILL_DIR}/templates/{brands,layouts,decks}/`; arbitrary user-provided or external template directories are not accepted. The trigger rule is mechanical, not interpretive:
+**Template flow triggers ONLY on explicit internal template directory paths** supplied by the user in their initial message. The path must resolve under `${SKILL_DIR}/templates/{brands,styles,layouts,decks}/`; arbitrary user-provided or external template directories are not accepted. Legacy Plus packages expose `design_spec.md` at the selected root; current additive workspaces expose `templates/design_spec.md`. The trigger rule is mechanical, not interpretive:
 
 | User input contains | Step 3 action |
 |---|---|
-| One or more explicit internal template directory paths under `${SKILL_DIR}/templates/{brands,layouts,decks}/` (each resolves to a directory containing `design_spec.md` with `kind: brand` / `kind: layout` / `kind: deck` in its YAML frontmatter) | Read each spec's `kind`, dispatch per the kind matrix below, fuse if multiple |
+| One or more explicit internal template directory paths under `${SKILL_DIR}/templates/{brands,styles,layouts,decks}/` (each resolves to either `design_spec.md` or `templates/design_spec.md` with `kind: brand` / `kind: style` / `kind: layout` / `kind: deck` in its YAML frontmatter) | Read each spec's `kind`, dispatch per the kind matrix below, fuse if multiple |
 | Anything else — bare template names ("用 academic_defense"), style descriptions ("麦肯锡风格"), brand mentions ("招商银行风格"), vague intent ("想用个模板"), or silence | Skip Step 3, free design |
 
 There is no slug matching, no name lookup, no fuzzy resolution. A name without a path does not trigger — the user must give an internal bundled-template path the AI can `cd` into.
 
-> External template paths, uploaded template decks, and arbitrary user-provided template folders do NOT trigger Step 3. Explain that user-provided template filling is disabled; use built-in templates only, or run `create-template` first to intentionally register a reusable internal template package.
+> An external/uploaded PPTX used as a design skeleton does not enter Generate
+> Step 3; route it to [`Create PPTX from Template`](workflows/create-pptx-from-template.md).
+> Other arbitrary external template directories are not accepted by this Generate step.
 
 > Style descriptions ("麦肯锡风格" / "Keynote 风" / "极简风" / etc.) never trigger Step 3. They flow into Strategist's Eight Confirmations as a style brief (color / typography / tone in confirmations e–g).
 
@@ -227,15 +241,17 @@ There is no slug matching, no name lookup, no fuzzy resolution. A name without a
 
 > "What templates exist?" is out-of-band Q&A — answer by listing entries from `brands_index.json` / `layouts_index.json` / `decks_index.json` together with their paths. Listing alone does not advance the pipeline; the user must send a path back to trigger Step 3.
 
-> To create a new layout or deck, read [`workflows/create-template.md`](workflows/create-template.md). To create a new brand, read [`workflows/create-brand.md`](workflows/create-brand.md).
+> Brand, Style, Layout, and Deck asset authoring is an internal maintenance task
+> under `workflows/internal/template-authoring/`, not a user-facing route.
 
-#### Three template kinds
+#### Four template kinds
 
-The architecture has three independent reference bundles. Full schema in [`docs/zh/templates-architecture.md`](references/templates-architecture.md). Summary:
+The architecture has four independent reference bundles. Full schema in [`docs/zh/templates-architecture.md`](references/templates-architecture.md). Summary:
 
 | Kind | Physical dir | Contains | Frontmatter |
 |---|---|---|---|
 | **brand** | `templates/brands/<id>/` | identity-only segment: color / typography / logo / voice / icon style | `kind: brand` |
+| **style** | `templates/styles/<id>/` | reusable communication method and design defaults; no identity or SVG roster | `kind: style` |
 | **layout** | `templates/layouts/<id>/` | structure-only segment: canvas / page structure / page types / SVG roster | `kind: layout` |
 | **deck** | `templates/decks/<id>/` | full replica: identity + structure + middle (template overview) segments | `kind: deck` |
 
@@ -252,6 +268,7 @@ The architecture has three independent reference bundles. Full schema in [`docs/
 | User path's `kind` | Step 3 action |
 |---|---|
 | `kind: brand` | `design_spec.md` + non-image assets → `<project>/templates/`; logo / illustration / icon **bitmaps** → `<project>/images/`. Strategist locks identity segment as truth; structure stays free. |
+| `kind: style` | Install the Style spec as a method/default input under `<project>/templates/`; it may seed argument flow, evidence discipline, density, and visual defaults, but never locks identity, page count, page order, geometry, or SVG prototypes. |
 | `kind: layout` | `design_spec.md` + SVG roster → `<project>/templates/`; any **bitmap** assets → `<project>/images/`. Strategist locks structure; identity decided in Eight Confirmations e–g. |
 | `kind: deck` | `design_spec.md` + template SVGs → `<project>/templates/`; logos / backgrounds / other **bitmaps** → `<project>/images/`. Strategist locks all segments; Eight Confirmations narrows to deck-content fields (audience / page count / outline / tone tweaks). |
 
@@ -355,22 +372,22 @@ Read references/strategist.md
 
 | Tier | Confirms | Driven by |
 |---|---|---|
-| **1 — anchors** | canvas · audience + core message + `content_divergence` + `delivery_purpose` *(PPT only — omitted on non-PPT canvases)* (all §c key info) · `mode` + `visual_style` | the source + user intent |
+| **1 — anchors** | canvas · **brand** *(optional — `"none"` = free design; a brand id drives color / typography / icon style in Tier 2)* · audience + core message + `content_divergence` + `delivery_purpose` *(PPT only — omitted on non-PPT canvases)* (all §c key info) · `mode` + `visual_style` | the source + user intent |
 | **2 — realization** (re-derived from Tier 1) | page count · color · typography (font + size) · icons · formula policy · image usage + strategy · generation mode · transition effect · refine-spec toggle | the confirmed Tier 1 |
 
-> **Why two tiers.** Every realization field is anchored by the same few choices (`visual_style` anchors color / icon / typography / image; `delivery_purpose` sets the body size, page density, **and** the page-count recommendation). Confirming anchors first, then re-deriving, means Tier 2's candidates fit the user's *real* anchors instead of your originals — the coherence reconciliation below is done by construction on this path. Page count is a **derived** field (content volume × `delivery_purpose`), which is why it lives in Tier 2, not up front. For generic PPTX beautification, `content_divergence` is the primary control for how close the rebuilt deck stays to the source. Blank means balanced redesign.
+> **Why two tiers.** Every realization field is anchored by the same few choices (`visual_style` anchors color / icon / typography / image; a confirmed **brand** preset anchors color / typography / icon style from its `design_spec.md`; `delivery_purpose` sets the body size, page density, **and** the page-count recommendation). Confirming anchors first, then re-deriving, means Tier 2's candidates fit the user's *real* anchors instead of your originals — the coherence reconciliation below is done by construction on this path. Page count is a **derived** field (content volume × `delivery_purpose`), which is why it lives in Tier 2, not up front. For generic PPTX beautification, `content_divergence` is the primary control for how close the rebuilt deck stays to the source. Blank means balanced redesign.
 
 Steps:
 
 > ⛔ **Steps 2 → 3 → 4 are ONE uninterrupted run — do NOT yield to the user mid-flow.** When the tier-1 `--wait` (step 2) returns, the AI **immediately and autonomously** continues to step 3 (re-derive + write Tier 2) and step 4 (`--wait-only`) in the **same turn**: do **not** summarize, ask a question, report progress, or end the turn in between. The browser is sitting on a "deriving…" spinner polling for the Tier 2 you must write next — stopping here strands the page and the user must prod you in chat to finish (a bug, not the intended flow). **The tier-1 confirmation is an intermediate machine handoff, not a stopping point.** The single ⛔ BLOCKING wait is the **final** confirmation at the end of step 4. (Chat-fallback path — only when the page never opened — is the exception: there you do present each tier in chat and wait for a reply.)
 
-1. **Write Tier 1** to `<project_path>/confirm_ui/recommendations.json` with `"tier": 1` and only the anchor fields. Enumerable anchors (`canvas` / `mode` / `visual_style` / `delivery_purpose`) name a recommended canonical `id` in a `recommend` block (the page lists common options from `confirm_ui/static/catalogs.json`); `visual_style` also carries the ≥3-style `visual_style_spectrum` (safe / shifted / bold — same hard rule as h.5). `audience` and `content_divergence` are plain `{ "value": "<free text>" }`. `content_divergence` is the **free-text** field shown under audience in §c — how closely to follow the source vs how freely to reshape it (blank = balanced; facts stay sourced at every level); it is consumed by Strategist when authoring `§IX`, recorded in `design_spec.md §I`, carries no page-count coupling, and is **not** written to `spec_lock.md`. Set `lang` to the page language; visible text matches `lang`, or provide bilingual `name_zh` / `name_en` + `note_zh` / `note_en`.
+1. **Write Tier 1** to `<project_path>/confirm_ui/recommendations.json` with `"tier": 1` and only the anchor fields. Enumerable anchors (`canvas` / `brand` / `mode` / `visual_style` / `delivery_purpose`) name a recommended canonical `id` in a `recommend` block (the page lists common options from `confirm_ui/static/catalogs.json`; brands are synced live from `templates/brands/brands_index.json` — `brand` recommends `"none"` for free design, or a brand id like `"apsara_yunqi_26_light"`); `visual_style` also carries the ≥3-style `visual_style_spectrum` (safe / shifted / bold — same hard rule as h.5). `audience` and `content_divergence` are plain `{ "value": "<free text>" }`. `content_divergence` is the **free-text** field shown under audience in §c — how closely to follow the source vs how freely to reshape it (blank = balanced; facts stay sourced at every level); it is consumed by Strategist when authoring `§IX`, recorded in `design_spec.md §I`, carries no page-count coupling, and is **not** written to `spec_lock.md`. Set `lang` to the page language; visible text matches `lang`, or provide bilingual `name_zh` / `name_en` + `note_zh` / `note_en`.
 2. **Launch + wait for Tier 1.** Background launch; the parent returns when the page writes the tier-1 `result.json`. **Long tool timeout — 600000 ms** (the `--wait` ≈590 s budget):
    ```bash
    python3 ${SKILL_DIR}/scripts/confirm_ui/server.py <project_path> --daemon --wait
    ```
    Page opens at `http://localhost:5050` — the **same port as the Step 6 live preview** (they never run at once: this page shuts down at the end of Step 4). If 5050 is held, the launcher **auto-advances** (5051, …) — read the actual URL from the launch log and report it. The page does **not** close after Tier 1: it shows a "deriving…" state and polls for Tier 2. **Launch or wait failure is non-fatal**: if it fails or times out (flask missing, port blocked, no GUI / remote / web host), do **NOT** troubleshoot — **on any non-zero exit, re-check `result.json` once** (a fresh `status: tier1-confirmed`) before dropping to the chat fallback. **On success (exit 0 with a tier-1 result), do not pause or report — go straight to step 3 in the same turn.**
-3. **Re-derive Tier 2 from the confirmed anchors, then write it — immediately, same turn (the page is polling for it).** Read the tier-1 `result.json` (`status: tier1-confirmed`). Using the user's **actual** confirmed anchors (not your originals), author the realization candidates and **overwrite** `recommendations.json` with `"tier": 2`: page count (content volume × `delivery_purpose`); color, typography, and generated-image style as **generative ≥3-candidate** fields (creative recommendations always offer real choice — same rule as h.5; fewer than 3 only on the honest-shortfall exception, with a stated reason; color: core `palette` with background/secondary_bg/primary/accent/secondary_accent/body_text; typography: CJK + Latin for `heading` and `body` with `css` preview stacks + `body_size` as the body baseline in **px** (every canvas) — **one fixed value per confirmed `delivery_purpose`** (`text` 20 / `balanced` 24 / `presentation` 32), not a range; images: `image_strategy.candidates` rendering × palette from h.5); enumerable `icons` / `formula_policy` / `generation_mode` (recommended `id`) / `transition_effect` (recommended `none` unless the user explicitly asked for page transitions); `image_usage` (`ai` / `web` / `provided` / `placeholder` / `none`, or a custom prose plan when several sources mix — never bare `"custom"`; write `image_ai_path` only when the plan includes AI). The still-open page polls, renders Tier 2, and preserves the user's Tier 1 picks. Closed fields (`image_ai_path`, `formula_policy`, `generation_mode`, `transition_effect`, `refine_spec`) stay finite; open fields (`icons`, `image_usage`, typography custom text) show a Custom box.
+3. **Re-derive Tier 2 from the confirmed anchors, then write it — immediately, same turn (the page is polling for it).** Read the tier-1 `result.json` (`status: tier1-confirmed`). Using the user's **actual** confirmed anchors (not your originals), author the realization candidates and **overwrite** `recommendations.json` with `"tier": 2`: page count (content volume × `delivery_purpose`); when a brand is confirmed (not `"none"`), read its `templates/brands/<id>/design_spec.md` and derive color candidates, typography candidates, and icon recommendation from the brand's identity segment (the brand's palette / fonts / icon style are the primary candidates, but the user still sees ≥3 choices — the brand palette is candidate 1, and ≥2 coherent alternatives are derived from the visual_style / content); color, typography, and generated-image style as **generative ≥3-candidate** fields (creative recommendations always offer real choice — same rule as h.5; fewer than 3 only on the honest-shortfall exception, with a stated reason; color: core `palette` with background/secondary_bg/primary/accent/secondary_accent/body_text; typography: CJK + Latin for `heading` and `body` with `css` preview stacks + `body_size` as the body baseline in **px** (every canvas) — **one fixed value per confirmed `delivery_purpose`** (`text` 20 / `balanced` 24 / `presentation` 32), not a range; images: `image_strategy.candidates` rendering × palette from h.5); enumerable `icons` / `formula_policy` / `generation_mode` (recommended `id`) / `transition_effect` (recommended `none` unless the user explicitly asked for page transitions); `image_usage` (`ai` / `web` / `provided` / `placeholder` / `none`, or a custom prose plan when several sources mix — never bare `"custom"`; write `image_ai_path` only when the plan includes AI). The still-open page polls, renders Tier 2, and preserves the user's Tier 1 picks. Closed fields (`image_ai_path`, `formula_policy`, `generation_mode`, `transition_effect`, `refine_spec`) stay finite; open fields (`icons`, `image_usage`, typography custom text) show a Custom box.
 4. **Wait for the final confirmation** — attach to the already-running page, do **not** relaunch (same 600000 ms budget):
    ```bash
    python3 ${SKILL_DIR}/scripts/confirm_ui/server.py <project_path> --wait-only
@@ -401,6 +418,7 @@ When the confirmed `image_usage` is not `ai` (and the plan has no AI part), do *
 | Anchor the user changed | Re-derive (only the downstream fields the user left at your recommendation) |
 |---|---|
 | `visual_style` (§d Layer 2 — anchors e–h) | color neutral tiers (§e), icon library / stroke (§f), typography character (§g), image rendering (§h.5) |
+| `brand` (brand preset `design_spec.md` — anchors e / f / g) | color palette (§e — brand primary / secondary / accent become candidate 1), icon style (§f — brand icon preference), typography character (§g — brand font families and weights) |
 | `mode` (§d Layer 1) | outline structure + register (§IX) |
 | `delivery_purpose` (§g) | body baseline + per-page density / rhythm (§6.1) |
 | `audience` / core message (§c) | tone across e–h, outline emphasis (§IX) |
@@ -416,14 +434,14 @@ The page is a **confirmation surface only** — Strategist still authors every r
 
 | Signal read | Line content |
 |---|---|
-| Heavy (long page count / bulky sources / heavy web-fetch accumulation) | State estimated page count and large source size; recommend switching to [split mode](workflows/resume-execute.md) after Step 5 — if the PPTX will be long, create a new chat/session and input `继续生成 projects/<project_name>` to enter Phase B (SVG generation + export), which avoids contaminating the final production context with planning history; if the deck is not large or the user wants to continue here, proceed to final production in the current chat. No response or "continue" = default continuous mode. |
-| Normal (default) | State scale is moderate, default continuous mode generates in one go; if the deck is short or moderate, continue into final production in this chat. If the user still wants a cleaner production context, they may input `继续生成 projects/<project_name>` after Step 5 in a new chat/session to switch to [split mode](workflows/resume-execute.md). |
+| Heavy (long page count / bulky sources / heavy web-fetch accumulation) | State estimated page count and large source size; recommend switching to [split mode](workflows/stages/resume-execute.md) after Step 5 — if the PPTX will be long, create a new chat/session and input `继续生成 projects/<project_name>` to enter Phase B (SVG generation + export), which avoids contaminating the final production context with planning history; if the deck is not large or the user wants to continue here, proceed to final production in the current chat. No response or "continue" = default continuous mode. |
+| Normal (default) | State scale is moderate, default continuous mode generates in one go; if the deck is short or moderate, continue into final production in this chat. If the user still wants a cleaner production context, they may input `继续生成 projects/<project_name>` after Step 5 in a new chat/session to switch to [split mode](workflows/stages/resume-execute.md). |
 
 This line is required output every run — the user must always see the mode choice exists. Whether to act on it is the user's call. When the Confirm UI is used, this choice also appears as the in-page generation-mode toggle and is captured in `result.json` (`generation_mode`); the chat-summary fallback still prints this line.
 
 **Mandatory — page-transition choice**: Tier 2 MUST include `transition_effect` with default/recommended value `none`. The user should confirm whether they need page transition animation; no response or unchanged default means **no transition animation**. Only when the user explicitly confirms an effect (`fade`, `push`, `wipe`, `split`, `strips`, `cover`, or `random`) should export enable it.
 
-**Mandatory — spec-refinement note** (not a ninth confirmation): after the split-mode line, you MUST append one short opt-in line (rendered in the user's language, prefixed with 💡) telling the user they may **refine the spec first** — Strategist will produce the full design spec, then stop for review/revision of any part of it before any generation, via the [refine-spec](workflows/refine-spec.md) workflow. Default is OFF: no request → the spec is written in one go and the pipeline auto-proceeds as usual. Only when the user explicitly asks in chat (e.g. "refine the spec first") or confirms `refine_spec: true` through Confirm UI does the [refine-spec](workflows/refine-spec.md) workflow take over after the Eight Confirmations. This line, like the split-mode line, is required output every run — the user must see the choice exists; whether to act on it is theirs. When the Confirm UI is used, this choice also appears as the in-page refine-spec toggle and is captured in `result.json` (`refine_spec`); the chat-summary fallback still prints this line.
+**Mandatory — spec-refinement note** (not a ninth confirmation): after the split-mode line, you MUST append one short opt-in line (rendered in the user's language, prefixed with 💡) telling the user they may **refine the spec first** — Strategist will produce the full design spec, then stop for review/revision of any part of it before any generation, via the [refine-spec](workflows/stages/refine-spec.md) workflow. Default is OFF: no request → the spec is written in one go and the pipeline auto-proceeds as usual. Only when the user explicitly asks in chat (e.g. "refine the spec first") or confirms `refine_spec: true` through Confirm UI does the [refine-spec](workflows/stages/refine-spec.md) workflow take over after the Eight Confirmations. This line, like the split-mode line, is required output every run — the user must see the choice exists; whether to act on it is theirs. When the Confirm UI is used, this choice also appears as the in-page refine-spec toggle and is captured in `result.json` (`refine_spec`); the chat-summary fallback still prints this line.
 
 **Formula rendering policy lives inside item 7 (Typography plan)**:
 
@@ -457,6 +475,11 @@ python3 ${SKILL_DIR}/scripts/analyze_images.py <project_path>/images
 **Output**:
 - `<project_path>/design_spec.md` — human-readable design narrative
 - `<project_path>/spec_lock.md` — machine-readable execution contract (skeleton: `templates/spec_lock_reference.md`); Executor re-reads before every page. **Mandatory**: copy `generation_mode` from `result.json` into `spec_lock.md` (default `continuous` when absent) and copy `transition_effect` (default `none` when absent).
+
+When an additive PPT Master capability is active, add only its optional fields
+defined in [`ppt-master-capability-overlay.md`](references/ppt-master-capability-overlay.md).
+Their absence means legacy flat Plus behavior. Do not add fields merely because
+the vendored engine supports them, and never add a Confirm UI field for them.
 
 **✅ Checkpoint — Phase deliverables complete, auto-proceed to next step**:
 ```markdown
@@ -525,7 +548,7 @@ When `generation_mode: "gated"` (逐页精修, from `result.json` or stated in c
   ## ✅ Phase A Complete
   - [x] Spec: `design_spec.md`, `spec_lock.md`
   - [x] Resources: `sources/`, `images/`, `templates/`
-  - [ ] **Next**: if this is a long PPTX, create a new chat/session and input `继续生成 projects/<project_name>` to enter Phase B via the [`resume-execute`](workflows/resume-execute.md) workflow, keeping the final production context clean. If the deck is not large, continue into final production in this chat.
+  - [ ] **Next**: if this is a long PPTX, create a new chat/session and input `继续生成 projects/<project_name>` to enter Phase B via the [`resume-execute`](workflows/stages/resume-execute.md) workflow, keeping the final production context clean. If the deck is not large, continue into final production in this chat.
   ```
 
 > On acquisition failure, do NOT halt — follow the Failure Handling rule in [image-base.md](references/image-base.md) §5: retry once, then mark the row `Needs-Manual`, report to user, and continue to the checkpoint above.
@@ -551,6 +574,13 @@ Executor guidance when the selected template or approved route calls for it:
 `references/executor-general.md`, `references/executor-consultant.md`, or
 `references/executor-consultant-top.md`. These extend, but never replace,
 `executor-base.md` and `shared-standards.md`.
+
+If `spec_lock.md` or the page plan activates an additive native/structured
+capability, read only its matching row from
+[`references/ppt-master-capability-overlay.md`](references/ppt-master-capability-overlay.md)
+and the linked core references before authoring that object/page. This adds an
+authoring contract; it does not change the Plus generation cadence or preview
+gate.
 
 **Design Parameter Confirmation (Mandatory)**: before the first SVG, output key design parameters from the spec (canvas dimensions, color scheme, font plan, body font size). See executor-base.md §2.
 
@@ -613,9 +643,9 @@ update its notes and rerun the checker.
 - [x] check_speaker_notes.py passed (0 errors)
 ```
 
-> **Chart pages?** If this deck contains data charts (bar / line / pie / radar / etc.), run the standalone [`verify-charts`](workflows/verify-charts.md) workflow before Step 7 to calibrate coordinates. AI models routinely introduce 10–50 px errors when mapping data to pixel positions; verify-charts eliminates that class of error. Skip if no chart pages.
+> **Chart pages?** If this deck contains data charts (bar / line / pie / radar / etc.), run the standalone [`verify-charts`](workflows/stages/verify-charts.md) workflow before Step 7 to calibrate coordinates. AI models routinely introduce 10–50 px errors when mapping data to pixel positions; verify-charts eliminates that class of error. Skip if no chart pages.
 
-> **Visual self-check (opt-in)?** If the user explicitly asked for a per-page visual re-pass on the SVGs ("跑一下视觉自检 / 视觉回看", "visual review", "check pages visually", etc.), run the standalone [`visual-review`](workflows/visual-review.md) workflow before Step 7. Do NOT run it by default and do NOT recommend it based on inferred model capability or deck size — trigger is user request only. In `Gated` / 逐页确定精修 mode, the per-slide style approval surface is Live Preview itself; do not render PNGs/screenshots for a model-based visual re-check as part of each slide confirmation.
+> **Visual self-check (opt-in)?** If the user explicitly asked for a per-page visual re-pass on the SVGs ("跑一下视觉自检 / 视觉回看", "visual review", "check pages visually", etc.), run the standalone [`visual-review`](workflows/stages/visual-review.md) workflow before Step 7. Do NOT run it by default and do NOT recommend it based on inferred model capability or deck size — trigger is user request only. In `Gated` / 逐页确定精修 mode, the per-slide style approval surface is Live Preview itself; do not render PNGs/screenshots for a model-based visual re-check as part of each slide confirmation.
 
 ---
 
@@ -654,6 +684,11 @@ python3 ${SKILL_DIR}/scripts/svg_to_pptx.py <project_path>
 #   exports/<project_name>_<timestamp>_svg.pptx      ← SVG preview pptx (reads svg_final/)
 ```
 
+The public exporter always uses the unified engine. A project without a
+structured/native contract remains a flat export; semantic markers and optional
+arguments enable only the corresponding native feature. `--master-core` is not
+a public argument.
+
 > **Faithful beautify + preserve_master**: for faithful-beautify projects where `spec_lock.md` declares `preserve_master: true`, the script automatically reads `base_pptx` from `spec_lock.md` and applies the source master/layout mapping — **no `--base-pptx` flag needed**. After the command exits, verify the console output contains:
 > ```
 > [spec_lock] preserve_master=true → auto base-pptx: .../sources/<source.pptx>
@@ -686,11 +721,11 @@ python3 ${SKILL_DIR}/scripts/svg_to_pptx.py <project_path>
 
 **Optional custom animations** (only when the user asks to tune animation order/effects/timing for specific objects):
 
-Run the standalone [`customize-animations`](workflows/customize-animations.md) workflow. Default export applies no page transition and no per-element entrance animation; create `animations.json` (or pass `-a auto`) only when the user asks for element animation or object-level customization.
+Run the standalone [`customize-animations`](workflows/stages/customize-animations.md) workflow. Default export applies no page transition and no per-element entrance animation; create `animations.json` (or pass `-a auto`) only when the user asks for element animation or object-level customization.
 
 **Optional recorded narration** (only when the user asks for narrated/video export):
 
-Run the standalone [`generate-audio`](workflows/generate-audio.md) workflow. The AI picks a narration backend (`edge` by default, or a configured cloud provider such as ElevenLabs / MiniMax / Qwen / CosyVoice for high-quality or cloned voices), asks the user once (backend + voice + rate/settings + embed-or-not, all with recommended values), then executes `notes_to_audio.py` and (if chosen) re-exports the PPTX with `--recorded-narration audio`.
+Run the standalone [`generate-audio`](workflows/stages/generate-audio.md) workflow. The AI picks a narration backend (`edge` by default, or a configured cloud provider such as ElevenLabs / MiniMax / Qwen / CosyVoice for high-quality or cloned voices), asks the user once (backend + voice + rate/settings + embed-or-not, all with recommended values), then executes `notes_to_audio.py` and (if chosen) re-exports the PPTX with `--recorded-narration audio`.
 
 Do NOT call `notes_to_audio.py` directly without going through the workflow — `--voice` / `--voice-id` is required and the workflow produces the locale/provider-aware recommendation that makes the choice meaningful.
 

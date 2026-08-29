@@ -83,9 +83,21 @@ python3 scripts/generate_examples_index.py
 python3 scripts/generate_examples_index.py examples
 ```
 
-## `pptx_template_import.py`
+## `project_manager.py import-template`
 
-Unified PPTX preparation entry point for `/create-template`.
+Public Create PPTX from Template import. It copies the user PPTX into the
+project read-only, records template/content/output roles in `route_context.json`,
+and invokes `pptx_intake.py --intent template` to create the four analysis
+contracts and previews.
+
+```bash
+python3 scripts/project_manager.py import-template <project_path> <template.pptx>
+python3 scripts/project_manager.py set-output <project_path> <delivered.pptx>
+```
+
+## `pptx_template_import.py` (internal template-authoring maintenance)
+
+PPTX preparation entry point for internal Brand/Style/Layout/Deck maintenance.
 
 ```bash
 python3 scripts/pptx_template_import.py <template.pptx>
@@ -114,7 +126,7 @@ Notes:
 - SVG export reads OOXML directly via `pptx_to_svg` — no PowerPoint or Keynote dependency, runs on any platform
 - `<image>` elements in `svg/` reference files in `assets/` directly; pass `--embed-images` to inline as data URIs instead
 - External linked images and missing media are strict failures. Office vector media such as EMF / WMF are converted to PNG previews when the local toolchain can do so; otherwise the import fails instead of silently dropping content.
-- Required in `/create-template` whenever the reference source is `.pptx`
+- Used only by `workflows/internal/template-authoring/` when the reference source is `.pptx`
 - Default output directory is `<pptx_stem>_template_import/`
 - Use `--manifest-only` when you explicitly want only the lightweight import output without slide SVG export
 - Intended for template reference preparation, not for final 1:1 template delivery

@@ -108,6 +108,15 @@ body {
     font-weight: 600;
 }
 .chip-text { min-width: 0; }
+.chip-brand-swatch { display: inline-flex; align-items: center; margin-right: 6px; }
+.brand-swatch {
+    display: inline-block;
+    width: 14px;
+    height: 14px;
+    border-radius: 3px;
+    border: 1px solid rgba(0,0,0,.12);
+    vertical-align: middle;
+}
 
 .text-input, .num-input {
     width: 100%;

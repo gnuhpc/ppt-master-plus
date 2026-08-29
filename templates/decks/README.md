@@ -56,7 +56,7 @@ When the user gives a deck path **with** a brand path or layout path, identity /
 
 ## Creating a new deck
 
-1. Run [`workflows/create-template.md`](../../workflows/create-template.md) (default kind is `deck`)
+1. Run [`workflows/internal/template-authoring/create-template.md`](../../workflows/internal/template-authoring/create-template.md) (default kind is `deck`)
 2. Resulting directory lands under `templates/decks/<id>/`
 3. Validate: `python3 skills/ppt-master-plus/scripts/svg_quality_checker.py templates/decks/<id> --template-mode --format ppt169`
 4. Register: `python3 skills/ppt-master-plus/scripts/register_template.py <id> --kind deck`

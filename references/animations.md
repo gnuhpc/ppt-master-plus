@@ -19,7 +19,7 @@ For design engineering guidelines on motion craft, easing choices, sub-300ms UI 
 
 Per-element animation is off by default. To enable it deck-wide, pass `-a auto` at export (no config needed). When a deck instead needs specific object timing — for example title first, chart second, annotation last — use the optional `animations.json` sidecar. The SVG remains static visual source; the sidecar only controls PPTX export behavior.
 
-Run the standalone [`customize-animations`](../workflows/customize-animations.md) workflow when the user asks to tune animation order, effects, timing, or object-level reveals.
+Run the standalone [`customize-animations`](../workflows/stages/customize-animations.md) workflow when the user asks to tune animation order, effects, timing, or object-level reveals.
 
 ```bash
 # Build an editable scaffold from real top-level <g id> anchors

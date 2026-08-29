@@ -24,7 +24,7 @@ Brand application follows the **same explicit-path rule as all template kinds** 
 Run the standalone workflow:
 
 ```
-Read skills/ppt-master-plus/workflows/create-brand.md
+Read skills/ppt-master-plus/workflows/internal/template-authoring/create-brand.md
 ```
 
 Three input paths are supported: brand asset (logo / brand site URL / branded PPTX / brand PDF), verbal spec dictated in chat, or empty skeleton for the user to fill in later.

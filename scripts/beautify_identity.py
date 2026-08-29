@@ -23,7 +23,7 @@ Examples:
 Dependencies:
     None beyond the standard library (reuses scripts/pptx_to_svg/).
 
-See workflows/beautify-pptx.md for how the emitted identity is consumed.
+See workflows/profiles/faithful-beautify.md for how the emitted identity is consumed.
 """
 
 from __future__ import annotations

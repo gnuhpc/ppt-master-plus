@@ -10,9 +10,9 @@
 
 | 分类 | 物理目录 | 写什么 | 不写什么 | 出处工作流 |
 |---|---|---|---|---|
-| **Brand** | `templates/brands/<id>/` | 仅身份段：color / typography / logo / voice / icon style | 不写 canvas、page structure、SVG roster | `workflows/create-brand.md` |
-| **Layout** | `templates/layouts/<id>/` | 仅结构段：canvas / page structure / page types / SVG roster | 不写品牌身份（无 logo、无品牌色硬约束） | `workflows/create-template.md`（layout 分支）|
-| **Deck** | `templates/decks/<id>/` | 全段：身份段 + 结构段 + 中间段（template overview） | —— | `workflows/create-template.md`（deck 分支，默认）|
+| **Brand** | `templates/brands/<id>/` | 仅身份段：color / typography / logo / voice / icon style | 不写 canvas、page structure、SVG roster | `workflows/internal/template-authoring/create-brand.md` |
+| **Layout** | `templates/layouts/<id>/` | 仅结构段：canvas / page structure / page types / SVG roster | 不写品牌身份（无 logo、无品牌色硬约束） | `workflows/internal/template-authoring/create-template.md`（layout 分支）|
+| **Deck** | `templates/decks/<id>/` | 全段：身份段 + 结构段 + 中间段（template overview） | —— | `workflows/internal/template-authoring/create-template.md`（deck 分支，默认）|
 
 三者是**三种并列的 reference bundle**，物理目录与 frontmatter `kind` 字段双向对齐：
 
@@ -280,8 +280,8 @@ Deck 路径下用户已经拿到完整方案，八项确认收窄到"目标受�
 
 | 工作流 | 产出 |
 |---|---|
-| `workflows/create-brand.md` | brand 目录（identity-only），从品牌资产逆向提取 |
-| `workflows/create-template.md` | layout 或 deck 目录，内部按 kind 分支：默认走 deck（用户给了一份现存 PPT，提取完整身份 + 结构）；用户明说"只要结构 / 丢掉品牌色"时走 layout |
+| `workflows/internal/template-authoring/create-brand.md` | brand 目录（identity-only），从品牌资产逆向提取 |
+| `workflows/internal/template-authoring/create-template.md` | layout 或 deck 目录，内部按 kind 分支：默认走 deck（用户给了一份现存 PPT，提取完整身份 + 结构）；用户明说"只要结构 / 丢掉品牌色"时走 layout |
 
 产出后 frontmatter `kind` 字段决定文件落到 `templates/brands/` / `templates/layouts/` / `templates/decks/`。
 

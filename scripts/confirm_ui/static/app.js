@@ -23,6 +23,8 @@
             confirmed_hint: "Your choices are saved. You can close this page and return to the chat.",
             lang_toggle_title: "Switch language",
             sec_canvas: "Canvas format",
+            sec_brand: "Brand preset",
+            sec_brand_note: "Select a brand to anchor color, typography, and icon style. \"Free design\" means no brand preset.",
             sec_pages: "Page count",
             page_count_locked_note: "Locked to source PPTX — faithful beautify keeps the original page count.",
             sec_preserve_master: "Source master",
@@ -115,6 +117,8 @@
             confirmed_hint: "选择已保存，可关闭此页并回到聊天窗口。",
             lang_toggle_title: "切换语言",
             sec_canvas: "画布格式",
+            sec_brand: "品牌预设",
+            sec_brand_note: "选择品牌后，配色、字体和图标风格将据此推导。「自由设计」表示不使用品牌预设。",
             sec_pages: "页数",
             page_count_locked_note: "已锁定为源 PPTX 页数 — 保真美化保持原始页数不变。",
             sec_preserve_master: "源 PPT 母版",
@@ -557,6 +561,52 @@
                 }
                 renderAll();
             }, { allowCustom: true });
+        host.appendChild(sec);
+    }
+
+    function renderBrand(host) {
+        var sec = section(2, "sec_brand", t("sec_brand_note"));
+        var brandList = CAT.brands || [];
+        var recommendedId = recOrFirst("brand", brandList);
+        var customSwatchClass = "brand-swatch";
+
+        var chipsWrap = el("div", "chips");
+        var allChips = [];
+        function deselect() { allChips.forEach(function (c) { c.classList.remove("selected"); }); }
+
+        brandList.forEach(function (o) {
+            var chip = el("div", "chip");
+            var label = optionLabel(o);
+            var desc = optionDesc(o);
+            var labelText = label;
+            if (desc) labelText += (LANG === "zh" ? "：" : " — ") + desc;
+
+            var swatchWrap = el("span", "chip-brand-swatch");
+            if (o.primary_color) {
+                var sw = el("span", customSwatchClass);
+                sw.style.background = o.primary_color;
+                swatchWrap.appendChild(sw);
+            }
+
+            var textSpan = el("span", "chip-text", labelText);
+            chip.appendChild(swatchWrap);
+            chip.appendChild(textSpan);
+
+            if (o.id === recommendedId) {
+                chip.classList.add("recommended");
+                chip.appendChild(el("span", "rec-badge", "★ " + t("recommended")));
+            }
+            if (o.id === STATE.brand) chip.classList.add("selected");
+            chip.addEventListener("click", function () {
+                deselect();
+                chip.classList.add("selected");
+                STATE.brand = o.id;
+            });
+            allChips.push(chip);
+            chipsWrap.appendChild(chip);
+        });
+
+        sec.appendChild(chipsWrap);
         host.appendChild(sec);
     }
 
@@ -1344,8 +1394,9 @@
         refreshSizeInputs = function () {};
         if (tier === 1) {
             // Anchors — decided first; Tier 2 is re-derived from these.
-            // Delivery purpose rides inside renderAudience (§c key info).
+            // Brand anchors color/typography/icons; delivery purpose rides inside renderAudience (§c key info).
             renderCanvas(host);
+            renderBrand(host);
             renderAudience(host);
             renderStyle(host);
         } else {
@@ -1353,6 +1404,7 @@
             // Single-pass also shows the anchors up front on the same page.
             if (tier === "all") {
                 renderCanvas(host);
+                renderBrand(host);
                 renderAudience(host);
                 renderStyle(host);
             }
@@ -1396,6 +1448,7 @@
 
     function initTier1State() {
         STATE.canvas = pick("canvas", CAT.canvas);
+        STATE.brand = recOrFirst("brand", CAT.brands || []);
         STATE.audience = (REC.audience && REC.audience.value) || "";
         STATE.content_divergence = (REC.content_divergence && REC.content_divergence.value) || "";  // free text; blank = balanced default
         STATE.mode = pick("mode", CAT.modes);
@@ -1471,6 +1524,7 @@
         var payload = {
             stage: "tier1",
             canvas: STATE.canvas,
+            brand: STATE.brand,
             audience: STATE.audience,
             content_divergence: STATE.content_divergence,
             mode: STATE.mode,

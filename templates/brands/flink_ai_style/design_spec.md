@@ -34,8 +34,9 @@ primary_color: "#04CF82"
 | mono | Consolas | Regular |
 
 ## IV. Logo
-- File: `None`
-- Usage: never
+- File: `assets/aliyun-flink-logo-zh.svg` (or `assets/aliyun-logo-zh.svg`)
+- Usage: Header/cover logo for Aliyun Flink & Stream Computing presentations
+- Variants: `assets/aliyun-flink-logo-en.svg`, `assets/aliyun-logo-en.svg`
 
 ## V. Voice & Tone
 - Formality: formal

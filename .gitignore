@@ -1,0 +1,15 @@
+# Local projects generated while importing user-provided PPTX templates.
+projects/
+.omo/
+
+# Python caches and local tooling state.
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.DS_Store
+
+# Local environment and temporary output.
+.venv/
+*.log

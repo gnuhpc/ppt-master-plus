@@ -1,0 +1,28 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720" data-pptx-page-role="content">
+  <rect width="1280" height="720" fill="#FFFFFF"/>
+  <text id="title" x="80" y="72" font-family="Arial" font-size="34" fill="#173B57">Native object fixture</text>
+  <g id="fixture-chart" data-pptx-replace-with="chart" data-pptx-bounds="80 120 520 300" data-pptx-fallback-sha256="1b5b24faef3ea4c5b7aebc8acec24ffc4b32818f3ab6c7310876507fbfa744bc">
+    <metadata type="application/json">{"x":80,"y":120,"width":520,"height":300,"name":"fixture-chart","type":"column","title":"Revenue","categories":["Q1","Q2","Q3"],"series":[{"name":"Cloud","values":[12,15,19]},{"name":"Services","values":[8,9,11]}]}</metadata>
+    <rect x="80" y="120" width="520" height="300" fill="#F3F7FA" stroke="#B8C7D1"/>
+    <rect x="150" y="280" width="48" height="110" fill="#04CF82"/>
+    <rect x="260" y="240" width="48" height="150" fill="#04CF82"/>
+    <rect x="370" y="190" width="48" height="200" fill="#04CF82"/>
+    <text x="100" y="155" font-family="Arial" font-size="20" fill="#173B57">Revenue</text>
+  </g>
+  <g id="fixture-table" data-pptx-replace-with="table" data-pptx-bounds="660 120 500 300" data-pptx-fallback-sha256="55ae96b44e280a5349ed8f5119ee831ce59ce63355d4f7baa91302fc7ae21dac">
+    <metadata type="application/json">{"schema":"ppt-master.semantic-table.v2","x":660,"y":120,"width":500,"height":300,"name":"fixture-table","columns":["Metric","Value"],"rows":[["Revenue","19"],["Growth","27%"]],"header_rows":1,"style":{"font_family":"Arial","font_size":18,"header_fill":"#173B57","header_text":"#FFFFFF","border_color":"#B8C7D1","border_width":1}}</metadata>
+    <rect x="660" y="120" width="500" height="300" fill="#FFFFFF" stroke="#B8C7D1"/>
+    <rect x="660" y="120" width="500" height="80" fill="#173B57"/>
+    <text x="690" y="170" font-family="Arial" font-size="18" fill="#FFFFFF">Metric</text>
+    <text x="930" y="170" font-family="Arial" font-size="18" fill="#FFFFFF">Value</text>
+    <text x="690" y="250" font-family="Arial" font-size="18" fill="#173B57">Revenue</text>
+    <text x="930" y="250" font-family="Arial" font-size="18" fill="#173B57">19</text>
+    <text x="690" y="330" font-family="Arial" font-size="18" fill="#173B57">Growth</text>
+    <text x="930" y="330" font-family="Arial" font-size="18" fill="#173B57">27%</text>
+  </g>
+  <text id="formula-line" x="80" y="500" font-family="Arial" font-size="28" fill="#173B57">Ratio <tspan data-pptx-inline-formula="\frac{a_i}{b_i}">aᵢ/bᵢ</tspan> remains stable.</text>
+  <a href="https://example.com/report">
+    <rect id="linked-button" x="80" y="560" width="300" height="64" rx="12" fill="#173B57"/>
+  </a>
+  <text x="112" y="602" font-family="Arial" font-size="22" fill="#FFFFFF">Open source report</text>
+</svg>

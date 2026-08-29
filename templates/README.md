@@ -29,7 +29,7 @@ A brand is structurally a layout template minus its page roster. Use a brand whe
 
 - **Human browsing**: [brands/README.md](./brands/README.md)
 - **Discovery index (no trigger)**: [brands/brands_index.json](./brands/brands_index.json) — answers "what brands exist?"; Step 3 still requires an explicit directory path from the user
-- **Creation workflow**: [`../workflows/create-brand.md`](../workflows/create-brand.md)
+- **Creation workflow**: [`../workflows/internal/template-authoring/create-brand.md`](../workflows/internal/template-authoring/create-brand.md)
 
 ## Visualization Templates
 

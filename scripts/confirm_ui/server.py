@@ -137,7 +137,7 @@ def _result_stage(result_file: Path) -> Optional[str]:
 # confirmed in Tier 1), so their values live only in browser STATE — lost on a
 # refresh. Folding them from result.json into the served Tier-2 recommendations
 # lets the page re-initialize them from the user's actual choices.
-_ANCHOR_RECOMMEND_KEYS = ('canvas', 'mode', 'visual_style', 'delivery_purpose')
+_ANCHOR_RECOMMEND_KEYS = ('canvas', 'brand', 'mode', 'visual_style', 'delivery_purpose')
 _ANCHOR_VALUE_KEYS = ('audience', 'content_divergence')
 
 
@@ -249,36 +249,72 @@ def _shutdown_existing(lock_file: Path) -> int:
 
 def _build_catalogs() -> dict:
     """Return the static catalog set with the canvas list synced live from
-    ``config.CANVAS_FORMATS`` — the single source of truth for canvas formats —
-    so the confirm page can never drift from the pipeline's real formats. The
-    set of formats and their dimensions come from config; bilingual labels and
-    use text are kept from catalogs.json (with a plain fallback for any new id).
+    ``config.CANVAS_FORMATS`` and the brands list synced live from
+    ``templates/brands/brands_index.json`` — the single sources of truth —
+    so the confirm page can never drift from the pipeline's real formats or
+    the actual brand library. Canvas formats and dimensions come from config;
+    bilingual labels and use text are kept from catalogs.json (with a plain
+    fallback for any new id). Brands are loaded from brands_index.json and
+    merged with a static ``"none"`` option for free design.
     """
     data = json.loads(_CATALOGS_PATH.read_text(encoding='utf-8'))
     try:
         import config  # scripts/ is on sys.path (injected at import time)
         formats = config.CANVAS_FORMATS
     except (ImportError, AttributeError):  # missing module/attr → static canvas
-        return data
-    existing = {
-        c.get('id'): c
-        for c in data.get('canvas', [])
-        if isinstance(c, dict) and c.get('id')
-    }
-    canvas = []
-    for cid, fmt in formats.items():
-        entry = dict(existing.get(cid, {}))
-        entry['id'] = cid
-        entry['dim'] = fmt.get('dimensions', entry.get('dim', ''))
-        if not entry.get('label'):
-            name = fmt.get('name', cid)
-            entry['label'] = name
-            entry.setdefault('label_zh', name)
-            entry.setdefault('label_en', name)
-        if not entry.get('use_en') and fmt.get('use_case'):
-            entry['use_en'] = fmt['use_case']
-        canvas.append(entry)
-    data['canvas'] = canvas
+        formats = None
+    if formats:
+        existing = {
+            c.get('id'): c
+            for c in data.get('canvas', [])
+            if isinstance(c, dict) and c.get('id')
+        }
+        canvas = []
+        for cid, fmt in formats.items():
+            entry = dict(existing.get(cid, {}))
+            entry['id'] = cid
+            entry['dim'] = fmt.get('dimensions', entry.get('dim', ''))
+            if not entry.get('label'):
+                name = fmt.get('name', cid)
+                entry['label'] = name
+                entry.setdefault('label_zh', name)
+                entry.setdefault('label_en', name)
+            if not entry.get('use_en') and fmt.get('use_case'):
+                entry['use_en'] = fmt['use_case']
+            canvas.append(entry)
+        data['canvas'] = canvas
+
+    # Sync brands from templates/brands/brands_index.json — the single source
+    # of truth for the brand library. A static ``"none"`` option (free design)
+    # is always first; brand entries follow sorted by id. Each entry carries
+    # ``primary_color`` as a swatch hint for the front-end chips.
+    try:
+        brands_path = config.TEMPLATES_DIR / 'brands' / 'brands_index.json'
+        brands_data = json.loads(brands_path.read_text(encoding='utf-8'))
+    except (ImportError, AttributeError, OSError, json.JSONDecodeError):
+        brands_data = {}
+    brand_list = [{
+        'id': 'none',
+        'label': 'Free design',
+        'label_zh': '自由设计',
+        'label_en': 'Free design',
+        'desc_zh': '不使用品牌预设，按内容自由设计配色与字体。',
+        'desc_en': 'No brand preset; design color and typography freely from the content.'
+    }]
+    for bid, binfo in sorted(brands_data.items()):
+        entry = {
+            'id': bid,
+            'label': bid,
+            'label_zh': bid,
+            'label_en': bid,
+            'desc_zh': binfo.get('summary', ''),
+            'desc_en': binfo.get('summary', ''),
+        }
+        pc = binfo.get('primary_color')
+        if pc:
+            entry['primary_color'] = pc
+        brand_list.append(entry)
+    data['brands'] = brand_list
     return data
 
 

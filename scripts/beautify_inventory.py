@@ -19,7 +19,7 @@ Examples:
 Dependencies:
     None (standard library only).
 
-See workflows/beautify-pptx.md Step 4 for how the inventory is consumed.
+See workflows/profiles/faithful-beautify.md Step 4 for how the inventory is consumed.
 """
 
 from __future__ import annotations

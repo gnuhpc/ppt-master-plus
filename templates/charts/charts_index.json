@@ -1,6 +1,6 @@
 {
   "meta": {
-    "total": 131,
+    "total": 139,
     "defaultViewBox": "0 0 1280 720",
     "formats": [
       "ppt169"
@@ -409,6 +409,25 @@
     },
     "rag_concentric_flow": {
       "summary": "Pick for RAG (Retrieval-Augmented Generation), vector retrieval loop, or AI agent workflow consisting of a central real-time context hub and 4 orbiting nodes (such as Events, Vector Store, LLM, Agent) connected in a continuous feedback loop. Skip for simple timelines (use horizontal_timeline) or hierarchy structures (use top_down_tree)."
+    },
+    "bar_of_pie_chart": {
+      "summary": "Pick for pie composition where small long-tail slices should be expanded into a stacked bar detail. Skip if secondary detail should stay circular (use pie_of_pie_chart) or flat shares suffice (use pie_chart)."
+    },
+    "column_chart": {
+      "summary": "Pick for single-series category value comparison, 3-8 categories. Skip for >12 long-label items (use horizontal_bar_chart) or multi-series (use grouped_bar_chart)."
+    },
+    "histogram_chart": {
+      "summary": "Pick for numeric distribution across many observations or bins. Skip if comparing named categories (use column_chart) or comparing distributions per group (use box_plot_chart)."
+    },
+    "pie_of_pie_chart": {
+      "summary": "Pick for pie composition where small slices need a secondary pie detail. Skip if the secondary detail is easier to compare as bars (use bar_of_pie_chart) or hierarchy matters (use sunburst_chart)."
+    },
+    "stock_chart": {
+      "summary": "Pick for open-high-low-close price movement over dates. Skip if showing only close-price direction (use line_chart) or category volume comparison (use column_chart)."
+    },
+    "sunburst_chart": {
+      "summary": "Pick for hierarchical part-to-whole composition across 2-3 levels where each ring should stay visible. Skip if rectangular area comparison is clearer (use treemap_chart) or shares are flat (use donut_chart)."
     }
-  }
+  },
+  "aliases": {}
 }
