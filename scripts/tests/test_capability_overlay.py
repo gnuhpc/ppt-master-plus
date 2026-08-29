@@ -420,8 +420,9 @@ class UnifiedCapabilityContractTests(unittest.TestCase):
         self.assertIn("template_origin: user_provided_pptx", routing)
         self.assertIn("templates/charts/charts_index.json", template_route)
         self.assertIn("templates/tables/tables_index.json", template_route)
-        self.assertIn("template-native chart or", template_route)
-        self.assertIn("table formatting is never style authority", template_route)
+        self.assertIn("Template-native", template_route)
+        self.assertIn("formatting is never style authority", template_route)
+        self.assertIn("classified as a project-local **Brand**", template_route)
         self.assertIn("explicitly provided by the", template_route)
         self.assertIn("Reject `.potx`", template_route)
 
@@ -470,11 +471,15 @@ class UnifiedCapabilityContractTests(unittest.TestCase):
             manifest = json.loads((analysis / names[0]).read_text(encoding="utf-8"))
             tokens = json.loads((analysis / names[1]).read_text(encoding="utf-8"))
             archetypes = json.loads((analysis / names[2]).read_text(encoding="utf-8"))
+            assets = json.loads((analysis / names[3]).read_text(encoding="utf-8"))
             self.assertEqual(1, manifest["page_role_counts"]["guide"])
+            self.assertEqual("brand", manifest["template_kind"])
+            self.assertFalse(manifest["page_archetypes_reusable"])
             policy = manifest["visualization_style_policy"]
             self.assertEqual("skill_builtin", policy["source"])
             self.assertFalse(policy["template_visualization_style_reusable"])
             self.assertEqual("skill_builtin", tokens["visualization_style_source"])
+            self.assertEqual("brand", tokens["template_kind"])
             self.assertIn("chart_style", tokens["excluded_template_style_domains"])
             self.assertEqual(
                 "skill_builtin", archetypes["visualization_policy"]["style_source"]
@@ -483,6 +488,9 @@ class UnifiedCapabilityContractTests(unittest.TestCase):
                 "content_sources",
                 archetypes["visualization_policy"]["content_and_data_source"],
             )
+            self.assertEqual("diagnostic_only", archetypes["reusability"]["usage"])
+            self.assertFalse(archetypes["reusability"]["page_archetypes_reusable"])
+            self.assertEqual("brand", assets["template_kind"])
             ordinary = archetypes["slides"][1]["objects"][0]
             self.assertIsNone(ordinary["placeholder"])
             self.assertTrue(ordinary["editable"])
@@ -514,7 +522,13 @@ class UnifiedCapabilityContractTests(unittest.TestCase):
             self.assertEqual(source_hash, hashlib.sha256(copied.read_bytes()).hexdigest())
             context = json.loads((project / "route_context.json").read_text(encoding="utf-8"))
             self.assertEqual("create_pptx_from_template", context["route"])
-            self.assertEqual("template_fill", context["profile"])
+            self.assertEqual("svg_generate", context["engine"])
+            self.assertEqual("imported_brand", context["profile"])
+            self.assertEqual("brand_identity", context["adaptation"])
+            self.assertEqual([], context["modules"])
+            self.assertEqual("brand", context["template_kind"])
+            self.assertEqual("identity_only", context["template_reuse"])
+            self.assertFalse(context["template_archetypes_reusable"])
             self.assertEqual("skill_builtin", context["visualization_style_source"])
             self.assertIn(
                 "templates/charts/charts_index.json", context["visualization_catalogs"]

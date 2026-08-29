@@ -11,12 +11,6 @@
     "page_count": 5,
     "primary_color": "#004098"
   },
-  "ffa_shenzhen": {
-    "summary": "Flink Forward Asia (FFA) Shenzhen Forum tech presentation style.",
-    "canvas_format": "ppt169",
-    "page_count": 5,
-    "primary_color": "#9966F7"
-  },
   "中国电建_常规": {
     "summary": "Engineering project reports, technical proposal presentations, business negotiations, corporate promotion, annual summaries.",
     "canvas_format": "ppt169",

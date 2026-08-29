@@ -4,6 +4,12 @@ description: Generate a new layout or deck template based on existing project fi
 
 # Create New Template Workflow
 
+> **PPTX import boundary:** this internal workflow does not turn a user-provided
+> `.pptx` into a Deck. Such a file is handled as a Brand import by the public
+> `Create PPTX from Template` route (or by `create-brand.md` for an explicitly
+> requested reusable Brand). Deck assets here must be authored from a confirmed
+> internal brief, not copied from imported PPTX pages.
+
 > **Role invoked**: [Template_Designer](../../../references/template-designer.md)
 
 Generate a complete set of reusable PPT templates for the **global template library**.
@@ -41,7 +47,7 @@ Branch by the type of reference source the user supplied. This step produces ana
 
 | Type | What the user supplied | Tool / read path | Replication modes available |
 |------|-------------------------|------------------|------------------------------|
-| **A** `.pptx` reference | A `.pptx` file path | `pptx_template_import.py` → `manifest.json` + `svg/master_*.svg` + `svg/layout_*.svg` + `svg/slide_*.svg` + `svg-flat/slide_*.svg` + `assets/` | `standard` / `fidelity` / `mirror` |
+| **A** `.pptx` reference | A `.pptx` file path | Route to Brand import; do not process it in this Deck-authoring workflow | none |
 | **B** Existing SVG assets | `projects/<x>/svg_output/`, `templates/layouts/<existing>`, or a loose `.svg` folder | `ls` + `Read` each `*.svg`; plus `design_spec.md` / `spec_lock.md` if present | `standard` / `fidelity` (AI visual clustering) / `mirror` (direct 1:1 copy) |
 | **C** Image / visual references | Screenshot folder, single image, PDF pages | `ls` + `Read` each file (multimodal visual recognition) | `standard` only |
 | **D** No reference source | Verbal description only ("McKinsey style", "tech blue", "dark minimal") | — | `standard` only |
@@ -51,7 +57,12 @@ Branch by the type of reference source the user supplied. This step produces ana
 - **mirror on type B** — direct 1:1 copy. B's SVGs are already self-contained (one file per page, equivalent to `svg-flat/slide_*.svg`). Page-type for the `<NNN>_<page_type>.svg` filename is read from the source filename when it follows the PPT Master naming convention (`01_cover.svg` → `cover`, `03a_content_two_col.svg` → `content`); fall back to `content` otherwise. Particularly natural when the source is `templates/layouts/<existing>` and the user wants to fork an existing template.
 - **fidelity on type B** — clustering relies on the AI's visual judgement of the SVGs; there is no `manifest.json.pageTypeCandidates` to anchor it. Variant count and grouping are more subjective and may need iteration. If the input is already a PPT Master template (`templates/layouts/<existing>`), parse the existing variant filenames (`03a_content_two_col` etc.) as authoritative cluster hints rather than re-clustering visually.
 
-### 1A. `.pptx` reference
+### 1A. Legacy `.pptx` reference (not runnable)
+
+> Do not run this legacy preparation path for a user-provided PPTX. Dispatch it
+> to Brand import instead. The retained notes below describe historical
+> reconstruction internals only and must not create a Deck, clone source slides,
+> or register imported page assets.
 
 Run the unified preparation helper:
 

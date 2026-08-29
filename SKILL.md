@@ -21,12 +21,13 @@ Read [`workflows/routing.md`](workflows/routing.md) first and select exactly one
 
 1. [`Generate PPTX`](workflows/generate-pptx.md) — generate or redesign visible pages.
 2. [`Edit Native PPTX`](workflows/edit-native-pptx.md) — preserve the supplied deck and modify it.
-3. [`Create PPTX from Template`](workflows/create-pptx-from-template.md) — import an explicitly user-provided `.pptx` file as the design template for new content.
+3. [`Create PPTX from Template`](workflows/create-pptx-from-template.md) — import an explicitly user-provided `.pptx` file as a Brand reference for new content.
 
 For Create PPTX from Template, chart, table, infographic, and diagram styling
-always comes from the Skill's built-in visualization catalogs. The template
-contributes slot geometry and locked deck tokens, never visualization-example
-styling or sample data.
+always comes from the Skill's built-in visualization catalogs. The import is
+always a Brand: it contributes locked identity tokens and reusable brand assets,
+never source-page topology, object geometry, visualization-example styling, or
+sample data.
 
 This route starts only from a `.pptx` file path explicitly supplied by the user.
 Import that file read-only with `project_manager.py import-template`; do not
@@ -34,9 +35,10 @@ resolve a bare template name, choose an internal Brand/Style/Layout/Deck asset,
 or register the imported PPTX as a reusable Skill template.
 
 The Step 1–7 procedure below is the frozen Generate implementation. The template
-route adapts the same governance checkpoints but executes through native
-round-trip; the native-edit route owns its own plan confirmation. SVG hand-writing
-rules apply only to Generate.
+route adapts the same governance checkpoints and executes as a new-page Generate
+branch under the imported Brand; the native-edit route owns its own plan
+confirmation. SVG hand-writing rules apply to Generate and the imported-Brand
+branch.
 
 **Production modes**: **逐页确定精修** (`gated`) means every slide stops in Live Preview for user confirmation before the next slide; **全自动一次性生成** (`continuous`) means the deck proceeds continuously after the required design confirmation.
 

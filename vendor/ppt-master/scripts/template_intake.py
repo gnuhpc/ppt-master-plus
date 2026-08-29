@@ -674,6 +674,9 @@ def build_template_artifacts(
         source_bytes = source.read_bytes()
         manifest = {
             "schema": "ppt-master-plus.template-manifest.v1",
+            "template_kind": "brand",
+            "template_reuse": "identity_only",
+            "page_archetypes_reusable": False,
             "source": {
                 "path": str(source),
                 "sha256": sha256(source_bytes).hexdigest(),
@@ -716,6 +719,8 @@ def build_template_artifacts(
         }
         tokens = {
             "schema": "ppt-master-plus.template-design-tokens.v1",
+            "template_kind": "brand",
+            "template_reuse": "identity_only",
             "theme": identity.get("theme", {}),
             "declared_guide_pages": [row["source_slide"] for row in archetypes if row["role"] == "guide"],
             "declared_rules": guide_texts,
@@ -751,8 +756,8 @@ def build_template_artifacts(
                 ],
             },
             "asset_rules": {
-                "logos_and_icons": "preserve template assets unless explicitly unlocked",
-                "images": "replace within the existing frame while preserving crop and effects",
+                "logos_and_icons": "reuse as Brand assets unless explicitly unlocked",
+                "images": "reuse only as selected Brand assets; do not inherit source-page frames",
                 "charts_tables_infographics_diagrams": (
                     "ignore template exemplar styling; select a built-in skill visualization "
                     "and adapt it to the locked template palette, typography, and slot geometry"
@@ -769,20 +774,18 @@ def build_template_artifacts(
         }
         archetype_payload = {
             "schema": "ppt-master-plus.template-archetypes.v1",
-            "adaptation": "native_adaptive",
-            "overflow_order": [
-                "shorten_content",
-                "adjust_within_template_limits",
-                "select_larger_matching_archetype",
-                "duplicate_and_split",
-                "request_user_decision",
-            ],
+            "template_kind": "brand",
+            "reusability": {
+                "usage": "diagnostic_only",
+                "page_archetypes_reusable": False,
+                "source_page_topology_reusable": False,
+            },
+            "adaptation": "brand_identity",
+            "overflow_order": ["shorten_content", "choose_new_layout", "split_content", "request_user_decision"],
             "visualization_policy": {
                 "style_source": "skill_builtin",
                 "template_objects_contribute": [
-                    "slot_geometry",
-                    "capacity",
-                    "z_order_anchor",
+                    "identity_evidence_only",
                 ],
                 "template_objects_do_not_contribute": [
                     "chart_style",
@@ -795,6 +798,8 @@ def build_template_artifacts(
             "slides": archetypes,
         }
         assets = _asset_manifest(package, slide_parts, canvas_emu)
+        assets["template_kind"] = "brand"
+        assets["template_reuse"] = "identity_only"
 
     outputs = {
         "template_manifest": output_dir / "template_manifest.json",

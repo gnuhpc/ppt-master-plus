@@ -10,6 +10,11 @@ This workflow edits the global brand library, not any specific `projects/<x>/`. 
 
 > Companion: [`create-template.md`](./create-template.md) generates full templates with SVG pages. Use `create-brand.md` when the user wants identity-only locking with free page layout.
 
+> **PPTX import rule:** an explicitly user-provided `.pptx` always materializes
+> as a Brand. It must never be imported as a Deck page roster. For a one-off new
+> presentation, use the public `Create PPTX from Template` route; create a
+> reusable Brand package only when the user explicitly requests library upkeep.
+
 ## When to Run
 
 | User signal | Action |

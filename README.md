@@ -8,7 +8,7 @@
 
 用户只需选择三类目标：重新生成/设计页面走 **Generate PPTX**；保留现有
 演示文稿并局部修改走 **Edit Native PPTX**；显式导入用户给定的 `.pptx`
-文件作为模板、再用另一组内容生成新文件走 **Create PPTX from Template**。详细判定见
+文件作为品牌参考、再用另一组内容生成新文件走 **Create PPTX from Template**。详细判定见
 [`workflows/routing.md`](workflows/routing.md)。
 
 ## 安装
@@ -41,10 +41,10 @@
 | **PPTX intake / source profile** | PPTX 可经 `ppt_to_md.py` 提取为 Markdown 后作为普通资料进入主流程。 | `import-sources` 会额外运行 `pptx_intake.py`，生成 `analysis/source_profile.json`、`<stem>.identity.json`、`<stem>.slide_library.json`，把画布、主题、几何、表格和图表事实提供给 Strategist 作上下文。 |
 | **美化入口路由** | 既有 PPTX 作为资料输入主生产流程，Strategist 可自由重构叙事、页数、页序和视觉系统；不单独区分“保留原稿”的美化契约。 | 路由边界更清晰：重新设计 → Generate PPTX；保留原生设计并局部修改 → [`Edit Native PPTX`](workflows/edit-native-pptx.md)；显式 1:1 重排 → [`faithful-beautify`](workflows/profiles/faithful-beautify.md)。 |
 | **保真美化（Faithful Beautify）** | 不提供独立 1:1 保真美化路线；若输入 PPTX，仍按资料重建，不把原页数、页序、逐页文字或母版当作锁定契约。 | 专属工作流 [`beautify-pptx.md`](workflows/profiles/faithful-beautify.md)：<br>• **画布原尺寸**：`beautify_identity.py` 从 PPTX `p:sldSz` 读取精确像素尺寸，不强制归一化到 1280×720<br>• **内容冻结契约**：`pptx_intake.py` + `beautify_inventory.py` 生成逐页台账（文字/图表数据/表格/图片），文字逐字冻结，数据值锁定，严格 1:1 页数映射<br>• **源身份提取**：`analysis/<stem>.identity.json` 含主题调色板、实际观察字体/字号；Confirm UI 以源 PPT 风格预填，用户可确认或覆盖<br>• **`preserve_master`**：OOXML 级逐页保留，源第 N 页的 slideLayout/master 映射到输出第 N 页，主版式背景/Logo/页脚等 PPT 原生元素由母版承载<br>• **输出验证**：对导出 PPTX 重跑 `ppt_to_md.py`，逐页核对文字保真度和页数 |
-| **Deck 模板** | 当前索引 2 套。 | **31 套**：保留 Plus 原有中文行业与活动模板，并并入 Master 缺失项；配 3 套专属版式规范指导文件（[`executor-general.md`](references/executor-general.md)、[`executor-consultant.md`](references/executor-consultant.md)、[`executor-consultant-top.md`](references/executor-consultant-top.md)）。 |
+| **Deck 模板** | 当前索引 2 套。 | **30 套**：保留 Plus 原有中文行业模板，并并入 Master 缺失项；配 3 套专属版式规范指导文件（[`executor-general.md`](references/executor-general.md)、[`executor-consultant.md`](references/executor-consultant.md)、[`executor-consultant-top.md`](references/executor-consultant-top.md)）。用户导入的 PPTX 一律不注册为 Deck。 |
 | **图表 / 信息图 SVG** | 当前索引 33 个。 | **139 个**，冲突项以 Plus 资产为准。 |
 | **Layout 骨架** | 当前索引 7 组。 | **37 组**，同时保留 legacy flat 与新增 structured workspace。 |
-| **Brand / Style preset** | 20 套 Brand、12 套 Style。 | **28 套 Brand、12 套 Style**；包括 `flink_ai_style`，其本地修改保持不变。 |
+| **Brand / Style preset** | 20 套 Brand、12 套 Style。 | **30 套 Brand、12 套 Style**；包括 `apsara_yunqi_26_light`、`ffa_shenzhen` 与 `flink_ai_style`。 |
 | **Table / Sound** | 6 个 Table、186 个 Sound。 | 同步并入 **6 个 Table、186 个 Sound**，仅在显式原生对象或音视频工作流中启用。 |
 | **图标库** | 12,027 个 SVG，含 chunk-filled / phosphor-duotone / simple-icons / tabler-filled / tabler-outline 五套图标库。 | 同款 5 套图标库、同等规模（12,027 个）；图标检索和复制流程相同。 |
 | **外部绘图路由** | 主要依靠内置 SVG、图表模板和图标库完成图解表达。 | **软依赖绘图路由器**：可按场景分流到 `fireworks-tech-graph`、`excalidraw`（手绘风格可编辑源文件）、`Mermaid`、`PlantUML`、`draw.io` 或 `tldraw`；环境缺失时自动降级回内置 SVG，绝不阻塞主流程。 |
@@ -61,10 +61,11 @@
 
 | AI Agent | 推荐模型 / 档位 | 适用场景 |
 |---|---|---|
+| GLM | **`GLM 5.3`（首推）** / `GLM 5.2` | 完整端到端 PPTX 生产、中文资料理解、长上下文规划和逐页制作 |
 | Antigravity CLI | `gemini-flash 3.5` / `high` | 长资料 intake、连续制稿、需要较强吞吐和上下文保持的 PPTX 生产 |
 | Codex | `gpt5.5` / `medium` | 叙事重构、设计确认、逐页 SVG 制作和质量检查的均衡配置 |
 
-如果环境允许，也可以按任务阶段切换：Antigravity CLI 处理资料量大、连续生产压力高的项目；Codex 处理需要精修判断、文件修订和质量检查的项目。
+首选 `GLM 5.3`；环境或版本约束下可使用 `GLM 5.2`。也可以按任务阶段切换：Antigravity CLI 处理资料量大、连续生产压力高的项目；Codex 处理需要精修判断、文件修订和质量检查的项目。
 
 ## 主要功能
 
@@ -171,21 +172,22 @@
 | 保留原页数、页序、每页文字和数据，只优化版式、层级、留白和视觉一致性 | 支持 | `faithful-beautify` |
 | 把 PPTX 当作资料来源，重新组织故事、拆分/合并页面、调整页数或重排结构 | 支持 | 主生产流程 |
 | 对成品 PPTX 追加讲稿、音频、自动播放、转场等，不改变可见内容和布局 | 支持 | `Edit Native PPTX` |
-| 用户显式给定一个 `.pptx` 文件作为模板，再填入另一批新内容 | 支持 | `Create PPTX from Template`：先只读导入该用户文件，模板与内容分离，原生自适应填充并导出新 PPTX |
+| 用户显式给定一个 `.pptx` 文件作为品牌参考，再填入另一批新内容 | 支持 | `Create PPTX from Template`：先只读导入为 Brand，模板与内容分离，在锁定品牌身份下生成新的 PPTX |
 
 模板路线不把示例文字当内容，也不只依赖 PowerPoint placeholder。系统会提取
-规范页、普通文本框/形状/图片/组合的语义槽位、容量和锁定规则；无法安全识别
-的对象默认锁定，内容超限时按精简、模板内调整、切换原型、复制拆页的顺序处理。
-图表、表格、信息图和流程/框架图不继承模板示例样式：模板只提供槽位、容量、
-层级锚点以及锁定的配色和字体，具体可视化结构从 Skill 内置图表/表格目录选择，
-再适配到模板的品牌令牌中；模板中的示例数据同样不会进入最终内容。
+规范页、普通文本框/形状/图片/组合中的品牌身份线索；无法安全识别的内容不会
+进入输出。导入的 PPTX **一律归类为 Brand，不归类为 Deck**：仅复用画布、配色、
+字体、Logo、Icon、背景资产与视觉语气，不复用页面原型、母版/版式、对象几何或
+模板示例内容。图表、表格、信息图和流程/框架图不继承模板示例样式，具体可视化
+结构从 Skill 内置图表/表格目录选择，再适配到锁定的品牌令牌中；模板中的示例数据
+同样不会进入最终内容。
 该路线不按模板名称搜索，也不从 Skill 内部 Brand、Style、Layout 或 Deck
 资产中代选模板；未提供明确 `.pptx` 文件时，必须先请用户提供文件。
 
 ### 从用户 PPTX 导入模板
 
 `Create PPTX from Template` 的模板来源必须是用户明确提供的 `.pptx` 文件，先导入
-项目并只读保存，再进行页面原型和槽位分析：
+项目并只读保存，再进行品牌身份和资产分析：
 
 ```bash
 python3 scripts/project_manager.py init <project_name> --format ppt169
@@ -194,8 +196,9 @@ python3 scripts/project_manager.py import-template <project_path> /path/to/user-
 
 导入会生成 `analysis/template_manifest.json`、`template_design_tokens.json`、
 `template_archetypes.json`、`template_assets.json` 和页面预览；原始文件不移动、不覆盖，
-项目副本标记为只读。品牌名称可以由用户显式声明（例如 `FFA`），但不会从模板示例
-文字或文件名猜测；后续生成时，模板负责版式与品牌令牌，图表/表格/信息图样式仍由
+项目副本标记为只读。`template_archetypes.json` 仅用于诊断，绝不成为页面原型库。
+品牌名称可以由用户显式声明（例如 `FFA`），但不会从模板示例文字或文件名猜测；后续
+生成时，导入 Brand 负责身份令牌和资产，页面版式自由规划，图表/表格/信息图样式仍由
 Skill 内置可视化目录提供。
 
 ## 模板与图例丰富度
@@ -204,16 +207,16 @@ Skill 内置可视化目录提供。
 
 | 资产类型 | `ppt-master` | `ppt-master-plus` | 说明 |
 |---|---:|---:|---|
-| Deck 模板 | 2 套 | **31 套** | Plus 既有模板优先，并入 Master 缺失项 |
+| Deck 模板 | 2 套 | **30 套** | Plus 既有模板优先，并入 Master 缺失项；用户导入 PPTX 不会进入此类 |
 | 其中：传统行业模板 | — | **21 套** | `ppt-master-plus` 专有，适合中文商业场景、课件、述职、答辩、项目架构等 |
 | 图表 / 信息图 SVG | 33 个 | **139 个** | 合并索引与文件，ID 冲突保留 Plus |
 | Layout 骨架 | 7 组 | **37 组** | legacy flat 与 structured workspace 并存 |
-| Brand preset | 20 套 | **28 套** | 包含并保护 `flink_ai_style` |
+| Brand preset | 20 套 | **30 套** | 包含 `apsara_yunqi_26_light`、`ffa_shenzhen` 并保护 `flink_ai_style` |
 | Style preset | 12 套 | **12 套** | 显式 Style workspace 才启用 |
 | Table / Sound | 6 / 186 | **6 / 186** | 原生表格与音视频工作流按需启用 |
 | 图标库（SVG 数量） | 12,027 个 | 12,027 个（同） | chunk-filled / phosphor-duotone / simple-icons / tabler-filled / tabler-outline 五套 |
 
-这些内置资产不是单纯的静态素材库。Generate 只在用户明确选择内部模板路径时使用；用户显式给定的 `.pptx` 文件则由独立的 Create PPTX from Template 路线先只读导入、再通过原生 round-trip 使用，不注册为公共模板资产。
+这些内置资产不是单纯的静态素材库。Generate 只在用户明确选择内部模板路径时使用；用户显式给定的 `.pptx` 文件则由独立的 Create PPTX from Template 路线先只读导入为项目级 Brand，再以生成引擎创建新页面，不注册为公共 Deck 或可复用页面资产。
 
 ## 基本架构
 
@@ -297,11 +300,10 @@ Post-processing
 - **极简视图控制与真·全屏演示**
   - 在播放模式的右上角控制条中，将“分屏模式”、“仅片子 (100% 高度 + 0内边距完美撑满全屏)”、“仅讲稿 (100% 高度)”整合成一个极简的 **单键 Toggle 按钮**，一键循环切换。
   - 右上角操作控制条支持 3 秒无操作自动向上收起和淡出隐藏，鼠标在全屏移动时立刻淡入浮现，保证零元素干扰的高保真演示。
-- **新增原生 PPTX 模版填充工作流 (Template Fill Workflow)**
-  - 支持直接将新内容填充 to 已有 PPTX 原生模版中，无需经过 SVG 转换，完美保留原幻灯片的主题、图表、表格、逻辑布局与复杂动画。
-  - 提供模版分析 (`analyze`)、填充方案生成 (`scaffold`)、文字容量智能校验 (`check-plan`)、应用填充 (`apply`) 和提取验证 (`ppt_to_md.py`) 的全套闭环流程。
+- **原生 PPTX 编辑能力收敛**
+  - 保留原文件的局部修改、讲稿、旁白、转场和动画统一进入 `Edit Native PPTX`；用户提供的 PPTX 若用于新内容生成，则只导入为 Brand，而不再作为原生 Deck 填充骨架。
 - **模板与图表资产库大幅扩容**
-  - **模版扩充**：新增 21 套传统行业模版和 1 套 ffa_shenzhen 模版，使模版总数从 8 套扩增至 **30 套**，覆盖商业汇报、竞聘述职、学术答辩等全场景。
+  - **模版扩充**：新增 21 套传统行业模版，使 Deck 模版总数从 8 套扩增至 **30 套**，覆盖商业汇报、竞聘述职、学术答辩等全场景；`ffa_shenzhen` 作为 Brand 身份预设维护。
   - **图表扩充**：新增 60 个 SVG 图表/信息图，使图表总数扩充至 **131 个**，涵盖更多行业可视化场景。
   - **Layout 骨架扩充**：新增 16 组 Layout 骨架，使骨架总数从 7 组扩充至 **23 组**，包含极简商务、编辑性衬线、水彩多彩、产品发布等风格。
   - **新增品牌预设**：增加 `flink_ai_style` 品牌风格预设。
@@ -321,7 +323,7 @@ Post-processing
 
 ## 致敬 ppt-master
 
-`ppt-master-plus` 继承并致敬 [`ppt-master`](https://github.com/hugohe3/ppt-master)：它保留了原有 skill 对”原生可编辑 PPTX””高质量 SVG 页面””模板驱动制作”和”中文汇报场景”的执着，同时在此基础上把 Deck 模板从 8 套扩充到 30 套（新增 21 套传统行业模板和 ffa_shenzhen）、图表 SVG 从 71 个扩充到 131 个、Layout 骨架从 7 组扩充到 23 组，并新增了讲稿质检能力和更严格的生产流程。
+`ppt-master-plus` 继承并致敬 [`ppt-master`](https://github.com/hugohe3/ppt-master)：它保留了原有 skill 对”原生可编辑 PPTX””高质量 SVG 页面””模板驱动制作”和”中文汇报场景”的执着，同时在此基础上把 Deck 模板从 8 套扩充到 30 套（新增 21 套传统行业模板）、图表 SVG 从 71 个扩充到 131 个、Layout 骨架从 7 组扩充到 23 组，并新增了讲稿质检能力和更严格的生产流程。
 
 这个 `plus` 不是推翻，而是延展：在 [`ppt-master`](https://github.com/hugohe3/ppt-master) 的地基上，把新的 intake / beautify / enhance 工具链、分阶段审核、PPTX 原生增强、软依赖绘图路由和更严格的生产纪律合并到一条更完整的工作流里。
 

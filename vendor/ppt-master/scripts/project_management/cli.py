@@ -1120,10 +1120,10 @@ class ProjectManager:
         context = {
             "schema": "ppt-master-plus.route-context.v1",
             "route": "create_pptx_from_template",
-            "engine": "edit_native",
-            "profile": "template_fill",
-            "adaptation": "native_adaptive",
-            "modules": ["page_plan", "content_edit"],
+            "engine": "svg_generate",
+            "profile": "imported_brand",
+            "adaptation": "brand_identity",
+            "modules": [],
             "visualization_style_source": "skill_builtin",
             "visualization_catalogs": [
                 "templates/charts/charts_index.json",
@@ -1132,6 +1132,9 @@ class ProjectManager:
             "template_origin": "user_provided_pptx",
             "template_import_required": True,
             "template_import_mode": "readonly_copy",
+            "template_kind": "brand",
+            "template_reuse": "identity_only",
+            "template_archetypes_reusable": False,
             "template_pptx": str(destination.relative_to(project_dir)),
             "template_sha256": source_digest,
             "content_sources": content_sources,
@@ -1337,7 +1340,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     import_template = subparsers.add_parser(
         "import-template",
-        help="Import a user-provided .pptx file read-only and analyze it as a template",
+        help="Import a user-provided .pptx file read-only and analyze it as an identity-only Brand",
     )
     import_template.add_argument("project_path", help="Project directory")
     import_template.add_argument("template_pptx", help="User-provided .pptx file path")
@@ -1374,7 +1377,7 @@ def build_parser() -> argparse.ArgumentParser:
 
     native_plan = subparsers.add_parser(
         "native-plan",
-        help="Write a confirmed round-trip page plan and clone repeated archetypes",
+        help="Write a confirmed round-trip page plan for Edit Native PPTX only",
     )
     native_plan.add_argument("project_path", help="Round-trip workspace")
     native_plan.add_argument(

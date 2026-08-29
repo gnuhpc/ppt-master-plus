@@ -191,8 +191,9 @@ class PptMasterPlusContractTests(unittest.TestCase):
             self.assertIn(route, skill_text)
             self.assertIn(route, routing)
         self.assertIn("create_pptx_from_template", routing)
-        self.assertIn("template_fill", routing)
-        self.assertIn("native_adaptive", routing)
+        self.assertIn("imported_brand", routing)
+        self.assertIn("brand_identity", routing)
+        self.assertIn("template_kind: brand", routing)
         self.assertIn(
             "这份 PPTX 是要保留现有内容继续修改，还是仅作为模板，用新内容生成一份新的 PPTX？",
             routing,
