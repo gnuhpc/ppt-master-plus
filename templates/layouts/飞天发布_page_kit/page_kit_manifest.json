@@ -1,0 +1,124 @@
+{
+  "schema": "ppt-master-plus.brand-page-kit.v2",
+  "prototype_source": "prototype_source.pptx",
+  "roles": [
+    {
+      "role": "cover",
+      "source_slide": 1,
+      "copy_strategy": "native_roundtrip_clone",
+      "shell_policy": "native_prototype",
+      "locked_objects": [
+        "206",
+        "207",
+        "208",
+        "211",
+        "212",
+        "213",
+        "214",
+        "215",
+        "216"
+      ],
+      "editable_slots": [
+        "209",
+        "210"
+      ]
+    },
+    {
+      "role": "toc",
+      "source_slide": 4,
+      "copy_strategy": "native_roundtrip_clone",
+      "shell_policy": "native_prototype",
+      "locked_objects": [
+        "274",
+        "275",
+        "278",
+        "282",
+        "285",
+        "288",
+        "291",
+        "296",
+        "297",
+        "298",
+        "299"
+      ],
+      "editable_slots": [
+        "292",
+        "293",
+        "294",
+        "295"
+      ]
+    },
+    {
+      "role": "section",
+      "source_slide": 5,
+      "copy_strategy": "native_roundtrip_clone",
+      "shell_policy": "native_prototype",
+      "locked_objects": [
+        "301",
+        "304"
+      ],
+      "editable_slots": [
+        "302",
+        "303"
+      ]
+    },
+    {
+      "role": "content",
+      "source_slide": 10,
+      "copy_strategy": "native_roundtrip_clone",
+      "shell_policy": "master_layout_plus_empty_title",
+      "locked_objects": [],
+      "editable_slots": [
+        "440"
+      ],
+      "content_edit_policy": "add_slide_local_content_over_locked_master_layout"
+    },
+    {
+      "role": "closing",
+      "source_slide": 37,
+      "copy_strategy": "native_roundtrip_clone",
+      "shell_policy": "native_prototype",
+      "locked_objects": [
+        "1022",
+        "1023",
+        "1024",
+        "1025",
+        "1026",
+        "1027",
+        "1028",
+        "1029",
+        "1030",
+        "1031",
+        "1042",
+        "1043",
+        "1044",
+        "1050"
+      ],
+      "editable_slots": [
+        "1032",
+        "1033",
+        "1034",
+        "1035",
+        "1036",
+        "1037",
+        "1038",
+        "1039",
+        "1040",
+        "1041",
+        "1045",
+        "1046",
+        "1047",
+        "1048",
+        "1049"
+      ]
+    }
+  ],
+  "selection_source": "Brand Import Web",
+  "excluded_roles": [
+    "guide",
+    "unusable",
+    "unselected"
+  ],
+  "reuse": "web_confirmed_native_prototypes_and_master_layout_shells",
+  "content_shell_policy": "strip every slide-local object; retain only the selected slide's Master/Layout inheritance, including Master background images, Master text and Master/Layout placeholders, plus an empty editable large-title text frame with its original typography and geometry"
+}

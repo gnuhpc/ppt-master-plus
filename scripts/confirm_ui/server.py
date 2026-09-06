@@ -137,7 +137,7 @@ def _result_stage(result_file: Path) -> Optional[str]:
 # confirmed in Tier 1), so their values live only in browser STATE — lost on a
 # refresh. Folding them from result.json into the served Tier-2 recommendations
 # lets the page re-initialize them from the user's actual choices.
-_ANCHOR_RECOMMEND_KEYS = ('canvas', 'brand', 'mode', 'visual_style', 'delivery_purpose')
+_ANCHOR_RECOMMEND_KEYS = ('canvas', 'brand', 'page_kit', 'mode', 'visual_style', 'delivery_purpose')
 _ANCHOR_VALUE_KEYS = ('audience', 'content_divergence')
 
 
@@ -313,6 +313,12 @@ def _build_catalogs() -> dict:
         pc = binfo.get('primary_color')
         if pc:
             entry['primary_color'] = pc
+        page_kit_layout_id = binfo.get('page_kit_layout_id')
+        if isinstance(page_kit_layout_id, str) and page_kit_layout_id:
+            entry['page_kit'] = {
+                'layout_id': page_kit_layout_id,
+                'default': 'use_page_kit',
+            }
         brand_list.append(entry)
     data['brands'] = brand_list
     return data

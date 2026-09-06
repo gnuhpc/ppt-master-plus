@@ -201,7 +201,7 @@ come from exactly these discovery sources:
 - `templates/brands/brands_index.json`
 - `templates/styles/styles_index.json`
 - `templates/layouts/layouts_index.json`
-- `templates/decks/decks_index.json`
+- `templates/packs/packs_index.json`
 
 Derive each library root as `templates/<kind_dir>/<id>/` from its index entry.
 Never scan kind directories, infer unregistered entries, or resolve a bare name,
@@ -209,6 +209,10 @@ brand mention, or style phrase to a path. Preserve every exact root supplied for
 this run. A registered-root equality match remains `library`; every other exact
 root remains `explicit`. Candidate provenance never changes later validation,
 installation, or precedence.
+
+A selected Pack is provenance and discovery metadata, not a design authority.
+Expand it to its referenced Brand, Style, and Layout before installation; an
+explicit component selection overrides the same component supplied by the Pack.
 
 Resolve the confirmation surface under
 [`confirm_ui.md`](../scripts/docs/confirm_ui.md). In the UI branch, run
@@ -274,7 +278,7 @@ Then load only the extra role modules triggered by the current plan:
 
 | Deterministic trigger | Additional Strategist reference |
 |---|---|
-| Stage 1 is confirmed and its template choice installed a selected Brand/Style/Layout/Deck workspace into this project | `references/strategist-template.md` before Stage 2 |
+| Stage 1 is confirmed and its template choice installed a selected Brand/Style/Layout/Pack workspace into this project | `references/strategist-template.md` before Stage 2 |
 | The confirmed Stage-1 `delivery_context` identifies recorded/self-running/video delivery, or input is an explicit final/literal narration script | `references/video-design.md` before the three Stage-2 whole solutions and page roster |
 
 After Stage 1 and template handoff, load the fixed planning-capability block
@@ -705,7 +709,7 @@ group on both pages.
 
 `template_reuse_scope: style`, Style-only, free-design, and brand-only pages use
 `pptx_structure.mode: flat`. Style supplies no prototype mappings; beside
-Layout/Deck it changes only Direction/method and follows that structure plan.
+Layout it changes only Direction/method and follows that structure plan.
 Draw the complete flat page as ordinary Slide-local SVG. Omit
 `pptx_masters` / `pptx_layouts` / `page_pptx_layouts`, root Master/Layout
 identity, layers, and placeholders; group logical content with top-level

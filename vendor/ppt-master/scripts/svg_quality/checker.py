@@ -820,7 +820,7 @@ IMAGE_DOWNSIZE_WARN_RATIO = 4.0
 IMAGE_DOWNSIZE_WARN_MIN_BYTES = 1024 * 1024
 
 _TEMPLATE_SPEC_NAME_RE = re.compile(
-    r'design_spec\.(?P<kind>brand|style|layout|deck)\.(?P<id>[^/\\]+)\.md'
+    r'design_spec\.(?P<kind>brand|style|layout|pack)\.(?P<id>[^/\\]+)\.md'
 )
 
 
@@ -861,9 +861,9 @@ def _roster_spec_paths(directory: Path) -> list[Path]:
     for spec in _template_spec_paths(directory):
         match = _TEMPLATE_SPEC_NAME_RE.fullmatch(spec.name)
         if match is not None:
-            if match.group('kind') in {'layout', 'deck'}:
+            if match.group('kind') == 'layout':
                 roster.append(spec)
-        elif _design_spec_kind(spec) not in {'brand', 'style'}:
+        elif _design_spec_kind(spec) == 'layout':
             roster.append(spec)
     return roster
 
@@ -871,17 +871,15 @@ def _roster_spec_paths(directory: Path) -> list[Path]:
 def _roster_spec_path(directory: Path) -> Path | None:
     """Return the effective spec that owns this directory's SVG roster.
 
-    A project root may carry both Layout and Deck. Layout owns reusable
-    structure when present; Deck owns it only when no Layout is installed.
+    Layout is the only template kind that owns reusable SVG structure.
     """
     roster = _roster_spec_paths(directory)
     for spec in roster:
         if spec.name == 'design_spec.md':
             return spec
-    for kind in ('layout', 'deck'):
-        for spec in roster:
-            if _spec_declared_kind(spec) == kind:
-                return spec
+    for spec in roster:
+        if _spec_declared_kind(spec) == 'layout':
+            return spec
     return None
 
 
@@ -904,8 +902,8 @@ def _design_spec_kind(spec_path: Path) -> str | None:
     for line in fm_block.splitlines():
         stripped = line.strip()
         match = re.fullmatch(
-            r'''kind\s*:\s*(?:(['"])(brand|style|layout|deck)\1|'''
-            r'''(brand|style|layout|deck))'''
+            r'''kind\s*:\s*(?:(['"])(brand|style|layout|pack)\1|'''
+            r'''(brand|style|layout|pack))'''
             r'''(?:\s+#.*)?\s*''',
             stripped,
         )
@@ -6568,42 +6566,11 @@ class SVGQualityChecker:
                     + ', '.join(duplicate_kinds),
                 ))
                 return self.results
-            active_roster_spec = _roster_spec_path(spec_dir)
-            shadowed_deck_specs = [
-                spec
-                for spec in _roster_spec_paths(spec_dir)
-                if spec != active_roster_spec
-                and _spec_declared_kind(spec) == 'deck'
-            ]
-            for spec in shadowed_deck_specs:
-                try:
-                    from register_template import (
-                        SpecParseError,
-                        validate_shadowed_deck_spec,
-                    )
-                    declared_pages = self._extract_spec_roster(
-                        spec.read_text(encoding='utf-8')
-                    )
-                    validate_shadowed_deck_spec(spec, declared_pages)
-                except ImportError as exc:
-                    self._template_issues.append((
-                        'error',
-                        'deck_contract',
-                        f'Shadowed Deck validator could not be imported: {exc}',
-                    ))
-                    return self.results
-                except (OSError, SpecParseError) as exc:
-                    self._template_issues.append((
-                        'error',
-                        'deck_contract',
-                        str(exc),
-                    ))
-                    return self.results
             roster_free = [
                 (spec, kind)
                 for spec in _template_spec_paths(spec_dir)
                 for kind in [_spec_declared_kind(spec)]
-                if kind in {'brand', 'style'}
+                if kind in {'brand', 'style', 'pack'}
             ]
             for spec, spec_kind in roster_free:
                 self._spec_only_template_kind = spec_kind
@@ -6624,10 +6591,12 @@ class SVGQualityChecker:
                     from register_template import (
                         SpecParseError,
                         validate_brand_workspace,
+                        validate_pack_workspace,
                         validate_style_workspace,
                     )
                     validator = {
                         'brand': validate_brand_workspace,
+                        'pack': validate_pack_workspace,
                         'style': validate_style_workspace,
                     }[spec_kind]
                     validator(workspace_root)
@@ -6647,7 +6616,7 @@ class SVGQualityChecker:
                     ))
                 if spec_valid:
                     self.summary['passed'] += 1
-            # A roster-bearing Layout/Deck spec may sit beside those in one
+            # A roster-bearing Layout spec may sit beside those in one
             # project workspace; only then does SVG validation still apply.
             if roster_free and _roster_spec_path(spec_dir) is None:
                 return self.results
@@ -6657,7 +6626,7 @@ class SVGQualityChecker:
             svg_files = [dir_path]
         else:
             if self.template_mode:
-                # Template directories live at templates/{layouts,decks}/<id>/.
+                # Layout workspaces are the only template directories with SVGs.
                 svg_files = discover_slide_svgs(dir_path)
             else:
                 svg_output = dir_path / \
@@ -8319,7 +8288,7 @@ class SVGQualityChecker:
             self._template_issues.append((
                 'error',
                 'spec_missing',
-                "one Layout or Deck Design Spec is required for every SVG roster",
+                "one Layout Design Spec is required for every SVG roster",
             ))
 
         # Per-file placeholder coverage. Variants reuse the parent type's set

@@ -2778,9 +2778,8 @@ def _preflight_output(
             raise MirrorMaterializationError(
                 f"Template output is not a directory: {templates_root}"
             )
-        # Brand/Style specs own no roster. During a Layout transition, one Deck
-        # spec may also remain after its lower-priority roster was withheld by
-        # the parent workflow. Any other payload would contend with this run.
+        # Brand/Style specs own no roster and Pack is provenance only. Any
+        # other payload would contend with this Layout materialization run.
         existing = sorted(templates_root.iterdir())
         coexisting_specs = [
             path
@@ -2821,7 +2820,7 @@ def _preflight_output(
 
 
 _MIRROR_COEXISTING_SPEC_NAME_RE = re.compile(
-    r"design_spec\.(?P<kind>brand|style|deck)\.[^/\\]+\.md"
+    r"design_spec\.(?P<kind>brand|style|pack)\.[^/\\]+\.md"
 )
 
 
@@ -3286,8 +3285,7 @@ def build_parser() -> argparse.ArgumentParser:
         type=Path,
         help=(
             "Template workspace destination (templates/ must own no roster; "
-            "qualified Brand/Style specs or one Deck spec staged for Layout "
-            "supersession may remain)"
+            "qualified Brand/Style/Pack specs may remain)"
         ),
     )
     return parser

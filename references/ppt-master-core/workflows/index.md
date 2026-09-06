@@ -25,7 +25,7 @@ Maintainer-only inventory for adding, moving, or removing workflow documents. Ru
 | `create-brand` | Template child workflow | [`create-template/create-brand.md`](./create-template/create-brand.md) | Create Template |
 | `create-style` | Template child workflow | [`create-template/create-style.md`](./create-template/create-style.md) | Create Template |
 | `create-layout` | Template child workflow | [`create-template/create-layout.md`](./create-template/create-layout.md) | Create Template |
-| `create-deck` | Template child workflow | [`create-template/create-deck.md`](./create-template/create-deck.md) | Create Template |
+| `create-pack` | Template child workflow | [`create-template/create-pack.md`](./create-template/create-pack.md) | Create Template |
 | `topic-research` | Research/source-preparation stage | [`stages/topic-research.md`](./stages/topic-research.md) | Inside Generate Step 1 |
 | `web-image-review` | Image-review stage | [`stages/web-image-review.md`](./stages/web-image-review.md) | Generate Step 5 bounded multimodal review between web candidate-page save and promotion |
 | `resume-execute` | Control stage | [`stages/resume-execute.md`](./stages/resume-execute.md) | Generate Step 6 resume |

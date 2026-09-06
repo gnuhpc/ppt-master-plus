@@ -2,15 +2,15 @@
 
 # PPTX Structure Interface
 
-Conditional interface for PowerPoint Master, Layout, fixed-layer, and placeholder authoring. In Generate, load only for Default `spec_lock.md pptx_structure.mode: structured` or Quick structured Slide authoring from an installed Layout/Deck owner.
+Conditional interface for PowerPoint Master, Layout, fixed-layer, and placeholder authoring. In Generate, load only for Default `spec_lock.md pptx_structure.mode: structured` or Quick structured Slide authoring from an installed Layout owner.
 
 **Cross-reference map**: unqualified §1.5 and §4.2 references point to [`shared-standards-core.md`](./shared-standards-core.md); this file's own sections are §1–§3.
 
 ## 1. PPTX Structure Routing
 
-Every new SVG project declares one deterministic route. Free-design, brand-only, and `template_reuse_scope: style` projects use `pptx_structure.mode: flat`, omit `pptx_masters` / `pptx_layouts` / `page_pptx_layouts` / `page_layouts`, and author no Master/Layout/layer/placeholder metadata. Export keeps all represented content Slide-local while materializing one clean project-owned Master plus one Blank Layout from the current color/typography lock; stock content placeholders and unused built-in Layouts are removed, while the standard date/footer/slide-number capability hooks remain. Deck/layout template projects whose AI-derived lock records `template_reuse_scope: mirror|layout` use `mode: structured`; `standard` / `fidelity` templates use their authored contract, while mirror templates use the validated source identities and parentage declared by the newly authored compact workspace.
+Every new SVG project declares one deterministic route. Free-design, brand-only, and `template_reuse_scope: style` projects use `pptx_structure.mode: flat`, omit `pptx_masters` / `pptx_layouts` / `page_pptx_layouts` / `page_layouts`, and author no Master/Layout/layer/placeholder metadata. Export keeps all represented content Slide-local while materializing one clean project-owned Master plus one Blank Layout from the current color/typography lock; stock content placeholders and unused built-in Layouts are removed, while the standard date/footer/slide-number capability hooks remain. Layout template projects whose AI-derived lock records `template_reuse_scope: mirror|layout` use `mode: structured`; `standard` / `fidelity` templates use their authored contract, while mirror templates use the validated source identities and parentage declared by the newly authored compact workspace.
 
-**Quick exception**: Lock-row/Strategist statements below are Default-only. Quick keeps free/Brand/Style-only flat; an installed Layout/Deck owner is structured unless visual-only, with identities on SVG roots and title/body anchors inferred from slot carriers.
+**Quick exception**: Lock-row/Strategist statements below are Default-only. Quick keeps free/Brand/Style-only flat; an installed Layout owner is structured unless visual-only, with identities on SVG roots and title/body anchors inferred from slot carriers.
 
 **Hard rule — no structure inference**: Flat export performs no promotion or deduplication; every object stays Slide-local. Structured template export compiles only declared root identities, atomic fixed layers, and slot groups—it does not assign Layout families, cluster pages, infer placeholders, repair missing metadata, or migrate legacy contracts. Create a new current workspace through [`create-template`](../workflows/create-template.md) before generating structured pages.
 

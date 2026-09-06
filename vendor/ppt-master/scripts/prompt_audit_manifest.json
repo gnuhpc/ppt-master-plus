@@ -100,15 +100,15 @@
       ],
       "max_tokens": 38000
     },
-    "route.create-template.deck": {
-      "description": "Create Deck standard/fidelity path through Template_Designer, the strategy-triggered native-shape bundle, SVG core, and the structured PPTX interface; mirror excludes the authored bundle.",
+    "route.create-template.pack": {
+      "description": "Create Pack standard/fidelity path through Template_Designer, the strategy-triggered native-shape bundle, SVG core, and the structured PPTX interface; mirror excludes the authored bundle.",
       "scope": "cumulative",
       "include": [
         "bootstrap.routing"
       ],
       "files": [
         "skills/ppt-master/workflows/create-template.md",
-        "skills/ppt-master/workflows/create-template/create-deck.md",
+        "skills/ppt-master/workflows/create-template/create-pack.md",
         "skills/ppt-master/references/template-designer.md",
         "skills/ppt-master/references/native-shape-authoring.md",
         "skills/ppt-master/references/preset-shape-vocabulary.md",
@@ -116,7 +116,7 @@
         "skills/ppt-master/references/pptx-structure-interface.md",
         "skills/ppt-master/references/canvas-formats.md",
         "skills/ppt-master/templates/README.md",
-        "skills/ppt-master/templates/decks/README.md"
+        "skills/ppt-master/templates/packs/README.md"
       ],
       "max_tokens": 83000
     },
@@ -296,11 +296,11 @@
       "max_tokens": 175000
     },
     "route.generate.quick-generate.template-fusion": {
-      "description": "Quick Generate with the maximum Brand, Style, Layout, and Deck exact-root fusion; installed Layout/Deck ownership determines flat or structured authoring. Ceiling raised after BUDGET_LOAD_SET reported 125689 tokens.",
+      "description": "Quick Generate with the maximum Brand, Style, Layout, and Pack exact-root fusion; installed Layout ownership determines flat or structured authoring. Ceiling raised after BUDGET_LOAD_SET reported 125689 tokens.",
       "scope": "cumulative",
       "include": [
         "route.generate.quick-generate",
-        "stage.generate.template.fusion-brand-style-layout-deck"
+        "stage.generate.template.fusion-brand-style-layout-pack"
       ],
       "files": [
         "skills/ppt-master/references/pptx-structure-interface.md"
@@ -477,16 +477,16 @@
       ],
       "max_tokens": 10000
     },
-    "stage.generate.template.deck": {
-      "description": "Conditional Deck workspace application with one selected Deck spec.",
+    "stage.generate.template.pack": {
+      "description": "Conditional Pack selection with one Pack spec expanded to its referenced components.",
       "scope": "incremental",
       "include": [
         "stage.generate.apply-template-workspace"
       ],
       "files": [
-        "skills/ppt-master/templates/decks/README.md",
+        "skills/ppt-master/templates/packs/README.md",
         {
-          "glob": "skills/ppt-master/templates/decks/*/templates/design_spec.md",
+          "glob": "skills/ppt-master/templates/packs/*/templates/design_spec.md",
           "select": 1,
           "load_event": "template-application"
         }
@@ -509,8 +509,8 @@
       ],
       "max_tokens": 8500
     },
-    "stage.generate.template.fusion-brand-style-layout-deck": {
-      "description": "Maximum supported cross-kind fusion with Brand, Style, Layout, and Deck contracts.",
+    "stage.generate.template.fusion-brand-style-layout-pack": {
+      "description": "Maximum supported cross-kind fusion with Brand, Style, Layout, and Pack contracts.",
       "scope": "incremental",
       "include": [
         "stage.generate.apply-template-workspace"
@@ -519,7 +519,7 @@
         "skills/ppt-master/templates/brands/README.md",
         "skills/ppt-master/templates/styles/README.md",
         "skills/ppt-master/templates/layouts/README.md",
-        "skills/ppt-master/templates/decks/README.md",
+        "skills/ppt-master/templates/packs/README.md",
         {
           "glob": "skills/ppt-master/templates/brands/*/templates/design_spec.md",
           "select": 1,
@@ -536,7 +536,7 @@
           "load_event": "template-application"
         },
         {
-          "glob": "skills/ppt-master/templates/decks/*/templates/design_spec.md",
+          "glob": "skills/ppt-master/templates/packs/*/templates/design_spec.md",
           "select": 1,
           "load_event": "template-application"
         }
@@ -721,13 +721,13 @@
       "max_tokens": 210000
     },
     "route.generate.deck-structured-no-image": {
-      "description": "Deck-preset structured Generate-PPTX path without image acquisition. Ceiling raised after BUDGET_LOAD_SET reported 197186 tokens.",
+      "description": "Layout-preset structured Generate-PPTX path without image acquisition. Ceiling raised after BUDGET_LOAD_SET reported 197186 tokens.",
       "scope": "cumulative",
       "include": [
         "route.generate.planning-template",
         "stage.generate.executor.structured",
         "stage.generate.executor.notes",
-        "stage.generate.template.deck"
+        "stage.generate.template.pack"
       ],
       "files": [],
       "max_tokens": 220000
@@ -1021,7 +1021,7 @@
       "max_tokens": 1000
     },
     "stage.create-template.authored-preset": {
-      "description": "Conditional native-shape and complete preset-vocabulary bundle loaded when Create Layout/Create Deck resolves to standard/fidelity, before any contour selection; mirror excludes it. Ceiling raised after BUDGET_LOAD_SET reported 9139 tokens.",
+      "description": "Conditional native-shape and complete preset-vocabulary bundle loaded when Create Layout/Create Pack resolves to standard/fidelity, before any contour selection; mirror excludes it. Ceiling raised after BUDGET_LOAD_SET reported 9139 tokens.",
       "scope": "incremental",
       "files": [
         "skills/ppt-master/references/native-shape-authoring.md",
@@ -1167,7 +1167,7 @@
         "kind": "exact",
         "fingerprint": "7c36a9231d14",
         "paths": [
-          "skills/ppt-master/templates/decks/README.md",
+          "skills/ppt-master/templates/packs/README.md",
           "skills/ppt-master/templates/layouts/README.md"
         ],
         "reason": "Shared boilerplate between sibling template-kind docs; kept in lockstep on purpose."
@@ -1276,10 +1276,10 @@
         "kind": "exact",
         "fingerprint": "6a432b0cc1df",
         "paths": [
-          "skills/ppt-master/templates/decks/README.md",
+          "skills/ppt-master/templates/packs/README.md",
           "skills/ppt-master/templates/layouts/README.md"
         ],
-        "reason": "Sibling Deck and Layout docs keep the shared replication-mode explanation in lockstep."
+        "reason": "Layout authoring docs keep the shared replication-mode explanation in lockstep."
       },
       {
         "kind": "exact",
@@ -1458,7 +1458,7 @@
     {
       "concern": "template-kind-schema",
       "from": "skills/ppt-master/workflows/stages/apply-template-workspace.md",
-      "to": "skills/ppt-master/templates/decks/README.md"
+      "to": "skills/ppt-master/templates/packs/README.md"
     },
     {
       "concern": "svg-core-contract",
@@ -1586,9 +1586,9 @@
       "to": "skills/ppt-master/workflows/create-template/create-layout.md"
     },
     {
-      "concern": "create-deck-dispatch",
+      "concern": "create-pack-dispatch",
       "from": "skills/ppt-master/workflows/create-template.md",
-      "to": "skills/ppt-master/workflows/create-template/create-deck.md"
+      "to": "skills/ppt-master/workflows/create-template/create-pack.md"
     },
     {
       "concern": "quick-artifact-ownership",

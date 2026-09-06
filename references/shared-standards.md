@@ -169,7 +169,16 @@ One offending character invalidates the file and aborts export. Numeric refs (`&
 
 ## 4. Basic SVG Rules
 
-- **viewBox** must match the canvas dimensions (`width`/`height` must match `viewBox`)
+- **Root canvas (HARD rule)**: every authored slide starts with a complete root element. `xmlns`, unitless `width`, unitless `height`, and `viewBox` are all mandatory; `width` / `height` must exactly match the final two values of `viewBox`. `viewBox` alone is not sufficient — omitting `width` or `height` can make Live Preview render unpredictably.
+
+  ```xml
+  <!-- Example for the locked ppt169 canvas. Replace all four dimensions for another canvas. -->
+  <svg xmlns="http://www.w3.org/2000/svg" width="1280" height="720" viewBox="0 0 1280 720">
+    <!-- page content -->
+  </svg>
+  ```
+
+  Copy dimensions from `spec_lock.md canvas.viewBox`; do not infer, round, add CSS units, or reuse a prior deck's canvas. Before opening a page in Live Preview, inspect the root tag and repair any missing/mismatched attribute immediately.
 - **Background**: Use `<rect>` to define the page background color
 - **`<tspan>`** has two purposes: (1) manual line breaks (use `dy` or explicit `y`); (2) inline run formatting on the same line (color/weight/size). `<foreignObject>` is FORBIDDEN. See "Single logical line" rule below.
 - **Fonts**: every `font-family` stack MUST end with a pre-installed family (Microsoft YaHei / SimSun / Arial / Times New Roman / Consolas …); `@font-face` is FORBIDDEN. Full rule: [`strategist.md §g`](strategist.md).

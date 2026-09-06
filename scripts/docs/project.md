@@ -92,12 +92,18 @@ contracts and previews.
 
 ```bash
 python3 scripts/project_manager.py import-template <project_path> <template.pptx>
+python3 scripts/project_manager.py import-template <project_path> <template.pptx> --register-brand <brand_id> --register-icon-layout <icon_layout_id> --register-chart-layout <chart_layout_id>
 python3 scripts/project_manager.py set-output <project_path> <delivered.pptx>
 ```
 
+`--register-brand` creates a shared identity asset. The two optional Layout
+flags create separate, narrow Icon / Chart grammar assets; Chart grammar keeps
+only visual conventions and excludes source values, categories, sample copy,
+and page geometry.
+
 ## `pptx_template_import.py` (internal template-authoring maintenance)
 
-PPTX preparation entry point for internal Brand/Style/Layout/Deck maintenance.
+PPTX preparation entry point for internal Brand/Style/Layout/Pack maintenance.
 
 ```bash
 python3 scripts/pptx_template_import.py <template.pptx>

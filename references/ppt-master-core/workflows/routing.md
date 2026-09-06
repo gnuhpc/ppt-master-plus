@@ -31,7 +31,7 @@ route selection. After selection, the active runtime authority owns execution.
 | Route | Request shape | Authority | Preconditions | Mutation model | Output contract |
 |---|---|---|---|---|---|
 | Generate PPTX | Create, reconstruct, or visually regenerate a presentation/video from sources or a topic; templates remain optional | Image to PPTX: [`image-to-pptx`](./profiles/image-to-pptx.md), always Quick; Beautify: [`beautify-pptx`](./profiles/beautify-pptx.md), Default or Quick; ordinary [`generate-pptx`](./generate-pptx.md) / [`quick-generate`](./profiles/quick-generate.md) | Facts exist or research can gather them; Image to PPTX also requires Codex and an ordered page-frame roster | Author SVG pages and export a new PPTX | Default: spec/lock/SVG/PPTX; Quick: optional source/resource artifacts, no spec/lock, SVG/PPTX; either may derive narrated PPTX/MP4 |
-| Create Template | Create a reusable brand/style/layout/deck template from one or more PPTX/SVG files, images/PDFs, direct or file-based text, documents/websites, brand assets, or a mixed reference bundle | [`create-template`](./create-template.md) | A reusable-template request exists; reference material is optional, and project scope additionally requires an initialized target project | Author a new portable workspace; never modify any reference file in place | Workspace with required `templates/`, optional `images/` / `icons/`, and optional review `exports/` |
+| Create Template | Create a reusable Brand, Style, Layout, or Pack from one or more PPTX/SVG files, images/PDFs, direct or file-based text, documents/websites, brand assets, or a mixed reference bundle | [`create-template`](./create-template.md) | A reusable-template request exists; reference material is optional, and project scope additionally requires an initialized target project | Author a new portable workspace; never modify any reference file in place | Workspace with required `templates/`, optional `images/` / `icons/`, and optional review `exports/` |
 | Edit Native PPTX | Keep an existing PPTX's native design: fill it with new content, edit or restructure selected pages, or add notes, narration, timings, or transitions with visible slides untouched | [`edit-native-pptx`](./edit-native-pptx.md) | Source PPTX exists; new material only when content changes | `pptx_to_svg.py --roundtrip` workspace: unchanged pages restore byte-for-byte, edited pages rebuild only edited objects, notes/motion overlay | New PPTX in workspace `exports/` |
 
 ---
@@ -48,7 +48,7 @@ route selection. After selection, the active runtime authority owns execution.
 | Existing PPTX must be split, merged, or re-outlined into newly designed pages | Treat the PPTX as source content through the selected Generate authority's source intake; continue Default unless explicit Quick intent selected that runtime |
 | Existing PPTX pages are dropped, reordered, or repeated without redesign | Not Generate: route to Edit Native PPTX, whose `page_plan.json` owns selection, order, and repetition |
 | Default Generate reaches planning | Step 3 prepares template candidates without interaction. Stage 1 then confirms the communication contract and free-design/template choice together; only a confirmed non-free choice runs [`apply-template-workspace`](./stages/apply-template-workspace.md) before Stage 2 |
-| Explicit current brand/style/layout/deck workspace root outside Image to PPTX | Default Generate preserves the exact path as a Stage-1 template candidate; Quick Generate validates and installs it directly without Steps 3–4 or Confirm UI. Classify it as `library` only when its normalized root exactly matches a registered index entry; otherwise retain `explicit`. Consume the workspace root, never only its inner `templates/` directory |
+| Explicit current Brand/Style/Layout/Pack workspace root outside Image to PPTX | Default Generate preserves the exact path as a Stage-1 template candidate; Quick Generate validates and installs it directly without Steps 3–4 or Confirm UI. Classify it as `library` only when its normalized root exactly matches a registered index entry; otherwise retain `explicit`. Consume the workspace root, never only its inner `templates/` directory |
 | Split-mode project resumes in a fresh chat | Run [`resume-execute`](./stages/resume-execute.md) inside the active Generate route |
 | Existing generated project needs a deck-wide `colors.*` or universal `typography.font_family` substitution | Stay in Generate; load [`update_spec.py`](../scripts/docs/update_spec.md), honor its supported-key boundary, then rerun the final quality gate and Step 7 export |
 | User explicitly requests spec refinement | Run [`refine-spec`](./stages/refine-spec.md) after Design Spec Gate 1 and before lock Gate 2 |
@@ -69,11 +69,11 @@ loads both runtimes.
 stays inside Generate PPTX but owns an explicit SVG → PPTX short circuit. Page
 count alone never activates or blocks it. Conversion, bounded research, and
 project-local resources remain available. Package capabilities may be requested
-or agent-selected. Quick may consume exact Brand/Style/Layout/Deck workspaces,
-with at most one contribution per kind. All four kinds may combine; Layout takes
-structural precedence over Deck. A multi-kind project root contributes all of
-its specs atomically. Brand/Style-only and free-design Quick pages remain flat;
-when Layout or Deck owns structure, Quick authors the complete explicit
+or agent-selected. Quick may consume exact Brand/Style/Layout/Pack workspaces,
+with at most one contribution per base kind and at most one Pack. Pack expands
+to Brand/Style/Layout before installation, and explicit component choices
+override matching Pack references. Brand/Style-only and free-design Quick pages remain flat;
+when Layout owns structure, Quick authors the complete explicit
 Master/Layout/slot metadata and its lockless checker/exporter infers structured
 output from that all-page SVG contract. Runtime choice controls interaction and
 durable planning, not whether an installed structural template survives. Once selected, Quick
@@ -114,17 +114,15 @@ When a PPTX already contains native Master/Layout parts, `create-template` mirro
 | `brand` | Dispatch to [`create-brand`](./create-template/create-brand.md); write identity only and no SVG roster |
 | `style` | Dispatch to [`create-style`](./create-template/create-style.md); write reusable communication method and design direction only, with no SVG roster or native structure |
 | `layout` | Dispatch to [`create-layout`](./create-template/create-layout.md); author brand-neutral, application-neutral structure and an SVG roster |
-| `deck` | Dispatch to [`create-deck`](./create-template/create-deck.md); author descriptive recurring-application context with integrated identity, structure, and an SVG roster |
+| `pack` | Dispatch to [`create-pack`](./create-template/create-pack.md); reference at least two of Brand, Style, and Layout without owning design fields or assets |
 
 Create Template remains the fixed route name and owns the shared contract. These four documents are mutually exclusive child workflows, not additional top-level routes.
 
 **Hard rule — classify reusable rules, not source completeness**: A complete
-PPTX does not automatically select Deck. Use Brand when only identity is
-stable; use Style when reusable communication method and design direction
-should travel without identity truth, page prototypes, or native
-structure; use Layout when structure is brand-neutral and the communication
-application stays downstream-defined; use Deck when structure carries identity
-or reusable scenario/content semantics.
+PPTX does not create a special template kind. Use Brand for identity, Style for
+communication method and design direction, Layout for reusable structure, and
+Pack only when a discoverable combination of at least two of those components
+is required. Split mixed source facts across the applicable base kinds.
 
 ---
 
@@ -158,7 +156,7 @@ corresponding directories to construct or supplement the catalog:
 | Brand | [`brands_index.json`](../templates/brands/brands_index.json) |
 | Style | [`styles_index.json`](../templates/styles/styles_index.json) |
 | Layout | [`layouts_index.json`](../templates/layouts/layouts_index.json) |
-| Deck | [`decks_index.json`](../templates/decks/decks_index.json) |
+| Pack | [`packs_index.json`](../templates/packs/packs_index.json) |
 
 **Hard rule — one Stage-1 confirmation, delayed template reading**: Author the
 communication recommendation without reading candidate workspaces. Stage 1

@@ -9,7 +9,7 @@ Usage:
 
 Examples:
     python3 scripts/template_preview_pptx.py projects/my_template
-    python3 scripts/template_preview_pptx.py templates/decks/my_template -o review.pptx
+    python3 scripts/template_preview_pptx.py templates/layouts/my_template -o review.pptx
 
 Dependencies:
     python-pptx
@@ -46,7 +46,7 @@ from svg_to_pptx.pptx_package.template_structure import (  # noqa: E402
 
 
 _FRONTMATTER_ID_RE = re.compile(
-    r"^(?:template_id|deck_id|layout_id)\s*:\s*(.+?)\s*$",
+    r"^(?:layout_id)\s*:\s*(.+?)\s*$",
     re.MULTILINE,
 )
 _REPLICATION_MODE_RE = re.compile(
@@ -132,7 +132,7 @@ def _review_svg_sources(
 
 
 _TEMPLATE_SPEC_NAME_RE = re.compile(
-    r"design_spec\.(?P<kind>brand|style|layout|deck)\.[^/\\]+\.md"
+    r"design_spec\.(?P<kind>brand|style|layout|pack)\.[^/\\]+\.md"
 )
 
 
@@ -140,8 +140,8 @@ def _roster_spec(directory: Path) -> Path | None:
     """Return the effective spec that owns this directory's SVG roster.
 
     A library workspace keeps the exact ``design_spec.md``. A project workspace
-    shares one ``templates/`` across kinds. Layout owns structure when both
-    Layout and Deck are present; otherwise Deck owns it.
+    shares one ``templates/`` across kinds. Layout is the sole structure owner;
+    Brand and Style are roster-free, while Pack is provenance only.
     """
     if not directory.is_dir():
         return None
@@ -180,10 +180,9 @@ def _roster_spec(directory: Path) -> Path | None:
         raise ValueError(str(exc)) from exc
     if exact.is_file():
         return exact
-    for preferred_kind in ("layout", "deck"):
-        for item, kind in qualified:
-            if kind == preferred_kind:
-                return item
+    for item, kind in qualified:
+        if kind == "layout":
+            return item
     return None
 
 
@@ -194,7 +193,7 @@ def _resolve_workspace(path: Path) -> tuple[Path, Path]:
         return candidate, candidate / "templates"
     raise ValueError(
         "template workspace root must contain templates/design_spec.md or "
-        "templates/design_spec.<layout|deck>.<id>.md"
+        "templates/design_spec.layout.<id>.md"
     )
 
 
@@ -204,7 +203,7 @@ def _template_id(spec_path: Path) -> str:
     match = _FRONTMATTER_ID_RE.search(text)
     if match is None:
         raise ValueError(
-            f"{spec_path.name} frontmatter must declare layout_id or deck_id"
+            f"{spec_path.name} frontmatter must declare layout_id"
         )
     raw = match.group(1).strip().strip("'\"")
     safe = _FILENAME_UNSAFE_RE.sub("_", raw).strip(" ._")

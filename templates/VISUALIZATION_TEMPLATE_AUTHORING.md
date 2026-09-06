@@ -20,8 +20,7 @@ page-local Visualization 模板库；模板负责数据编码或单元格关系�
 **硬规则——Visualization 不是 Layout**：Chart/Table 模板和运行时 Structure
 都不拥有 `data-pptx-master`、`data-pptx-layout`、`data-pptx-layer` 或
 `data-pptx-placeholder`。跨页 Master/Layout、page type、slot geometry 和
-placeholder 合同属于 [`layouts/`](./layouts/) 或 [`decks/`](./decks/) workspace；
-两者共存时，仅由 Layout 覆盖 Deck 的结构分段。
+placeholder 合同只属于 [`layouts/`](./layouts/) workspace；Brand 与 Style 不拥有页面拓扑，Pack 只引用组件。
 
 ## 0. 上游规范
 

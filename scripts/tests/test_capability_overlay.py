@@ -1,12 +1,15 @@
 import hashlib
+import importlib.util
 import json
 from pathlib import Path
+import re
 import shutil
 import subprocess
 import sys
 import tempfile
 import unittest
 import zipfile
+import xml.etree.ElementTree as ET
 
 
 SKILL = Path(__file__).resolve().parents[2]
@@ -15,6 +18,56 @@ VENDOR = SKILL / "vendor" / "ppt-master"
 
 
 class UnifiedCapabilityContractTests(unittest.TestCase):
+    def test_confirm_handoff_requires_live_preview_before_slide_authoring(self):
+        skill_text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
+        gate = "Confirm → Live Preview → Slide Construction Gate (Mandatory)"
+        startup_gate = "LIVE PREVIEW STARTUP GATE"
+        visual_construction = "**Visual Construction Phase**"
+        self.assertIn(gate, skill_text)
+        self.assertIn(startup_gate, skill_text)
+        self.assertLess(skill_text.index(gate), skill_text.index(startup_gate))
+        self.assertLess(skill_text.index(startup_gate), skill_text.index(visual_construction))
+        self.assertIn("returned exit code 0", skill_text)
+        self.assertIn("reachable actual URL", skill_text)
+
+        workflow_requirements = {
+            "workflows/generate-pptx.md": "only then author the first slide/SVG",
+            "workflows/import-brand-pptx.md": "If startup fails, do not author slides",
+        }
+        for workflow, required_text in workflow_requirements.items():
+            workflow_text = (SKILL / workflow).read_text(encoding="utf-8")
+            self.assertIn("--live --daemon", workflow_text, workflow)
+            self.assertIn(required_text, workflow_text, workflow)
+
+    def test_tier2_exposes_selected_brand_identity_as_options(self):
+        skill_text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
+        confirm_docs = (SCRIPTS / "docs" / "confirm_ui.md").read_text(encoding="utf-8")
+        strategist = (SKILL / "references" / "strategist.md").read_text(encoding="utf-8")
+        for text in (skill_text, confirm_docs, strategist):
+            self.assertIn("color.candidates[0]", text)
+            self.assertIn("typography.candidates[0]", text)
+        for text in (skill_text, confirm_docs):
+            self.assertIn("官方配色", text)
+            self.assertIn("官方字体规范", text)
+        self.assertIn("official color and typography options", strategist)
+        self.assertIn("pt × 4 / 3", skill_text)
+        self.assertIn("pt × 4 / 3", confirm_docs)
+        spec_reference = (SKILL / "templates" / "design_spec_reference.md").read_text(encoding="utf-8")
+        self.assertIn("official typography candidate", spec_reference)
+
+    def test_svg_root_canvas_contract_requires_width_and_height_before_preview(self):
+        skill_text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
+        standards = (SKILL / "references" / "shared-standards.md").read_text(encoding="utf-8")
+        executor = (SKILL / "references" / "executor-base.md").read_text(encoding="utf-8")
+        for text in (skill_text, standards, executor):
+            self.assertIn('width="', text)
+            self.assertIn('height="', text)
+            self.assertIn('viewBox="0 0', text)
+        self.assertIn("ROOT SVG CANVAS IS NON-OPTIONAL", skill_text)
+        self.assertIn("Per-page root SVG audit (Mandatory)", skill_text)
+        self.assertIn("Root canvas (HARD rule)", standards)
+        self.assertIn("before entering Live Preview", executor)
+
     def test_frozen_plus_ui_and_preview_surface_is_byte_identical(self):
         manifest = Path(__file__).with_name("frozen_surface.sha256")
         for line in manifest.read_text(encoding="utf-8").splitlines():
@@ -101,7 +154,7 @@ class UnifiedCapabilityContractTests(unittest.TestCase):
             "brands": None,
             "styles": None,
             "layouts": None,
-            "decks": None,
+            "packs": None,
             "charts": "charts",
             "tables": "tables",
             "sounds": "sounds",
@@ -422,7 +475,7 @@ class UnifiedCapabilityContractTests(unittest.TestCase):
         self.assertIn("templates/tables/tables_index.json", template_route)
         self.assertIn("Template-native", template_route)
         self.assertIn("formatting is never style authority", template_route)
-        self.assertIn("classified as a project-local **Brand**", template_route)
+        self.assertIn("classified as a **Brand**, not a Layout or Pack", template_route)
         self.assertIn("explicitly provided by the", template_route)
         self.assertIn("Reject `.potx`", template_route)
 
@@ -561,6 +614,180 @@ class UnifiedCapabilityContractTests(unittest.TestCase):
             )
             self.assertNotEqual(0, result.returncode)
             self.assertIn("Template must be a .pptx package", result.stderr + result.stdout)
+
+    def test_brand_import_web_candidates_exclude_guide_and_require_title_capable_body(self):
+        from pptx import Presentation
+        from pptx.util import Inches
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            project = root / "project"
+            (project / "template").mkdir(parents=True)
+            source = project / "template" / "source.pptx"
+            prs = Presentation()
+            guide = prs.slides.add_slide(prs.slide_layouts[6])
+            guide.shapes.add_textbox(Inches(1), Inches(1), Inches(8), Inches(1)).text = (
+                "字体规范 Arial #112233"
+            )
+            body = prs.slides.add_slide(prs.slide_layouts[6])
+            body.shapes.add_textbox(Inches(1), Inches(0.5), Inches(8), Inches(1)).text = (
+                "这里是标题，限制一行"
+            )
+            body.shapes.add_textbox(Inches(1), Inches(2), Inches(8), Inches(2)).text = (
+                "正文示例内容，" * 30
+            )
+            prs.save(source)
+            intake = subprocess.run(
+                [
+                    sys.executable,
+                    str(SCRIPTS / "pptx_intake.py"),
+                    str(source),
+                    "-o",
+                    str(project / "analysis"),
+                    "--intent",
+                    "template",
+                    "--no-previews",
+                ],
+                capture_output=True,
+                text=True,
+            )
+            self.assertEqual(0, intake.returncode, intake.stderr + intake.stdout)
+            dumped = subprocess.run(
+                [
+                    sys.executable,
+                    str(SCRIPTS / "brand_import_ui" / "server.py"),
+                    str(project),
+                    "--dump-candidates",
+                ],
+                capture_output=True,
+                text=True,
+            )
+            self.assertEqual(0, dumped.returncode, dumped.stderr + dumped.stdout)
+            payload = json.loads(dumped.stdout)
+            by_slide = {row["source_slide"]: row for row in payload["slides"]}
+            self.assertFalse(by_slide[1]["selectable"])
+            self.assertGreaterEqual(by_slide[2]["title_text_count"], 1)
+            self.assertEqual(2, payload["recommended_content_slide"])
+
+    def test_brand_import_web_inline_javascript_parses(self):
+        server_path = SCRIPTS / "brand_import_ui" / "server.py"
+        spec = importlib.util.spec_from_file_location("brand_import_ui_server", server_path)
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        match = re.search(r"<script>(.*?)</script>", module.HTML, re.DOTALL)
+        self.assertIsNotNone(match)
+        checked = subprocess.run(
+            ["node", "--check"], input=match.group(1), capture_output=True, text=True,
+        )
+        self.assertEqual(0, checked.returncode, checked.stderr)
+
+    def test_brand_import_web_requires_every_page_kit_role(self):
+        server_path = SCRIPTS / "brand_import_ui" / "server.py"
+        spec = importlib.util.spec_from_file_location("brand_import_ui_roles", server_path)
+        self.assertIsNotNone(spec)
+        self.assertIsNotNone(spec.loader)
+        module = importlib.util.module_from_spec(spec)
+        spec.loader.exec_module(module)
+        candidates = {
+            "slides": [
+                {"source_slide": 1, "selectable": True, "title_text_count": 1},
+                {"source_slide": 2, "selectable": True, "title_text_count": 1},
+                {"source_slide": 3, "selectable": True, "title_text_count": 1},
+                {"source_slide": 4, "selectable": True, "title_text_count": 1},
+                {"source_slide": 5, "selectable": True, "title_text_count": 1},
+            ]
+        }
+        with self.assertRaisesRegex(ValueError, "封面"):
+            module._validate_submission(
+                candidates,
+                {"identity_confirmed": True, "pages": [{"source_slide": 4, "role": "content"}]},
+            )
+        confirmed = module._validate_submission(
+            candidates,
+            {
+                "identity_confirmed": True,
+                "pages": [
+                    {"source_slide": 1, "role": "cover"},
+                    {"source_slide": 2, "role": "toc"},
+                    {"source_slide": 3, "role": "section"},
+                    {"source_slide": 4, "role": "content"},
+                    {"source_slide": 5, "role": "closing"},
+                ]
+            },
+        )
+        self.assertEqual(
+            ["cover", "toc", "section", "content", "closing"],
+            [item["role"] for item in confirmed],
+        )
+        with self.assertRaisesRegex(ValueError, "配色规范"):
+            module._validate_submission(
+                candidates,
+                {
+                    "pages": [
+                        {"source_slide": 1, "role": "cover"},
+                        {"source_slide": 2, "role": "toc"},
+                        {"source_slide": 3, "role": "section"},
+                        {"source_slide": 4, "role": "content"},
+                        {"source_slide": 5, "role": "closing"},
+                    ]
+                },
+            )
+
+    def test_content_master_sanitizer_keeps_only_empty_title_and_master_layout(self):
+        from pptx import Presentation
+        from pptx.enum.shapes import MSO_SHAPE
+        from pptx.util import Inches
+
+        vendor_scripts = VENDOR / "scripts"
+        sys.path.insert(0, str(vendor_scripts))
+        try:
+            from project_management.cli import _sanitize_content_master_slides
+        finally:
+            sys.path.pop(0)
+
+        with tempfile.TemporaryDirectory() as tmp:
+            root = Path(tmp)
+            source = root / "source.pptx"
+            output = root / "sanitized.pptx"
+            prs = Presentation()
+            slide = prs.slides.add_slide(prs.slide_layouts[6])
+            title = slide.shapes.add_textbox(Inches(1), Inches(0.5), Inches(8), Inches(1))
+            title.text = "大标题示例"
+            title_id = str(title.shape_id)
+            slide.shapes.add_shape(
+                MSO_SHAPE.ROUNDED_RECTANGLE, Inches(1), Inches(2), Inches(4), Inches(2)
+            ).text = "需要删除的图例和文案"
+            prs.save(source)
+
+            _sanitize_content_master_slides(source, output, {1: {title_id}})
+            pml = "http://schemas.openxmlformats.org/presentationml/2006/main"
+            dml = "http://schemas.openxmlformats.org/drawingml/2006/main"
+            ns = {"p": pml, "a": dml}
+            with zipfile.ZipFile(source) as before, zipfile.ZipFile(output) as after:
+                self.assertEqual(
+                    before.read("ppt/slideLayouts/slideLayout7.xml"),
+                    after.read("ppt/slideLayouts/slideLayout7.xml"),
+                )
+                self.assertEqual(
+                    before.read("ppt/slideMasters/slideMaster1.xml"),
+                    after.read("ppt/slideMasters/slideMaster1.xml"),
+                )
+                root_xml = ET.fromstring(after.read("ppt/slides/slide1.xml"))
+                objects = [
+                    child
+                    for child in root_xml.findall("p:cSld/p:spTree/*", ns)
+                    if child.tag.rsplit("}", 1)[-1] not in {"nvGrpSpPr", "grpSpPr"}
+                ]
+                self.assertEqual(1, len(objects))
+                kept_id = objects[0].find(".//p:cNvPr", ns).get("id")
+                self.assertEqual(title_id, kept_id)
+                self.assertEqual([""], [node.text or "" for node in objects[0].findall(".//a:t", ns)])
+                rels = ET.fromstring(after.read("ppt/slides/_rels/slide1.xml.rels"))
+                relation_types = [row.get("Type", "") for row in rels]
+                self.assertEqual(1, len(relation_types))
+                self.assertTrue(relation_types[0].endswith("/slideLayout"))
 
     def test_native_preview_adapter_never_replaces_nonempty_generate_workspace(self):
         with tempfile.TemporaryDirectory() as tmp:

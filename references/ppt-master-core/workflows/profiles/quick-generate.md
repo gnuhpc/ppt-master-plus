@@ -151,7 +151,7 @@ ordinary Quick and other compatible profiles.
   each supplied root, read only the matching spec frontmatter needed to resolve
   its kind/canvas, and run that stage's read-only schema/structured preflight.
   Do not scan the library, fuzzy-match a name, or open a selector. Explicit user
-  canvas wins; otherwise use the selected structure owner (Layout before Deck)
+  canvas wins; otherwise use the selected Layout
   canvas when present. Pass that choice to `init --format` only when it exactly
   matches a registered canvas; otherwise retain its viewBox for authoring.
 - **Free design**: no exact root was supplied. Continue immediately with the
@@ -249,10 +249,9 @@ the project-local asset pools. All later reads use that installed state, never
 the original roots.
 
 Before writing P01, read every installed
-`templates/design_spec.<kind>.<id>.md` once and, for Layout/Deck, inspect every
+`templates/design_spec.<kind>.<id>.md` once and, for Layout, inspect every
 SVG prototype in the installed roster. Apply Brand identity, Style
-direction/method, the selected structure owner's prototype geometry, and Deck
-application context directly in the active context under the existing segment precedence
+direction/method, and the selected Layout's prototype geometry directly in the active context under the existing segment precedence
 ([`apply-template-workspace`](../stages/apply-template-workspace.md) §5). A
 segment owner's instruction about how a value should dominate, recede, or stay
 rare binds as strongly as the value itself; a Style composition or whitespace
@@ -545,7 +544,7 @@ Read fixed references together, never file by file:
 [`semantic-svg.md`](../../references/semantic-svg.md),
 [`executor-structure.md`](../../references/executor-structure.md),
 and [`topology-assembly.md`](../../references/topology-assembly.md).
-Installed Layout/Deck structure loads
+Installed Layout structure loads
 [`pptx-structure-interface.md`](../../references/pptx-structure-interface.md).
 Keep one-pass-selected mode/style files and realize that direction. Exact
 `*_references` define the catalog material
@@ -656,7 +655,7 @@ Never reuse pages from another run: the exporter publishes every SVG discovered
 under `svg_output/`.
 
 **Canvas**: use the canvas resolved in §2: explicit user choice, otherwise the
-selected Layout/Deck structure-owner canvas, otherwise `ppt169` with
+selected Layout structure-owner canvas, otherwise `ppt169` with
 `viewBox="0 0 1280 720"`. For another registered format, load
 [`canvas-formats.md`](../../references/canvas-formats.md) and use its exact
 viewBox. Template canvas is a default, not a compatibility gate; an explicit
@@ -665,7 +664,7 @@ the export canvas; every remaining page must match it exactly.
 
 **PPTX structure**: runtime speed does not flatten template structure. Free
 design and Brand/Style-only use author flat, Slide-local SVG and omit
-Master/Layout/layer/placeholder metadata. When Layout or Deck owns structure,
+Master/Layout/layer/placeholder metadata. When Layout owns structure,
 author every page as a complete structured Slide SVG: preserve or deliberately
 adapt the selected prototype's root Master/Layout identity, fixed layers, and
 semantic slots, then place current Slide content on top. A Style contribution
@@ -832,8 +831,8 @@ or lock.
 - [x] Every selected formula uses the checker-valid ordinary/inline/block form with a matching visible SVG preview and no formula image resource
 - [x] Every selected hyperlink uses a checker-valid inline/whole-object anchor and an exact external or same-deck target
 - [x] Resolved SVG pages and their project-local references exist
-- [x] The frozen Template Application paragraph was applied; every installed Layout/Deck SVG was read, and any page-specific exception names an exact SVG basename
-- [x] Quick structure matches the installed template capability: free/Brand/Style-only pages are flat, while a Layout/Deck structure owner remains explicit and all-page consistent unless the user explicitly requested visual-only use
+- [x] The frozen Template Application paragraph was applied; every installed Layout SVG was read, and any page-specific exception names an exact SVG basename
+- [x] Quick structure matches the installed template capability: free/Brand/Style-only pages are flat, while a Layout structure owner remains explicit and all-page consistent unless the user explicitly requested visual-only use
 - [x] Every role declared by an installed template spec is locatable in the finished pages, or its non-use is deliberate — checked per installed spec, not from memory
 - [x] Every triggered capability-specific preparation and pre-checker verification completed
 - [x] The current final report's carrier receipt was compared with the retained page jobs and any factual contradiction was repaired before export, without treating counts as quotas

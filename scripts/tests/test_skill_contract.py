@@ -1,6 +1,8 @@
 from pathlib import Path
 import base64
+import json
 import re
+import subprocess
 import sys
 import tempfile
 import unittest
@@ -24,6 +26,116 @@ SKILL = ROOT / "ppt-master-plus"
 
 
 class PptMasterPlusContractTests(unittest.TestCase):
+    def test_template_asset_kinds_are_brand_style_layout_pack_only(self):
+        templates = SKILL / "templates"
+        self.assertFalse((templates / "decks").exists())
+        indexes = {
+            "brand": templates / "brands" / "brands_index.json",
+            "style": templates / "styles" / "styles_index.json",
+            "layout": templates / "layouts" / "layouts_index.json",
+            "pack": templates / "packs" / "packs_index.json",
+        }
+        self.assertEqual({"brand", "style", "layout", "pack"}, set(indexes))
+        counts = {
+            kind: len(json.loads(path.read_text(encoding="utf-8")))
+            for kind, path in indexes.items()
+        }
+        self.assertEqual(
+            {"brand": 38, "style": 12, "layout": 54, "pack": 21},
+            counts,
+        )
+
+    def test_migrated_decks_are_layouts_plus_packs_with_expected_styles(self):
+        expected_by_style = {
+            "operating-review": {
+                "业务运营与看板", "商业汇报全场景", "思维模型合辑", "数据图表合辑",
+                "竞聘述职与晋升", "通用汇报合辑", "重型数据可视化", "经典红",
+            },
+            "consulting-decision": {"咨询麦肯锡风", "大厂战略汇报"},
+            "solution-proposal": {"商务蓝"},
+            "academic-research": {"学术开题万能公式", "学术开题方法论", "酒红名校开题"},
+            "workshop-teaching": {"卡通教育与课件", "思政教学设计", "教学图解模型", "青年党建"},
+            "creative-pitch": {"多彩几何汇报", "酸性插画总结"},
+            "technical-deepdive": {"项目与系统架构"},
+        }
+        expected = {
+            f"传统行业_{name}": style
+            for style, names in expected_by_style.items()
+            for name in names
+        }
+        packs = json.loads(
+            (SKILL / "templates/packs/packs_index.json").read_text(encoding="utf-8")
+        )
+        layouts = json.loads(
+            (SKILL / "templates/layouts/layouts_index.json").read_text(encoding="utf-8")
+        )
+        self.assertEqual(set(expected), set(packs))
+        for asset_id, style_id in expected.items():
+            self.assertIn(asset_id, layouts)
+            self.assertEqual(style_id, packs[asset_id]["style_id"])
+            self.assertEqual(asset_id, packs[asset_id]["layout_id"])
+            self.assertIsNone(packs[asset_id]["brand_id"])
+            layout_spec = (
+                SKILL / "templates" / "layouts" / asset_id / "design_spec.md"
+            ).read_text(encoding="utf-8")
+            for identity_field in (
+                "模板概述", "展示名称", "适用场景", "设计基调", "主色调",
+                "Color Scheme", "Typography", "Voice & Tone",
+            ):
+                self.assertNotIn(identity_field, layout_spec, asset_id)
+            self.assertIn("skill 内置 Chart/Table 样式", layout_spec)
+            pack_dir = SKILL / "templates" / "packs" / asset_id
+            self.assertEqual(["design_spec.md"], sorted(p.name for p in pack_dir.iterdir()))
+            spec = (pack_dir / "design_spec.md").read_text(encoding="utf-8")
+            self.assertIn("kind: pack", spec)
+            self.assertNotIn("<svg", spec)
+
+    def test_pack_resolver_expands_and_explicit_components_override(self):
+        command = [
+            sys.executable,
+            str(SKILL / "scripts/resolve_template_selection.py"),
+            "--pack", "传统行业_商业汇报全场景",
+            "--brand", "ffa_shenzhen",
+            "--style", "consulting-decision",
+        ]
+        result = subprocess.run(command, check=True, capture_output=True, text=True)
+        receipt = json.loads(result.stdout)
+        self.assertEqual("传统行业_商业汇报全场景", receipt["selected_pack_id"])
+        self.assertEqual("ffa_shenzhen", receipt["resolved"]["brand_id"])
+        self.assertEqual("consulting-decision", receipt["resolved"]["style_id"])
+        self.assertEqual(
+            "传统行业_商业汇报全场景", receipt["resolved"]["layout_id"]
+        )
+
+    def test_pack_index_rebuild_and_deck_asset_ban(self):
+        subprocess.run(
+            [
+                sys.executable,
+                str(SKILL / "scripts/register_template.py"),
+                "--rebuild-all", "--kind", "pack", "--dry-run",
+            ],
+            check=True,
+            capture_output=True,
+            text=True,
+        )
+        forbidden = re.compile(
+            r"templates/decks|decks_index\.json|kind:\s*deck|"
+            r"\bdeck_id\b|--kind deck|create-deck"
+        )
+        offenders = []
+        for path in SKILL.rglob("*"):
+            if not path.is_file() or path.suffix not in {".md", ".py", ".json", ".yaml", ".yml"}:
+                continue
+            if path.resolve() == Path(__file__).resolve():
+                continue
+            try:
+                text = path.read_text(encoding="utf-8")
+            except UnicodeDecodeError:
+                continue
+            if forbidden.search(text):
+                offenders.append(path.relative_to(SKILL).as_posix())
+        self.assertEqual([], offenders)
+
     def test_public_name_and_mode_selection_are_declared(self):
         text = (SKILL / "SKILL.md").read_text(encoding="utf-8")
         self.assertRegex(text, r"(?m)^name: ppt-master-plus$")
@@ -190,8 +302,7 @@ class PptMasterPlusContractTests(unittest.TestCase):
         for route in ("Generate PPTX", "Edit Native PPTX", "Import Brand PPTX"):
             self.assertIn(route, skill_text)
             self.assertIn(route, routing)
-        self.assertIn("create_pptx_from_template", routing)
-        self.assertIn("imported_brand", routing)
+        self.assertIn("import_brand_pptx", routing)
         self.assertIn("brand_identity", routing)
         self.assertIn("template_kind: brand", routing)
         self.assertIn(

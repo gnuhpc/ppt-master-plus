@@ -1,0 +1,110 @@
+{
+  "schema": "ppt-master-plus.template-manifest.v1",
+  "template_kind": "brand",
+  "template_reuse": "identity_only",
+  "page_archetypes_reusable": false,
+  "source": {
+    "path": "/private/var/folders/64/mkfb9rt56bq6385j1hsm_yr00000gp/T/ppt-master-plus-brand-飞天发布-myqbbpe2/page-kit-review/template/source.pptx",
+    "sha256": "cebcef70e8ec7d37d9d315d67f262d970b442e517307b9a1f57e0248ed4e4131",
+    "bytes": 69702913,
+    "immutable": true
+  },
+  "canvas": {
+    "emu": {
+      "width": 24384000,
+      "height": 13716000
+    },
+    "px": {
+      "width": 2560,
+      "height": 1440
+    },
+    "aspect_ratio": 1.777778
+  },
+  "slide_count": 38,
+  "masters": [
+    {
+      "part": "ppt/slideMasters/slideMaster1.xml",
+      "name": "slideMaster1",
+      "shape_count": 5
+    }
+  ],
+  "layouts": [
+    {
+      "part": "ppt/slideLayouts/slideLayout1.xml",
+      "name": "标题",
+      "master_part": "ppt/slideMasters/slideMaster1.xml",
+      "shape_count": 4
+    },
+    {
+      "part": "ppt/slideLayouts/slideLayout4.xml",
+      "name": "标题与项目符号",
+      "master_part": "ppt/slideMasters/slideMaster1.xml",
+      "shape_count": 4
+    },
+    {
+      "part": "ppt/slideLayouts/slideLayout15.xml",
+      "name": "空白",
+      "master_part": "ppt/slideMasters/slideMaster1.xml",
+      "shape_count": 1
+    },
+    {
+      "part": "ppt/slideLayouts/slideLayout17.xml",
+      "name": "标题与副标题 拷贝 1",
+      "master_part": "ppt/slideMasters/slideMaster1.xml",
+      "shape_count": 2
+    }
+  ],
+  "page_role_counts": {
+    "cover": 1,
+    "guide": 2,
+    "toc": 1,
+    "section": 4,
+    "unusable": 1,
+    "content": 29
+  },
+  "native_features": {
+    "relationship_types": {
+      "chart": 8,
+      "core-properties": 1,
+      "extended-properties": 1,
+      "image": 100,
+      "notesMaster": 1,
+      "officeDocument": 1,
+      "package": 8,
+      "presProps": 1,
+      "slide": 38,
+      "slideLayout": 59,
+      "slideMaster": 22,
+      "tableStyles": 1,
+      "theme": 3,
+      "viewProps": 1
+    },
+    "media_part_count": 48,
+    "chart_part_count": 8,
+    "embedding_part_count": 8,
+    "embedded_font_part_count": 0,
+    "notes_slide_count": 0,
+    "slides_with_transition_nodes": 38,
+    "slides_with_timing": 0,
+    "hidden_slide_count": 1
+  },
+  "fact_priority": [
+    "explicit guide page",
+    "resolved exemplar formatting",
+    "master and theme inheritance",
+    "shape name or note hint",
+    "geometry and repetition heuristic"
+  ],
+  "inherited_objects_locked": true,
+  "visualization_style_policy": {
+    "source": "skill_builtin",
+    "template_visualization_style_reusable": false,
+    "template_visualization_usage": "slot_geometry_and_capacity_only",
+    "catalogs": [
+      "templates/charts/charts_index.json",
+      "templates/tables/tables_index.json"
+    ]
+  },
+  "conflicts": [],
+  "preview_index": "template_preview/index.json"
+}

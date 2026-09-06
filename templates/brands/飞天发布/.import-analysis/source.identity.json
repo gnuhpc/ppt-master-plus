@@ -1,0 +1,133 @@
+{
+  "source": "/private/var/folders/64/mkfb9rt56bq6385j1hsm_yr00000gp/T/ppt-master-plus-brand-飞天发布-myqbbpe2/page-kit-review/template/source.pptx",
+  "slide_count": 38,
+  "canvas": {
+    "width_px": 2560,
+    "height_px": 1440,
+    "aspect": 1.7778
+  },
+  "theme": {
+    "palette": {
+      "background": "#FFFFFF",
+      "background_alt": "#535353",
+      "text": "#5E5E5E",
+      "text_alt": "#A7A7A7",
+      "hyperlink": "#0000FF",
+      "accent1": "#00A2FF",
+      "accent2": "#16E7CF",
+      "accent3": "#61D836",
+      "accent4": "#FFD932",
+      "accent5": "#FF644E",
+      "accent6": "#FF42A1",
+      "primary": "#00A2FF"
+    },
+    "fonts": {
+      "title": {
+        "latin": "Alibaba PuHuiTi 2 55 Regular",
+        "ea": "Alibaba PuHuiTi 2 55 Regular",
+        "cs": "Alibaba PuHuiTi 2 55 Regular"
+      },
+      "body": {
+        "latin": "Alibaba PuHuiTi 2 55 Regular",
+        "ea": "Alibaba PuHuiTi 2 55 Regular",
+        "cs": "Alibaba PuHuiTi 2 55 Regular"
+      }
+    },
+    "sizes": {
+      "title": 48.0,
+      "body": 56.0,
+      "body_levels": [
+        56.0,
+        56.0,
+        56.0,
+        56.0,
+        56.0,
+        56.0,
+        56.0,
+        56.0,
+        56.0
+      ]
+    }
+  },
+  "observed": {
+    "fonts": {
+      "latin": [
+        {
+          "value": "Alibaba PuHuiTi 2 65 Medium",
+          "count": 249
+        },
+        {
+          "value": "Alibaba PuHuiTi 2 85 Bold",
+          "count": 181
+        },
+        {
+          "value": "阿里巴巴普惠体 2.0 65 Medium",
+          "count": 4
+        },
+        {
+          "value": "阿里巴巴普惠体 2.0 95 ExtraBold",
+          "count": 4
+        }
+      ],
+      "ea": [
+        {
+          "value": "Alibaba PuHuiTi 2 65 Medium",
+          "count": 249
+        },
+        {
+          "value": "Alibaba PuHuiTi 2 85 Bold",
+          "count": 181
+        },
+        {
+          "value": "阿里巴巴普惠体 2.0 65 Medium",
+          "count": 4
+        },
+        {
+          "value": "阿里巴巴普惠体 2.0 95 ExtraBold",
+          "count": 4
+        }
+      ]
+    },
+    "sizes_pt": [],
+    "colors": [
+      {
+        "value": "#FFFFFF",
+        "count": 396
+      },
+      {
+        "value": "#2609F5",
+        "count": 169
+      },
+      {
+        "value": "#000000",
+        "count": 86
+      },
+      {
+        "value": "#929292",
+        "count": 80
+      },
+      {
+        "value": "#FF6A00",
+        "count": 61
+      },
+      {
+        "value": "#336DD1",
+        "count": 53
+      },
+      {
+        "value": "#1F3FD2",
+        "count": 48
+      },
+      {
+        "value": "#333333",
+        "count": 35
+      }
+    ]
+  },
+  "layout_sizes_pt": [
+    {
+      "value": 48.0,
+      "count": 2
+    }
+  ]
+}

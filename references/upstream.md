@@ -4,7 +4,7 @@
 - Imported commit: `d6bcaf96b7946667f4a8871b0688b903181db527` (`v5.1.0`)
 - Imported on: `2026-08-29`
 - Merge base: the local `ppt-master` skill, including its traditional-industry
-  deck templates, speaker-note validation, and specialized Executor guidance
+  reusable template components, speaker-note validation, and specialized Executor guidance
 - Added workflow: the former local `article-to-pptx-gated` review process
 
 Maintain this fork through a manual compare-and-merge. Do not run an upstream
@@ -24,7 +24,7 @@ contract and smoke tests.
 - References: namespaced under `references/ppt-master-core/`; upstream round-trip
   capabilities are active through the Plus routes, while upstream Quick and UI
   authorities do not replace the frozen Plus behavior.
-- Templates: additive union of Brand/Style/Layout/Deck/Chart/Table/Sound/Icon
+- Templates: additive union of Brand/Style/Layout/Pack/Chart/Table/Sound/Icon
   resources. Existing Plus paths and index records win every collision.
 - Collision decisions: the existing `flink_ai_style` workspace and every other
   same-ID Plus workspace stayed byte-for-byte authoritative; the upstream
@@ -33,8 +33,8 @@ contract and smoke tests.
 - Unified runtime: every public Plus entrypoint runs the vendored engine; SVG
   semantics and optional fields select feature behavior only, never a second
   legacy implementation.
-- Validation split: existing Plus Brand/Layout/Deck workspaces are validated by
-  the preserved Plus validator; the 41 imported Master Brand/Style/Layout/Deck
+- Validation split: existing Plus Brand/Layout workspaces are validated by
+  the preserved Plus validator; the 41 imported Master Brand/Style/Layout/Pack
   workspaces are validated by the vendored current-contract validator. The
   merged Chart/Table catalog resolves all 145 canonical assets.
 

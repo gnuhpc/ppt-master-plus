@@ -10,10 +10,21 @@ import sys
 import tempfile
 import zipfile
 
-CORE_SCRIPTS_DIR = Path(__file__).resolve().parents[1] / "vendor" / "ppt-master" / "scripts"
+import importlib.util
 
-sys.path.insert(0, str(CORE_SCRIPTS_DIR))
-from pptx_opc_validation import verify_internal_relationships  # noqa: E402
+CORE_SCRIPTS_DIR = Path(__file__).resolve().parents[1] / "vendor" / "ppt-master" / "scripts"
+if str(CORE_SCRIPTS_DIR) not in sys.path:
+    sys.path.insert(0, str(CORE_SCRIPTS_DIR))
+
+_vendor_spec = importlib.util.spec_from_file_location(
+    "_vendor_pptx_opc_validation", CORE_SCRIPTS_DIR / "pptx_opc_validation.py"
+)
+if _vendor_spec and _vendor_spec.loader:
+    _vendor_mod = importlib.util.module_from_spec(_vendor_spec)
+    _vendor_spec.loader.exec_module(_vendor_mod)
+    globals().update({k: v for k, v in _vendor_mod.__dict__.items() if not k.startswith("__")})
+else:
+    raise ImportError("Failed to load vendor pptx_opc_validation")
 
 
 def main(argv: list[str] | None = None) -> int:

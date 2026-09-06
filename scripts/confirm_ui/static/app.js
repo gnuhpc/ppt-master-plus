@@ -25,6 +25,12 @@
             sec_canvas: "Canvas format",
             sec_brand: "Brand preset",
             sec_brand_note: "Select a brand to anchor color, typography, and icon style. \"Free design\" means no brand preset.",
+            sec_page_kit: "Brand Page Kit",
+            sec_page_kit_note: "This brand includes approved native page prototypes. Choose whether to reuse them or use identity only.",
+            page_kit_use: "Use page kit",
+            page_kit_use_desc: "Reuse approved cover, contents, section, content, and closing pages through native round-trip editing.",
+            page_kit_identity: "Identity only",
+            page_kit_identity_desc: "Use only color, typography, logo, and icon identity; do not clone source pages.",
             sec_pages: "Page count",
             page_count_locked_note: "Locked to source PPTX — faithful beautify keeps the original page count.",
             sec_preserve_master: "Source master",
@@ -119,6 +125,12 @@
             sec_canvas: "画布格式",
             sec_brand: "品牌预设",
             sec_brand_note: "选择品牌后，配色、字体和图标风格将据此推导。「自由设计」表示不使用品牌预设。",
+            sec_page_kit: "品牌页面套件",
+            sec_page_kit_note: "该品牌带有已批准的原生页面原型；请选择复用页面套件，或只使用品牌身份。",
+            page_kit_use: "使用页面套件",
+            page_kit_use_desc: "通过原生 round-trip 编辑复用已批准的封面、目录、过渡、正文和封底页面。",
+            page_kit_identity: "仅使用品牌身份",
+            page_kit_identity_desc: "只使用配色、字体、Logo 和图标身份，不复制源模板页面。",
             sec_pages: "页数",
             page_count_locked_note: "已锁定为源 PPTX 页数 — 保真美化保持原始页数不变。",
             sec_preserve_master: "源 PPT 母版",
@@ -601,12 +613,38 @@
                 deselect();
                 chip.classList.add("selected");
                 STATE.brand = o.id;
+                // The Page Kit choice is meaningful only for the selected
+                // Brand, so re-render immediately instead of leaving a stale
+                // kit control from the prior selection on screen.
+                var selectedKit = o.page_kit;
+                STATE.page_kit = selectedKit ? (selectedKit.default || "use_page_kit") : "identity_only";
+                renderAll();
             });
             allChips.push(chip);
             chipsWrap.appendChild(chip);
         });
 
         sec.appendChild(chipsWrap);
+        host.appendChild(sec);
+    }
+
+    function selectedBrand() {
+        return (CAT.brands || []).filter(function (brand) { return brand.id === STATE.brand; })[0] || null;
+    }
+
+    function renderPageKit(host) {
+        var brand = selectedBrand();
+        if (!brand || !brand.page_kit || !brand.page_kit.layout_id) {
+            STATE.page_kit = "identity_only";
+            return;
+        }
+        var sec = section(3, "sec_page_kit", t("sec_page_kit_note"));
+        enumField(sec, [
+            { id: "use_page_kit", label: t("page_kit_use"), desc: t("page_kit_use_desc") },
+            { id: "identity_only", label: t("page_kit_identity"), desc: t("page_kit_identity_desc") }
+        ], STATE.page_kit || "use_page_kit",
+        function () { return STATE.page_kit; },
+        function (v) { STATE.page_kit = v; });
         host.appendChild(sec);
     }
 
@@ -1397,6 +1435,7 @@
             // Brand anchors color/typography/icons; delivery purpose rides inside renderAudience (§c key info).
             renderCanvas(host);
             renderBrand(host);
+            renderPageKit(host);
             renderAudience(host);
             renderStyle(host);
         } else {
@@ -1405,6 +1444,7 @@
             if (tier === "all") {
                 renderCanvas(host);
                 renderBrand(host);
+                renderPageKit(host);
                 renderAudience(host);
                 renderStyle(host);
             }
@@ -1449,6 +1489,8 @@
     function initTier1State() {
         STATE.canvas = pick("canvas", CAT.canvas);
         STATE.brand = recOrFirst("brand", CAT.brands || []);
+        var brand = (CAT.brands || []).filter(function (item) { return item.id === STATE.brand; })[0];
+        STATE.page_kit = recId("page_kit") || ((brand && brand.page_kit) ? "use_page_kit" : "identity_only");
         STATE.audience = (REC.audience && REC.audience.value) || "";
         STATE.content_divergence = (REC.content_divergence && REC.content_divergence.value) || "";  // free text; blank = balanced default
         STATE.mode = pick("mode", CAT.modes);
@@ -1525,6 +1567,7 @@
             stage: "tier1",
             canvas: STATE.canvas,
             brand: STATE.brand,
+            page_kit: STATE.page_kit,
             audience: STATE.audience,
             content_divergence: STATE.content_divergence,
             mode: STATE.mode,

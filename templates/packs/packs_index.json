@@ -1,0 +1,233 @@
+{
+  "传统行业_业务运营与看板": {
+    "summary": "适用于业务运营、用户增长、营销复盘和经营看板。",
+    "brand_id": null,
+    "style_id": "operating-review",
+    "layout_id": "传统行业_业务运营与看板",
+    "keywords": [
+      "业务运营",
+      "用户增长",
+      "数据看板"
+    ]
+  },
+  "传统行业_卡通教育与课件": {
+    "summary": "适用于课堂教学、亲子培训和轻量知识讲解。",
+    "brand_id": null,
+    "style_id": "workshop-teaching",
+    "layout_id": "传统行业_卡通教育与课件",
+    "keywords": [
+      "教学课件",
+      "亲子培训",
+      "知识讲解"
+    ]
+  },
+  "传统行业_咨询麦肯锡风": {
+    "summary": "适用于咨询分析、管理决策和结构化问题求解。",
+    "brand_id": null,
+    "style_id": "consulting-decision",
+    "layout_id": "传统行业_咨询麦肯锡风",
+    "keywords": [
+      "咨询分析",
+      "管理决策",
+      "结构化表达"
+    ]
+  },
+  "传统行业_商业汇报全场景": {
+    "summary": "适用于综合商业汇报、经营分析和项目复盘。",
+    "brand_id": null,
+    "style_id": "operating-review",
+    "layout_id": "传统行业_商业汇报全场景",
+    "keywords": [
+      "商业汇报",
+      "经营分析",
+      "项目复盘"
+    ]
+  },
+  "传统行业_商务蓝": {
+    "summary": "适用于装备制造、基建工程、方案汇报和业务沟通。",
+    "brand_id": null,
+    "style_id": "solution-proposal",
+    "layout_id": "传统行业_商务蓝",
+    "keywords": [
+      "商务汇报",
+      "装备制造",
+      "基建工程"
+    ]
+  },
+  "传统行业_多彩几何汇报": {
+    "summary": "适用于年轻团队的项目总结、市场汇报和创意提案。",
+    "brand_id": null,
+    "style_id": "creative-pitch",
+    "layout_id": "传统行业_多彩几何汇报",
+    "keywords": [
+      "项目总结",
+      "市场汇报",
+      "创意提案"
+    ]
+  },
+  "传统行业_大厂战略汇报": {
+    "summary": "适用于战略分析、管理咨询和复杂业务框架汇报。",
+    "brand_id": null,
+    "style_id": "consulting-decision",
+    "layout_id": "传统行业_大厂战略汇报",
+    "keywords": [
+      "战略分析",
+      "管理咨询",
+      "业务框架"
+    ]
+  },
+  "传统行业_学术开题万能公式": {
+    "summary": "适用于研究背景、意义、现状和方法四段式开题汇报。",
+    "brand_id": null,
+    "style_id": "academic-research",
+    "layout_id": "传统行业_学术开题万能公式",
+    "keywords": [
+      "学术开题",
+      "研究方法",
+      "论文答辩"
+    ]
+  },
+  "传统行业_学术开题方法论": {
+    "summary": "适用于课题立项、研究方法说明和学术汇报。",
+    "brand_id": null,
+    "style_id": "academic-research",
+    "layout_id": "传统行业_学术开题方法论",
+    "keywords": [
+      "课题立项",
+      "研究方法",
+      "学术汇报"
+    ]
+  },
+  "传统行业_思政教学设计": {
+    "summary": "适用于教学设计、说课、公开课和课程思政汇报。",
+    "brand_id": null,
+    "style_id": "workshop-teaching",
+    "layout_id": "传统行业_思政教学设计",
+    "keywords": [
+      "教学设计",
+      "说课",
+      "课程思政"
+    ]
+  },
+  "传统行业_思维模型合辑": {
+    "summary": "适用于季度复盘、年度总结和问题分析。",
+    "brand_id": null,
+    "style_id": "operating-review",
+    "layout_id": "传统行业_思维模型合辑",
+    "keywords": [
+      "思维模型",
+      "项目复盘",
+      "问题分析"
+    ]
+  },
+  "传统行业_教学图解模型": {
+    "summary": "适用于教学比赛、课程设计和数智教育图解。",
+    "brand_id": null,
+    "style_id": "workshop-teaching",
+    "layout_id": "传统行业_教学图解模型",
+    "keywords": [
+      "教学图解",
+      "课程设计",
+      "数智教育"
+    ]
+  },
+  "传统行业_数据图表合辑": {
+    "summary": "适用于业绩汇报、指标分析和数据复盘。",
+    "brand_id": null,
+    "style_id": "operating-review",
+    "layout_id": "传统行业_数据图表合辑",
+    "keywords": [
+      "业绩汇报",
+      "指标分析",
+      "数据复盘"
+    ]
+  },
+  "传统行业_竞聘述职与晋升": {
+    "summary": "适用于竞聘、述职、晋升答辩和工作总结。",
+    "brand_id": null,
+    "style_id": "operating-review",
+    "layout_id": "传统行业_竞聘述职与晋升",
+    "keywords": [
+      "竞聘",
+      "述职",
+      "晋升答辩"
+    ]
+  },
+  "传统行业_经典红": {
+    "summary": "适用于庄重的机构汇报、国企总结和工业项目分析。",
+    "brand_id": null,
+    "style_id": "operating-review",
+    "layout_id": "传统行业_经典红",
+    "keywords": [
+      "机构汇报",
+      "国企总结",
+      "工业项目"
+    ]
+  },
+  "传统行业_通用汇报合辑": {
+    "summary": "适用于工作汇报、目标拆解、岗位竞聘和项目复盘。",
+    "brand_id": null,
+    "style_id": "operating-review",
+    "layout_id": "传统行业_通用汇报合辑",
+    "keywords": [
+      "工作汇报",
+      "目标拆解",
+      "项目复盘"
+    ]
+  },
+  "传统行业_酒红名校开题": {
+    "summary": "适用于论文开题、研究计划和学术答辩。",
+    "brand_id": null,
+    "style_id": "academic-research",
+    "layout_id": "传统行业_酒红名校开题",
+    "keywords": [
+      "论文开题",
+      "研究计划",
+      "学术答辩"
+    ]
+  },
+  "传统行业_酸性插画总结": {
+    "summary": "适用于创意团队的季度总结、作品展示和视觉提案。",
+    "brand_id": null,
+    "style_id": "creative-pitch",
+    "layout_id": "传统行业_酸性插画总结",
+    "keywords": [
+      "季度总结",
+      "作品展示",
+      "创意提案"
+    ]
+  },
+  "传统行业_重型数据可视化": {
+    "summary": "适用于高密度数据看板、经营分析和指标复盘。",
+    "brand_id": null,
+    "style_id": "operating-review",
+    "layout_id": "传统行业_重型数据可视化",
+    "keywords": [
+      "数据看板",
+      "经营分析",
+      "指标复盘"
+    ]
+  },
+  "传统行业_青年党建": {
+    "summary": "适用于青年主题教育、课程思政和严肃教学汇报。",
+    "brand_id": null,
+    "style_id": "workshop-teaching",
+    "layout_id": "传统行业_青年党建",
+    "keywords": [
+      "青年教育",
+      "课程思政",
+      "教学汇报"
+    ]
+  },
+  "传统行业_项目与系统架构": {
+    "summary": "适用于项目全景、系统架构和复杂业务关系说明。",
+    "brand_id": null,
+    "style_id": "technical-deepdive",
+    "layout_id": "传统行业_项目与系统架构",
+    "keywords": [
+      "项目全景",
+      "系统架构",
+      "业务关系"
+    ]
+  }
+}

@@ -1,30 +1,33 @@
 #!/usr/bin/env python3
-"""Register a brand / layout / deck template into the global template index.
+"""Register a Brand, Style, Layout, or Pack in the global template index.
 
-Three kinds, three physical directories, three index files (see
+Four kinds, four physical directories, four index files (see
 ``docs/zh/templates-architecture.md`` for the data model):
 
 | --kind  | Source dir              | Index file                    |
 |---------|-------------------------|-------------------------------|
 | brand   | ``templates/brands/``   | ``brands_index.json``         |
+| style   | ``templates/styles/``   | ``styles_index.json``         |
 | layout  | ``templates/layouts/``  | ``layouts_index.json``        |
-| deck    | ``templates/decks/``    | ``decks_index.json``          |
+| pack    | ``templates/packs/``    | ``packs_index.json``          |
 
 Index entry schemas (the JSON file is the single source of truth — README
 files describe the kind and usage in prose but do **not** enumerate templates;
 discovery happens exclusively against the index file):
 
-- brand:  ``{ summary, primary_color }``
+- brand:  ``{ summary, primary_color, page_kit_layout_id? }``
+- style:  ``{ summary, keywords[] }``
 - layout: ``{ summary, canvas_format, page_count, page_types[] }``
-- deck:   ``{ summary, canvas_format, page_count, primary_color }``
+- pack:   ``{ summary, brand_id, style_id, layout_id, keywords[] }``
 
 Usage::
 
-    python3 scripts/register_template.py <id> --kind deck     # default kind=deck
     python3 scripts/register_template.py <id> --kind layout
     python3 scripts/register_template.py <id> --kind brand
-    python3 scripts/register_template.py --rebuild-all --kind deck
-    python3 scripts/register_template.py <id> --dry-run
+    python3 scripts/register_template.py <id> --kind style
+    python3 scripts/register_template.py <id> --kind pack
+    python3 scripts/register_template.py --rebuild-all --kind pack
+    python3 scripts/register_template.py <id> --kind layout --dry-run
 
 ``--rebuild-all`` rebuilds every entry from scratch within the chosen kind;
 recommended for repairing index drift across many templates at once.
@@ -56,17 +59,23 @@ KIND_CONFIG = {
         "id_key": "brand_id",
         "needs_svg_roster": False,
     },
+    "style": {
+        "dir": TEMPLATES_DIR / "styles",
+        "index": TEMPLATES_DIR / "styles" / "styles_index.json",
+        "id_key": "style_id",
+        "needs_svg_roster": False,
+    },
     "layout": {
         "dir": TEMPLATES_DIR / "layouts",
         "index": TEMPLATES_DIR / "layouts" / "layouts_index.json",
         "id_key": "layout_id",
         "needs_svg_roster": True,
     },
-    "deck": {
-        "dir": TEMPLATES_DIR / "decks",
-        "index": TEMPLATES_DIR / "decks" / "decks_index.json",
-        "id_key": "deck_id",
-        "needs_svg_roster": True,
+    "pack": {
+        "dir": TEMPLATES_DIR / "packs",
+        "index": TEMPLATES_DIR / "packs" / "packs_index.json",
+        "id_key": "pack_id",
+        "needs_svg_roster": False,
     },
 }
 
@@ -165,6 +174,14 @@ def _list_pages(template_dir: Path) -> list[str]:
     return sorted(p.stem for p in template_dir.glob("*.svg"))
 
 
+def _content_dir(template_root: Path) -> Path:
+    """Resolve legacy flat and current nested template workspaces."""
+    nested = template_root / "templates"
+    if (nested / "design_spec.md").is_file():
+        return nested
+    return template_root
+
+
 def _derive_page_types(pages: list[str]) -> list[str]:
     """Derive canonical page-type list from SVG filenames (strips leading 'NN_')."""
     types: list[str] = []
@@ -178,12 +195,68 @@ def _derive_page_types(pages: list[str]) -> list[str]:
     return types
 
 
+def _string_list(value: object, field: str) -> list[str]:
+    if not isinstance(value, list) or not all(
+        isinstance(item, str) and item.strip() for item in value
+    ):
+        raise SpecParseError(f"frontmatter {field} must be a non-empty string list")
+    return [item.strip() for item in value]
+
+
+def _validate_pack(template_id: str, template_dir: Path, fm: dict) -> None:
+    allowed = {
+        "pack_id", "kind", "summary", "brand_id", "style_id", "layout_id", "keywords"
+    }
+    unexpected = sorted(set(fm) - allowed)
+    if unexpected:
+        raise SpecParseError(
+            "pack frontmatter may contain references and discovery metadata only; "
+            "unexpected field(s): " + ", ".join(unexpected)
+        )
+    if fm.get("pack_id") != template_id:
+        raise SpecParseError("frontmatter pack_id must match the directory name")
+    if fm.get("kind") != "pack":
+        raise SpecParseError("frontmatter kind must be 'pack'")
+    if not str(fm.get("summary") or "").strip():
+        raise SpecParseError("frontmatter summary must be non-empty")
+    _string_list(fm.get("keywords"), "keywords")
+
+    refs = {
+        "brand": fm.get("brand_id"),
+        "style": fm.get("style_id"),
+        "layout": fm.get("layout_id"),
+    }
+    normalized = {
+        kind: value.strip() if isinstance(value, str) and value.strip() else None
+        for kind, value in refs.items()
+    }
+    if sum(value is not None for value in normalized.values()) < 2:
+        raise SpecParseError("pack must reference at least two of Brand, Style, and Layout")
+    for kind, ref_id in normalized.items():
+        if ref_id is None:
+            continue
+        index = _load_index(KIND_CONFIG[kind]["index"])
+        if ref_id not in index:
+            raise SpecParseError(f"pack references unknown {kind}_id {ref_id!r}")
+
+    unexpected_files = sorted(
+        path.name for path in template_dir.iterdir() if path.name != "design_spec.md"
+    )
+    if unexpected_files:
+        raise SpecParseError(
+            "pack directories may contain only design_spec.md; unexpected entry(s): "
+            + ", ".join(unexpected_files)
+        )
+
+
 # ---------------------------------------------------------------------------
 # Per-kind extraction
 # ---------------------------------------------------------------------------
 
 def _extract_entry(kind: str, template_id: str, template_dir: Path) -> dict:
     """Build the index entry + extras for a single template."""
+    template_root = template_dir
+    template_dir = _content_dir(template_root)
     spec_path = template_dir / "design_spec.md"
     if not spec_path.exists():
         raise SpecParseError(f"missing design_spec.md in {template_dir}")
@@ -215,6 +288,23 @@ def _extract_entry(kind: str, template_id: str, template_dir: Path) -> dict:
             summary=summary,
             primary_color=str(primary_color),
         )
+        # A Brand remains an identity asset.  This optional pointer merely
+        # advertises a separately stored, user-authorized native Page Kit; it
+        # does not move page geometry or SVGs into the Brand itself.
+        page_kit_layout_id = fm.get("page_kit_layout_id")
+        if isinstance(page_kit_layout_id, str) and page_kit_layout_id.strip():
+            layout_id = page_kit_layout_id.strip()
+            layout_spec = KIND_CONFIG["layout"]["dir"] / layout_id / "page_kit_manifest.json"
+            if not layout_spec.is_file():
+                raise SpecParseError(
+                    f"brand page_kit_layout_id references a Layout without page_kit_manifest.json: {layout_id!r}"
+                )
+            entry["page_kit_layout_id"] = layout_id
+    elif kind == "style":
+        entry = OrderedDict(
+            summary=summary,
+            keywords=_string_list(fm.get("keywords"), "keywords"),
+        )
     elif kind == "layout":
         page_types = fm.get("page_types") or _derive_page_types(pages)
         if isinstance(page_types, str):
@@ -225,12 +315,14 @@ def _extract_entry(kind: str, template_id: str, template_dir: Path) -> dict:
             page_count=int(fm.get("page_count", len(pages))),
             page_types=list(page_types),
         )
-    elif kind == "deck":
+    elif kind == "pack":
+        _validate_pack(template_id, template_root, fm)
         entry = OrderedDict(
             summary=summary,
-            canvas_format=str(fm.get("canvas_format", "ppt169")),
-            page_count=int(fm.get("page_count", len(pages))),
-            primary_color=str(primary_color),
+            brand_id=fm.get("brand_id"),
+            style_id=fm.get("style_id"),
+            layout_id=fm.get("layout_id"),
+            keywords=_string_list(fm.get("keywords"), "keywords"),
         )
     else:
         raise SpecParseError(f"unknown kind {kind!r}")
@@ -270,22 +362,26 @@ def _enumerate_ids(kind: str) -> list[str]:
         return []
     return sorted(
         p.name for p in base.iterdir()
-        if p.is_dir() and (p / "design_spec.md").exists()
+        if p.is_dir() and (_content_dir(p) / "design_spec.md").exists()
     )
 
 
 def _print_completion_card(kind: str, template_id: str, entry: dict, extras: dict) -> None:
-    pretty_kind = {"layout": "Layout", "deck": "Deck", "brand": "Brand"}[kind]
-    dir_name = {"layout": "layouts", "deck": "decks", "brand": "brands"}[kind]
+    pretty_kind = {
+        "layout": "Layout", "brand": "Brand", "style": "Style", "pack": "Pack"
+    }[kind]
+    dir_name = {
+        "layout": "layouts", "brand": "brands", "style": "styles", "pack": "packs"
+    }[kind]
     print()
     print(f"## {pretty_kind} Registration Complete")
     print()
     print(f"**{pretty_kind} ID**: {template_id}")
     print(f"**Path**: `templates/{dir_name}/{template_id}/`")
-    if kind in ("brand", "deck"):
+    if kind == "brand":
         primary = entry.get("primary_color") or "—"
         print(f"**Primary Color**: {primary}")
-    if kind in ("layout", "deck"):
+    if kind == "layout":
         canvas = entry.get("canvas_format") or "—"
         pc = entry.get("page_count") or "—"
         print(f"**Canvas**: {canvas}")
@@ -293,7 +389,7 @@ def _print_completion_card(kind: str, template_id: str, entry: dict, extras: dic
     print(f"**Summary**: {entry.get('summary') or '—'}")
     print("**Index Registration**: Done")
     print()
-    if kind != "brand":
+    if KIND_CONFIG[kind]["needs_svg_roster"]:
         pages = extras.get("pages") or []
         if pages:
             print("### Files Included")
@@ -311,15 +407,15 @@ def _print_completion_card(kind: str, template_id: str, entry: dict, extras: dic
 
 def main() -> int:
     parser = argparse.ArgumentParser(
-        description="Register / refresh templates (brand / layout / deck) in the index."
+        description="Register / refresh templates (brand / style / layout / pack) in the index."
     )
     parser.add_argument(
         "template_id", nargs="?",
         help="Template directory id (under templates/<kind_dir>/). Omit with --rebuild-all.",
     )
     parser.add_argument(
-        "--kind", choices=list(KIND_CONFIG.keys()), default="deck",
-        help="Template kind (default: deck).",
+        "--kind", choices=list(KIND_CONFIG.keys()), required=True,
+        help="Template kind (required).",
     )
     parser.add_argument("--rebuild-all", action="store_true",
                         help="Rebuild every index entry within the chosen kind.")

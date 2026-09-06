@@ -22,7 +22,7 @@ primary_color: "#004098"
 
 | Role | HEX | Provenance | Notes |
 |---|---|---|---|
-| primary | `#004098` | approx | Working primary blue aligned with the validated CATARC deck template |
+| primary | `#004098` | approx | Working primary blue aligned with the validated CATARC source presentation |
 | secondary | `#003B82` | approx | Dark blue for chapter pages, headers, and restrained depth |
 | text | `#333333` | approx | Primary body text on light backgrounds |
 | muted-text | `#666666` | approx | Secondary descriptions and notes |

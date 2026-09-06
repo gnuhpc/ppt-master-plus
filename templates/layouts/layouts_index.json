@@ -1,179 +1,4 @@
 {
-  "editorial_bleed": {
-    "summary": "A structure-only 16:9 system with 10 authored PowerPoint Layouts whose images bleed to the canvas edge and whose text sits on the image behind a scrim.",
-    "canvas_format": "ppt169",
-    "page_count": 10,
-    "page_types": [
-      "hero_full",
-      "hero_side_scrim",
-      "split_bleed",
-      "split_bleed_reverse",
-      "chapter_full",
-      "quote_over_image",
-      "triptych",
-      "image_grid_four",
-      "full_statement",
-      "closing_full"
-    ]
-  },
-  "moments_square": {
-    "summary": "A structure-only 1:1 system with 8 authored PowerPoint Layouts that use both horizontal and vertical division on a square canvas.",
-    "canvas_format": "moments",
-    "page_count": 8,
-    "page_types": [
-      "cover",
-      "statement",
-      "title_content",
-      "two_column",
-      "three_row",
-      "image_center",
-      "image_full",
-      "ending"
-    ]
-  },
-  "presentation_core": {
-    "summary": "A structure-only 16:9 system with 20 authored PowerPoint Layouts for general, editorial, image, process, and data presentations.",
-    "canvas_format": "ppt169",
-    "page_count": 20,
-    "page_types": [
-      "title_slide",
-      "title_content",
-      "section_header",
-      "two_content",
-      "comparison",
-      "title_only",
-      "blank",
-      "content_caption",
-      "picture_caption",
-      "hero_statement",
-      "editorial_split",
-      "three_card",
-      "kpi_dashboard",
-      "process_timeline",
-      "data_story",
-      "title_picture",
-      "two_picture_caption",
-      "screenshot_focus",
-      "chart_insight",
-      "table_summary"
-    ]
-  },
-  "presentation_core_43": {
-    "summary": "A structure-only 4:3 system with 16 authored PowerPoint Layouts for projector, classroom, academic, and meeting-room presentations.",
-    "canvas_format": "ppt43",
-    "page_count": 16,
-    "page_types": [
-      "title_slide",
-      "title_content",
-      "section_header",
-      "two_content",
-      "comparison",
-      "title_only",
-      "blank",
-      "content_caption",
-      "picture_caption",
-      "hero_statement",
-      "three_card",
-      "kpi_grid",
-      "process_timeline",
-      "stacked_split",
-      "chart_insight",
-      "table_summary"
-    ]
-  },
-  "report_core": {
-    "summary": "A structure-only 16:9 system with 13 authored PowerPoint Layouts across two Masters, carrying persistent page chrome and page-number placeholders.",
-    "canvas_format": "ppt169",
-    "page_count": 13,
-    "page_types": [
-      "cover",
-      "section_divider",
-      "agenda",
-      "title_content",
-      "two_content",
-      "three_block",
-      "kpi_row",
-      "chart_insight",
-      "table_summary",
-      "process_timeline",
-      "matrix_2x2",
-      "appendix",
-      "closing"
-    ]
-  },
-  "story_vertical": {
-    "summary": "A structure-only 9:16 system with 9 authored PowerPoint Layouts whose text geometry respects the top and bottom story safe zones.",
-    "canvas_format": "story",
-    "page_count": 9,
-    "page_types": [
-      "cover",
-      "statement",
-      "title_content",
-      "numbered_list",
-      "image_full",
-      "image_top_text",
-      "two_block",
-      "step_flow",
-      "ending"
-    ]
-  },
-  "xiaohongshu_post": {
-    "summary": "A structure-only 3:4 vertical system with 10 authored PowerPoint Layouts for single-column image-text posts on tall social canvases.",
-    "canvas_format": "xiaohongshu",
-    "page_count": 10,
-    "page_types": [
-      "cover",
-      "statement",
-      "title_content",
-      "numbered_list",
-      "two_card_stack",
-      "image_top_text",
-      "image_full_caption",
-      "quote",
-      "step_flow",
-      "ending"
-    ]
-  },
-  "neumorphic_cards": {
-    "summary": "Neumorphic 4-column soft shadow card layout for feature matrices and core capabilities.",
-    "canvas_format": "ppt169",
-    "page_count": 1,
-    "page_types": [
-      "content"
-    ]
-  },
-  "black_gold_comparison": {
-    "summary": "Luxury dark gold 2-column split comparison for strategic positioning.",
-    "canvas_format": "ppt169",
-    "page_count": 1,
-    "page_types": [
-      "content"
-    ]
-  },
-  "glass_metrics_grid": {
-    "summary": "Glassmorphism 4-KPI dashboard with translucent cards and gradient glow.",
-    "canvas_format": "ppt169",
-    "page_count": 1,
-    "page_types": [
-      "content"
-    ]
-  },
-  "code_architecture_flow": {
-    "summary": "Terminal-style 3-step execution pipeline for developer architecture docs.",
-    "canvas_format": "ppt169",
-    "page_count": 1,
-    "page_types": [
-      "content"
-    ]
-  },
-  "double_diamond_process": {
-    "summary": "Double diamond (Discover, Define, Develop, Deliver) design thinking framework.",
-    "canvas_format": "ppt169",
-    "page_count": 1,
-    "page_types": [
-      "content"
-    ]
-  },
   "academic_defense": {
     "summary": "Thesis defense, academic presentations, research progress reports, grant applications.",
     "canvas_format": "ppt169",
@@ -266,6 +91,23 @@
       "ending"
     ]
   },
+  "editorial_bleed": {
+    "summary": "A structure-only 16:9 system with 10 authored PowerPoint Layouts whose images bleed to the canvas edge and whose text sits on the image behind a scrim.",
+    "canvas_format": "ppt169",
+    "page_count": 10,
+    "page_types": [
+      "hero_full",
+      "hero_side_scrim",
+      "split_bleed",
+      "split_bleed_reverse",
+      "chapter_full",
+      "quote_over_image",
+      "triptych",
+      "image_grid_four",
+      "full_statement",
+      "closing_full"
+    ]
+  },
   "fresh_product_launch": {
     "summary": "Minimalist fresh green leaves style layout for product launches.",
     "canvas_format": "ppt169",
@@ -314,17 +156,28 @@
       "ending"
     ]
   },
+  "magazine": {
+    "summary": "Magazine & E-Ink layout templates - warm tones, serif titles, split layouts, structured margins.",
+    "canvas_format": "ppt169",
+    "page_count": 4,
+    "page_types": [
+      "cover",
+      "chapter",
+      "content_split",
+      "ending"
+    ]
+  },
   "marble_gray_minimal": {
     "summary": "High-end marble textured background with gold accented borders and modern typography.",
     "canvas_format": "ppt169",
-    "page_count": 6,
+    "page_count": 5,
     "page_types": [
       "cover",
       "chapter",
       "toc",
       "content",
-      "ending",
-      "content_three_columns"
+      "content_three_columns",
+      "ending"
     ]
   },
   "medical_university": {
@@ -402,15 +255,30 @@
   "minimal_editorial_serif": {
     "summary": "High-end editorial style layout with clean serif typography and split-image divider blocks.",
     "canvas_format": "ppt169",
-    "page_count": 7,
+    "page_count": 5,
     "page_types": [
       "cover",
       "chapter",
       "toc",
       "content",
-      "ending",
       "content_two_col",
-      "content_three_circles"
+      "content_three_circles",
+      "ending"
+    ]
+  },
+  "moments_square": {
+    "summary": "A structure-only 1:1 system with 8 authored PowerPoint Layouts that use both horizontal and vertical division on a square canvas.",
+    "canvas_format": "moments",
+    "page_count": 8,
+    "page_types": [
+      "cover",
+      "statement",
+      "title_content",
+      "two_column",
+      "three_row",
+      "image_center",
+      "image_full",
+      "ending"
     ]
   },
   "peach_blossom_fresh": {
@@ -437,6 +305,56 @@
       "ending"
     ]
   },
+  "presentation_core": {
+    "summary": "A structure-only 16:9 system with 20 authored PowerPoint Layouts for general, editorial, image, process, and data presentations.",
+    "canvas_format": "ppt169",
+    "page_count": 20,
+    "page_types": [
+      "title_slide",
+      "title_content",
+      "section_header",
+      "two_content",
+      "comparison",
+      "title_only",
+      "blank",
+      "content_caption",
+      "picture_caption",
+      "hero_statement",
+      "editorial_split",
+      "three_card",
+      "kpi_dashboard",
+      "process_timeline",
+      "data_story",
+      "title_picture",
+      "two_picture_caption",
+      "screenshot_focus",
+      "chart_insight",
+      "table_summary"
+    ]
+  },
+  "presentation_core_43": {
+    "summary": "A structure-only 4:3 system with 16 authored PowerPoint Layouts for projector, classroom, academic, and meeting-room presentations.",
+    "canvas_format": "ppt43",
+    "page_count": 16,
+    "page_types": [
+      "title_slide",
+      "title_content",
+      "section_header",
+      "two_content",
+      "comparison",
+      "title_only",
+      "blank",
+      "content_caption",
+      "picture_caption",
+      "hero_statement",
+      "three_card",
+      "kpi_grid",
+      "process_timeline",
+      "stacked_split",
+      "chart_insight",
+      "table_summary"
+    ]
+  },
   "psychology_attachment": {
     "summary": "Psychotherapy training, academic lectures, counseling case analysis, professional sharing.",
     "canvas_format": "ppt169",
@@ -447,6 +365,55 @@
       "chapter",
       "content",
       "ending"
+    ]
+  },
+  "report_core": {
+    "summary": "A structure-only 16:9 system with 13 authored PowerPoint Layouts across two Masters, carrying persistent page chrome and page-number placeholders.",
+    "canvas_format": "ppt169",
+    "page_count": 13,
+    "page_types": [
+      "cover",
+      "section_divider",
+      "agenda",
+      "title_content",
+      "two_content",
+      "three_block",
+      "kpi_row",
+      "chart_insight",
+      "table_summary",
+      "process_timeline",
+      "matrix_2x2",
+      "appendix",
+      "closing"
+    ]
+  },
+  "story_vertical": {
+    "summary": "A structure-only 9:16 system with 9 authored PowerPoint Layouts whose text geometry respects the top and bottom story safe zones.",
+    "canvas_format": "story",
+    "page_count": 9,
+    "page_types": [
+      "cover",
+      "statement",
+      "title_content",
+      "numbered_list",
+      "image_full",
+      "image_top_text",
+      "two_block",
+      "step_flow",
+      "ending"
+    ]
+  },
+  "swiss_style": {
+    "summary": "Swiss Internationalism layout templates - strict modular grid structures, including S01 Cover, S02 Vertical Timeline, S06 KPI Tower, S08 Compare Grid, S11 Horizontal Timeline, S22 Image Hero.",
+    "canvas_format": "ppt169",
+    "page_count": 6,
+    "page_types": [
+      "S01_cover",
+      "S02_vertical_timeline",
+      "S06_kpi_tower",
+      "S08_duo_compare",
+      "S11_horizontal_timeline",
+      "S22_image_hero"
     ]
   },
   "work_summary_elegant_bw": {
@@ -463,28 +430,285 @@
       "ending"
     ]
   },
-  "magazine": {
-    "summary": "Magazine & E-Ink layout templates - warm tones, serif titles, split layouts, structured margins.",
-    "canvas_format": "ppt169",
-    "page_count": 4,
+  "xiaohongshu_post": {
+    "summary": "A structure-only 3:4 vertical system with 10 authored PowerPoint Layouts for single-column image-text posts on tall social canvases.",
+    "canvas_format": "xiaohongshu",
+    "page_count": 10,
     "page_types": [
       "cover",
-      "chapter",
-      "content_split",
+      "statement",
+      "title_content",
+      "numbered_list",
+      "two_card_stack",
+      "image_top_text",
+      "image_full_caption",
+      "quote",
+      "step_flow",
       "ending"
     ]
   },
-  "swiss_style": {
-    "summary": "Swiss Internationalism layout templates - strict modular grid structures, including S01 Cover, S02 Vertical Timeline, S06 KPI Tower, S08 Compare Grid, S11 Horizontal Timeline, S22 Image Hero.",
+  "传统行业_业务运营与看板": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
     "canvas_format": "ppt169",
-    "page_count": 6,
+    "page_count": 5,
     "page_types": [
-      "S01_cover",
-      "S02_vertical_timeline",
-      "S06_kpi_tower",
-      "S08_duo_compare",
-      "S11_horizontal_timeline",
-      "S22_image_hero"
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_卡通教育与课件": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_咨询麦肯锡风": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_商业汇报全场景": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_商务蓝": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_多彩几何汇报": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_大厂战略汇报": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_学术开题万能公式": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_学术开题方法论": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_思政教学设计": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_思维模型合辑": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_教学图解模型": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_数据图表合辑": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_竞聘述职与晋升": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_经典红": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_通用汇报合辑": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_酒红名校开题": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_酸性插画总结": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_重型数据可视化": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_青年党建": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "传统行业_项目与系统架构": {
+    "summary": "五页可编辑结构原型，覆盖封面、目录、章节、内容和结束页；不锁定品牌、配色、字体或图表图例样式。",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "cover",
+      "toc",
+      "chapter",
+      "content",
+      "ending"
+    ]
+  },
+  "飞天发布_page_kit": {
+    "summary": "用户通过 Brand Import Web 确认的封面、目录、过渡、正文母版与封底",
+    "canvas_format": "ppt169",
+    "page_count": 5,
+    "page_types": [
+      "closing",
+      "content",
+      "cover",
+      "section",
+      "toc"
     ]
   }
 }

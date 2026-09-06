@@ -9,6 +9,12 @@ Confirmations, two blocking confirmations, `gated` / `continuous` / `split`
 execution, page-by-page production, SVG Editor, Live Preview, and resume behavior
 are defined in the top-level `SKILL.md` and remain unchanged.
 
+After the final Confirm UI result (and any required image-acquisition step), the
+first production action is mandatory: start Live Preview successfully with
+`svg_editor/server.py <project> --live --daemon`, obtain its reachable URL, and
+only then author the first slide/SVG. A failed or unavailable preview blocks
+slide production; this applies equally to a resumed execution.
+
 Profiles:
 
 - `profiles/faithful-beautify.md`: preserve wording, page order, and page count while redesigning.

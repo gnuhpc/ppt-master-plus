@@ -1,5 +1,5 @@
 #!/usr/bin/env python3
-"""Register a brand / style / layout / deck template in the global index.
+"""Register a Brand, Style, Layout, or Pack in the global index.
 
 Four kinds, four workspace roots, four index files. The shared model lives
 in ``templates/README.md``; each kind's schema lives in its directory README:
@@ -9,7 +9,7 @@ in ``templates/README.md``; each kind's schema lives in its directory README:
 | brand   | ``templates/brands/``   | ``brands_index.json``         |
 | style   | ``templates/styles/``   | ``styles_index.json``         |
 | layout  | ``templates/layouts/``  | ``layouts_index.json``        |
-| deck    | ``templates/decks/``    | ``decks_index.json``          |
+| pack    | ``templates/packs/``    | ``packs_index.json``          |
 
 Current workspaces keep ``design_spec.md`` and any SVG roster under
 ``<workspace>/templates/``. Assets live in optional ``images/`` / ``icons/``
@@ -23,15 +23,15 @@ discovery happens exclusively against the index file):
 - brand:  ``{ summary, primary_color }``
 - style:  ``{ summary, keywords[] }``
 - layout: ``{ summary, canvas_format, page_count, page_types[] }``
-- deck:   ``{ summary, canvas_format, page_count, primary_color }``
+- pack:   ``{ summary, brand_id, style_id, layout_id, keywords[] }``
 
 Usage::
 
-    python3 scripts/register_template.py <id> --kind deck     # default kind=deck
     python3 scripts/register_template.py <id> --kind layout
     python3 scripts/register_template.py <id> --kind brand
     python3 scripts/register_template.py <id> --kind style
-    python3 scripts/register_template.py --rebuild-all --kind deck
+    python3 scripts/register_template.py <id> --kind pack
+    python3 scripts/register_template.py --rebuild-all --kind pack
     python3 scripts/register_template.py <id> --dry-run
 
 ``--rebuild-all`` rebuilds every entry from scratch within the chosen kind;
@@ -88,11 +88,11 @@ KIND_CONFIG = {
         "id_key": "layout_id",
         "needs_svg_roster": True,
     },
-    "deck": {
-        "dir": TEMPLATES_DIR / "decks",
-        "index": TEMPLATES_DIR / "decks" / "decks_index.json",
-        "id_key": "deck_id",
-        "needs_svg_roster": True,
+    "pack": {
+        "dir": TEMPLATES_DIR / "packs",
+        "index": TEMPLATES_DIR / "packs" / "packs_index.json",
+        "id_key": "pack_id",
+        "needs_svg_roster": False,
     },
 }
 
@@ -335,7 +335,7 @@ def _summary_from_use_cases(use_cases: str | None) -> str | None:
 
 
 _SPEC_NAME_RE = re.compile(
-    r"design_spec\.(?P<kind>brand|style|layout|deck)\.(?P<id>[^/\\]+)\.md"
+    r"design_spec\.(?P<kind>brand|style|layout|pack)\.(?P<id>[^/\\]+)\.md"
 )
 
 
@@ -426,7 +426,7 @@ def _validate_spec_shape(template_dir: Path) -> list[tuple[Path, str]]:
 def _has_qualified_roster_spec(template_dir: Path) -> bool:
     """Return whether a project directory declares a structural kind."""
     return any(
-        kind in {"layout", "deck"}
+        kind == "layout"
         for _path, kind in _qualified_template_specs(template_dir)
     )
 
@@ -566,7 +566,7 @@ def _validate_brand_spec(
             + ", ".join(unexpected_fields)
         )
 
-    # Project pages are valid only when one sibling Layout or Deck owns them.
+    # Project pages are valid only when one sibling Layout owns them.
     if pages and not _has_qualified_roster_spec(template_dir):
         errors.append(
             "brand workspaces must not contain page SVGs under templates/: "
@@ -731,7 +731,7 @@ def _validate_style_spec(
     if pages and not _has_qualified_roster_spec(template_dir):
         errors.append(
             "style workspaces must not contain page SVGs without a sibling "
-            "Layout or Deck owner: "
+            "Layout owner: "
             + ", ".join(f"{page}.svg" for page in pages)
         )
 
@@ -994,7 +994,7 @@ def _validate_svg_template_spec(
     *,
     validate_payload: bool = True,
 ) -> None:
-    """Validate Layout/Deck metadata and, when active, its SVG payload."""
+    """Validate Layout metadata and, when active, its SVG payload."""
     errors: list[str] = []
     id_key = KIND_CONFIG[kind]["id_key"]
     declared_id = str(frontmatter.get(id_key) or "").strip()
@@ -1056,26 +1056,18 @@ def _validate_svg_template_spec(
             "frontmatter replication_mode must be standard, fidelity, or mirror"
         )
 
-    if kind == "layout":
-        raw_page_types = frontmatter.get("page_types")
-        expected_page_types = _derive_page_types(pages)
-        if not isinstance(raw_page_types, list) or not all(
-            isinstance(item, str) and item.strip()
-            for item in raw_page_types
-        ):
-            errors.append("frontmatter page_types must be a non-empty string list")
-        elif raw_page_types != expected_page_types:
-            errors.append(
-                "frontmatter page_types must exactly match the SVG filename "
-                f"roster: expected {expected_page_types!r}, got {raw_page_types!r}"
-            )
-    else:
-        primary_color = str(frontmatter.get("primary_color") or "").strip()
-        if _HEX_COLOR_RE.fullmatch(primary_color) is None:
-            errors.append(
-                "frontmatter primary_color must use #RRGGBB, "
-                f"got {primary_color!r}"
-            )
+    raw_page_types = frontmatter.get("page_types")
+    expected_page_types = _derive_page_types(pages)
+    if not isinstance(raw_page_types, list) or not all(
+        isinstance(item, str) and item.strip()
+        for item in raw_page_types
+    ):
+        errors.append("frontmatter page_types must be a non-empty string list")
+    elif raw_page_types != expected_page_types:
+        errors.append(
+            "frontmatter page_types must exactly match the SVG filename "
+            f"roster: expected {expected_page_types!r}, got {raw_page_types!r}"
+        )
 
     svg_paths = [template_dir / f"{page}.svg" for page in pages]
     if validate_payload and canvas is not None:
@@ -1121,28 +1113,69 @@ def _validate_svg_template_spec(
         raise SpecParseError(f"invalid {kind} specification:\n{details}")
 
 
-def validate_shadowed_deck_spec(
-    spec_path: str | Path,
-    declared_pages: list[str],
+def _validate_pack_spec(
+    template_id: str | None,
+    template_root: Path,
+    template_dir: Path,
+    frontmatter: dict,
+    pages: list[str],
 ) -> None:
-    """Validate a Deck spec whose SVG roster is overridden by Layout."""
-    path = Path(spec_path)
-    match = _SPEC_NAME_RE.fullmatch(path.name)
-    if match is None or match.group("kind") != "deck":
-        raise SpecParseError(
-            "shadowed Deck validation requires design_spec.deck.<id>.md"
+    """Validate a metadata-only Pack and all referenced library ids."""
+    errors: list[str] = []
+    allowed = {
+        "pack_id", "kind", "summary", "brand_id", "style_id", "layout_id", "keywords"
+    }
+    if template_id is not None and frontmatter.get("pack_id") != template_id:
+        errors.append("frontmatter pack_id must match the directory name")
+    if frontmatter.get("kind") != "pack":
+        errors.append("frontmatter kind must be 'pack'")
+    unexpected = sorted(set(frontmatter) - allowed)
+    if unexpected:
+        errors.append("unexpected frontmatter field(s): " + ", ".join(unexpected))
+    if not str(frontmatter.get("summary") or "").strip():
+        errors.append("frontmatter summary must be non-empty")
+    keywords = frontmatter.get("keywords")
+    if not isinstance(keywords, list) or not all(
+        isinstance(item, str) and item.strip() for item in keywords
+    ):
+        errors.append("frontmatter keywords must be a non-empty string list")
+    refs = {
+        "brand": frontmatter.get("brand_id"),
+        "style": frontmatter.get("style_id"),
+        "layout": frontmatter.get("layout_id"),
+    }
+    normalized = {
+        kind: value.strip() if isinstance(value, str) and value.strip() else None
+        for kind, value in refs.items()
+    }
+    if sum(value is not None for value in normalized.values()) < 2:
+        errors.append("pack must reference at least two of Brand, Style, and Layout")
+    for kind, ref_id in normalized.items():
+        if ref_id is None:
+            continue
+        try:
+            index = _load_index(KIND_CONFIG[kind]["index"])
+        except (OSError, ValueError) as exc:
+            errors.append(f"could not read {kind} index: {exc}")
+            continue
+        if ref_id not in index:
+            errors.append(f"pack references unknown {kind}_id {ref_id!r}")
+    if pages:
+        errors.append("pack must not contain SVG files")
+    allowed_files = {template_dir / "design_spec.md"}
+    unexpected_files = sorted(
+        path.relative_to(template_root).as_posix()
+        for path in template_root.rglob("*")
+        if path.is_file() and path not in allowed_files
+    )
+    if unexpected_files:
+        errors.append(
+            "pack workspaces may contain only templates/design_spec.md; unexpected file(s): "
+            + ", ".join(unexpected_files)
         )
-    _kind, filename_id, frontmatter, _body = validate_qualified_spec_identity(
-        path
-    )
-    _validate_svg_template_spec(
-        "deck",
-        filename_id,
-        path.parent,
-        frontmatter,
-        declared_pages,
-        validate_payload=False,
-    )
+    if errors:
+        details = "\n".join(f"  - {error}" for error in errors)
+        raise SpecParseError(f"invalid pack specification:\n{details}")
 
 
 # ---------------------------------------------------------------------------
@@ -1237,21 +1270,20 @@ def _extract_entry(
             page_count=int(fm["page_count"]),
             page_types=list(page_types),
         )
-    elif kind == "deck":
-        if template_id is None:
-            raise SpecParseError("deck validation requires an expected deck_id")
-        _validate_svg_template_spec(
-            kind,
+    elif kind == "pack":
+        _validate_pack_spec(
             template_id,
+            template_root,
             template_dir,
             fm,
             pages,
         )
         entry = OrderedDict(
             summary=summary,
-            canvas_format=str(fm["canvas_format"]),
-            page_count=int(fm["page_count"]),
-            primary_color=str(primary_color),
+            brand_id=fm.get("brand_id"),
+            style_id=fm.get("style_id"),
+            layout_id=fm.get("layout_id"),
+            keywords=[item.strip() for item in fm["keywords"]],
         )
     else:
         raise SpecParseError(f"unknown kind {kind!r}")
@@ -1326,6 +1358,17 @@ def validate_style_workspace(template_root: str | Path) -> dict:
     return _extract_entry("style", expected_id, root)
 
 
+def validate_pack_workspace(template_root: str | Path) -> dict:
+    """Validate a metadata-only Pack workspace without registering it."""
+    root = Path(template_root)
+    expected_id = (
+        root.name
+        if root.resolve().parent == KIND_CONFIG["pack"]["dir"].resolve()
+        else None
+    )
+    return _extract_entry("pack", expected_id, root)
+
+
 # ---------------------------------------------------------------------------
 # Index / README writers
 # ---------------------------------------------------------------------------
@@ -1362,25 +1405,25 @@ def _enumerate_ids(kind: str) -> list[str]:
 def _print_completion_card(kind: str, template_id: str, entry: dict, extras: dict) -> None:
     pretty_kind = {
         "layout": "Layout",
-        "deck": "Deck",
         "brand": "Brand",
         "style": "Style",
+        "pack": "Pack",
     }[kind]
     dir_name = {
         "layout": "layouts",
-        "deck": "decks",
         "brand": "brands",
         "style": "styles",
+        "pack": "packs",
     }[kind]
     print()
     print(f"## {pretty_kind} Registration Complete")
     print()
     print(f"**{pretty_kind} ID**: {template_id}")
     print(f"**Path**: `templates/{dir_name}/{template_id}/`")
-    if kind in ("brand", "deck"):
+    if kind == "brand":
         primary = entry.get("primary_color") or "—"
         print(f"**Primary Color**: {primary}")
-    if kind in ("layout", "deck"):
+    if kind == "layout":
         canvas = entry.get("canvas_format") or "—"
         pc = entry.get("page_count") or "—"
         print(f"**Canvas**: {canvas}")
@@ -1414,7 +1457,7 @@ def _print_completion_card(kind: str, template_id: str, entry: dict, extras: dic
 def main() -> int:
     parser = argparse.ArgumentParser(
         description=(
-            "Register / refresh templates (brand / style / layout / deck) "
+            "Register / refresh templates (brand / style / layout / pack) "
             "in the index."
         )
     )
@@ -1423,8 +1466,8 @@ def main() -> int:
         help="Template directory id (under templates/<kind_dir>/). Omit with --rebuild-all.",
     )
     parser.add_argument(
-        "--kind", choices=list(KIND_CONFIG.keys()), default="deck",
-        help="Template kind (default: deck).",
+        "--kind", choices=list(KIND_CONFIG.keys()), required=True,
+        help="Template kind (required).",
     )
     parser.add_argument("--rebuild-all", action="store_true",
                         help="Rebuild every index entry within the chosen kind.")

@@ -372,7 +372,7 @@ python3 skills/ppt-master/scripts/visualization_recall.py validate \
 Correct failed selections by re-reading the complete vocabulary/registry;
 `no-template-match` never enters `page_visualizations`.
 
-**Section VII selection list**: write `Page | Family | Template | Usage` for each `chart|table` reference; Usage is semantic purpose. Omit empty/no-match detail. Qualitative composition stays in §IX; only Layout/Deck owns reusable PowerPoint structure.
+**Section VII selection list**: write `Page | Family | Template | Usage` for each `chart|table` reference; Usage is semantic purpose. Omit empty/no-match detail. Qualitative composition stays in §IX; only Layout owns reusable PowerPoint structure.
 
 **Native-ready boundary**: Give every independent data chart and pure text-grid table in §IX `Visualization` a unique page-local semantic `kebab-case` key, then write one `Native-ready` map: `<key>=yes|no; ...`. Decide `yes` by default; use `no` only when [`native-data-interface.md`](./native-data-interface.md) §2 cannot express that object. Qualitative shape compositions and incidental microvisuals stay unlisted.
 

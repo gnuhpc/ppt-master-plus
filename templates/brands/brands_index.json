@@ -8,7 +8,7 @@
     "primary_color": "#FF6A00"
   },
   "anthropic": {
-    "summary": "Anthropic brand identity — AI/LLM tech talks, developer conferences, technical training, product launches",
+    "summary": "Anthropic / Claude brand family — AI research, product talks, developer conferences, technical training, and launches",
     "primary_color": "#D97757"
   },
   "apple": {
@@ -35,13 +35,13 @@
     "summary": "Deloitte-style professional-services identity — signature green on black and neutrals for audit, tax, risk, and advisory decks",
     "primary_color": "#86BC25"
   },
+  "ffa_shenzhen": {
+    "summary": "Flink Forward Asia (FFA) Shenzhen Forum identity for technical conference presentations.",
+    "primary_color": "#9966F7"
+  },
   "flink_ai_style": {
     "summary": "Full-stack AI native stream computing presentation style, deep navy background with Flink green and purple accents.",
     "primary_color": "#04CF82"
-  },
-  "ffa_shenzhen": {
-    "summary": "Flink Forward Asia (FFA) Shenzhen Forum identity — dark technical-conference visual language with purple neon accents.",
-    "primary_color": "#9966F7"
   },
   "google": {
     "summary": "Google brand identity — multi-product corporate decks, developer events (Google I/O style), education and training in the Google ecosystem",
@@ -64,7 +64,7 @@
     "primary_color": "#5E6AD2"
   },
   "magazine": {
-    "summary": "Magazine & E-Ink style - warm tones, serif/sans-serif typography contrast, literary layouts.",
+    "summary": "Magazine & E-Ink style - warm tones, serif/sans-serif typography contrast, literary layouts",
     "primary_color": "#262626"
   },
   "mckinsey": {
@@ -92,11 +92,11 @@
     "primary_color": "#635BFF"
   },
   "swiss_grid": {
-    "summary": "Swiss Graphic Design Grid System — high contrast crimson red/navy, 3-tier font size hierarchy, >35% whitespace discipline.",
-    "primary_color": "#E63946"
+    "summary": "",
+    "primary_color": "#1D3557"
   },
   "swiss_style": {
-    "summary": "Swiss Internationalism style - Klein Blue high contrast accent, strict grid locking, typography weight contrasts.",
+    "summary": "Swiss Internationalism style - Klein Blue high contrast accent, strict grid locking, typography weight contrasts",
     "primary_color": "#0020C2"
   },
   "tencent": {
@@ -108,7 +108,7 @@
     "primary_color": "#FF6900"
   },
   "中国电信": {
-    "summary": "China Telecom identity for digital infrastructure, government-enterprise solutions, transformation planning, and corporate reporting",
+    "summary": "China Telecom related briefings, 政企数字化方案, 转型规划, 内部汇报.",
     "primary_color": "#C00000"
   },
   "中国电建": {
@@ -116,11 +116,11 @@
     "primary_color": "#004EA1"
   },
   "中国电建_常规": {
-    "summary": "POWERCHINA standard identity for engineering project reports and technical proposals",
+    "summary": "Engineering project reports, technical proposal presentations, business negotiations, corporate promotion, annual summaries.",
     "primary_color": "#00418D"
   },
   "中国电建_现代": {
-    "summary": "POWERCHINA modern identity for major projects, international promotion, and technology showcases",
+    "summary": "Major engineering reports, international market promotion, technology achievement showcases, high-end business negotiations.",
     "primary_color": "#00418D"
   },
   "中汽研": {
@@ -128,23 +128,28 @@
     "primary_color": "#004098"
   },
   "中汽研_商务": {
-    "summary": "CATARC business identity for product certification, technology promotion, and executive reporting",
+    "summary": "Product certification display, evaluation presentations, technology promotion, high-end business reporting.",
     "primary_color": "#003366"
   },
   "中汽研_常规": {
-    "summary": "CATARC standard identity for certification, evaluation, and business visits",
+    "summary": "Product certification display, evaluation presentations, technology promotion, business visits.",
     "primary_color": "#004098"
   },
   "中汽研_现代": {
-    "summary": "CATARC modern identity for forward-looking technology showcases and strategic releases",
+    "summary": "Forward-looking technology showcases, strategic releases, high-end business reporting.",
     "primary_color": "#001529"
   },
   "招商银行": {
-    "summary": "China Merchants Bank transaction-banking identity for product, sales, and branch-training presentations",
+    "summary": "交易银行产品介绍、销售收款方案汇报、客户案例拆解、分行培训材料.",
     "primary_color": "#C8152D"
   },
   "重庆大学": {
-    "summary": "Chongqing University identity for academic defense, research reports, teaching, and scholarly exchange",
+    "summary": "Academic defense, research reports, teaching presentations, scholarly exchange.",
     "primary_color": "#006BB7"
+  },
+  "飞天发布": {
+    "summary": "从“飞天发布时刻PPT模板”导入的品牌身份，适用于与源模板一致的演示场景",
+    "primary_color": "#2609F5",
+    "page_kit_layout_id": "飞天发布_page_kit"
   }
 }

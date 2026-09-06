@@ -21,18 +21,32 @@ Read [`workflows/routing.md`](workflows/routing.md) first and select exactly one
 
 1. [`Generate PPTX`](workflows/generate-pptx.md) — generate or redesign visible pages.
 2. [`Edit Native PPTX`](workflows/edit-native-pptx.md) — preserve the supplied deck and modify it.
-3. [`Import Brand PPTX`](workflows/import-brand-pptx.md) — import an explicitly user-provided `.pptx` file as a Brand reference for new content.
+3. [`Import Brand PPTX`](workflows/import-brand-pptx.md) — import an explicitly user-provided `.pptx` file as a reusable Brand asset plus a confirmed native Page Kit. This does not create a presentation project or generate slides.
 
-For Import Brand PPTX, chart, table, infographic, and diagram styling
-always comes from the Skill's built-in visualization catalogs. The import is
-always a Brand: it contributes locked identity tokens and reusable brand assets,
-never source-page topology, object geometry, visualization-example styling, or
-sample data.
+For Import Brand PPTX, chart, table, infographic, and diagram styling defaults
+to the Skill's built-in visualization catalogs. On an explicit user request,
+`--register-icon-layout <id>` or `--register-chart-layout <id>` creates a
+narrow companion Layout for icon or chart visual grammar. Such a Layout may
+guide icon treatment or chart type, series palette, axes, gridlines, legend, and label rules;
+it never carries source data, page topology, object geometry, or sample copy.
+The import itself is always a Brand: it contributes locked identity tokens and
+reusable brand assets.
 
 This route starts only from a `.pptx` file path explicitly supplied by the user.
-Import that file read-only with `project_manager.py import-template`; do not
-resolve a bare template name, choose an internal Brand/Style/Layout/Deck asset,
-or register the imported PPTX as a reusable Skill template.
+It is a standalone asset-import route: use `scripts/import_brand.py <file>
+--brand-id <id>` to materialize identity tokens and a linked, user-confirmed
+Page Kit under `templates/brands/<id>/` and `templates/layouts/`. Do not create a `projects/` entry,
+resolve a bare template name, or choose an internal Brand/Style/Layout/Pack asset.
+The source PPTX and unconfirmed page topology are never registered. The importer
+always launches Brand Import Web and waits for the user to confirm extracted
+color and typography rules plus the exact cover, TOC, section-transition,
+content Master/Layout, and closing pages. Only those confirmed rows may be registered.
+For a confirmed content row, registration removes every slide-local object and
+keeps only its linked Master/Layout layer, including Master background images,
+Master text, and Master/Layout placeholders. On an equally
+explicit request, `--register-icon-layout <id>` and
+`--register-chart-layout <id>` create separate companion Layouts for icon or
+chart visual grammar only.
 
 The Step 1–7 procedure below is the frozen Generate implementation. The template
 route adapts the same governance checkpoints and executes as a new-page Generate
@@ -58,6 +72,7 @@ branch.
 > 7. **SEQUENTIAL PAGE GENERATION ONLY** — In Executor Step 6, after the global design context is confirmed, SVG pages MUST be generated sequentially page by page in one continuous pass. Grouped page batches (for example, 5 pages at a time) are FORBIDDEN
 > 8. **SPEC_LOCK RE-READ PER PAGE** — Before generating each SVG page, Executor MUST `read_file <project_path>/spec_lock.md`. All colors / fonts / icons / images MUST come from this file — no values from memory or invented on the fly. Executor MUST also look up the current page's `page_rhythm` (`anchor` / `dense` / `breathing`), `page_layouts` (which template SVG to inherit, if any), and `page_charts` (which chart template to adapt, if any). Empty / absent entries are intentional Strategist signals — see executor-base.md §2.1. This rule exists to resist context-compression drift on long decks and to break the uniform "every page is a card grid" default
 > 9. **SVG MUST BE HAND-WRITTEN, NOT SCRIPT-GENERATED** — Every SVG page is written by the main agent directly, one page at a time (see rules 6 and 7). Writing or running a Python / Node / shell script that produces the SVG files in batch — looping over pages, templating from data, or emitting them via a generator — is FORBIDDEN, including under "save tokens", "quick draft", or "user is in a hurry" pretexts. The script-generation path was tried on a feature branch and abandoned: cross-page visual consistency depends on per-page authoring with full upstream context, which a generator script cannot reproduce
+> 10. **ROOT SVG CANVAS IS NON-OPTIONAL** — Before writing every slide, take its exact canvas dimensions from `spec_lock.md`; the root `<svg>` MUST include `xmlns`, unitless `width`, unitless `height`, and `viewBox`, with `width` / `height` exactly equal to the final two `viewBox` values. A missing `width` or `height` is a hard authoring failure even when the `viewBox` is correct: repair the root element before opening or advancing Live Preview. Follow `references/shared-standards.md §4` exactly.
 
 > [!IMPORTANT]
 > ## 🌐 Language & Communication Rule
@@ -93,8 +108,10 @@ Live Preview. `--quick-generate` is unsupported in PPT Master Plus.
 | `${SKILL_DIR}/scripts/source_to_md/excel_to_md.py` | Excel workbooks to Markdown — supports .xlsx/.xlsm; legacy .xls should be resaved as .xlsx |
 | `${SKILL_DIR}/scripts/source_to_md/ppt_to_md.py` | PowerPoint to Markdown |
 | `${SKILL_DIR}/scripts/pptx_intake.py` | PPTX intake; `--intent template` adds template manifest, tokens, archetypes, assets, and previews |
+| `${SKILL_DIR}/scripts/brand_import_ui/server.py` | Brand Import Web; confirm the only special-page prototypes and content Master/Layout shells allowed into a linked Page Kit |
 | `${SKILL_DIR}/scripts/source_to_md/web_to_md.py` | Web page to Markdown (supports WeChat via `curl_cffi`) |
 | `${SKILL_DIR}/scripts/project_manager.py` | Project init / validate / manage |
+| `${SKILL_DIR}/scripts/import_brand.py` | Standalone user-PPTX → reusable Brand plus confirmed native Page Kit; creates no presentation project |
 | `${SKILL_DIR}/scripts/icon_sync.py` | Copy chosen library icons into `<project>/icons/` at selection time; missing names reported + non-zero (re-pick gate) |
 | `${SKILL_DIR}/scripts/analyze_images.py` | Image analysis |
 | `${SKILL_DIR}/scripts/latex_render.py` | LaTeX formula rendering (manifest-driven PNG assets) |
@@ -135,7 +152,7 @@ For complete tool documentation, see `${SKILL_DIR}/scripts/README.md`.
 | Source Adapter | `adapters/humanize-ppt-bridge.md` |
 | Stages | topic research, refine spec, resume execute, Live Preview, visual review, chart verification, animations, audio |
 | Edit Native modules | `page_plan`, `content_edit`, `notes`, `narration`, `transitions`, `animations`, `visible_content_locked` |
-| Internal maintenance | `internal/template-authoring/` for Brand, Style, Layout, and Deck assets |
+| Internal maintenance | `internal/template-authoring/` for Brand, Style, Layout, and Pack assets |
 
 These are not additional public workflows. `gated-production.md` is a Generate
 execution mode. Old native-enhance, native-narration, and template-fill entrypoints
@@ -224,11 +241,11 @@ Multi-deck: several PPTX files may be imported into one main-pipeline project �
 
 **Default — free design.** Proceed directly to Step 4. Do NOT query any `*_index.json` unless triggered. Do NOT ask the user. Do NOT proactively suggest, hint at, or fuzzy-match any template based on content, slug-like words, or vague style descriptions.
 
-**Template flow triggers ONLY on explicit internal template directory paths** supplied by the user in their initial message. The path must resolve under `${SKILL_DIR}/templates/{brands,styles,layouts,decks}/`; arbitrary user-provided or external template directories are not accepted. Legacy Plus packages expose `design_spec.md` at the selected root; current additive workspaces expose `templates/design_spec.md`. The trigger rule is mechanical, not interpretive:
+**Template flow triggers ONLY on explicit internal template directory paths** supplied by the user in their initial message. The path must resolve under `${SKILL_DIR}/templates/{brands,styles,layouts,packs}/`; arbitrary user-provided or external template directories are not accepted. Legacy Plus packages expose `design_spec.md` at the selected root; current additive workspaces expose `templates/design_spec.md`. The trigger rule is mechanical, not interpretive:
 
 | User input contains | Step 3 action |
 |---|---|
-| One or more explicit internal template directory paths under `${SKILL_DIR}/templates/{brands,styles,layouts,decks}/` (each resolves to either `design_spec.md` or `templates/design_spec.md` with `kind: brand` / `kind: style` / `kind: layout` / `kind: deck` in its YAML frontmatter) | Read each spec's `kind`, dispatch per the kind matrix below, fuse if multiple |
+| One or more explicit internal template directory paths under `${SKILL_DIR}/templates/{brands,styles,layouts,packs}/` (each resolves to either `design_spec.md` or `templates/design_spec.md` with `kind: brand` / `kind: style` / `kind: layout` / `kind: pack` in its YAML frontmatter) | Read each spec's `kind`; expand a Pack to its referenced components, then dispatch the resolved Brand/Style/Layout set |
 | Anything else — bare template names ("用 academic_defense"), style descriptions ("麦肯锡风格"), brand mentions ("招商银行风格"), vague intent ("想用个模板"), or silence | Skip Step 3, free design |
 
 There is no slug matching, no name lookup, no fuzzy resolution. A name without a path does not trigger — the user must give an internal bundled-template path the AI can `cd` into.
@@ -241,9 +258,9 @@ There is no slug matching, no name lookup, no fuzzy resolution. A name without a
 
 > Bare names ("academic_defense", "招商银行", "anthropic") do NOT trigger Step 3 even if a matching directory exists in the library. The user must give a path. AI must not "helpfully" resolve a name to a path.
 
-> "What templates exist?" is out-of-band Q&A — answer by listing entries from `brands_index.json` / `layouts_index.json` / `decks_index.json` together with their paths. Listing alone does not advance the pipeline; the user must send a path back to trigger Step 3.
+> "What templates exist?" is out-of-band Q&A — answer by listing entries from `brands_index.json`, `styles_index.json`, `layouts_index.json`, and `packs_index.json` together with their paths. Listing alone does not advance the pipeline; the user must send a path back to trigger Step 3.
 
-> Brand, Style, Layout, and Deck asset authoring is an internal maintenance task
+> Brand, Style, Layout, and Pack asset authoring is an internal maintenance task
 > under `workflows/internal/template-authoring/`, not a user-facing route.
 
 #### Four template kinds
@@ -255,15 +272,15 @@ The architecture has four independent reference bundles. Full schema in [`docs/z
 | **brand** | `templates/brands/<id>/` | identity-only segment: color / typography / logo / voice / icon style | `kind: brand` |
 | **style** | `templates/styles/<id>/` | reusable communication method and design defaults; no identity or SVG roster | `kind: style` |
 | **layout** | `templates/layouts/<id>/` | structure-only segment: canvas / page structure / page types / SVG roster | `kind: layout` |
-| **deck** | `templates/decks/<id>/` | full replica: identity + structure + middle (template overview) segments | `kind: deck` |
+| **pack** | `templates/packs/<id>/` | metadata-only references to at least two of Brand / Style / Layout; no design fields or assets | `kind: pack` |
 
-**Segment ownership** (governs fusion override priority):
+**Segment ownership**:
 
 | Segment | Sections | Owner kind on fusion |
 |---|---|---|
 | Identity | Color Scheme / Typography / Logo / Voice & Tone / Icon Style | brand |
 | Structure | Canvas / Page Structure / Page Types / SVG Roster | layout |
-| Middle | Template Overview (use cases / design intent) | deck (no other kind writes this) |
+| Combination metadata | Component ids, discovery summary, keywords | pack; never consumed as a design segment |
 
 #### Single-path dispatch
 
@@ -272,7 +289,7 @@ The architecture has four independent reference bundles. Full schema in [`docs/z
 | `kind: brand` | `design_spec.md` + non-image assets → `<project>/templates/`; logo / illustration / icon **bitmaps** → `<project>/images/`. Strategist locks identity segment as truth; structure stays free. |
 | `kind: style` | Install the Style spec as a method/default input under `<project>/templates/`; it may seed argument flow, evidence discipline, density, and visual defaults, but never locks identity, page count, page order, geometry, or SVG prototypes. |
 | `kind: layout` | `design_spec.md` + SVG roster → `<project>/templates/`; any **bitmap** assets → `<project>/images/`. Strategist locks structure; identity decided in Eight Confirmations e–g. |
-| `kind: deck` | `design_spec.md` + template SVGs → `<project>/templates/`; logos / backgrounds / other **bitmaps** → `<project>/images/`. Strategist locks all segments; Eight Confirmations narrows to deck-content fields (audience / page count / outline / tone tweaks). |
+| `kind: pack` | Validate the Pack, expand its `brand_id` / `style_id` / `layout_id`, install the referenced components, and retain `design_spec.pack.<id>.md` only for provenance and resume. Pack never supplies design values itself. |
 
 ```bash
 TEMPLATE_DIR=<internal bundled template path under ${SKILL_DIR}/templates>
@@ -283,23 +300,21 @@ cp -r ${TEMPLATE_DIR}/* <project_path>/templates/
 find <project_path>/templates -type f \( -iname '*.png' -o -iname '*.jpg' -o -iname '*.jpeg' -o -iname '*.gif' -o -iname '*.webp' -o -iname '*.bmp' \) -exec mv {} <project_path>/images/ \;
 ```
 
-The same split applies to all three kinds — bitmaps always land in `images/`, the rest in `templates/`. The spec's `kind` field tells Strategist how to read the `templates/` side; downstream code doesn't distinguish. (Template SVGs in `templates/` are reference material only — the rendered pages live in `svg_output/` and reference images via `../images/`.)
+Brand and Layout may contribute assets; bitmaps always land in `images/`, while specs, Layout SVGs, and other non-image assets stay in `templates/`. Style and Pack are metadata-only. Template SVGs are reference material; rendered pages live in `svg_output/`.
 
 #### Multi-path fusion
 
-When the user gives two or more paths of **different kinds**, Step 3 fuses them into a single `<project>/templates/design_spec.md`. **Default granularity is segment-level integer replacement** — entire identity / structure / middle segments are taken from the highest-priority source for that segment, no implicit field-level mixing.
+When the user supplies a Pack, resolve it first. A user-supplied explicit Brand, Style, or Layout replaces the Pack's reference of the same kind; unoverridden Pack references remain. At most one Pack may be selected, and the resolved set contains at most one Brand, one Style, and one Layout.
 
 Override priority by segment:
 
-| Combination | Identity from | Structure from | Middle from |
+| Resolved input | Identity | Direction / method | Structure |
 |---|---|---|---|
-| brand only | brand | (free design) | (none) |
-| layout only | (free design) | layout | (none) |
-| deck only | deck | deck | deck |
-| brand + layout | brand | layout | (none) |
-| brand + deck | brand (overrides deck) | deck | deck |
-| layout + deck | deck | layout (overrides deck) | deck |
-| brand + layout + deck | brand | layout | deck |
+| brand only | Brand | current project | free |
+| style only | current project | Style | free |
+| layout only | current project | current project | Layout |
+| pack | referenced or explicit Brand | referenced or explicit Style | referenced or explicit Layout |
+| explicit components + pack | explicit component wins its kind | explicit component wins its kind | explicit component wins its kind |
 
 Field-level micro-adjustment (e.g. "use anthropic brand but primary changed to #FF0000") is **not** part of Step 3 fusion — it flows into Strategist Eight Confirmations e–g as a normal user request.
 
@@ -326,17 +341,16 @@ Rules:
 
 #### Fused spec provenance
 
-When fusion happens (any multi-path case), the resulting `<project>/templates/design_spec.md` carries a provenance block immediately under its H1:
+When a Pack or multiple components are installed, keep one qualified spec per kind and record the resolved set in the template handoff:
 
 ```markdown
-> **Fused from:**
-> - deck: `templates/decks/传统行业_商业汇报全场景/` （base）
-> - brand: `templates/brands/anthropic/` （identity override）
-> - layout: `templates/layouts/academic_defense/` （structure override）
-> - conflicts resolved: Color Scheme from anthropic（user picked a）
+> **Resolved from Pack:** `传统行业_商业汇报全场景`
+> - brand: none
+> - style: `operating-review`
+> - layout: `传统行业_商业汇报全场景`
 ```
 
-Single-path Step 3 does **not** add provenance (the source is self-evident from the copied files).
+Pack provenance never overrides component contents. Strategist reads only Brand, Style, and Layout as design inputs.
 
 **✅ Checkpoint — Default path proceeds to Step 4 without user interaction. If the user supplied one or more explicit internal template paths, those have been dispatched (or fused) into `<project_path>/templates/` before advancing.**
 
@@ -379,6 +393,13 @@ Read references/strategist.md
 
 > **Why two tiers.** Every realization field is anchored by the same few choices (`visual_style` anchors color / icon / typography / image; a confirmed **brand** preset anchors color / typography / icon style from its `design_spec.md`; `delivery_purpose` sets the body size, page density, **and** the page-count recommendation). Confirming anchors first, then re-deriving, means Tier 2's candidates fit the user's *real* anchors instead of your originals — the coherence reconciliation below is done by construction on this path. Page count is a **derived** field (content volume × `delivery_purpose`), which is why it lives in Tier 2, not up front. For generic PPTX beautification, `content_divergence` is the primary control for how close the rebuilt deck stays to the source. Blank means balanced redesign.
 
+**Selected Brand → Tier 2 candidate contract (Mandatory)**: when Tier 1 confirms a Brand other than `none`, read that exact `templates/brands/<brand_id>/design_spec.md` before writing Tier 2. The Web page must receive the Brand identity as **visible, selectable first candidates**, never merely as a hidden influence on generated alternatives:
+
+- `color.candidates[0]` is named `"<Brand> 官方配色"`, carries the Brand's literal `## II. Color Scheme` values, and cites the Brand spec in its visible note. Map `bg → background`, `primary → primary`, `accent → accent`, and `text-body | text → body_text`; use a published neutral/surface for `secondary_bg` and a published non-white secondary or next accent for `secondary_accent`. Do not invent or replace published Brand HEX values.
+- `typography.candidates[0]` is named `"<Brand> 官方字体规范"`, maps the Brand's title/body/Latin families and weights from `## III. Typography` into the heading/body fields, and states the source family, weight, and type scale visibly in its note. When a Brand publishes sizes in pt, normalize them once for the px-only candidate (`px = pt × 4 / 3`, rounded to two decimals), seeding `body_size` and `sizes.title` / `sizes.subtitle` / `sizes.annotation`; retain the source pt scale only in the visible provenance note, never in `result.json`, `spec_lock.md`, or SVG.
+- These official candidates are selected by default. The normal ≥3-candidate rule still applies: provide at least two distinct coherent alternatives plus Custom. If a Brand omits a specific color, font, weight, or scale fact, disclose that gap in the candidate note and do not fabricate an “official” value.
+- The user’s Tier 2 choice is authoritative. Choosing another candidate or editing an official value is an explicit confirmed deviation; do not silently revert to the Brand after confirmation.
+
 Steps:
 
 > ⛔ **Steps 2 → 3 → 4 are ONE uninterrupted run — do NOT yield to the user mid-flow.** When the tier-1 `--wait` (step 2) returns, the AI **immediately and autonomously** continues to step 3 (re-derive + write Tier 2) and step 4 (`--wait-only`) in the **same turn**: do **not** summarize, ask a question, report progress, or end the turn in between. The browser is sitting on a "deriving…" spinner polling for the Tier 2 you must write next — stopping here strands the page and the user must prod you in chat to finish (a bug, not the intended flow). **The tier-1 confirmation is an intermediate machine handoff, not a stopping point.** The single ⛔ BLOCKING wait is the **final** confirmation at the end of step 4. (Chat-fallback path — only when the page never opened — is the exception: there you do present each tier in chat and wait for a reply.)
@@ -390,6 +411,8 @@ Steps:
    ```
    Page opens at `http://localhost:5050` — the **same port as the Step 6 live preview** (they never run at once: this page shuts down at the end of Step 4). If 5050 is held, the launcher **auto-advances** (5051, …) — read the actual URL from the launch log and report it. The page does **not** close after Tier 1: it shows a "deriving…" state and polls for Tier 2. **Launch or wait failure is non-fatal**: if it fails or times out (flask missing, port blocked, no GUI / remote / web host), do **NOT** troubleshoot — **on any non-zero exit, re-check `result.json` once** (a fresh `status: tier1-confirmed`) before dropping to the chat fallback. **On success (exit 0 with a tier-1 result), do not pause or report — go straight to step 3 in the same turn.**
 3. **Re-derive Tier 2 from the confirmed anchors, then write it — immediately, same turn (the page is polling for it).** Read the tier-1 `result.json` (`status: tier1-confirmed`). Using the user's **actual** confirmed anchors (not your originals), author the realization candidates and **overwrite** `recommendations.json` with `"tier": 2`: page count (content volume × `delivery_purpose`); when a brand is confirmed (not `"none"`), read its `templates/brands/<id>/design_spec.md` and derive color candidates, typography candidates, and icon recommendation from the brand's identity segment (the brand's palette / fonts / icon style are the primary candidates, but the user still sees ≥3 choices — the brand palette is candidate 1, and ≥2 coherent alternatives are derived from the visual_style / content); color, typography, and generated-image style as **generative ≥3-candidate** fields (creative recommendations always offer real choice — same rule as h.5; fewer than 3 only on the honest-shortfall exception, with a stated reason; color: core `palette` with background/secondary_bg/primary/accent/secondary_accent/body_text; typography: CJK + Latin for `heading` and `body` with `css` preview stacks + `body_size` as the body baseline in **px** (every canvas) — **one fixed value per confirmed `delivery_purpose`** (`text` 20 / `balanced` 24 / `presentation` 32), not a range; images: `image_strategy.candidates` rendering × palette from h.5); enumerable `icons` / `formula_policy` / `generation_mode` (recommended `id`) / `transition_effect` (recommended `none` unless the user explicitly asked for page transitions); `image_usage` (`ai` / `web` / `provided` / `placeholder` / `none`, or a custom prose plan when several sources mix — never bare `"custom"`; write `image_ai_path` only when the plan includes AI). The still-open page polls, renders Tier 2, and preserves the user's Tier 1 picks. Closed fields (`image_ai_path`, `formula_policy`, `generation_mode`, `transition_effect`, `refine_spec`) stay finite; open fields (`icons`, `image_usage`, typography custom text) show a Custom box.
+
+   The selected Brand candidate contract above is a **hard serialization requirement**: “primary candidate” means index `0`, selected by default, carrying the actual Brand values in `recommendations.json`; a prose recommendation or a visually similar generated palette/font does not satisfy it.
 4. **Wait for the final confirmation** — attach to the already-running page, do **not** relaunch (same 600000 ms budget):
    ```bash
    python3 ${SKILL_DIR}/scripts/confirm_ui/server.py <project_path> --wait-only
@@ -400,6 +423,8 @@ Steps:
    python3 ${SKILL_DIR}/scripts/confirm_ui/server.py <project_path> --shutdown
    ```
    **Idempotent and required regardless of whether Confirm was clicked**: clicking the final Confirm already shuts the page down (then a no-op); the chat-fallback path leaves it running. Run it after reading the confirmation, before Step 5.
+
+**Confirm → Live Preview → Slide Construction Gate (Mandatory)**: after the final Confirm page result is accepted (and after Step 5, when image acquisition is required), the *next production action* must be the Step 6 Live Preview startup. Do **not** write, copy, sketch, or otherwise create any slide/SVG before that service has started successfully. Reading the executor references and preparing the confirmed specification is allowed; creating a presentation page is not. This ordering applies to every `svg_generate` branch, including imported Brand/Page Kit projects and resumed execution.
 
 **Always also print each tier's recommendations + URL in chat** as the always-valid fallback. **The chat fallback is two-step too**: if the page never opens or a wait times out with no fresh result, present Tier 1 in chat → get confirmation → re-derive → present Tier 2 → get confirmation → take those values. Either path converges.
 
@@ -561,6 +586,8 @@ When `generation_mode: "gated"` (逐页精修, from `result.json` or stated in c
 
 🚧 **GATE**: Step 4 (and Step 5 if triggered) complete; all prerequisite deliverables are ready.
 
+🚧 **LIVE PREVIEW STARTUP GATE**: no slide/SVG/page may be authored until the browser editor has been launched with `--live --daemon`, returned exit code 0, and printed its reachable actual URL. A launcher failure, missing URL, or unavailable preview is a hard stop for slide production; fix/restart the preview first. An already-running preview for the *same project* may be reused only after reading its URL from `live_preview/lock.json` and confirming the process is live.
+
 Read the execution references for this deck's locked `mode` + `visual_style` (from `spec_lock.md`):
 ```
 Read references/executor-base.md                  # REQUIRED: common guidelines
@@ -586,11 +613,11 @@ gate.
 
 **Design Parameter Confirmation (Mandatory)**: before the first SVG, output key design parameters from the spec (canvas dimensions, color scheme, font plan, body font size). See executor-base.md §2.
 
-**Live Preview Auto-Startup (Mandatory)**: before the first SVG, automatically start the browser editor in live mode and keep it running continuously through Executor + Step 7 export:
+**Live Preview Auto-Startup (Mandatory)**: this is the first production action after the Confirm → Live Preview → Slide Construction Gate. Before the first SVG, automatically start the browser editor in live mode and keep it running continuously through Executor + Step 7 export:
 ```bash
 python3 ${SKILL_DIR}/scripts/svg_editor/server.py <project_path> --live --daemon
 ```
-- Start it immediately when Executor begins; `svg_output/` may be empty. Editor opens at `http://localhost:5050`; if another project already holds it, the launcher **auto-advances to the next free port** — read the actual URL from the launch log and report that.
+- Start it immediately when Executor begins; `svg_output/` may be empty. The daemon performs its own reachability check; proceed only after its exit code is 0 and it reports the actual URL. Editor opens at `http://localhost:5050`; if another project already holds it, the launcher **auto-advances to the next free port** — read the actual URL from the launch log and report that.
 - Run it as a long-running side process/session; do not wait for it to exit before generating SVG pages. Do not wait for user confirmation after startup.
 - **Service must keep running** until one of: (a) the user clicks **Exit preview** in the browser, or (b) the user explicitly asks in chat to stop it. Generation continues even if the user closes the editor.
 - **Apply annotations automatically after the browser saves them.** Users may annotate at any time and may submit multiple rounds. During Executor, keep a continuous `--wait-annotation` loop attached to the running preview service; when the user clicks **Apply changes** with annotations, pause at the current safe checkpoint and run [`workflows/live-preview.md`](workflows/live-preview.md) Step 2 immediately, including before Step 7. After each repair, delete the ready flag and immediately arm a fresh `--wait-annotation` listener before resuming, so a second or third batch of browser annotations is captured automatically. The user does not need to paste the browser prompt back into chat; the prompt is only a manual fallback if the wait loop is not running. In `Gated` mode, finish the annotation repair, re-check the SVG, preview the affected slide again, and then wait for explicit approval before moving on. In `Continuous` mode, resume generation after the repair passes SVG checks.
@@ -606,6 +633,8 @@ python3 ${SKILL_DIR}/scripts/svg_editor/server.py <project_path> --live --daemon
 > Image facts: trust the `analysis/image_analysis.csv` regenerated at the end of Step 5. If `images/` changed since (the user swapped or added files), re-run `python3 ${SKILL_DIR}/scripts/analyze_images.py <project_path>/images` before laying images out — facts are re-derived on use, never a stale store (Step 4 image-facts note).
 
 **Per-page spec_lock re-read (Mandatory)**: before **each** SVG page, `read_file <project_path>/spec_lock.md` and use only its colors / fonts / icons / images, plus the per-page `page_rhythm` / `page_layouts` / `page_charts` lookups (resolves to template SVGs already loaded in the batch read above). Resists context-compression drift on long decks. See executor-base.md §2.1.
+
+**Per-page root SVG audit (Mandatory)**: immediately after writing each SVG, inspect its opening `<svg>` tag before previewing or continuing. It must have `xmlns="http://www.w3.org/2000/svg"`, `width="<canvas-width>"`, `height="<canvas-height>"`, and `viewBox="0 0 <canvas-width> <canvas-height>"`, where both dimensions are copied exactly from `spec_lock.md`. Do not defer a missing root `width` / `height` to the deck-wide quality gate; add the attributes and re-check that page immediately.
 
 > ⚠️ **Main-agent only**: SVG generation MUST stay in the current main agent — page design depends on full upstream context. Do NOT delegate to sub-agents.
 > ⚠️ **Generation rhythm**: generate pages sequentially, one at a time, in the same continuous context. Do NOT batch (e.g., 5 per group).

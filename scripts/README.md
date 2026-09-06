@@ -30,13 +30,22 @@ python3 scripts/animation_config.py scaffold <project_path>  # optional object-l
 python3 scripts/svg_to_pptx.py <project_path>
 ```
 
+Template maintenance uses four explicit kinds. Pack resolution is deterministic
+and does not merge design fields:
+
+```bash
+python3 scripts/register_template.py <id> --kind brand|style|layout|pack
+python3 scripts/resolve_template_selection.py --pack <pack_id> \
+  [--brand <brand_id>] [--style <style_id>] [--layout <layout_id>]
+```
+
 ## Script Index
 
 | Area | Primary scripts | Documentation |
 |------|-----------------|---------------|
 | Conversion | `source_to_md/pdf_to_md.py`, `source_to_md/doc_to_md.py`, `source_to_md/excel_to_md.py`, `source_to_md/ppt_to_md.py`, `source_to_md/web_to_md.py`, `pptx_intake.py` | [docs/conversion.md](./docs/conversion.md) |
 | Project management | `project_manager.py`, `batch_validate.py`, `generate_examples_index.py`, `error_helper.py`, `pptx_template_import.py` | [docs/project.md](./docs/project.md) |
-| Native round-trip | `pptx_to_svg.py`, `svg_authoring_view.py`, `native_preview.py`, `svg_to_pptx.py --roundtrip` | [../workflows/edit-native-pptx.md](../workflows/edit-native-pptx.md) |
+| Native round-trip | `pptx_to_svg.py`, `svg_authoring_view.py`, `native_preview.py`, `native_page_kit_fill.py`, `svg_to_pptx.py --roundtrip` | [../workflows/edit-native-pptx.md](../workflows/edit-native-pptx.md) |
 | SVG pipeline | `finalize_svg.py`, `svg_to_pptx.py`, `total_md_split.py`, `svg_quality_checker.py`, `extract_svg_assets.py`, `animation_config.py`, `notes_to_audio.py` | [docs/svg-pipeline.md](./docs/svg-pipeline.md) |
 | Spec maintenance | `update_spec.py` | [docs/update_spec.md](./docs/update_spec.md) |
 | Image tools | `image_gen.py`, `latex_render.py`, `analyze_images.py`, `gemini_watermark_remover.py` | [docs/image.md](./docs/image.md) |
@@ -73,8 +82,19 @@ PPTX design-template import:
 
 ```bash
 python3 scripts/project_manager.py import-template <project_path> <template.pptx>
-python3 scripts/pptx_intake.py <template.pptx> -o <analysis_dir> --intent template
+python3 scripts/brand_import_ui/server.py <project_path>
+python3 scripts/import_brand.py <template.pptx> --brand-id <brand_id>
+# Rebuild an existing Brand only after a fresh Page Kit confirmation:
+python3 scripts/import_brand.py <template.pptx> --brand-id <brand_id> --replace
 ```
+
+Brand import always creates identity tokens and a user-confirmed Page Kit. The
+Brand Import Web writes `analysis/brand_import_selection.json`: special pages
+retain only the user-confirmed native prototypes; each content page retains its linked
+Master/Layout background images, text and placeholders plus an empty editable
+large-title frame. Every other slide-local content object is removed. Optional
+Icon or Chart grammar Layouts remain separate explicit registrations and are
+never implied by Brand import.
 
 Native round-trip edit or template fill:
 
@@ -84,6 +104,30 @@ python3 scripts/native_preview.py prepare <project_path>
 python3 scripts/svg_quality_checker.py <project_path> --roundtrip
 python3 scripts/svg_to_pptx.py <project_path> --roundtrip
 ```
+
+Brand Page Kit fill (after `execute-brand-page-kit`):
+
+Use a page plan that selects the approved native prototype for each output
+page. Repeating `--role content` is intentionally rejected whenever several
+content prototypes exist, preventing silent reuse of the first layout.
+
+```bash
+python3 scripts/project_manager.py execute-brand-page-kit projects/demo \
+  --page-plan projects/demo/page_kit_execution_plan.json \
+  --output projects/demo/output/native_seed.pptx
+```
+
+```bash
+python3 scripts/native_page_kit_fill.py <native_seed.pptx> \
+  --execution-roster <native_seed.native_page_kit_execution.json> \
+  --plan <slot_fill_plan.json> --output <new_deck.pptx>
+```
+
+On special pages, the fill plan may name only slots declared editable in the
+execution roster. On a sanitized content shell, it may replace the retained
+large-title slot and add new slide-local body objects above the locked
+Master/Layout. It writes a new package without restoring any removed source
+example object.
 
 Post-processing and export:
 

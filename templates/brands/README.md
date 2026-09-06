@@ -2,7 +2,7 @@
 
 This directory holds **brand-only templates**: identity bundles (color / typography / logo / voice / icon style) without an SVG page roster. Strategist locks the brand's identity segment as truth; Executor designs pages freely under those constraints.
 
-Brand is one of three template kinds in the library — alongside [`layouts/`](../layouts/) (structure-only) and [`decks/`](../decks/) (full-PPT replica). Full data model: [`docs/zh/templates-architecture.md`](../../references/templates-architecture.md).
+Brand is one of four template kinds, alongside [`styles/`](../styles/), [`layouts/`](../layouts/), and metadata-only [`packs/`](../packs/). Full data model: [`templates-architecture.md`](../../references/templates-architecture.md).
 
 ## How brands are consumed
 
@@ -13,8 +13,8 @@ Brand application follows the **same explicit-path rule as all template kinds** 
 | An explicit brand directory path (e.g. `templates/brands/anthropic/`) | Copy `design_spec.md` + logo files + asset subdirectories into `<project_path>/templates/`; Strategist locks identity segment |
 | Bare brand name only ("use anthropic brand"), brand mention without path, or silence | Skip — same mechanical rule as all template kinds: bare names never trigger |
 | Brand path + layout path | Fuse into one `design_spec.md` — brand owns identity segment (color / typography / logo / voice / icon style); layout owns structure segment (canvas / page roster). See `SKILL.md` Step 3. |
-| Brand path + deck path | Fuse — brand identity overrides deck identity; structure + middle segments come from deck |
-| Brand path + layout path + deck path | Three-way fuse — brand=identity, layout=structure, deck=middle |
+| Brand path + Pack path | Explicit Brand replaces the Pack's `brand_id`; the Pack's Style/Layout references remain |
+| Brand path + style path + layout path | Brand owns identity, Style owns method/defaults, and Layout owns structure |
 | Two brand paths | Conflict resolution prompt before fusion — user picks per-segment source |
 
 `brands_index.json` is discovery-only; listing brands never advances the pipeline.

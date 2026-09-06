@@ -11,7 +11,7 @@ This workflow edits the global brand library, not any specific `projects/<x>/`. 
 > Companion: [`create-template.md`](./create-template.md) generates full templates with SVG pages. Use `create-brand.md` when the user wants identity-only locking with free page layout.
 
 > **PPTX import rule:** an explicitly user-provided `.pptx` always materializes
-> as a Brand. It must never be imported as a Deck page roster. For a one-off new
+> as a Brand. It must never be imported as a page roster. For a one-off new
 > presentation, use the public `Import Brand PPTX` route; create a
 > reusable Brand package only when the user explicitly requests library upkeep.
 
@@ -156,7 +156,7 @@ primary_color: "#XXXXXX"
 ```
 
 **Section scope rules**:
-- Layout / canvas / spacing / radius / shadow / page roster / signature design elements are OUT of brand scope. Those live in layout / deck templates (`templates/layouts/<id>/design_spec.md` or `templates/decks/<id>/design_spec.md`) or `shared-standards.md`. Do NOT add those sections here.
+- Layout / canvas / spacing / radius / shadow / page roster / signature design elements are OUT of Brand scope. Structural rules live in Layout (`templates/layouts/<id>/design_spec.md`) or `shared-standards.md`; Pack may only reference the Brand and Layout. Do NOT add those sections here.
 - HEX must be `#RRGGBB`
 - Font names are free strings; not validated against locally installed fonts
 - §VII is fully optional — list only directories that actually exist

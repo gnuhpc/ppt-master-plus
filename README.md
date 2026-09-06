@@ -41,10 +41,10 @@
 | **PPTX intake / source profile** | PPTX 可经 `ppt_to_md.py` 提取为 Markdown 后作为普通资料进入主流程。 | `import-sources` 会额外运行 `pptx_intake.py`，生成 `analysis/source_profile.json`、`<stem>.identity.json`、`<stem>.slide_library.json`，把画布、主题、几何、表格和图表事实提供给 Strategist 作上下文。 |
 | **美化入口路由** | 既有 PPTX 作为资料输入主生产流程，Strategist 可自由重构叙事、页数、页序和视觉系统；不单独区分“保留原稿”的美化契约。 | 路由边界更清晰：重新设计 → Generate PPTX；保留原生设计并局部修改 → [`Edit Native PPTX`](workflows/edit-native-pptx.md)；显式 1:1 重排 → [`faithful-beautify`](workflows/profiles/faithful-beautify.md)。 |
 | **保真美化（Faithful Beautify）** | 不提供独立 1:1 保真美化路线；若输入 PPTX，仍按资料重建，不把原页数、页序、逐页文字或母版当作锁定契约。 | 专属工作流 [`beautify-pptx.md`](workflows/profiles/faithful-beautify.md)：<br>• **画布原尺寸**：`beautify_identity.py` 从 PPTX `p:sldSz` 读取精确像素尺寸，不强制归一化到 1280×720<br>• **内容冻结契约**：`pptx_intake.py` + `beautify_inventory.py` 生成逐页台账（文字/图表数据/表格/图片），文字逐字冻结，数据值锁定，严格 1:1 页数映射<br>• **源身份提取**：`analysis/<stem>.identity.json` 含主题调色板、实际观察字体/字号；Confirm UI 以源 PPT 风格预填，用户可确认或覆盖<br>• **`preserve_master`**：OOXML 级逐页保留，源第 N 页的 slideLayout/master 映射到输出第 N 页，主版式背景/Logo/页脚等 PPT 原生元素由母版承载<br>• **输出验证**：对导出 PPTX 重跑 `ppt_to_md.py`，逐页核对文字保真度和页数 |
-| **Deck 模板** | 当前索引 2 套。 | **21 套**：仅保留品牌无关、可跨客户复用的中文行业页面体系；配 3 套专属版式规范指导文件（[`executor-general.md`](references/executor-general.md)、[`executor-consultant.md`](references/executor-consultant.md)、[`executor-consultant-top.md`](references/executor-consultant-top.md)）。机构、学校与活动身份均归入 Brand。 |
+| **Template Pack** | 无独立 Pack 概念。 | **21 套**：把可复用 Style 与 Layout 组合成一键预设；Pack 自身不携带颜色、字体、SVG 或示例内容。 |
 | **图表 / 信息图 SVG** | 当前索引 33 个。 | **139 个**，冲突项以 Plus 资产为准。 |
-| **Layout 骨架** | 当前索引 7 组。 | **37 组**，同时保留 legacy flat 与新增 structured workspace。 |
-| **Brand / Style preset** | 20 套 Brand、12 套 Style。 | **37 套 Brand、12 套 Style**；包括 `apsara_yunqi_26_light`、`ffa_shenzhen`、中国电信、中汽研、中国电建、招商银行、重庆大学与 `flink_ai_style`。 |
+| **Layout 骨架** | 当前索引 7 组。 | **54 组**，包含迁移后的 21 套中文行业结构原型及关联 Page Kit。 |
+| **Brand / Style preset** | 20 套 Brand、12 套 Style。 | **38 套 Brand、12 套 Style**；包括 `apsara_yunqi_26_light`、`ffa_shenzhen`、飞天发布、中国电信、中汽研、中国电建、招商银行、重庆大学与 `flink_ai_style`。 |
 | **Table / Sound** | 6 个 Table、186 个 Sound。 | 同步并入 **6 个 Table、186 个 Sound**，仅在显式原生对象或音视频工作流中启用。 |
 | **图标库** | 12,027 个 SVG，含 chunk-filled / phosphor-duotone / simple-icons / tabler-filled / tabler-outline 五套图标库。 | 同款 5 套图标库、同等规模（12,027 个）；图标检索和复制流程相同。 |
 | **外部绘图路由** | 主要依靠内置 SVG、图表模板和图标库完成图解表达。 | **软依赖绘图路由器**：可按场景分流到 `fireworks-tech-graph`、`excalidraw`（手绘风格可编辑源文件）、`Mermaid`、`PlantUML`、`draw.io` 或 `tldraw`；环境缺失时自动降级回内置 SVG，绝不阻塞主流程。 |
@@ -77,20 +77,33 @@
 |---|---|---|
 | **Generate PPTX** | 从内容新建或重新设计页面 | 固定 Step 1–7、两层 Confirm UI、`gated` / `continuous` / `split` 三种生产模式、逐页 Live Preview。 |
 | **Edit Native PPTX** | 保留原 PPTX 的母版、版式和对象结构，做局部修改 | `page_plan`、`content_edit`、`notes`、`narration`、`transitions`、`animations`、`visible_content_locked` 七个模块。 |
-| **Import Brand PPTX** | 将用户明确提供的 PPTX 只读导入为项目级 Brand，并以新内容生成新的 PPTX | `imported_brand` Profile；抽取身份令牌与资产，不复制原页面、母版、对象几何或示例内容。 |
+| **Import Brand PPTX** | 将用户明确提供的 PPTX 只读导入为项目级 Brand，并以新内容生成新的 PPTX；明确要求长期复用时可注册为共享 Brand | `imported_brand` Profile；可选 Brand Page Kit 会以 `edit_native` 复用经批准的封面、目录、过渡、正文/封底原型，并只替换声明的内容槽位。 |
 
 ### Template 是总称，不是第五种资产
 
-内置 Template 资产有四种 `kind`。它们可单独使用；用户显式给出不同 kind 的内部目录时，系统可按“身份、结构、意图”三个段落合成。
+内置 Template 资产有四种 `kind`。Brand、Style、Layout 是基础能力，Pack 是它们的组合预设。
+
+```mermaid
+flowchart LR
+    B[Brand\n品牌身份] --> R[Resolved Template\n项目模板状态]
+    S[Style\n表达方法与视觉默认] --> R
+    L[Layout\n页面结构与 SVG 原型] --> R
+    P[Pack\n组合引用] -.展开为引用.-> B
+    P -.展开为引用.-> S
+    P -.展开为引用.-> L
+    R --> O[Generate PPTX\n新的演示文稿]
+```
+
+Pack 是正式的第四种 Kind，但不成为第四个设计所有者：它只保存组件 ID、摘要和关键词，选择后先展开，再由 Brand、Style、Layout 分别承担身份、方法和结构。
 
 | `kind` | 解决的问题 | 不负责什么 | 当前内置 |
 |---|---|---|---:|
-| **Brand** | 统一品牌身份：颜色、字体、Logo、Icon、背景资产、语气 | 不锁定页面结构或 SVG 页面原型 | **37** 套 |
+| **Brand** | 统一品牌身份：颜色、字体、Logo、Icon、背景资产、语气 | 不锁定页面结构或 SVG 页面原型 | **38** 套 |
 | **Style** | 统一表达方法：叙事方式、证据纪律、信息密度、视觉默认值 | 不锁定品牌身份、页数、页序、几何或 SVG 原型 | **12** 套 |
-| **Layout** | 统一结构：画布、网格、页面类型、SVG 页面骨架 | 不携带机构 Logo 或官方品牌身份 | **37** 套 |
-| **Deck** | 已验证的完整页面体系：身份 + 结构 + 适用场景/设计意图 | 不等同于用户上传的 PPTX；机构、学校、活动身份不应归入此类 | **21** 套 |
+| **Layout** | 统一结构：画布、网格、页面类型、SVG 页面骨架；也可承载显式导入的 Icon / Chart 视觉语法或 Brand Page Kit | 不携带机构 Logo、官方配色或表达方法 | **54** 套 |
+| **Pack** | 一键组合已注册的 Brand、Style、Layout | 不拥有设计字段，不携带 SVG、图片或嵌套 Pack | **21** 套 |
 
-`Import Brand PPTX` 中的“PPTX”是用户提供的参考文件，不会被注册为公共 Template，也不会成为 Deck。所有用户导入 PPTX 一律以 `kind: brand` 使用。
+`Import Brand PPTX` 中的“PPTX”默认是项目级参考文件；用户明确要求长期复用时，可通过 `--register-brand <id>` 生成共享 `kind: brand` 包。Brand 索引可选地关联一个独立的 Brand Page Kit Layout；选择该 Brand 时，Confirm UI 显示“使用页面套件 / 仅使用品牌身份”。前者仅克隆被批准的原生页面并替换声明槽位，后者只使用颜色、字体、Logo 和图标身份。用户也可显式使用 `--register-icon-layout <id>` 或 `--register-chart-layout <id>` 创建配套 Layout：前者仅保存 Icon 处理语法，后者仅保存图表类型、数据系列调色板、图例、坐标轴、网格线和标签规则。图表/表格始终使用当前内容数据；除 Page Kit 已批准页面外，不复用示例内容、对象几何或原始 PPTX 页面。
 
 ### 其他工作流概念
 
@@ -106,7 +119,7 @@
 
 | 资源 | 数量 | 用法边界 |
 |---|---:|---|
-| 图表 / 信息图 / 图解 / 框架 SVG | **139** | 按语义从内置目录选型；用户导入 PPTX 的示例图例、表格皮肤和图表样式不继承。 |
+| 图表 / 信息图 / 图解 / 框架 SVG | **139** | 按语义从内置目录选型；默认不继承用户 PPTX 的图表样式。用户显式选中导入的 chart-grammar Layout 时，可继承数据系列调色板、图例、坐标轴、网格线和标签规则，但不会继承示例数据。 |
 | 原生表格结构 | **6** | 仅在需要稳定行列结构或原生表格语义时启用。 |
 | 图标 | **12,027** 个，5 个库 | `chunk-filled`、`phosphor-duotone`、`simple-icons`、`tabler-filled`、`tabler-outline`。 |
 | 音效 | **186** 个 | 仅在用户明确要求动画或视频工作流时启用。 |
@@ -181,7 +194,7 @@
 
 ### 4. 从用户 PPTX 导入 Brand 并生成新 PPTX
 
-适合用户给出一份 PPTX，希望沿用其品牌身份，但用另一组内容重新生成页面。该 PPTX 不会被当作可复制页面模板：系统只读分析其颜色、字体、Logo、Icon、背景资产与视觉语气；图表、表格和页面结构重新规划。
+适合用户给出一份 PPTX，希望沿用其品牌身份，但用另一组内容重新生成页面。该 PPTX 不会被当作可复制页面模板：系统只读分析其颜色、字体、Logo、Icon、背景资产与视觉语气；页面结构重新规划，图表与表格默认从内置资源选型。用户明确要求时，图标或图表视觉语法可另存为配套 Layout。
 
 典型输入动作：
 
@@ -240,12 +253,12 @@
 
 模板路线不把示例文字当内容，也不只依赖 PowerPoint placeholder。系统会提取
 规范页、普通文本框/形状/图片/组合中的品牌身份线索；无法安全识别的内容不会
-进入输出。导入的 PPTX **一律归类为 Brand，不归类为 Deck**：仅复用画布、配色、
+进入输出。导入的 PPTX **一律归类为 Brand，不归类为 Pack 或 Layout**：仅复用画布、配色、
 字体、Logo、Icon、背景资产与视觉语气，不复用页面原型、母版/版式、对象几何或
-模板示例内容。图表、表格、信息图和流程/框架图不继承模板示例样式，具体可视化
-结构从 Skill 内置图表/表格目录选择，再适配到锁定的品牌令牌中；模板中的示例数据
-同样不会进入最终内容。
-该路线不按模板名称搜索，也不从 Skill 内部 Brand、Style、Layout 或 Deck
+模板示例内容。图表、表格、信息图和流程/框架图默认从 Skill 内置图表/表格目录选择，
+再适配到锁定的品牌令牌中；用户明确选中导入的 chart-grammar Layout 时，可采用其
+数据系列调色板、图例、坐标轴、网格线和标签规则。模板中的示例数据同样不会进入最终内容。
+该路线不按模板名称搜索，也不从 Skill 内部 Brand、Style、Layout 或 Pack
 资产中代选模板；未提供明确 `.pptx` 文件时，必须先请用户提供文件。
 
 ### 从用户 PPTX 导入模板
@@ -260,27 +273,29 @@ python3 scripts/project_manager.py import-template <project_path> /path/to/user-
 
 导入会生成 `analysis/template_manifest.json`、`template_design_tokens.json`、
 `template_archetypes.json`、`template_assets.json` 和页面预览；原始文件不移动、不覆盖，
-项目副本标记为只读。`template_archetypes.json` 仅用于诊断，绝不成为页面原型库。
+项目副本标记为只读。`template_archetypes.json` 默认仅用于诊断；用户显式注册 Brand Page Kit 时，只有高置信度且批准的封面、目录、过渡、正文或封底原型会进入独立 Layout，其余页面绝不成为页面原型库。
 品牌名称可以由用户显式声明（例如 `FFA`），但不会从模板示例文字或文件名猜测；后续
-生成时，导入 Brand 负责身份令牌和资产，页面版式自由规划，图表/表格/信息图样式仍由
-Skill 内置可视化目录提供。
+生成时，导入 Brand 默认负责身份令牌和资产，页面版式自由规划；若 Confirm UI 选择“使用页面套件”，则原生 round-trip 执行器只复用该 Brand 关联 Page Kit 的已批准页面，并保留背景、Logo、装饰、裁切、层级和母版；图表/表格/信息图默认由
+Skill 内置可视化目录提供。需要长期保留图标或图表的视觉语法时，显式传入
+`--register-icon-layout <id>` 或 `--register-chart-layout <id>` 并注册为 Layout；图表 Layout
+不会保存示例数据、页面位置或品牌 Logo。
 
 ## 与 ppt-master 的模板与资源对比
 
-这里的“模板”是 Brand、Style、Layout、Deck 四类设计参考的总称；图表、表格、图标和音效属于资源库。以下是可复用资产的逐项对比：
+这里的“模板”是 Brand、Style、Layout、Pack 四类资产的总称；图表、表格、图标和音效属于资源库。以下是可复用资产的逐项对比：
 
 | 资产类型 | `ppt-master` | `ppt-master-plus` | 说明 |
 |---|---:|---:|---|
-| Deck | 2 套 | **21 套** | 仅品牌无关、可跨客户复用的页面体系；用户导入 PPTX 不会进入此类 |
-| 其中：传统行业模板 | — | **21 套** | `ppt-master-plus` 专有，适合中文商业场景、课件、述职、答辩、项目架构等 |
+| Pack | — | **21 套** | 一键展开为已注册 Style + Layout；可选 Brand，本批迁移 Pack 均不绑定 Brand |
+| 其中：传统行业组合 | — | **21 套** | `ppt-master-plus` 专有，适合中文商业场景、课件、述职、答辩、项目架构等 |
 | 图表 / 信息图 SVG | 33 个 | **139 个** | 合并索引与文件，ID 冲突保留 Plus |
-| Layout 骨架 | 7 组 | **37 组** | legacy flat 与 structured workspace 并存 |
-| Brand | 20 套 | **37 套** | 包含 `apsara_yunqi_26_light`、`ffa_shenzhen`、机构/学校身份预设并保护 `flink_ai_style` |
+| Layout 骨架 | 7 组 | **54 组** | 包含 21 套从旧完整模板中拆出的结构资产及关联 Page Kit |
+| Brand | 20 套 | **38 套** | 包含 `apsara_yunqi_26_light`、`ffa_shenzhen`、`飞天发布`、机构/学校身份预设并保护 `flink_ai_style` |
 | Style | 12 套 | **12 套** | 仅在显式 Style 路径被提供时启用 |
 | Table / Sound | 6 / 186 | **6 / 186** | 原生表格与音视频工作流按需启用 |
 | 图标库（SVG 数量） | 12,027 个 | 12,027 个（同） | chunk-filled / phosphor-duotone / simple-icons / tabler-filled / tabler-outline 五套 |
 
-这些内置资产不是单纯的静态素材库。Generate 只在用户明确选择内部模板路径时使用；用户显式给定的 `.pptx` 文件则由独立的 Import Brand PPTX 路线先只读导入为项目级 Brand，再以生成引擎创建新页面，不注册为公共 Deck 或可复用页面资产。
+这些内置资产不是单纯的静态素材库。Generate 只在用户明确选择内部模板路径时使用；用户显式给定的 `.pptx` 文件先由独立的 Import Brand PPTX 路线只读导入为项目级 Brand。用户明确要求沉淀时，`--register-brand <id>` 会将其身份令牌与母版/版式品牌资产注册为可选 Brand；只有明确请求 `--register-icon-layout <id>` 或 `--register-chart-layout <id>` 时，才会额外生成配套 Layout，且仅保存对应视觉语法，不保存页面或示例数据。
 
 ## 基本架构
 
@@ -321,7 +336,21 @@ Post-processing
 
 ## 更新记录
 
-### 最近更新 (2026-08)
+### 最近更新 (2026-09)
+
+- **Brand Page Kit 原生母版套件与可视化导入界面 (Brand Import Web)**
+  - **可视化角色原型确认**：新增 Brand Import Web 可视化工具（[`scripts/brand_import_ui/`](scripts/brand_import_ui/) 与 [`scripts/import_brand.py`](scripts/import_brand.py)），导入用户提供的 PPTX 模板时，可通过 Web 界面核对并确认封面、目录、章节/过渡、正文与封底原型。
+  - **原生 PPTX 槽位替换执行器**：支持将已批准的原型页面注册为配套 Page Kit Layout（如 `飞天发布_page_kit`），配合 `native_page_kit_fill.py` 以及 `execute-brand-page-kit` / `activate-brand-page-kit` 原生 round-trip 机制，直接克隆源 PPT 页面并仅替换声明的内容槽位，原汁原味保留源 PPTX 的背景设计、矢量修饰、Logo 与母版关系。
+- **模板资产架构解耦重构 (Deck → Pack / Layout / Style)**
+  - **传统行业模板全面解耦**：将原有 21 套耦合了行业样式的模板拆分为品牌无关的 21 组 Layout 骨架（`templates/layouts/传统行业_*`）与 21 套组合 Pack（`templates/packs/`），并规范归属至 7 大核心表达 Style。
+  - **四类资产严格分工**：Pack 作为正式的第 4 种模板 kind，提供一键展开为 Style + Layout 的预设体验，且自身不持有设计字段与私有资产。资产库全量扩容并校验为 **38 套 Brand、12 套 Style、54 组 Layout、21 套 Pack 及 139 个图表/信息图 SVG**。
+- **三大顶层公共路由与执行上下文收敛**
+  - **顶层公共路由确定性收敛**：严格规范为 `Generate PPTX`、`Edit Native PPTX`、`Import Brand PPTX` 三大公开入口，内部维护工具收敛于 `workflows/internal/template-authoring/`（新增 `create-pack.md`）。
+  - **导入路由语义统一**：统一使用 `import_brand_pptx` 规范，配合 Brand Page Kit 形成完整的“只读导入品牌 → 确认原型 → 原生填充/新生成”闭环。
+- **工程完备性与自动化测试**
+  - 新增 Brand Page Kit 执行计划契约测试（[`test_page_kit_execution_plan.py`](vendor/ppt-master/scripts/tests/test_page_kit_execution_plan.py)），全套 24 项能力合约测试（[`test_skill_contract.py`](scripts/tests/test_skill_contract.py)）全量绿灯，保障 OOXML 导出与多路由调度的高可用。
+
+### 2026-08
 
 - **Live Preview 主题持久化与演示者模式讲稿实时编辑**
   - **主题选择与品牌动态挂载**：SVG Editor / Live Preview 主题库新增 8 款精选预设主题（`swiss_grid` 瑞士网格, `linear_dark` 暗夜极简, `notion_paper` 温润纸感, `stripe_indigo` 经典深蓝, `apple_minimal` 极简白, `cyberpunk_neon` 赛博朋克, `emerald_forest` 翡翠深绿, `anthropic_warm` 陶土暖色），并支持动态扫描与挂载品牌库 `brands_index.json` 主题。
@@ -365,10 +394,10 @@ Post-processing
   - 在播放模式的右上角控制条中，将“分屏模式”、“仅片子 (100% 高度 + 0内边距完美撑满全屏)”、“仅讲稿 (100% 高度)”整合成一个极简的 **单键 Toggle 按钮**，一键循环切换。
   - 右上角操作控制条支持 3 秒无操作自动向上收起和淡出隐藏，鼠标在全屏移动时立刻淡入浮现，保证零元素干扰的高保真演示。
 - **原生 PPTX 编辑能力收敛**
-  - 保留原文件的局部修改、讲稿、旁白、转场和动画统一进入 `Edit Native PPTX`；用户提供的 PPTX 若用于新内容生成，则只导入为 Brand，而不再作为原生 Deck 填充骨架。
+  - 保留原文件的局部修改、讲稿、旁白、转场和动画统一进入 `Edit Native PPTX`；用户提供的 PPTX 若用于新内容生成，则只导入为 Brand，不会自动产生 Layout 或 Pack。
 - **模板与图表资产库大幅扩容**
-  - **模版扩充**：新增 21 套传统行业页面体系；原先按 Deck 管理的机构、学校和活动资产已统一收敛为 Brand 身份预设。
-  - **图表扩充**：新增 60 个 SVG 图表/信息图，使图表总数扩充至 **131 个**，涵盖更多行业可视化场景。
+  - **模板扩充**：21 套传统行业页面体系已拆分为 Layout + Style，并通过同名 Pack 保留一键选择；机构、学校和活动身份资产统一收敛为 Brand。
+  - **图表扩充**：持续合并并去重 SVG 图表/信息图，当前索引为 **139 个**，涵盖更多行业可视化场景。
   - **Layout 骨架扩充**：新增 16 组 Layout 骨架，使骨架总数从 7 组扩充至 **23 组**，包含极简商务、编辑性衬线、水彩多彩、产品发布等风格。
   - **新增品牌预设**：增加 `flink_ai_style` 品牌风格预设。
 - **Confirm UI 与 Live Preview 网页交互终端重构与体验优化**
@@ -387,7 +416,7 @@ Post-processing
 
 ## 致敬 ppt-master
 
-`ppt-master-plus` 继承并致敬 [`ppt-master`](https://github.com/hugohe3/ppt-master)：它保留了原有 skill 对”原生可编辑 PPTX””高质量 SVG 页面””模板驱动制作”和”中文汇报场景”的执着，同时在此基础上保留 21 套品牌无关的 Deck 页面体系、扩充品牌身份预设、图表 SVG 与 Layout 骨架，并新增了讲稿质检能力和更严格的生产流程。
+`ppt-master-plus` 继承并致敬 [`ppt-master`](https://github.com/hugohe3/ppt-master)：它保留了原有 skill 对“原生可编辑 PPTX”“高质量 SVG 页面”“模板驱动制作”和“中文汇报场景”的执着，同时将 21 套传统行业页面体系拆分为品牌无关的 Layout、可复用 Style 与组合 Pack，扩充 Brand 身份预设、图表 SVG 与 Layout 骨架，并新增讲稿质检能力和更严格的生产流程。
 
 这个 `plus` 不是推翻，而是延展：在 [`ppt-master`](https://github.com/hugohe3/ppt-master) 的地基上，把新的 intake / beautify / enhance 工具链、分阶段审核、PPTX 原生增强、软依赖绘图路由和更严格的生产纪律合并到一条更完整的工作流里。
 

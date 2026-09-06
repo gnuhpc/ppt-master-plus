@@ -87,7 +87,7 @@ Extension page types beyond the canonical four (transition / appendix / disclaim
 - Cluster slides from `manifest.json` by `pageType` + visual structure (column count, hero-image vs. icon-grid vs. quote, etc.)
 - One SVG per cluster — do **not** emit a variant for a cluster represented by a single source slide unless that slide is structurally distinct from existing variants
 - One variant per visually distinct cluster — let the source's structural diversity drive the count. Collapse only **near-duplicates** (same column count, same hero element, same content density); do not collapse genuine structural differences just to keep the variant count down. If you find yourself wanting one variant per source slide, that is the signal the user should be in `mirror` mode, not `fidelity`
-- Record every emitted page in `design_spec.md §V Page Roster`; the corresponding index entry (`decks_index.json` or `layouts_index.json`) is generated automatically by `register_template.py` from the directory's actual SVG files
+- Record every emitted page in `design_spec.md §V Page Roster`; the corresponding `layouts_index.json` entry is generated automatically by `register_template.py` from the directory's actual SVG files
 
 > Variants reuse the parent type's placeholder set — see §4 (Placeholder Reference) below.
 
@@ -360,7 +360,7 @@ If suitable template resources already exist, use them directly instead of gener
 
 This section describes downstream reuse. The `Template_Designer` role itself is responsible for creating or normalizing the reusable library asset first.
 
-**Example library structure** (query the appropriate kind's index — `templates/layouts/layouts_index.json` for structure-only templates, `templates/decks/decks_index.json` for full-PPT replicas, `templates/brands/brands_index.json` for identity-only presets):
+**Example library structure** (query the appropriate kind's index — `templates/layouts/layouts_index.json` for structure, `templates/brands/brands_index.json` for identity, `templates/styles/styles_index.json` for direction, and `templates/packs/packs_index.json` for combinations):
 
 ```
 templates/

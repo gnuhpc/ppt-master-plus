@@ -1,0 +1,33 @@
+{
+  "schema": "ppt-master-plus.brand-import-selection.v1",
+  "source_sha256": "cebcef70e8ec7d37d9d315d67f262d970b442e517307b9a1f57e0248ed4e4131",
+  "source_name": "source.pptx",
+  "identity_confirmed": true,
+  "pages": [
+    {
+      "source_slide": 1,
+      "role": "cover",
+      "reuse": "native_prototype"
+    },
+    {
+      "source_slide": 4,
+      "role": "toc",
+      "reuse": "native_prototype"
+    },
+    {
+      "source_slide": 5,
+      "role": "section",
+      "reuse": "native_prototype"
+    },
+    {
+      "source_slide": 10,
+      "role": "content",
+      "reuse": "master_layout_shell"
+    },
+    {
+      "source_slide": 37,
+      "role": "closing",
+      "reuse": "native_prototype"
+    }
+  ]
+}

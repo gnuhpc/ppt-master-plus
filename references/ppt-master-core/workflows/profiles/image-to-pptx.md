@@ -36,7 +36,7 @@ main agent decides the reconstruction directly, prepares all resources, hand-
 authors SVG pages, runs the lockless final checker, and exports.
 
 **Hard rule — source surface, not template application**: stay in Quick free
-design and do not install or apply a Brand/Style/Layout/Deck workspace for this
+design and do not install or apply a Brand/Style/Layout/Pack workspace for this
 profile. A template would compete with the canonical page geometry and visual
 identity. A reusable-system request routes to Create Template instead.
 
@@ -49,7 +49,7 @@ identity. A reusable-system request routes to Create Template instead.
 | One or more image files represent pages that must become a final editable PPTX | Activate this profile and Quick Generate |
 | One file contains several clearly separated slide frames | Split it into the ordered page roster first, then reconstruct each frame |
 | Images are ordinary content assets or inspiration for a new deck | Use ordinary Generate |
-| Images should define a reusable Brand/Style/Layout/Deck workspace | Use [`create-template.md`](../create-template.md) |
+| Images should define a reusable Brand/Style/Layout/Pack workspace | Use [`create-template.md`](../create-template.md) |
 | A semantic source PPTX exists and only its layout should improve | Use [`beautify-pptx.md`](./beautify-pptx.md) |
 
 **Hard rule — mutually exclusive fidelity profiles**: Image to PPTX and

@@ -31,8 +31,8 @@ Use Create Template Step 1 for source ingestion and internal creation-strategy f
 
 - Canvas dimensions, grid, zones, page taxonomy, repeated chrome, image placement, density rhythm, placeholder geometry, semantic text roles, alignment, wrapping, and capacity may become layout facts or suggestions.
 - Colors, font families, branded weight choices, final absolute sizes, logos, voice, and icon style remain source context only. Do not copy them into the layout identity because a layout has no identity segment.
-- A source scenario may inform the content shapes or delivery conditions the geometry can support. Do not turn that fit into an application contract. If the reusable artifact prescribes the objective, outcome, narrative sequence, boilerplate, or content policy, return to Create Template dispatch and select Create Deck.
-- When the source is branded, state in plain language that Create Layout will omit the identity. The AI therefore derives an authored internal strategy. If the user wants the identity retained with the structure, return to Create Template dispatch and select Create Deck before the shared confirmation marker is emitted.
+- A source scenario may inform the content shapes or delivery conditions the geometry can support. Do not turn that fit into an application contract. Move reusable communication method to Style and identity facts to Brand; use Pack only to combine the resulting components.
+- When the source is branded, state in plain language that Create Layout will omit the identity. If the user wants identity retained, create or select a Brand and optionally combine it with this Layout through a Pack before the shared confirmation marker is emitted.
 - Internally, `standard` and `fidelity` inspect the complete source inventory and author a new Master/Layout/slot system. `mirror` may be derived only when the source-Slide-reachable contract is complete, brand-neutral, and application-neutral; it preserves that reachable structure and its visual facts in a new workspace without modifying the source. Never ask the user to choose among these labels.
 
 Direct conversation text, pasted requirements, converted documents/websites, images, and supplied assets may define or illustrate reusable structure. In a mixed bundle, combine those channels without treating identity-only evidence as layout ownership. Exact user-authored instructions remain decisions whether they arrive in chat or a user-written brief file; vague prose remains suggested interpretation until the shared confirmation gate.
@@ -111,7 +111,7 @@ In addition to Create Template Steps 5–6, verify:
 - `primary_color`, brand palette, brand typeface/weight claims, final project type-scale claims, logo, voice, and icon-identity claims are absent; structural text roles and capacity rules may remain.
 - Every SVG in the roster satisfies the shared Master/Layout/slot contract and the roster is bidirectionally complete.
 - Neutral prototype paint is not described as a locked brand identity.
-- `replication_mode: mirror` is rejected for any source that retains organization-specific identity or reusable application rules; use authored Layout mode or Create Deck instead.
+- `replication_mode: mirror` is rejected for any source that retains organization-specific identity or reusable application rules; use authored Layout mode and split identity/method into Brand/Style instead.
 
 For library scope, Create Template Step 5 validates the directory/index identity with:
 
@@ -125,4 +125,4 @@ After that gate and any triggered Create Template Step 6 pass, Step 7 registers 
 python3 skills/ppt-master/scripts/register_template.py <layout_id> --kind layout
 ```
 
-For project scope, skip both commands. The exact workspace root becomes the next Generate PPTX Step 3 input; downstream identity remains a Strategist decision unless an explicit Brand or Deck workspace is also supplied.
+For project scope, skip both commands. The exact workspace root becomes the next Generate PPTX Step 3 input; downstream identity remains a Strategist decision unless an explicit Brand is also supplied.

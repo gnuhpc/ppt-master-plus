@@ -176,7 +176,7 @@ separate artifact from the Strategist contract. Its files live under
   `templates/brands/brands_index.json`,
   `templates/styles/styles_index.json`,
   `templates/layouts/layouts_index.json`, and
-  `templates/decks/decks_index.json`, derives each direct-child workspace root,
+  `templates/packs/packs_index.json`, derives each direct-child workspace root,
   and validates that it exists with `templates/design_spec.md`. It never scans
   kind directories.
 
@@ -193,7 +193,7 @@ Stage-1 `GET /api/recommendations` embeds this browser catalog as top-level
     "brand": [],
     "style": [],
     "layout": [],
-    "deck": []
+    "pack": []
   },
   "explicit": [],
   "preselected_keys": [],
@@ -221,12 +221,12 @@ an instruction to use all of them.
 `Use templates`, initialized from `default_mode` but always switchable. Exactly
 one supplied root may initialize its candidate as an editable convenience
 default; multiple roots remain unselected. Only `Use templates` expands the
-candidate controls: Brand, Style, Layout, and Deck each have one registered
+candidate controls: Brand, Style, Layout, and Pack each have one registered
 single-select dropdown, and Specified has one explicit-root single-select
 dropdown. Every dropdown includes `None`; template mode cannot submit until at
 least one is non-empty. Free design clears all dropdowns. Registered kinds may
 be combined, and the complete selection contains at most one contribution per
-kind. Layout and Deck may coexist; Layout takes structural precedence. The specified channel contributes at
+kind. Pack is expanded before installation and contributes provenance only. The specified channel contributes at
 most one root, selected atomically with every kind it exposes; it can coexist
 only with registered roots of non-overlapping kinds. Source provenance never
 grants priority.
@@ -248,7 +248,7 @@ grants priority.
     },
     {
       "source": "explicit",
-      "kind": "deck",
+      "kind": "layout",
       "workspace_root": "/canonical/unregistered/workspace/root"
     }
   ],
@@ -266,8 +266,8 @@ There is at most one explicit workspace **root** overall. The unit of choice is
 the root, not the kind: the browser's specified-path control lists roots, and
 selecting one emits a selection for every kind that root exposes. Across those
 emitted selections and all library choices, each kind appears at most once.
-Layout and Deck may coexist; downstream installation gives Layout structural
-precedence. The browser cannot submit arbitrary paths
+Layout is the sole structure owner; downstream installation stores Pack only
+as provenance after expanding its Brand, Style, and Layout references. The browser cannot submit arbitrary paths
 because the server resolves posted keys against the catalog it just built.
 `options_sha256` binds the receipt to the current input, four index files, and
 resolved candidates. `selection_sha256` binds the mode and canonical sorted

@@ -2,7 +2,7 @@
 
 **Style = a roster-free reusable communication method plus coordinated design defaults.** It can carry argument flow, page-role vocabulary, evidence and data-expression discipline, visual-system defaults, image/icon direction, and additional review focus. It does not own a current project's communication contract, reusable brand identity, page geometry, SVG prototypes, or a recurring application contract.
 
-Style is a fourth independent template kind alongside [`brands/`](../brands/), [`layouts/`](../layouts/), and [`decks/`](../decks/). It is not a replacement for the mode or visual-style catalogs.
+Style is one of four independent template kinds alongside [`brands/`](../brands/), [`layouts/`](../layouts/), and [`packs/`](../packs/). It is not a replacement for the mode or visual-style catalogs.
 
 ## Axis Separation
 
@@ -13,7 +13,7 @@ Style is a fourth independent template kind alongside [`brands/`](../brands/), [
 | Final Stage-2 `visual_style` | The current deck's confirmed shape, composition, whitespace, typography-character, and texture lock |
 | Internal `template_reuse_scope: style` | A flat current-project export plan that reuses no Master/Layout structure |
 
-These names are separate contracts. Style-only and Style + Brand naturally produce a flat application plan, while a Style installed alongside a Layout or Deck may use structured reuse. `kind: style` therefore never forces the internal reuse scope when another workspace supplies structure.
+These names are separate contracts. Style-only and Style + Brand naturally produce a flat application plan, while a Style installed alongside a Layout may use structured reuse. `kind: style` never forces a structure plan.
 
 ## Selection, Precedence, and Installation
 
@@ -33,12 +33,12 @@ installed copy before authoring flat pages.
 | Decision | Precedence |
 |---|---|
 | Current project communication contract, mode, visual style, palette, typography, images, and icons | Latest explicit user instruction and confirmed project values |
-| Exact identity values | Brand, then Deck identity; both override overlapping Style fallback values |
+| Exact identity values | Brand overrides overlapping Style fallback values |
 | Reusable communication method and evidence discipline | Style, applied only where compatible with the current project contract |
-| Reusable structure | Layout when present, otherwise Deck; Style never supplies structure |
-| Recurring application context | Deck, subordinate to the current project's Stage-1 communication contract |
+| Reusable structure | Layout when present; Style never supplies structure |
+| Combination metadata | Pack references components but supplies no design values |
 
-Style fallback values seed the final Stage-2 solution when the corresponding decision remains open. They are not identity truth and do not bypass confirmation. If a Style method and a Deck application contract materially conflict, surface the mismatch; do not silently weaken either one.
+Style fallback values seed the final Stage-2 solution when the corresponding decision remains open. They are not identity truth and do not bypass confirmation. If a Style method conflicts with the current communication contract or Layout capacity, surface the mismatch; do not silently weaken either one.
 
 ## `design_spec.md` Contract
 

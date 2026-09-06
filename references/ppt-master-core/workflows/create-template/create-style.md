@@ -135,7 +135,7 @@ keywords: [<three-to-five discovery tags>]
 - <style-specific answer, evidence, hierarchy, legibility, or scan-path check>
 ```
 
-`Fallback Color Scheme` and `Fallback Typography` are conditional; omit either subsection when the Style has no literal fallback values. Exact fallback colors use `#RRGGBB`. A supplied Brand or Deck identity replaces overlapping fallback colors, font families, voice, and icon identity as one identity decision; it does not erase the Style's communication method or evidence discipline.
+`Fallback Color Scheme` and `Fallback Typography` are conditional; omit either subsection when the Style has no literal fallback values. Exact fallback colors use `#RRGGBB`. A supplied Brand identity replaces overlapping fallback colors, font families, voice, and icon identity as one identity decision; it does not erase the Style's communication method or evidence discipline.
 
 `Preferred Mode`, `Preferred Visual Style`, and `Preferred Image Rendering` are recommendation seeds. The current project's confirmed Stage-2 values remain authoritative. A preset value must be a real ID in its matching catalog. For `custom`, retain only real catalog references actually used as a comma-separated ID list and include the matching behavior prose.
 
@@ -169,7 +169,7 @@ Return these facts to Create Template:
 - No `*.svg`, optional asset directory, review export, or native payload was created.
 - No `primary_color`, canvas, page-count, page-type, replication, native-structure, Master/Layout, placeholder, Page Roster, or Signature Design Elements field exists.
 - No current-project target audience, communication objective/outcome, delivery context, artifact afterlife, content outline, page assignment, icon inventory, or image-resource mapping exists.
-- Brand-only identity sections (`Brand Overview`, `Color Scheme`, `Typography`, `Logo`, `Voice & Tone`, and `Icon Style`) and Deck-only `Template Overview` are absent. Conditional fallback subsections remain explicitly named `Fallback Color Scheme` and `Fallback Typography`.
+- Brand-only identity sections (`Brand Overview`, `Color Scheme`, `Typography`, `Logo`, `Voice & Tone`, and `Icon Style`) are absent. Pack metadata is never copied into Style. Conditional fallback subsections remain explicitly named `Fallback Color Scheme` and `Fallback Typography`.
 - `Review Focus` contains exactly one `<!-- visual-review-trigger: explicit-user-only -->` marker; its localized prose explains the same boundary, and the section cannot activate visual review by itself.
 
 For both scopes, Create Template Step 5 validates the portable Style contract without registration:
