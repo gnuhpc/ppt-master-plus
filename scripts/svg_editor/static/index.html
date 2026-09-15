@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title data-i18n="page_title">PPT Master - Live Preview</title>
-    <link rel="stylesheet" href="/static/style.css">
+    <link rel="stylesheet" href="/static/style.css?v=20260910_02">
 </head>
 <body>
     <div id="app">
@@ -41,34 +41,84 @@
         </div>
         <div id="panel-right">
             <button id="btn-lang-toggle" class="btn-lang-toggle" title="Switch language">中</button>
-            <div class="panel-header" data-i18n="panel_annotations">Annotations</div>
-            <div id="selection-info">
-                <div class="section-label" data-i18n="label_selected_element">Selected element</div>
-                <div id="selected-element" class="empty" data-i18n="empty_selected_element">Click an element on the slide to select it</div>
-                <div id="element-props" style="display:none;"></div>
+            <div class="panel-header" data-i18n="panel_title">幻灯片编辑与修改</div>
+            <div class="panel-right-tabs">
+                <button id="tab-manual" class="pr-tab active" type="button" data-i18n="tab_manual">✍️ 手动修改</button>
+                <button id="tab-agent" class="pr-tab" type="button" data-i18n="tab_agent">🤖 Agent 修改</button>
             </div>
-            <div id="param-controls" style="margin: 10px 0; padding: 10px; background: rgba(0,0,0,0.03); border-radius: 8px; display:none;">
-                <div class="section-label" style="margin-bottom:8px; font-weight:bold;">Parametric Controls</div>
-                <div id="param-controls-body"></div>
-            </div>
-            <div id="annotation-input" style="display:none;">
-                <div class="section-label" data-i18n="label_edit_instruction">Edit instruction</div>
-                <textarea id="annotation-text" data-i18n-placeholder="placeholder_annotation" placeholder="Describe how the AI should modify this element..."></textarea>
-                <button id="btn-add-annotation" data-i18n="btn_add_annotation">Add annotation</button>
-            </div>
-            <div id="annotation-list">
-                <div class="section-label ann-list-header">
-                    <span data-i18n="label_annotations_on_slide">Annotations on this slide</span>
-                    <button id="btn-page-annotate" class="btn-page-annotate" type="button" data-i18n-title="btn_page_annotate_title">+</button>
+            <div id="section-manual" class="pr-section">
+                <div class="live-save-status">
+                    <span class="live-save-dot"></span>
+                    <span id="live-save-text" data-i18n="live_status_text">修改即时生效 (自动保存)</span>
                 </div>
-                <div id="annotations"></div>
+                <div id="selection-info">
+                    <div class="section-label" data-i18n="label_selected_element">Selected element</div>
+                    <div id="selected-element" class="empty" data-i18n="empty_selected_element">Click an element on the slide to select it</div>
+                    <div id="element-props" style="display:none;"></div>
+                </div>
+                <div id="param-controls" style="margin: 10px 0; padding: 10px; background: rgba(0,0,0,0.03); border-radius: 8px; display:none;">
+                    <div class="section-label" style="margin-bottom:8px; font-weight:bold;">Parametric Controls</div>
+                    <div id="param-controls-body"></div>
+                </div>
             </div>
+            <div id="section-agent" class="pr-section" style="display:none;">
+                <div class="agent-target-bar">
+                    <span class="section-label" data-i18n="label_agent_target">目标:</span>
+                    <span id="agent-target-badge" class="badge-target" data-target="__page__">整页修改</span>
+                    <button id="btn-target-toggle" class="btn-target-toggle" type="button" data-i18n="btn_target_all">设为整页</button>
+                </div>
+                <div id="agent-input-box">
+                    <textarea id="agent-point-text" rows="3" data-i18n-placeholder="placeholder_agent_point" placeholder="列出本页需要大模型/Agent修改的内容（例如：调整排版为左右结构、加粗标题、补充数据图表...）"></textarea>
+                    <div class="agent-input-actions">
+                        <button id="btn-add-point" class="btn-add-point" type="button" data-i18n="btn_add_point">+ 添加修改点</button>
+                        <button id="btn-stage-point" class="btn-stage-point" type="button" data-i18n="btn_stage_slide">💾 暂存本页</button>
+                    </div>
+                </div>
+                <div id="agent-points-container">
+                    <div class="section-label ann-list-header">
+                        <span data-i18n="label_points_on_slide">本页修改点清单</span>
+                        <span id="points-count-badge" class="badge-count">0</span>
+                    </div>
+                    <div id="agent-points-list"></div>
+                </div>
+                <div class="agent-submit-area">
+                    <div class="agent-submit-row">
+                        <button id="btn-stage-agent" class="btn-stage-agent" type="button" data-i18n="btn_stage_agent">💾 暂存本页</button>
+                        <button id="btn-submit-agent" class="btn-submit-agent" type="button" data-i18n="btn_submit_agent">🚀 提交本页</button>
+                    </div>
+                    <button id="btn-submit-all-agent" class="btn-submit-all-agent" type="button" data-i18n="btn_submit_all_agent">⚡ 全部提交 (多页)</button>
+                    <div id="agent-status-indicator" class="agent-status-indicator" style="display:none;">
+                        <span class="spinner"></span>
+                        <span id="agent-status-text" data-i18n="agent_processing_text">后台 Agent 处理中，请稍候...</span>
+                    </div>
+                    <div id="agent-last-done-indicator" class="agent-last-done-indicator" style="display:none;">
+                        <span class="last-done-icon">✅</span>
+                        <div class="last-done-body">
+                            <div class="last-done-title">后台修改已生效</div>
+                            <div id="last-done-summary" class="last-done-summary"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Compatibility elements for existing code -->
+            <div id="annotation-input" style="display:none;"><textarea id="annotation-text"></textarea><button id="btn-add-annotation"></button></div>
+            <div id="annotation-list" style="display:none;"><button id="btn-page-annotate"></button><div id="annotations"></div></div>
+
             <div id="preview-actions">
                 <button id="btn-undo" class="btn-undo" data-i18n="btn_undo" disabled>Undo</button>
-                <button id="btn-save" class="btn-save" data-i18n="btn_submit_annotations">Submit annotations</button>
+                <button id="btn-save" class="btn-save" style="display:none;" data-i18n="btn_submit_annotations">Submit annotations</button>
                 <button id="btn-exit-preview" class="btn-exit-preview" data-i18n="btn_exit_preview">Exit preview</button>
             </div>
         </div>
+    </div>
+    <div id="agent-notification-toast" class="agent-toast" style="display:none;">
+        <div class="toast-icon">🎉</div>
+        <div class="toast-body">
+            <div class="toast-title" id="toast-title">后台处理已完成！</div>
+            <div class="toast-desc" id="toast-desc">第 1 页修改已生效，预览已更新。</div>
+        </div>
+        <button id="toast-close" class="toast-close" type="button">&times;</button>
     </div>
     <div id="modal-overlay" style="display:none;">
         <div id="modal">
@@ -120,6 +170,6 @@
             </select>
         </div>
     </div>
-    <script src="/static/app.js"></script>
+    <script src="/static/app.js?v=20260910_07"></script>
 </body>
 </html>

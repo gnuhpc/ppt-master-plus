@@ -57,7 +57,7 @@ Generate or refine one slide at a time. For each slide:
 1. Re-read `spec_lock.md` and generate the SVG.
 2. Write or update its delivery-ready speaker notes.
 3. Run the relevant SVG checks and show the slide in Live Preview.
-4. If the user clicks **Apply changes** with browser annotations, the AI-side `--wait-annotation` listener must return; immediately apply those annotations even though Step 7 has not run: remove resolved markers, run the SVG quality checker, and preview the slide again. Apply chat feedback through the same check-and-preview loop.
+4. Direct manual edits in Live Preview take effect immediately and are saved to disk in real time. If the user submits modification points via **"🚀 提交后台处理"** (or clicks **Apply changes**), the AI-side `--wait-annotation` listener returns; immediately apply the requested changes, remove resolved markers, run the SVG quality checker, run `--mark-done <slide>` so the preview reloads and displays the completion toast notification, and preview the slide again. Apply chat feedback through the same check-and-preview loop.
 5. Wait for explicit approval before moving to the next slide.
 
 **Preview surface rule**: per-slide style confirmation uses Live Preview directly. Do not render a PNG/screenshot of the slide and ask a model to visually re-check it as part of the approval loop. The optional `visual-review` workflow is not a substitute for the user's per-slide approval and must not be auto-run during this gate.

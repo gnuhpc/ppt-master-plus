@@ -116,6 +116,11 @@ def _cache_put(cache: dict, lock: threading.Lock, path: str, mtime: float, value
         cache[path] = (mtime, value)
 
 
+def _cache_clear_path(cache: dict, lock: threading.Lock, path: str) -> None:
+    with lock:
+        cache.pop(path, None)
+
+
 # Lock / liveness helpers are shared with confirm_ui via server_common
 # (imported above as _process_alive / _read_lock / _claim_lock / _release_lock).
 
@@ -225,6 +230,27 @@ def _validate_edit_attrs(attrs: dict, existing_attrs: set[str]) -> Optional[str]
 EDIT_LOG_NAME = 'edits.jsonl'
 ANNOTATION_LOG_NAME = 'annotations.jsonl'
 ANNOTATION_READY_FLAG = 'annotations_ready.flag'
+AGENT_TASKS_FILE = 'agent_tasks.json'
+AGENT_TASK_DONE_FILE = 'agent_task_done.json'
+
+
+def _load_agent_tasks(project_path: Path) -> dict:
+    task_file = _runtime_dir(project_path) / AGENT_TASKS_FILE
+    if task_file.exists():
+        try:
+            return json.loads(task_file.read_text(encoding='utf-8'))
+        except Exception:
+            pass
+    return {'status': 'idle', 'last_updated': time.time(), 'tasks': {}}
+
+
+def _save_agent_tasks(project_path: Path, data: dict) -> None:
+    try:
+        task_file = _runtime_dir(project_path) / AGENT_TASKS_FILE
+        task_file.parent.mkdir(parents=True, exist_ok=True)
+        task_file.write_text(json.dumps(data, ensure_ascii=False, indent=2), encoding='utf-8')
+    except Exception as exc:
+        logger.warning('failed to save agent tasks: %s', exc)
 
 
 def _append_live_preview_log(project_path: Path, filename: str, record: dict) -> None:
@@ -345,10 +371,18 @@ def create_app(
     assets_dir = project_path / 'assets'
 
     app = Flask(__name__, static_folder='static', static_url_path='/static')
+    app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
     app.config['PROJECT_PATH'] = project_path
     app.config['SVG_DIR'] = svg_dir
     app.config['LIVE_MODE'] = live
     app.config['LOCK_FILE'] = lock_file
+
+    @app.after_request
+    def add_header(response):
+        response.headers['Cache-Control'] = 'no-cache, no-store, must-revalidate'
+        response.headers['Pragma'] = 'no-cache'
+        response.headers['Expires'] = '0'
+        return response
 
     # In-memory annotation store: {filename: {element_id: annotation_text}}
     app.config['ANNOTATIONS'] = {}
@@ -472,6 +506,8 @@ def create_app(
 
         annotations = app.config['ANNOTATIONS']
         slides = []
+        tasks_data = _load_agent_tasks(project_path)
+        all_agent_tasks = tasks_data.get('tasks', {})
         for svg_file in sorted(svg_dir.glob('*.svg')):
             path_str = str(svg_file)
             try:
@@ -495,7 +531,8 @@ def create_app(
                 _cache_put(_LIST_CACHE, _LIST_CACHE_LOCK, path_str, mtime, disk_count)
 
             mem_count = len(annotations.get(svg_file.name, {}))
-            annotation_count = max(disk_count, mem_count)
+            task_count = len(all_agent_tasks.get(svg_file.name, []))
+            annotation_count = max(disk_count, mem_count, task_count)
 
             stem = svg_file.name.rsplit('.', 1)[0] if '.' in svg_file.name else svg_file.name
             notes_file = project_path / 'notes' / (stem + '.md')
@@ -809,11 +846,10 @@ def create_app(
 
     @app.route('/api/slide/<name>/edit', methods=['POST'])
     def post_edit(name: str):
-        """Stage a direct (AI-free) edit to one element.
+        """Apply a direct edit immediately to the SVG file on disk (修改即生效).
 
-        Body: ``{element_id, text?: str, attrs?: {fill, font-size, ...}}``.
-        The edit is visible in preview, but disk writes happen only in
-        /api/save-all alongside annotation persistence.
+        Body: ``{element_id, text?: str, attrs?: {fill, font-size, ...}, delete?: bool, promote_tspan?: ...}``.
+        Saves an undo snapshot and writes directly to disk so changes take effect immediately.
         """
         svg_file = _safe_svg_path(name)
         if svg_file is None:
@@ -854,13 +890,7 @@ def create_app(
             return jsonify({'error': f'Failed to parse SVG: {exc}'}), 500
 
         assign_temp_ids(root)
-        pending = app.config['PENDING_EDITS'].get(name) or []
-        ok, reason = _apply_edit_records(root, pending)
-        if not ok:
-            return jsonify({'error': f'Failed to replay pending edits: {reason}'}), 500
 
-        # Locate the target up front to capture old values before mutating —
-        # these feed the staged record and eventual edit log.
         target = _find_by_id(root, element_id)
         if target is None:
             return jsonify({'error': 'Element not found'}), 404
@@ -869,88 +899,419 @@ def create_app(
             if attr_err:
                 return jsonify({'error': attr_err}), 400
 
+        # Save previous file content for undo BEFORE applying change
+        try:
+            raw_before = svg_file.read_text(encoding='utf-8')
+            undo_stack = app.config.setdefault('UNDO_STACK', {}).setdefault(name, [])
+            undo_stack.append(raw_before)
+            if len(undo_stack) > 50:
+                undo_stack.pop(0)
+        except Exception as exc:
+            logger.warning('Failed to save undo snapshot: %s', exc)
+
+        changes = []
         if delete:
             ok, reason = delete_element(root, element_id)
             if not ok:
                 return jsonify({'error': f'Delete failed: {reason}'}), (
                     404 if reason == 'not-found' else 400
                 )
-            staged: dict = {
-                'element_id': element_id,
-                'delete': True,
-                'changes': [{'kind': 'delete', 'key': None, 'old': element_id, 'new': None}],
-            }
-            pending = app.config['PENDING_EDITS'].setdefault(name, [])
-            pending.append(staged)
-            return jsonify({'status': 'ok', 'undo_depth': len(pending)})
-
-        changes = []
-        staged: dict = {'element_id': element_id}
-        if new_text is not None:
-            old_text = target.text or ''
-            ok, reason = set_text(root, element_id, new_text)
-            if not ok:
-                return jsonify({'error': f'Text edit failed: {reason}'}), (
-                    404 if reason == 'not-found' else 400
-                )
-            changes.append({'kind': 'text', 'key': None, 'old': old_text, 'new': new_text})
-            staged['text'] = new_text
-        if attrs:
-            old_attrs = {k: target.get(k) for k in attrs}
-            ok, reason = set_attributes(root, element_id, attrs)
-            if not ok:
-                return jsonify({'error': f'Attribute edit failed: {reason}'}), (
-                    404 if reason == 'not-found' else 400
-                )
-            for k, v in attrs.items():
-                changes.append({'kind': 'attr', 'key': k, 'old': old_attrs[k], 'new': v})
-            staged['attrs'] = attrs
-        if promote:
-            tag = target.tag.split('}', 1)[1] if '}' in target.tag else target.tag
-            old_state = {
-                'tag': tag,
-                'x': target.get('x'),
-                'y': target.get('y'),
-                'dy': target.get('dy'),
-                'transform': target.get('transform'),
-            }
-            ok, reason = promote_tspan_to_text(root, element_id, promote['x'], promote['y'])
-            if not ok:
-                return jsonify({'error': f'Tspan promotion failed: {reason}'}), (
-                    404 if reason == 'not-found' else 400
-                )
-            changes.append({
-                'kind': 'structure',
-                'key': 'promote-tspan',
-                'old': old_state,
-                'new': {'tag': 'text', 'x': promote['x'], 'y': promote['y']},
-            })
-            staged['promote_tspan'] = promote
-
-        staged['changes'] = changes
-        pending = app.config['PENDING_EDITS'].setdefault(name, [])
-        # Coalesce a run of edits to the same element+fields into one undo step
-        # so repeated nudges/color tries don't pile up replay work or log noise.
-        if pending and _edit_signature(pending[-1]) == _edit_signature(staged):
-            _coalesce_into(pending[-1], staged)
+            changes.append({'kind': 'delete', 'key': None, 'old': element_id, 'new': None})
         else:
-            pending.append(staged)
-        return jsonify({'status': 'ok', 'undo_depth': len(pending)})
+            if new_text is not None:
+                old_text = target.text or ''
+                ok, reason = set_text(root, element_id, new_text)
+                if not ok:
+                    return jsonify({'error': f'Text edit failed: {reason}'}), (
+                        404 if reason == 'not-found' else 400
+                    )
+                changes.append({'kind': 'text', 'key': None, 'old': old_text, 'new': new_text})
+            if attrs:
+                old_attrs = {k: target.get(k) for k in attrs}
+                ok, reason = set_attributes(root, element_id, attrs)
+                if not ok:
+                    return jsonify({'error': f'Attribute edit failed: {reason}'}), (
+                        404 if reason == 'not-found' else 400
+                    )
+                for k, v in attrs.items():
+                    changes.append({'kind': 'attr', 'key': k, 'old': old_attrs[k], 'new': v})
+            if promote:
+                tag = target.tag.split('}', 1)[1] if '}' in target.tag else target.tag
+                old_state = {
+                    'tag': tag,
+                    'x': target.get('x'),
+                    'y': target.get('y'),
+                    'dy': target.get('dy'),
+                    'transform': target.get('transform'),
+                }
+                ok, reason = promote_tspan_to_text(root, element_id, promote['x'], promote['y'])
+                if not ok:
+                    return jsonify({'error': f'Tspan promotion failed: {reason}'}), (
+                        404 if reason == 'not-found' else 400
+                    )
+                changes.append({
+                    'kind': 'structure',
+                    'key': 'promote-tspan',
+                    'old': old_state,
+                    'new': {'tag': 'text', 'x': promote['x'], 'y': promote['y']},
+                })
+
+        # Strip unannotated transient ids so the SVG stays clean
+        annotated_ids = set()
+        for elem in root.iter():
+            if elem.get('data-edit-target') == 'true':
+                eid = elem.get('id')
+                if eid:
+                    annotated_ids.add(eid)
+        strip_unused_temp_ids(root, annotated_ids)
+
+        # Write directly to disk: 修改即生效
+        tree.write(str(svg_file), encoding='UTF-8', xml_declaration=True)
+        _cache_clear_path(_SLIDE_CACHE, _SLIDE_CACHE_LOCK, str(svg_file))
+
+        ts = time.time()
+        for chg in changes:
+            _append_edit_log(project_path, {
+                'ts': ts, 'file': name, 'element_id': element_id,
+                'action': 'edit', 'kind': chg.get('kind'), 'key': chg.get('key'),
+                'old': chg.get('old'), 'new': chg.get('new'),
+            })
+
+        new_mtime = svg_file.stat().st_mtime
+        undo_depth = len(app.config.get('UNDO_STACK', {}).get(name, []))
+        return jsonify({
+            'status': 'ok',
+            'undo_depth': undo_depth,
+            'mtime': new_mtime,
+            'saved_to_disk': True,
+        })
 
     @app.route('/api/slide/<name>/undo', methods=['POST'])
     def post_undo(name: str):
-        """Drop the most recent staged direct edit on this slide (LIFO)."""
+        """Revert the most recent direct edit on this slide (LIFO) and write to disk."""
         svg_file = _safe_svg_path(name)
         if svg_file is None:
             return jsonify({'error': 'Invalid slide name'}), 400
         if not svg_file.exists():
             return jsonify({'error': 'Slide not found'}), 404
 
-        stack = app.config['PENDING_EDITS'].get(name) or []
+        stack = app.config.get('UNDO_STACK', {}).get(name) or []
         if not stack:
+            # Fallback for legacy staged edits
+            pending = app.config.get('PENDING_EDITS', {}).get(name) or []
+            if pending:
+                pending.pop()
+                return jsonify({'status': 'ok', 'undo_depth': len(pending)})
             return jsonify({'status': 'empty', 'undo_depth': 0})
-        stack.pop()
-        return jsonify({'status': 'ok', 'undo_depth': len(stack)})
+
+        prev_text = stack.pop()
+        svg_file.write_text(prev_text, encoding='utf-8')
+        _cache_clear_path(_SLIDE_CACHE, _SLIDE_CACHE_LOCK, str(svg_file))
+        new_mtime = svg_file.stat().st_mtime
+        return jsonify({'status': 'ok', 'undo_depth': len(stack), 'mtime': new_mtime})
+
+    # =======================================================================
+    # Agent Modification Points & Background Tasks API
+    # =======================================================================
+
+    @app.route('/api/tasks', methods=['GET'])
+    def get_all_tasks():
+        """Get all agent tasks grouped by slide, plus global status."""
+        tasks_data = _load_agent_tasks(project_path)
+        return jsonify({
+            'status': 'ok',
+            'tasks': tasks_data.get('tasks', {}),
+            'agent_status': tasks_data.get('status', 'idle'),
+            'pending_slides': tasks_data.get('pending_slides', []),
+            'last_updated': tasks_data.get('last_updated', 0),
+        })
+
+    @app.route('/api/slide/<name>/tasks', methods=['GET'])
+    def get_slide_tasks(name: str):
+        """Get the list of modification points for a slide."""
+        tasks_data = _load_agent_tasks(project_path)
+        slide_tasks = tasks_data.get('tasks', {}).get(name, [])
+
+        # Also merge with any disk annotations present in the SVG file
+        svg_file = _safe_svg_path(name)
+        disk_anns = []
+        if svg_file and svg_file.exists():
+            try:
+                tree = ET.parse(str(svg_file))
+                disk_anns = parse_annotations(tree.getroot())
+            except Exception:
+                pass
+
+        existing_texts = {t.get('text') for t in slide_tasks}
+        for ann in disk_anns:
+            if ann['annotation'] not in existing_texts:
+                eid = ann['element_id']
+                slide_tasks.append({
+                    'id': f'disk_{eid}',
+                    'element_id': eid,
+                    'target_desc': '整页' if eid == '__page__' else f'<{ann.get("tag","el")} #{eid}>',
+                    'text': ann['annotation'],
+                    'status': 'submitted',
+                    'created_at': time.time(),
+                })
+
+        return jsonify({'status': 'ok', 'name': name, 'tasks': slide_tasks})
+
+    @app.route('/api/slide/<name>/tasks', methods=['POST'])
+    def add_slide_task(name: str):
+        """Add a modification point for this slide."""
+        data = request.get_json(silent=True) or {}
+        text = (data.get('text') or '').strip()
+        if not text:
+            return jsonify({'error': 'Task text cannot be empty'}), 400
+
+        element_id = data.get('element_id') or '__page__'
+        target_desc = data.get('target_desc') or ('整页' if element_id == '__page__' else f'#{element_id}')
+
+        tasks_data = _load_agent_tasks(project_path)
+        slide_tasks = tasks_data.setdefault('tasks', {}).setdefault(name, [])
+
+        task_id = f'pt_{int(time.time()*1000)}_{len(slide_tasks)+1}'
+        new_task = {
+            'id': task_id,
+            'element_id': element_id,
+            'target_desc': target_desc,
+            'text': text,
+            'status': 'pending',
+            'created_at': time.time(),
+        }
+        slide_tasks.append(new_task)
+        tasks_data['last_updated'] = time.time()
+        _save_agent_tasks(project_path, tasks_data)
+
+        return jsonify({'status': 'ok', 'task': new_task, 'tasks': slide_tasks})
+
+    @app.route('/api/slide/<name>/tasks/<task_id>', methods=['DELETE'])
+    def delete_slide_task(name: str, task_id: str):
+        """Delete a modification point by ID."""
+        tasks_data = _load_agent_tasks(project_path)
+        slide_tasks = tasks_data.get('tasks', {}).get(name, [])
+        removed_task = None
+        new_list = []
+        for t in slide_tasks:
+            if t.get('id') == task_id:
+                removed_task = t
+            else:
+                new_list.append(t)
+        tasks_data.setdefault('tasks', {})[name] = new_list
+        tasks_data['last_updated'] = time.time()
+        _save_agent_tasks(project_path, tasks_data)
+
+        # Also clear from SVG if it was already marked on disk
+        if removed_task:
+            svg_file = _safe_svg_path(name)
+            if svg_file and svg_file.exists():
+                try:
+                    tree = ET.parse(str(svg_file))
+                    root = tree.getroot()
+                    if remove_annotation(root, removed_task.get('element_id', '')):
+                        tree.write(str(svg_file), encoding='UTF-8', xml_declaration=True)
+                        _cache_clear_path(_SLIDE_CACHE, _SLIDE_CACHE_LOCK, str(svg_file))
+                except Exception:
+                    pass
+
+        return jsonify({'status': 'ok', 'tasks': new_list})
+
+    @app.route('/api/slide/<name>/tasks/<task_id>', methods=['PUT', 'POST'])
+    def update_slide_task(name: str, task_id: str):
+        """Update a modification point text/target."""
+        data = request.get_json(silent=True) or {}
+        text = (data.get('text') or '').strip()
+        if not text:
+            return jsonify({'error': 'Task text cannot be empty'}), 400
+
+        tasks_data = _load_agent_tasks(project_path)
+        slide_tasks = tasks_data.get('tasks', {}).get(name, [])
+        updated = None
+        for t in slide_tasks:
+            if t.get('id') == task_id:
+                t['text'] = text
+                if 'target_desc' in data:
+                    t['target_desc'] = data['target_desc']
+                t['updated_at'] = time.time()
+                updated = t
+                break
+        if not updated:
+            return jsonify({'error': 'Task not found'}), 404
+
+        tasks_data['last_updated'] = time.time()
+        _save_agent_tasks(project_path, tasks_data)
+        return jsonify({'status': 'ok', 'task': updated, 'tasks': slide_tasks})
+
+    @app.route('/api/submit-tasks', methods=['POST'])
+    @app.route('/api/slide/<name>/submit-tasks', methods=['POST'])
+    def submit_agent_tasks(name: Optional[str] = None):
+        """Submit modification points to background agent for processing."""
+        data = request.get_json(silent=True) or {}
+        target_slide = name or data.get('slide')
+
+        tasks_data = _load_agent_tasks(project_path)
+        all_tasks = tasks_data.get('tasks', {})
+
+        slides_to_submit = [target_slide] if target_slide else list(all_tasks.keys())
+        submitted_files = []
+        total_points = 0
+
+        for slide_name in slides_to_submit:
+            # Incremental submission: only process points that are not already completed
+            points = [p for p in all_tasks.get(slide_name, []) if p.get('status') != 'completed']
+            if not points:
+                continue
+
+            svg_file = _safe_svg_path(slide_name)
+            if svg_file is None or not svg_file.exists():
+                continue
+
+            try:
+                tree = ET.parse(str(svg_file))
+                root = tree.getroot()
+            except ET.ParseError:
+                continue
+
+            assign_temp_ids(root)
+
+            # Clear existing annotation attributes first
+            for elem in root.iter():
+                elem.attrib.pop('data-edit-target', None)
+                elem.attrib.pop('data-edit-annotation', None)
+
+            # Group points by element_id
+            grouped: dict[str, list[str]] = {}
+            for p in points:
+                eid = p.get('element_id') or '__page__'
+                txt = p.get('text', '').strip()
+                if txt:
+                    grouped.setdefault(eid, []).append(txt)
+
+            for eid, txt_list in grouped.items():
+                if len(txt_list) == 1:
+                    ann_str = txt_list[0]
+                else:
+                    ann_str = '\n'.join(f'[{i+1}] {t}' for i, t in enumerate(txt_list))
+                set_annotation(root, eid, ann_str)
+
+            annotated_ids = set(grouped.keys()) - {'__page__'}
+            strip_unused_temp_ids(root, annotated_ids)
+
+            tree.write(str(svg_file), encoding='UTF-8', xml_declaration=True)
+            _cache_clear_path(_SLIDE_CACHE, _SLIDE_CACHE_LOCK, str(svg_file))
+
+            for p in points:
+                p['status'] = 'submitted'
+            submitted_files.append(slide_name)
+            total_points += len(points)
+
+        if submitted_files:
+            tasks_data['status'] = 'processing'
+            tasks_data['submitted_at'] = time.time()
+            tasks_data['pending_slides'] = submitted_files
+            _save_agent_tasks(project_path, tasks_data)
+
+            flag = _runtime_dir(project_path) / ANNOTATION_READY_FLAG
+            flag.parent.mkdir(parents=True, exist_ok=True)
+            flag.write_text(
+                json.dumps({
+                    'files': submitted_files,
+                    'task_count': total_points,
+                    'submitted_at': time.time(),
+                }, ensure_ascii=False),
+                encoding='utf-8',
+            )
+
+            done_file = _runtime_dir(project_path) / AGENT_TASK_DONE_FILE
+            if done_file.exists():
+                try:
+                    done_file.unlink()
+                except Exception:
+                    pass
+
+        return jsonify({
+            'status': 'ok',
+            'submitted_files': submitted_files,
+            'task_count': total_points,
+            'tasks': all_tasks,
+        })
+
+    @app.route('/api/agent-status', methods=['GET'])
+    def get_agent_status():
+        """Check the status of background agent processing."""
+        flag = _runtime_dir(project_path) / ANNOTATION_READY_FLAG
+        flag_exists = flag.exists()
+
+        tasks_data = _load_agent_tasks(project_path)
+        pending_slides = tasks_data.get('pending_slides', []) if flag_exists else []
+
+        done_file = _runtime_dir(project_path) / AGENT_TASK_DONE_FILE
+        done_info = None
+        if done_file.exists():
+            try:
+                done_info = json.loads(done_file.read_text(encoding='utf-8'))
+            except Exception:
+                pass
+
+        return jsonify({
+            'status': 'processing' if flag_exists else 'idle',
+            'flag_exists': flag_exists,
+            'pending_slides': pending_slides,
+            'recent_done': done_info,
+            'last_updated': tasks_data.get('last_updated', 0),
+        })
+
+    @app.route('/api/mark-done', methods=['POST'])
+    def post_mark_done():
+        """Explicitly mark a slide background task as completed."""
+        data = request.get_json(silent=True) or {}
+        slide_name = data.get('slide')
+        summary = data.get('summary') or '后台修改已完成'
+
+        flag = _runtime_dir(project_path) / ANNOTATION_READY_FLAG
+        if flag.exists():
+            try:
+                flag.unlink()
+            except Exception:
+                pass
+
+        done_file = _runtime_dir(project_path) / AGENT_TASK_DONE_FILE
+        done_data = {
+            'slide': slide_name or 'all',
+            'completed_at': time.time(),
+            'summary': summary,
+        }
+        done_file.write_text(json.dumps(done_data, ensure_ascii=False), encoding='utf-8')
+
+        tasks_data = _load_agent_tasks(project_path)
+        tasks_data['status'] = 'idle'
+        tasks_data['pending_slides'] = []
+        if slide_name and slide_name in tasks_data.get('tasks', {}):
+            tasks_data['tasks'][slide_name] = []
+        elif not slide_name:
+            tasks_data['tasks'] = {}
+        _save_agent_tasks(project_path, tasks_data)
+
+        if slide_name:
+            svg_file = _safe_svg_path(slide_name)
+            if svg_file and svg_file.exists():
+                try:
+                    tree = ET.parse(str(svg_file))
+                    root = tree.getroot()
+                    changed = False
+                    for elem in root.iter():
+                        if 'data-edit-target' in elem.attrib or 'data-edit-annotation' in elem.attrib:
+                            elem.attrib.pop('data-edit-target', None)
+                            elem.attrib.pop('data-edit-annotation', None)
+                            changed = True
+                    if changed:
+                        tree.write(str(svg_file), encoding='UTF-8', xml_declaration=True)
+                        _cache_clear_path(_SLIDE_CACHE, _SLIDE_CACHE_LOCK, str(svg_file))
+                except Exception:
+                    pass
+
+        return jsonify({'status': 'ok', 'done': done_data})
 
     @app.route('/api/save-all', methods=['POST'])
     def save_all():
@@ -1286,6 +1647,16 @@ def build_parser() -> argparse.ArgumentParser:
             'Use after --daemon to let the AI wait for annotation saves without polling.'
         ),
     )
+    parser.add_argument(
+        '--mark-done',
+        metavar='SLIDE',
+        help='Mark a slide background task as completed and notify the live preview',
+    )
+    parser.add_argument(
+        '--summary',
+        default='后台修改已完成',
+        help='Summary description when marking a task done',
+    )
     return parser
 
 
@@ -1310,6 +1681,51 @@ def main(argv: Optional[list[str]] = None) -> int:
     elif not svg_output.is_dir():
         logger.error('%s is not a directory', svg_output)
         return 1
+
+    if args.mark_done:
+        slide = args.mark_done
+        summary = args.summary
+        flag = _runtime_dir(project_path) / ANNOTATION_READY_FLAG
+        if flag.exists():
+            try:
+                flag.unlink()
+            except Exception:
+                pass
+        done_file = _runtime_dir(project_path) / AGENT_TASK_DONE_FILE
+        done_file.parent.mkdir(parents=True, exist_ok=True)
+        done_data = {
+            'slide': slide,
+            'completed_at': time.time(),
+            'summary': summary,
+        }
+        done_file.write_text(json.dumps(done_data, ensure_ascii=False), encoding='utf-8')
+
+        tasks_data = _load_agent_tasks(project_path)
+        tasks_data['status'] = 'idle'
+        tasks_data['pending_slides'] = []
+        if slide in tasks_data.get('tasks', {}):
+            tasks_data['tasks'][slide] = []
+        _save_agent_tasks(project_path, tasks_data)
+
+        # Clear annotations on disk SVG
+        svg_file = _safe_svg_path(slide) if project_path else None
+        if svg_file and svg_file.exists():
+            try:
+                tree = ET.parse(str(svg_file))
+                root = tree.getroot()
+                changed = False
+                for elem in root.iter():
+                    if 'data-edit-target' in elem.attrib or 'data-edit-annotation' in elem.attrib:
+                        elem.attrib.pop('data-edit-target', None)
+                        elem.attrib.pop('data-edit-annotation', None)
+                        changed = True
+                if changed:
+                    tree.write(str(svg_file), encoding='UTF-8', xml_declaration=True)
+            except Exception:
+                pass
+
+        logger.info('marked slide %s as done: %s', slide, summary)
+        return 0
 
     if args.wait_annotation:
         timeout = args.timeout if args.timeout is not None else 86400
