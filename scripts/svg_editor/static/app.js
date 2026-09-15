@@ -45,6 +45,7 @@
             err_save: "Save failed: ",
             err_edit: "Edit failed: ",
             label_direct_edit: "Object attributes (pending until Apply changes)",
+            prop_content_placeholder: "Enter text content...",
             prop_multiline_hint: "Multi-line — select a single line (tspan) to edit text",
             edit_saved_hint: "Change staged. Click Apply changes to write it to svg_output.",
             btn_undo: "Undo",
@@ -83,12 +84,48 @@
             tab_slides: "Outline",
             tab_notes: "Notes",
             btn_notes_save: "Save",
-            popover_title_page: "Annotate page",
-            popover_placeholder: "Additional notes...",
+            label_agent_point: "Agent Task",
+            popover_title_page: "Page Agent Tasks",
+            popover_placeholder: "Describe what the AI agent should modify for this element/page...",
             ann_tag_page: "Page",
             btn_page_annotate_title: "Annotate entire page",
             hint_tab_annotate: "annotate",
-            shortcut_bar: "<span class='hint'><kbd>Click</kbd> Select</span><span class='hint'><kbd>Shift</kbd>+<kbd>Click</kbd> Multi-select</span><span class='hint'><kbd>Right-click</kbd> Overlapping</span><span class='hint'><kbd>Tab</kbd> Annotate</span><span class='hint'><kbd>←</kbd> <kbd>→</kbd> Prev / Next</span><span class='hint'><kbd>Del</kbd> Delete</span><span class='hint'><kbd>Esc</kbd> Deselect</span>"
+            shortcut_bar: "<span class='hint'><kbd>Click</kbd> Manual edit</span><span class='hint'><kbd>DblClick</kbd> Agent task</span><span class='hint'><kbd>Shift</kbd>+<kbd>Click</kbd> Multi-select</span><span class='hint'><kbd>Right-click</kbd> Overlapping</span><span class='hint'><kbd>←</kbd> <kbd>→</kbd> Prev / Next</span><span class='hint'><kbd>Del</kbd> Delete</span><span class='hint'><kbd>Esc</kbd> Deselect</span>",
+            panel_title: "Slide Editor & Agent Tasks",
+            tab_manual: "✍️ Manual Edit",
+            tab_agent: "🤖 Agent Tasks",
+            live_status_text: "Live auto-saved to file",
+            live_status_saved: "✓ Saved to file",
+            label_agent_target: "Target:",
+            target_page: "Entire Page",
+            btn_target_all: "Target Page",
+            btn_target_elem: "Target Element",
+            placeholder_agent_point: "Describe what the AI agent should modify (e.g. convert to timeline, add Q4 chart...)",
+            btn_add_point: "+ Add Point",
+            btn_stage_slide: "💾 Save Draft",
+            btn_stage_agent: "💾 Save Draft",
+            btn_submit_agent: "🚀 Submit This Page",
+            btn_submit_all_agent: "⚡ Submit All Pages",
+            btn_submitting_agent: "⏳ Processing in Background...",
+            status_staged: "Staged",
+            status_submitted: "Submitted",
+            status_completed: "Completed",
+            empty_all_points: "No modification points found across any slides to submit.",
+            toast_staged_slide: "Saved draft for current slide ({count} points pending)",
+            toast_staged_empty: "Please enter modification points first",
+            toast_submit_all_success: "Submitted {count} modification points across {slides} slides to background Agent!",
+            toast_submit_page_success: "Submitted {count} modification points for this slide to background Agent!",
+            label_points_on_slide: "Modification Points on Slide",
+            empty_points: "No modification points yet. Enter above to add.",
+            agent_processing_text: "AI Agent is processing in background, please wait...",
+            agent_done_title: "Background Processing Complete!",
+            agent_done_desc: "Slide {page} modifications applied, preview updated.",
+            agent_done_generic: "Modifications applied, preview updated.",
+            btn_edit_point: "Edit point",
+            btn_point_save: "Save",
+            btn_point_cancel: "Cancel",
+            toast_point_updated: "Modification point updated",
+            hint_dblclick_edit: "Double click to edit"
         },
         zh: {
             page_title: "PPT Master - 实时预览",
@@ -128,6 +165,7 @@
             err_save: "保存失败:",
             err_edit: "编辑失败:",
             label_direct_edit: "对象属性(点击应用修改后写入)",
+            prop_content_placeholder: "输入文本内容...",
             prop_multiline_hint: "多行文本——选中单行(tspan)编辑文字",
             edit_saved_hint: "修改已暂存。点击“应用修改”后写入 svg_output。",
             btn_undo: "撤销",
@@ -166,12 +204,48 @@
             tab_slides: "目录",
             tab_notes: "演讲稿",
             btn_notes_save: "保存",
-            popover_title_page: "标注整页",
-            popover_placeholder: "补充说明……",
+            label_agent_point: "Agent 修改点",
+            popover_title_page: "整页修改点",
+            popover_placeholder: "输入本页/该元素的Agent修改需求（例如：调整排版、精简文字、补充图例...）",
             ann_tag_page: "整页",
             btn_page_annotate_title: "标注整页",
             hint_tab_annotate: "标注",
-            shortcut_bar: "<span class='hint'><kbd>单击</kbd> 选中</span><span class='hint'><kbd>Shift</kbd>+<kbd>单击</kbd> 多选</span><span class='hint'><kbd>右键</kbd> 重叠元素</span><span class='hint'><kbd>Tab</kbd> 标注</span><span class='hint'><kbd>←</kbd> <kbd>→</kbd> 翻页</span><span class='hint'><kbd>Del</kbd> 删除</span><span class='hint'><kbd>Esc</kbd> 取消选择</span>"
+            shortcut_bar: "<span class='hint'><kbd>单击</kbd> 手动修改</span><span class='hint'><kbd>双击</kbd> Agent修改点</span><span class='hint'><kbd>Shift</kbd>+<kbd>单击</kbd> 多选</span><span class='hint'><kbd>右键</kbd> 重叠元素</span><span class='hint'><kbd>←</kbd> <kbd>→</kbd> 翻页</span><span class='hint'><kbd>Del</kbd> 删除</span><span class='hint'><kbd>Esc</kbd> 取消选择</span>",
+            panel_title: "幻灯片编辑与修改",
+            tab_manual: "✍️ 手动修改",
+            tab_agent: "🤖 Agent 修改",
+            live_status_text: "修改即时生效 (自动保存)",
+            live_status_saved: "✓ 已保存到文件",
+            label_agent_target: "目标:",
+            target_page: "整页修改",
+            btn_target_all: "设为整页",
+            btn_target_elem: "设为选中元素",
+            placeholder_agent_point: "列出本页需要大模型/Agent修改的内容（例如：调整排版为左右结构、加粗标题、补充数据图表...）",
+            btn_add_point: "+ 添加修改点",
+            btn_stage_slide: "💾 暂存本页",
+            btn_stage_agent: "💾 暂存本页",
+            btn_submit_agent: "🚀 提交本页",
+            btn_submit_all_agent: "⚡ 全部提交 (多页)",
+            btn_submitting_agent: "⏳ 后台处理中...",
+            status_staged: "待提交",
+            status_submitted: "已提交",
+            status_completed: "已完成",
+            empty_all_points: "当前没有任何待提交的修改点。",
+            toast_staged_slide: "已暂存本页修改（{count} 个修改点待提交）",
+            toast_staged_empty: "请先在上方输入本页需要修改的内容",
+            toast_submit_all_success: "已提交 {slides} 页（共 {count} 个修改点）至后台 Agent 处理！",
+            toast_submit_page_success: "已提交本页（共 {count} 个修改点）至后台 Agent 处理！",
+            label_points_on_slide: "本页修改点清单",
+            empty_points: "当前页暂无修改点，输入上方内容并点击添加",
+            agent_processing_text: "后台 Agent 处理中，请稍候...",
+            agent_done_title: "后台处理已完成！",
+            agent_done_desc: "第 {page} 页修改已生效，预览已更新。",
+            agent_done_generic: "后台修改已完成，预览已生效！",
+            btn_edit_point: "编辑修改点",
+            btn_point_save: "保存",
+            btn_point_cancel: "取消",
+            toast_point_updated: "修改点已更新",
+            hint_dblclick_edit: "双击可编辑修改点"
         }
     };
 
@@ -201,6 +275,7 @@
         var nav = (navigator.language || navigator.userLanguage || "en").toLowerCase();
         return nav.indexOf("zh") === 0 ? "zh" : "en";
     })();
+    var currentLang = LANG;
 
     function t(key, params) {
         var dict = MESSAGES[LANG] || MESSAGES.en;
@@ -236,6 +311,7 @@
     function setLang(lang) {
         if (lang !== "zh" && lang !== "en") return;
         LANG = lang;
+        currentLang = lang;
         try { window.localStorage.setItem("ppt_lang", lang); } catch (e) { /* ignore */ }
         applyI18n();
         var toggleBtn = document.getElementById("btn-lang-toggle");
@@ -307,9 +383,39 @@
     var popoverSubmit     = document.getElementById("popover-submit");
     var btnPageAnnotate   = document.getElementById("btn-page-annotate");
 
+    var tabManual           = document.getElementById("tab-manual");
+    var tabAgent            = document.getElementById("tab-agent");
+    var sectionManual       = document.getElementById("section-manual");
+    var sectionAgent        = document.getElementById("section-agent");
+    var liveSaveText        = document.getElementById("live-save-text");
+    var liveSaveStatus      = document.querySelector(".live-save-status");
+    var agentTargetBadge    = document.getElementById("agent-target-badge");
+    var btnTargetToggle     = document.getElementById("btn-target-toggle");
+    var agentPointText      = document.getElementById("agent-point-text");
+    var btnAddPoint         = document.getElementById("btn-add-point");
+    var pointsCountBadge    = document.getElementById("points-count-badge");
+    var agentPointsList     = document.getElementById("agent-points-list");
+    var btnSubmitAgent      = document.getElementById("btn-submit-agent");
+    var btnStagePoint       = document.getElementById("btn-stage-point");
+    var btnStageAgent       = document.getElementById("btn-stage-agent");
+    var btnSubmitAllAgent   = document.getElementById("btn-submit-all-agent");
+    var agentStatusIndicator = document.getElementById("agent-status-indicator");
+    var agentStatusText     = document.getElementById("agent-status-text");
+    var agentLastDoneIndicator = document.getElementById("agent-last-done-indicator");
+    var lastDoneSummary     = document.getElementById("last-done-summary");
+    var agentNotificationToast = document.getElementById("agent-notification-toast");
+    var toastTitle          = document.getElementById("toast-title");
+    var toastDesc           = document.getElementById("toast-desc");
+    var toastClose          = document.getElementById("toast-close");
+
     // ---- State ------------------------------------------------------
     var currentSlide      = null;   // filename, e.g. "slide_01.svg"
     var slideNames        = [];     // ordered slide filenames for navigation
+    var currentAgentTarget = "__page__";
+    var slideTasks        = {};     // {slide_name: [task_obj, ...]}
+    var isAgentProcessing = false;
+    var lastProcessedTime = 0;
+    var submittedSlides   = new Set();
     var selectedElementIds = new Set(); // id attrs of selected SVG elements
     var slideAnnotations  = {};     // {element_id: annotation_text} for current slide
     var liveMode          = false;
@@ -561,6 +667,7 @@
                         loadCurrentNotes();
                     }
                 }
+                updateAllTasksUI();
                 updateNavLabel();
             })
             .catch(function (err) {
@@ -674,6 +781,7 @@
         if (oldSpecBanner) oldSpecBanner.remove();
 
         loadSlideControls(name);
+        loadSlideTasks(name);
 
         fetch("/api/slide/" + encodeURIComponent(name))
             .then(function (res) { return res.json(); })
@@ -869,6 +977,12 @@
             propsEl.style.display = "none";
             propsEl.innerHTML = "";
             hideAnnotationPopover();
+            if (agentTargetBadge && currentAgentTarget !== "__page__") {
+                currentAgentTarget = "__page__";
+                agentTargetBadge.textContent = t("target_page");
+                agentTargetBadge.setAttribute("data-target", "__page__");
+                if (btnTargetToggle) btnTargetToggle.textContent = t("btn_target_all");
+            }
             return;
         }
 
@@ -886,17 +1000,35 @@
                 propsEl.innerHTML = renderEditableProps(el);
                 attachPropEditors(el);
             }
+            if (agentTargetBadge) {
+                currentAgentTarget = eid;
+                agentTargetBadge.textContent = "#" + eid;
+                agentTargetBadge.setAttribute("data-target", eid);
+                if (btnTargetToggle) btnTargetToggle.textContent = t("btn_target_all");
+            }
         } else {
             selectedElementEl.innerHTML =
                 '<span class="multi-count">' + escapeHtml(t("multi_selected", { count: count })) + '</span>' +
                 '<span class="tab-hint"><kbd>Tab</kbd> ' + escapeHtml(t("hint_tab_annotate")) + '</span>';
             propsEl.innerHTML = renderMultiSelectSummary(Array.from(selectedElementIds));
             attachMultiSelectionEditors(Array.from(selectedElementIds));
+            if (agentTargetBadge) {
+                currentAgentTarget = Array.from(selectedElementIds).join(",");
+                agentTargetBadge.textContent = t("multi_selected", { count: count });
+                agentTargetBadge.setAttribute("data-target", currentAgentTarget);
+                if (btnTargetToggle) btnTargetToggle.textContent = t("btn_target_all");
+            }
         }
 
         annotationInput.style.display = "none";
-        if (!suppressPopover) {
-            showAnnotationPopover(Array.from(selectedElementIds), false);
+        // 单击选中元素时，默认切到手动修改 Tab，展示手动修改要素
+        if (tabManual && tabAgent && sectionManual && sectionAgent) {
+            if (!tabManual.classList.contains("active")) {
+                tabManual.classList.add("active");
+                tabAgent.classList.remove("active");
+                sectionManual.style.display = "";
+                sectionAgent.style.display = "none";
+            }
         }
     }
 
@@ -1526,7 +1658,11 @@
                 }
                 if (selectedElementIds.size > 0) {
                     e.preventDefault();
-                    deleteSelectedElements();
+                    if (e.shiftKey) {
+                        deleteSelectedParentsOrElements();
+                    } else {
+                        deleteSelectedElements();
+                    }
                     return;
                 }
             }
@@ -1773,17 +1909,17 @@
         _popoverIsPage = isPage;
 
         if (isPage) {
-            popoverTitle.textContent = t("popover_title_page");
+            popoverTitle.textContent = "🤖 " + t("popover_title_page");
         } else if (targetIds.length === 1) {
             var el = svgContent.querySelector("#" + CSS.escape(targetIds[0]));
             if (el) {
                 var tag = el.tagName.toLowerCase();
-                popoverTitle.textContent = "<" + tag + "> " + targetIds[0];
+                popoverTitle.textContent = "🤖 " + t("label_agent_point") + " <" + tag + "> #" + targetIds[0];
             } else {
-                popoverTitle.textContent = targetIds[0];
+                popoverTitle.textContent = "🤖 " + t("label_agent_point") + " #" + targetIds[0];
             }
         } else {
-            popoverTitle.textContent = t("multi_selected", { count: targetIds.length });
+            popoverTitle.textContent = "🤖 " + t("label_agent_point") + " (" + targetIds.length + ")";
         }
 
         renderPopoverChips();
@@ -1796,6 +1932,9 @@
             popoverText.value = "";
         }
         popoverText.placeholder = t("popover_placeholder");
+        if (popoverSubmit) {
+            popoverSubmit.textContent = t("btn_add_point");
+        }
 
         popoverOverlay.style.display = "flex";
         setTimeout(function () { popoverText.focus(); }, 50);
@@ -1872,8 +2011,19 @@
                 if (custom) parts.push(custom);
                 var text = parts.join("; ");
                 if (!text) return;
-                submitAnnotation(_popoverTargetIds.slice(), text);
+                var targetId = (_popoverTargetIds && _popoverTargetIds.length > 0)
+                    ? _popoverTargetIds[0]
+                    : (currentAgentTarget || "__page__");
+                addSlideTaskWithText(text, targetId);
                 hideAnnotationPopover();
+            });
+        }
+        if (popoverText) {
+            popoverText.addEventListener("keydown", function (e) {
+                if (e.key === "Enter" && !e.shiftKey) {
+                    e.preventDefault();
+                    if (popoverSubmit) popoverSubmit.click();
+                }
             });
         }
         if (btnPageAnnotate) {
@@ -2232,7 +2382,8 @@
         if (slidePollTimer) return;
         slidePollTimer = window.setInterval(function () {
             loadSlides();
-        }, 2000);
+            checkAgentStatus();
+        }, 1500);
     }
 
     // ---- Direct-edit undo + save hint --------------------------------
@@ -2244,7 +2395,7 @@
     }
 
     function runUndo() {
-        if (!currentSlide || !editStackCount[currentSlide]) return;
+        if (!currentSlide) return;
         fetch("/api/slide/" + encodeURIComponent(currentSlide) + "/undo", { method: "POST" })
             .then(jsonOrThrow)
             .then(function (data) {
@@ -2254,13 +2405,17 @@
                     showWarning(t("undo_empty"));
                     return;
                 }
+                if (data.undo_depth !== undefined) {
+                    editStackCount[currentSlide] = data.undo_depth;
+                    updateUndoButton();
+                }
                 if (data.mtime !== undefined && data.mtime !== null) {
                     slideMtimes[currentSlide] = data.mtime;
                 }
-                // Reload the page so the canvas reflects the reverted SVG;
-                // selectSlide refreshes editStackCount + the undo button.
+                // Reload the page so the canvas reflects the reverted SVG
                 var item = slideListEl.querySelector('.slide-item[data-name="' + cssAttr(currentSlide) + '"]');
                 selectSlide(currentSlide, item || undefined);
+                flashLiveSave();
                 showWarning(t("undo_done"));
             })
             .catch(function (err) {
@@ -2275,35 +2430,69 @@
     }
 
     // ================================================================
-    //  Delete selected elements  (annotation-based: marks the element
-    //  for deletion via the annotation workflow so the AI discovers it
-    //  after Apply changes and removes it from the SVG)
+    //  Delete selected elements  (direct edit: immediately deletes
+    //  the element from disk and removes it from the canvas)
     // ================================================================
     function deleteSelectedElements() {
         if (!currentSlide || selectedElementIds.size === 0) return;
         var ids = Array.from(selectedElementIds);
-        var deleteText = t("annotation_delete_text");
 
         var promises = ids.map(function (eid) {
-            return fetch("/api/slide/" + encodeURIComponent(currentSlide) + "/annotate", {
+            return fetch("/api/slide/" + encodeURIComponent(currentSlide) + "/edit", {
                 method: "POST",
                 headers: { "Content-Type": "application/json" },
-                body: JSON.stringify({ element_id: eid, annotation: deleteText })
+                body: JSON.stringify({ element_id: eid, delete: true })
             }).then(jsonOrThrow);
         });
 
         Promise.all(promises)
             .then(function () {
                 ids.forEach(function (eid) {
-                    slideAnnotations[eid] = deleteText;
+                    var el = svgContent.querySelector("#" + CSS.escape(eid));
+                    if (el) el.remove();
+                    selectedElementIds.delete(eid);
                 });
-                annotationsDirty = true;
-                refreshAnnotationVisuals();
-                updateAnnotationList();
-                loadSlides();
+                clearSelection();
             })
             .catch(function (err) {
-                showError(t("err_delete") + err.message);
+                showError((t("err_delete") || "删除失败: ") + err.message);
+            });
+    }
+
+    // Cascade delete: deletes the parent group (card/block) of selected elements
+    function deleteSelectedParentsOrElements() {
+        if (!currentSlide || selectedElementIds.size === 0) return;
+        var targetIds = new Set();
+        selectedElementIds.forEach(function (eid) {
+            var el = svgContent.querySelector("#" + CSS.escape(eid));
+            var pg = nearestParentGroup(el);
+            if (pg && pg.id) {
+                targetIds.add(pg.id);
+            } else {
+                targetIds.add(eid);
+            }
+        });
+        var ids = Array.from(targetIds);
+
+        var promises = ids.map(function (tid) {
+            return fetch("/api/slide/" + encodeURIComponent(currentSlide) + "/edit", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ element_id: tid, delete: true })
+            }).then(jsonOrThrow);
+        });
+
+        Promise.all(promises)
+            .then(function () {
+                ids.forEach(function (tid) {
+                    var el = svgContent.querySelector("#" + CSS.escape(tid));
+                    if (el) el.remove();
+                });
+                selectedElementIds.clear();
+                clearSelection();
+            })
+            .catch(function (err) {
+                showError((t("err_delete") || "级联删除失败: ") + err.message);
             });
     }
 
@@ -2343,21 +2532,6 @@
         } catch (e) { /* no geometry */ }
         html += '</table>';
 
-        // L1: text content — only when the element owns no <tspan> children.
-        if (tag === "text" || tag === "tspan") {
-            html += '<div class="prop-section">' + escapeHtml(t("section_text_style")) + '</div>';
-            html += '<table class="prop-table">';
-            if (el.querySelector("tspan")) {
-                html += '<tr><td class="prop-key">content</td><td class="prop-val prop-note">' +
-                    escapeHtml(t("prop_multiline_hint")) + '</td></tr>';
-            } else {
-                html += '<tr><td class="prop-key">content</td><td class="prop-val">' +
-                    '<textarea class="prop-edit prop-edit-content" rows="2">' +
-                    escapeHtml(el.textContent || "") + '</textarea></td></tr>';
-            }
-            html += '</table>';
-        }
-
         html += '<div class="prop-section">' + escapeHtml(t("section_raw_attrs")) + '</div>';
         html += '<table class="prop-table">';
         ownAttributeSpecs(el).forEach(function (spec) {
@@ -2369,8 +2543,45 @@
             }
             html += '</td></tr>';
         });
-
         html += '</table>';
+
+        // L1: text content — placed at the bottom so it has ample space for extensive text.
+        if (tag === "text" || tag === "tspan") {
+            html += '<div class="prop-section">' + escapeHtml(t("section_text_style")) + '</div>';
+            if (el.querySelector("tspan")) {
+                html += '<div class="prop-note" style="padding: 6px 0;">' +
+                    escapeHtml(t("prop_multiline_hint")) + '</div>';
+            } else {
+                html += '<div class="prop-content-block">' +
+                    '<textarea class="prop-edit prop-edit-content" rows="6" placeholder="' +
+                    escapeHtml(t("prop_content_placeholder")) + '">' +
+                    escapeHtml(el.textContent || "") + '</textarea></div>';
+            }
+        }
+
+        html += '<div class="prop-section" style="margin-top: 16px; border-top: 1px solid var(--border, #334155); padding-top: 12px;">' + (LANG === "zh" ? "快捷操作" : "Actions") + '</div>';
+        if (parentGroup && !isGroup) {
+            var childCount = parentGroup.querySelectorAll("*").length;
+            html += '<div style="padding: 4px 0 6px 0;"><button type="button" class="btn-direct-delete-group" style="width: 100%; padding: 10px 12px; background: #dc2626; color: #ffffff; border: none; border-radius: 6px; font-size: 14px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: background 0.15s;" onmouseover="this.style.background=\'#b91c1c\'" onmouseout="this.style.background=\'#dc2626\'">' +
+                (LANG === "zh" ? "💥 级联删除所属整组卡片 (含 " + childCount + " 个元素)" : "💥 Delete Entire Group (" + childCount + " items)") +
+                '</button></div>';
+            html += '<div style="padding: 0 0 8px 0;"><button type="button" class="btn-direct-delete" style="width: 100%; padding: 8px 12px; background: #334155; color: #f8fafc; border: 1px solid #475569; border-radius: 6px; font-size: 13px; font-weight: normal; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 6px; transition: background 0.15s;" onmouseover="this.style.background=\'#475569\'" onmouseout="this.style.background=\'#334155\'">' +
+                (LANG === "zh" ? "🗑️ 仅删除当前选中的单个元素" : "🗑️ Delete Only This Item") +
+                '</button></div>';
+            html += '<div style="font-size: 12px; color: #94a3b8; text-align: center; margin-bottom: 8px;">' +
+                (LANG === "zh" ? "快捷键：<kbd style=\"background:#1e293b;padding:2px 4px;border-radius:3px;\">Shift + Del</kbd> 删整组，<kbd style=\"background:#1e293b;padding:2px 4px;border-radius:3px;\">Del</kbd> 删单个" : "Tip: Shift+Del deletes group, Del deletes item") +
+                '</div>';
+        } else if (isGroup) {
+            var groupChildren = el.querySelectorAll("*").length;
+            html += '<div style="padding: 4px 0 12px 0;"><button type="button" class="btn-direct-delete" style="width: 100%; padding: 10px 12px; background: #dc2626; color: #ffffff; border: none; border-radius: 6px; font-size: 14px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: background 0.15s;" onmouseover="this.style.background=\'#b91c1c\'" onmouseout="this.style.background=\'#dc2626\'">' +
+                (LANG === "zh" ? "💥 删除此分组及所有子元素 (含 " + groupChildren + " 个)" : "💥 Delete Group & All Children (" + groupChildren + ")") +
+                '</button></div>';
+        } else {
+            html += '<div style="padding: 4px 0 12px 0;"><button type="button" class="btn-direct-delete" style="width: 100%; padding: 10px 12px; background: #dc2626; color: #ffffff; border: none; border-radius: 6px; font-size: 14px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: background 0.15s;" onmouseover="this.style.background=\'#b91c1c\'" onmouseout="this.style.background=\'#dc2626\'">' +
+                (LANG === "zh" ? "🗑️ 删除此元素 (Delete)" : "🗑️ Delete Element") +
+                '</button></div>';
+        }
+
         return html;
     }
 
@@ -2915,6 +3126,46 @@
                 inp.addEventListener("change", function () { commitGeo("resize"); });
             });
         }
+        var parentGroup = nearestParentGroup(el);
+        var delGroupBtn = panel.querySelector(".btn-direct-delete-group");
+        if (delGroupBtn && parentGroup) {
+            delGroupBtn.addEventListener("click", function () {
+                var cCount = parentGroup.querySelectorAll("*").length;
+                if (!confirm(LANG === "zh" ? "确定要级联删除整张卡片/父分组（含 " + cCount + " 个元素）吗？" : "Delete entire group and all " + cCount + " items?")) return;
+                fetch("/api/slide/" + encodeURIComponent(currentSlide) + "/edit", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ element_id: parentGroup.id, delete: true })
+                }).then(jsonOrThrow)
+                .then(function () {
+                    parentGroup.remove();
+                    selectedElementIds.clear();
+                    clearSelection();
+                })
+                .catch(function (err) {
+                    showError((LANG === "zh" ? "级联删除失败: " : "Cascade delete failed: ") + err.message);
+                });
+            });
+        }
+        var deleteBtn = panel.querySelector(".btn-direct-delete");
+        if (deleteBtn) {
+            deleteBtn.addEventListener("click", function () {
+                if (!confirm(LANG === "zh" ? "确定要删除此元素吗？" : "Are you sure you want to delete this element?")) return;
+                fetch("/api/slide/" + encodeURIComponent(currentSlide) + "/edit", {
+                    method: "POST",
+                    headers: { "Content-Type": "application/json" },
+                    body: JSON.stringify({ element_id: eid, delete: true })
+                }).then(jsonOrThrow)
+                .then(function () {
+                    el.remove();
+                    selectedElementIds.delete(eid);
+                    clearSelection();
+                })
+                .catch(function (err) {
+                    showError((LANG === "zh" ? "删除失败: " : "Delete failed: ") + err.message);
+                });
+            });
+        }
     }
 
     function stageAttr(el, eid, key, value) {
@@ -2961,6 +3212,10 @@
                 editStackCount[slide] = data.undo_depth;
                 if (slide === currentSlide) updateUndoButton();
             }
+            if (data && data.mtime) {
+                slideMtimes[slide] = data.mtime;
+            }
+            flashLiveSave();
             maybeShowSavedHint();
             return data;
         });
@@ -2995,6 +3250,10 @@
             summary += '</td></tr>';
         });
         summary += '</table>';
+        summary += '<div class="prop-section" style="margin-top: 16px; border-top: 1px solid var(--border, #334155); padding-top: 12px;">' + (LANG === "zh" ? "快捷操作" : "Actions") + '</div>';
+        summary += '<div style="padding: 4px 0 12px 0;"><button type="button" class="btn-direct-delete-multi" style="width: 100%; padding: 10px 12px; background: #dc2626; color: #ffffff; border: none; border-radius: 6px; font-size: 14px; font-weight: bold; cursor: pointer; display: flex; align-items: center; justify-content: center; gap: 8px; transition: background 0.15s;" onmouseover="this.style.background=\'#b91c1c\'" onmouseout="this.style.background=\'#dc2626\'">' +
+            (LANG === "zh" ? "🗑️ 批量删除选中元素 (" + ids.length + ")" : "🗑️ Delete Selected (" + ids.length + ")") +
+            '</button></div>';
         return summary;
     }
 
@@ -3146,6 +3405,14 @@
                 commitBatchAttr(key, value, moveEls);
             });
         });
+
+        var multiDelBtn = panel.querySelector(".btn-direct-delete-multi");
+        if (multiDelBtn) {
+            multiDelBtn.addEventListener("click", function () {
+                if (!confirm(LANG === "zh" ? "确定要删除选中的 " + ids.length + " 个元素吗？" : "Are you sure you want to delete these elements?")) return;
+                deleteSelectedElements();
+            });
+        }
     }
 
     function commitBatchAttr(key, value, elements) {
@@ -3672,7 +3939,804 @@
     }
 
 
+    // =======================================================================
+    // Live Save Flash Indicator
+    // =======================================================================
+    function flashLiveSave() {
+        if (!liveSaveStatus || !liveSaveText) return;
+        liveSaveStatus.classList.add("saved");
+        liveSaveText.textContent = t("live_status_saved");
+        setTimeout(function () {
+            liveSaveStatus.classList.remove("saved");
+            liveSaveText.textContent = t("live_status_text");
+        }, 2000);
+    }
+
+    // =======================================================================
+    // Agent Task Checklist & Background Processing
+    // =======================================================================
+    var toastTimer = null;
+    function showToast(message, type, title) {
+        if (!agentNotificationToast) return;
+        var iconEl = agentNotificationToast.querySelector(".toast-icon");
+        if (iconEl) {
+            if (type === "success") iconEl.textContent = "✅";
+            else if (type === "info") iconEl.textContent = "💾";
+            else if (type === "warning") iconEl.textContent = "⚠️";
+            else iconEl.textContent = "🎉";
+        }
+        if (toastTitle) toastTitle.textContent = title || (type === "info" ? "已暂存" : (type === "warning" ? "提示" : "操作成功"));
+        if (toastDesc) toastDesc.textContent = message;
+        agentNotificationToast.style.display = "flex";
+        if (toastTimer) clearTimeout(toastTimer);
+        var duration = (type === "done" || type === "success") ? 8000 : 4500;
+        toastTimer = setTimeout(function () {
+            agentNotificationToast.style.display = "none";
+        }, duration);
+    }
+
+    function showAgentDoneToast(slideName, summary) {
+        var pageNum = slideName;
+        var m = String(slideName).match(/slide_?(\d+)/i);
+        if (m) pageNum = m[1];
+        var desc = t("agent_done_desc").replace("{page}", pageNum);
+        if (summary && summary !== "后台修改已完成") {
+            desc += " (" + summary + ")";
+        }
+        showToast(desc, "done", t("agent_done_title"));
+    }
+
+    function loadSlideTasks(name) {
+        if (!name) return Promise.resolve();
+        return fetch("/api/slide/" + encodeURIComponent(name) + "/tasks")
+            .then(function (res) { return res.json(); })
+            .then(function (data) {
+                slideTasks[name] = data.tasks || [];
+                renderSlideTasks(name);
+                updateAllTasksUI();
+            })
+            .catch(function (err) {
+                console.error("Failed to load slide tasks:", err);
+            });
+    }
+
+    function loadAllTasks() {
+        return fetch("/api/tasks")
+            .then(function (res) { return res.json(); })
+            .then(function (data) {
+                if (data && data.tasks) {
+                    slideTasks = data.tasks;
+                    if (currentSlide) renderSlideTasks(currentSlide);
+                    updateAllTasksUI();
+                }
+            })
+            .catch(function (err) {
+                console.error("Failed to load all tasks:", err);
+            });
+    }
+
+    function updateSubmitButtonsState(processing) {
+        if (processing) {
+            if (btnSubmitAgent) {
+                btnSubmitAgent.disabled = true;
+                btnSubmitAgent.textContent = t("btn_submitting_agent");
+            }
+            if (btnSubmitAllAgent) {
+                btnSubmitAllAgent.disabled = true;
+                btnSubmitAllAgent.textContent = t("btn_submitting_agent");
+            }
+            if (btnStageAgent) btnStageAgent.disabled = true;
+            if (btnStagePoint) btnStagePoint.disabled = true;
+        } else {
+            if (btnStageAgent) btnStageAgent.disabled = false;
+            if (btnStagePoint) btnStagePoint.disabled = false;
+            updateAllTasksUI();
+        }
+    }
+
+    function updateAllTasksUI() {
+        var totalUncompleted = 0;
+        Object.keys(slideTasks).forEach(function (sname) {
+            var stasks = slideTasks[sname] || [];
+            totalUncompleted += stasks.filter(function (t) { return t.status !== "completed"; }).length;
+        });
+
+        var curTasks = (currentSlide && slideTasks[currentSlide]) || [];
+        var curCount = curTasks.length;
+        var uncompletedTasks = curTasks.filter(function (t) { return t.status !== "completed"; });
+        var uncompletedCount = uncompletedTasks.length;
+
+        var hasDraftText = !!(agentPointText && agentPointText.value.trim().length > 0);
+        var effectiveCurCount = uncompletedCount + (hasDraftText ? 1 : 0);
+        var effectiveAllCount = totalUncompleted + (hasDraftText ? 1 : 0);
+
+        if (btnSubmitAllAgent && !isAgentProcessing) {
+            btnSubmitAllAgent.disabled = effectiveAllCount === 0;
+            btnSubmitAllAgent.textContent = effectiveAllCount > 0
+                ? (t("btn_submit_all_agent") + " (" + effectiveAllCount + ")")
+                : t("btn_submit_all_agent");
+        }
+
+        if (btnSubmitAgent && !isAgentProcessing) {
+            btnSubmitAgent.disabled = effectiveCurCount === 0;
+            btnSubmitAgent.textContent = effectiveCurCount > 0
+                ? (t("btn_submit_agent") + " (" + effectiveCurCount + ")")
+                : t("btn_submit_agent");
+        }
+
+        if (pointsCountBadge) {
+            pointsCountBadge.textContent = curCount;
+        }
+        if (tabAgent) {
+            tabAgent.textContent = curCount > 0 ? (t("tab_agent") + " (" + curCount + ")") : t("tab_agent");
+        }
+
+        if (slideListEl) {
+            slideListEl.querySelectorAll(".slide-item").forEach(function (item) {
+                var sname = item.getAttribute("data-name");
+                var stasks = (sname && slideTasks[sname]) || [];
+                var badge = item.querySelector(".badge");
+                if (stasks.length > 0) {
+                    if (!badge) {
+                        badge = document.createElement("span");
+                        badge.className = "badge";
+                        item.appendChild(badge);
+                    }
+                    badge.classList.remove("badge-pending", "badge-submitted", "badge-completed");
+
+                    var hasStaged = stasks.some(function (t) { return t.status === "staged" || t.status === "pending" || !t.status; });
+                    var hasSubmitted = stasks.some(function (t) { return t.status === "submitted"; });
+                    var allCompleted = stasks.every(function (t) { return t.status === "completed"; });
+
+                    if (hasSubmitted) {
+                        badge.classList.add("badge-submitted");
+                        badge.textContent = stasks.length;
+                        badge.title = "后台处理中修改点: " + stasks.length;
+                    } else if (hasStaged) {
+                        badge.classList.add("badge-pending");
+                        badge.textContent = stasks.length;
+                        badge.title = "待提交修改点: " + stasks.length;
+                    } else if (allCompleted) {
+                        badge.classList.add("badge-completed");
+                        badge.textContent = stasks.length;
+                        badge.title = "所有修改点已完成: " + stasks.length;
+                    } else {
+                        badge.classList.add("badge-completed");
+                        badge.textContent = stasks.length;
+                        badge.title = "修改点: " + stasks.length;
+                    }
+                    badge.style.display = "inline-flex";
+                } else if (badge) {
+                    badge.style.display = "none";
+                }
+            });
+        }
+    }
+
+    function renderSlideTasks(name) {
+        if (name !== currentSlide || !agentPointsList) return;
+        agentPointsList.innerHTML = "";
+        var tasks = slideTasks[name] || [];
+        var count = tasks.length;
+        if (pointsCountBadge) pointsCountBadge.textContent = count;
+        if (tabAgent) {
+            tabAgent.textContent = count > 0 ? (t("tab_agent") + " (" + count + ")") : t("tab_agent");
+        }
+        if (btnSubmitAgent && !isAgentProcessing) {
+            btnSubmitAgent.disabled = count === 0;
+            btnSubmitAgent.textContent = count > 0
+                ? (t("btn_submit_agent") + " (" + count + ")")
+                : t("btn_submit_agent");
+        }
+
+        if (tasks.length === 0) {
+            var empty = document.createElement("div");
+            empty.className = "agent-point-empty";
+            empty.textContent = t("empty_points");
+            agentPointsList.appendChild(empty);
+            return;
+        }
+
+        tasks.forEach(function (task, idx) {
+            var card = document.createElement("div");
+            card.className = "point-card";
+            if (task.status === "completed") {
+                card.classList.add("is-completed");
+            }
+
+            var header = document.createElement("div");
+            header.className = "point-header";
+
+            var numTag = document.createElement("div");
+            numTag.className = "point-num-tag";
+
+            var num = document.createElement("span");
+            num.className = "point-num";
+            num.textContent = "#" + (idx + 1);
+            numTag.appendChild(num);
+
+            var tag = document.createElement("span");
+            tag.className = "point-tag";
+            tag.textContent = task.target_desc || (task.element_id === "__page__" ? t("target_page") : ("#" + task.element_id));
+            numTag.appendChild(tag);
+
+            var statusBadge = document.createElement("span");
+            var st = task.status;
+            if (st === "completed") {
+                statusBadge.className = "point-status-badge status-completed";
+                statusBadge.textContent = "✅ " + t("status_completed");
+            } else if (st === "submitted") {
+                statusBadge.className = "point-status-badge status-submitted";
+                statusBadge.textContent = t("status_submitted");
+            } else {
+                statusBadge.className = "point-status-badge status-staged";
+                statusBadge.textContent = t("status_staged");
+            }
+            numTag.appendChild(statusBadge);
+
+            header.appendChild(numTag);
+
+            var actions = document.createElement("div");
+            actions.className = "point-actions";
+
+            var editBtn = document.createElement("button");
+            editBtn.className = "point-edit";
+            editBtn.type = "button";
+            editBtn.innerHTML = "✏️";
+            editBtn.title = t("btn_edit_point");
+
+            var delBtn = document.createElement("button");
+            delBtn.className = "point-del";
+            delBtn.type = "button";
+            delBtn.innerHTML = "&times;";
+            delBtn.title = t("tooltip_remove_annotation");
+            delBtn.addEventListener("click", function (e) {
+                e.stopPropagation();
+                deleteSlideTask(name, task.id);
+            });
+
+            actions.appendChild(editBtn);
+            actions.appendChild(delBtn);
+            header.appendChild(actions);
+
+            card.appendChild(header);
+
+            var body = document.createElement("div");
+            body.className = "point-text";
+            body.textContent = task.text;
+            body.title = t("hint_dblclick_edit");
+            card.appendChild(body);
+
+            // Inline edit container
+            var editBox = document.createElement("div");
+            editBox.className = "point-edit-box";
+            editBox.style.display = "none";
+
+            var editTextarea = document.createElement("textarea");
+            editTextarea.className = "point-edit-textarea";
+            editTextarea.rows = 3;
+            editTextarea.value = task.text;
+
+            var editActions = document.createElement("div");
+            editActions.className = "point-edit-actions";
+
+            var saveBtn = document.createElement("button");
+            saveBtn.type = "button";
+            saveBtn.className = "btn-point-save";
+            saveBtn.textContent = t("btn_point_save");
+
+            var cancelBtn = document.createElement("button");
+            cancelBtn.type = "button";
+            cancelBtn.className = "btn-point-cancel";
+            cancelBtn.textContent = t("btn_point_cancel");
+
+            editActions.appendChild(saveBtn);
+            editActions.appendChild(cancelBtn);
+            editBox.appendChild(editTextarea);
+            editBox.appendChild(editActions);
+            card.appendChild(editBox);
+
+            function startEdit() {
+                body.style.display = "none";
+                editBox.style.display = "flex";
+                editTextarea.value = task.text;
+                editTextarea.focus();
+                editTextarea.select();
+            }
+
+            function stopEdit() {
+                editBox.style.display = "none";
+                body.style.display = "";
+            }
+
+            editBtn.addEventListener("click", function (e) {
+                e.stopPropagation();
+                startEdit();
+            });
+
+            body.addEventListener("dblclick", function (e) {
+                e.stopPropagation();
+                startEdit();
+            });
+
+            cancelBtn.addEventListener("click", function (e) {
+                e.stopPropagation();
+                stopEdit();
+            });
+
+            saveBtn.addEventListener("click", function (e) {
+                e.stopPropagation();
+                var newText = editTextarea.value.trim();
+                if (!newText) {
+                    showError(LANG === "zh" ? "修改点内容不能为空" : "Point text cannot be empty");
+                    return;
+                }
+                saveBtn.disabled = true;
+                updateSlideTask(name, task.id, newText)
+                    .catch(function (err) {
+                        showError((LANG === "zh" ? "更新失败: " : "Update failed: ") + err.message);
+                        saveBtn.disabled = false;
+                    });
+            });
+
+            editTextarea.addEventListener("keydown", function (e) {
+                if ((e.ctrlKey || e.metaKey) && e.key === "Enter") {
+                    e.preventDefault();
+                    saveBtn.click();
+                } else if (e.key === "Escape") {
+                    e.preventDefault();
+                    stopEdit();
+                }
+            });
+
+            agentPointsList.appendChild(card);
+        });
+    }
+
+    function addSlideTaskWithText(text, targetId, isStage) {
+        if (!currentSlide || !text) return Promise.resolve();
+        var tid = targetId || currentAgentTarget || "__page__";
+        var targetDesc = tid === "__page__" ? t("target_page") : ("#" + tid);
+
+        return fetch("/api/slide/" + encodeURIComponent(currentSlide) + "/tasks", {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({
+                element_id: tid,
+                target_desc: targetDesc,
+                text: text
+            })
+        })
+            .then(jsonOrThrow)
+            .then(function (data) {
+                slideTasks[currentSlide] = data.tasks || [];
+                if (agentPointText) agentPointText.value = "";
+                renderSlideTasks(currentSlide);
+                updateAllTasksUI();
+                var uncompleted = (data.tasks || []).filter(function (t) { return t.status !== "completed"; });
+                if (isStage) {
+                    showToast(t("toast_staged_slide").replace("{count}", uncompleted.length), "info", "已暂存");
+                }
+                return data;
+            })
+            .catch(function (err) {
+                showError(t("err_add_annotation") + err.message);
+                throw err;
+            });
+    }
+
+    function addSlideTask() {
+        if (!currentSlide || !agentPointText) return;
+        var text = agentPointText.value.trim();
+        if (!text) return;
+        var targetId = currentAgentTarget || "__page__";
+        addSlideTaskWithText(text, targetId, false);
+    }
+
+    function stageCurrentSlideTasks() {
+        if (!currentSlide) return;
+        var text = agentPointText ? agentPointText.value.trim() : "";
+        if (text) {
+            var targetId = currentAgentTarget || "__page__";
+            addSlideTaskWithText(text, targetId, true);
+        } else {
+            var tasks = slideTasks[currentSlide] || [];
+            var uncompleted = tasks.filter(function (t) { return t.status !== "completed"; });
+            if (uncompleted.length === 0) {
+                showToast("当前页没有待暂存或待提交的新修改点", "warning", "提示");
+                if (agentPointText) agentPointText.focus();
+                return;
+            }
+            showToast(t("toast_staged_slide").replace("{count}", uncompleted.length), "info", "已暂存");
+            updateAllTasksUI();
+        }
+    }
+
+    function deleteSlideTask(slideName, taskId) {
+        if (!slideName || !taskId) return;
+        fetch("/api/slide/" + encodeURIComponent(slideName) + "/tasks/" + encodeURIComponent(taskId), {
+            method: "DELETE"
+        })
+            .then(jsonOrThrow)
+            .then(function (data) {
+                slideTasks[slideName] = data.tasks || [];
+                renderSlideTasks(slideName);
+                updateAllTasksUI();
+            })
+            .catch(function (err) {
+                showError(t("err_remove_annotation") + err.message);
+            });
+    }
+
+    function updateSlideTask(slideName, taskId, newText) {
+        if (!slideName || !taskId || !newText) return Promise.reject(new Error("修改内容不能为空"));
+        return fetch("/api/slide/" + encodeURIComponent(slideName) + "/tasks/" + encodeURIComponent(taskId), {
+            method: "POST",
+            headers: { "Content-Type": "application/json" },
+            body: JSON.stringify({ text: newText })
+        })
+            .then(jsonOrThrow)
+            .then(function (data) {
+                slideTasks[slideName] = data.tasks || [];
+                renderSlideTasks(slideName);
+                updateAllTasksUI();
+                showToast(t("toast_point_updated"), "info", "已更新");
+            });
+    }
+
+    function submitAgentTasks() {
+        if (!currentSlide) return;
+        var text = agentPointText ? agentPointText.value.trim() : "";
+        var tasks = slideTasks[currentSlide] || [];
+        var pendingTasks = tasks.filter(function (t) { return t.status !== "completed"; });
+        if (!text && pendingTasks.length === 0) {
+            showToast("当前页修改点此前均已处理完成并生效，无需重复提交。若有新修改建议，请在上方输入框输入。", "info", "当前页已是最新");
+            return;
+        }
+
+        isAgentProcessing = true;
+        updateSubmitButtonsState(true);
+        if (agentStatusIndicator) {
+            agentStatusIndicator.style.display = "flex";
+        }
+        showToast("正在提交修改任务并通知后台处理...", "info", "任务提交中");
+
+        var addPromise = text
+            ? addSlideTaskWithText(text, currentAgentTarget || "__page__", false)
+            : Promise.resolve();
+
+        addPromise.then(function () {
+            var updatedTasks = slideTasks[currentSlide] || [];
+            var toSubmit = updatedTasks.filter(function (t) { return t.status !== "completed"; });
+
+            if (toSubmit.length === 0) {
+                isAgentProcessing = false;
+                updateSubmitButtonsState(false);
+                if (agentStatusIndicator) {
+                    agentStatusIndicator.style.display = "none";
+                }
+                showToast("当前页修改点此前均已处理完成并生效，无需重复提交。", "info", "当前页已是最新");
+                return;
+            }
+
+            submittedSlides.add(currentSlide);
+            lastProcessedTime = Date.now() / 1000;
+
+            return fetch("/api/slide/" + encodeURIComponent(currentSlide) + "/submit-tasks", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({ slide: currentSlide })
+            })
+                .then(jsonOrThrow)
+                .then(function (data) {
+                    return loadAllTasks().then(function () {
+                        showToast(
+                            t("toast_submit_page_success").replace("{count}", toSubmit.length),
+                            "success",
+                            "增量提交成功"
+                        );
+                    });
+                });
+        }).catch(function (err) {
+            isAgentProcessing = false;
+            updateSubmitButtonsState(false);
+            if (agentStatusIndicator) {
+                agentStatusIndicator.style.display = "none";
+            }
+            showError("提交任务失败: " + (err.message || err));
+        });
+    }
+
+    function submitAllAgentTasks() {
+        var text = agentPointText ? agentPointText.value.trim() : "";
+        var totalTasks = 0;
+        Object.keys(slideTasks).forEach(function (sname) {
+            var tasks = slideTasks[sname] || [];
+            totalTasks += tasks.filter(function (t) { return t.status !== "completed"; }).length;
+        });
+
+        if (!text && totalTasks === 0) {
+            showToast("所有页面修改点此前均已处理完成并生效，无需重复提交。若有新修改建议，请在上方输入框输入。", "info", "全部已是最新");
+            return;
+        }
+
+        isAgentProcessing = true;
+        updateSubmitButtonsState(true);
+        if (agentStatusIndicator) {
+            agentStatusIndicator.style.display = "flex";
+        }
+        showToast("正在提交所有页面修改任务...", "info", "全部提交中");
+
+        var addPromise = (text && currentSlide)
+            ? addSlideTaskWithText(text, currentAgentTarget || "__page__", false)
+            : Promise.resolve();
+
+        addPromise.then(function () {
+            var slidesWithTasks = [];
+            var finalTotal = 0;
+            Object.keys(slideTasks).forEach(function (sname) {
+                var tasks = slideTasks[sname] || [];
+                var uncompleted = tasks.filter(function (t) { return t.status !== "completed"; });
+                if (uncompleted.length > 0) {
+                    finalTotal += uncompleted.length;
+                    slidesWithTasks.push(sname);
+                }
+            });
+
+            if (finalTotal === 0) {
+                isAgentProcessing = false;
+                updateSubmitButtonsState(false);
+                if (agentStatusIndicator) {
+                    agentStatusIndicator.style.display = "none";
+                }
+                showToast("所有页面修改点此前均已处理完成并生效，无需重复提交。", "info", "全部已是最新");
+                return;
+            }
+
+            slidesWithTasks.forEach(function (s) { submittedSlides.add(s); });
+            lastProcessedTime = Date.now() / 1000;
+
+            return fetch("/api/submit-tasks", {
+                method: "POST",
+                headers: { "Content-Type": "application/json" },
+                body: JSON.stringify({})
+            })
+                .then(jsonOrThrow)
+                .then(function (data) {
+                    return loadAllTasks().then(function () {
+                        var count = data.task_count || finalTotal;
+                        var slidesCount = (data.submitted_files || slidesWithTasks).length;
+                        showToast(
+                            t("toast_submit_all_success")
+                                .replace("{count}", count)
+                                .replace("{slides}", slidesCount),
+                            "success",
+                            "全部提交成功"
+                        );
+                    });
+                });
+        }).catch(function (err) {
+            isAgentProcessing = false;
+            updateSubmitButtonsState(false);
+            if (agentStatusIndicator) {
+                agentStatusIndicator.style.display = "none";
+            }
+            showError("全部提交失败: " + (err.message || err));
+        });
+    }
+
+    function checkAgentStatus() {
+        fetch("/api/agent-status")
+            .then(function (res) { return res.json(); })
+            .then(function (data) {
+                var flagExists = !!data.flag_exists;
+                var isBackendProcessing = flagExists || (data.status === "processing");
+                var recentDone = data.recent_done;
+
+                if (isBackendProcessing) {
+                    // Backend is genuinely actively working on tasks
+                    if (agentStatusIndicator) agentStatusIndicator.style.display = "flex";
+                    if (agentLastDoneIndicator) agentLastDoneIndicator.style.display = "none";
+                } else {
+                    // Backend is idle: guarantee spinner indicator is hidden!
+                    if (agentStatusIndicator) agentStatusIndicator.style.display = "none";
+
+                    // Show last done summary banner if available
+                    if (recentDone && agentLastDoneIndicator && lastDoneSummary) {
+                        agentLastDoneIndicator.style.display = "flex";
+                        var timeStr = recentDone.completed_at
+                            ? new Date(recentDone.completed_at * 1000).toLocaleTimeString([], { hour: '2-digit', minute: '2-digit', second: '2-digit' })
+                            : "";
+                        lastDoneSummary.textContent = (recentDone.summary || "后台修改已生效") + (timeStr ? " [" + timeStr + "]" : "");
+                    }
+                }
+
+                if (isAgentProcessing && !isBackendProcessing) {
+                    // User submitted from this tab, and backend has finished
+                    isAgentProcessing = false;
+                    updateSubmitButtonsState(false);
+                    if (agentStatusIndicator) {
+                        agentStatusIndicator.style.display = "none";
+                    }
+
+                    var doneSlide = (recentDone && recentDone.slide) || currentSlide;
+                    var doneSummary = (recentDone && recentDone.summary) || "后台修改已生效";
+                    lastProcessedTime = (recentDone && recentDone.completed_at) || (Date.now() / 1000);
+
+                    var targetShowSlide = (doneSlide && doneSlide !== "all") ? doneSlide : currentSlide;
+                    showAgentDoneToast(targetShowSlide || "1", doneSummary);
+
+                    loadSlides().then(function () {
+                        if (currentSlide) {
+                            selectSlide(currentSlide);
+                        }
+                        loadAllTasks();
+                    });
+                } else if (!isBackendProcessing && recentDone && recentDone.completed_at > lastProcessedTime) {
+                    // Task completed externally while user was looking at slide
+                    lastProcessedTime = recentDone.completed_at;
+                    if (agentStatusIndicator) {
+                        agentStatusIndicator.style.display = "none";
+                    }
+                    updateSubmitButtonsState(false);
+
+                    var extSlide = recentDone.slide;
+                    showAgentDoneToast(extSlide !== "all" ? extSlide : (currentSlide || "1"), recentDone.summary);
+                    loadSlides().then(function () {
+                        if (currentSlide) {
+                            selectSlide(currentSlide);
+                        }
+                        loadAllTasks();
+                    });
+                }
+            })
+            .catch(function () {});
+    }
+
+    function setupCanvasDblClickAgent() {
+        if (!svgContent) return;
+        svgContent.addEventListener("dblclick", function (e) {
+            var target = e.target;
+            if (!target) return;
+            if (target.closest && target.closest("defs, style, title, desc")) return;
+
+            var svg = svgContent.querySelector("svg");
+            var picked = e.altKey && target.closest
+                ? target.closest("g[id]")
+                : null;
+            picked = picked || (target.closest && target.closest("[data-icon][id]")) ||
+                (target.closest && target.closest("[id]"));
+
+            if (picked === svg) picked = null;
+
+            e.preventDefault();
+            e.stopPropagation();
+
+            var targetId = "__page__";
+            var isPage = true;
+
+            if (picked && picked.id) {
+                selectElement(picked, false);
+                targetId = picked.id;
+                isPage = false;
+                currentAgentTarget = targetId;
+                if (agentTargetBadge) {
+                    var tag = picked.tagName ? picked.tagName.toLowerCase() : "el";
+                    agentTargetBadge.textContent = "<" + tag + " #" + targetId + ">";
+                    agentTargetBadge.setAttribute("data-target", targetId);
+                }
+                if (btnTargetToggle) {
+                    btnTargetToggle.textContent = t("btn_target_all");
+                }
+            } else {
+                clearSelection();
+                currentAgentTarget = "__page__";
+                if (agentTargetBadge) {
+                    agentTargetBadge.textContent = t("target_page");
+                    agentTargetBadge.setAttribute("data-target", "__page__");
+                }
+            }
+
+            // 1. Tab页变到 Agent 修改
+            if (tabManual && tabAgent) {
+                tabAgent.classList.add("active");
+                tabManual.classList.remove("active");
+                if (sectionAgent) sectionAgent.style.display = "";
+                if (sectionManual) sectionManual.style.display = "none";
+            }
+
+            // 2. 双击弹出 Agent 修改点
+            showAnnotationPopover([targetId], isPage);
+
+            if (agentPointText) {
+                agentPointText.focus();
+            }
+        });
+    }
+
+    function initAgentTasksUI() {
+        if (tabManual && tabAgent) {
+            tabManual.addEventListener("click", function () {
+                tabManual.classList.add("active");
+                tabAgent.classList.remove("active");
+                if (sectionManual) sectionManual.style.display = "";
+                if (sectionAgent) sectionAgent.style.display = "none";
+            });
+            tabAgent.addEventListener("click", function () {
+                tabAgent.classList.add("active");
+                tabManual.classList.remove("active");
+                if (sectionAgent) sectionAgent.style.display = "";
+                if (sectionManual) sectionManual.style.display = "none";
+            });
+        }
+
+        if (btnTargetToggle) {
+            btnTargetToggle.addEventListener("click", function () {
+                if (currentAgentTarget === "__page__") {
+                    if (selectedElementIds.size > 0) {
+                        currentAgentTarget = selectedElementIds.values().next().value;
+                        if (agentTargetBadge) {
+                            agentTargetBadge.textContent = "#" + currentAgentTarget;
+                            agentTargetBadge.setAttribute("data-target", currentAgentTarget);
+                        }
+                        btnTargetToggle.textContent = t("btn_target_all");
+                    }
+                } else {
+                    currentAgentTarget = "__page__";
+                    if (agentTargetBadge) {
+                        agentTargetBadge.textContent = t("target_page");
+                        agentTargetBadge.setAttribute("data-target", "__page__");
+                    }
+                    btnTargetToggle.textContent = selectedElementIds.size > 0 ? t("btn_target_elem") : t("btn_target_all");
+                }
+            });
+        }
+
+        if (btnAddPoint) {
+            btnAddPoint.addEventListener("click", addSlideTask);
+        }
+
+        if (agentPointText) {
+            agentPointText.addEventListener("input", function () {
+                updateAllTasksUI();
+            });
+            agentPointText.addEventListener("keydown", function (e) {
+                if (e.key === "Enter" && !e.shiftKey) {
+                    e.preventDefault();
+                    addSlideTask();
+                }
+            });
+        }
+
+        if (btnSubmitAgent) {
+            btnSubmitAgent.addEventListener("click", submitAgentTasks);
+        }
+
+        if (btnStagePoint) {
+            btnStagePoint.addEventListener("click", stageCurrentSlideTasks);
+        }
+
+        if (btnStageAgent) {
+            btnStageAgent.addEventListener("click", stageCurrentSlideTasks);
+        }
+
+        if (btnSubmitAllAgent) {
+            btnSubmitAllAgent.addEventListener("click", submitAllAgentTasks);
+        }
+
+        if (toastClose) {
+            toastClose.addEventListener("click", function () {
+                if (agentNotificationToast) agentNotificationToast.style.display = "none";
+            });
+        }
+
+        loadAllTasks();
+
+        setupCanvasDblClickAgent();
+    }
+
     initThemeSelectors();
+    initAgentTasksUI();
 
     if (btnUndo) btnUndo.addEventListener("click", runUndo);
 })();

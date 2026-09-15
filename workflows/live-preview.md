@@ -4,15 +4,15 @@ description: Start the browser SVG editor when it is not running, and apply subm
 
 # Live Preview Workflow
 
-> **Purpose**: (1) start/reopen the browser SVG editor when no preview service is currently running, and (2) automatically apply user-submitted annotations at the current generation checkpoint or after Step 7 export as soon as the browser's **Apply changes** action saves them.
+> **Purpose**: (1) start/reopen the browser SVG editor when no preview service is currently running, (2) provide per-slide instant manual editing (修改即生效, auto-saved to disk immediately), and (3) provide per-slide Agent modification task submission ("列完修改点后提交后台处理"), where submitted points wake the backend agent, and upon completion, the preview automatically updates with completion toast notifications.
 >
 > **Not in scope**: Executor's mandatory auto-startup — that lives in [`SKILL.md`](../SKILL.md) Step 6. Do not re-launch a preview that is already running.
 
 ## When to Run
 
 - **Start (Step 1)** — preview service is not currently running and the user wants to look at the deck or click an element. Typical cases: post-export re-entry in a fresh chat, or the user clicked **Exit preview** earlier and now wants it back.
-- **Apply annotations (Step 2)** — triggered automatically when `--wait-annotation` returns (user clicked **Apply changes** with annotations in the browser). Manual fallback triggers are also accepted:
-  - Quoting the browser success dialog (`Changes saved to svg_output...` / `修改已保存到 svg_output...`)
+- **Apply annotations (Step 2)** — triggered automatically when `--wait-annotation` returns (user clicked **提交后台处理** / **Apply changes** in the browser). Manual fallback triggers are also accepted:
+  - Quoting the browser success dialog (`Changes saved to svg_output...` / `修改已保存到 svg_output...` / `任务已提交后台处理...`)
   - Saying `apply my annotations` / `apply my edits` / `应用注解` / `开始应用` / equivalent
 
 ## When NOT to Run
@@ -37,8 +37,9 @@ python3 ${SKILL_DIR}/scripts/svg_editor/server.py <project_path> --daemon
 The launcher binds `127.0.0.1:5050` (or the next free port), starts the server in the background, writes runtime files under `<project_path>/live_preview/`, opens the browser on a local desktop when possible, and edits `<project_path>/svg_output/` in place. After it prints the running URL, tell the user in their language, in one short message:
 
 - editor is at the URL reported by the launcher, e.g. `http://localhost:5050`
-- **Direct edit** (deterministic tweaks — wording, color, coordinates, SVG attributes): select an element → change the controls in the right panel → preview updates immediately, but nothing is written to `svg_output/` until **Apply changes**. `Ctrl+Z` or the **Undo** button drops staged edits step by step; applied changes are logged to `<project>/live_preview/edits.jsonl`. Re-export stays chat-driven: say "re-export" / "重新导出" to refresh the PPTX.
-- **Annotate** (changes that need AI judgement / re-layout): select an element → write the instruction → click **Add annotation** to stage it → click **Apply changes** to write annotation markers. The AI waits for that save event and starts the repair automatically; the dialog's copyable prompt is only a manual fallback if the AI does not start.
+- **Direct manual edit (直接手动修改，修改即生效)**: on the **✍️ 手动修改 (Manual Edit)** tab (activated by default on single-click selection): change text, typography, colors, coordinates, or drag to move → changes take effect and persist immediately to `svg_output/<slide>.svg` on disk with live status indicator ("● 已实时保存" / "● Live saved"). Properties layout naturally without internal scrollbars. `Ctrl+Z` or the **Undo** button restores previous states directly from disk undo snapshots. Re-export stays chat-driven: say "re-export" / "重新导出" to refresh the PPTX.
+- **Agent modification (每页列完修改点后提交后台处理)**: double-click any element on canvas to pop up the Agent modification point dialog and switch to the **🤖 Agent 修改 (Agent Edit)** tab. Add modification points to the checklist → click **"🚀 提交后台处理" (Submit for Agent Processing)**. The AI waits for that save event and starts the repair automatically (the dialog's copyable prompt with the affected page number is only a manual fallback). The server writes annotation markers, saves `live_preview/agent_tasks.json`, and raises `live_preview/annotations_ready.flag`.
+- **Processing & Notification (处理完预览生效且有提示信息)**: The agent / backend repair loop processes the tasks, verifies quality, and marks them complete (`--mark-done <slide> --summary "..."`). The preview automatically detects completion, refreshes the slide SVG preview, and displays a floating completion notification toast.
 - to skip the editor, just describe the change in chat
 
 Do not wait for confirmation before launching — the user already asked for preview, so launching is the response. If another project already holds the port, the launcher auto-advances to the next free one — report the actual URL from the launch log (`--port <other>` still forces a specific port). Remote access → see the appendix.
@@ -109,28 +110,36 @@ Triggered automatically by the browser save event (`--wait-annotation`) or by th
      python3 ${SKILL_DIR}/scripts/finalize_svg.py <project_path>
      python3 ${SKILL_DIR}/scripts/svg_to_pptx.py <project_path>
      ```
-6. Tell the user (in their language): annotations applied, markers removed, validation passed, and whether a new PPTX was exported. If the browser still shows the old slide, refresh or reselect the page.
-7. Loop: more annotations submitted → repeat from step 1. User signals done or "stop preview" → end.
+6. **Mark Done & Notify UI**:
+   Notify the Live Preview UI that agent processing is complete so the slide reloads and shows the toast notification:
+   ```bash
+   python3 ${SKILL_DIR}/scripts/svg_editor/server.py <project_path> --mark-done <slide_name> --summary "已完成修改点调整"
+   ```
+   (Alternatively, deleting `annotations_ready.flag` will also trigger automatic reload upon mtime update).
+7. Tell the user (in their language): annotations applied, markers removed, validation passed, and whether a new PPTX was exported. The browser live preview automatically refreshes with a completion toast notification.
+8. Loop: more annotations submitted → repeat from step 1. User signals done or "stop preview" → end.
 
 ---
 
 ## Notes (editor invariants — referenced from SKILL.md Step 6)
 
-- **UI**: bilingual (EN/中); auto-detects from `navigator.language`, persists in `localStorage`, toggled via the **中 / EN** button on the right panel. Slide navigation: first/prev/next/last buttons at the top of the center panel, plus `←` / `→` / `Home` / `End` (suppressed while typing in the annotation textarea).
-- **Buttons**: `Add annotation` stages annotation text in memory; `Apply changes` writes staged direct edits plus annotation markers to disk, raises `live_preview/annotations_ready.flag`, and keeps the service running. If annotations were saved, the AI-side `--wait-annotation` loop should start repair automatically; the success dialog includes a copyable prompt with the affected page number(s) only as a manual fallback. `Exit preview` is the only UI action that stops Flask.
-- **Agent adapters**: Antigravity CLI and similar always-on agents can keep the wait loop in their normal execution loop. Codex Desktop and other terminal-backed desktop tools must keep a separate `--wait-annotation --timeout 0` session open, then poll/resume that session to detect browser saves and start repair. After every repair, they must start a new blocked wait session so later **Apply changes** clicks are also captured.
-- **Direct edit (no AI)**: selection mode determines the right-panel surface. Single element = full object inspector (geometry, safe text content, raw SVG attributes except protected fields like `id`, UI `class`, event handlers, and hrefs). SVG `<g>` group = group-level edit surface; select via `Alt/Option` + click or **Select parent group** from a child element. Multi-select = limited batch editor over top-level selected objects only: shared x/y plus `fill` / `stroke` / `opacity`; text style fields (`font-size` / `font-family` / `font-weight` / `text-anchor`) appear only when every selected object is `text`/`tspan`. Preview updates immediately; disk writes wait for **Apply changes**.
-- **Drag to move**: press and drag an already-selected element on the canvas to reposition it (selection stays a separate click, so the background is never dragged by accident); the whole selection moves together under multi-select. The pointer delta is mapped through each element's own CTM, so moves track the cursor regardless of viewport scale or group transforms. Each release stages one direct edit per moved element (the same `x`/`y`-or-`transform` write the geometry inputs produce), previewed live and written only on **Apply changes**; dragging on empty canvas is still rubber-band selection. A failed stage rolls the canvas back to the pre-drag position.
-- **Arrow-key nudge**: with one or more elements selected, `↑ ↓ ← →` moves the selection 1px and `Shift + arrow` moves 10px (suppressed while typing in the annotation box). Arrow keys navigate slides only when nothing is selected. Same staging/coalescing path as drag, so a burst of nudges collapses to one undo step.
-- **Overlap picker**: right-click anywhere on the canvas to list every selectable element under the pointer (top→bottom), so stacked shapes can be reached without blind cycling. Left-click is unchanged (selects the topmost). Hovering a row highlights that element; clicking it selects it; `Esc` or an outside click closes the list. With exactly one element under the pointer, right-click selects it directly.
-- **Undo**: `Ctrl+Z` or the **Undo** button drops the last staged direct edit on the current slide (per-slide LIFO, this session). Consecutive edits to the *same element and same field set* (e.g. nudging one color or coordinate several times) coalesce into a single undo step, keeping the original pre-edit value; switching element or field starts a new step. Applied old→new history is appended to `<project>/live_preview/edits.jsonl`; annotation save/update/remove history is appended to `<project>/live_preview/annotations.jsonl`; un-applied staged edits are in-memory only.
-- **Unsaved-work guard**: staged direct edits and annotation changes (added or removed) live in server memory until **Apply changes**; closing the tab triggers the browser's native "leave site?" prompt while any are unapplied, since an idle timeout or process kill would drop them.
-- **Re-export is chat-driven**: applying changes updates `svg_output/` only. Before the first export, annotation repair returns to preview without creating a partial deck. After an export exists, applying annotations re-runs finalize + export; direct edits are re-exported when the user asks.
+- **UI**: bilingual (EN/中); auto-detects from `navigator.language`, persists in `localStorage`, toggled via the **中 / EN** button on the right panel. Slide navigation: first/prev/next/last buttons at the top of the center panel, plus `←` / `→` / `Home` / `End` (suppressed while typing in textareas/inputs).
+- **Two-Tab Right Panel**:
+  - **✍️ 手动修改 (Manual Edit)**: Direct manual edits take effect immediately and are saved to disk (`svg_output/<slide>.svg`) in real time, accompanied by a pulsing green status indicator ("● 已实时保存" / "● Live saved"). Single-clicking any element activates this tab and cleanly displays all editable properties without internal scrollbars. Supports text content, typography, colors, geometry, drag-and-drop on canvas, and arrow nudges. `Ctrl+Z` or the **Undo** button restores previous states from the disk-backed undo stack (up to 50 snapshots).
+  - **🤖 Agent 修改 (Agent Edit)**: Double-clicking any element on canvas pops up the Agent task modal and switches to this tab. Users can target specific elements or whole-slide modifications, add modification points to the checklist, and click **"🚀 提交后台处理" (Submit for Agent Processing)**.
+- **Background Processing & Completion Toast**: When **提交后台处理** is clicked, the server writes annotation markers into SVG, updates `live_preview/agent_tasks.json`, and raises `live_preview/annotations_ready.flag`. The copyable prompt includes the affected page number(s) as a manual fallback. While the agent is working, the UI shows a "⏳ 后台处理中..." indicator. Once completed via `--mark-done` or flag removal, the UI automatically refreshes the SVG preview and displays a floating completion toast notification ("🎉 后台 Agent 修改完成！已自动刷新预览").
+- **Agent adapters**: Antigravity CLI and similar always-on agents keep the wait loop in their normal execution loop. Codex Desktop and other terminal-backed desktop tools must keep a separate `--wait-annotation --timeout 0` session open, then poll/resume that session to detect browser saves and start repair. After every repair, they run `--mark-done`, delete the flag, and start a new blocked wait session so later submissions are captured.
+- **Direct edit (no AI)**: selection mode determines the right-panel surface. Single element = full object inspector (geometry, safe text content, raw SVG attributes except protected fields like `id`, UI `class`, event handlers, and hrefs). SVG `<g>` group = group-level edit surface; select via `Alt/Option` + click or **Select parent group** from a child element. Multi-select = limited batch editor over top-level selected objects only: shared x/y plus `fill` / `stroke` / `opacity`; text style fields appear only when every selected object is `text`/`tspan`. Modifications take effect and persist immediately on disk.
+- **Drag to move**: press and drag an already-selected element on the canvas to reposition it; the whole selection moves together under multi-select. Moves track cursor via CTM and auto-persist to disk on release.
+- **Double-click Agent modification popup**: double-click any element on the SVG canvas to pop up the Agent modification point dialog (with preset chips and input box) and automatically switch the right panel to the **🤖 Agent 修改** tab.
+- **Arrow-key nudge**: with one or more elements selected, `↑ ↓ ← →` moves the selection 1px and `Shift + arrow` moves 10px. Auto-persists to disk.
+- **Overlap picker**: right-click anywhere on the canvas to list every selectable element under the pointer (top→bottom). Left-click selects the topmost.
+- **Undo**: `Ctrl+Z` or the **Undo** button pops the last state from the server undo stack and restores `svg_output/<slide>.svg` on disk.
+- **Re-export is chat-driven**: manual and agent edits update `svg_output/` directly. Before the first export, annotation repair returns to preview without creating a partial deck. After an export exists, applying annotations re-runs finalize + export; direct edits are re-exported when the user asks.
 - **Stop conditions**: the service stops when the user clicks **Exit preview** in the browser, asks in chat to stop it, the idle timeout fires, or the process is killed externally.
 - **Port**: default `5050`, auto-advancing to the next free port when another project already holds it (report the actual URL from the launch log); force a specific port with `--port <other>`.
 - **Idle timeout**: plain mode `900s`, `--live` mode `7200s`; override with `--timeout <seconds>` (`0` disables).
-- **Single instance per project**: `<project_path>/live_preview/lock.json` records the running pid + port. A second launch against the same project refuses to start and prints the existing URL; stale locks (dead pid) are overwritten on the next launch. Legacy root locks at `<project_path>/.live_preview.lock` are still detected when they point to a live process.
-- **Transient ids**: each element gets a temporary `_edit_N` id while the editor is running. On save, only annotated elements keep their id; unannotated `_edit_N` ids are stripped before write-back.
+- **Single instance per project**: `<project_path>/live_preview/lock.json` records the running pid + port.
 - **Browser preview**: the server inlines `<use data-icon>` placeholders and serves `images/*` so SVG renders correctly; the on-disk SVG is unchanged by this preview.
 
 ---
